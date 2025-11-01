@@ -6,43 +6,35 @@
   <base href="/Pages-TestV2/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Meta refresh as fallback -->
+  <meta http-equiv="refresh" content="0; url=/Pages-TestV2/index.html">
   <script type="text/javascript">
     // GitHub Pages 404.html workaround for Angular routing
-    // Redirect to index.html and preserve the original URL for Angular router
-    (function() {
+    // Save the original URL before redirecting
+    var pathname = window.location.pathname;
+    var isIndexPage = pathname.endsWith('/index.html') || 
+                     pathname === '/Pages-TestV2/' || 
+                     pathname === '/Pages-TestV2';
+    
+    if (!isIndexPage) {
+      // Save original URL for Angular router to restore
+      var originalUrl = pathname + window.location.search + window.location.hash;
       try {
-        var pathname = window.location.pathname;
-        // Check if we're already on index.html or the root
-        var isIndexPage = pathname.endsWith('/index.html') || 
-                         pathname === '/Pages-TestV2/' || 
-                         pathname === '/Pages-TestV2';
-        
-        // Check if we've already redirected (prevent loops)
-        var hasRedirected = sessionStorage ? sessionStorage.getItem('ghp-redirecting') : null;
-        
-        // Only redirect if we're not already on index.html and haven't redirected
-        if (!isIndexPage && !hasRedirected) {
-          // Save original URL for Angular router
-          var originalUrl = pathname + window.location.search + window.location.hash;
-          if (sessionStorage) {
-            sessionStorage.setItem('ghp-original-url', originalUrl);
-            sessionStorage.setItem('ghp-redirecting', 'true');
-          }
-          
-          // Redirect to index.html immediately
-          window.location.replace('/Pages-TestV2/index.html');
-        } else if (isIndexPage && sessionStorage) {
-          // Clear any stale redirect flags if we're on index
-          sessionStorage.removeItem('ghp-redirecting');
+        if (sessionStorage) {
+          sessionStorage.setItem('ghp-original-url', originalUrl);
+          sessionStorage.setItem('ghp-redirecting', 'true');
         }
-      } catch (e) {
-        // Fallback: just redirect to index
-        window.location.replace('/Pages-TestV2/index.html');
+      } catch(e) {
+        // Ignore sessionStorage errors
       }
-    })();
+      
+      // Redirect immediately
+      window.location.replace('/Pages-TestV2/index.html');
+    }
   </script>
 </head>
 <body>
   <p>Redirecting...</p>
+  <p>If you are not redirected, <a href="/Pages-TestV2/index.html">click here</a>.</p>
 </body>
 </html>
