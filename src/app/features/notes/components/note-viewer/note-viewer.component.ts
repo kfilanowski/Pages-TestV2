@@ -5,7 +5,7 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { MarkdownService, SearchService } from '../../../../core/services';
 import { WikiLinkDirective } from '../wiki-link.directive';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { MatIcon } from '@angular/material/icon';
+import { NgIconComponent } from '@ng-icons/core';
 
 /**
  * Component for displaying markdown note content
@@ -20,7 +20,7 @@ import { MatIcon } from '@angular/material/icon';
  */
 @Component({
   selector: 'app-note-viewer',
-  imports: [CommonModule, WikiLinkDirective, MatIcon],
+  imports: [CommonModule, WikiLinkDirective, NgIconComponent],
   templateUrl: './note-viewer.component.html',
   styleUrl: './note-viewer.component.scss',
 })
@@ -37,6 +37,41 @@ export class NoteViewerComponent implements OnInit {
   protected readonly noteIcon = signal<string | undefined>(undefined);
 
   private currentNoteId: string | null = null;
+
+  /**
+   * Converts frontmatter icon names (e.g., "FiTarget", "LuSword") to ng-icons format
+   * Maps common prefixes to their ng-icons equivalents
+   * Returns null if the prefix is not recognized (preventing fallback icons)
+   */
+  protected readonly convertedIconName = computed(() => {
+    const icon = this.noteIcon();
+    if (!icon) return null;
+
+    // Map of frontmatter icon prefixes to ng-icons library prefixes
+    const prefixMap: Record<string, string> = {
+      'Fi': 'lucide',    // Feather Icons -> Lucide (closest match)
+      'Fa': 'lucide',    // Font Awesome -> Lucide (for compatibility)
+      'Bs': 'bootstrap', // Bootstrap Icons
+      'Hi': 'hero',      // Heroicons
+      'Lu': 'lucide',    // Lucide
+      'Tb': 'tabler',    // Tabler Icons
+      'Ra': 'radix',     // Radix Icons
+      'Gi': 'game',      // Game Icons
+    };
+
+    // Extract prefix (first 2 chars) and icon name
+    const prefix = icon.substring(0, 2);
+    const iconName = icon.substring(2);
+
+    // Only return icon name if prefix is recognized
+    const mappedPrefix = prefixMap[prefix];
+    if (!mappedPrefix) {
+      console.warn(`Unknown icon prefix "${prefix}" in icon "${icon}". Icon will not be displayed.`);
+      return null;
+    }
+
+    return `${mappedPrefix}${iconName}`;
+  });
 
   // Track search query
   protected readonly searchQuery = toSignal(this.searchService.searchQuery$, {
@@ -109,7 +144,7 @@ export class NoteViewerComponent implements OnInit {
           this.contentVisible.set(false);
         },
       });
-    }, 250); // Match fade-out duration
+    }, 125); // Match fade-out duration
   }
 
   /**

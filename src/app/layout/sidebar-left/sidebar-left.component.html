@@ -1,4 +1,32 @@
 <aside class="app-sidebar left-sidebar" [class.open]="isOpen()">
+  <!-- Sidebar Header -->
+  <div class="sidebar-header">
+    <h2 class="sidebar-title">Navigation</h2>
+    <div class="sidebar-actions">
+      <button
+        mat-icon-button
+        class="theme-toggle"
+        (click)="onToggleTheme()"
+        [attr.aria-label]="
+          isDarkMode() ? 'Switch to light mode' : 'Switch to dark mode'
+        "
+        matTooltip="{{ isDarkMode() ? 'Light mode' : 'Dark mode' }}"
+      >
+        <mat-icon>{{ isDarkMode() ? "light_mode" : "dark_mode" }}</mat-icon>
+      </button>
+      <button
+        mat-icon-button
+        class="close-toggle"
+        (click)="onToggleSidebar()"
+        aria-label="Close sidebar"
+        matTooltip="Close sidebar"
+      >
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+  </div>
+
+  <!-- Navigation Content -->
   <app-notes-navigation></app-notes-navigation>
 </aside>
 

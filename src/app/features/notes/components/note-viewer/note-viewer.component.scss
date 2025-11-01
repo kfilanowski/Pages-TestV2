@@ -40,7 +40,7 @@
   max-width: 800px;
   margin: 0 auto;
   opacity: 0;
-  transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.125s ease-in-out;
 }
 
 .note-container.visible {
@@ -142,11 +142,25 @@
 .note-content ::ng-deep .wiki-link {
   color: var(--wiki-link-color) !important;
   font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25em;
 }
 
 .note-content ::ng-deep .wiki-link:hover {
   border-bottom-color: var(--wiki-link-color);
   background-color: var(--hover-bg);
+}
+
+.note-content ::ng-deep .wiki-link-icon {
+  font-size: 0.9em;
+  width: 0.9em;
+  height: 0.9em;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
 }
 
 .note-content ::ng-deep code {
@@ -264,4 +278,38 @@
   100% {
     background-color: #ffeb3b;
   }
+}
+
+// Video embed styling - responsive with 16:9 aspect ratio
+.note-content ::ng-deep .video-embed {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  margin: 1.5em 0;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.note-content ::ng-deep .video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+}
+
+// Custom color syntax support - uses data attribute for flexibility
+// The parent span has inline style="color: X" which sets the color
+// All children inherit that color, overriding wiki-links, strong, etc.
+.note-content ::ng-deep [data-text-color] *,
+.note-content ::ng-deep [data-text-color] a,
+.note-content ::ng-deep [data-text-color] .wiki-link,
+.note-content ::ng-deep [data-text-color] strong,
+.note-content ::ng-deep [data-text-color] em,
+.note-content ::ng-deep [data-text-color] code {
+  color: inherit !important;
 }

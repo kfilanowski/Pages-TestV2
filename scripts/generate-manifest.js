@@ -54,12 +54,40 @@ function extractFrontmatter(content) {
 
   // Parse YAML-style key-value pairs
   const lines = frontmatterContent.split("\n");
+  let currentKey = null;
+  let isArray = false;
+
   for (const line of lines) {
+    const trimmedLine = line.trim();
+    
+    // Check if it's an array item
+    if (trimmedLine.startsWith("- ") && currentKey && isArray) {
+      // Array item for current key
+      const value = trimmedLine.substring(2).trim();
+      if (!Array.isArray(frontmatter[currentKey])) {
+        frontmatter[currentKey] = [];
+      }
+      frontmatter[currentKey].push(value);
+      continue;
+    }
+    
+    // Check for key-value pairs
     const colonIndex = line.indexOf(":");
     if (colonIndex > 0) {
       const key = line.substring(0, colonIndex).trim();
       const value = line.substring(colonIndex + 1).trim();
-      frontmatter[key] = value;
+      
+      if (value === "") {
+        // Empty value might indicate an array follows
+        currentKey = key;
+        isArray = true;
+        frontmatter[key] = [];
+      } else {
+        // Simple key-value pair
+        currentKey = key;
+        isArray = false;
+        frontmatter[key] = value;
+      }
     }
   }
 
@@ -120,16 +148,21 @@ function buildTree(dirPath, relativePath = "") {
         fileName: item,
       };
 
-      // Try to extract icon from frontmatter
+      // Try to extract frontmatter data (icon and aliases)
       try {
         const content = fs.readFileSync(itemPath, "utf-8");
         const frontmatter = extractFrontmatter(content);
-        if (frontmatter && frontmatter.icon) {
-          noteData.icon = frontmatter.icon;
+        if (frontmatter) {
+          if (frontmatter.icon) {
+            noteData.icon = frontmatter.icon;
+          }
+          if (frontmatter.aliases && Array.isArray(frontmatter.aliases)) {
+            noteData.aliases = frontmatter.aliases;
+          }
         }
       } catch (error) {
-        // If we can't read the file or parse frontmatter, just skip the icon
-        console.warn(`Could not extract frontmatter from ${item}`);
+        // If we can't read the file or parse frontmatter, just skip it
+        console.warn(`Could not extract frontmatter from ${item}:`, error.message);
       }
 
       tree.push(noteData);

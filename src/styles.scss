@@ -5,6 +5,9 @@
 // custom components at https://material.angular.dev/guide/theming
 @use "@angular/material" as mat;
 
+// Import Font Awesome for icon support in markdown
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
 // Dark theme configuration for Angular Material components (default)
 html {
   @include mat.theme(
@@ -21,7 +24,7 @@ html {
 }
 
 // Light theme configuration for Angular Material components
-body[data-theme="light"] {
+html[data-theme="light"] {
   @include mat.theme(
     (
       color: (
@@ -176,7 +179,7 @@ a {
 }
 
 // Light Theme - Warm Orange Color Scheme
-body[data-theme="light"] {
+html[data-theme="light"] {
   // Background colors - warm parchment tones
   --content-bg: #faf8f3;
   --surface-color: #f4ede3;
@@ -226,7 +229,7 @@ body[data-theme="light"] {
 }
 
 // Dark Theme - Explicit dark mode override (when data-theme="dark" is set)
-body[data-theme="dark"] {
+html[data-theme="dark"] {
   // Background colors - lighter dark mode with sidebar contrast
   --content-bg: rgb(40, 40, 40);
   --surface-color: rgb(40, 40, 40);

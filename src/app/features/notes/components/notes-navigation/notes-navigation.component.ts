@@ -1,4 +1,4 @@
-import { Component, inject, signal, OnInit, computed } from '@angular/core';
+import { Component, inject, signal, OnInit, OnDestroy, computed, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterModule, NavigationEnd } from '@angular/router';
 import { FormsModule } from '@angular/forms';
@@ -12,6 +12,7 @@ import {
   Note,
 } from '../../../../core/interfaces';
 import { MatIcon } from '@angular/material/icon';
+import { NgIconComponent } from '@ng-icons/core';
 import { SearchResult } from '../../../../core/services/search.service';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { HighlightMatchPipe } from '../../../../shared/pipes/highlight-match.pipe';
@@ -32,13 +33,15 @@ import { HighlightMatchPipe } from '../../../../shared/pipes/highlight-match.pip
     CommonModule,
     RouterModule,
     MatIcon,
+    NgIconComponent,
     FormsModule,
     HighlightMatchPipe,
   ],
   templateUrl: './notes-navigation.component.html',
   styleUrl: './notes-navigation.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class NotesNavigationComponent implements OnInit {
+export class NotesNavigationComponent implements OnInit, OnDestroy {
   private readonly markdownService = inject(MarkdownService);
   private readonly searchService = inject(SearchService);
   private readonly router = inject(Router);
@@ -72,12 +75,59 @@ export class NotesNavigationComponent implements OnInit {
   protected readonly isFolder = isFolder;
   protected readonly isNote = isNote;
 
+  /**
+   * Converts frontmatter icon names (e.g., "FiTarget", "LuSword", "GiDragonHead") to ng-icons format
+   * Maps common prefixes to their ng-icons equivalents
+   * Returns null if the icon is invalid or prefix is not recognized
+   */
+  protected convertIconName(icon: string | undefined): string | null {
+    if (!icon) return null;
+
+    // Map of frontmatter icon prefixes to ng-icons library prefixes
+    const prefixMap: Record<string, string> = {
+      'Fi': 'lucide',    // Feather Icons -> Lucide (closest match)
+      'Fa': 'lucide',    // Font Awesome -> Lucide (for compatibility)
+      'Bs': 'bootstrap', // Bootstrap Icons
+      'Hi': 'hero',      // Heroicons
+      'Lu': 'lucide',    // Lucide
+      'Tb': 'tabler',    // Tabler Icons
+      'Ra': 'radix',     // Radix Icons
+      'Gi': 'game',      // Game Icons
+    };
+
+    // Extract prefix (first 2 chars) and icon name
+    const prefix = icon.substring(0, 2);
+    const iconName = icon.substring(2);
+
+    // Only return icon name if prefix is recognized
+    const mappedPrefix = prefixMap[prefix];
+    if (!mappedPrefix) {
+      return null;
+    }
+
+    return `${mappedPrefix}${iconName}`;
+  }
+
   constructor() {
     // Subscribe to notes tree changes
     this.markdownService.notesTree$.subscribe((tree) => {
+      // Skip empty initial emission
+      if (!tree || tree.length === 0) {
+        return;
+      }
+      
+      // Expand to current route first, then set the tree
+      // This ensures only one render cycle with the expanded state
+      const url = this.router.url;
+      const match = url.match(/\/Malons-Marvelous-Misadventures\/(.+)/);
+      
+      if (match) {
+        const noteId = match[1];
+        this.expandPathToNote(tree, noteId);
+      }
+      
+      // Now set the tree with expansion already applied
       this.allTreeNodes.set(tree);
-      // Expand to current route after tree is loaded
-      this.expandToCurrentRoute();
     });
   }
 
@@ -86,7 +136,19 @@ export class NotesNavigationComponent implements OnInit {
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe(() => {
-        this.expandToCurrentRoute();
+        // Expand to show the current route's note
+        const tree = this.allTreeNodes();
+        if (tree.length > 0) {
+          const url = this.router.url;
+          const match = url.match(/\/Malons-Marvelous-Misadventures\/(.+)/);
+          
+          if (match) {
+            const noteId = match[1];
+            this.expandPathToNote(tree, noteId);
+            // Trigger update by creating new reference
+            this.allTreeNodes.set([...tree]);
+          }
+        }
       });
   }
 
@@ -119,6 +181,7 @@ export class NotesNavigationComponent implements OnInit {
     if (isFolder(folder)) {
       folder.expanded = !folder.expanded;
       // Trigger change detection by creating new array reference
+      // Shallow copy is efficient for large trees
       this.allTreeNodes.set([...this.allTreeNodes()]);
     }
   }
@@ -178,29 +241,16 @@ export class NotesNavigationComponent implements OnInit {
 
   /**
    * Track by function for ngFor performance optimization
+   * Uses stable identifiers to prevent unnecessary re-renders
    */
   protected trackNode(index: number, node: NoteTreeNode): string {
-    return isNote(node) ? node.id : `folder-${index}`;
-  }
-
-  /**
-   * Expands folders to show the currently active note
-   */
-  private expandToCurrentRoute(): void {
-    // Get current route
-    const url = this.router.url;
-    const match = url.match(/\/Malons-Marvelous-Misadventures\/(.+)/);
-
-    if (!match) return;
-
-    const noteId = match[1];
-    const tree = this.allTreeNodes();
-
-    // Find and expand the path to this note
-    if (this.expandPathToNote(tree, noteId)) {
-      // Trigger change detection
-      this.allTreeNodes.set([...tree]);
+    if (isNote(node)) {
+      return `note-${node.id}`;
+    } else if (isFolder(node)) {
+      // Use folder name as identifier (folders at same level should have unique names)
+      return `folder-${node.name}-${index}`;
     }
+    return `unknown-${index}`;
   }
 
   /**
@@ -227,5 +277,9 @@ export class NotesNavigationComponent implements OnInit {
     }
 
     return false;
+  }
+
+  ngOnDestroy(): void {
+    // Cleanup if needed
   }
 }

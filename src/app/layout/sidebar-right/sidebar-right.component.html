@@ -1,6 +1,19 @@
 <aside class="app-sidebar right-sidebar" [class.open]="isOpen()">
+  <!-- Sidebar Header -->
+  <div class="sidebar-header">
+    <h2 class="sidebar-title">Page Links</h2>
+    <button
+      mat-icon-button
+      class="close-toggle"
+      (click)="onToggleSidebar()"
+      aria-label="Close sidebar"
+      matTooltip="Close sidebar"
+    >
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+
   <div class="sidebar-content">
-    <h2>Page Links</h2>
 
     @if (currentNoteId()) {
     <!-- Outgoing Links Section -->
@@ -15,7 +28,10 @@
             [routerLink]="['/Malons-Marvelous-Misadventures', note.id]"
             class="note-link"
           >
-            {{ note.title }}
+            @if (convertIconName(note.icon)) {
+            <ng-icon class="note-icon" [name]="convertIconName(note.icon)!" />
+            }
+            <span class="note-title">{{ note.title }}</span>
           </a>
         </li>
         }
@@ -37,7 +53,10 @@
             [routerLink]="['/Malons-Marvelous-Misadventures', note.id]"
             class="note-link"
           >
-            {{ note.title }}
+            @if (convertIconName(note.icon)) {
+            <ng-icon class="note-icon" [name]="convertIconName(note.icon)!" />
+            }
+            <span class="note-title">{{ note.title }}</span>
           </a>
         </li>
         }

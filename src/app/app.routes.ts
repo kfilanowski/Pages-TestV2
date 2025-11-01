@@ -16,7 +16,7 @@ export const routes: Routes = [
     path: 'home',
     loadComponent: () =>
       import('./pages/home/home.component').then((m) => m.HomeComponent),
-    title: 'Home - MMM',
+    title: 'Malon\'s Marvelous Misadventures',
   },
   {
     path: 'Malons-Marvelous-Misadventures/:id',
@@ -24,7 +24,7 @@ export const routes: Routes = [
       import(
         './features/notes/components/note-viewer/note-viewer.component'
       ).then((m) => m.NoteViewerComponent),
-    title: 'Notes - MMM',
+    title: 'Malon\'s Marvelous Misadventures',
   },
   {
     path: '**',

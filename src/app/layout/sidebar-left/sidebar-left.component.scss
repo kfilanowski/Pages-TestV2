@@ -6,32 +6,71 @@
 
 .app-sidebar {
   position: fixed;
-  top: var(--header-height, 64px);
-  bottom: var(--footer-height, 60px);
+  top: 0; // Changed from var(--header-height) since header is hidden
+  bottom: var(--footer-height, 60px); // Stop at footer, don't overlap it
   width: var(--sidebar-width, 280px);
   background-color: var(--sidebar-bg, #ffffff);
   box-shadow: var(--shadow-3, 0 8px 16px rgba(0, 0, 0, 0.2));
-  z-index: 900;
-  overflow-y: auto;
-  overflow-x: hidden;
+  z-index: 900; // Above footer (800) and content
   transition: var(--sidebar-transition, transform 0.3s cubic-bezier(0.4, 0, 0.2, 1));
+  
+  // Use flexbox to properly constrain child components
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 
-  // Custom scrollbar styling
-  &::-webkit-scrollbar {
-    width: 8px;
-  }
+  // Sidebar Header
+  .sidebar-header {
+    flex-shrink: 0; // Don't shrink the header
+    background-color: var(--sidebar-bg-color, var(--sidebar-bg, #ffffff));
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 
-  &::-webkit-scrollbar-track {
-    background: var(--surface-color, #f4ede3);
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: var(--scrollbar-thumb, #c17a53);
-    border-radius: 4px;
-
-    &:hover {
-      background: var(--scrollbar-thumb-hover, #a86a43);
+    .sidebar-title {
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: var(--text-color, var(--text-primary, #212121));
     }
+
+    .sidebar-actions {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .theme-toggle,
+    .close-toggle {
+      color: var(--text-color, var(--text-primary, #212121));
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+
+    .theme-toggle mat-icon {
+      transition: transform 0.3s ease;
+    }
+
+    .theme-toggle:hover mat-icon {
+      transform: rotate(20deg);
+    }
+  }
+
+  // Navigation Component - constrain to remaining space
+  app-notes-navigation {
+    flex: 1; // Take all remaining space
+    min-height: 0; // Allow flex item to shrink below content size
+    overflow: hidden; // Let the component handle its own scrolling
   }
 
   .sidebar-content {

@@ -6,18 +6,52 @@
 
 .app-sidebar {
   position: fixed;
-  top: var(--header-height, 64px);
-  bottom: var(--footer-height, 60px);
+  top: 0; // Changed from var(--header-height) since header is hidden
+  bottom: var(--footer-height, 60px); // Stop at footer, don't overlap it
   width: var(--sidebar-width, 280px);
   background-color: var(--sidebar-bg, #ffffff);
   box-shadow: var(--shadow-3, 0 8px 16px rgba(0, 0, 0, 0.2));
-  z-index: 900;
+  z-index: 900; // Above footer (800) and content
   overflow-y: auto;
   overflow-x: hidden;
   transition: var(
     --sidebar-transition,
     transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)
   );
+
+  // Sidebar Header
+  .sidebar-header {
+    position: sticky;
+    top: 0;
+    background-color: var(--sidebar-bg-color, var(--sidebar-bg, #ffffff));
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+    .sidebar-title {
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: var(--text-color, var(--text-primary, #212121));
+    }
+
+    .close-toggle {
+      color: var(--text-color, var(--text-primary, #212121));
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
 
   // Custom scrollbar styling
   &::-webkit-scrollbar {
@@ -39,15 +73,6 @@
 
   .sidebar-content {
     padding: 24px;
-
-    h2 {
-      margin: 0 0 24px 0;
-      font-size: 1.25rem;
-      font-weight: 500;
-      color: var(--text-primary, #212121);
-      padding-bottom: 12px;
-      border-bottom: 2px solid var(--primary-color, #1976d2);
-    }
   }
 }
 
@@ -129,21 +154,46 @@
         }
 
         .note-link {
-          display: block;
+          display: flex;
+          align-items: center;
+          gap: 8px;
           color: var(--primary-color, #1976d2);
           text-decoration: none;
           padding: 4px 0;
           transition: all 0.2s ease;
           font-size: 0.9rem;
 
+          .note-icon {
+            font-size: 1rem;
+            flex-shrink: 0;
+            color: var(--icon-color, #757575);
+            transition: color 0.2s ease;
+          }
+
+          .note-title {
+            flex: 1;
+            min-width: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+
           &:hover {
             color: var(--primary-dark, #1565c0);
             padding-left: 4px;
             font-weight: 500;
+
+            .note-icon {
+              color: var(--primary-dark, #1565c0);
+            }
           }
 
           &:active {
             color: var(--primary-darker, #0d47a1);
+
+            .note-icon {
+              color: var(--primary-darker, #0d47a1);
+            }
           }
         }
       }

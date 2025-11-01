@@ -99,6 +99,9 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
     const wikiLinks = element.querySelectorAll('a.wiki-link');
 
     wikiLinks.forEach((link: HTMLElement) => {
+      // Add icon to wiki-link if it has a data-icon attribute
+      this.addIconToWikiLink(link);
+      
       // Hover listeners for preview
       const mouseenterListener = this.renderer.listen(
         link,
@@ -159,6 +162,88 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
         );
       }
     });
+  }
+
+  /**
+   * Adds an icon to a wiki-link if it has a data-icon attribute
+   * Converts icon names to ng-icons compatible format and inserts the icon before the text
+   */
+  private addIconToWikiLink(link: HTMLElement): void {
+    // Check if link already has an icon element
+    if (link.querySelector('.wiki-link-icon')) {
+      return; // Icon already added
+    }
+
+    const iconName = link.getAttribute('data-icon');
+    if (!iconName) {
+      return; // No icon specified
+    }
+
+    // Convert icon name to ng-icons format
+    const convertedIconName = this.convertIconName(iconName);
+    if (!convertedIconName) {
+      return; // Icon name not recognized
+    }
+
+    // Create icon element
+    const iconElement = this.renderer.createElement('ng-icon');
+    this.renderer.addClass(iconElement, 'wiki-link-icon');
+    this.renderer.setAttribute(iconElement, 'name', convertedIconName);
+    
+    // Insert icon at the beginning of the link
+    const firstChild = link.firstChild;
+    if (firstChild) {
+      this.renderer.insertBefore(link, iconElement, firstChild);
+    } else {
+      this.renderer.appendChild(link, iconElement);
+    }
+  }
+
+  /**
+   * Converts frontmatter icon names to ng-icons format
+   * Handles common icon library prefixes
+   */
+  private convertIconName(iconName: string): string | null {
+    if (!iconName) {
+      return null;
+    }
+
+    // Handle emoji icons (single characters that aren't alphanumeric)
+    if (iconName.length <= 2 && !/^[a-zA-Z0-9]+$/.test(iconName)) {
+      // For now, skip emoji icons - they could be displayed as text
+      return null;
+    }
+
+    // Extract prefix (first 2-3 characters) and icon name
+    const prefixMatch = iconName.match(/^([A-Z][a-z]{1,2})/);
+    if (!prefixMatch) {
+      return null;
+    }
+
+    const prefix = prefixMatch[1];
+    const iconSuffix = iconName.substring(prefix.length);
+
+    // Map common prefixes to ng-icons library prefixes
+    const prefixMap: Record<string, string> = {
+      'Fi': 'feather', // Feather Icons
+      'Li': 'lucide',  // Lucide Icons
+      'Ti': 'tabler',  // Tabler Icons
+      'Ri': 'remix',   // Remix Icons
+      'Ib': 'iconoir', // Iconoir
+      'Ra': 'radix',   // Radix Icons
+      'Bo': 'boxicons', // Boxicons
+      'Co': 'circum',  // Circum Icons
+      'Fas': 'fontAwesome', // Font Awesome
+    };
+
+    const libraryName = prefixMap[prefix];
+    if (!libraryName) {
+      return null;
+    }
+
+    // Convert to kebab-case for ng-icons
+    const kebabCase = iconSuffix.replace(/([A-Z])/g, '-$1').toLowerCase();
+    return `${libraryName}${kebabCase}`;
   }
 
   /**
@@ -250,6 +335,25 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
     const noteId = linkElement.getAttribute('data-note-id');
     if (!noteId) {
       return;
+    }
+
+    // Determine which preview (if any) contains this link
+    const containingPreview = this.findContainingPreview(linkElement);
+    
+    if (containingPreview) {
+      // Link is inside a preview - close all previews after the containing preview
+      const containingIndex = this.previewElements.indexOf(containingPreview);
+      if (containingIndex !== -1 && containingIndex + 1 < this.previewElements.length) {
+        // There are previews after the containing preview - close them
+        const nextPreview = this.previewElements[containingIndex + 1];
+        this.hidePreview(nextPreview);
+      }
+    } else {
+      // Link is in main content (not in a preview) - close all existing previews
+      // This ensures only one preview is shown at the top level at a time
+      if (this.previewElements.length > 0) {
+        this.hidePreview();
+      }
     }
 
     // Create preview element

@@ -17,7 +17,7 @@
   );
   color: rgba(255, 255, 255, 0.87);
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15);
-  z-index: 1000;
+  z-index: 800; // Below sidebars (900) so footer sits between them
   transition: margin 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
   .footer-content {
@@ -51,14 +51,14 @@
     }
   }
 
-  // Adjust margins when sidebars are open on desktop
+  // Adjust margins when sidebars are open on desktop (matching app-main behavior)
   @media (min-width: 1280px) {
     &.left-sidebar-open {
-      left: var(--sidebar-width, 280px);
+      margin-left: var(--sidebar-width, 280px);
     }
 
     &.right-sidebar-open {
-      right: var(--sidebar-width, 280px);
+      margin-right: var(--sidebar-width, 280px);
     }
   }
 }

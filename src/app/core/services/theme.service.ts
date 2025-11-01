@@ -1,4 +1,4 @@
-import { Injectable, signal, effect, PLATFORM_ID, inject } from '@angular/core';
+import { Injectable, signal, computed, effect, PLATFORM_ID, inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 
 /**
@@ -15,7 +15,7 @@ import { isPlatformBrowser } from '@angular/common';
  * - Uses signals for reactive state (Angular 17+)
  * - Platform-aware for SSR compatibility
  * - Stores user preference in localStorage
- * - Applies theme by setting data-theme attribute on body element
+ * - Applies theme by setting data-theme attribute on html element
  */
 @Injectable({
   providedIn: 'root',
@@ -41,13 +41,12 @@ export class ThemeService {
   /**
    * Computed signal to check if dark mode is active
    */
-  public readonly isDarkMode = signal(this.theme() === 'dark');
+  public readonly isDarkMode = computed(() => this.theme() === 'dark');
 
   constructor() {
-    // Effect to apply theme changes to the DOM and update isDarkMode
+    // Effect to apply theme changes to the DOM
     effect(() => {
       const currentTheme = this.themeSignal();
-      this.isDarkMode.set(currentTheme === 'dark');
       
       if (this.isBrowser) {
         this.applyTheme(currentTheme);
@@ -76,13 +75,13 @@ export class ThemeService {
    * and the color-scheme property
    */
   private applyTheme(theme: 'light' | 'dark'): void {
-    const body = document.body;
+    const root = document.documentElement;
     
     // Set data-theme attribute for CSS custom properties
-    body.setAttribute('data-theme', theme);
+    root.setAttribute('data-theme', theme);
     
     // Set color-scheme for native browser elements (scrollbars, form controls, etc.)
-    body.style.colorScheme = theme;
+    root.style.colorScheme = theme;
   }
 
   /**

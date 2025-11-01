@@ -1,11 +1,11 @@
 <div class="notes-navigation">
   <div class="navigation-header">
-    <h3>Notes</h3>
+    <h3>Malon's Marvelous Misadventures</h3>
     <div class="search-container">
       <input
         type="text"
         class="search-input"
-        placeholder="Search notes..."
+        placeholder="Search..."
         [(ngModel)]="searchQuery"
         (ngModelChange)="onSearchChange($event)"
       />
@@ -62,7 +62,11 @@
                   routerLinkActive="active"
                   class="note-item"
                 >
-                  <mat-icon class="note-icon">description</mat-icon>
+                  @if (convertIconName(subChild.icon); as iconName) {
+                    <ng-icon [name]="iconName" size="20" class="note-icon" />
+                  } @else {
+                    <mat-icon class="note-icon">description</mat-icon>
+                  }
                   <div class="note-content">
                     <span class="note-name">{{ subChild.title }}</span>
                     @if (searchQuery() &&
@@ -87,7 +91,11 @@
               routerLinkActive="active"
               class="note-item"
             >
-              <mat-icon class="note-icon">description</mat-icon>
+              @if (convertIconName(child.icon); as iconName) {
+                <ng-icon [name]="iconName" size="20" class="note-icon" />
+              } @else {
+                <mat-icon class="note-icon">description</mat-icon>
+              }
               <div class="note-content">
                 <span class="note-name">{{ child.title }}</span>
                 @if (searchQuery() && getSearchResult(child.id)?.matchedText) {
@@ -110,7 +118,11 @@
           routerLinkActive="active"
           class="note-item"
         >
-          <mat-icon class="note-icon">description</mat-icon>
+          @if (convertIconName(node.icon); as iconName) {
+            <ng-icon [name]="iconName" size="20" class="note-icon" />
+          } @else {
+            <mat-icon class="note-icon">description</mat-icon>
+          }
           <div class="note-content">
             <span class="note-name">{{ node.title }}</span>
             @if (searchQuery() && getSearchResult(node.id)?.matchedText) {

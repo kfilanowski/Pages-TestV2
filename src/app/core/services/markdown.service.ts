@@ -12,6 +12,7 @@ import {
   switchMap,
   filter,
   forkJoin,
+  firstValueFrom,
 } from 'rxjs';
 import { marked } from 'marked';
 import {
@@ -19,6 +20,8 @@ import {
   NoteFolder,
   NoteTreeNode,
   NotesManifest,
+  SearchIndex,
+  ReferenceGraph,
   isNote,
   isFolder,
 } from '../interfaces';
@@ -50,32 +53,40 @@ export class MarkdownService {
   // Flat map of all notes for quick lookup (used for wiki-links)
   private readonly notesMap = new Map<string, Note>();
 
-  // Track references between notes (noteId -> Set of noteIds it references)
-  private readonly outgoingLinks = new Map<string, Set<string>>();
-  // Track backlinks (noteId -> Set of noteIds that reference it)
-  private readonly incomingLinks = new Map<string, Set<string>>();
+  // Pre-built search index loaded from JSON
+  private searchIndex?: SearchIndex;
+
+  // Pre-built reference graph loaded from JSON
+  private readonly outgoingLinks = new Map<string, string[]>();
+  private readonly incomingLinks = new Map<string, string[]>();
 
   // Track if manifest is loaded
   private readonly manifestLoadedSubject = new BehaviorSubject<boolean>(false);
   public readonly manifestLoaded$ = this.manifestLoadedSubject.asObservable();
 
-  // Track if reference graph is built
+  // Track if reference graph is loaded
   private readonly referenceGraphReadySubject = new BehaviorSubject<boolean>(
     false
   );
   public readonly referenceGraphReady$ =
     this.referenceGraphReadySubject.asObservable();
 
+  // Track if search index is loaded
+  private readonly searchIndexReadySubject = new BehaviorSubject<boolean>(
+    false
+  );
+  public readonly searchIndexReady$ =
+    this.searchIndexReadySubject.asObservable();
+
   constructor() {
     this.configureMarked();
-    // Only load manifest in browser to avoid SSR issues
+    // Only load data files in browser to avoid SSR issues
     if (this.isBrowser) {
+      // Load manifest immediately to ensure navigation tree is available
       this.loadManifest();
-      // Delay reference graph building until after initial page load
-      // This prevents blocking the first note from loading
-      setTimeout(() => {
-        this.buildReferencesGraph();
-      }, 2000); // Build graph 2 seconds after page load
+      // Load reference graph (pre-built, fast to load)
+      this.loadReferenceGraph();
+      // Search index will be loaded on-demand by SearchService
     }
   }
 
@@ -85,8 +96,46 @@ export class MarkdownService {
   private configureMarked(): void {
     const renderer = new marked.Renderer();
 
+    // Helper function to extract YouTube video ID from various URL formats
+    const extractYouTubeVideoId = (url: string): string | null => {
+      if (!url) return null;
+
+      // Match various YouTube URL formats:
+      // - https://www.youtube.com/watch?v=VIDEO_ID
+      // - https://youtu.be/VIDEO_ID
+      // - https://www.youtube.com/embed/VIDEO_ID
+      // - https://www.youtube.com/v/VIDEO_ID
+      const patterns = [
+        /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/|youtube\.com\/v\/)([a-zA-Z0-9_-]{11})/,
+        /youtube\.com\/watch\?.*v=([a-zA-Z0-9_-]{11})/,
+      ];
+
+      for (const pattern of patterns) {
+        const match = url.match(pattern);
+        if (match && match[1]) {
+          return match[1];
+        }
+      }
+
+      return null;
+    };
+
+    // Helper function to create YouTube embed iframe
+    const createYouTubeEmbed = (videoId: string): string => {
+      return `<div class="video-embed youtube-embed">
+        <iframe 
+          src="https://www.youtube.com/embed/${videoId}" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>`;
+    };
+
     // Override link renderer to handle wiki-links [[link]]
     const originalLink = renderer.link;
+    // Bind 'this' context to access notesMap within the renderer
+    const self = this;
     renderer.link = function (token: any): string {
       const href = token.href;
       const title = token.title;
@@ -96,19 +145,81 @@ export class MarkdownService {
       if (href && href.startsWith('wiki:')) {
         const noteId = href.substring(5); // Remove 'wiki:' prefix
         const displayText = text || noteId;
+        
+        // Look up the note to get its icon
+        const note = self.notesMap.get(noteId);
+        const iconName = note?.icon || '';
 
-        // Note: data-note-id is preserved by Angular's sanitizer, but data-preview-enabled would be stripped
-        return `<a href="/Malons-Marvelous-Misadventures/${noteId}" class="wiki-link" data-note-id="${noteId}">${displayText}</a>`;
+        // Note: data-note-id and data-icon are preserved by Angular's sanitizer
+        // If icon exists, include it in the data attribute for client-side rendering
+        return `<a href="/Malons-Marvelous-Misadventures/${noteId}" class="wiki-link" data-note-id="${noteId}" data-icon="${iconName}">${displayText}</a>`;
+      }
+
+      // Check if this is a YouTube link and embed it
+      const youtubeVideoId = extractYouTubeVideoId(href);
+      if (youtubeVideoId) {
+        return createYouTubeEmbed(youtubeVideoId);
       }
 
       // Use original renderer for normal links
       return originalLink.call(this, token);
     };
 
+    // Override image renderer to handle YouTube links in image syntax
+    const originalImage = renderer.image;
+    renderer.image = function (token: any): string {
+      const href = token.href;
+      
+      // Check if this is a YouTube link
+      const youtubeVideoId = extractYouTubeVideoId(href);
+      if (youtubeVideoId) {
+        return createYouTubeEmbed(youtubeVideoId);
+      }
+
+      // Use original renderer for normal images
+      return originalImage.call(this, token);
+    };
+
     marked.setOptions({
       renderer,
       gfm: true, // GitHub Flavored Markdown
       breaks: true, // Convert \n to <br>
+    });
+    
+    // Use a custom extension to recognize wiki: protocol links
+    marked.use({
+      extensions: [
+        {
+          name: 'wikiLink',
+          level: 'inline',
+          start(src: string) {
+            return src.indexOf('[');
+          },
+          tokenizer(src: string) {
+            // Match [text](wiki:link) format
+            const match = src.match(/^\[([^\]]+)\]\(wiki:([^)]+)\)/);
+            if (match) {
+              return {
+                type: 'wikiLink',
+                raw: match[0],
+                text: match[1],
+                href: `wiki:${match[2]}`,
+              };
+            }
+            return undefined;
+          },
+          renderer: (token: any) => {
+            const noteId = token.href.substring(5); // Remove 'wiki:' prefix
+            const displayText = token.text || noteId;
+            
+            // Look up the note to get its icon
+            const note = this.notesMap.get(noteId);
+            const iconName = note?.icon || '';
+            
+            return `<a href="/Malons-Marvelous-Misadventures/${noteId}" class="wiki-link" data-note-id="${noteId}" data-icon="${iconName}">${displayText}</a>`;
+          }
+        }
+      ]
     });
   }
 
@@ -208,7 +319,12 @@ export class MarkdownService {
   }
 
   /**
-   * Parses markdown content to HTML, handling Obsidian wiki-links
+   * Parses markdown content to HTML, handling Obsidian wiki-links, custom color syntax, and custom icon syntax
+   * 
+   * Supports:
+   * - Wiki-links: [[link]] or [[link|display text]]
+   * - Color syntax: ~={color}text=~ (e.g., ~={blue}colored text=~)
+   * - Icon syntax: :icon:icon-name: or :icon:icon-name|size: or :icon:icon-name|size|color:
    */
   private parseMarkdown(markdown: string): string {
     // Strip YAML frontmatter (content between --- delimiters at the start)
@@ -229,8 +345,43 @@ export class MarkdownService {
       }
     );
 
+    // Pre-process custom color syntax: ~={color}text=~ or ~={color}text (until end of line)
+    // This wraps text in a span with the specified color
+    // The markdown inside will still be processed by marked
+    // Supports color names, hex codes, rgb(), rgba(), etc.
+    // Uses data-text-color attribute which is styled via CSS to override all nested element colors
+    // The closing =~ is optional; if omitted, color applies to the rest of the line
+    const colorRegex = /~=\{([a-z0-9#(),.\s-]+)\}([^\n]*?)(?:=~|(?=\n)|$)/gi;
+    const processedWithColors = processedMarkdown.replace(
+      colorRegex,
+      (match, color, content) => {
+        // Wrap content in span with color style and data attribute
+        // The data-text-color attribute triggers CSS rules that force inheritance
+        // Marked will parse markdown inside the span
+        return `<span style="color: ${color};" data-text-color="${color}">${content}</span>`;
+      }
+    );
+
     // Parse markdown to HTML
-    return marked.parse(processedMarkdown) as string;
+    let html = marked.parse(processedWithColors) as string;
+
+    // Post-process: Convert custom icon syntax to Font Awesome icons
+    // Syntax: :icon:icon-name: or :icon:icon-name|size: or :icon:icon-name|size|color:
+    // Examples: 
+    //   :icon:sword: -> <i class="fas fa-sword"></i>
+    //   :icon:heart|24: -> <i class="fas fa-heart" style="font-size: 24px;"></i>
+    //   :icon:star|20|gold: -> <i class="fas fa-star" style="font-size: 20px; color: gold;"></i>
+    const iconRegex = /:icon:([a-z0-9-]+)(?:\|(\d+))?(?:\|([a-z#0-9]+))?:/gi;
+    
+    html = html.replace(iconRegex, (match, iconName, size, color) => {
+      const sizeStyle = size ? `font-size: ${size}px;` : '';
+      const colorStyle = color ? `color: ${color};` : '';
+      const combinedStyle = (sizeStyle || colorStyle) ? ` style="${sizeStyle} ${colorStyle}"` : '';
+      
+      return `<i class="fas fa-${iconName}"${combinedStyle}></i>`;
+    });
+
+    return html;
   }
 
   /**
@@ -263,7 +414,8 @@ export class MarkdownService {
           .replace(/^#+\s/gm, '') // Remove headers
           .replace(/\*\*(.+?)\*\*/g, '$1') // Remove bold
           .replace(/\*(.+?)\*/g, '$1') // Remove italic
-          .replace(/\[\[(.+?)\]\]/g, '$1') // Remove wiki-links
+          .replace(/\[\[(.+?)\]\]/g, '$1') // Remove wiki-links [[link]]
+          .replace(/\[([^\]]+)\]\(wiki:[^)]+\)/g, '$1') // Remove wiki-links [text](wiki:link)
           .replace(/```[\s\S]*?```/g, '') // Remove code blocks
           .trim();
 
@@ -303,14 +455,26 @@ export class MarkdownService {
   /**
    * Extracts wiki-links from markdown content
    * Returns an array of note IDs that are referenced in the content
+   * Supports both [[link]] and [text](wiki:link) formats
    */
   private extractWikiLinks(markdown: string): string[] {
-    const wikiLinkRegex = /\[\[([^\]|]+)(\|([^\]]+))?\]\]/g;
     const links: string[] = [];
+    
+    // Extract [[link]] or [[link|display text]] format
+    const doubleBracketRegex = /\[\[([^\]|]+)(\|([^\]]+))?\]\]/g;
     let match;
 
-    while ((match = wikiLinkRegex.exec(markdown)) !== null) {
+    while ((match = doubleBracketRegex.exec(markdown)) !== null) {
       const noteId = match[1].trim();
+      if (noteId) {
+        links.push(noteId);
+      }
+    }
+
+    // Extract [text](wiki:link) format
+    const markdownWikiRegex = /\[([^\]]+)\]\(wiki:([^)]+)\)/g;
+    while ((match = markdownWikiRegex.exec(markdown)) !== null) {
+      const noteId = match[2].trim();
       if (noteId) {
         links.push(noteId);
       }
@@ -320,130 +484,76 @@ export class MarkdownService {
   }
 
   /**
-   * Builds the reference graph by loading all notes and extracting their links
-   * This creates bidirectional mapping: outgoing links and incoming links (backlinks)
+   * Loads the pre-built reference graph from JSON file
+   * This is much faster than building it from individual markdown files
    */
-  private buildReferencesGraph(): void {
-    this.manifestLoaded$
+  private loadReferenceGraph(): void {
+    this.http
+      .get<ReferenceGraph>(
+        "assets/Malon's Marvelous Misadventures/reference-graph.json"
+      )
       .pipe(
-        filter((loaded) => loaded === true),
-        take(1),
-        switchMap(() => {
-          // Load all notes and extract their links
-          const loadTasks: Observable<void>[] = [];
-
-          for (const [noteId, note] of this.notesMap.entries()) {
-            const notePath = `assets/Malon's Marvelous Misadventures/${note.path}`;
-            const task = this.http.get(notePath, { responseType: 'text' }).pipe(
-              map((content) => {
-                // Extract all wiki-links from this note
-                const links = this.extractWikiLinks(content);
-
-                // Store outgoing links
-                if (links.length > 0) {
-                  this.outgoingLinks.set(noteId, new Set(links));
-
-                  // Update incoming links (backlinks)
-                  for (const targetNoteId of links) {
-                    if (!this.incomingLinks.has(targetNoteId)) {
-                      this.incomingLinks.set(targetNoteId, new Set());
-                    }
-                    this.incomingLinks.get(targetNoteId)!.add(noteId);
-                  }
-                }
-              }),
-              catchError((error) => {
-                console.warn(
-                  `Failed to load note for reference graph: ${note.path}`,
-                  error
-                );
-                return of(void 0);
-              })
-            );
-
-            loadTasks.push(task);
+        tap((graph) => {
+          // Load outgoing links
+          for (const [noteId, links] of Object.entries(graph.outgoingLinks)) {
+            this.outgoingLinks.set(noteId, links);
           }
 
-          // Execute all loading tasks in parallel using forkJoin
-          return loadTasks.length > 0 ? forkJoin(loadTasks) : of([]);
-        }),
-        tap(() => {
-          // Mark reference graph as ready
+          // Load incoming links (backlinks)
+          for (const [noteId, links] of Object.entries(graph.incomingLinks)) {
+            this.incomingLinks.set(noteId, links);
+          }
+
           this.referenceGraphReadySubject.next(true);
-          console.log('Reference graph built successfully');
+          console.log('✓ Reference graph loaded from pre-built file');
+          console.log(`  - ${this.outgoingLinks.size} notes with outgoing links`);
+          console.log(`  - ${this.incomingLinks.size} notes with backlinks`);
         }),
         catchError((error) => {
-          console.error('Error building reference graph:', error);
-          this.referenceGraphReadySubject.next(true); // Still mark as done to prevent blocking
-          return of([]);
+          console.error('Failed to load reference graph:', error);
+          this.referenceGraphReadySubject.next(true);
+          return of(null);
         })
       )
       .subscribe();
   }
 
   /**
-   * Gets all notes that the specified note references (outgoing links)
-   * If the reference graph isn't built yet, extracts links from the cached note content
+   * Loads the pre-built search index from JSON file
+   * Called by SearchService when user performs a search
    */
-  public getOutgoingLinks(noteId: string): Note[] {
-    // If reference graph is ready, use it
-    if (this.referenceGraphReadySubject.value) {
-      const linkIds = this.outgoingLinks.get(noteId);
-      if (!linkIds) {
-        return [];
-      }
-
-      const notes: Note[] = [];
-      for (const linkId of linkIds) {
-        const note = this.notesMap.get(linkId);
-        if (note) {
-          notes.push(note);
-        }
-      }
-
-      return notes.sort((a, b) => a.title.localeCompare(b.title));
+  public loadSearchIndex(): Observable<SearchIndex | null> {
+    // Return cached index if already loaded
+    if (this.searchIndex) {
+      return of(this.searchIndex);
     }
 
-    // Otherwise, extract links from cached note content if available
-    const cachedContent = this.notesCache.get(noteId);
-    if (cachedContent) {
-      // Try to extract links from HTML (wiki-links are converted to <a> tags)
-      const linkMatches = cachedContent.match(/data-note-id="([^"]+)"/g);
-      if (linkMatches) {
-        // Extract unique note IDs
-        const uniqueLinkIds = new Set(
-          linkMatches
-            .map((match) => match.replace('data-note-id="', '').replace('"', ''))
-            .filter((id) => this.notesMap.has(id))
-        );
-        
-        const notes: Note[] = [];
-        for (const linkId of uniqueLinkIds) {
-          const note = this.notesMap.get(linkId);
-          if (note) {
-            notes.push(note);
-          }
-        }
-
-        return notes.sort((a, b) => a.title.localeCompare(b.title));
-      }
-    }
-
-    return [];
+    return this.http
+      .get<SearchIndex>(
+        "assets/Malon's Marvelous Misadventures/search-index.json"
+      )
+      .pipe(
+        tap((index) => {
+          this.searchIndex = index;
+          this.searchIndexReadySubject.next(true);
+          console.log('✓ Search index loaded from pre-built file');
+          console.log(`  - ${index.entries.length} searchable entries`);
+        }),
+        catchError((error) => {
+          console.error('Failed to load search index:', error);
+          this.searchIndexReadySubject.next(true);
+          return of(null);
+        })
+      );
   }
 
   /**
-   * Gets all notes that reference the specified note (incoming links/backlinks)
-   * Returns empty array if reference graph isn't built yet (backlinks require full graph)
+   * Gets all notes that the specified note references (outgoing links)
+   * Uses pre-loaded reference graph for instant results
    */
-  public getIncomingLinks(noteId: string): Note[] {
-    // Backlinks require the full reference graph to be built
-    if (!this.referenceGraphReadySubject.value) {
-      return [];
-    }
-
-    const linkIds = this.incomingLinks.get(noteId);
-    if (!linkIds) {
+  public getOutgoingLinks(noteId: string): Note[] {
+    const linkIds = this.outgoingLinks.get(noteId);
+    if (!linkIds || linkIds.length === 0) {
       return [];
     }
 
@@ -456,5 +566,33 @@ export class MarkdownService {
     }
 
     return notes.sort((a, b) => a.title.localeCompare(b.title));
+  }
+
+  /**
+   * Gets all notes that reference the specified note (incoming links/backlinks)
+   * Uses pre-loaded reference graph for instant results
+   */
+  public getIncomingLinks(noteId: string): Note[] {
+    const linkIds = this.incomingLinks.get(noteId);
+    if (!linkIds || linkIds.length === 0) {
+      return [];
+    }
+
+    const notes: Note[] = [];
+    for (const linkId of linkIds) {
+      const note = this.notesMap.get(linkId);
+      if (note) {
+        notes.push(note);
+      }
+    }
+
+    return notes.sort((a, b) => a.title.localeCompare(b.title));
+  }
+
+  /**
+   * Gets the notes map (for use by SearchService)
+   */
+  public getNotesMap(): Map<string, Note> {
+    return this.notesMap;
   }
 }

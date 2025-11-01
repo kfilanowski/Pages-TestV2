@@ -481,14 +481,22 @@
               "title": "AC",
               "path": "Core Rules, How to Play/Abbreviations and Terminology/AC.md",
               "fileName": "AC.md",
-              "icon": "FiShield"
+              "icon": "FiShield",
+              "aliases": [
+                "Avoidability",
+                "Avoid",
+                "AC"
+              ]
             },
             {
               "id": "ACC",
               "title": "ACC",
               "path": "Core Rules, How to Play/Abbreviations and Terminology/ACC.md",
               "fileName": "ACC.md",
-              "icon": "IbTarget"
+              "icon": "IbTarget",
+              "aliases": [
+                "ACC"
+              ]
             },
             {
               "id": "AoE",
@@ -514,7 +522,10 @@
               "title": "DC",
               "path": "Core Rules, How to Play/Abbreviations and Terminology/DC.md",
               "fileName": "DC.md",
-              "icon": "FiTarget"
+              "icon": "FiTarget",
+              "aliases": [
+                "Difficulty Class"
+              ]
             },
             {
               "id": "DM",
@@ -552,7 +563,11 @@
               "id": "Lv",
               "title": "Lv",
               "path": "Core Rules, How to Play/Abbreviations and Terminology/Lv.md",
-              "fileName": "Lv.md"
+              "fileName": "Lv.md",
+              "aliases": [
+                "Level",
+                "LV"
+              ]
             },
             {
               "id": "Minion",
@@ -576,7 +591,11 @@
               "id": "PC",
               "title": "PC",
               "path": "Core Rules, How to Play/Abbreviations and Terminology/PC.md",
-              "fileName": "PC.md"
+              "fileName": "PC.md",
+              "aliases": [
+                "PC",
+                "Player Character"
+              ]
             },
             {
               "id": "Potency",
@@ -595,7 +614,10 @@
               "id": "SP",
               "title": "SP",
               "path": "Core Rules, How to Play/Abbreviations and Terminology/SP.md",
-              "fileName": "SP.md"
+              "fileName": "SP.md",
+              "aliases": [
+                "Spell Power"
+              ]
             },
             {
               "id": "Supernatural",
@@ -625,31 +647,49 @@
               "id": "Ability Scores",
               "title": "Ability Scores",
               "path": "Core Rules, How to Play/Ability Scores/Ability Scores.md",
-              "fileName": "Ability Scores.md"
+              "fileName": "Ability Scores.md",
+              "aliases": [
+                "Ability Score"
+              ]
             },
             {
               "id": "Carry Weight",
               "title": "Carry Weight",
               "path": "Core Rules, How to Play/Ability Scores/Carry Weight.md",
-              "fileName": "Carry Weight.md"
+              "fileName": "Carry Weight.md",
+              "aliases": [
+                "Carry Weight"
+              ]
             },
             {
               "id": "CHA",
               "title": "CHA",
               "path": "Core Rules, How to Play/Ability Scores/CHA.md",
-              "fileName": "CHA.md"
+              "fileName": "CHA.md",
+              "aliases": [
+                "Charisma",
+                "CHA"
+              ]
             },
             {
               "id": "DEX",
               "title": "DEX",
               "path": "Core Rules, How to Play/Ability Scores/DEX.md",
-              "fileName": "DEX.md"
+              "fileName": "DEX.md",
+              "aliases": [
+                "Dexterity",
+                "DEX"
+              ]
             },
             {
               "id": "INT",
               "title": "INT",
               "path": "Core Rules, How to Play/Ability Scores/INT.md",
-              "fileName": "INT.md"
+              "fileName": "INT.md",
+              "aliases": [
+                "Intelligence",
+                "INT"
+              ]
             },
             {
               "id": "Luck Check",
@@ -661,19 +701,31 @@
               "id": "LUK",
               "title": "LUK",
               "path": "Core Rules, How to Play/Ability Scores/LUK.md",
-              "fileName": "LUK.md"
+              "fileName": "LUK.md",
+              "aliases": [
+                "Luck",
+                "LUK"
+              ]
             },
             {
               "id": "STR",
               "title": "STR",
               "path": "Core Rules, How to Play/Ability Scores/STR.md",
-              "fileName": "STR.md"
+              "fileName": "STR.md",
+              "aliases": [
+                "Strength",
+                "STR"
+              ]
             },
             {
               "id": "WIS",
               "title": "WIS",
               "path": "Core Rules, How to Play/Ability Scores/WIS.md",
-              "fileName": "WIS.md"
+              "fileName": "WIS.md",
+              "aliases": [
+                "Wisdom",
+                "WIS"
+              ]
             }
           ],
           "expanded": false
@@ -716,7 +768,10 @@
                       "id": "Movement",
                       "title": "Movement",
                       "path": "Core Rules, How to Play/Actions/Action System/Movement/Movement.md",
-                      "fileName": "Movement.md"
+                      "fileName": "Movement.md",
+                      "aliases": [
+                        "Movement"
+                      ]
                     },
                     {
                       "id": "Speed",
@@ -738,7 +793,12 @@
                   "id": "AoO",
                   "title": "AoO",
                   "path": "Core Rules, How to Play/Actions/Action System/AoO.md",
-                  "fileName": "AoO.md"
+                  "fileName": "AoO.md",
+                  "aliases": [
+                    "Attack of Opportunity",
+                    "Provokes",
+                    "AoO"
+                  ]
                 },
                 {
                   "id": "Free Action",
@@ -762,7 +822,11 @@
                   "id": "Instant Action",
                   "title": "Instant Action",
                   "path": "Core Rules, How to Play/Actions/Action System/Instant Action.md",
-                  "fileName": "Instant Action.md"
+                  "fileName": "Instant Action.md",
+                  "aliases": [
+                    "Instant",
+                    "Instantly"
+                  ]
                 },
                 {
                   "id": "Standard Action",
@@ -943,7 +1007,10 @@
                   "id": "Action-Attack",
                   "title": "Action-Attack",
                   "path": "Core Rules, How to Play/Attacking/Combat Maneuvers/Action-Attack.md",
-                  "fileName": "Action-Attack.md"
+                  "fileName": "Action-Attack.md",
+                  "aliases": [
+                    "AA"
+                  ]
                 },
                 {
                   "id": "Combat Maneuver",
@@ -1007,7 +1074,10 @@
               "title": "AS",
               "path": "Core Rules, How to Play/Attacking/AS.md",
               "fileName": "AS.md",
-              "icon": "RiSpeedLine"
+              "icon": "RiSpeedLine",
+              "aliases": [
+                "AS"
+              ]
             },
             {
               "id": "Attack",
@@ -1034,7 +1104,10 @@
               "id": "Damage",
               "title": "Damage",
               "path": "Core Rules, How to Play/Attacking/Damage.md",
-              "fileName": "Damage.md"
+              "fileName": "Damage.md",
+              "aliases": [
+                "lose"
+              ]
             },
             {
               "id": "Dual Wielding",
@@ -1060,7 +1133,11 @@
               "title": "Ranged Attack",
               "path": "Core Rules, How to Play/Attacking/Ranged Attack.md",
               "fileName": "Ranged Attack.md",
-              "icon": "TiBow"
+              "icon": "TiBow",
+              "aliases": [
+                "Ranged",
+                "Range"
+              ]
             },
             {
               "id": "Switching Weapons",
@@ -1072,7 +1149,10 @@
               "id": "Targeted",
               "title": "Targeted",
               "path": "Core Rules, How to Play/Attacking/Targeted.md",
-              "fileName": "Targeted.md"
+              "fileName": "Targeted.md",
+              "aliases": [
+                "Target"
+              ]
             }
           ],
           "expanded": false
@@ -1181,7 +1261,10 @@
               "id": "Short Rest",
               "title": "Short Rest",
               "path": "Core Rules, How to Play/Hitpoints/Short Rest.md",
-              "fileName": "Short Rest.md"
+              "fileName": "Short Rest.md",
+              "tags": [
+                "[]"
+              ]
             },
             {
               "id": "Temp HP",
@@ -1212,7 +1295,12 @@
               "id": "Light Level",
               "title": "Light Level",
               "path": "Core Rules, How to Play/More Rules/Light Level.md",
-              "fileName": "Light Level.md"
+              "fileName": "Light Level.md",
+              "aliases": [
+                "Bright Light",
+                "Dim Light",
+                "Darkness"
+              ]
             },
             {
               "id": "Rounding Numbers",
@@ -1224,7 +1312,11 @@
               "id": "Size and Reach",
               "title": "Size and Reach",
               "path": "Core Rules, How to Play/More Rules/Size and Reach.md",
-              "fileName": "Size and Reach.md"
+              "fileName": "Size and Reach.md",
+              "aliases": [
+                "Size",
+                "Reach"
+              ]
             },
             {
               "id": "Specific Defenses Rule",
@@ -1300,7 +1392,11 @@
               "id": "Saving Throw",
               "title": "Saving Throw",
               "path": "Core Rules, How to Play/Saving Throws/Saving Throw.md",
-              "fileName": "Saving Throw.md"
+              "fileName": "Saving Throw.md",
+              "aliases": [
+                "Save",
+                "Saves"
+              ]
             },
             {
               "id": "Will",
@@ -1354,7 +1450,10 @@
               "id": "Asleep",
               "title": "Asleep",
               "path": "Core Rules, How to Play/Status Effects/Asleep.md",
-              "fileName": "Asleep.md"
+              "fileName": "Asleep.md",
+              "aliases": [
+                "Sleeping"
+              ]
             },
             {
               "id": "Bleed",
@@ -1445,7 +1544,10 @@
               "id": "Fascinated",
               "title": "Fascinated",
               "path": "Core Rules, How to Play/Status Effects/Fascinated.md",
-              "fileName": "Fascinated.md"
+              "fileName": "Fascinated.md",
+              "aliases": [
+                "Fascination"
+              ]
             },
             {
               "id": "Fatigued",
@@ -1493,7 +1595,10 @@
               "id": "Knocked Down",
               "title": "Knocked Down",
               "path": "Core Rules, How to Play/Status Effects/Knocked Down.md",
-              "fileName": "Knocked Down.md"
+              "fileName": "Knocked Down.md",
+              "aliases": [
+                "Knockdown"
+              ]
             },
             {
               "id": "Mindless",
@@ -1511,7 +1616,10 @@
               "id": "Pacified",
               "title": "Pacified",
               "path": "Core Rules, How to Play/Status Effects/Pacified.md",
-              "fileName": "Pacified.md"
+              "fileName": "Pacified.md",
+              "aliases": [
+                "Pacify"
+              ]
             },
             {
               "id": "Prone",
@@ -1578,7 +1686,10 @@
               "title": "Surprised",
               "path": "Core Rules, How to Play/Status Effects/Surprised.md",
               "fileName": "Surprised.md",
-              "icon": "❗"
+              "icon": "❗",
+              "aliases": [
+                "Surprise"
+              ]
             },
             {
               "id": "Taunted",
@@ -1804,7 +1915,10 @@
               "id": "Dismissible",
               "title": "Dismissible",
               "path": "Core Rules, How to Play/Tags/Dismissible.md",
-              "fileName": "Dismissible.md"
+              "fileName": "Dismissible.md",
+              "aliases": [
+                "D"
+              ]
             },
             {
               "id": "Earth",
@@ -2365,7 +2479,10 @@
           "id": "Equipment Slot",
           "title": "Equipment Slot",
           "path": "Equipment/Equipment Slot.md",
-          "fileName": "Equipment Slot.md"
+          "fileName": "Equipment Slot.md",
+          "aliases": [
+            "Equipment Slot"
+          ]
         }
       ],
       "expanded": false
@@ -2895,7 +3012,10 @@
               "id": "Intuition",
               "title": "Intuition",
               "path": "Skills/Insight/Intuition.md",
-              "fileName": "Intuition.md"
+              "fileName": "Intuition.md",
+              "aliases": [
+                "Investigation"
+              ]
             }
           ],
           "expanded": false
@@ -3369,7 +3489,10 @@
               "title": "Stealth",
               "path": "Skills/Stealth/Stealth.md",
               "fileName": "Stealth.md",
-              "icon": "RaHood"
+              "icon": "RaHood",
+              "tags": [
+                "DEX"
+              ]
             }
           ],
           "expanded": false
@@ -3421,7 +3544,11 @@
           "id": "Proficiency",
           "title": "Proficiency",
           "path": "Skills/Proficiency.md",
-          "fileName": "Proficiency.md"
+          "fileName": "Proficiency.md",
+          "aliases": [
+            "Proficient",
+            "Trained"
+          ]
         },
         {
           "id": "Skill",
@@ -5104,7 +5231,10 @@
               "id": "M",
               "title": "M",
               "path": "Techniques/Spellcasting Rules/M.md",
-              "fileName": "M.md"
+              "fileName": "M.md",
+              "aliases": [
+                "Focus"
+              ]
             },
             {
               "id": "S",
@@ -5252,10 +5382,19 @@
       "fileName": "Chinese Folklore Notes.md"
     },
     {
+      "id": "Icon Usage Guide",
+      "title": "Icon Usage Guide",
+      "path": "Icon Usage Guide.md",
+      "fileName": "Icon Usage Guide.md"
+    },
+    {
       "id": "Index",
       "title": "Index",
       "path": "Index.md",
-      "fileName": "Index.md"
+      "fileName": "Index.md",
+      "aliases": [
+        "Mission Statement"
+      ]
     },
     {
       "id": "Placeholder",
