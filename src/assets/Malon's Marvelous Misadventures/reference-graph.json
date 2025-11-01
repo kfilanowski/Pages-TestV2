@@ -1,0 +1,10369 @@
+{
+  "version": "1.0",
+  "outgoingLinks": {
+    "Yokai": [
+      "Fiend"
+    ],
+    "Ifrit": [
+      "AC",
+      "ACC",
+      "AS",
+      "Ablaze",
+      "CHA",
+      "Cleave",
+      "Critical Damage",
+      "DEX",
+      "Damage",
+      "Detonate",
+      "Elemental",
+      "Feat\\",
+      "Flame Surge",
+      "Flame Tempest",
+      "Fortitude",
+      "HP",
+      "Hover",
+      "INT",
+      "Immunity\\",
+      "Initiative",
+      "Jump",
+      "LUK",
+      "LV",
+      "Mana",
+      "Monster Quality\\",
+      "Perception",
+      "Potency",
+      "Reflex",
+      "Resistance\\",
+      "SP\\",
+      "STR",
+      "Self-Immolation",
+      "Senses",
+      "Skill\\",
+      "Speed",
+      "Technique\\",
+      "WIS",
+      "Weakness\\",
+      "Weapon Group",
+      "Will"
+    ],
+    "Straw Puppet": [
+      "AC",
+      "ACC",
+      "AS",
+      "At-Will",
+      "CHA",
+      "Close",
+      "Construct",
+      "Crit",
+      "Critical Damage",
+      "Crush",
+      "DEX",
+      "Damage",
+      "Deception",
+      "Disguise",
+      "Endure",
+      "Feat\\",
+      "Fey",
+      "Fire",
+      "Fortitude",
+      "HP",
+      "INT",
+      "Immunity\\",
+      "Initiative",
+      "Intimidation",
+      "Jump",
+      "LUK",
+      "LV",
+      "Mana",
+      "Monster Quality\\",
+      "Natural Weapon",
+      "Perception",
+      "Pierce",
+      "Potency",
+      "Reflex",
+      "Resistance\\",
+      "SP\\",
+      "STR",
+      "Senses",
+      "Skill\\",
+      "Speed",
+      "Taunt",
+      "Technique\\",
+      "WIS",
+      "Weakness\\",
+      "Weapon Group",
+      "Will"
+    ],
+    "Adversary Kishin": [
+      "AC",
+      "ACC",
+      "AS",
+      "CHA",
+      "Critical Damage",
+      "DEX",
+      "Damage",
+      "Feat\\",
+      "Fiend",
+      "Fortitude",
+      "HP",
+      "Humanoid",
+      "INT",
+      "Immunity\\",
+      "Initiative",
+      "Jump",
+      "LUK",
+      "LV",
+      "Mana",
+      "Monster Quality\\",
+      "Nightvision",
+      "Perception",
+      "Potency",
+      "Reflex",
+      "Resistance\\",
+      "SP\\",
+      "STR",
+      "Senses",
+      "Shaken",
+      "Skill\\",
+      "Speed",
+      "Technique\\",
+      "Undead",
+      "WIS",
+      "Weakness\\",
+      "Weapon Group",
+      "Will",
+      "Zombified"
+    ],
+    "Celestial": [
+      "Extraplanar",
+      "Inevitable"
+    ],
+    "Fiend": [
+      "Yokai"
+    ],
+    "Titan": [
+      "Humanoid"
+    ],
+    "Skeleton, Garden": [
+      "AC",
+      "ACC",
+      "AS",
+      "CHA",
+      "Critical Damage",
+      "Crush",
+      "DEX",
+      "Damage",
+      "Dodge Roll",
+      "Feat\\",
+      "Fortitude",
+      "HP",
+      "Hide in Plain Sight",
+      "Holy",
+      "INT",
+      "Immunity\\",
+      "Initiative",
+      "Jump",
+      "LUK",
+      "LV",
+      "Lunge",
+      "Mana",
+      "Necrotic",
+      "Perception",
+      "Potency",
+      "Reflex",
+      "Resistance\\",
+      "SP\\",
+      "STR",
+      "Senses",
+      "Skill\\",
+      "Speed",
+      "Standard Action",
+      "Technique\\",
+      "Undead",
+      "WIS",
+      "Weakness\\",
+      "Weapon Group",
+      "Will",
+      "grab\\"
+    ],
+    "Bestiary": [
+      "Monster Quality"
+    ],
+    "Backstabber": [
+      "Achievement"
+    ],
+    "Battle Scars": [
+      "Achievement"
+    ],
+    "Critical Pet": [
+      "Achievement"
+    ],
+    "Archetype": [
+      "Class"
+    ],
+    "Character Creation": [
+      "Ability Scores",
+      "Background",
+      "Class",
+      "Equipment",
+      "Feat",
+      "Race",
+      "Random Charts",
+      "Skill"
+    ],
+    "Class": [
+      "Archetype",
+      "Feat",
+      "HP",
+      "LV",
+      "Mana",
+      "Saving Throw",
+      "Skill",
+      "Technique"
+    ],
+    "Progression Outside of Class": [
+      "Achievement",
+      "Boons/Banes",
+      "Feat",
+      "Technique"
+    ],
+    "Aran": [
+      "AS",
+      "Archetype",
+      "Attack",
+      "Defeat",
+      "Elusive",
+      "Fighter",
+      "Fly",
+      "Free Action",
+      "Great Cleave",
+      "Healing",
+      "defeat"
+    ],
+    "Archer": [
+      "ACC",
+      "Archetype",
+      "Arrow Rain",
+      "At-Will",
+      "Buff",
+      "CHA",
+      "Crit",
+      "Critical Damage",
+      "Fighter",
+      "HP",
+      "Mana",
+      "Marksmanship",
+      "Perception",
+      "Saving Throw\\",
+      "Skill\\",
+      "Standard Action",
+      "Survival",
+      "Warfare"
+    ],
+    "Dark Knight": [
+      "ACC",
+      "Acrobatics",
+      "Action-Attack",
+      "Anchored",
+      "AoO",
+      "Archetype",
+      "At-Will",
+      "Attack",
+      "Buff",
+      "CHA",
+      "Concentration",
+      "Defeated",
+      "Elusive",
+      "Fear",
+      "Fighter",
+      "Fortitude",
+      "Free Action",
+      "HP",
+      "Hyper Body",
+      "Insight",
+      "Intimidation",
+      "LV",
+      "Minion",
+      "Perception",
+      "Pierce",
+      "Placeholder",
+      "Proficiency",
+      "Reflex",
+      "Saving Throw",
+      "Shaken",
+      "Standard Action",
+      "Supernatural",
+      "Will",
+      "movement",
+      "reach"
+    ],
+    "Fighter": [
+      "ACC",
+      "AS",
+      "AoO",
+      "At-Will",
+      "Athletics",
+      "Attack",
+      "Attack Action",
+      "Combat Reflexes",
+      "Endure",
+      "Fear",
+      "Fortitude",
+      "Free Action",
+      "Fury",
+      "HP",
+      "Immediate Action",
+      "LV",
+      "Magic Weapons",
+      "Mana",
+      "Ranged Attack",
+      "Recharge",
+      "Reflex",
+      "Roll",
+      "Saving Throw",
+      "Saving Throw\\",
+      "Skill\\",
+      "Standard Action",
+      "Technique",
+      "Warfare",
+      "feat",
+      "resistance",
+      "weapon"
+    ],
+    "Explorer": [
+      "At-Will",
+      "Blessing of Restoration",
+      "Channel Energy",
+      "Cursed",
+      "Damage",
+      "Dispel",
+      "Drained",
+      "Elemental Protection",
+      "Focus Dispel",
+      "Healing",
+      "Healing Touch",
+      "Holy Arrow",
+      "Immediate Action",
+      "LUK",
+      "Limited",
+      "Magic",
+      "Mind-Affecting",
+      "Mystic Door",
+      "Pacified",
+      "Poisoned",
+      "Recharge",
+      "Roll",
+      "Short Rest",
+      "Spell",
+      "Standard Action",
+      "Supernatural",
+      "Teleportation",
+      "Will"
+    ],
+    "Mommy": [
+      "Affliction",
+      "Fear",
+      "Grab",
+      "Healing",
+      "Hug",
+      "Innate Technique",
+      "Mana Burn",
+      "Mom'd Out",
+      "Pacified",
+      "Placeholder",
+      "Recharge",
+      "Sending",
+      "Standard Action",
+      "Stasis",
+      "Supernatural"
+    ],
+    "Healer": [
+      "ACC",
+      "Academy",
+      "Action-Attack",
+      "At-Will",
+      "Bow",
+      "CL",
+      "Channel Energy",
+      "Damage",
+      "Defeated",
+      "Free Action",
+      "HP",
+      "Healing",
+      "Healing Touch",
+      "Holy",
+      "Holy Arrow",
+      "Limited",
+      "Mana",
+      "Medicine",
+      "Ranged Attack",
+      "SP",
+      "Saving Throw",
+      "Saving Throw\\",
+      "Skill\\",
+      "Staff",
+      "Standard Action",
+      "Supernatural",
+      "Temp HP",
+      "Vitalism",
+      "Weapon"
+    ],
+    "Marauder": [
+      "Acrobatics",
+      "Affliction - Hamstringed",
+      "Aid",
+      "AoO",
+      "At-Will",
+      "Athletics",
+      "Combat Maneuver",
+      "Dash",
+      "Hide in Plain Sight",
+      "Speed",
+      "Standard Action",
+      "Stealth",
+      "Surprised",
+      "Swift Action"
+    ],
+    "Monk": [
+      "Attack",
+      "Stunned",
+      "Unarmed"
+    ],
+    "The Boss": [
+      "ACC",
+      "Action-Attack",
+      "AoO",
+      "At-Will",
+      "Attack",
+      "Damage",
+      "FH",
+      "Free Action",
+      "HP",
+      "Immediate Action",
+      "Intimidation",
+      "Magic",
+      "Mana",
+      "Recharge",
+      "Reflex",
+      "Saving Throw\\",
+      "Skill\\",
+      "Temp HP",
+      "Unarmed"
+    ],
+    "Martial Artist": [
+      "AC",
+      "ACC",
+      "AS",
+      "Acrobatics",
+      "Armor",
+      "Combat Maneuver",
+      "Damage",
+      "Feat",
+      "Fighting Style",
+      "Fortitude",
+      "HP",
+      "LV",
+      "Mana",
+      "Martial Arts",
+      "Reflex",
+      "Saving Throw\\",
+      "Shield",
+      "Skill\\",
+      "Speed",
+      "Technique",
+      "Unarmed",
+      "Warfare",
+      "Will"
+    ],
+    "Bandit": [
+      "Action-Attack",
+      "Archetype",
+      "At-Will",
+      "Attack",
+      "Companion",
+      "Crit",
+      "Critical Damage",
+      "DEX",
+      "DM",
+      "HP",
+      "LUK",
+      "Rogue",
+      "Steal",
+      "Summoning",
+      "Summoning Contract",
+      "Surprised",
+      "Teleportation",
+      "Wealth",
+      "crit",
+      "placeholder"
+    ],
+    "Rogue": [
+      "ACC",
+      "At-Will",
+      "Attack",
+      "Blinded",
+      "Buff",
+      "CHA",
+      "Crit",
+      "Critical Damage",
+      "Dark Sight",
+      "Detect",
+      "Elusive",
+      "HP",
+      "Haste",
+      "Hide",
+      "Immediate Action",
+      "Invisible",
+      "Jump",
+      "LUK",
+      "LV",
+      "Luck Check",
+      "Mana",
+      "Recharge",
+      "Reflex",
+      "Rogue Talent",
+      "Roll",
+      "Saving Throw\\",
+      "Skill",
+      "Skill\\",
+      "Speed",
+      "Spell",
+      "Standard Action",
+      "Stealth",
+      "Surprised",
+      "Swift Action"
+    ],
+    "Spirit Walker": [
+      "ACC",
+      "Adversary Kishin",
+      "Archetype",
+      "HP",
+      "Invocation",
+      "Mana",
+      "Saving Throw\\",
+      "Skill\\",
+      "Summoner"
+    ],
+    "AP": [
+      "Burrow",
+      "Carry Weight",
+      "Grab",
+      "Night Vision",
+      "Polymorph",
+      "Speed",
+      "Staggered"
+    ],
+    "Avatar": [
+      "ACC",
+      "AP",
+      "HP",
+      "Mana",
+      "Saving Throw\\",
+      "Skill\\"
+    ],
+    "Summoner": [
+      "ACC",
+      "Arcana",
+      "At-Will",
+      "Avatar",
+      "Companion",
+      "Conjuration",
+      "Defeated",
+      "Drained",
+      "HP",
+      "Immediate Action",
+      "Limited",
+      "Mana",
+      "Preparing Techniques",
+      "Proficiency",
+      "Recharge",
+      "Saving Throw\\",
+      "Skill\\",
+      "Standard Action",
+      "Summoning",
+      "Summoning Contract",
+      "Summoning Sickness",
+      "Supernatural",
+      "Technique",
+      "Teleportation"
+    ],
+    "Concealment": [
+      "Circumstance",
+      "Dark Vision",
+      "Darkness",
+      "Partial Concealment",
+      "Senses",
+      "Stealth",
+      "Surprised",
+      "Total Concealment"
+    ],
+    "Cover": [
+      "AC",
+      "AoE",
+      "Circumstance",
+      "Improved Cover",
+      "Ranged Attack",
+      "Reflex",
+      "Total Cover"
+    ],
+    "Improved Cover": [
+      "AC",
+      "AoE",
+      "Circumstance",
+      "Cover",
+      "Ranged Attack",
+      "Reflex",
+      "Submerged"
+    ],
+    "Partial Concealment": [
+      "AC",
+      "Circumstance",
+      "Concealment"
+    ],
+    "Total Concealment": [
+      "AC",
+      "Blinded",
+      "Circumstance",
+      "Concealment",
+      "Invisible"
+    ],
+    "Total Cover": [
+      "AoE",
+      "Circumstance",
+      "Cover",
+      "Ranged Attack",
+      "Targeted",
+      "Untargetable"
+    ],
+    "Abbreviations": [
+      "AC",
+      "ACC",
+      "AS",
+      "AoE",
+      "AoO",
+      "CC",
+      "CHA",
+      "Crit",
+      "DC",
+      "DEX",
+      "DM",
+      "Dismissible",
+      "HP",
+      "INT",
+      "LUK",
+      "LV",
+      "NPC",
+      "PC",
+      "STR",
+      "WIS"
+    ],
+    "AC": [
+      "Armor",
+      "Attack",
+      "Circumstance",
+      "Combat Maneuver",
+      "DEX",
+      "Damage",
+      "LUK",
+      "LV"
+    ],
+    "ACC": [
+      "AC",
+      "Attack",
+      "Class",
+      "DEX",
+      "Lv"
+    ],
+    "AoE": [
+      "Cover"
+    ],
+    "Circumstance": [
+      "Cover",
+      "Status"
+    ],
+    "DC": [
+      "Roll"
+    ],
+    "DM": [
+      "NPC"
+    ],
+    "DR": [
+      "Damage",
+      "Resistance"
+    ],
+    "FH": [
+      "Defeated",
+      "HP"
+    ],
+    "Flanking": [
+      "ACC",
+      "Circumstance",
+      "Threaten"
+    ],
+    "Initiative": [
+      "Deception",
+      "Hands",
+      "PC",
+      "Reflex",
+      "Stealth"
+    ],
+    "Lv": [
+      "Attack",
+      "Roll",
+      "Saving Throw",
+      "Skill"
+    ],
+    "Minion": [
+      "circumstance"
+    ],
+    "Natural": [
+      "Roll"
+    ],
+    "NPC": [
+      "DM",
+      "PC"
+    ],
+    "PC": [
+      "DM"
+    ],
+    "Potency": [
+      "DC",
+      "LUK",
+      "LV"
+    ],
+    "Roll": [
+      "Natural"
+    ],
+    "SP": [
+      "INT",
+      "Spell",
+      "Staff"
+    ],
+    "Supernatural": [
+      "Spell"
+    ],
+    "Threaten": [
+      "AoO"
+    ],
+    "XP": [
+      "Affliction",
+      "Crafting"
+    ],
+    "Ability Scores": [
+      "CHA",
+      "DEX",
+      "INT",
+      "LUK",
+      "PC",
+      "STR",
+      "WIS"
+    ],
+    "Carry Weight": [
+      "STR\\",
+      "Size and Reach\\"
+    ],
+    "CHA": [
+      "Companion"
+    ],
+    "DEX": [
+      "AC",
+      "ACC",
+      "Initiative",
+      "Jump",
+      "Reflex",
+      "Speed"
+    ],
+    "INT": [
+      "Language",
+      "Linguistics",
+      "Proficiency",
+      "SP",
+      "Skill",
+      "Technique"
+    ],
+    "LUK": [
+      "AC",
+      "Critical Damage",
+      "Immediate Action",
+      "Luck Check",
+      "Potency",
+      "Roll"
+    ],
+    "STR": [
+      "ACC",
+      "Carry Weight",
+      "Combat Maneuver",
+      "Damage",
+      "Fortitude"
+    ],
+    "WIS": [
+      "Feat",
+      "Mana",
+      "Will",
+      "XP"
+    ],
+    "Burrow": [
+      "AoO",
+      "Movement",
+      "Speed",
+      "Swift Action",
+      "Threaten"
+    ],
+    "Difficult Terrain": [
+      "Circumstance",
+      "fly",
+      "movement"
+    ],
+    "Fly": [
+      "AC",
+      "AoE",
+      "AoO",
+      "Attack",
+      "Clumsy",
+      "Entangled",
+      "Grounded",
+      "Movement",
+      "Ranged Attack",
+      "Speed",
+      "Swift Action",
+      "Threaten"
+    ],
+    "Hover": [
+      "AC",
+      "AoE",
+      "Attack",
+      "Clumsy",
+      "Difficult Terrain",
+      "Entangled",
+      "Grounded",
+      "Movement",
+      "Ranged Attack",
+      "Speed"
+    ],
+    "Movement": [
+      "Speed"
+    ],
+    "Speed": [
+      "Fly"
+    ],
+    "Action System": [
+      "AoO",
+      "Fly",
+      "Free Action",
+      "Full-Round Action",
+      "Immediate Action",
+      "Instant Action",
+      "Movement",
+      "Standard Action",
+      "Swift Action"
+    ],
+    "AoO": [
+      "Attack",
+      "Instant Action"
+    ],
+    "Free Action": [
+      "Delay",
+      "Monster Lore",
+      "Swap Item"
+    ],
+    "Standard Action": [
+      "Administer Potion",
+      "Aid",
+      "Attack Action",
+      "Carry",
+      "Charge",
+      "Dash",
+      "Disengage",
+      "Prepare",
+      "Total Defense"
+    ],
+    "Swift Action": [
+      "Hide",
+      "Jump",
+      "Recharge Abilities",
+      "Use Potion"
+    ],
+    "Delay": [
+      "Initiative"
+    ],
+    "Swap Item": [
+      "Free Action",
+      "Swift Action"
+    ],
+    "Fall Prone": [
+      "Instant Action",
+      "Knocked Down"
+    ],
+    "Administer Potion": [
+      "Immediate Action",
+      "Standard Action"
+    ],
+    "Aid": [
+      "AC",
+      "ACC",
+      "Athletics",
+      "Clumsy",
+      "Entangled",
+      "Knocked Down",
+      "Saving Throw",
+      "Shaken",
+      "Sickened",
+      "Standard Action"
+    ],
+    "Attack Action": [
+      "AS",
+      "Action-Attack",
+      "Combat Maneuver",
+      "Spell",
+      "Standard Action",
+      "Technique"
+    ],
+    "Disengage": [
+      "Elusive"
+    ],
+    "Total Defense": [
+      "AC",
+      "AoO",
+      "Saving Throw"
+    ],
+    "Jump": [
+      "Athletics",
+      "DEX",
+      "Dash",
+      "Difficult Terrain",
+      "STR",
+      "Speed",
+      "movement"
+    ],
+    "Recharge Abilities": [
+      "Recharge"
+    ],
+    "Alternative Win Conditions": [
+      "Restraint",
+      "Surrender and Morale",
+      "Truce"
+    ],
+    "Action-Attack": [
+      "AS",
+      "Standard Action"
+    ],
+    "Combat Maneuver": [
+      "AC",
+      "Action-Attack",
+      "DEX",
+      "Dirty Trick",
+      "Disarm",
+      "Drag",
+      "Feint",
+      "Fell",
+      "Grab",
+      "STR",
+      "Shove",
+      "Steal"
+    ],
+    "Disarm": [
+      "AoO",
+      "Movement",
+      "Standard Action"
+    ],
+    "Feint": [
+      "ACC",
+      "Attack",
+      "Combat Maneuver"
+    ],
+    "Fell": [
+      "Knocked Down"
+    ],
+    "Grab": [
+      "Action-Attack",
+      "Attack",
+      "Entangled",
+      "Roll"
+    ],
+    "Steal": [
+      "ACC",
+      "Accessory",
+      "Equipment",
+      "Hands"
+    ],
+    "AS": [
+      "Action-Attack",
+      "Attack Action",
+      "Spell"
+    ],
+    "Attack": [
+      "ACC",
+      "Crit",
+      "Critical Damage",
+      "Roll"
+    ],
+    "Crit": [
+      "AC",
+      "Attack",
+      "Critical Damage"
+    ],
+    "Critical Damage": [
+      "Crit",
+      "Damage",
+      "HP",
+      "LUK"
+    ],
+    "Damage": [
+      "Cold",
+      "Crush",
+      "Fire",
+      "HP",
+      "Holy",
+      "Lightning",
+      "Lv",
+      "Magic",
+      "Necrotic",
+      "Pierce",
+      "Psychic",
+      "SP",
+      "STR",
+      "Slash",
+      "Spell",
+      "Technique",
+      "Weapon"
+    ],
+    "Dual Wielding": [
+      "AS",
+      "Unarmed Strike"
+    ],
+    "Line of Effect": [
+      "Targeted",
+      "Total Cover"
+    ],
+    "Offense Calculator": [
+      "ACC\\",
+      "AC\\",
+      "AS\\",
+      "Crit\\",
+      "Critical Damage",
+      "HP",
+      "STR",
+      "Weapon"
+    ],
+    "Ranged Attack": [
+      "AoO",
+      "Attack",
+      "Close Range",
+      "Cover",
+      "Roll",
+      "Threaten",
+      "Wide Range"
+    ],
+    "Switching Weapons": [
+      "Free Action",
+      "Swift Action"
+    ],
+    "Targeted": [
+      "Attack",
+      "Line of Effect",
+      "Roll"
+    ],
+    "Death and Resurrection": [
+      "Ashen One",
+      "Cloning Device",
+      "Limited Resurrection",
+      "Tombstone",
+      "Withers"
+    ],
+    "Defeat": [
+      "Crawl",
+      "Defeated",
+      "HP",
+      "Recovering from Defeat"
+    ],
+    "Healing": [
+      "HP",
+      "Temp HP"
+    ],
+    "HP": [
+      "Class",
+      "Damage",
+      "Defeated",
+      "Feat",
+      "Race"
+    ],
+    "Immunity": [
+      "Damage"
+    ],
+    "Long Rest": [
+      "HP",
+      "Natural Healing",
+      "Short Rest"
+    ],
+    "Natural Healing": [
+      "Food",
+      "HP",
+      "Healing",
+      "Limited",
+      "Long Rest",
+      "Mana",
+      "Short Rest"
+    ],
+    "Recovering from Defeat": [
+      "Damage",
+      "Defeated",
+      "Drained",
+      "HP",
+      "LUK",
+      "Roll",
+      "STR",
+      "Staggered"
+    ],
+    "Resistance": [
+      "Damage"
+    ],
+    "Rest": [
+      "Long Rest",
+      "Short Rest"
+    ],
+    "Short Rest": [
+      "Natural Healing",
+      "Preparing Techniques"
+    ],
+    "Temp HP": [
+      "HP"
+    ],
+    "Weakness": [
+      "Damage",
+      "Saving Throw"
+    ],
+    "Fall Damage": [
+      "AC",
+      "Fell",
+      "Jump",
+      "Knocked Down"
+    ],
+    "Light Level": [
+      "Partial Concealment",
+      "Total Concealment"
+    ],
+    "Specific Defenses Rule": [
+      "AC",
+      "Fell",
+      "Fire Blast",
+      "Low Sweep"
+    ],
+    "Limited": [
+      "Mana",
+      "Spell",
+      "Technique"
+    ],
+    "Mana Burn": [
+      "Long Rest",
+      "Mana"
+    ],
+    "Mana": [
+      "At-Will",
+      "LV",
+      "Limited",
+      "Mana Burn",
+      "Recharge",
+      "Recharge Abilities",
+      "Rest",
+      "Spell",
+      "Techniques"
+    ],
+    "Recharge": [
+      "Recharge Abilities"
+    ],
+    "Fortitude": [
+      "Class",
+      "Disease",
+      "LV",
+      "Poison",
+      "Roll",
+      "STR",
+      "Saving Throw"
+    ],
+    "Reflex": [
+      "Area Effect",
+      "Class",
+      "DEX",
+      "LV",
+      "Roll",
+      "Saving Throw",
+      "Trap"
+    ],
+    "Saving Throw": [
+      "Attack",
+      "DC",
+      "DEX",
+      "Fortitude",
+      "Lv",
+      "Reflex",
+      "Roll",
+      "STR",
+      "WIS",
+      "Will"
+    ],
+    "Will": [
+      "Class",
+      "Fear",
+      "Illusion",
+      "LV",
+      "Roll",
+      "Saving Throw",
+      "WIS"
+    ],
+    "Affliction - Hamstringed": [
+      "Affliction"
+    ],
+    "Affliction": [
+      "Curse"
+    ],
+    "Ablaze": [
+      "AC",
+      "Damage",
+      "Knocked Down",
+      "Reflex"
+    ],
+    "Anchored": [
+      "Teleportation"
+    ],
+    "Asleep": [
+      "Aid",
+      "Knocked Down",
+      "Perception",
+      "Surprised"
+    ],
+    "Bleed": [
+      "CL",
+      "DC",
+      "HP",
+      "Medicine",
+      "Potency"
+    ],
+    "Blinded": [
+      "Perception",
+      "Surprised",
+      "Total Concealment"
+    ],
+    "Blurred Vision": [
+      "Partial Concealment",
+      "Perception"
+    ],
+    "Charmed": [
+      "CHA",
+      "Skill"
+    ],
+    "Chilled": [
+      "AC",
+      "Damage",
+      "Resistance",
+      "Speed"
+    ],
+    "Clumsy": [
+      "AC",
+      "Fly",
+      "Hover",
+      "Reflex",
+      "Shaken"
+    ],
+    "Confused": [
+      "Companion",
+      "Damage",
+      "LUK",
+      "STR",
+      "Standard Action"
+    ],
+    "Cursed": [
+      "Medicine"
+    ],
+    "Dazed": [
+      "AoO",
+      "Speed",
+      "Staggered",
+      "Standard Action"
+    ],
+    "Defeated": [
+      "Aid",
+      "Defeat"
+    ],
+    "Drained": [
+      "HP",
+      "Potency",
+      "Rest",
+      "Roll"
+    ],
+    "Entangled": [
+      "AC",
+      "Athletics",
+      "Speed"
+    ],
+    "Fascinated": [
+      "Perception",
+      "Saving Throw"
+    ],
+    "Fatigued": [
+      "Acrobatics",
+      "Athletics",
+      "Charge",
+      "Dash",
+      "Jump",
+      "Short Rest"
+    ],
+    "Frightened": [
+      "ACC"
+    ],
+    "Glowing": [
+      "AC",
+      "Ablaze",
+      "Light Level",
+      "Stealth"
+    ],
+    "Grounded": [
+      "AoO",
+      "Fall Damage",
+      "Hover"
+    ],
+    "Held Down": [
+      "Prone"
+    ],
+    "Invincible": [
+      "HP"
+    ],
+    "Invisible": [
+      "Stealth",
+      "Total Concealment"
+    ],
+    "Knocked Down": [
+      "AoO",
+      "Held Down",
+      "Movement",
+      "Prone"
+    ],
+    "Mindless": [
+      "Mind-Affecting"
+    ],
+    "Necrosed": [
+      "HP",
+      "Healing",
+      "Temp HP"
+    ],
+    "Prone": [
+      "AC",
+      "ACC",
+      "AoO",
+      "Ranged Attack"
+    ],
+    "Shaken": [
+      "Potency",
+      "Will"
+    ],
+    "Sickened": [
+      "ACC",
+      "Fortitude",
+      "Shaken"
+    ],
+    "Silenced": [
+      "Spell"
+    ],
+    "Siphoned": [
+      "Concentration",
+      "Spell",
+      "Supernatural"
+    ],
+    "Staggered": [
+      "Speed",
+      "Standard Action",
+      "Swift Action"
+    ],
+    "Stasis": [
+      "Invincible",
+      "Unassailable",
+      "Unstoppable",
+      "Untargetable"
+    ],
+    "Status": [
+      "Ablaze",
+      "Affliction",
+      "Anchored",
+      "Asleep",
+      "Bleed",
+      "Blinded",
+      "Blurred Vision",
+      "CC",
+      "Charmed",
+      "Chilled",
+      "Clumsy",
+      "Confused",
+      "Cursed",
+      "Dazed",
+      "Defeated",
+      "Dominated",
+      "Drained",
+      "Entangled",
+      "Entombed",
+      "Fascinated",
+      "Fatigued",
+      "Frightened",
+      "Glowing",
+      "Grounded",
+      "Held Down",
+      "Invincible",
+      "Invisible",
+      "Knocked Down",
+      "Mindless",
+      "Necrosed",
+      "Pacified",
+      "Prone",
+      "Shaken",
+      "Sickened",
+      "Silenced",
+      "Siphoned",
+      "Staggered",
+      "Stasis",
+      "Stunned",
+      "Submerged",
+      "Surprised",
+      "Taunted",
+      "Time Out",
+      "Unassailable",
+      "Unstoppable",
+      "Untargetable",
+      "Wet"
+    ],
+    "Stunned": [
+      "Dazed",
+      "Surprised"
+    ],
+    "Submerged": [
+      "Aquatic Combat",
+      "Improved Cover"
+    ],
+    "Surprised": [
+      "Circumstance",
+      "Feint",
+      "Initiative",
+      "Stealth"
+    ],
+    "Taunted": [
+      "Spell",
+      "Supernatural"
+    ],
+    "Unassailable": [
+      "Circumstance",
+      "Status"
+    ],
+    "Wet": [
+      "Damage"
+    ],
+    "Cold": [
+      "Damage",
+      "Tag"
+    ],
+    "Crush": [
+      "Damage",
+      "Tag"
+    ],
+    "Fire": [
+      "Damage",
+      "Tag"
+    ],
+    "Holy": [
+      "Damage",
+      "Fiend",
+      "Tag",
+      "Undead"
+    ],
+    "Lightning": [
+      "Damage",
+      "Tag"
+    ],
+    "Magic": [
+      "Damage",
+      "Tag"
+    ],
+    "Necrotic": [
+      "Damage",
+      "Tag",
+      "Undead"
+    ],
+    "Pierce": [
+      "Damage",
+      "Tag"
+    ],
+    "Psychic": [
+      "Damage",
+      "Mindless",
+      "Tag"
+    ],
+    "Slash": [
+      "Damage",
+      "Tag"
+    ],
+    "Illusion": [
+      "Mind-Affecting"
+    ],
+    "Air": [
+      "Damage"
+    ],
+    "Bond": [
+      "Buff"
+    ],
+    "Buff": [
+      "Bond"
+    ],
+    "Caloric": [
+      "Food"
+    ],
+    "Charm": [
+      "Mind-Affecting"
+    ],
+    "Companion": [
+      "CHA",
+      "Initiative"
+    ],
+    "Concentration": [
+      "Asleep",
+      "Defeated",
+      "Instant Action",
+      "Stunned"
+    ],
+    "Curse": [
+      "Medicine"
+    ],
+    "Dismissible": [
+      "Instant Action",
+      "Standard Action"
+    ],
+    "Earth": [
+      "Damage"
+    ],
+    "Elusive": [
+      "AoO"
+    ],
+    "Emotion": [
+      "Mind-Affecting"
+    ],
+    "Fear": [
+      "Frightened",
+      "Mind-Affecting",
+      "Shaken"
+    ],
+    "Figment": [
+      "Will"
+    ],
+    "Light": [
+      "Light Level"
+    ],
+    "Martial": [
+      "ACC",
+      "Damage",
+      "On-Hit Effect",
+      "Weapon"
+    ],
+    "Mind-Affecting": [
+      "Charm",
+      "Fear",
+      "Mindless"
+    ],
+    "Multi-Strike": [
+      "Action-Attack"
+    ],
+    "Pattern": [
+      "Blurred Vision",
+      "Fascinated",
+      "Figment",
+      "Mind-Affecting"
+    ],
+    "Persistent": [
+      "Defeated"
+    ],
+    "Polymorph": [
+      "Status"
+    ],
+    "Subtle": [
+      "DC",
+      "Detect",
+      "Identify Spell",
+      "Perception"
+    ],
+    "Summoning": [
+      "Defeated",
+      "Minion",
+      "Summoning Contract",
+      "Tag",
+      "Technique"
+    ],
+    "Tag": [
+      "Abnegation",
+      "Air",
+      "Bond",
+      "Buff",
+      "Caloric",
+      "Charm",
+      "Companion",
+      "Concentration",
+      "Conjuration",
+      "Contingent",
+      "Curse",
+      "Damage",
+      "Darkness",
+      "Dismissible",
+      "Divination",
+      "Earth",
+      "Elusive",
+      "Evocation",
+      "Fear",
+      "Figment",
+      "Glamer",
+      "Illusion",
+      "Language-Dependent",
+      "Light",
+      "Martial",
+      "Mind-Affecting",
+      "Multi-Strike",
+      "Pattern",
+      "Persistent",
+      "Polymorph",
+      "Scrying",
+      "Sigil",
+      "Subtle",
+      "Teleportation",
+      "Transmutation",
+      "Water"
+    ],
+    "Water": [
+      "Damage"
+    ],
+    "Rolling Dice and Statistics": [
+      "AC",
+      "Attack",
+      "DC",
+      "Roll",
+      "Saving Throw",
+      "Skill"
+    ],
+    "Armor": [
+      "AC",
+      "Equipment Slot",
+      "Jump",
+      "STR",
+      "Speed",
+      "Stealth"
+    ],
+    "Shield": [
+      "AC",
+      "Action System",
+      "Armor",
+      "At-Will",
+      "Attack",
+      "Cover",
+      "Damage",
+      "Immediate Action",
+      "Roll",
+      "STR",
+      "Swift Action",
+      "Technique",
+      "Total Cover",
+      "Weapon Group"
+    ],
+    "Family Man": [
+      "Background"
+    ],
+    "Noble": [
+      "Background"
+    ],
+    "Tradesman": [
+      "Alchemist Fire",
+      "Background",
+      "Bloodblock",
+      "Wealth",
+      "armor",
+      "love potion",
+      "shield",
+      "troll oil",
+      "weapon"
+    ],
+    "Wanderer": [
+      "Background",
+      "rock"
+    ],
+    "Crafting": [
+      "Cleaving Axe",
+      "Cooking",
+      "Economics",
+      "Food",
+      "Labor",
+      "Mana Crystal",
+      "Resources",
+      "Weapon"
+    ],
+    "Labor": [
+      "Economics",
+      "Mana Crystal",
+      "Resources",
+      "crafting"
+    ],
+    "Mana Crystal": [
+      "Crafting",
+      "Mana",
+      "Mana Donation",
+      "Ritual"
+    ],
+    "Resources": [
+      "Butcher",
+      "Crafting",
+      "Loot"
+    ],
+    "Common Prices": [
+      "Armor",
+      "LV",
+      "Shield",
+      "Weapon Group\\"
+    ],
+    "Mana Donation": [
+      "Affliction",
+      "Mana",
+      "Mana Burn",
+      "Mana Crystal",
+      "Mana Starvation"
+    ],
+    "The Cost of Living": [
+      "Forage"
+    ],
+    "The Value of Gold": [
+      "Economics",
+      "The Cost of Living"
+    ],
+    "Food": [
+      "Cooking",
+      "Crafting",
+      "HP",
+      "Ingredients",
+      "Long Rest",
+      "Potion",
+      "Short Rest"
+    ],
+    "Ingredients": [
+      "Butcher",
+      "Cooking",
+      "Food",
+      "Forage",
+      "Loot"
+    ],
+    "Enchanting": [
+      "Crafting",
+      "Upgrade Slot"
+    ],
+    "Scroll for Weapon Accuracy": [
+      "ACC",
+      "Infusion Scroll",
+      "Weapon"
+    ],
+    "Infusion Scroll": [
+      "Enchanting"
+    ],
+    "Upgrade Slot": [
+      "Armor",
+      "Enchanting",
+      "Infusion Scroll",
+      "Magic Item",
+      "Weapon"
+    ],
+    "Property": [
+      "Mundane Item"
+    ],
+    "Tools": [
+      "Mundane Item"
+    ],
+    "Torch": [
+      "Mundane Item"
+    ],
+    "Adamant Armor": [
+      "Adamant",
+      "Armor",
+      "Crafting",
+      "Crush",
+      "DC",
+      "DR",
+      "Fire",
+      "Pierce",
+      "Resistance",
+      "Slash",
+      "Unbreakable Body"
+    ],
+    "Full Plate Armor": [
+      "Armor",
+      "Crafting",
+      "Resistance",
+      "Slash"
+    ],
+    "Cleaving Axe": [
+      "ACC",
+      "AS",
+      "Axe",
+      "Crafting",
+      "Damage",
+      "Great Cleave",
+      "Orc",
+      "Upgrade Slot\\",
+      "Weapon Qualities"
+    ],
+    "Longbow": [
+      "Focus",
+      "Technique"
+    ],
+    "Ammunition": [
+      "Damage",
+      "Instant Action",
+      "Weapon Group",
+      "Weapon Qualities"
+    ],
+    "Natural Weapon": [
+      "Weapon Group"
+    ],
+    "Staff": [
+      "S",
+      "Weapon Group"
+    ],
+    "Axe": [
+      "AS",
+      "Basic Weapon",
+      "Damage",
+      "Drag",
+      "Thrown",
+      "Weapon",
+      "Weapon Qualities"
+    ],
+    "Blade": [
+      "AS",
+      "Basic Weapon",
+      "Damage",
+      "Weapon",
+      "Weapon Qualities"
+    ],
+    "Bludgeon": [
+      "AS",
+      "Basic Weapon",
+      "Damage",
+      "Weapon",
+      "Weapon Qualities"
+    ],
+    "Bow": [
+      "AS",
+      "Ammunition",
+      "Basic Weapon",
+      "Damage",
+      "Weapon",
+      "Weapon Qualities"
+    ],
+    "Close": [
+      "AS",
+      "Basic Weapon",
+      "Damage",
+      "Dual Wielding",
+      "Natural Weapon",
+      "Unarmed",
+      "Weapon",
+      "Weapon Qualities"
+    ],
+    "Dagger": [
+      "AS",
+      "Basic Weapon",
+      "Damage",
+      "Hands",
+      "Thrown",
+      "Weapon",
+      "Weapon Qualities"
+    ],
+    "Polearm": [
+      "AS",
+      "Basic Weapon",
+      "Damage",
+      "Fell",
+      "Weapon",
+      "Weapon Qualities"
+    ],
+    "Thrown": [
+      "AC",
+      "AS",
+      "Ammunition",
+      "Basic Weapon",
+      "Damage",
+      "Full-Round Action",
+      "Weapon",
+      "Weapon Qualities"
+    ],
+    "Thrust": [
+      "AS",
+      "Basic Weapon",
+      "Damage",
+      "Thrown",
+      "Weapon",
+      "Weapon Qualities"
+    ],
+    "Trigger": [
+      "AS",
+      "Ammunition",
+      "Basic Weapon",
+      "Damage",
+      "STR",
+      "Weapon",
+      "Weapon Qualities"
+    ],
+    "Basic Weapon": [
+      "Upgrade Slot",
+      "Weapon",
+      "Weapon Group",
+      "Weapon Qualities"
+    ],
+    "Close Range": [
+      "ACC",
+      "Range",
+      "Ranged Attack",
+      "Weapon"
+    ],
+    "Exotic Weapon": [
+      "Weapon Group"
+    ],
+    "Range": [
+      "Close Range",
+      "Wide Range"
+    ],
+    "Special Attack": [
+      "Class and Weapon Abilities",
+      "Innate Technique",
+      "Limited",
+      "Mana",
+      "Recharge",
+      "Technique",
+      "Weapon"
+    ],
+    "Unarmed": [
+      "AS",
+      "Crush",
+      "Damage",
+      "Dual Wielding",
+      "Natural Weapon"
+    ],
+    "Weapon Group": [
+      "Ammunition",
+      "Axe",
+      "Blade",
+      "Bludgeon",
+      "Bow",
+      "Close",
+      "Dagger",
+      "Natural Weapon",
+      "Polearm",
+      "Shield",
+      "Special Attack",
+      "Staff",
+      "Technique",
+      "Thrown",
+      "Thrust",
+      "Trigger",
+      "Weapon"
+    ],
+    "Weapon Qualities": [
+      "AS",
+      "Attack",
+      "Combat Maneuver",
+      "Damage",
+      "Dual Wielding",
+      "Innate Technique",
+      "Roll",
+      "Size and Reach\\",
+      "Skill",
+      "Standard Action",
+      "Weapon"
+    ],
+    "Weapon": [
+      "AS",
+      "Action-Attack",
+      "Ammunition",
+      "Axe",
+      "Blade",
+      "Bludgeon",
+      "Bow",
+      "Close",
+      "Dagger",
+      "Damage",
+      "Dual Wielding",
+      "Exotic Weapon",
+      "Instant Action",
+      "Mana",
+      "Natural Weapon",
+      "On-Hit Effect\\",
+      "Polearm",
+      "Range",
+      "STR",
+      "Shield",
+      "Special Attack",
+      "Staff",
+      "Technique",
+      "Techniques",
+      "Thrown",
+      "Thrust",
+      "Trigger",
+      "Weapon Group",
+      "Weapon Qualities"
+    ],
+    "Wide Range": [
+      "ACC",
+      "Range",
+      "Weapon"
+    ],
+    "Equipment Slot": [
+      "AC",
+      "Accessory",
+      "Armor",
+      "Boots",
+      "Gloves",
+      "Headgear",
+      "Humanoid",
+      "STR"
+    ],
+    "Cerberus Style": [
+      "Attack",
+      "Feat",
+      "Fighting Style",
+      "Flanking",
+      "Swift Action",
+      "Unarmed"
+    ],
+    "Demon Style": [
+      "Attack",
+      "Charge",
+      "Feat",
+      "Fighting Style",
+      "Swift Action",
+      "Unarmed"
+    ],
+    "Dragon Style": [
+      "Damage",
+      "Feat",
+      "Fighting Style",
+      "Magic",
+      "Reflex",
+      "STR",
+      "Swift Action"
+    ],
+    "Fighting Style": [
+      "Feat",
+      "Passive",
+      "Unarmed"
+    ],
+    "Grabbing Style": [
+      "Entangled",
+      "Feat",
+      "Fighting Style",
+      "Grab",
+      "Speed",
+      "Swift Action"
+    ],
+    "Monkey Style": [
+      "AC",
+      "Attack",
+      "Cover",
+      "Knocked Down",
+      "Movement",
+      "Speed",
+      "Swift Action",
+      "Unarmed"
+    ],
+    "Snake Style": [
+      "AoO",
+      "Attack",
+      "Elusive",
+      "Feat",
+      "Fighting Style",
+      "Immediate Action",
+      "Roll",
+      "Unarmed"
+    ],
+    "Antagonize": [
+      "Deception",
+      "Demoralize",
+      "Feat",
+      "Intimidation",
+      "Shaken",
+      "Swift Action",
+      "Taunted"
+    ],
+    "Back to the Wall": [
+      "Feat",
+      "flanking"
+    ],
+    "Blind Fight": [
+      "AC",
+      "Blinded",
+      "Concealment",
+      "Feat",
+      "Surprised"
+    ],
+    "Bodyguard": [
+      "Feat",
+      "Instant Action",
+      "movement"
+    ],
+    "Bonded Weapons": [
+      "Feat",
+      "disarm",
+      "teleportation",
+      "weapon"
+    ],
+    "Clustered Blows": [
+      "DR",
+      "Feat",
+      "attack"
+    ],
+    "Combat Reflexes": [
+      "AoO",
+      "Feat",
+      "threaten"
+    ],
+    "Dimensional Reflexes": [
+      "AoO",
+      "Crit",
+      "Feat",
+      "Teleportation"
+    ],
+    "Elemental Adept": [
+      "Damage",
+      "Feat",
+      "Immunity",
+      "Resistance"
+    ],
+    "Endurance": [
+      "Defeated",
+      "Feat",
+      "HP",
+      "Recovering from Defeat",
+      "Roll",
+      "STR",
+      "attack"
+    ],
+    "Fan Club": [
+      "CHA",
+      "Feat",
+      "LV",
+      "Minion",
+      "companion"
+    ],
+    "Fearsome Finisher": [
+      "Defeat",
+      "Demoralize",
+      "Feat",
+      "Frightened",
+      "Instant Action",
+      "Intimidation",
+      "Proficiency"
+    ],
+    "Fleet Footwork": [
+      "Attack",
+      "DEX",
+      "Elusive",
+      "Feat",
+      "speed"
+    ],
+    "Ghost Buster": [
+      "Feat",
+      "Incorporeal",
+      "Proficiency",
+      "Religion"
+    ],
+    "Longshot": [
+      "Feat",
+      "Range",
+      "Ranged Attack",
+      "speed"
+    ],
+    "Maneuver Adept": [
+      "ACC",
+      "Action-Attack",
+      "AoO",
+      "Attack",
+      "Combat Maneuver",
+      "Feat"
+    ],
+    "Quickstep": [
+      "DEX",
+      "Feat",
+      "elusive",
+      "speed"
+    ],
+    "Spellbreaker": [
+      "Arcana",
+      "Attack",
+      "Concentration",
+      "Feat",
+      "Fortitude",
+      "Proficiency",
+      "Ranged Attack"
+    ],
+    "Escape Route": [
+      "Teamwork Feat",
+      "elusive"
+    ],
+    "Move As One": [
+      "Escape Route",
+      "Immediate Action",
+      "Shield Brothers",
+      "Teamwork Feat",
+      "movement"
+    ],
+    "Pack Tactics": [
+      "Flanking",
+      "Teamwork Feat",
+      "threaten"
+    ],
+    "Shield Brothers": [
+      "AC",
+      "Teamwork Feat",
+      "shield"
+    ],
+    "Tandem Charge": [
+      "Attack",
+      "Charge",
+      "Escape Route",
+      "Immediate Action",
+      "Move As One",
+      "Shield Brothers",
+      "Speed",
+      "Teamwork Feat"
+    ],
+    "Feat": [
+      "LV",
+      "Proficiency",
+      "Skill"
+    ],
+    "Stat Feat": [
+      "ACC",
+      "DM",
+      "Feat",
+      "PC",
+      "Skill"
+    ],
+    "Teamwork Feat": [
+      "Feat"
+    ],
+    "Moon Elf": [
+      "Jump",
+      "Lunar",
+      "Technique"
+    ],
+    "Elf": [
+      "ACC",
+      "CL",
+      "Detect Magic",
+      "Eagle Eye",
+      "Innate Technique",
+      "Knowledge",
+      "Mana",
+      "Perception",
+      "Take 10"
+    ],
+    "Bambuken": [
+      "AC",
+      "Fall Damage",
+      "Fell",
+      "Profession\\",
+      "Prone"
+    ],
+    "Kitsune": [
+      "Charming Gaze",
+      "Defeated",
+      "Half-Link",
+      "Illusion",
+      "Innate Technique",
+      "Mana",
+      "Mind-Affecting",
+      "Plane Shift",
+      "Potency"
+    ],
+    "Usa": [
+      "Commoner",
+      "Companion",
+      "Food",
+      "HP",
+      "Half-Link",
+      "Jump",
+      "LV",
+      "Luck Check\\",
+      "Perception",
+      "Rest",
+      "Short Rest",
+      "Speed"
+    ],
+    "Half-Link": [
+      "AS",
+      "Climb",
+      "Damage",
+      "Emotion",
+      "Fiend\\",
+      "Mind-Affecting",
+      "Natural Weapon",
+      "Night Vision",
+      "Polymorph",
+      "Race",
+      "Senses\\",
+      "Speed",
+      "Undead",
+      "Will"
+    ],
+    "Dwarf": [
+      "ACC\\",
+      "AC\\",
+      "Ablaze",
+      "Action-Attack",
+      "Charm",
+      "Climb",
+      "Crafting",
+      "Damage\\",
+      "Endurance",
+      "Feat\\",
+      "Fortitude",
+      "HP",
+      "Immediate Action",
+      "Insight",
+      "Light Level\\",
+      "Night Vision",
+      "Potency",
+      "Race",
+      "Resistance",
+      "Saving Throw\\",
+      "Senses\\",
+      "Skill\\",
+      "Speed",
+      "Swift Action",
+      "Taunted",
+      "Toughness"
+    ],
+    "Human": [
+      "Fame",
+      "Fatigued",
+      "Feat",
+      "Forced March",
+      "Proficiency",
+      "Skill",
+      "Technique\\",
+      "Wealth"
+    ],
+    "Orc": [
+      "ACC",
+      "Athletics",
+      "Blindsense",
+      "Blurred Vision",
+      "Carry Weight\\",
+      "Clumsy",
+      "Combat Maneuver\\",
+      "Defeated",
+      "Ferocity",
+      "Fortitude",
+      "Free Action",
+      "HP",
+      "Knockdown",
+      "Light Level\\",
+      "Night Vision",
+      "Perception",
+      "Recharge",
+      "Savagery",
+      "Seeking",
+      "Shaken",
+      "Sickened",
+      "Swift Action",
+      "Technique",
+      "blinded\\"
+    ],
+    "Race": [
+      "Language",
+      "Size and Reach"
+    ],
+    "Acrobatics": [
+      "Balance",
+      "DEX",
+      "Skill",
+      "Skills/Acrobatics/Tumble",
+      "Wall Kick"
+    ],
+    "Balance": [
+      "Acrobatics",
+      "Knocked Down"
+    ],
+    "Tumble": [
+      "Acrobatics",
+      "AoO",
+      "DC",
+      "Proficiency",
+      "Reflex",
+      "Roll",
+      "Threaten"
+    ],
+    "Wall Kick": [
+      "Acrobatics",
+      "Jump",
+      "Movement",
+      "Proficiency"
+    ],
+    "Aquatic Combat": [
+      "AC",
+      "ACC",
+      "Athletics",
+      "Circumstance",
+      "Proficiency",
+      "Reflex",
+      "Speed",
+      "Swim"
+    ],
+    "Athletics": [
+      "Aquatic Combat",
+      "Athletics",
+      "Brute Force",
+      "Catch Fall",
+      "Climb",
+      "DEX",
+      "Jump",
+      "Proficiency",
+      "STR",
+      "Skill",
+      "Swim"
+    ],
+    "Brute Force": [
+      "Athletics",
+      "Carry Weight",
+      "DC"
+    ],
+    "Catch Fall": [
+      "Athletics",
+      "DC",
+      "Fall Damage",
+      "Immediate Action",
+      "Proficiency"
+    ],
+    "Climb": [
+      "Athletics",
+      "Proficiency",
+      "Speed"
+    ],
+    "Swim": [
+      "Athletics",
+      "Proficiency",
+      "Speed"
+    ],
+    "Create a Distraction": [
+      "Deception",
+      "Perception",
+      "Standard Action",
+      "Stealth"
+    ],
+    "Deception": [
+      "CHA",
+      "Create a Distraction",
+      "Disguise",
+      "Feint",
+      "Insight",
+      "Lie",
+      "Skill",
+      "Skills/Deception/Sucker Punch",
+      "Subtle Message"
+    ],
+    "Disguise": [
+      "Deception",
+      "Perception",
+      "Proficiency"
+    ],
+    "Lie": [
+      "DC",
+      "DM",
+      "Deception",
+      "Detect Dishonesty",
+      "Insight"
+    ],
+    "Subtle Message": [
+      "DC",
+      "Deception",
+      "Insight",
+      "Proficiency"
+    ],
+    "Sucker Punch": [
+      "Attack",
+      "Deception",
+      "Hands",
+      "Proficiency",
+      "Stealth",
+      "Surprised",
+      "Unarmed Strike"
+    ],
+    "Conceal Item": [
+      "Free Action",
+      "Hands",
+      "Instant Action",
+      "Perception",
+      "Proficiency",
+      "Stealth",
+      "Surprised",
+      "Swift Action"
+    ],
+    "Disable Device": [
+      "Hands",
+      "Proficiency"
+    ],
+    "Hands": [
+      "Conceal Item",
+      "Disable Device",
+      "Pick Lock",
+      "Pickpocket"
+    ],
+    "Pick Lock": [
+      "DC",
+      "Hands",
+      "Tools"
+    ],
+    "Pickpocket": [
+      "Hands",
+      "Perception",
+      "Proficiency",
+      "Standard Action",
+      "Surprised"
+    ],
+    "Detect Compulsion": [
+      "DC",
+      "Dominated",
+      "Insight",
+      "Possessed",
+      "Potency",
+      "Proficiency",
+      "Roll"
+    ],
+    "Detect Dishonesty": [
+      "DM",
+      "Deception",
+      "Insight"
+    ],
+    "Insight": [
+      "CHA",
+      "Detect Compulsion",
+      "Detect Dishonesty",
+      "Intuition",
+      "Skill",
+      "WIS"
+    ],
+    "Intuition": [
+      "DC",
+      "Insight",
+      "Proficiency",
+      "Trap"
+    ],
+    "Coercion": [
+      "DC",
+      "Intimidation",
+      "Knowledge",
+      "Proficiency",
+      "Roll"
+    ],
+    "Demoralize": [
+      "Action-Attack",
+      "Defeated",
+      "Frightened",
+      "Intimidation",
+      "Proficiency",
+      "Roll",
+      "Shaken",
+      "Will"
+    ],
+    "Intimidation": [
+      "CHA",
+      "Coercion",
+      "Demoralize",
+      "STR",
+      "Skill"
+    ],
+    "Invocation": [
+      "INT",
+      "LUK",
+      "Ritual",
+      "Skill",
+      "Trigger Magic Device"
+    ],
+    "Ritual": [
+      "Craft",
+      "Mana"
+    ],
+    "Trigger Magic Device": [
+      "Invocation",
+      "sigil"
+    ],
+    "Alchemy": [
+      "Craft",
+      "INT",
+      "Identify Composition",
+      "Identify Potion",
+      "Knowledge",
+      "Monster Lore",
+      "Ooze",
+      "Proficiency",
+      "Skill"
+    ],
+    "Identify Composition": [
+      "Alchemy",
+      "Craft",
+      "DC"
+    ],
+    "Identify Potion": [
+      "Alchemy",
+      "Craft",
+      "DC",
+      "Poison",
+      "Use Potion"
+    ],
+    "Arcana": [
+      "INT",
+      "Identify Magic Item",
+      "Identify Spell",
+      "Knowledge",
+      "Monster",
+      "Monster Lore",
+      "Proficiency",
+      "Skill"
+    ],
+    "Identify Magic Item": [
+      "Arcana",
+      "DC",
+      "Magic Item",
+      "Potency",
+      "Standard Action"
+    ],
+    "Identify Spell": [
+      "Arcana",
+      "Astronomy",
+      "DC",
+      "Gaia",
+      "Instant Action",
+      "Lunar",
+      "Nature",
+      "Spell",
+      "Technique",
+      "Upcast"
+    ],
+    "Astronomy": [
+      "Abomination",
+      "INT",
+      "Identify Cosmic Phenomenon",
+      "Identify Spell",
+      "Knowledge",
+      "Monster Lore",
+      "Navigation",
+      "Proficiency",
+      "Skill"
+    ],
+    "Identify Cosmic Phenomenon": [
+      "Astronomy"
+    ],
+    "Navigation": [
+      "Astronomy",
+      "Survival"
+    ],
+    "Engineering": [
+      "Construct",
+      "Hack",
+      "INT",
+      "Identify Function",
+      "Identify Structural Quirk",
+      "Knowledge",
+      "Monster Lore",
+      "Proficiency",
+      "Skill"
+    ],
+    "Hack": [
+      "Engineering"
+    ],
+    "Identify Function": [
+      "Engineering"
+    ],
+    "Identify Structural Quirk": [
+      "Engineering"
+    ],
+    "Humanities": [
+      "Humanoid",
+      "INT",
+      "Knowledge",
+      "Monster Lore",
+      "Proficiency",
+      "Recall Customs",
+      "Recall Locale",
+      "Recognize Figure",
+      "Skill",
+      "Titan"
+    ],
+    "Recall Customs": [
+      "Humanities"
+    ],
+    "Recall Locale": [
+      "Humanities"
+    ],
+    "Recognize Figure": [
+      "Humanities"
+    ],
+    "Identify Natural Phenomenon": [
+      "Nature"
+    ],
+    "Nature": [
+      "Beast",
+      "Fey",
+      "INT",
+      "Identify Natural Phenomenon",
+      "Identify Spell",
+      "Knowledge",
+      "Monster Lore",
+      "Plant",
+      "Proficiency",
+      "Skill"
+    ],
+    "Detect Portal": [
+      "Arcana",
+      "DC",
+      "Invocation",
+      "Planes",
+      "Ritual"
+    ],
+    "Planes": [
+      "Celestial",
+      "Detect Portal",
+      "Elemental",
+      "Fiend",
+      "INT",
+      "Knowledge",
+      "Monster Lore",
+      "Proficiency",
+      "Skill"
+    ],
+    "Divine Lore": [
+      "DC",
+      "Religion"
+    ],
+    "Religion": [
+      "Divine Lore",
+      "INT",
+      "Knowledge",
+      "Monster Lore",
+      "Proficiency",
+      "Skill",
+      "Undead"
+    ],
+    "History": [
+      "Knowledge",
+      "Skill"
+    ],
+    "Knowledge": [
+      "DC",
+      "Elf",
+      "History",
+      "Human",
+      "Humanities",
+      "INT",
+      "LV",
+      "Monster Lore",
+      "Proficiency",
+      "Skill"
+    ],
+    "Monster Lore": [
+      "AC",
+      "Abomination",
+      "Alchemy",
+      "Arcana",
+      "Astronomy",
+      "Beast",
+      "Celestial",
+      "Construct",
+      "DC",
+      "Dark Knight",
+      "Elemental",
+      "Engineering",
+      "Evil Eye",
+      "Fey",
+      "Fiend",
+      "Free Action",
+      "HP",
+      "Humanities",
+      "Humanoid",
+      "LV",
+      "Monk",
+      "Monster",
+      "Nature",
+      "Ooze",
+      "Planes",
+      "Plant",
+      "Religion",
+      "Resistance",
+      "Saving Throw",
+      "Titan",
+      "Undead"
+    ],
+    "Encode or Decode Documents": [
+      "DC",
+      "Linguistics"
+    ],
+    "Interpret Text": [
+      "DC",
+      "Linguistics"
+    ],
+    "Language": [
+      "INT"
+    ],
+    "Linguistics": [
+      "Encode or Decode Documents",
+      "INT",
+      "Interpret Text",
+      "Language-Dependent",
+      "Proficiency",
+      "Skill",
+      "Write or Forge Documents"
+    ],
+    "Write or Forge Documents": [
+      "Linguistics"
+    ],
+    "Assess Vitality": [
+      "DC",
+      "Medicine"
+    ],
+    "Identify Affliction or Curse": [
+      "Affliction",
+      "Curse",
+      "DC",
+      "Medicine",
+      "Proficiency"
+    ],
+    "Long Term Care": [
+      "Affliction",
+      "Medicine",
+      "Proficiency"
+    ],
+    "Medicine": [
+      "Assess Vitality",
+      "INT",
+      "Identify Affliction or Curse",
+      "Long Term Care",
+      "Prevent Recovery",
+      "Provide First Aid",
+      "Skill",
+      "WIS"
+    ],
+    "Prevent Recovery": [
+      "Medicine",
+      "Proficiency"
+    ],
+    "Provide First Aid": [
+      "Bleed",
+      "Blurred Vision",
+      "DC",
+      "Medicine",
+      "Proficiency",
+      "Sickened",
+      "Standard Action",
+      "Status"
+    ],
+    "Detect": [
+      "Perception",
+      "Standard Action"
+    ],
+    "Perception": [
+      "Detect",
+      "Hands",
+      "Mindless",
+      "Proficiency",
+      "Skill",
+      "Stealth",
+      "WIS"
+    ],
+    "Perform": [
+      "CHA",
+      "Economics",
+      "Performance",
+      "Skill"
+    ],
+    "Performance": [
+      "Affliction",
+      "Perform"
+    ],
+    "Coax": [
+      "DC",
+      "NPC",
+      "Persuasion"
+    ],
+    "Gather Information": [
+      "Persuasion"
+    ],
+    "Persuasion": [
+      "CHA",
+      "Coax",
+      "Gather Information",
+      "Skill"
+    ],
+    "Cooking": [
+      "Crafting",
+      "Food",
+      "Ingredients",
+      "Profession",
+      "Tools"
+    ],
+    "Profession": [
+      "Cooking",
+      "Economics",
+      "INT",
+      "Proficiency",
+      "Quiz",
+      "Skill",
+      "WIS"
+    ],
+    "Quiz": [
+      "DC",
+      "Profession",
+      "Proficiency"
+    ],
+    "Hide Trail": [
+      "Proficiency",
+      "Stealth",
+      "Survival",
+      "Track"
+    ],
+    "Hide": [
+      "Attack",
+      "Concealment",
+      "Cover",
+      "Perception",
+      "Ranged Attack",
+      "Roll",
+      "Stealth",
+      "Swift Action"
+    ],
+    "Stealth": [
+      "DEX",
+      "Hide",
+      "Hide Trail",
+      "Skill"
+    ],
+    "Butcher": [
+      "DC",
+      "LV",
+      "Survival"
+    ],
+    "Forage": [
+      "Food",
+      "Ingredients",
+      "Proficiency",
+      "Survival"
+    ],
+    "Navigate": [
+      "Survival"
+    ],
+    "Survival": [
+      "Butcher",
+      "Forage",
+      "Navigate",
+      "Track"
+    ],
+    "Track": [
+      "Survival"
+    ],
+    "Group Checks": [
+      "Craft",
+      "Proficiency",
+      "Stealth"
+    ],
+    "Proficiency": [
+      "Skill"
+    ],
+    "Skill": [
+      "Ability Scores",
+      "Athletics",
+      "DC",
+      "DM",
+      "Deception",
+      "LV",
+      "Proficiency",
+      "Proficient",
+      "Roll",
+      "Stealth"
+    ],
+    "Take 10": [
+      "Natural"
+    ],
+    "Take 30": [
+      "Natural"
+    ],
+    "Tie": [
+      "Skill"
+    ],
+    "Bestial": [
+      "Beast",
+      "Innate Technique",
+      "Natural Weapon"
+    ],
+    "Hyper Body": [
+      "Buff",
+      "CHA",
+      "Defeated",
+      "Fighter",
+      "Fortitude",
+      "HP",
+      "Innate Technique",
+      "LV",
+      "Limited",
+      "Long Rest",
+      "Passive",
+      "Standard Action"
+    ],
+    "Blessing of Restoration": [
+      "At-Will",
+      "Drained",
+      "Healer",
+      "Innate Technique",
+      "Passive",
+      "Standard Action"
+    ],
+    "Channel Energy": [
+      "CL",
+      "HP",
+      "Healer",
+      "Healing",
+      "Innate Technique",
+      "Limited",
+      "SP",
+      "Standard Action",
+      "Upcast"
+    ],
+    "Focus Dispel": [
+      "CL",
+      "Class",
+      "Dispel",
+      "Innate Technique",
+      "Recharge",
+      "Spell",
+      "Standard Action"
+    ],
+    "Healing Touch": [
+      "Action-Attack",
+      "At-Will",
+      "CL",
+      "HP",
+      "Healer",
+      "Healing",
+      "Innate Technique",
+      "SP",
+      "Staff",
+      "Supernatural",
+      "Temp HP"
+    ],
+    "Holy Arrow": [
+      "Action-Attack",
+      "At-Will",
+      "Bow",
+      "Damage",
+      "Healer",
+      "Healing Touch",
+      "Holy",
+      "Innate Technique",
+      "Ranged Attack",
+      "Staff",
+      "Weapon"
+    ],
+    "Hug": [
+      "At-Will",
+      "Fear",
+      "Grab",
+      "Healer",
+      "Innate Technique",
+      "Mana Burn",
+      "Pacified",
+      "Passive",
+      "Standard Action",
+      "Stasis"
+    ],
+    "Mystic Door": [
+      "Healer",
+      "Innate Technique",
+      "Limited",
+      "Supernatural",
+      "Teleportation"
+    ],
+    "Endure": [
+      "AoO",
+      "At-Will",
+      "Innate Technique",
+      "Knocked Down",
+      "Standard Action",
+      "resistance"
+    ],
+    "Fury": [
+      "Immediate Action",
+      "Innate Technique",
+      "Recharge",
+      "resistance"
+    ],
+    "Dark Sight": [
+      "ACC",
+      "Attack",
+      "Detect",
+      "Hide",
+      "Immediate Action",
+      "Innate Technique",
+      "Recharge",
+      "Rogue",
+      "Spell",
+      "Stealth"
+    ],
+    "Haste": [
+      "At-Will",
+      "CHA",
+      "Innate Technique",
+      "Jump",
+      "Passive",
+      "Rogue",
+      "Speed",
+      "Standard Action"
+    ],
+    "Cleave": [
+      "Action-Attack",
+      "Attack",
+      "Axe",
+      "Blade",
+      "Bludgeon",
+      "Crush",
+      "Damage",
+      "Innate Technique",
+      "Polearm",
+      "Recharge",
+      "Slash",
+      "Weapon",
+      "Weapon Group"
+    ],
+    "Great Cleave": [
+      "Action-Attack",
+      "Attack",
+      "Axe",
+      "Blade",
+      "Bludgeon",
+      "Crush",
+      "Damage",
+      "Innate Technique",
+      "Polearm",
+      "Recharge",
+      "Slash",
+      "Weapon",
+      "Weapon Group"
+    ],
+    "Skewer": [
+      "Action-Attack",
+      "Blade",
+      "Bow",
+      "Innate Technique",
+      "Pierce",
+      "Recharge",
+      "Thrown",
+      "Thrust",
+      "Trigger",
+      "Weapon",
+      "Weapon Group"
+    ],
+    "Class and Weapon Abilities": [
+      "Class",
+      "Feat",
+      "Innate Technique",
+      "Magic Item",
+      "Special Attack",
+      "Technique",
+      "Upcast",
+      "Weapon"
+    ],
+    "Blood Bath": [
+      "At-Will",
+      "Bleed",
+      "Blood Art",
+      "Slash",
+      "Standard Action",
+      "Supernatural",
+      "Technique",
+      "Upcast"
+    ],
+    "Blood Rush": [
+      "At-Will",
+      "Bleed",
+      "Blood Art",
+      "Healing",
+      "Minion",
+      "SP",
+      "Spell",
+      "Standard Action",
+      "Transmutation",
+      "Upcast"
+    ],
+    "Pyrrhic Might": [
+      "AS",
+      "At-Will",
+      "Blood Art",
+      "Buff",
+      "Free Action",
+      "Speed",
+      "Technique",
+      "Upcast"
+    ],
+    "Soul Blade": [
+      "Action-Attack",
+      "At-Will",
+      "Attack",
+      "Bleed",
+      "Blood Art",
+      "Damage",
+      "HP",
+      "Healing",
+      "Holy",
+      "Minion",
+      "Pierce",
+      "Slash",
+      "Technique",
+      "Upcast"
+    ],
+    "Bloodline Mimicry": [
+      "Blood Art",
+      "Limited",
+      "M",
+      "Polymorph",
+      "Size and Reach",
+      "Spell",
+      "Standard Action",
+      "Transmutation"
+    ],
+    "Gemarteld": [
+      "Action-Attack",
+      "Blood Art",
+      "Crit",
+      "Healing",
+      "Recharge",
+      "Technique",
+      "attack"
+    ],
+    "Sanguivory": [
+      "AoO",
+      "Blood Art",
+      "Defeated",
+      "Food",
+      "HP",
+      "Healing",
+      "Long Rest",
+      "Minion",
+      "Recharge",
+      "Spell",
+      "Standard Action",
+      "Transmutation",
+      "Upcast"
+    ],
+    "Blood Armor": [
+      "AC",
+      "Blood Art",
+      "Buff",
+      "HP",
+      "Passive",
+      "Technique",
+      "bleed"
+    ],
+    "Blood Blitz": [
+      "Action-Attack",
+      "Bleed",
+      "Blood Art",
+      "Fortitude",
+      "Healing",
+      "Limited",
+      "SP",
+      "Spell",
+      "Transmutation",
+      "Upcast"
+    ],
+    "Death's Dance": [
+      "Blood Art",
+      "Buff",
+      "Damage",
+      "Free Action",
+      "Limited",
+      "Magic",
+      "Technique"
+    ],
+    "Blood Barrage": [
+      "Action-Attack",
+      "Bleed",
+      "Blood Art",
+      "CL",
+      "Fortitude",
+      "HP",
+      "Healing",
+      "Limited",
+      "SP",
+      "Spell",
+      "Transmutation"
+    ],
+    "Soul Split": [
+      "Attack",
+      "Blood Art",
+      "Conjuration",
+      "Damage",
+      "Healing",
+      "Holy",
+      "Passive",
+      "Spell"
+    ],
+    "Blood Art": [
+      "Damage",
+      "Holy"
+    ],
+    "Hybrid Techniques": [
+      "Martial",
+      "Passive",
+      "Spell",
+      "Technique"
+    ],
+    "Blindspot": [
+      "Action-Attack",
+      "Attack",
+      "Deceit",
+      "Elusive",
+      "Recharge",
+      "Surprised",
+      "Technique"
+    ],
+    "Dodge Roll": [
+      "AC",
+      "Deceit",
+      "Elusive",
+      "Immediate Action",
+      "Recharge",
+      "Technique"
+    ],
+    "Finisher": [
+      "Attack",
+      "Deceit",
+      "Defeat",
+      "Elusive",
+      "HP",
+      "Immediate Action",
+      "Passive",
+      "Recharge",
+      "Technique",
+      "Upcast"
+    ],
+    "Heartseeker": [
+      "Blindsense",
+      "Deceit",
+      "Lifesense",
+      "Stealth",
+      "Technique"
+    ],
+    "Kidnap": [
+      "AS",
+      "Action-Attack",
+      "Dash",
+      "Deceit",
+      "Drag",
+      "Free Action",
+      "Recharge",
+      "Technique",
+      "Upcast"
+    ],
+    "Pocket Sand": [
+      "ACC",
+      "Action-Attack",
+      "Blinded",
+      "Deceit",
+      "Dirty Trick",
+      "Recharge",
+      "Technique",
+      "Upcast"
+    ],
+    "Single Out": [
+      "Action-Attack",
+      "At-Will",
+      "Attack",
+      "Deceit",
+      "Technique",
+      "Upcast"
+    ],
+    "Deceit": [
+      "Technique"
+    ],
+    "Arrow Splitter": [
+      "Action-Attack",
+      "Marksmanship",
+      "Ranged Attack",
+      "Recharge",
+      "Roll",
+      "Technique"
+    ],
+    "Curved Shot": [
+      "Action-Attack",
+      "At-Will",
+      "Close Range",
+      "Cover",
+      "Improved Cover",
+      "Marksmanship",
+      "Ranged Attack",
+      "Technique",
+      "Total Cover",
+      "Upcast"
+    ],
+    "Disarming Shot": [
+      "ACC",
+      "Action-Attack",
+      "At-Will",
+      "Disarm",
+      "Marksmanship",
+      "Swift Action",
+      "Technique",
+      "Upcast"
+    ],
+    "Dive": [
+      "AC",
+      "Instant Action",
+      "Knocked Down",
+      "Marksmanship",
+      "Prone",
+      "Ranged Attack",
+      "Recharge",
+      "Technique"
+    ],
+    "Eye of the Amazon": [
+      "Buff",
+      "Marksmanship",
+      "Passive",
+      "Range",
+      "Technique"
+    ],
+    "Final Attack": [
+      "AoO",
+      "Crit",
+      "Marksmanship",
+      "Passive",
+      "Ranged Attack",
+      "Technique"
+    ],
+    "Focus Shot": [
+      "ACC",
+      "Action-Attack",
+      "At-Will",
+      "Critical Damage",
+      "LUK",
+      "Line of Effect",
+      "Marksmanship",
+      "Range",
+      "Ranged Attack",
+      "Technique",
+      "Upcast",
+      "Wide Range"
+    ],
+    "Pinning Shot": [
+      "Action-Attack",
+      "At-Will",
+      "Entangled",
+      "Marksmanship",
+      "Ranged Attack",
+      "Swift Action",
+      "Technique"
+    ],
+    "Ranger Whack": [
+      "ACC",
+      "At-Will",
+      "Marksmanship",
+      "Shove",
+      "Standard Action",
+      "Surprised",
+      "Technique",
+      "Upcast"
+    ],
+    "Distant Shot": [
+      "Action-Attack",
+      "At-Will",
+      "Marksmanship",
+      "Technique"
+    ],
+    "Double Shot": [
+      "Action-Attack",
+      "At-Will",
+      "Marksmanship",
+      "Ranged Attack",
+      "Technique"
+    ],
+    "Eagle Eye": [
+      "Marksmanship",
+      "Passive",
+      "Perception",
+      "Technique"
+    ],
+    "Hailbreaker": [
+      "ACC",
+      "AS",
+      "At-Will",
+      "Attack",
+      "Close Range",
+      "Instant Action",
+      "Marksmanship",
+      "Ranged Attack",
+      "Technique",
+      "Weapon"
+    ],
+    "Inferno Quiver": [
+      "Damage",
+      "Fire",
+      "Marksmanship",
+      "Ranged Attack",
+      "Recharge",
+      "Swift Action",
+      "Technique"
+    ],
+    "Piercing Shot": [
+      "Action-Attack",
+      "Close Range",
+      "Marksmanship",
+      "Ranged Attack",
+      "Recharge",
+      "Technique",
+      "Upcast"
+    ],
+    "Slaying Shot": [
+      "AS",
+      "Action-Attack",
+      "Attack Action",
+      "Defeat",
+      "Limited",
+      "Marksmanship",
+      "Ranged Attack",
+      "Technique",
+      "Upcast"
+    ],
+    "Arrow Rain": [
+      "Action-Attack",
+      "Marksmanship",
+      "Ranged Attack",
+      "Recharge",
+      "Technique",
+      "Upcast"
+    ],
+    "Hamstring Shot": [
+      "Action-Attack",
+      "At-Will",
+      "Marksmanship",
+      "Ranged Attack",
+      "Speed",
+      "Technique",
+      "Upcast"
+    ],
+    "Slide": [
+      "At-Will",
+      "Elusive",
+      "Marksmanship",
+      "Swift Action",
+      "Technique"
+    ],
+    "Straw Puppet Milicien": [
+      "Companion",
+      "Limited",
+      "Marksmanship",
+      "Straw Puppet",
+      "Summoning",
+      "Supernatural",
+      "Swift Action",
+      "Technique"
+    ],
+    "Fire Back": [
+      "Ammunition",
+      "At-Will",
+      "Immediate Action",
+      "Marksmanship",
+      "Potency",
+      "Ranged Attack",
+      "Reflex",
+      "Technique"
+    ],
+    "Named Bullet": [
+      "ACC",
+      "Ammunition",
+      "Critical Damage",
+      "Limited",
+      "Marksmanship",
+      "Supernatural",
+      "Technique"
+    ],
+    "Silver Hawk": [
+      "Action-Attack",
+      "At-Will",
+      "Free Action",
+      "Immediate Action",
+      "Instant Action",
+      "Limited",
+      "Marksmanship",
+      "Recharge",
+      "Standard Action",
+      "Swift Action",
+      "Technique",
+      "Upcast"
+    ],
+    "Strafe": [
+      "AS",
+      "Action-Attack",
+      "Marksmanship",
+      "Ranged Attack",
+      "Recharge",
+      "Technique",
+      "Upcast"
+    ],
+    "Snipe": [
+      "ACC",
+      "CL",
+      "Limited",
+      "Marksmanship",
+      "Ranged Attack",
+      "Standard Action",
+      "Technique",
+      "Trigger"
+    ],
+    "Marksmanship": [
+      "Technique"
+    ],
+    "Clothesline": [
+      "AoO",
+      "Attack",
+      "Martial Arts",
+      "Recharge",
+      "Speed",
+      "Technique",
+      "Unarmed"
+    ],
+    "Defensive Spin": [
+      "AC",
+      "Action-Attack",
+      "Attack",
+      "Elusive",
+      "Martial Arts",
+      "Recharge",
+      "Technique",
+      "Unarmed"
+    ],
+    "Focus Punch": [
+      "Action-Attack",
+      "At-Will",
+      "Crit",
+      "Instant Action",
+      "Martial Arts",
+      "Technique",
+      "Upcast"
+    ],
+    "Foot Stomp": [
+      "Action-Attack",
+      "At-Will",
+      "Attack",
+      "Clumsy",
+      "Grounded",
+      "Martial Arts",
+      "Prone",
+      "Technique",
+      "Unarmed"
+    ],
+    "Night Punch": [
+      "At-Will",
+      "Attack",
+      "Damage",
+      "Immediate Action",
+      "Martial Arts",
+      "Sucker Punch",
+      "Technique",
+      "Unarmed",
+      "Upcast"
+    ],
+    "Sky Uppercut": [
+      "Action-Attack",
+      "Attack",
+      "Jump",
+      "Martial Arts",
+      "Recharge",
+      "Technique",
+      "Unarmed"
+    ],
+    "Body Slam": [
+      "Action-Attack",
+      "AoO",
+      "Attack",
+      "Crit",
+      "Held Down",
+      "Knocked Down",
+      "Martial Arts",
+      "Recharge",
+      "Technique",
+      "Unarmed"
+    ],
+    "Catch Blade": [
+      "Attack",
+      "Combat Maneuver",
+      "Immediate Action",
+      "Martial Arts",
+      "Recharge",
+      "Roll",
+      "Technique",
+      "Unarmed",
+      "Weapon"
+    ],
+    "Chi Block": [
+      "Action-Attack",
+      "Attack",
+      "Martial Arts",
+      "Recharge",
+      "Siphoned",
+      "Technique",
+      "Unarmed"
+    ],
+    "Chokehold": [
+      "Damage",
+      "Martial Arts",
+      "Passive",
+      "Silenced",
+      "Technique"
+    ],
+    "Dropkick": [
+      "AC",
+      "Action-Attack",
+      "Attack",
+      "Clumsy",
+      "Martial Arts",
+      "Recharge",
+      "Technique",
+      "Unarmed",
+      "Upcast"
+    ],
+    "Flash Kick": [
+      "AC",
+      "Action-Attack",
+      "Attack",
+      "Martial Arts",
+      "Recharge",
+      "Technique",
+      "Unarmed"
+    ],
+    "Low Sweep": [
+      "Action-Attack",
+      "Clumsy",
+      "Knocked Down",
+      "Martial Arts",
+      "Recharge",
+      "Technique"
+    ],
+    "Axe Kick": [
+      "Action-Attack",
+      "At-Will",
+      "Attack",
+      "Grounded",
+      "Knocked Down",
+      "Martial Arts",
+      "Technique",
+      "Unarmed",
+      "Upcast"
+    ],
+    "Chi Reflection": [
+      "AoE",
+      "CL",
+      "Dispel",
+      "Immediate Action",
+      "Limited",
+      "Martial Arts",
+      "Spell",
+      "Supernatural",
+      "Technique"
+    ],
+    "Gust Dive": [
+      "At-Will",
+      "Clumsy",
+      "Fall Damage",
+      "Martial Arts",
+      "Swift Action",
+      "Technique"
+    ],
+    "Power Fists": [
+      "Attack",
+      "Buff",
+      "Martial Arts",
+      "Recharge",
+      "Shove",
+      "Swift Action",
+      "Technique",
+      "Unarmed"
+    ],
+    "Resonating Strike": [
+      "Action-Attack",
+      "Air",
+      "Attack",
+      "Concealment",
+      "Damage",
+      "Fly",
+      "Instant Action",
+      "Martial Arts",
+      "Ranged Attack",
+      "Recharge",
+      "Supernatural",
+      "Technique",
+      "Thrown",
+      "Unarmed",
+      "Upcast",
+      "illusion"
+    ],
+    "Transformation": [
+      "AS",
+      "At-Will",
+      "Attack",
+      "Buff",
+      "Damage",
+      "Martial Arts",
+      "Resistance",
+      "Speed",
+      "Supernatural",
+      "Technique",
+      "Unarmed"
+    ],
+    "Star KO": [
+      "Action-Attack",
+      "Attack",
+      "Crush",
+      "Defeated",
+      "Knocked Down",
+      "Limited",
+      "Martial Arts",
+      "Technique",
+      "Unarmed",
+      "Upcast"
+    ],
+    "Ora Aura": [
+      "Attack",
+      "Instant Action",
+      "Martial Arts",
+      "Technique",
+      "Unarmed"
+    ],
+    "Super Transformation": [
+      "AS",
+      "Attack",
+      "Buff",
+      "Invincible",
+      "Limited",
+      "Martial Arts",
+      "Speed",
+      "Technique",
+      "Teleportation",
+      "Transformation",
+      "Unarmed",
+      "Unstoppable"
+    ],
+    "Martial Arts": [
+      "Technique",
+      "Unarmed"
+    ],
+    "Bloodlust": [
+      "Attack",
+      "Healing",
+      "Immediate Action",
+      "Recharge",
+      "Savagery",
+      "Technique",
+      "Temp HP"
+    ],
+    "Foe Throw": [
+      "AS",
+      "Action-Attack",
+      "Prone",
+      "Recharge",
+      "Reflex",
+      "Savagery",
+      "Technique",
+      "Upcast",
+      "grab"
+    ],
+    "Gore Paint": [
+      "Buff",
+      "Critical Damage",
+      "HP",
+      "Passive",
+      "Savagery",
+      "Speed",
+      "Technique"
+    ],
+    "Ground Pound": [
+      "Clumsy",
+      "Jump",
+      "Recharge",
+      "Savagery",
+      "Swift Action",
+      "Technique",
+      "Upcast"
+    ],
+    "Raging Blow": [
+      "Action-Attack",
+      "Attack",
+      "Recharge",
+      "Savagery",
+      "Shove",
+      "Technique"
+    ],
+    "Revenge": [
+      "AoO",
+      "Attack",
+      "Immediate Action",
+      "Recharge",
+      "Savagery",
+      "Technique"
+    ],
+    "Seismic Stomp": [
+      "Action-Attack",
+      "Crush",
+      "Damage",
+      "Fell",
+      "Recharge",
+      "Savagery",
+      "Technique",
+      "Upcast"
+    ],
+    "Savagery": [
+      "Technique"
+    ],
+    "Callout": [
+      "AC",
+      "ACC",
+      "Attack",
+      "Buff",
+      "Immediate Action",
+      "Recharge",
+      "Technique",
+      "Upcast",
+      "Warfare"
+    ],
+    "Lunge": [
+      "ACC",
+      "Action-Attack",
+      "At-Will",
+      "Attack",
+      "Size and Reach",
+      "Technique",
+      "Upcast",
+      "Warfare"
+    ],
+    "Panic": [
+      "Action-Attack",
+      "Attack",
+      "Fear",
+      "Frightened",
+      "Recharge",
+      "Technique",
+      "Warfare",
+      "Will"
+    ],
+    "Quickdraw": [
+      "Instant Action",
+      "Recharge",
+      "Technique",
+      "Warfare"
+    ],
+    "Second Wind": [
+      "AoO",
+      "Full-Round Action",
+      "HP",
+      "Healing",
+      "Initiative",
+      "Limited",
+      "Technique",
+      "Temp HP",
+      "Warfare"
+    ],
+    "Taunt": [
+      "Recharge",
+      "Swift Action",
+      "Taunted",
+      "Technique",
+      "Warfare",
+      "Will"
+    ],
+    "Unbreakable Body": [
+      "Buff",
+      "Immediate Action",
+      "Invincible",
+      "Limited",
+      "Technique",
+      "Warfare"
+    ],
+    "Warfare": [
+      "Technique"
+    ],
+    "Alarming Sigil": [
+      "Academy",
+      "Asleep",
+      "Divination",
+      "Recharge",
+      "Sigil",
+      "Size and Reach",
+      "Spell",
+      "Standard Action"
+    ],
+    "Feather Fall": [
+      "Academy",
+      "Evocation",
+      "Immediate Action",
+      "Recharge",
+      "Spell",
+      "Upcast"
+    ],
+    "Levitate": [
+      "Academy",
+      "Air",
+      "At-Will",
+      "Concentration",
+      "Evocation",
+      "Spell",
+      "Standard Action"
+    ],
+    "Lighten Object": [
+      "Academy",
+      "Limited",
+      "Spell",
+      "Standard Action",
+      "Transmutation",
+      "Upcast"
+    ],
+    "Mage's Weapon": [
+      "Academy",
+      "Action-Attack",
+      "Conjuration",
+      "Limited",
+      "Spell"
+    ],
+    "Magic Claw": [
+      "Academy",
+      "Action-Attack",
+      "At-Will",
+      "Damage",
+      "Evocation",
+      "Magic",
+      "SP",
+      "Spell",
+      "Upcast"
+    ],
+    "Magic Guard": [
+      "Abnegation",
+      "Academy",
+      "At-Will",
+      "CL",
+      "Instant Action",
+      "Mana",
+      "Preparing Techniques",
+      "SP",
+      "Spell"
+    ],
+    "Ritual Infusion": [
+      "Academy",
+      "At-Will",
+      "Conjuration",
+      "Crafting\\",
+      "Mana",
+      "Mana Burn",
+      "Ritual",
+      "Spell",
+      "Standard Action"
+    ],
+    "Scholar's Hand": [
+      "Academy",
+      "At-Will",
+      "Athletics",
+      "Concentration",
+      "Conjuration",
+      "M",
+      "Spell",
+      "Standard Action"
+    ],
+    "Detect Magic": [
+      "Academy",
+      "At-Will",
+      "Concentration",
+      "Divination",
+      "Spell",
+      "Standard Action",
+      "Supernatural"
+    ],
+    "Dimensional Anchor": [
+      "Abnegation",
+      "Academy",
+      "Action-Attack",
+      "Anchored",
+      "Recharge",
+      "Spell"
+    ],
+    "Dispel": [
+      "Abnegation",
+      "Academy",
+      "Action-Attack",
+      "CL",
+      "Prepare",
+      "Recharge",
+      "Roll",
+      "Spell",
+      "Swift Action"
+    ],
+    "Academy": [
+      "Spell",
+      "Technique"
+    ],
+    "Charming Gaze": [
+      "At-Will",
+      "Charmed",
+      "Enthrallment",
+      "Illusion",
+      "Mind-Affecting",
+      "Spell",
+      "Standard Action",
+      "Subtle",
+      "Will"
+    ],
+    "Command": [
+      "Action-Attack",
+      "AoO",
+      "Enthrallment",
+      "Illusion",
+      "Knocked Down",
+      "Language-Dependent",
+      "Mind-Affecting",
+      "Recharge",
+      "Silenced",
+      "Spell",
+      "Will"
+    ],
+    "Darting Duplicate": [
+      "AoO",
+      "Enthrallment",
+      "Figment",
+      "Illusion",
+      "Recharge",
+      "Speed",
+      "Spell",
+      "Standard Action",
+      "Subtle",
+      "Will"
+    ],
+    "Double Speak": [
+      "At-Will",
+      "Enthrallment",
+      "Illusion",
+      "Instant Action",
+      "Spell",
+      "Subtle"
+    ],
+    "Rapid Wardrobe": [
+      "Disguise",
+      "Enthrallment",
+      "Glamer",
+      "Illusion",
+      "Recharge",
+      "Spell",
+      "Standard Action",
+      "Subtle"
+    ],
+    "Tongues": [
+      "Divination",
+      "Enthrallment",
+      "Passive",
+      "Spell"
+    ],
+    "Unnatural Lust": [
+      "Enthrallment",
+      "Illusion",
+      "Mind-Affecting",
+      "Monster Lore",
+      "Recharge",
+      "Spell",
+      "Standard Action",
+      "Subtle"
+    ],
+    "Verboden Taal": [
+      "Buff",
+      "Divination",
+      "Enthrallment",
+      "Limited",
+      "Spell",
+      "Standard Action"
+    ],
+    "Confide": [
+      "Affliction",
+      "Damage",
+      "Defeated",
+      "Divination",
+      "Enthrallment",
+      "Instant Action",
+      "Limited",
+      "Placeholder",
+      "Psychic",
+      "Spell",
+      "Subtle",
+      "Upcast"
+    ],
+    "Exhibition": [
+      "Enthrallment",
+      "Glamer",
+      "Illusion",
+      "Mind-Affecting",
+      "Recharge",
+      "Spell",
+      "Standard Action",
+      "Subtle"
+    ],
+    "Sense Motive": [
+      "Detect Dishonesty",
+      "Divination",
+      "Enthrallment",
+      "Insight",
+      "Passive",
+      "Spell"
+    ],
+    "Stage Fright": [
+      "Action-Attack",
+      "CL",
+      "Damage",
+      "Enthrallment",
+      "Illusion",
+      "Mind-Affecting",
+      "Psychic",
+      "Recharge",
+      "SP",
+      "Spell",
+      "Subtle"
+    ],
+    "Stunt Double": [
+      "Attack",
+      "Buff",
+      "Disguise",
+      "Enthrallment",
+      "Glamer",
+      "Illusion",
+      "Limited",
+      "Spell",
+      "Standard Action",
+      "Targeted",
+      "Upcast",
+      "Will"
+    ],
+    "Tongue Twister": [
+      "Action-Attack",
+      "Enthrallment",
+      "Free Action",
+      "Full-Round Action",
+      "Illusion",
+      "Mind-Affecting",
+      "Monster Lore",
+      "Recharge",
+      "Spell",
+      "Standard Action",
+      "Subtle",
+      "Swift Action",
+      "Will"
+    ],
+    "Unfiltered": [
+      "Enthrallment",
+      "Illusion",
+      "Mind-Affecting",
+      "Recharge",
+      "Spell",
+      "Standard Action",
+      "Subtle"
+    ],
+    "Dominate": [
+      "Action-Attack",
+      "Charm",
+      "Charmed",
+      "Concentration",
+      "Enthrallment",
+      "Illusion",
+      "Mind-Affecting",
+      "Recharge",
+      "Spell"
+    ],
+    "Ecstasy": [
+      "Action-Attack",
+      "DC",
+      "Dazed",
+      "Enthrallment",
+      "Illusion",
+      "Mind-Affecting",
+      "Recharge",
+      "Spell",
+      "Staggered",
+      "Upcast"
+    ],
+    "Order 66": [
+      "Charm",
+      "Contingent",
+      "Enthrallment",
+      "Illusion",
+      "Insight",
+      "Language-Dependent",
+      "Limited",
+      "Proficiency",
+      "Spell",
+      "Standard Action"
+    ],
+    "The Hand that Feeds": [
+      "Action-Attack",
+      "Companion",
+      "Enthrallment",
+      "Illusion",
+      "Mind-Affecting",
+      "Recharge",
+      "Spell",
+      "Taunted",
+      "Upcast",
+      "Will"
+    ],
+    "Seduce": [
+      "Action-Attack",
+      "Concentration",
+      "Enthrallment",
+      "Illusion",
+      "Limited",
+      "Mind-Affecting",
+      "Movement",
+      "Spell"
+    ],
+    "Thrall": [
+      "Aid",
+      "Charm",
+      "Companion",
+      "Dispel",
+      "Dominate",
+      "Enthrallment",
+      "Illusion",
+      "Limited",
+      "Mind-Affecting",
+      "Spell",
+      "Standard Action"
+    ],
+    "Astrology": [
+      "At-Will",
+      "Divination",
+      "Lunar",
+      "M",
+      "Roll",
+      "Spell",
+      "Take 10",
+      "Take 30"
+    ],
+    "Enchant Sapphire": [
+      "At-Will",
+      "Crafting",
+      "Damage",
+      "Divination",
+      "Lunar",
+      "Magic",
+      "Mind-Affecting",
+      "Roll",
+      "Spell",
+      "Transmutation",
+      "Will"
+    ],
+    "Natural Geomancy": [
+      "At-Will",
+      "Divination",
+      "Lunar",
+      "Nature",
+      "Spell"
+    ],
+    "Provider's Station": [
+      "Conjuration",
+      "Limited",
+      "Lunar",
+      "Spell"
+    ],
+    "Star Sight": [
+      "At-Will",
+      "Divination",
+      "Lunar",
+      "Navigate",
+      "Spell",
+      "Standard Action"
+    ],
+    "Lunar Dream": [
+      "Curse",
+      "Food",
+      "HP",
+      "Limited",
+      "Lunar",
+      "Poison",
+      "Short Rest",
+      "Spell",
+      "Standard Action",
+      "Transmutation"
+    ],
+    "Unseen Blade": [
+      "At-Will",
+      "Attack",
+      "Feint",
+      "Illusion",
+      "Lunar",
+      "Spell",
+      "Subtle",
+      "Swift Action"
+    ],
+    "Unseen Form": [
+      "Buff",
+      "Illusion",
+      "Lunar",
+      "Partial Concealment",
+      "Recharge",
+      "Spell",
+      "Subtle",
+      "Swift Action",
+      "Total Concealment",
+      "movement"
+    ],
+    "Astral Alignment": [
+      "Divination",
+      "Limited",
+      "Luck Check",
+      "Lunar",
+      "Spell",
+      "Standard Action"
+    ],
+    "Sacrificial Heal": [
+      "At-Will",
+      "Conjuration",
+      "HP",
+      "Healing",
+      "Lunar",
+      "Spell",
+      "Standard Action"
+    ],
+    "Vengeance": [
+      "AoE",
+      "Attack",
+      "Buff",
+      "DC",
+      "Damage",
+      "Evocation",
+      "Identify Spell",
+      "Immediate Action",
+      "Lunar",
+      "Magic",
+      "Recharge",
+      "Spell",
+      "Targeted"
+    ],
+    "Energy Transfer": [
+      "Conjuration",
+      "Limited",
+      "Lunar",
+      "Recharge",
+      "Spell",
+      "Standard Action"
+    ],
+    "Vengeance Other": [
+      "Buff",
+      "DC",
+      "Damage",
+      "Evocation",
+      "Identify Spell",
+      "Limited",
+      "Lunar",
+      "Magic",
+      "Spell",
+      "Standard Action",
+      "Vengeance"
+    ],
+    "Magic Imbue": [
+      "Conjuration",
+      "Limited",
+      "Lunar",
+      "Spell",
+      "Standard Action"
+    ],
+    "Boneshaker": [
+      "Action-Attack",
+      "Attack",
+      "CL",
+      "Charge",
+      "Damage",
+      "Monster Lore",
+      "Necromancy",
+      "Necrotic",
+      "Recharge",
+      "SP",
+      "Spell",
+      "Staggered",
+      "Transmutation",
+      "Undead",
+      "Upcast"
+    ],
+    "Decompose": [
+      "Action-Attack",
+      "Damage",
+      "Necromancy",
+      "Necrotic",
+      "Recharge",
+      "SP",
+      "Spell",
+      "Transmutation",
+      "Undead",
+      "Upcast"
+    ],
+    "Enervate": [
+      "Action-Attack",
+      "At-Will",
+      "Conjuration",
+      "Drained",
+      "Healing",
+      "Limited",
+      "Necromancy",
+      "Ranged Attack",
+      "Spell",
+      "Upcast"
+    ],
+    "Grasp of the Grave": [
+      "Action-Attack",
+      "At-Will",
+      "Athletics",
+      "Earth",
+      "Entangled",
+      "Necromancy",
+      "Potency",
+      "Spell",
+      "Transmutation",
+      "Upcast"
+    ],
+    "Grave Robber": [
+      "Divination",
+      "Necromancy",
+      "Passive",
+      "Spell",
+      "Standard Action"
+    ],
+    "Halt Undead": [
+      "Action-Attack",
+      "Entangled",
+      "Necromancy",
+      "Recharge",
+      "Spell",
+      "Transmutation",
+      "Undead",
+      "Upcast"
+    ],
+    "Brilliant Barrage": [
+      "AS",
+      "At-Will",
+      "Attack",
+      "Damage",
+      "Evocation",
+      "Fire",
+      "Glowing",
+      "Light",
+      "Prismancy",
+      "Ranged Attack",
+      "SP",
+      "Spell",
+      "Upcast"
+    ],
+    "Illumination": [
+      "Attack",
+      "Damage",
+      "Evocation",
+      "Fire",
+      "Glowing",
+      "Light",
+      "Passive",
+      "Prismancy",
+      "SP",
+      "Saving Throw",
+      "Spell"
+    ],
+    "Lady of Light": [
+      "Buff",
+      "Evocation",
+      "Fire",
+      "Light",
+      "Light Level",
+      "Passive",
+      "Prismancy",
+      "Spell",
+      "Stealth"
+    ],
+    "Prismatic Barrier": [
+      "Abnegation",
+      "Action-Attack",
+      "Healing",
+      "Light",
+      "Prismancy",
+      "Recharge",
+      "SP",
+      "Spell",
+      "Temp HP",
+      "Upcast"
+    ],
+    "Ricochet Reflection": [
+      "Concentration",
+      "Cover",
+      "Evocation",
+      "Light",
+      "Line of Effect",
+      "Prismancy",
+      "Recharge",
+      "Spell",
+      "Swift Action"
+    ],
+    "Shimmering Ray": [
+      "Action-Attack",
+      "Blurred Vision",
+      "Concentration",
+      "Damage",
+      "Evocation",
+      "Fire",
+      "Glowing",
+      "Grab",
+      "Light",
+      "Prismancy",
+      "Ranged Attack",
+      "Recharge",
+      "SP",
+      "Spell",
+      "Upcast"
+    ],
+    "Solar Flash": [
+      "Blinded",
+      "CL",
+      "Damage",
+      "Evocation",
+      "Fire",
+      "Light",
+      "Prismancy",
+      "Recharge",
+      "Reflex",
+      "Saving Throw",
+      "Spell",
+      "Standard Action"
+    ],
+    "Repelling Light": [
+      "Action-Attack",
+      "Concentration",
+      "Evocation",
+      "Light",
+      "Mind-Affecting",
+      "Prismancy",
+      "Recharge",
+      "Spell",
+      "Upcast"
+    ],
+    "Rainbow Beam": [
+      "Action-Attack",
+      "Attack",
+      "Buff",
+      "CL",
+      "Damage",
+      "Evocation",
+      "Fire",
+      "Glowing",
+      "Light",
+      "Limited",
+      "Prismancy",
+      "SP",
+      "Saving Throw",
+      "Sickened",
+      "Skill",
+      "Spell",
+      "Upcast"
+    ],
+    "Sabre of Light": [
+      "ACC",
+      "CL",
+      "Damage",
+      "Evocation",
+      "Fire",
+      "Light",
+      "Martial",
+      "Prismancy",
+      "Recharge",
+      "SP",
+      "Spell",
+      "Swift Action"
+    ],
+    "Zonnestraal": [
+      "Ablaze",
+      "Blinded",
+      "CL",
+      "Concentration",
+      "Damage",
+      "Evocation",
+      "Fiend",
+      "Fire",
+      "Light",
+      "Limited",
+      "Persistent",
+      "Prismancy",
+      "Reflex",
+      "SP",
+      "Spell",
+      "Standard Action",
+      "Undead",
+      "Upcast"
+    ],
+    "Sending": [
+      "Damage",
+      "Divination",
+      "Limited",
+      "Line of Effect",
+      "Psychic",
+      "Psychomancy",
+      "Recharge",
+      "Spell",
+      "Standard Action",
+      "Upcast"
+    ],
+    "Psychomancy": [
+      "Detect Thoughts",
+      "Dream",
+      "Memory Movie",
+      "Sending",
+      "Telekinesis"
+    ],
+    "Blazing Palm": [
+      "Ablaze",
+      "Action-Attack",
+      "At-Will",
+      "Damage",
+      "Evocation",
+      "Fire",
+      "Pyromancy",
+      "Ranged Attack",
+      "SP",
+      "Spell",
+      "Upcast"
+    ],
+    "Flame Blade": [
+      "Action-Attack",
+      "Attack",
+      "Damage",
+      "Evocation",
+      "Fire",
+      "Martial",
+      "Pyromancy",
+      "Recharge",
+      "SP",
+      "Spell",
+      "Upcast"
+    ],
+    "Flame Foil": [
+      "Ablaze",
+      "Attack",
+      "Evocation",
+      "Fire",
+      "Instant Action",
+      "Pyromancy",
+      "Recharge",
+      "Spell"
+    ],
+    "Flame Pillar": [
+      "Ablaze",
+      "Concentration",
+      "Damage",
+      "Evocation",
+      "Fire",
+      "Persistent",
+      "Pyromancy",
+      "Recharge",
+      "SP",
+      "Spell",
+      "Standard Action",
+      "Upcast"
+    ],
+    "Flame Surge": [
+      "Ablaze",
+      "Action-Attack",
+      "At-Will",
+      "CL",
+      "Concentration",
+      "Damage",
+      "Evocation",
+      "Fire",
+      "Pyromancy",
+      "SP",
+      "Spell",
+      "Upcast"
+    ],
+    "Self-Immolation": [
+      "At-Will",
+      "Damage",
+      "Evocation",
+      "Fire",
+      "Pyromancy",
+      "Speed",
+      "Spell",
+      "Swift Action",
+      "Upcast"
+    ],
+    "Burning Hands": [
+      "Action-Attack",
+      "CL",
+      "Damage",
+      "Evocation",
+      "Fire",
+      "Pyromancy",
+      "Recharge",
+      "Reflex",
+      "SP",
+      "Spell",
+      "Upcast"
+    ],
+    "Detonate": [
+      "AC",
+      "Ablaze",
+      "Action-Attack",
+      "DC",
+      "Damage",
+      "Evocation",
+      "Fire",
+      "Light",
+      "Prismancy",
+      "Recharge",
+      "SP",
+      "Spell",
+      "Upcast"
+    ],
+    "Flame Tempest": [
+      "CL",
+      "Damage",
+      "Evocation",
+      "Fire",
+      "Immediate Action",
+      "Pyromancy",
+      "Recharge",
+      "Spell",
+      "Upcast"
+    ],
+    "Fire Blast": [
+      "Action-Attack",
+      "CL",
+      "Damage",
+      "Evocation",
+      "Fire",
+      "Knocked Down",
+      "Limited",
+      "Pyromancy",
+      "Ranged Attack",
+      "Reflex",
+      "SP",
+      "Spell",
+      "Upcast"
+    ],
+    "Ifrit Milicien": [
+      "Companion",
+      "Conjuration",
+      "Ifrit",
+      "Limited",
+      "Passive",
+      "Preparing Techniques",
+      "Pyromancy",
+      "Spell",
+      "Summoning",
+      "Upcast"
+    ],
+    "Meteor Swarm": [
+      "CL",
+      "Damage",
+      "Evocation",
+      "Fire",
+      "Limited",
+      "Pyromancy",
+      "SP",
+      "Spell",
+      "Standard Action",
+      "Upcast"
+    ],
+    "Bless": [
+      "ACC",
+      "Action-Attack",
+      "Attack",
+      "Buff",
+      "Concentration",
+      "Conjuration",
+      "Damage",
+      "Holy",
+      "Recharge",
+      "Spell",
+      "Vitalism"
+    ],
+    "Caloric Healing": [
+      "Caloric",
+      "Conjuration",
+      "Food",
+      "Healing",
+      "Recharge",
+      "Spell",
+      "Standard Action",
+      "Vitalism"
+    ],
+    "Death Ward": [
+      "At-Will",
+      "Defeat",
+      "Spell",
+      "Standard Action",
+      "Transmutation",
+      "Vitalism"
+    ],
+    "Handholding": [
+      "Conjuration",
+      "Limited",
+      "Spell",
+      "Vitalism"
+    ],
+    "Heal": [
+      "Bleed",
+      "CL",
+      "Conjuration",
+      "Damage",
+      "Healing",
+      "Holy",
+      "Limited",
+      "SP",
+      "Spell",
+      "Standard Action",
+      "Undead",
+      "Upcast",
+      "Vitalism"
+    ],
+    "Invigorate": [
+      "AS",
+      "Action-Attack",
+      "Conjuration",
+      "Knocked Down",
+      "Recharge",
+      "Spell",
+      "Vitalism"
+    ],
+    "Spare Life": [
+      "At-Will",
+      "Conjuration",
+      "HP",
+      "Healing",
+      "Regenerate",
+      "Spell",
+      "Standard Action",
+      "Vitalism"
+    ],
+    "Circle of Sealing": [
+      "Abnegation",
+      "Anchored",
+      "CL",
+      "Damage",
+      "Fiend",
+      "HP",
+      "LV",
+      "Limited",
+      "M",
+      "Magic",
+      "Siphoned",
+      "Spell",
+      "Vitalism",
+      "Weakness"
+    ],
+    "Turn Undead": [
+      "At-Will",
+      "Fear",
+      "Frightened",
+      "Illusion",
+      "Mind-Affecting",
+      "Mindless",
+      "Spell",
+      "Standard Action",
+      "Undead",
+      "Upcast",
+      "Vitalism"
+    ],
+    "Regenerate": [
+      "Affliction",
+      "Healing",
+      "Limited",
+      "Placeholder",
+      "Spell",
+      "Standard Action",
+      "Stunned",
+      "Transmutation",
+      "Vitalism"
+    ],
+    "Vitalism": [
+      "Fiend",
+      "Holy",
+      "Undead"
+    ],
+    "CL": [
+      "Feat",
+      "LV",
+      "Staff"
+    ],
+    "M": [
+      "Spell Components"
+    ],
+    "S": [
+      "Seal",
+      "Spell Components",
+      "Staff",
+      "Tome",
+      "Wand"
+    ],
+    "Spell Components": [
+      "Innate Technique",
+      "M",
+      "S",
+      "V"
+    ],
+    "Spell": [
+      "CL",
+      "Innate Technique",
+      "M",
+      "S",
+      "SP",
+      "Spell Components",
+      "Subtle",
+      "Technique",
+      "V"
+    ],
+    "Untitled": [
+      "SP"
+    ],
+    "V": [
+      "Arcana",
+      "Language"
+    ],
+    "Weather and Terrain vs Spells": [
+      "CL",
+      "DM"
+    ],
+    "Nebula": [
+      "Action-Attack",
+      "CL",
+      "Damage",
+      "Evocation",
+      "Light",
+      "Lunar",
+      "Magic",
+      "Partial Concealment",
+      "Recharge",
+      "SP",
+      "Spell",
+      "Total Concealment",
+      "Upcast"
+    ],
+    "Innate Technique": [
+      "Class",
+      "Combat Maneuver",
+      "Disarm",
+      "Mana",
+      "Race",
+      "Staff",
+      "Swift Action",
+      "Technique"
+    ],
+    "Preparing Techniques": [
+      "Innate Technique",
+      "Mana"
+    ],
+    "Technique": [
+      "LV",
+      "Martial",
+      "Spell"
+    ],
+    "Upcast": [
+      "CL",
+      "Technique"
+    ],
+    "Template, Affliction": [
+      "Affliction"
+    ],
+    "Template, Bestiary Entry": [
+      "AC",
+      "ACC",
+      "AS",
+      "Abomination",
+      "Beast",
+      "CHA",
+      "Celestial",
+      "Construct",
+      "Critical Damage",
+      "DEX",
+      "Damage",
+      "Elemental",
+      "Feat\\",
+      "Fey",
+      "Fiend",
+      "Fortitude",
+      "HP",
+      "Humanoid",
+      "INT",
+      "Immunity\\",
+      "Initiative",
+      "Jump",
+      "LUK",
+      "LV",
+      "Mana",
+      "Monster",
+      "Monster Quality\\",
+      "Ooze",
+      "Perception",
+      "Plant",
+      "Potency",
+      "Reflex",
+      "Resistance\\",
+      "SP\\",
+      "STR",
+      "Senses",
+      "Skill\\",
+      "Speed",
+      "Technique\\",
+      "Titan",
+      "Undead",
+      "WIS",
+      "Weakness\\",
+      "Weapon Group",
+      "Will"
+    ],
+    "Template, Class": [
+      "ACC",
+      "HP",
+      "Mana",
+      "Saving Throw\\",
+      "Skill\\"
+    ],
+    "Template, Innate Technique": [
+      "Action-Attack",
+      "At-Will",
+      "Class",
+      "Free Action",
+      "Immediate Action",
+      "Innate Technique",
+      "Instant Action",
+      "Limited",
+      "Recharge",
+      "Standard Action",
+      "Swift Action"
+    ],
+    "Template, Spell": [
+      "Abnegation",
+      "Academy",
+      "Action-Attack",
+      "At-Will",
+      "Conjuration",
+      "Divination",
+      "Evocation",
+      "Free Action",
+      "Illusion",
+      "Immediate Action",
+      "Instant Action",
+      "Limited",
+      "Recharge",
+      "Spell",
+      "Standard Action",
+      "Swift Action",
+      "Transmutation",
+      "Upcast"
+    ],
+    "Template, Technique": [
+      "Action-Attack",
+      "At-Will",
+      "Free Action",
+      "Immediate Action",
+      "Instant Action",
+      "Limited",
+      "Recharge",
+      "Standard Action",
+      "Swift Action",
+      "Technique",
+      "Upcast",
+      "Warfare"
+    ],
+    "Template, Weapon Technique": [
+      "Action-Attack",
+      "At-Will",
+      "Axe",
+      "Blade",
+      "Bludgeon",
+      "Bow",
+      "Close",
+      "Dagger",
+      "Free Action",
+      "Immediate Action",
+      "Innate Technique",
+      "Instant Action",
+      "Limited",
+      "Polearm",
+      "Recharge",
+      "Standard Action",
+      "Swift Action",
+      "Thrown",
+      "Thrust",
+      "Trigger",
+      "Weapon",
+      "Weapon Group"
+    ],
+    "Template, Weapon": [
+      "AS",
+      "Ammunition",
+      "Axe",
+      "Blade",
+      "Bludgeon",
+      "Bow",
+      "Close",
+      "Crafting",
+      "Dagger",
+      "Damage",
+      "Natural Weapon",
+      "Polearm",
+      "Shield",
+      "Staff",
+      "Thrown",
+      "Thrust",
+      "Trigger",
+      "Upgrade Slot\\",
+      "Weapon Qualities"
+    ],
+    "Icon Usage Guide": [
+      "Roll"
+    ],
+    "Index": [
+      "🍔 Mission Statement"
+    ]
+  },
+  "incomingLinks": {
+    "Extraplanar": [
+      "Celestial"
+    ],
+    "Yokai": [
+      "Fiend"
+    ],
+    "Ifrit": [
+      "Ifrit Milicien"
+    ],
+    "Straw Puppet": [
+      "Straw Puppet Milicien"
+    ],
+    "Adversary Kishin": [
+      "Spirit Walker"
+    ],
+    "Abomination": [
+      "Astronomy",
+      "Monster Lore",
+      "Template, Bestiary Entry"
+    ],
+    "Beast": [
+      "Bestial",
+      "Monster Lore",
+      "Nature",
+      "Template, Bestiary Entry"
+    ],
+    "Celestial": [
+      "Monster Lore",
+      "Planes",
+      "Template, Bestiary Entry"
+    ],
+    "Construct": [
+      "Engineering",
+      "Monster Lore",
+      "Straw Puppet",
+      "Template, Bestiary Entry"
+    ],
+    "Elemental": [
+      "Ifrit",
+      "Monster Lore",
+      "Planes",
+      "Template, Bestiary Entry"
+    ],
+    "Fey": [
+      "Monster Lore",
+      "Nature",
+      "Straw Puppet",
+      "Template, Bestiary Entry"
+    ],
+    "Fiend": [
+      "Adversary Kishin",
+      "Circle of Sealing",
+      "Holy",
+      "Monster Lore",
+      "Planes",
+      "Template, Bestiary Entry",
+      "Vitalism",
+      "Yokai",
+      "Zonnestraal"
+    ],
+    "Humanoid": [
+      "Adversary Kishin",
+      "Equipment Slot",
+      "Humanities",
+      "Monster Lore",
+      "Template, Bestiary Entry",
+      "Titan"
+    ],
+    "Monster": [
+      "Arcana",
+      "Monster Lore",
+      "Template, Bestiary Entry"
+    ],
+    "Ooze": [
+      "Alchemy",
+      "Monster Lore",
+      "Template, Bestiary Entry"
+    ],
+    "Plant": [
+      "Monster Lore",
+      "Nature",
+      "Template, Bestiary Entry"
+    ],
+    "Titan": [
+      "Humanities",
+      "Monster Lore",
+      "Template, Bestiary Entry"
+    ],
+    "Undead": [
+      "Adversary Kishin",
+      "Boneshaker",
+      "Decompose",
+      "Half-Link",
+      "Halt Undead",
+      "Heal",
+      "Holy",
+      "Monster Lore",
+      "Necrotic",
+      "Religion",
+      "Skeleton, Garden",
+      "Template, Bestiary Entry",
+      "Turn Undead",
+      "Vitalism",
+      "Zonnestraal"
+    ],
+    "Monster Quality": [
+      "Bestiary"
+    ],
+    "Achievement": [
+      "Backstabber",
+      "Battle Scars",
+      "Critical Pet",
+      "Progression Outside of Class"
+    ],
+    "Archetype": [
+      "Aran",
+      "Archer",
+      "Bandit",
+      "Class",
+      "Dark Knight",
+      "Spirit Walker"
+    ],
+    "Class": [
+      "ACC",
+      "Archetype",
+      "Character Creation",
+      "Class and Weapon Abilities",
+      "Focus Dispel",
+      "Fortitude",
+      "HP",
+      "Innate Technique",
+      "Reflex",
+      "Template, Innate Technique",
+      "Will"
+    ],
+    "Dark Knight": [
+      "Monster Lore"
+    ],
+    "Fighter": [
+      "Aran",
+      "Archer",
+      "Dark Knight",
+      "Hyper Body"
+    ],
+    "Healer": [
+      "Blessing of Restoration",
+      "Channel Energy",
+      "Healing Touch",
+      "Holy Arrow",
+      "Hug",
+      "Mystic Door"
+    ],
+    "Monk": [
+      "Monster Lore"
+    ],
+    "Rogue": [
+      "Bandit",
+      "Dark Sight",
+      "Haste"
+    ],
+    "AP": [
+      "Avatar"
+    ],
+    "Avatar": [
+      "Summoner"
+    ],
+    "Summoner": [
+      "Spirit Walker"
+    ],
+    "Concealment": [
+      "Blind Fight",
+      "Hide",
+      "Partial Concealment",
+      "Resonating Strike",
+      "Total Concealment"
+    ],
+    "Cover": [
+      "AoE",
+      "Circumstance",
+      "Curved Shot",
+      "Hide",
+      "Improved Cover",
+      "Monkey Style",
+      "Ranged Attack",
+      "Ricochet Reflection",
+      "Shield",
+      "Total Cover"
+    ],
+    "Improved Cover": [
+      "Cover",
+      "Curved Shot",
+      "Submerged"
+    ],
+    "Partial Concealment": [
+      "Blurred Vision",
+      "Concealment",
+      "Light Level",
+      "Nebula",
+      "Unseen Form"
+    ],
+    "Total Concealment": [
+      "Blinded",
+      "Concealment",
+      "Invisible",
+      "Light Level",
+      "Nebula",
+      "Unseen Form"
+    ],
+    "Total Cover": [
+      "Cover",
+      "Curved Shot",
+      "Line of Effect",
+      "Shield"
+    ],
+    "AC": [
+      "ACC",
+      "Abbreviations",
+      "Ablaze",
+      "Adversary Kishin",
+      "Aid",
+      "Aquatic Combat",
+      "Armor",
+      "Bambuken",
+      "Blind Fight",
+      "Blood Armor",
+      "Callout",
+      "Chilled",
+      "Clumsy",
+      "Combat Maneuver",
+      "Cover",
+      "Crit",
+      "DEX",
+      "Defensive Spin",
+      "Detonate",
+      "Dive",
+      "Dodge Roll",
+      "Dropkick",
+      "Entangled",
+      "Equipment Slot",
+      "Fall Damage",
+      "Flash Kick",
+      "Fly",
+      "Glowing",
+      "Hover",
+      "Ifrit",
+      "Improved Cover",
+      "LUK",
+      "Martial Artist",
+      "Monkey Style",
+      "Monster Lore",
+      "Partial Concealment",
+      "Prone",
+      "Rolling Dice and Statistics",
+      "Shield",
+      "Shield Brothers",
+      "Skeleton, Garden",
+      "Specific Defenses Rule",
+      "Straw Puppet",
+      "Template, Bestiary Entry",
+      "Thrown",
+      "Total Concealment",
+      "Total Defense"
+    ],
+    "ACC": [
+      "Abbreviations",
+      "Adversary Kishin",
+      "Aid",
+      "Aquatic Combat",
+      "Archer",
+      "Attack",
+      "Avatar",
+      "Bless",
+      "Callout",
+      "Cleaving Axe",
+      "Close Range",
+      "DEX",
+      "Dark Knight",
+      "Dark Sight",
+      "Disarming Shot",
+      "Elf",
+      "Feint",
+      "Fighter",
+      "Flanking",
+      "Focus Shot",
+      "Frightened",
+      "Hailbreaker",
+      "Healer",
+      "Ifrit",
+      "Lunge",
+      "Maneuver Adept",
+      "Martial",
+      "Martial Artist",
+      "Named Bullet",
+      "Orc",
+      "Pocket Sand",
+      "Prone",
+      "Ranger Whack",
+      "Rogue",
+      "STR",
+      "Sabre of Light",
+      "Scroll for Weapon Accuracy",
+      "Sickened",
+      "Skeleton, Garden",
+      "Snipe",
+      "Spirit Walker",
+      "Stat Feat",
+      "Steal",
+      "Straw Puppet",
+      "Summoner",
+      "Template, Bestiary Entry",
+      "Template, Class",
+      "The Boss",
+      "Wide Range"
+    ],
+    "AoE": [
+      "Abbreviations",
+      "Chi Reflection",
+      "Cover",
+      "Fly",
+      "Hover",
+      "Improved Cover",
+      "Total Cover",
+      "Vengeance"
+    ],
+    "CC": [
+      "Abbreviations",
+      "Status"
+    ],
+    "Circumstance": [
+      "AC",
+      "Aquatic Combat",
+      "Concealment",
+      "Cover",
+      "Difficult Terrain",
+      "Flanking",
+      "Improved Cover",
+      "Partial Concealment",
+      "Surprised",
+      "Total Concealment",
+      "Total Cover",
+      "Unassailable"
+    ],
+    "DC": [
+      "Abbreviations",
+      "Adamant Armor",
+      "Assess Vitality",
+      "Bleed",
+      "Brute Force",
+      "Butcher",
+      "Catch Fall",
+      "Coax",
+      "Coercion",
+      "Detect Compulsion",
+      "Detect Portal",
+      "Detonate",
+      "Divine Lore",
+      "Ecstasy",
+      "Encode or Decode Documents",
+      "Identify Affliction or Curse",
+      "Identify Composition",
+      "Identify Magic Item",
+      "Identify Potion",
+      "Identify Spell",
+      "Interpret Text",
+      "Intuition",
+      "Knowledge",
+      "Lie",
+      "Monster Lore",
+      "Pick Lock",
+      "Potency",
+      "Provide First Aid",
+      "Quiz",
+      "Rolling Dice and Statistics",
+      "Saving Throw",
+      "Skill",
+      "Subtle",
+      "Subtle Message",
+      "Tumble",
+      "Vengeance",
+      "Vengeance Other"
+    ],
+    "DM": [
+      "Abbreviations",
+      "Bandit",
+      "Detect Dishonesty",
+      "Lie",
+      "NPC",
+      "PC",
+      "Skill",
+      "Stat Feat",
+      "Weather and Terrain vs Spells"
+    ],
+    "DR": [
+      "Adamant Armor",
+      "Clustered Blows"
+    ],
+    "FH": [
+      "The Boss"
+    ],
+    "Flanking": [
+      "Cerberus Style",
+      "Pack Tactics"
+    ],
+    "Initiative": [
+      "Adversary Kishin",
+      "Companion",
+      "DEX",
+      "Delay",
+      "Ifrit",
+      "Second Wind",
+      "Skeleton, Garden",
+      "Straw Puppet",
+      "Surprised",
+      "Template, Bestiary Entry"
+    ],
+    "Lv": [
+      "ACC",
+      "Damage",
+      "Saving Throw"
+    ],
+    "Minion": [
+      "Blood Rush",
+      "Dark Knight",
+      "Fan Club",
+      "Sanguivory",
+      "Soul Blade",
+      "Summoning"
+    ],
+    "Natural": [
+      "Roll",
+      "Take 10",
+      "Take 30"
+    ],
+    "NPC": [
+      "Abbreviations",
+      "Coax",
+      "DM"
+    ],
+    "PC": [
+      "Abbreviations",
+      "Ability Scores",
+      "Initiative",
+      "NPC",
+      "Stat Feat"
+    ],
+    "Potency": [
+      "Adversary Kishin",
+      "Bleed",
+      "Detect Compulsion",
+      "Drained",
+      "Dwarf",
+      "Fire Back",
+      "Grasp of the Grave",
+      "Identify Magic Item",
+      "Ifrit",
+      "Kitsune",
+      "LUK",
+      "Shaken",
+      "Skeleton, Garden",
+      "Straw Puppet",
+      "Template, Bestiary Entry"
+    ],
+    "Roll": [
+      "Arrow Splitter",
+      "Astrology",
+      "Attack",
+      "Catch Blade",
+      "Coercion",
+      "DC",
+      "Demoralize",
+      "Detect Compulsion",
+      "Dispel",
+      "Drained",
+      "Enchant Sapphire",
+      "Endurance",
+      "Explorer",
+      "Fighter",
+      "Fortitude",
+      "Grab",
+      "Hide",
+      "Icon Usage Guide",
+      "LUK",
+      "Lv",
+      "Natural",
+      "Ranged Attack",
+      "Recovering from Defeat",
+      "Reflex",
+      "Rogue",
+      "Rolling Dice and Statistics",
+      "Saving Throw",
+      "Shield",
+      "Skill",
+      "Snake Style",
+      "Targeted",
+      "Tumble",
+      "Weapon Qualities",
+      "Will"
+    ],
+    "SP": [
+      "Blazing Palm",
+      "Blood Barrage",
+      "Blood Blitz",
+      "Blood Rush",
+      "Boneshaker",
+      "Brilliant Barrage",
+      "Burning Hands",
+      "Channel Energy",
+      "Damage",
+      "Decompose",
+      "Detonate",
+      "Fire Blast",
+      "Flame Blade",
+      "Flame Pillar",
+      "Flame Surge",
+      "Heal",
+      "Healer",
+      "Healing Touch",
+      "INT",
+      "Illumination",
+      "Magic Claw",
+      "Magic Guard",
+      "Meteor Swarm",
+      "Nebula",
+      "Prismatic Barrier",
+      "Rainbow Beam",
+      "Sabre of Light",
+      "Shimmering Ray",
+      "Spell",
+      "Stage Fright",
+      "Untitled",
+      "Zonnestraal"
+    ],
+    "Supernatural": [
+      "Blood Bath",
+      "Chi Reflection",
+      "Dark Knight",
+      "Detect Magic",
+      "Explorer",
+      "Healer",
+      "Healing Touch",
+      "Mommy",
+      "Mystic Door",
+      "Named Bullet",
+      "Resonating Strike",
+      "Siphoned",
+      "Straw Puppet Milicien",
+      "Summoner",
+      "Taunted",
+      "Transformation"
+    ],
+    "Threaten": [
+      "Burrow",
+      "Flanking",
+      "Fly",
+      "Ranged Attack",
+      "Tumble"
+    ],
+    "XP": [
+      "WIS"
+    ],
+    "Ability Scores": [
+      "Character Creation",
+      "Skill"
+    ],
+    "Carry Weight": [
+      "AP",
+      "Brute Force",
+      "STR"
+    ],
+    "CHA": [
+      "Abbreviations",
+      "Ability Scores",
+      "Adversary Kishin",
+      "Archer",
+      "Charmed",
+      "Companion",
+      "Dark Knight",
+      "Deception",
+      "Fan Club",
+      "Haste",
+      "Hyper Body",
+      "Ifrit",
+      "Insight",
+      "Intimidation",
+      "Perform",
+      "Persuasion",
+      "Rogue",
+      "Skeleton, Garden",
+      "Straw Puppet",
+      "Template, Bestiary Entry"
+    ],
+    "DEX": [
+      "AC",
+      "ACC",
+      "Abbreviations",
+      "Ability Scores",
+      "Acrobatics",
+      "Adversary Kishin",
+      "Athletics",
+      "Bandit",
+      "Combat Maneuver",
+      "Fleet Footwork",
+      "Ifrit",
+      "Jump",
+      "Quickstep",
+      "Reflex",
+      "Saving Throw",
+      "Skeleton, Garden",
+      "Stealth",
+      "Straw Puppet",
+      "Template, Bestiary Entry"
+    ],
+    "INT": [
+      "Abbreviations",
+      "Ability Scores",
+      "Adversary Kishin",
+      "Alchemy",
+      "Arcana",
+      "Astronomy",
+      "Engineering",
+      "Humanities",
+      "Ifrit",
+      "Invocation",
+      "Knowledge",
+      "Language",
+      "Linguistics",
+      "Medicine",
+      "Nature",
+      "Planes",
+      "Profession",
+      "Religion",
+      "SP",
+      "Skeleton, Garden",
+      "Straw Puppet",
+      "Template, Bestiary Entry"
+    ],
+    "Luck Check": [
+      "Astral Alignment",
+      "LUK",
+      "Rogue"
+    ],
+    "LUK": [
+      "AC",
+      "Abbreviations",
+      "Ability Scores",
+      "Adversary Kishin",
+      "Bandit",
+      "Confused",
+      "Critical Damage",
+      "Explorer",
+      "Focus Shot",
+      "Ifrit",
+      "Invocation",
+      "Potency",
+      "Recovering from Defeat",
+      "Rogue",
+      "Skeleton, Garden",
+      "Straw Puppet",
+      "Template, Bestiary Entry"
+    ],
+    "STR": [
+      "Abbreviations",
+      "Ability Scores",
+      "Adversary Kishin",
+      "Armor",
+      "Athletics",
+      "Combat Maneuver",
+      "Confused",
+      "Damage",
+      "Dragon Style",
+      "Endurance",
+      "Equipment Slot",
+      "Fortitude",
+      "Ifrit",
+      "Intimidation",
+      "Jump",
+      "Offense Calculator",
+      "Recovering from Defeat",
+      "Saving Throw",
+      "Shield",
+      "Skeleton, Garden",
+      "Straw Puppet",
+      "Template, Bestiary Entry",
+      "Trigger",
+      "Weapon"
+    ],
+    "WIS": [
+      "Abbreviations",
+      "Ability Scores",
+      "Adversary Kishin",
+      "Ifrit",
+      "Insight",
+      "Medicine",
+      "Perception",
+      "Profession",
+      "Saving Throw",
+      "Skeleton, Garden",
+      "Straw Puppet",
+      "Template, Bestiary Entry",
+      "Will"
+    ],
+    "Burrow": [
+      "AP"
+    ],
+    "Difficult Terrain": [
+      "Hover",
+      "Jump"
+    ],
+    "Fly": [
+      "Action System",
+      "Aran",
+      "Clumsy",
+      "Resonating Strike",
+      "Speed"
+    ],
+    "Hover": [
+      "Clumsy",
+      "Grounded",
+      "Ifrit"
+    ],
+    "Movement": [
+      "Action System",
+      "Burrow",
+      "Disarm",
+      "Fly",
+      "Hover",
+      "Knocked Down",
+      "Monkey Style",
+      "Seduce",
+      "Wall Kick"
+    ],
+    "Speed": [
+      "AP",
+      "Adversary Kishin",
+      "Aquatic Combat",
+      "Armor",
+      "Burrow",
+      "Chilled",
+      "Climb",
+      "Clothesline",
+      "DEX",
+      "Darting Duplicate",
+      "Dazed",
+      "Dwarf",
+      "Entangled",
+      "Fly",
+      "Gore Paint",
+      "Grabbing Style",
+      "Half-Link",
+      "Hamstring Shot",
+      "Haste",
+      "Hover",
+      "Ifrit",
+      "Jump",
+      "Marauder",
+      "Martial Artist",
+      "Monkey Style",
+      "Movement",
+      "Pyrrhic Might",
+      "Rogue",
+      "Self-Immolation",
+      "Skeleton, Garden",
+      "Staggered",
+      "Straw Puppet",
+      "Super Transformation",
+      "Swim",
+      "Tandem Charge",
+      "Template, Bestiary Entry",
+      "Transformation",
+      "Usa"
+    ],
+    "Action System": [
+      "Shield"
+    ],
+    "AoO": [
+      "Abbreviations",
+      "Action System",
+      "Body Slam",
+      "Burrow",
+      "Clothesline",
+      "Combat Reflexes",
+      "Command",
+      "Dark Knight",
+      "Darting Duplicate",
+      "Dazed",
+      "Dimensional Reflexes",
+      "Disarm",
+      "Elusive",
+      "Endure",
+      "Fighter",
+      "Final Attack",
+      "Fly",
+      "Grounded",
+      "Knocked Down",
+      "Maneuver Adept",
+      "Marauder",
+      "Prone",
+      "Ranged Attack",
+      "Revenge",
+      "Sanguivory",
+      "Second Wind",
+      "Snake Style",
+      "The Boss",
+      "Threaten",
+      "Total Defense",
+      "Tumble"
+    ],
+    "Free Action": [
+      "Action System",
+      "Aran",
+      "Conceal Item",
+      "Dark Knight",
+      "Death's Dance",
+      "Fighter",
+      "Healer",
+      "Kidnap",
+      "Monster Lore",
+      "Orc",
+      "Pyrrhic Might",
+      "Silver Hawk",
+      "Swap Item",
+      "Switching Weapons",
+      "Template, Innate Technique",
+      "Template, Spell",
+      "Template, Technique",
+      "Template, Weapon Technique",
+      "The Boss",
+      "Tongue Twister"
+    ],
+    "Full-Round Action": [
+      "Action System",
+      "Second Wind",
+      "Thrown",
+      "Tongue Twister"
+    ],
+    "Immediate Action": [
+      "Action System",
+      "Administer Potion",
+      "Bloodlust",
+      "Callout",
+      "Catch Blade",
+      "Catch Fall",
+      "Chi Reflection",
+      "Dark Sight",
+      "Dodge Roll",
+      "Dwarf",
+      "Explorer",
+      "Feather Fall",
+      "Fighter",
+      "Finisher",
+      "Fire Back",
+      "Flame Tempest",
+      "Fury",
+      "LUK",
+      "Move As One",
+      "Night Punch",
+      "Revenge",
+      "Rogue",
+      "Shield",
+      "Silver Hawk",
+      "Snake Style",
+      "Summoner",
+      "Tandem Charge",
+      "Template, Innate Technique",
+      "Template, Spell",
+      "Template, Technique",
+      "Template, Weapon Technique",
+      "The Boss",
+      "Unbreakable Body",
+      "Vengeance"
+    ],
+    "Instant Action": [
+      "Action System",
+      "Ammunition",
+      "AoO",
+      "Bodyguard",
+      "Conceal Item",
+      "Concentration",
+      "Confide",
+      "Dismissible",
+      "Dive",
+      "Double Speak",
+      "Fall Prone",
+      "Fearsome Finisher",
+      "Flame Foil",
+      "Focus Punch",
+      "Hailbreaker",
+      "Identify Spell",
+      "Magic Guard",
+      "Ora Aura",
+      "Quickdraw",
+      "Resonating Strike",
+      "Silver Hawk",
+      "Template, Innate Technique",
+      "Template, Spell",
+      "Template, Technique",
+      "Template, Weapon Technique",
+      "Weapon"
+    ],
+    "Standard Action": [
+      "Action System",
+      "Action-Attack",
+      "Administer Potion",
+      "Aid",
+      "Alarming Sigil",
+      "Archer",
+      "Astral Alignment",
+      "Attack Action",
+      "Blessing of Restoration",
+      "Blood Bath",
+      "Blood Rush",
+      "Bloodline Mimicry",
+      "Caloric Healing",
+      "Channel Energy",
+      "Charming Gaze",
+      "Confused",
+      "Create a Distraction",
+      "Dark Knight",
+      "Darting Duplicate",
+      "Dazed",
+      "Death Ward",
+      "Detect",
+      "Detect Magic",
+      "Disarm",
+      "Dismissible",
+      "Endure",
+      "Energy Transfer",
+      "Exhibition",
+      "Explorer",
+      "Fighter",
+      "Flame Pillar",
+      "Focus Dispel",
+      "Grave Robber",
+      "Haste",
+      "Heal",
+      "Healer",
+      "Hug",
+      "Hyper Body",
+      "Identify Magic Item",
+      "Levitate",
+      "Lighten Object",
+      "Lunar Dream",
+      "Magic Imbue",
+      "Marauder",
+      "Meteor Swarm",
+      "Mommy",
+      "Order 66",
+      "Pickpocket",
+      "Provide First Aid",
+      "Ranger Whack",
+      "Rapid Wardrobe",
+      "Regenerate",
+      "Ritual Infusion",
+      "Rogue",
+      "Sacrificial Heal",
+      "Sanguivory",
+      "Scholar's Hand",
+      "Sending",
+      "Silver Hawk",
+      "Skeleton, Garden",
+      "Snipe",
+      "Solar Flash",
+      "Spare Life",
+      "Staggered",
+      "Star Sight",
+      "Stunt Double",
+      "Summoner",
+      "Template, Innate Technique",
+      "Template, Spell",
+      "Template, Technique",
+      "Template, Weapon Technique",
+      "Thrall",
+      "Tongue Twister",
+      "Turn Undead",
+      "Unfiltered",
+      "Unnatural Lust",
+      "Vengeance Other",
+      "Verboden Taal",
+      "Weapon Qualities",
+      "Zonnestraal"
+    ],
+    "Swift Action": [
+      "Action System",
+      "Antagonize",
+      "Burrow",
+      "Cerberus Style",
+      "Conceal Item",
+      "Demon Style",
+      "Disarming Shot",
+      "Dispel",
+      "Dragon Style",
+      "Dwarf",
+      "Fly",
+      "Grabbing Style",
+      "Ground Pound",
+      "Gust Dive",
+      "Hide",
+      "Inferno Quiver",
+      "Innate Technique",
+      "Marauder",
+      "Monkey Style",
+      "Orc",
+      "Pinning Shot",
+      "Power Fists",
+      "Ricochet Reflection",
+      "Rogue",
+      "Sabre of Light",
+      "Self-Immolation",
+      "Shield",
+      "Silver Hawk",
+      "Slide",
+      "Staggered",
+      "Straw Puppet Milicien",
+      "Swap Item",
+      "Switching Weapons",
+      "Taunt",
+      "Template, Innate Technique",
+      "Template, Spell",
+      "Template, Technique",
+      "Template, Weapon Technique",
+      "Tongue Twister",
+      "Unseen Blade",
+      "Unseen Form"
+    ],
+    "Delay": [
+      "Free Action"
+    ],
+    "Swap Item": [
+      "Free Action"
+    ],
+    "Administer Potion": [
+      "Standard Action"
+    ],
+    "Aid": [
+      "Asleep",
+      "Defeated",
+      "Marauder",
+      "Standard Action",
+      "Thrall"
+    ],
+    "Attack Action": [
+      "AS",
+      "Fighter",
+      "Slaying Shot",
+      "Standard Action"
+    ],
+    "Carry": [
+      "Standard Action"
+    ],
+    "Charge": [
+      "Boneshaker",
+      "Demon Style",
+      "Fatigued",
+      "Standard Action",
+      "Tandem Charge"
+    ],
+    "Dash": [
+      "Fatigued",
+      "Jump",
+      "Kidnap",
+      "Marauder",
+      "Standard Action"
+    ],
+    "Disengage": [
+      "Standard Action"
+    ],
+    "Prepare": [
+      "Dispel",
+      "Standard Action"
+    ],
+    "Total Defense": [
+      "Standard Action"
+    ],
+    "Jump": [
+      "Adversary Kishin",
+      "Armor",
+      "Athletics",
+      "DEX",
+      "Fall Damage",
+      "Fatigued",
+      "Ground Pound",
+      "Haste",
+      "Ifrit",
+      "Moon Elf",
+      "Rogue",
+      "Skeleton, Garden",
+      "Sky Uppercut",
+      "Straw Puppet",
+      "Swift Action",
+      "Template, Bestiary Entry",
+      "Usa",
+      "Wall Kick"
+    ],
+    "Recharge Abilities": [
+      "Mana",
+      "Recharge",
+      "Swift Action"
+    ],
+    "Use Potion": [
+      "Identify Potion",
+      "Swift Action"
+    ],
+    "Restraint": [
+      "Alternative Win Conditions"
+    ],
+    "Surrender and Morale": [
+      "Alternative Win Conditions"
+    ],
+    "Truce": [
+      "Alternative Win Conditions"
+    ],
+    "Action-Attack": [
+      "AS",
+      "Arrow Rain",
+      "Arrow Splitter",
+      "Attack Action",
+      "Axe Kick",
+      "Bandit",
+      "Blazing Palm",
+      "Bless",
+      "Blindspot",
+      "Blood Barrage",
+      "Blood Blitz",
+      "Body Slam",
+      "Boneshaker",
+      "Burning Hands",
+      "Chi Block",
+      "Cleave",
+      "Combat Maneuver",
+      "Command",
+      "Curved Shot",
+      "Dark Knight",
+      "Decompose",
+      "Defensive Spin",
+      "Demoralize",
+      "Detonate",
+      "Dimensional Anchor",
+      "Disarming Shot",
+      "Dispel",
+      "Distant Shot",
+      "Dominate",
+      "Double Shot",
+      "Dropkick",
+      "Dwarf",
+      "Ecstasy",
+      "Enervate",
+      "Fire Blast",
+      "Flame Blade",
+      "Flame Surge",
+      "Flash Kick",
+      "Focus Punch",
+      "Focus Shot",
+      "Foe Throw",
+      "Foot Stomp",
+      "Gemarteld",
+      "Grab",
+      "Grasp of the Grave",
+      "Great Cleave",
+      "Halt Undead",
+      "Hamstring Shot",
+      "Healer",
+      "Healing Touch",
+      "Holy Arrow",
+      "Invigorate",
+      "Kidnap",
+      "Low Sweep",
+      "Lunge",
+      "Mage's Weapon",
+      "Magic Claw",
+      "Maneuver Adept",
+      "Multi-Strike",
+      "Nebula",
+      "Panic",
+      "Piercing Shot",
+      "Pinning Shot",
+      "Pocket Sand",
+      "Prismatic Barrier",
+      "Raging Blow",
+      "Rainbow Beam",
+      "Repelling Light",
+      "Resonating Strike",
+      "Seduce",
+      "Seismic Stomp",
+      "Shimmering Ray",
+      "Silver Hawk",
+      "Single Out",
+      "Skewer",
+      "Sky Uppercut",
+      "Slaying Shot",
+      "Soul Blade",
+      "Stage Fright",
+      "Star KO",
+      "Strafe",
+      "Template, Innate Technique",
+      "Template, Spell",
+      "Template, Technique",
+      "Template, Weapon Technique",
+      "The Boss",
+      "The Hand that Feeds",
+      "Tongue Twister",
+      "Weapon"
+    ],
+    "Combat Maneuver": [
+      "AC",
+      "Attack Action",
+      "Catch Blade",
+      "Feint",
+      "Innate Technique",
+      "Maneuver Adept",
+      "Marauder",
+      "Martial Artist",
+      "STR",
+      "Weapon Qualities"
+    ],
+    "Dirty Trick": [
+      "Combat Maneuver",
+      "Pocket Sand"
+    ],
+    "Disarm": [
+      "Combat Maneuver",
+      "Disarming Shot",
+      "Innate Technique"
+    ],
+    "Drag": [
+      "Axe",
+      "Combat Maneuver",
+      "Kidnap"
+    ],
+    "Feint": [
+      "Combat Maneuver",
+      "Deception",
+      "Surprised",
+      "Unseen Blade"
+    ],
+    "Fell": [
+      "Bambuken",
+      "Combat Maneuver",
+      "Fall Damage",
+      "Polearm",
+      "Seismic Stomp",
+      "Specific Defenses Rule"
+    ],
+    "Grab": [
+      "AP",
+      "Combat Maneuver",
+      "Grabbing Style",
+      "Hug",
+      "Mommy",
+      "Shimmering Ray"
+    ],
+    "Shove": [
+      "Combat Maneuver",
+      "Power Fists",
+      "Raging Blow",
+      "Ranger Whack"
+    ],
+    "Steal": [
+      "Bandit",
+      "Combat Maneuver"
+    ],
+    "AS": [
+      "Abbreviations",
+      "Action-Attack",
+      "Adversary Kishin",
+      "Aran",
+      "Attack Action",
+      "Axe",
+      "Blade",
+      "Bludgeon",
+      "Bow",
+      "Brilliant Barrage",
+      "Cleaving Axe",
+      "Close",
+      "Dagger",
+      "Dual Wielding",
+      "Fighter",
+      "Foe Throw",
+      "Hailbreaker",
+      "Half-Link",
+      "Ifrit",
+      "Invigorate",
+      "Kidnap",
+      "Martial Artist",
+      "Polearm",
+      "Pyrrhic Might",
+      "Skeleton, Garden",
+      "Slaying Shot",
+      "Strafe",
+      "Straw Puppet",
+      "Super Transformation",
+      "Template, Bestiary Entry",
+      "Template, Weapon",
+      "Thrown",
+      "Thrust",
+      "Transformation",
+      "Trigger",
+      "Unarmed",
+      "Weapon",
+      "Weapon Qualities"
+    ],
+    "Attack": [
+      "AC",
+      "ACC",
+      "AoO",
+      "Aran",
+      "Axe Kick",
+      "Bandit",
+      "Bless",
+      "Blindspot",
+      "Bloodlust",
+      "Body Slam",
+      "Boneshaker",
+      "Brilliant Barrage",
+      "Callout",
+      "Catch Blade",
+      "Cerberus Style",
+      "Chi Block",
+      "Cleave",
+      "Clothesline",
+      "Crit",
+      "Dark Knight",
+      "Dark Sight",
+      "Defensive Spin",
+      "Demon Style",
+      "Dropkick",
+      "Feint",
+      "Fighter",
+      "Finisher",
+      "Flame Blade",
+      "Flame Foil",
+      "Flash Kick",
+      "Fleet Footwork",
+      "Fly",
+      "Foot Stomp",
+      "Grab",
+      "Great Cleave",
+      "Hailbreaker",
+      "Hide",
+      "Hover",
+      "Illumination",
+      "Lunge",
+      "Lv",
+      "Maneuver Adept",
+      "Monk",
+      "Monkey Style",
+      "Night Punch",
+      "Ora Aura",
+      "Panic",
+      "Power Fists",
+      "Raging Blow",
+      "Rainbow Beam",
+      "Ranged Attack",
+      "Resonating Strike",
+      "Revenge",
+      "Rogue",
+      "Rolling Dice and Statistics",
+      "Saving Throw",
+      "Shield",
+      "Single Out",
+      "Sky Uppercut",
+      "Snake Style",
+      "Soul Blade",
+      "Soul Split",
+      "Spellbreaker",
+      "Star KO",
+      "Stunt Double",
+      "Sucker Punch",
+      "Super Transformation",
+      "Tandem Charge",
+      "Targeted",
+      "The Boss",
+      "Transformation",
+      "Unseen Blade",
+      "Vengeance",
+      "Weapon Qualities"
+    ],
+    "Crit": [
+      "Abbreviations",
+      "Archer",
+      "Attack",
+      "Bandit",
+      "Body Slam",
+      "Critical Damage",
+      "Dimensional Reflexes",
+      "Final Attack",
+      "Focus Punch",
+      "Gemarteld",
+      "Rogue",
+      "Straw Puppet"
+    ],
+    "Critical Damage": [
+      "Adversary Kishin",
+      "Archer",
+      "Attack",
+      "Bandit",
+      "Crit",
+      "Focus Shot",
+      "Gore Paint",
+      "Ifrit",
+      "LUK",
+      "Named Bullet",
+      "Offense Calculator",
+      "Rogue",
+      "Skeleton, Garden",
+      "Straw Puppet",
+      "Template, Bestiary Entry"
+    ],
+    "Damage": [
+      "AC",
+      "Ablaze",
+      "Adversary Kishin",
+      "Air",
+      "Ammunition",
+      "Axe",
+      "Blade",
+      "Blazing Palm",
+      "Bless",
+      "Blood Art",
+      "Bludgeon",
+      "Boneshaker",
+      "Bow",
+      "Brilliant Barrage",
+      "Burning Hands",
+      "Chilled",
+      "Chokehold",
+      "Circle of Sealing",
+      "Cleave",
+      "Cleaving Axe",
+      "Close",
+      "Cold",
+      "Confide",
+      "Confused",
+      "Critical Damage",
+      "Crush",
+      "DR",
+      "Dagger",
+      "Death's Dance",
+      "Decompose",
+      "Detonate",
+      "Dragon Style",
+      "Earth",
+      "Elemental Adept",
+      "Enchant Sapphire",
+      "Explorer",
+      "Fire",
+      "Fire Blast",
+      "Flame Blade",
+      "Flame Pillar",
+      "Flame Surge",
+      "Flame Tempest",
+      "Great Cleave",
+      "HP",
+      "Half-Link",
+      "Heal",
+      "Healer",
+      "Holy",
+      "Holy Arrow",
+      "Ifrit",
+      "Illumination",
+      "Immunity",
+      "Inferno Quiver",
+      "Lightning",
+      "Magic",
+      "Magic Claw",
+      "Martial",
+      "Martial Artist",
+      "Meteor Swarm",
+      "Nebula",
+      "Necrotic",
+      "Night Punch",
+      "Pierce",
+      "Polearm",
+      "Psychic",
+      "Rainbow Beam",
+      "Recovering from Defeat",
+      "Resistance",
+      "Resonating Strike",
+      "STR",
+      "Sabre of Light",
+      "Seismic Stomp",
+      "Self-Immolation",
+      "Sending",
+      "Shield",
+      "Shimmering Ray",
+      "Skeleton, Garden",
+      "Slash",
+      "Solar Flash",
+      "Soul Blade",
+      "Soul Split",
+      "Stage Fright",
+      "Straw Puppet",
+      "Tag",
+      "Template, Bestiary Entry",
+      "Template, Weapon",
+      "The Boss",
+      "Thrown",
+      "Thrust",
+      "Transformation",
+      "Trigger",
+      "Unarmed",
+      "Vengeance",
+      "Vengeance Other",
+      "Water",
+      "Weakness",
+      "Weapon",
+      "Weapon Qualities",
+      "Wet",
+      "Zonnestraal"
+    ],
+    "Dual Wielding": [
+      "Close",
+      "Unarmed",
+      "Weapon",
+      "Weapon Qualities"
+    ],
+    "Line of Effect": [
+      "Focus Shot",
+      "Ricochet Reflection",
+      "Sending",
+      "Targeted"
+    ],
+    "Ranged Attack": [
+      "Arrow Rain",
+      "Arrow Splitter",
+      "Blazing Palm",
+      "Brilliant Barrage",
+      "Close Range",
+      "Cover",
+      "Curved Shot",
+      "Dive",
+      "Double Shot",
+      "Enervate",
+      "Fighter",
+      "Final Attack",
+      "Fire Back",
+      "Fire Blast",
+      "Fly",
+      "Focus Shot",
+      "Hailbreaker",
+      "Hamstring Shot",
+      "Healer",
+      "Hide",
+      "Holy Arrow",
+      "Hover",
+      "Improved Cover",
+      "Inferno Quiver",
+      "Longshot",
+      "Piercing Shot",
+      "Pinning Shot",
+      "Prone",
+      "Resonating Strike",
+      "Shimmering Ray",
+      "Slaying Shot",
+      "Snipe",
+      "Spellbreaker",
+      "Strafe",
+      "Total Cover"
+    ],
+    "Targeted": [
+      "Line of Effect",
+      "Stunt Double",
+      "Total Cover",
+      "Vengeance"
+    ],
+    "Ashen One": [
+      "Death and Resurrection"
+    ],
+    "Cloning Device": [
+      "Death and Resurrection"
+    ],
+    "Limited Resurrection": [
+      "Death and Resurrection"
+    ],
+    "Tombstone": [
+      "Death and Resurrection"
+    ],
+    "Withers": [
+      "Death and Resurrection"
+    ],
+    "Defeat": [
+      "Aran",
+      "Death Ward",
+      "Defeated",
+      "Fearsome Finisher",
+      "Finisher",
+      "Slaying Shot"
+    ],
+    "Healing": [
+      "Aran",
+      "Blood Barrage",
+      "Blood Blitz",
+      "Blood Rush",
+      "Bloodlust",
+      "Caloric Healing",
+      "Channel Energy",
+      "Enervate",
+      "Explorer",
+      "Gemarteld",
+      "Heal",
+      "Healer",
+      "Healing Touch",
+      "Mommy",
+      "Natural Healing",
+      "Necrosed",
+      "Prismatic Barrier",
+      "Regenerate",
+      "Sacrificial Heal",
+      "Sanguivory",
+      "Second Wind",
+      "Soul Blade",
+      "Soul Split",
+      "Spare Life"
+    ],
+    "HP": [
+      "Abbreviations",
+      "Adversary Kishin",
+      "Archer",
+      "Avatar",
+      "Bandit",
+      "Bleed",
+      "Blood Armor",
+      "Blood Barrage",
+      "Channel Energy",
+      "Circle of Sealing",
+      "Class",
+      "Critical Damage",
+      "Damage",
+      "Dark Knight",
+      "Defeat",
+      "Drained",
+      "Dwarf",
+      "Endurance",
+      "FH",
+      "Fighter",
+      "Finisher",
+      "Food",
+      "Gore Paint",
+      "Healer",
+      "Healing",
+      "Healing Touch",
+      "Hyper Body",
+      "Ifrit",
+      "Invincible",
+      "Long Rest",
+      "Lunar Dream",
+      "Martial Artist",
+      "Monster Lore",
+      "Natural Healing",
+      "Necrosed",
+      "Offense Calculator",
+      "Orc",
+      "Recovering from Defeat",
+      "Rogue",
+      "Sacrificial Heal",
+      "Sanguivory",
+      "Second Wind",
+      "Skeleton, Garden",
+      "Soul Blade",
+      "Spare Life",
+      "Spirit Walker",
+      "Straw Puppet",
+      "Summoner",
+      "Temp HP",
+      "Template, Bestiary Entry",
+      "Template, Class",
+      "The Boss",
+      "Usa"
+    ],
+    "Immunity": [
+      "Elemental Adept"
+    ],
+    "Long Rest": [
+      "Food",
+      "Hyper Body",
+      "Mana Burn",
+      "Natural Healing",
+      "Rest",
+      "Sanguivory"
+    ],
+    "Natural Healing": [
+      "Long Rest",
+      "Short Rest"
+    ],
+    "Recovering from Defeat": [
+      "Defeat",
+      "Endurance"
+    ],
+    "Resistance": [
+      "Adamant Armor",
+      "Chilled",
+      "DR",
+      "Dwarf",
+      "Elemental Adept",
+      "Full Plate Armor",
+      "Monster Lore",
+      "Transformation"
+    ],
+    "Rest": [
+      "Drained",
+      "Mana",
+      "Usa"
+    ],
+    "Short Rest": [
+      "Explorer",
+      "Fatigued",
+      "Food",
+      "Long Rest",
+      "Lunar Dream",
+      "Natural Healing",
+      "Rest",
+      "Usa"
+    ],
+    "Temp HP": [
+      "Bloodlust",
+      "Healer",
+      "Healing",
+      "Healing Touch",
+      "Necrosed",
+      "Prismatic Barrier",
+      "Second Wind",
+      "The Boss"
+    ],
+    "Weakness": [
+      "Circle of Sealing"
+    ],
+    "Fall Damage": [
+      "Bambuken",
+      "Catch Fall",
+      "Grounded",
+      "Gust Dive"
+    ],
+    "Light Level": [
+      "Glowing",
+      "Lady of Light",
+      "Light"
+    ],
+    "Size and Reach": [
+      "Alarming Sigil",
+      "Bloodline Mimicry",
+      "Lunge",
+      "Race"
+    ],
+    "At-Will": [
+      "Archer",
+      "Astrology",
+      "Axe Kick",
+      "Bandit",
+      "Blazing Palm",
+      "Blessing of Restoration",
+      "Blood Bath",
+      "Blood Rush",
+      "Brilliant Barrage",
+      "Charming Gaze",
+      "Curved Shot",
+      "Dark Knight",
+      "Death Ward",
+      "Detect Magic",
+      "Disarming Shot",
+      "Distant Shot",
+      "Double Shot",
+      "Double Speak",
+      "Enchant Sapphire",
+      "Endure",
+      "Enervate",
+      "Explorer",
+      "Fighter",
+      "Fire Back",
+      "Flame Surge",
+      "Focus Punch",
+      "Focus Shot",
+      "Foot Stomp",
+      "Grasp of the Grave",
+      "Gust Dive",
+      "Hailbreaker",
+      "Hamstring Shot",
+      "Haste",
+      "Healer",
+      "Healing Touch",
+      "Holy Arrow",
+      "Hug",
+      "Levitate",
+      "Lunge",
+      "Magic Claw",
+      "Magic Guard",
+      "Mana",
+      "Marauder",
+      "Natural Geomancy",
+      "Night Punch",
+      "Pinning Shot",
+      "Pyrrhic Might",
+      "Ranger Whack",
+      "Ritual Infusion",
+      "Rogue",
+      "Sacrificial Heal",
+      "Scholar's Hand",
+      "Self-Immolation",
+      "Shield",
+      "Silver Hawk",
+      "Single Out",
+      "Slide",
+      "Soul Blade",
+      "Spare Life",
+      "Star Sight",
+      "Straw Puppet",
+      "Summoner",
+      "Template, Innate Technique",
+      "Template, Spell",
+      "Template, Technique",
+      "Template, Weapon Technique",
+      "The Boss",
+      "Transformation",
+      "Turn Undead",
+      "Unseen Blade"
+    ],
+    "Limited": [
+      "Astral Alignment",
+      "Blood Barrage",
+      "Blood Blitz",
+      "Bloodline Mimicry",
+      "Channel Energy",
+      "Chi Reflection",
+      "Circle of Sealing",
+      "Confide",
+      "Death's Dance",
+      "Energy Transfer",
+      "Enervate",
+      "Explorer",
+      "Fire Blast",
+      "Handholding",
+      "Heal",
+      "Healer",
+      "Hyper Body",
+      "Ifrit Milicien",
+      "Lighten Object",
+      "Lunar Dream",
+      "Mage's Weapon",
+      "Magic Imbue",
+      "Mana",
+      "Meteor Swarm",
+      "Mystic Door",
+      "Named Bullet",
+      "Natural Healing",
+      "Order 66",
+      "Provider's Station",
+      "Rainbow Beam",
+      "Regenerate",
+      "Second Wind",
+      "Seduce",
+      "Sending",
+      "Silver Hawk",
+      "Slaying Shot",
+      "Snipe",
+      "Special Attack",
+      "Star KO",
+      "Straw Puppet Milicien",
+      "Stunt Double",
+      "Summoner",
+      "Super Transformation",
+      "Template, Innate Technique",
+      "Template, Spell",
+      "Template, Technique",
+      "Template, Weapon Technique",
+      "Thrall",
+      "Unbreakable Body",
+      "Vengeance Other",
+      "Verboden Taal",
+      "Zonnestraal"
+    ],
+    "Mana Burn": [
+      "Hug",
+      "Mana",
+      "Mana Donation",
+      "Mommy",
+      "Ritual Infusion"
+    ],
+    "Mana": [
+      "Adversary Kishin",
+      "Archer",
+      "Avatar",
+      "Class",
+      "Elf",
+      "Fighter",
+      "Healer",
+      "Ifrit",
+      "Innate Technique",
+      "Kitsune",
+      "Limited",
+      "Magic Guard",
+      "Mana Burn",
+      "Mana Crystal",
+      "Mana Donation",
+      "Martial Artist",
+      "Natural Healing",
+      "Preparing Techniques",
+      "Ritual",
+      "Ritual Infusion",
+      "Rogue",
+      "Skeleton, Garden",
+      "Special Attack",
+      "Spirit Walker",
+      "Straw Puppet",
+      "Summoner",
+      "Template, Bestiary Entry",
+      "Template, Class",
+      "The Boss",
+      "WIS",
+      "Weapon"
+    ],
+    "Recharge": [
+      "Alarming Sigil",
+      "Arrow Rain",
+      "Arrow Splitter",
+      "Bless",
+      "Blindspot",
+      "Bloodlust",
+      "Body Slam",
+      "Boneshaker",
+      "Burning Hands",
+      "Callout",
+      "Caloric Healing",
+      "Catch Blade",
+      "Chi Block",
+      "Cleave",
+      "Clothesline",
+      "Command",
+      "Dark Sight",
+      "Darting Duplicate",
+      "Decompose",
+      "Defensive Spin",
+      "Detonate",
+      "Dimensional Anchor",
+      "Dispel",
+      "Dive",
+      "Dodge Roll",
+      "Dominate",
+      "Dropkick",
+      "Ecstasy",
+      "Energy Transfer",
+      "Exhibition",
+      "Explorer",
+      "Feather Fall",
+      "Fighter",
+      "Finisher",
+      "Flame Blade",
+      "Flame Foil",
+      "Flame Pillar",
+      "Flame Tempest",
+      "Flash Kick",
+      "Focus Dispel",
+      "Foe Throw",
+      "Fury",
+      "Gemarteld",
+      "Great Cleave",
+      "Ground Pound",
+      "Halt Undead",
+      "Inferno Quiver",
+      "Invigorate",
+      "Kidnap",
+      "Low Sweep",
+      "Mana",
+      "Mommy",
+      "Nebula",
+      "Orc",
+      "Panic",
+      "Piercing Shot",
+      "Pocket Sand",
+      "Power Fists",
+      "Prismatic Barrier",
+      "Quickdraw",
+      "Raging Blow",
+      "Rapid Wardrobe",
+      "Recharge Abilities",
+      "Repelling Light",
+      "Resonating Strike",
+      "Revenge",
+      "Ricochet Reflection",
+      "Rogue",
+      "Sabre of Light",
+      "Sanguivory",
+      "Seismic Stomp",
+      "Sending",
+      "Shimmering Ray",
+      "Silver Hawk",
+      "Skewer",
+      "Sky Uppercut",
+      "Solar Flash",
+      "Special Attack",
+      "Stage Fright",
+      "Strafe",
+      "Summoner",
+      "Taunt",
+      "Template, Innate Technique",
+      "Template, Spell",
+      "Template, Technique",
+      "Template, Weapon Technique",
+      "The Boss",
+      "The Hand that Feeds",
+      "Tongue Twister",
+      "Unfiltered",
+      "Unnatural Lust",
+      "Unseen Form",
+      "Vengeance"
+    ],
+    "Fortitude": [
+      "Adversary Kishin",
+      "Blood Barrage",
+      "Blood Blitz",
+      "Dark Knight",
+      "Dwarf",
+      "Fighter",
+      "Hyper Body",
+      "Ifrit",
+      "Martial Artist",
+      "Orc",
+      "STR",
+      "Saving Throw",
+      "Sickened",
+      "Skeleton, Garden",
+      "Spellbreaker",
+      "Straw Puppet",
+      "Template, Bestiary Entry"
+    ],
+    "Reflex": [
+      "Ablaze",
+      "Adversary Kishin",
+      "Aquatic Combat",
+      "Burning Hands",
+      "Clumsy",
+      "Cover",
+      "DEX",
+      "Dark Knight",
+      "Dragon Style",
+      "Fighter",
+      "Fire Back",
+      "Fire Blast",
+      "Foe Throw",
+      "Ifrit",
+      "Improved Cover",
+      "Initiative",
+      "Martial Artist",
+      "Rogue",
+      "Saving Throw",
+      "Skeleton, Garden",
+      "Solar Flash",
+      "Straw Puppet",
+      "Template, Bestiary Entry",
+      "The Boss",
+      "Tumble",
+      "Zonnestraal"
+    ],
+    "Saving Throw": [
+      "Aid",
+      "Class",
+      "Dark Knight",
+      "Fascinated",
+      "Fighter",
+      "Fortitude",
+      "Healer",
+      "Illumination",
+      "Lv",
+      "Monster Lore",
+      "Rainbow Beam",
+      "Reflex",
+      "Rolling Dice and Statistics",
+      "Solar Flash",
+      "Total Defense",
+      "Weakness",
+      "Will"
+    ],
+    "Will": [
+      "Adversary Kishin",
+      "Charming Gaze",
+      "Command",
+      "Dark Knight",
+      "Darting Duplicate",
+      "Demoralize",
+      "Enchant Sapphire",
+      "Explorer",
+      "Figment",
+      "Half-Link",
+      "Ifrit",
+      "Martial Artist",
+      "Panic",
+      "Saving Throw",
+      "Shaken",
+      "Skeleton, Garden",
+      "Straw Puppet",
+      "Stunt Double",
+      "Taunt",
+      "Template, Bestiary Entry",
+      "The Hand that Feeds",
+      "Tongue Twister",
+      "WIS"
+    ],
+    "Affliction - Hamstringed": [
+      "Marauder"
+    ],
+    "Affliction": [
+      "Affliction - Hamstringed",
+      "Confide",
+      "Identify Affliction or Curse",
+      "Long Term Care",
+      "Mana Donation",
+      "Mommy",
+      "Performance",
+      "Regenerate",
+      "Status",
+      "Template, Affliction",
+      "XP"
+    ],
+    "Ablaze": [
+      "Blazing Palm",
+      "Detonate",
+      "Dwarf",
+      "Flame Foil",
+      "Flame Pillar",
+      "Flame Surge",
+      "Glowing",
+      "Ifrit",
+      "Status",
+      "Zonnestraal"
+    ],
+    "Anchored": [
+      "Circle of Sealing",
+      "Dark Knight",
+      "Dimensional Anchor",
+      "Status"
+    ],
+    "Asleep": [
+      "Alarming Sigil",
+      "Concentration",
+      "Status"
+    ],
+    "Bleed": [
+      "Blood Barrage",
+      "Blood Bath",
+      "Blood Blitz",
+      "Blood Rush",
+      "Heal",
+      "Provide First Aid",
+      "Soul Blade",
+      "Status"
+    ],
+    "Blinded": [
+      "Blind Fight",
+      "Pocket Sand",
+      "Rogue",
+      "Solar Flash",
+      "Status",
+      "Total Concealment",
+      "Zonnestraal"
+    ],
+    "Blurred Vision": [
+      "Orc",
+      "Pattern",
+      "Provide First Aid",
+      "Shimmering Ray",
+      "Status"
+    ],
+    "Charmed": [
+      "Charming Gaze",
+      "Dominate",
+      "Status"
+    ],
+    "Chilled": [
+      "Status"
+    ],
+    "Clumsy": [
+      "Aid",
+      "Dropkick",
+      "Fly",
+      "Foot Stomp",
+      "Ground Pound",
+      "Gust Dive",
+      "Hover",
+      "Low Sweep",
+      "Orc",
+      "Status"
+    ],
+    "Confused": [
+      "Status"
+    ],
+    "Cursed": [
+      "Explorer",
+      "Status"
+    ],
+    "Dazed": [
+      "Ecstasy",
+      "Status",
+      "Stunned"
+    ],
+    "Defeated": [
+      "Concentration",
+      "Confide",
+      "Dark Knight",
+      "Defeat",
+      "Demoralize",
+      "Endurance",
+      "FH",
+      "HP",
+      "Healer",
+      "Hyper Body",
+      "Kitsune",
+      "Orc",
+      "Persistent",
+      "Recovering from Defeat",
+      "Sanguivory",
+      "Star KO",
+      "Status",
+      "Summoner",
+      "Summoning"
+    ],
+    "Dominated": [
+      "Detect Compulsion",
+      "Status"
+    ],
+    "Drained": [
+      "Blessing of Restoration",
+      "Enervate",
+      "Explorer",
+      "Recovering from Defeat",
+      "Status",
+      "Summoner"
+    ],
+    "Entangled": [
+      "Aid",
+      "Fly",
+      "Grab",
+      "Grabbing Style",
+      "Grasp of the Grave",
+      "Halt Undead",
+      "Hover",
+      "Pinning Shot",
+      "Status"
+    ],
+    "Entombed": [
+      "Status"
+    ],
+    "Fascinated": [
+      "Pattern",
+      "Status"
+    ],
+    "Fatigued": [
+      "Human",
+      "Status"
+    ],
+    "Frightened": [
+      "Demoralize",
+      "Fear",
+      "Fearsome Finisher",
+      "Panic",
+      "Status",
+      "Turn Undead"
+    ],
+    "Glowing": [
+      "Brilliant Barrage",
+      "Illumination",
+      "Rainbow Beam",
+      "Shimmering Ray",
+      "Status"
+    ],
+    "Grounded": [
+      "Axe Kick",
+      "Fly",
+      "Foot Stomp",
+      "Hover",
+      "Status"
+    ],
+    "Held Down": [
+      "Body Slam",
+      "Knocked Down",
+      "Status"
+    ],
+    "Invincible": [
+      "Stasis",
+      "Status",
+      "Super Transformation",
+      "Unbreakable Body"
+    ],
+    "Invisible": [
+      "Rogue",
+      "Status",
+      "Total Concealment"
+    ],
+    "Knocked Down": [
+      "Ablaze",
+      "Aid",
+      "Asleep",
+      "Axe Kick",
+      "Balance",
+      "Body Slam",
+      "Command",
+      "Dive",
+      "Endure",
+      "Fall Damage",
+      "Fall Prone",
+      "Fell",
+      "Fire Blast",
+      "Invigorate",
+      "Low Sweep",
+      "Monkey Style",
+      "Star KO",
+      "Status"
+    ],
+    "Mindless": [
+      "Mind-Affecting",
+      "Perception",
+      "Psychic",
+      "Status",
+      "Turn Undead"
+    ],
+    "Necrosed": [
+      "Status"
+    ],
+    "Pacified": [
+      "Explorer",
+      "Hug",
+      "Mommy",
+      "Status"
+    ],
+    "Prone": [
+      "Bambuken",
+      "Dive",
+      "Foe Throw",
+      "Foot Stomp",
+      "Held Down",
+      "Knocked Down",
+      "Status"
+    ],
+    "Shaken": [
+      "Adversary Kishin",
+      "Aid",
+      "Antagonize",
+      "Clumsy",
+      "Dark Knight",
+      "Demoralize",
+      "Fear",
+      "Orc",
+      "Sickened",
+      "Status"
+    ],
+    "Sickened": [
+      "Aid",
+      "Orc",
+      "Provide First Aid",
+      "Rainbow Beam",
+      "Status"
+    ],
+    "Silenced": [
+      "Chokehold",
+      "Command",
+      "Status"
+    ],
+    "Siphoned": [
+      "Chi Block",
+      "Circle of Sealing",
+      "Status"
+    ],
+    "Staggered": [
+      "AP",
+      "Boneshaker",
+      "Dazed",
+      "Ecstasy",
+      "Recovering from Defeat",
+      "Status"
+    ],
+    "Stasis": [
+      "Hug",
+      "Mommy",
+      "Status"
+    ],
+    "Status": [
+      "Circumstance",
+      "Polymorph",
+      "Provide First Aid",
+      "Unassailable"
+    ],
+    "Stunned": [
+      "Concentration",
+      "Monk",
+      "Regenerate",
+      "Status"
+    ],
+    "Submerged": [
+      "Improved Cover",
+      "Status"
+    ],
+    "Surprised": [
+      "Asleep",
+      "Bandit",
+      "Blind Fight",
+      "Blinded",
+      "Blindspot",
+      "Conceal Item",
+      "Concealment",
+      "Marauder",
+      "Pickpocket",
+      "Ranger Whack",
+      "Rogue",
+      "Status",
+      "Stunned",
+      "Sucker Punch"
+    ],
+    "Taunted": [
+      "Antagonize",
+      "Dwarf",
+      "Status",
+      "Taunt",
+      "The Hand that Feeds"
+    ],
+    "Time Out": [
+      "Status"
+    ],
+    "Unassailable": [
+      "Stasis",
+      "Status"
+    ],
+    "Unstoppable": [
+      "Stasis",
+      "Status",
+      "Super Transformation"
+    ],
+    "Untargetable": [
+      "Stasis",
+      "Status",
+      "Total Cover"
+    ],
+    "Wet": [
+      "Status"
+    ],
+    "Cold": [
+      "Damage"
+    ],
+    "Crush": [
+      "Adamant Armor",
+      "Cleave",
+      "Damage",
+      "Great Cleave",
+      "Seismic Stomp",
+      "Skeleton, Garden",
+      "Star KO",
+      "Straw Puppet",
+      "Unarmed"
+    ],
+    "Fire": [
+      "Adamant Armor",
+      "Blazing Palm",
+      "Brilliant Barrage",
+      "Burning Hands",
+      "Damage",
+      "Detonate",
+      "Fire Blast",
+      "Flame Blade",
+      "Flame Foil",
+      "Flame Pillar",
+      "Flame Surge",
+      "Flame Tempest",
+      "Illumination",
+      "Inferno Quiver",
+      "Lady of Light",
+      "Meteor Swarm",
+      "Rainbow Beam",
+      "Sabre of Light",
+      "Self-Immolation",
+      "Shimmering Ray",
+      "Solar Flash",
+      "Straw Puppet",
+      "Zonnestraal"
+    ],
+    "Holy": [
+      "Bless",
+      "Blood Art",
+      "Damage",
+      "Heal",
+      "Healer",
+      "Holy Arrow",
+      "Skeleton, Garden",
+      "Soul Blade",
+      "Soul Split",
+      "Vitalism"
+    ],
+    "Lightning": [
+      "Damage"
+    ],
+    "Magic": [
+      "Circle of Sealing",
+      "Damage",
+      "Death's Dance",
+      "Dragon Style",
+      "Enchant Sapphire",
+      "Explorer",
+      "Magic Claw",
+      "Nebula",
+      "The Boss",
+      "Vengeance",
+      "Vengeance Other"
+    ],
+    "Necrotic": [
+      "Boneshaker",
+      "Damage",
+      "Decompose",
+      "Skeleton, Garden"
+    ],
+    "Pierce": [
+      "Adamant Armor",
+      "Damage",
+      "Dark Knight",
+      "Skewer",
+      "Soul Blade",
+      "Straw Puppet"
+    ],
+    "Psychic": [
+      "Confide",
+      "Damage",
+      "Sending",
+      "Stage Fright"
+    ],
+    "Slash": [
+      "Adamant Armor",
+      "Blood Bath",
+      "Cleave",
+      "Damage",
+      "Full Plate Armor",
+      "Great Cleave",
+      "Soul Blade"
+    ],
+    "Abnegation": [
+      "Circle of Sealing",
+      "Dimensional Anchor",
+      "Dispel",
+      "Magic Guard",
+      "Prismatic Barrier",
+      "Tag",
+      "Template, Spell"
+    ],
+    "Conjuration": [
+      "Bless",
+      "Caloric Healing",
+      "Energy Transfer",
+      "Enervate",
+      "Handholding",
+      "Heal",
+      "Ifrit Milicien",
+      "Invigorate",
+      "Mage's Weapon",
+      "Magic Imbue",
+      "Provider's Station",
+      "Ritual Infusion",
+      "Sacrificial Heal",
+      "Scholar's Hand",
+      "Soul Split",
+      "Spare Life",
+      "Summoner",
+      "Tag",
+      "Template, Spell"
+    ],
+    "Divination": [
+      "Alarming Sigil",
+      "Astral Alignment",
+      "Astrology",
+      "Confide",
+      "Detect Magic",
+      "Enchant Sapphire",
+      "Grave Robber",
+      "Natural Geomancy",
+      "Sending",
+      "Sense Motive",
+      "Star Sight",
+      "Tag",
+      "Template, Spell",
+      "Tongues",
+      "Verboden Taal"
+    ],
+    "Evocation": [
+      "Blazing Palm",
+      "Brilliant Barrage",
+      "Burning Hands",
+      "Detonate",
+      "Feather Fall",
+      "Fire Blast",
+      "Flame Blade",
+      "Flame Foil",
+      "Flame Pillar",
+      "Flame Surge",
+      "Flame Tempest",
+      "Illumination",
+      "Lady of Light",
+      "Levitate",
+      "Magic Claw",
+      "Meteor Swarm",
+      "Nebula",
+      "Rainbow Beam",
+      "Repelling Light",
+      "Ricochet Reflection",
+      "Sabre of Light",
+      "Self-Immolation",
+      "Shimmering Ray",
+      "Solar Flash",
+      "Tag",
+      "Template, Spell",
+      "Vengeance",
+      "Vengeance Other",
+      "Zonnestraal"
+    ],
+    "Illusion": [
+      "Charming Gaze",
+      "Command",
+      "Darting Duplicate",
+      "Dominate",
+      "Double Speak",
+      "Ecstasy",
+      "Exhibition",
+      "Kitsune",
+      "Order 66",
+      "Rapid Wardrobe",
+      "Seduce",
+      "Stage Fright",
+      "Stunt Double",
+      "Tag",
+      "Template, Spell",
+      "The Hand that Feeds",
+      "Thrall",
+      "Tongue Twister",
+      "Turn Undead",
+      "Unfiltered",
+      "Unnatural Lust",
+      "Unseen Blade",
+      "Unseen Form",
+      "Will"
+    ],
+    "Transmutation": [
+      "Blood Barrage",
+      "Blood Blitz",
+      "Blood Rush",
+      "Bloodline Mimicry",
+      "Boneshaker",
+      "Death Ward",
+      "Decompose",
+      "Enchant Sapphire",
+      "Grasp of the Grave",
+      "Halt Undead",
+      "Lighten Object",
+      "Lunar Dream",
+      "Regenerate",
+      "Sanguivory",
+      "Tag",
+      "Template, Spell"
+    ],
+    "Air": [
+      "Levitate",
+      "Resonating Strike",
+      "Tag"
+    ],
+    "Bond": [
+      "Buff",
+      "Tag"
+    ],
+    "Buff": [
+      "Archer",
+      "Bless",
+      "Blood Armor",
+      "Bond",
+      "Callout",
+      "Dark Knight",
+      "Death's Dance",
+      "Eye of the Amazon",
+      "Gore Paint",
+      "Hyper Body",
+      "Lady of Light",
+      "Power Fists",
+      "Pyrrhic Might",
+      "Rainbow Beam",
+      "Rogue",
+      "Stunt Double",
+      "Super Transformation",
+      "Tag",
+      "Transformation",
+      "Unbreakable Body",
+      "Unseen Form",
+      "Vengeance",
+      "Vengeance Other",
+      "Verboden Taal"
+    ],
+    "Caloric": [
+      "Caloric Healing",
+      "Tag"
+    ],
+    "Charm": [
+      "Dominate",
+      "Dwarf",
+      "Mind-Affecting",
+      "Order 66",
+      "Tag",
+      "Thrall"
+    ],
+    "Companion": [
+      "Bandit",
+      "CHA",
+      "Confused",
+      "Ifrit Milicien",
+      "Straw Puppet Milicien",
+      "Summoner",
+      "Tag",
+      "The Hand that Feeds",
+      "Thrall",
+      "Usa"
+    ],
+    "Concentration": [
+      "Bless",
+      "Dark Knight",
+      "Detect Magic",
+      "Dominate",
+      "Flame Pillar",
+      "Flame Surge",
+      "Levitate",
+      "Repelling Light",
+      "Ricochet Reflection",
+      "Scholar's Hand",
+      "Seduce",
+      "Shimmering Ray",
+      "Siphoned",
+      "Spellbreaker",
+      "Tag",
+      "Zonnestraal"
+    ],
+    "Contingent": [
+      "Order 66",
+      "Tag"
+    ],
+    "Curse": [
+      "Affliction",
+      "Identify Affliction or Curse",
+      "Lunar Dream",
+      "Tag"
+    ],
+    "Darkness": [
+      "Concealment",
+      "Tag"
+    ],
+    "Dismissible": [
+      "Abbreviations",
+      "Tag"
+    ],
+    "Earth": [
+      "Grasp of the Grave",
+      "Tag"
+    ],
+    "Elusive": [
+      "Aran",
+      "Blindspot",
+      "Dark Knight",
+      "Defensive Spin",
+      "Disengage",
+      "Dodge Roll",
+      "Finisher",
+      "Fleet Footwork",
+      "Rogue",
+      "Slide",
+      "Snake Style",
+      "Tag"
+    ],
+    "Emotion": [
+      "Half-Link"
+    ],
+    "Fear": [
+      "Dark Knight",
+      "Fighter",
+      "Hug",
+      "Mind-Affecting",
+      "Mommy",
+      "Panic",
+      "Tag",
+      "Turn Undead",
+      "Will"
+    ],
+    "Figment": [
+      "Darting Duplicate",
+      "Pattern",
+      "Tag"
+    ],
+    "Glamer": [
+      "Exhibition",
+      "Rapid Wardrobe",
+      "Stunt Double",
+      "Tag"
+    ],
+    "Language-Dependent": [
+      "Command",
+      "Linguistics",
+      "Order 66",
+      "Tag"
+    ],
+    "Light": [
+      "Brilliant Barrage",
+      "Detonate",
+      "Illumination",
+      "Lady of Light",
+      "Nebula",
+      "Prismatic Barrier",
+      "Rainbow Beam",
+      "Repelling Light",
+      "Ricochet Reflection",
+      "Sabre of Light",
+      "Shimmering Ray",
+      "Solar Flash",
+      "Tag",
+      "Zonnestraal"
+    ],
+    "Martial": [
+      "Flame Blade",
+      "Hybrid Techniques",
+      "Sabre of Light",
+      "Tag",
+      "Technique"
+    ],
+    "Mind-Affecting": [
+      "Charm",
+      "Charming Gaze",
+      "Command",
+      "Dominate",
+      "Ecstasy",
+      "Emotion",
+      "Enchant Sapphire",
+      "Exhibition",
+      "Explorer",
+      "Fear",
+      "Half-Link",
+      "Illusion",
+      "Kitsune",
+      "Mindless",
+      "Pattern",
+      "Repelling Light",
+      "Seduce",
+      "Stage Fright",
+      "Tag",
+      "The Hand that Feeds",
+      "Thrall",
+      "Tongue Twister",
+      "Turn Undead",
+      "Unfiltered",
+      "Unnatural Lust"
+    ],
+    "Multi-Strike": [
+      "Tag"
+    ],
+    "Pattern": [
+      "Tag"
+    ],
+    "Persistent": [
+      "Flame Pillar",
+      "Tag",
+      "Zonnestraal"
+    ],
+    "Polymorph": [
+      "AP",
+      "Bloodline Mimicry",
+      "Half-Link",
+      "Tag"
+    ],
+    "Scrying": [
+      "Tag"
+    ],
+    "Sigil": [
+      "Alarming Sigil",
+      "Tag"
+    ],
+    "Subtle": [
+      "Charming Gaze",
+      "Confide",
+      "Darting Duplicate",
+      "Double Speak",
+      "Exhibition",
+      "Rapid Wardrobe",
+      "Spell",
+      "Stage Fright",
+      "Tag",
+      "Tongue Twister",
+      "Unfiltered",
+      "Unnatural Lust",
+      "Unseen Blade",
+      "Unseen Form"
+    ],
+    "Summoning": [
+      "Bandit",
+      "Ifrit Milicien",
+      "Straw Puppet Milicien",
+      "Summoner"
+    ],
+    "Tag": [
+      "Cold",
+      "Crush",
+      "Fire",
+      "Holy",
+      "Lightning",
+      "Magic",
+      "Necrotic",
+      "Pierce",
+      "Psychic",
+      "Slash",
+      "Summoning"
+    ],
+    "Teleportation": [
+      "Anchored",
+      "Bandit",
+      "Dimensional Reflexes",
+      "Explorer",
+      "Mystic Door",
+      "Summoner",
+      "Super Transformation",
+      "Tag"
+    ],
+    "Water": [
+      "Tag"
+    ],
+    "Armor": [
+      "AC",
+      "Adamant Armor",
+      "Common Prices",
+      "Equipment Slot",
+      "Full Plate Armor",
+      "Martial Artist",
+      "Shield",
+      "Upgrade Slot"
+    ],
+    "Shield": [
+      "Common Prices",
+      "Martial Artist",
+      "Template, Weapon",
+      "Weapon",
+      "Weapon Group"
+    ],
+    "Background": [
+      "Character Creation",
+      "Family Man",
+      "Noble",
+      "Tradesman",
+      "Wanderer"
+    ],
+    "Crafting": [
+      "Adamant Armor",
+      "Cleaving Axe",
+      "Cooking",
+      "Dwarf",
+      "Enchant Sapphire",
+      "Enchanting",
+      "Food",
+      "Full Plate Armor",
+      "Mana Crystal",
+      "Resources",
+      "Template, Weapon",
+      "XP"
+    ],
+    "Labor": [
+      "Crafting"
+    ],
+    "Mana Crystal": [
+      "Crafting",
+      "Labor",
+      "Mana Donation"
+    ],
+    "Resources": [
+      "Crafting",
+      "Labor"
+    ],
+    "Economics": [
+      "Crafting",
+      "Labor",
+      "Perform",
+      "Profession",
+      "The Value of Gold"
+    ],
+    "Mana Donation": [
+      "Mana Crystal"
+    ],
+    "The Cost of Living": [
+      "The Value of Gold"
+    ],
+    "Food": [
+      "Caloric",
+      "Caloric Healing",
+      "Cooking",
+      "Crafting",
+      "Forage",
+      "Ingredients",
+      "Lunar Dream",
+      "Natural Healing",
+      "Sanguivory",
+      "Usa"
+    ],
+    "Ingredients": [
+      "Cooking",
+      "Food",
+      "Forage"
+    ],
+    "Enchanting": [
+      "Infusion Scroll",
+      "Upgrade Slot"
+    ],
+    "Infusion Scroll": [
+      "Scroll for Weapon Accuracy",
+      "Upgrade Slot"
+    ],
+    "Upgrade Slot": [
+      "Basic Weapon",
+      "Enchanting"
+    ],
+    "Mundane Item": [
+      "Property",
+      "Tools",
+      "Torch"
+    ],
+    "Tools": [
+      "Cooking",
+      "Pick Lock"
+    ],
+    "Cleaving Axe": [
+      "Crafting"
+    ],
+    "Ammunition": [
+      "Bow",
+      "Fire Back",
+      "Named Bullet",
+      "Template, Weapon",
+      "Thrown",
+      "Trigger",
+      "Weapon",
+      "Weapon Group"
+    ],
+    "Natural Weapon": [
+      "Bestial",
+      "Close",
+      "Half-Link",
+      "Straw Puppet",
+      "Template, Weapon",
+      "Unarmed",
+      "Weapon",
+      "Weapon Group"
+    ],
+    "Staff": [
+      "CL",
+      "Healer",
+      "Healing Touch",
+      "Holy Arrow",
+      "Innate Technique",
+      "S",
+      "SP",
+      "Template, Weapon",
+      "Weapon",
+      "Weapon Group"
+    ],
+    "Axe": [
+      "Cleave",
+      "Cleaving Axe",
+      "Great Cleave",
+      "Template, Weapon",
+      "Template, Weapon Technique",
+      "Weapon",
+      "Weapon Group"
+    ],
+    "Blade": [
+      "Cleave",
+      "Great Cleave",
+      "Skewer",
+      "Template, Weapon",
+      "Template, Weapon Technique",
+      "Weapon",
+      "Weapon Group"
+    ],
+    "Bludgeon": [
+      "Cleave",
+      "Great Cleave",
+      "Template, Weapon",
+      "Template, Weapon Technique",
+      "Weapon",
+      "Weapon Group"
+    ],
+    "Bow": [
+      "Healer",
+      "Holy Arrow",
+      "Skewer",
+      "Template, Weapon",
+      "Template, Weapon Technique",
+      "Weapon",
+      "Weapon Group"
+    ],
+    "Close": [
+      "Straw Puppet",
+      "Template, Weapon",
+      "Template, Weapon Technique",
+      "Weapon",
+      "Weapon Group"
+    ],
+    "Dagger": [
+      "Template, Weapon",
+      "Template, Weapon Technique",
+      "Weapon",
+      "Weapon Group"
+    ],
+    "Polearm": [
+      "Cleave",
+      "Great Cleave",
+      "Template, Weapon",
+      "Template, Weapon Technique",
+      "Weapon",
+      "Weapon Group"
+    ],
+    "Thrown": [
+      "Axe",
+      "Dagger",
+      "Resonating Strike",
+      "Skewer",
+      "Template, Weapon",
+      "Template, Weapon Technique",
+      "Thrust",
+      "Weapon",
+      "Weapon Group"
+    ],
+    "Thrust": [
+      "Skewer",
+      "Template, Weapon",
+      "Template, Weapon Technique",
+      "Weapon",
+      "Weapon Group"
+    ],
+    "Trigger": [
+      "Skewer",
+      "Snipe",
+      "Template, Weapon",
+      "Template, Weapon Technique",
+      "Weapon",
+      "Weapon Group"
+    ],
+    "Basic Weapon": [
+      "Axe",
+      "Blade",
+      "Bludgeon",
+      "Bow",
+      "Close",
+      "Dagger",
+      "Polearm",
+      "Thrown",
+      "Thrust",
+      "Trigger"
+    ],
+    "Close Range": [
+      "Curved Shot",
+      "Hailbreaker",
+      "Piercing Shot",
+      "Range",
+      "Ranged Attack"
+    ],
+    "Exotic Weapon": [
+      "Weapon"
+    ],
+    "Range": [
+      "Close Range",
+      "Eye of the Amazon",
+      "Focus Shot",
+      "Longshot",
+      "Weapon",
+      "Wide Range"
+    ],
+    "Special Attack": [
+      "Class and Weapon Abilities",
+      "Weapon",
+      "Weapon Group"
+    ],
+    "Unarmed": [
+      "Axe Kick",
+      "Body Slam",
+      "Catch Blade",
+      "Cerberus Style",
+      "Chi Block",
+      "Close",
+      "Clothesline",
+      "Defensive Spin",
+      "Demon Style",
+      "Dropkick",
+      "Fighting Style",
+      "Flash Kick",
+      "Foot Stomp",
+      "Martial Artist",
+      "Martial Arts",
+      "Monk",
+      "Monkey Style",
+      "Night Punch",
+      "Ora Aura",
+      "Power Fists",
+      "Resonating Strike",
+      "Sky Uppercut",
+      "Snake Style",
+      "Star KO",
+      "Super Transformation",
+      "The Boss",
+      "Transformation"
+    ],
+    "Weapon Group": [
+      "Adversary Kishin",
+      "Ammunition",
+      "Basic Weapon",
+      "Cleave",
+      "Exotic Weapon",
+      "Great Cleave",
+      "Ifrit",
+      "Natural Weapon",
+      "Shield",
+      "Skeleton, Garden",
+      "Skewer",
+      "Staff",
+      "Straw Puppet",
+      "Template, Bestiary Entry",
+      "Template, Weapon Technique",
+      "Weapon"
+    ],
+    "Weapon Qualities": [
+      "Ammunition",
+      "Axe",
+      "Basic Weapon",
+      "Blade",
+      "Bludgeon",
+      "Bow",
+      "Cleaving Axe",
+      "Close",
+      "Dagger",
+      "Polearm",
+      "Template, Weapon",
+      "Thrown",
+      "Thrust",
+      "Trigger",
+      "Weapon"
+    ],
+    "Weapon": [
+      "Axe",
+      "Basic Weapon",
+      "Blade",
+      "Bludgeon",
+      "Bow",
+      "Catch Blade",
+      "Class and Weapon Abilities",
+      "Cleave",
+      "Close",
+      "Close Range",
+      "Crafting",
+      "Dagger",
+      "Damage",
+      "Great Cleave",
+      "Hailbreaker",
+      "Healer",
+      "Holy Arrow",
+      "Martial",
+      "Offense Calculator",
+      "Polearm",
+      "Scroll for Weapon Accuracy",
+      "Skewer",
+      "Special Attack",
+      "Template, Weapon Technique",
+      "Thrown",
+      "Thrust",
+      "Trigger",
+      "Upgrade Slot",
+      "Weapon Group",
+      "Weapon Qualities",
+      "Wide Range"
+    ],
+    "Wide Range": [
+      "Focus Shot",
+      "Range",
+      "Ranged Attack"
+    ],
+    "Equipment Slot": [
+      "Armor"
+    ],
+    "Fighting Style": [
+      "Cerberus Style",
+      "Demon Style",
+      "Dragon Style",
+      "Grabbing Style",
+      "Martial Artist",
+      "Snake Style"
+    ],
+    "Combat Reflexes": [
+      "Fighter"
+    ],
+    "Endurance": [
+      "Dwarf"
+    ],
+    "Escape Route": [
+      "Move As One",
+      "Tandem Charge"
+    ],
+    "Move As One": [
+      "Tandem Charge"
+    ],
+    "Shield Brothers": [
+      "Move As One",
+      "Tandem Charge"
+    ],
+    "Feat": [
+      "Antagonize",
+      "Back to the Wall",
+      "Blind Fight",
+      "Bodyguard",
+      "Bonded Weapons",
+      "CL",
+      "Cerberus Style",
+      "Character Creation",
+      "Class",
+      "Class and Weapon Abilities",
+      "Clustered Blows",
+      "Combat Reflexes",
+      "Demon Style",
+      "Dimensional Reflexes",
+      "Dragon Style",
+      "Elemental Adept",
+      "Endurance",
+      "Fan Club",
+      "Fearsome Finisher",
+      "Fighting Style",
+      "Fleet Footwork",
+      "Ghost Buster",
+      "Grabbing Style",
+      "HP",
+      "Human",
+      "Longshot",
+      "Maneuver Adept",
+      "Martial Artist",
+      "Progression Outside of Class",
+      "Quickstep",
+      "Snake Style",
+      "Spellbreaker",
+      "Stat Feat",
+      "Teamwork Feat",
+      "WIS"
+    ],
+    "Teamwork Feat": [
+      "Escape Route",
+      "Move As One",
+      "Pack Tactics",
+      "Shield Brothers",
+      "Tandem Charge"
+    ],
+    "Elf": [
+      "Knowledge"
+    ],
+    "Half-Link": [
+      "Kitsune",
+      "Usa"
+    ],
+    "Human": [
+      "Knowledge"
+    ],
+    "Orc": [
+      "Cleaving Axe"
+    ],
+    "Race": [
+      "Character Creation",
+      "Dwarf",
+      "HP",
+      "Half-Link",
+      "Innate Technique"
+    ],
+    "Acrobatics": [
+      "Balance",
+      "Dark Knight",
+      "Fatigued",
+      "Marauder",
+      "Martial Artist",
+      "Tumble",
+      "Wall Kick"
+    ],
+    "Balance": [
+      "Acrobatics"
+    ],
+    "Wall Kick": [
+      "Acrobatics"
+    ],
+    "Aquatic Combat": [
+      "Athletics",
+      "Submerged"
+    ],
+    "Athletics": [
+      "Aid",
+      "Aquatic Combat",
+      "Athletics",
+      "Brute Force",
+      "Catch Fall",
+      "Climb",
+      "Entangled",
+      "Fatigued",
+      "Fighter",
+      "Grasp of the Grave",
+      "Jump",
+      "Marauder",
+      "Orc",
+      "Scholar's Hand",
+      "Skill",
+      "Swim"
+    ],
+    "Brute Force": [
+      "Athletics"
+    ],
+    "Catch Fall": [
+      "Athletics"
+    ],
+    "Climb": [
+      "Athletics",
+      "Dwarf",
+      "Half-Link"
+    ],
+    "Swim": [
+      "Aquatic Combat",
+      "Athletics"
+    ],
+    "Create a Distraction": [
+      "Deception"
+    ],
+    "Deception": [
+      "Antagonize",
+      "Create a Distraction",
+      "Detect Dishonesty",
+      "Disguise",
+      "Initiative",
+      "Lie",
+      "Skill",
+      "Straw Puppet",
+      "Subtle Message",
+      "Sucker Punch"
+    ],
+    "Disguise": [
+      "Deception",
+      "Rapid Wardrobe",
+      "Straw Puppet",
+      "Stunt Double"
+    ],
+    "Lie": [
+      "Deception"
+    ],
+    "Subtle Message": [
+      "Deception"
+    ],
+    "Sucker Punch": [
+      "Night Punch"
+    ],
+    "Conceal Item": [
+      "Hands"
+    ],
+    "Disable Device": [
+      "Hands"
+    ],
+    "Hands": [
+      "Conceal Item",
+      "Dagger",
+      "Disable Device",
+      "Initiative",
+      "Perception",
+      "Pick Lock",
+      "Pickpocket",
+      "Steal",
+      "Sucker Punch"
+    ],
+    "Pick Lock": [
+      "Hands"
+    ],
+    "Pickpocket": [
+      "Hands"
+    ],
+    "Detect Compulsion": [
+      "Insight"
+    ],
+    "Detect Dishonesty": [
+      "Insight",
+      "Lie",
+      "Sense Motive"
+    ],
+    "Insight": [
+      "Dark Knight",
+      "Deception",
+      "Detect Compulsion",
+      "Detect Dishonesty",
+      "Dwarf",
+      "Intuition",
+      "Lie",
+      "Order 66",
+      "Sense Motive",
+      "Subtle Message"
+    ],
+    "Intuition": [
+      "Insight"
+    ],
+    "Coercion": [
+      "Intimidation"
+    ],
+    "Demoralize": [
+      "Antagonize",
+      "Fearsome Finisher",
+      "Intimidation"
+    ],
+    "Intimidation": [
+      "Antagonize",
+      "Coercion",
+      "Dark Knight",
+      "Demoralize",
+      "Fearsome Finisher",
+      "Straw Puppet",
+      "The Boss"
+    ],
+    "Invocation": [
+      "Detect Portal",
+      "Spirit Walker",
+      "Trigger Magic Device"
+    ],
+    "Ritual": [
+      "Detect Portal",
+      "Invocation",
+      "Mana Crystal",
+      "Ritual Infusion"
+    ],
+    "Trigger Magic Device": [
+      "Invocation"
+    ],
+    "Alchemy": [
+      "Identify Composition",
+      "Identify Potion",
+      "Monster Lore"
+    ],
+    "Identify Composition": [
+      "Alchemy"
+    ],
+    "Identify Potion": [
+      "Alchemy"
+    ],
+    "Arcana": [
+      "Detect Portal",
+      "Identify Magic Item",
+      "Identify Spell",
+      "Monster Lore",
+      "Spellbreaker",
+      "Summoner",
+      "V"
+    ],
+    "Identify Magic Item": [
+      "Arcana"
+    ],
+    "Identify Spell": [
+      "Arcana",
+      "Astronomy",
+      "Nature",
+      "Subtle",
+      "Vengeance",
+      "Vengeance Other"
+    ],
+    "Astronomy": [
+      "Identify Cosmic Phenomenon",
+      "Identify Spell",
+      "Monster Lore",
+      "Navigation"
+    ],
+    "Identify Cosmic Phenomenon": [
+      "Astronomy"
+    ],
+    "Navigation": [
+      "Astronomy"
+    ],
+    "Engineering": [
+      "Hack",
+      "Identify Function",
+      "Identify Structural Quirk",
+      "Monster Lore"
+    ],
+    "Hack": [
+      "Engineering"
+    ],
+    "Identify Function": [
+      "Engineering"
+    ],
+    "Identify Structural Quirk": [
+      "Engineering"
+    ],
+    "Humanities": [
+      "Knowledge",
+      "Monster Lore",
+      "Recall Customs",
+      "Recall Locale",
+      "Recognize Figure"
+    ],
+    "Recall Customs": [
+      "Humanities"
+    ],
+    "Recall Locale": [
+      "Humanities"
+    ],
+    "Recognize Figure": [
+      "Humanities"
+    ],
+    "Identify Natural Phenomenon": [
+      "Nature"
+    ],
+    "Nature": [
+      "Identify Natural Phenomenon",
+      "Identify Spell",
+      "Monster Lore",
+      "Natural Geomancy"
+    ],
+    "Detect Portal": [
+      "Planes"
+    ],
+    "Planes": [
+      "Detect Portal",
+      "Monster Lore"
+    ],
+    "Divine Lore": [
+      "Religion"
+    ],
+    "Religion": [
+      "Divine Lore",
+      "Ghost Buster",
+      "Monster Lore"
+    ],
+    "History": [
+      "Knowledge"
+    ],
+    "Knowledge": [
+      "Alchemy",
+      "Arcana",
+      "Astronomy",
+      "Coercion",
+      "Elf",
+      "Engineering",
+      "History",
+      "Humanities",
+      "Nature",
+      "Planes",
+      "Religion"
+    ],
+    "Monster Lore": [
+      "Alchemy",
+      "Arcana",
+      "Astronomy",
+      "Boneshaker",
+      "Engineering",
+      "Free Action",
+      "Humanities",
+      "Knowledge",
+      "Nature",
+      "Planes",
+      "Religion",
+      "Tongue Twister",
+      "Unnatural Lust"
+    ],
+    "Encode or Decode Documents": [
+      "Linguistics"
+    ],
+    "Interpret Text": [
+      "Linguistics"
+    ],
+    "Language": [
+      "INT",
+      "Race",
+      "V"
+    ],
+    "Linguistics": [
+      "Encode or Decode Documents",
+      "INT",
+      "Interpret Text",
+      "Write or Forge Documents"
+    ],
+    "Write or Forge Documents": [
+      "Linguistics"
+    ],
+    "Assess Vitality": [
+      "Medicine"
+    ],
+    "Identify Affliction or Curse": [
+      "Medicine"
+    ],
+    "Long Term Care": [
+      "Medicine"
+    ],
+    "Medicine": [
+      "Assess Vitality",
+      "Bleed",
+      "Curse",
+      "Cursed",
+      "Healer",
+      "Identify Affliction or Curse",
+      "Long Term Care",
+      "Prevent Recovery",
+      "Provide First Aid"
+    ],
+    "Prevent Recovery": [
+      "Medicine"
+    ],
+    "Provide First Aid": [
+      "Medicine"
+    ],
+    "Detect": [
+      "Dark Sight",
+      "Perception",
+      "Rogue",
+      "Subtle"
+    ],
+    "Perception": [
+      "Adversary Kishin",
+      "Archer",
+      "Asleep",
+      "Blinded",
+      "Blurred Vision",
+      "Conceal Item",
+      "Create a Distraction",
+      "Dark Knight",
+      "Detect",
+      "Disguise",
+      "Eagle Eye",
+      "Elf",
+      "Fascinated",
+      "Hide",
+      "Ifrit",
+      "Orc",
+      "Pickpocket",
+      "Skeleton, Garden",
+      "Straw Puppet",
+      "Subtle",
+      "Template, Bestiary Entry",
+      "Usa"
+    ],
+    "Perform": [
+      "Performance"
+    ],
+    "Performance": [
+      "Perform"
+    ],
+    "Coax": [
+      "Persuasion"
+    ],
+    "Gather Information": [
+      "Persuasion"
+    ],
+    "Persuasion": [
+      "Coax",
+      "Gather Information"
+    ],
+    "Cooking": [
+      "Crafting",
+      "Food",
+      "Ingredients",
+      "Profession"
+    ],
+    "Profession": [
+      "Cooking",
+      "Quiz"
+    ],
+    "Quiz": [
+      "Profession"
+    ],
+    "Hide Trail": [
+      "Stealth"
+    ],
+    "Hide": [
+      "Dark Sight",
+      "Rogue",
+      "Stealth",
+      "Swift Action"
+    ],
+    "Stealth": [
+      "Armor",
+      "Conceal Item",
+      "Concealment",
+      "Create a Distraction",
+      "Dark Sight",
+      "Glowing",
+      "Group Checks",
+      "Heartseeker",
+      "Hide",
+      "Hide Trail",
+      "Initiative",
+      "Invisible",
+      "Lady of Light",
+      "Marauder",
+      "Perception",
+      "Rogue",
+      "Skill",
+      "Sucker Punch",
+      "Surprised"
+    ],
+    "Butcher": [
+      "Ingredients",
+      "Resources",
+      "Survival"
+    ],
+    "Forage": [
+      "Ingredients",
+      "Survival",
+      "The Cost of Living"
+    ],
+    "Navigate": [
+      "Star Sight",
+      "Survival"
+    ],
+    "Survival": [
+      "Archer",
+      "Butcher",
+      "Forage",
+      "Hide Trail",
+      "Navigate",
+      "Navigation",
+      "Track"
+    ],
+    "Track": [
+      "Hide Trail",
+      "Survival"
+    ],
+    "Proficiency": [
+      "Alchemy",
+      "Aquatic Combat",
+      "Arcana",
+      "Astronomy",
+      "Athletics",
+      "Catch Fall",
+      "Climb",
+      "Coercion",
+      "Conceal Item",
+      "Dark Knight",
+      "Demoralize",
+      "Detect Compulsion",
+      "Disable Device",
+      "Disguise",
+      "Engineering",
+      "Fearsome Finisher",
+      "Feat",
+      "Forage",
+      "Ghost Buster",
+      "Group Checks",
+      "Hide Trail",
+      "Human",
+      "Humanities",
+      "INT",
+      "Identify Affliction or Curse",
+      "Intuition",
+      "Knowledge",
+      "Linguistics",
+      "Long Term Care",
+      "Nature",
+      "Order 66",
+      "Perception",
+      "Pickpocket",
+      "Planes",
+      "Prevent Recovery",
+      "Profession",
+      "Provide First Aid",
+      "Quiz",
+      "Religion",
+      "Skill",
+      "Spellbreaker",
+      "Subtle Message",
+      "Sucker Punch",
+      "Summoner",
+      "Swim",
+      "Tumble",
+      "Wall Kick"
+    ],
+    "Skill": [
+      "Acrobatics",
+      "Alchemy",
+      "Arcana",
+      "Astronomy",
+      "Athletics",
+      "Character Creation",
+      "Charmed",
+      "Class",
+      "Deception",
+      "Engineering",
+      "Feat",
+      "History",
+      "Human",
+      "Humanities",
+      "INT",
+      "Insight",
+      "Intimidation",
+      "Invocation",
+      "Knowledge",
+      "Linguistics",
+      "Lv",
+      "Medicine",
+      "Nature",
+      "Perception",
+      "Perform",
+      "Persuasion",
+      "Planes",
+      "Profession",
+      "Proficiency",
+      "Rainbow Beam",
+      "Religion",
+      "Rogue",
+      "Rolling Dice and Statistics",
+      "Stat Feat",
+      "Stealth",
+      "Tie",
+      "Weapon Qualities"
+    ],
+    "Take 10": [
+      "Astrology",
+      "Elf"
+    ],
+    "Take 30": [
+      "Astrology"
+    ],
+    "Hyper Body": [
+      "Dark Knight"
+    ],
+    "Blessing of Restoration": [
+      "Explorer"
+    ],
+    "Channel Energy": [
+      "Explorer",
+      "Healer"
+    ],
+    "Focus Dispel": [
+      "Explorer"
+    ],
+    "Healing Touch": [
+      "Explorer",
+      "Healer",
+      "Holy Arrow"
+    ],
+    "Holy Arrow": [
+      "Explorer",
+      "Healer"
+    ],
+    "Hug": [
+      "Mommy"
+    ],
+    "Mystic Door": [
+      "Explorer"
+    ],
+    "Endure": [
+      "Fighter",
+      "Straw Puppet"
+    ],
+    "Fury": [
+      "Fighter"
+    ],
+    "Dark Sight": [
+      "Rogue"
+    ],
+    "Haste": [
+      "Rogue"
+    ],
+    "Cleave": [
+      "Ifrit"
+    ],
+    "Great Cleave": [
+      "Aran",
+      "Cleaving Axe"
+    ],
+    "Class and Weapon Abilities": [
+      "Special Attack"
+    ],
+    "Blood Art": [
+      "Blood Armor",
+      "Blood Barrage",
+      "Blood Bath",
+      "Blood Blitz",
+      "Blood Rush",
+      "Bloodline Mimicry",
+      "Death's Dance",
+      "Gemarteld",
+      "Pyrrhic Might",
+      "Sanguivory",
+      "Soul Blade",
+      "Soul Split"
+    ],
+    "Dodge Roll": [
+      "Skeleton, Garden"
+    ],
+    "Deceit": [
+      "Blindspot",
+      "Dodge Roll",
+      "Finisher",
+      "Heartseeker",
+      "Kidnap",
+      "Pocket Sand",
+      "Single Out"
+    ],
+    "Eagle Eye": [
+      "Elf"
+    ],
+    "Arrow Rain": [
+      "Archer"
+    ],
+    "Marksmanship": [
+      "Archer",
+      "Arrow Rain",
+      "Arrow Splitter",
+      "Curved Shot",
+      "Disarming Shot",
+      "Distant Shot",
+      "Dive",
+      "Double Shot",
+      "Eagle Eye",
+      "Eye of the Amazon",
+      "Final Attack",
+      "Fire Back",
+      "Focus Shot",
+      "Hailbreaker",
+      "Hamstring Shot",
+      "Inferno Quiver",
+      "Named Bullet",
+      "Piercing Shot",
+      "Pinning Shot",
+      "Ranger Whack",
+      "Silver Hawk",
+      "Slaying Shot",
+      "Slide",
+      "Snipe",
+      "Strafe",
+      "Straw Puppet Milicien"
+    ],
+    "Low Sweep": [
+      "Specific Defenses Rule"
+    ],
+    "Transformation": [
+      "Super Transformation"
+    ],
+    "Martial Arts": [
+      "Axe Kick",
+      "Body Slam",
+      "Catch Blade",
+      "Chi Block",
+      "Chi Reflection",
+      "Chokehold",
+      "Clothesline",
+      "Defensive Spin",
+      "Dropkick",
+      "Flash Kick",
+      "Focus Punch",
+      "Foot Stomp",
+      "Gust Dive",
+      "Low Sweep",
+      "Martial Artist",
+      "Night Punch",
+      "Ora Aura",
+      "Power Fists",
+      "Resonating Strike",
+      "Sky Uppercut",
+      "Star KO",
+      "Super Transformation",
+      "Transformation"
+    ],
+    "Savagery": [
+      "Bloodlust",
+      "Foe Throw",
+      "Gore Paint",
+      "Ground Pound",
+      "Orc",
+      "Raging Blow",
+      "Revenge",
+      "Seismic Stomp"
+    ],
+    "Lunge": [
+      "Skeleton, Garden"
+    ],
+    "Taunt": [
+      "Straw Puppet"
+    ],
+    "Unbreakable Body": [
+      "Adamant Armor"
+    ],
+    "Warfare": [
+      "Archer",
+      "Callout",
+      "Fighter",
+      "Lunge",
+      "Martial Artist",
+      "Panic",
+      "Quickdraw",
+      "Second Wind",
+      "Taunt",
+      "Template, Technique",
+      "Unbreakable Body"
+    ],
+    "Detect Magic": [
+      "Elf"
+    ],
+    "Dispel": [
+      "Chi Reflection",
+      "Explorer",
+      "Focus Dispel",
+      "Thrall"
+    ],
+    "Academy": [
+      "Alarming Sigil",
+      "Detect Magic",
+      "Dimensional Anchor",
+      "Dispel",
+      "Feather Fall",
+      "Healer",
+      "Levitate",
+      "Lighten Object",
+      "Mage's Weapon",
+      "Magic Claw",
+      "Magic Guard",
+      "Ritual Infusion",
+      "Scholar's Hand",
+      "Template, Spell"
+    ],
+    "Charming Gaze": [
+      "Kitsune"
+    ],
+    "Dominate": [
+      "Thrall"
+    ],
+    "Enthrallment": [
+      "Charming Gaze",
+      "Command",
+      "Confide",
+      "Darting Duplicate",
+      "Dominate",
+      "Double Speak",
+      "Ecstasy",
+      "Exhibition",
+      "Order 66",
+      "Rapid Wardrobe",
+      "Seduce",
+      "Sense Motive",
+      "Stage Fright",
+      "Stunt Double",
+      "The Hand that Feeds",
+      "Thrall",
+      "Tongue Twister",
+      "Tongues",
+      "Unfiltered",
+      "Unnatural Lust",
+      "Verboden Taal"
+    ],
+    "Vengeance": [
+      "Vengeance Other"
+    ],
+    "Lunar": [
+      "Astral Alignment",
+      "Astrology",
+      "Enchant Sapphire",
+      "Energy Transfer",
+      "Identify Spell",
+      "Lunar Dream",
+      "Magic Imbue",
+      "Moon Elf",
+      "Natural Geomancy",
+      "Nebula",
+      "Provider's Station",
+      "Sacrificial Heal",
+      "Star Sight",
+      "Unseen Blade",
+      "Unseen Form",
+      "Vengeance",
+      "Vengeance Other"
+    ],
+    "Necromancy": [
+      "Boneshaker",
+      "Decompose",
+      "Enervate",
+      "Grasp of the Grave",
+      "Grave Robber",
+      "Halt Undead"
+    ],
+    "Prismancy": [
+      "Brilliant Barrage",
+      "Detonate",
+      "Illumination",
+      "Lady of Light",
+      "Prismatic Barrier",
+      "Rainbow Beam",
+      "Repelling Light",
+      "Ricochet Reflection",
+      "Sabre of Light",
+      "Shimmering Ray",
+      "Solar Flash",
+      "Zonnestraal"
+    ],
+    "Sending": [
+      "Mommy",
+      "Psychomancy"
+    ],
+    "Psychomancy": [
+      "Sending"
+    ],
+    "Flame Surge": [
+      "Ifrit"
+    ],
+    "Self-Immolation": [
+      "Ifrit"
+    ],
+    "Detonate": [
+      "Ifrit"
+    ],
+    "Flame Tempest": [
+      "Ifrit"
+    ],
+    "Fire Blast": [
+      "Specific Defenses Rule"
+    ],
+    "Pyromancy": [
+      "Blazing Palm",
+      "Burning Hands",
+      "Fire Blast",
+      "Flame Blade",
+      "Flame Foil",
+      "Flame Pillar",
+      "Flame Surge",
+      "Flame Tempest",
+      "Ifrit Milicien",
+      "Meteor Swarm",
+      "Self-Immolation"
+    ],
+    "Regenerate": [
+      "Spare Life"
+    ],
+    "Vitalism": [
+      "Bless",
+      "Caloric Healing",
+      "Circle of Sealing",
+      "Death Ward",
+      "Handholding",
+      "Heal",
+      "Healer",
+      "Invigorate",
+      "Regenerate",
+      "Spare Life",
+      "Turn Undead"
+    ],
+    "CL": [
+      "Bleed",
+      "Blood Barrage",
+      "Boneshaker",
+      "Burning Hands",
+      "Channel Energy",
+      "Chi Reflection",
+      "Circle of Sealing",
+      "Dispel",
+      "Elf",
+      "Fire Blast",
+      "Flame Surge",
+      "Flame Tempest",
+      "Focus Dispel",
+      "Heal",
+      "Healer",
+      "Healing Touch",
+      "Magic Guard",
+      "Meteor Swarm",
+      "Nebula",
+      "Rainbow Beam",
+      "Sabre of Light",
+      "Snipe",
+      "Solar Flash",
+      "Spell",
+      "Stage Fright",
+      "Upcast",
+      "Weather and Terrain vs Spells",
+      "Zonnestraal"
+    ],
+    "M": [
+      "Astrology",
+      "Bloodline Mimicry",
+      "Circle of Sealing",
+      "Scholar's Hand",
+      "Spell",
+      "Spell Components"
+    ],
+    "S": [
+      "Spell",
+      "Spell Components",
+      "Staff"
+    ],
+    "Spell Components": [
+      "M",
+      "S",
+      "Spell"
+    ],
+    "Spell": [
+      "AS",
+      "Academy",
+      "Alarming Sigil",
+      "Astral Alignment",
+      "Astrology",
+      "Attack Action",
+      "Blazing Palm",
+      "Bless",
+      "Blood Barrage",
+      "Blood Blitz",
+      "Blood Rush",
+      "Bloodline Mimicry",
+      "Boneshaker",
+      "Brilliant Barrage",
+      "Burning Hands",
+      "Caloric Healing",
+      "Charming Gaze",
+      "Chi Reflection",
+      "Circle of Sealing",
+      "Command",
+      "Confide",
+      "Damage",
+      "Dark Sight",
+      "Darting Duplicate",
+      "Death Ward",
+      "Decompose",
+      "Detect Magic",
+      "Detonate",
+      "Dimensional Anchor",
+      "Dispel",
+      "Dominate",
+      "Double Speak",
+      "Ecstasy",
+      "Enchant Sapphire",
+      "Energy Transfer",
+      "Enervate",
+      "Exhibition",
+      "Explorer",
+      "Feather Fall",
+      "Fire Blast",
+      "Flame Blade",
+      "Flame Foil",
+      "Flame Pillar",
+      "Flame Surge",
+      "Flame Tempest",
+      "Focus Dispel",
+      "Grasp of the Grave",
+      "Grave Robber",
+      "Halt Undead",
+      "Handholding",
+      "Heal",
+      "Hybrid Techniques",
+      "Identify Spell",
+      "Ifrit Milicien",
+      "Illumination",
+      "Invigorate",
+      "Lady of Light",
+      "Levitate",
+      "Lighten Object",
+      "Limited",
+      "Lunar Dream",
+      "Mage's Weapon",
+      "Magic Claw",
+      "Magic Guard",
+      "Magic Imbue",
+      "Mana",
+      "Meteor Swarm",
+      "Natural Geomancy",
+      "Nebula",
+      "Order 66",
+      "Prismatic Barrier",
+      "Provider's Station",
+      "Rainbow Beam",
+      "Rapid Wardrobe",
+      "Regenerate",
+      "Repelling Light",
+      "Ricochet Reflection",
+      "Ritual Infusion",
+      "Rogue",
+      "SP",
+      "Sabre of Light",
+      "Sacrificial Heal",
+      "Sanguivory",
+      "Scholar's Hand",
+      "Seduce",
+      "Self-Immolation",
+      "Sending",
+      "Sense Motive",
+      "Shimmering Ray",
+      "Silenced",
+      "Siphoned",
+      "Solar Flash",
+      "Soul Split",
+      "Spare Life",
+      "Stage Fright",
+      "Star Sight",
+      "Stunt Double",
+      "Supernatural",
+      "Taunted",
+      "Technique",
+      "Template, Spell",
+      "The Hand that Feeds",
+      "Thrall",
+      "Tongue Twister",
+      "Tongues",
+      "Turn Undead",
+      "Unfiltered",
+      "Unnatural Lust",
+      "Unseen Blade",
+      "Unseen Form",
+      "Vengeance",
+      "Vengeance Other",
+      "Verboden Taal",
+      "Zonnestraal"
+    ],
+    "V": [
+      "Spell",
+      "Spell Components"
+    ],
+    "Innate Technique": [
+      "Bestial",
+      "Blessing of Restoration",
+      "Channel Energy",
+      "Class and Weapon Abilities",
+      "Cleave",
+      "Dark Sight",
+      "Elf",
+      "Endure",
+      "Focus Dispel",
+      "Fury",
+      "Great Cleave",
+      "Haste",
+      "Healing Touch",
+      "Holy Arrow",
+      "Hug",
+      "Hyper Body",
+      "Kitsune",
+      "Mommy",
+      "Mystic Door",
+      "Preparing Techniques",
+      "Skewer",
+      "Special Attack",
+      "Spell",
+      "Spell Components",
+      "Template, Innate Technique",
+      "Template, Weapon Technique",
+      "Weapon Qualities"
+    ],
+    "Preparing Techniques": [
+      "Ifrit Milicien",
+      "Magic Guard",
+      "Short Rest",
+      "Summoner"
+    ],
+    "Technique": [
+      "Academy",
+      "Arrow Rain",
+      "Arrow Splitter",
+      "Attack Action",
+      "Axe Kick",
+      "Blindspot",
+      "Blood Armor",
+      "Blood Bath",
+      "Bloodlust",
+      "Body Slam",
+      "Callout",
+      "Catch Blade",
+      "Chi Block",
+      "Chi Reflection",
+      "Chokehold",
+      "Class",
+      "Class and Weapon Abilities",
+      "Clothesline",
+      "Curved Shot",
+      "Damage",
+      "Death's Dance",
+      "Deceit",
+      "Defensive Spin",
+      "Disarming Shot",
+      "Distant Shot",
+      "Dive",
+      "Dodge Roll",
+      "Double Shot",
+      "Dropkick",
+      "Eagle Eye",
+      "Eye of the Amazon",
+      "Fighter",
+      "Final Attack",
+      "Finisher",
+      "Fire Back",
+      "Flash Kick",
+      "Focus Punch",
+      "Focus Shot",
+      "Foe Throw",
+      "Foot Stomp",
+      "Gemarteld",
+      "Gore Paint",
+      "Ground Pound",
+      "Gust Dive",
+      "Hailbreaker",
+      "Hamstring Shot",
+      "Heartseeker",
+      "Hybrid Techniques",
+      "INT",
+      "Identify Spell",
+      "Inferno Quiver",
+      "Innate Technique",
+      "Kidnap",
+      "Limited",
+      "Longbow",
+      "Low Sweep",
+      "Lunge",
+      "Marksmanship",
+      "Martial Artist",
+      "Martial Arts",
+      "Moon Elf",
+      "Named Bullet",
+      "Night Punch",
+      "Ora Aura",
+      "Orc",
+      "Panic",
+      "Piercing Shot",
+      "Pinning Shot",
+      "Pocket Sand",
+      "Power Fists",
+      "Progression Outside of Class",
+      "Pyrrhic Might",
+      "Quickdraw",
+      "Raging Blow",
+      "Ranger Whack",
+      "Resonating Strike",
+      "Revenge",
+      "Savagery",
+      "Second Wind",
+      "Seismic Stomp",
+      "Shield",
+      "Silver Hawk",
+      "Single Out",
+      "Sky Uppercut",
+      "Slaying Shot",
+      "Slide",
+      "Snipe",
+      "Soul Blade",
+      "Special Attack",
+      "Spell",
+      "Star KO",
+      "Strafe",
+      "Straw Puppet Milicien",
+      "Summoner",
+      "Summoning",
+      "Super Transformation",
+      "Taunt",
+      "Template, Technique",
+      "Transformation",
+      "Unbreakable Body",
+      "Upcast",
+      "Warfare",
+      "Weapon",
+      "Weapon Group"
+    ],
+    "Upcast": [
+      "Arrow Rain",
+      "Axe Kick",
+      "Blazing Palm",
+      "Blood Bath",
+      "Blood Blitz",
+      "Blood Rush",
+      "Boneshaker",
+      "Brilliant Barrage",
+      "Burning Hands",
+      "Callout",
+      "Channel Energy",
+      "Class and Weapon Abilities",
+      "Confide",
+      "Curved Shot",
+      "Decompose",
+      "Detonate",
+      "Disarming Shot",
+      "Dropkick",
+      "Ecstasy",
+      "Enervate",
+      "Feather Fall",
+      "Finisher",
+      "Fire Blast",
+      "Flame Blade",
+      "Flame Pillar",
+      "Flame Surge",
+      "Flame Tempest",
+      "Focus Punch",
+      "Focus Shot",
+      "Foe Throw",
+      "Grasp of the Grave",
+      "Ground Pound",
+      "Halt Undead",
+      "Hamstring Shot",
+      "Heal",
+      "Identify Spell",
+      "Ifrit Milicien",
+      "Kidnap",
+      "Lighten Object",
+      "Lunge",
+      "Magic Claw",
+      "Meteor Swarm",
+      "Nebula",
+      "Night Punch",
+      "Piercing Shot",
+      "Pocket Sand",
+      "Prismatic Barrier",
+      "Pyrrhic Might",
+      "Rainbow Beam",
+      "Ranger Whack",
+      "Repelling Light",
+      "Resonating Strike",
+      "Sanguivory",
+      "Seismic Stomp",
+      "Self-Immolation",
+      "Sending",
+      "Shimmering Ray",
+      "Silver Hawk",
+      "Single Out",
+      "Slaying Shot",
+      "Soul Blade",
+      "Star KO",
+      "Strafe",
+      "Stunt Double",
+      "Template, Spell",
+      "Template, Technique",
+      "The Hand that Feeds",
+      "Turn Undead",
+      "Zonnestraal"
+    ],
+    "Placeholder": [
+      "Confide",
+      "Dark Knight",
+      "Mommy",
+      "Regenerate"
+    ],
+    "LV": [
+      "AC",
+      "Abbreviations",
+      "Adversary Kishin",
+      "Butcher",
+      "CL",
+      "Circle of Sealing",
+      "Class",
+      "Common Prices",
+      "Dark Knight",
+      "Fan Club",
+      "Feat",
+      "Fighter",
+      "Fortitude",
+      "Hyper Body",
+      "Ifrit",
+      "Knowledge",
+      "Mana",
+      "Martial Artist",
+      "Monster Lore",
+      "Potency",
+      "Reflex",
+      "Rogue",
+      "Skeleton, Garden",
+      "Skill",
+      "Straw Puppet",
+      "Technique",
+      "Template, Bestiary Entry",
+      "Usa",
+      "Will"
+    ],
+    "Senses": [
+      "Adversary Kishin",
+      "Concealment",
+      "Ifrit",
+      "Skeleton, Garden",
+      "Straw Puppet",
+      "Template, Bestiary Entry"
+    ],
+    "SP\\": [
+      "Adversary Kishin",
+      "Ifrit",
+      "Skeleton, Garden",
+      "Straw Puppet",
+      "Template, Bestiary Entry"
+    ],
+    "Resistance\\": [
+      "Adversary Kishin",
+      "Ifrit",
+      "Skeleton, Garden",
+      "Straw Puppet",
+      "Template, Bestiary Entry"
+    ],
+    "Immunity\\": [
+      "Adversary Kishin",
+      "Ifrit",
+      "Skeleton, Garden",
+      "Straw Puppet",
+      "Template, Bestiary Entry"
+    ],
+    "Weakness\\": [
+      "Adversary Kishin",
+      "Ifrit",
+      "Skeleton, Garden",
+      "Straw Puppet",
+      "Template, Bestiary Entry"
+    ],
+    "Technique\\": [
+      "Adversary Kishin",
+      "Human",
+      "Ifrit",
+      "Skeleton, Garden",
+      "Straw Puppet",
+      "Template, Bestiary Entry"
+    ],
+    "Monster Quality\\": [
+      "Adversary Kishin",
+      "Ifrit",
+      "Straw Puppet",
+      "Template, Bestiary Entry"
+    ],
+    "Feat\\": [
+      "Adversary Kishin",
+      "Dwarf",
+      "Ifrit",
+      "Skeleton, Garden",
+      "Straw Puppet",
+      "Template, Bestiary Entry"
+    ],
+    "Skill\\": [
+      "Adversary Kishin",
+      "Archer",
+      "Avatar",
+      "Dwarf",
+      "Fighter",
+      "Healer",
+      "Ifrit",
+      "Martial Artist",
+      "Rogue",
+      "Skeleton, Garden",
+      "Spirit Walker",
+      "Straw Puppet",
+      "Summoner",
+      "Template, Bestiary Entry",
+      "Template, Class",
+      "The Boss"
+    ],
+    "Nightvision": [
+      "Adversary Kishin"
+    ],
+    "Zombified": [
+      "Adversary Kishin"
+    ],
+    "Inevitable": [
+      "Celestial"
+    ],
+    "Hide in Plain Sight": [
+      "Marauder",
+      "Skeleton, Garden"
+    ],
+    "grab\\": [
+      "Skeleton, Garden"
+    ],
+    "Equipment": [
+      "Character Creation",
+      "Steal"
+    ],
+    "Random Charts": [
+      "Character Creation"
+    ],
+    "Boons/Banes": [
+      "Progression Outside of Class"
+    ],
+    "defeat": [
+      "Aran"
+    ],
+    "Saving Throw\\": [
+      "Archer",
+      "Avatar",
+      "Dwarf",
+      "Fighter",
+      "Healer",
+      "Martial Artist",
+      "Rogue",
+      "Spirit Walker",
+      "Summoner",
+      "Template, Class",
+      "The Boss"
+    ],
+    "movement": [
+      "Bodyguard",
+      "Dark Knight",
+      "Difficult Terrain",
+      "Jump",
+      "Move As One",
+      "Unseen Form"
+    ],
+    "reach": [
+      "Dark Knight"
+    ],
+    "resistance": [
+      "Endure",
+      "Fighter",
+      "Fury"
+    ],
+    "feat": [
+      "Fighter"
+    ],
+    "weapon": [
+      "Bonded Weapons",
+      "Fighter",
+      "Tradesman"
+    ],
+    "Magic Weapons": [
+      "Fighter"
+    ],
+    "Poisoned": [
+      "Explorer"
+    ],
+    "Elemental Protection": [
+      "Explorer"
+    ],
+    "Mom'd Out": [
+      "Mommy"
+    ],
+    "Summoning Contract": [
+      "Bandit",
+      "Summoner",
+      "Summoning"
+    ],
+    "crit": [
+      "Bandit"
+    ],
+    "Wealth": [
+      "Bandit",
+      "Human",
+      "Tradesman"
+    ],
+    "placeholder": [
+      "Bandit"
+    ],
+    "Rogue Talent": [
+      "Rogue"
+    ],
+    "Night Vision": [
+      "AP",
+      "Dwarf",
+      "Half-Link",
+      "Orc"
+    ],
+    "Summoning Sickness": [
+      "Summoner"
+    ],
+    "Dark Vision": [
+      "Concealment"
+    ],
+    "circumstance": [
+      "Minion"
+    ],
+    "STR\\": [
+      "Carry Weight"
+    ],
+    "Size and Reach\\": [
+      "Carry Weight",
+      "Weapon Qualities"
+    ],
+    "fly": [
+      "Difficult Terrain"
+    ],
+    "Accessory": [
+      "Equipment Slot",
+      "Steal"
+    ],
+    "Unarmed Strike": [
+      "Dual Wielding",
+      "Sucker Punch"
+    ],
+    "ACC\\": [
+      "Dwarf",
+      "Offense Calculator"
+    ],
+    "AS\\": [
+      "Offense Calculator"
+    ],
+    "Crit\\": [
+      "Offense Calculator"
+    ],
+    "AC\\": [
+      "Dwarf",
+      "Offense Calculator"
+    ],
+    "Crawl": [
+      "Defeat"
+    ],
+    "Techniques": [
+      "Mana",
+      "Weapon"
+    ],
+    "Poison": [
+      "Fortitude",
+      "Identify Potion",
+      "Lunar Dream"
+    ],
+    "Disease": [
+      "Fortitude"
+    ],
+    "Area Effect": [
+      "Reflex"
+    ],
+    "Trap": [
+      "Intuition",
+      "Reflex"
+    ],
+    "On-Hit Effect": [
+      "Martial"
+    ],
+    "troll oil": [
+      "Tradesman"
+    ],
+    "Bloodblock": [
+      "Tradesman"
+    ],
+    "love potion": [
+      "Tradesman"
+    ],
+    "Alchemist Fire": [
+      "Tradesman"
+    ],
+    "armor": [
+      "Tradesman"
+    ],
+    "shield": [
+      "Shield Brothers",
+      "Tradesman"
+    ],
+    "rock": [
+      "Wanderer"
+    ],
+    "crafting": [
+      "Labor"
+    ],
+    "Loot": [
+      "Ingredients",
+      "Resources"
+    ],
+    "Weapon Group\\": [
+      "Common Prices"
+    ],
+    "Mana Starvation": [
+      "Mana Donation"
+    ],
+    "Potion": [
+      "Food"
+    ],
+    "Magic Item": [
+      "Class and Weapon Abilities",
+      "Identify Magic Item",
+      "Upgrade Slot"
+    ],
+    "Adamant": [
+      "Adamant Armor"
+    ],
+    "Upgrade Slot\\": [
+      "Cleaving Axe",
+      "Template, Weapon"
+    ],
+    "Focus": [
+      "Longbow"
+    ],
+    "On-Hit Effect\\": [
+      "Weapon"
+    ],
+    "Gloves": [
+      "Equipment Slot"
+    ],
+    "Boots": [
+      "Equipment Slot"
+    ],
+    "Headgear": [
+      "Equipment Slot"
+    ],
+    "Passive": [
+      "Blessing of Restoration",
+      "Blood Armor",
+      "Chokehold",
+      "Eagle Eye",
+      "Eye of the Amazon",
+      "Fighting Style",
+      "Final Attack",
+      "Finisher",
+      "Gore Paint",
+      "Grave Robber",
+      "Haste",
+      "Hug",
+      "Hybrid Techniques",
+      "Hyper Body",
+      "Ifrit Milicien",
+      "Illumination",
+      "Lady of Light",
+      "Sense Motive",
+      "Soul Split",
+      "Tongues"
+    ],
+    "flanking": [
+      "Back to the Wall"
+    ],
+    "disarm": [
+      "Bonded Weapons"
+    ],
+    "teleportation": [
+      "Bonded Weapons"
+    ],
+    "attack": [
+      "Clustered Blows",
+      "Endurance",
+      "Gemarteld"
+    ],
+    "threaten": [
+      "Combat Reflexes",
+      "Pack Tactics"
+    ],
+    "companion": [
+      "Fan Club"
+    ],
+    "speed": [
+      "Fleet Footwork",
+      "Longshot",
+      "Quickstep"
+    ],
+    "Incorporeal": [
+      "Ghost Buster"
+    ],
+    "elusive": [
+      "Escape Route",
+      "Quickstep"
+    ],
+    "Profession\\": [
+      "Bambuken"
+    ],
+    "Plane Shift": [
+      "Kitsune"
+    ],
+    "Commoner": [
+      "Usa"
+    ],
+    "Luck Check\\": [
+      "Usa"
+    ],
+    "Senses\\": [
+      "Dwarf",
+      "Half-Link"
+    ],
+    "Fiend\\": [
+      "Half-Link"
+    ],
+    "Damage\\": [
+      "Dwarf"
+    ],
+    "Toughness": [
+      "Dwarf"
+    ],
+    "Light Level\\": [
+      "Dwarf",
+      "Orc"
+    ],
+    "Forced March": [
+      "Human"
+    ],
+    "Fame": [
+      "Human"
+    ],
+    "Combat Maneuver\\": [
+      "Orc"
+    ],
+    "Ferocity": [
+      "Orc"
+    ],
+    "Knockdown": [
+      "Orc"
+    ],
+    "Blindsense": [
+      "Heartseeker",
+      "Orc"
+    ],
+    "Seeking": [
+      "Orc"
+    ],
+    "blinded\\": [
+      "Orc"
+    ],
+    "Carry Weight\\": [
+      "Orc"
+    ],
+    "Skills/Acrobatics/Tumble": [
+      "Acrobatics"
+    ],
+    "Skills/Deception/Sucker Punch": [
+      "Deception"
+    ],
+    "Possessed": [
+      "Detect Compulsion"
+    ],
+    "Craft": [
+      "Alchemy",
+      "Group Checks",
+      "Identify Composition",
+      "Identify Potion",
+      "Ritual"
+    ],
+    "sigil": [
+      "Trigger Magic Device"
+    ],
+    "Gaia": [
+      "Identify Spell"
+    ],
+    "Evil Eye": [
+      "Monster Lore"
+    ],
+    "Proficient": [
+      "Skill"
+    ],
+    "bleed": [
+      "Blood Armor"
+    ],
+    "Lifesense": [
+      "Heartseeker"
+    ],
+    "illusion": [
+      "Resonating Strike"
+    ],
+    "grab": [
+      "Foe Throw"
+    ],
+    "Crafting\\": [
+      "Ritual Infusion"
+    ],
+    "Telekinesis": [
+      "Psychomancy"
+    ],
+    "Dream": [
+      "Psychomancy"
+    ],
+    "Detect Thoughts": [
+      "Psychomancy"
+    ],
+    "Memory Movie": [
+      "Psychomancy"
+    ],
+    "Seal": [
+      "S"
+    ],
+    "Wand": [
+      "S"
+    ],
+    "Tome": [
+      "S"
+    ],
+    "🍔 Mission Statement": [
+      "Index"
+    ]
+  }
+}

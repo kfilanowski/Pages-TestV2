@@ -1,4 +1,4 @@
-import { Component, inject, signal, OnInit, OnDestroy, computed, ChangeDetectionStrategy } from '@angular/core';
+import { Component, inject, signal, OnInit, OnDestroy, computed, ChangeDetectionStrategy, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterModule, NavigationEnd } from '@angular/router';
 import { FormsModule } from '@angular/forms';
@@ -12,10 +12,10 @@ import {
   Note,
 } from '../../../../core/interfaces';
 import { MatIcon } from '@angular/material/icon';
-import { NgIconComponent } from '@ng-icons/core';
 import { SearchResult } from '../../../../core/services/search.service';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { HighlightMatchPipe } from '../../../../shared/pipes/highlight-match.pipe';
+import { IconifyIconComponent } from '../../../../shared/components/iconify-icon/iconify-icon.component';
 
 /**
  * Navigation tree component for displaying notes hierarchy
@@ -33,10 +33,11 @@ import { HighlightMatchPipe } from '../../../../shared/pipes/highlight-match.pip
     CommonModule,
     RouterModule,
     MatIcon,
-    NgIconComponent,
+    IconifyIconComponent,
     FormsModule,
     HighlightMatchPipe,
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './notes-navigation.component.html',
   styleUrl: './notes-navigation.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -74,39 +75,6 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
   // Type guards exposed to template
   protected readonly isFolder = isFolder;
   protected readonly isNote = isNote;
-
-  /**
-   * Converts frontmatter icon names (e.g., "FiTarget", "LuSword", "GiDragonHead") to ng-icons format
-   * Maps common prefixes to their ng-icons equivalents
-   * Returns null if the icon is invalid or prefix is not recognized
-   */
-  protected convertIconName(icon: string | undefined): string | null {
-    if (!icon) return null;
-
-    // Map of frontmatter icon prefixes to ng-icons library prefixes
-    const prefixMap: Record<string, string> = {
-      'Fi': 'lucide',    // Feather Icons -> Lucide (closest match)
-      'Fa': 'lucide',    // Font Awesome -> Lucide (for compatibility)
-      'Bs': 'bootstrap', // Bootstrap Icons
-      'Hi': 'hero',      // Heroicons
-      'Lu': 'lucide',    // Lucide
-      'Tb': 'tabler',    // Tabler Icons
-      'Ra': 'radix',     // Radix Icons
-      'Gi': 'game',      // Game Icons
-    };
-
-    // Extract prefix (first 2 chars) and icon name
-    const prefix = icon.substring(0, 2);
-    const iconName = icon.substring(2);
-
-    // Only return icon name if prefix is recognized
-    const mappedPrefix = prefixMap[prefix];
-    if (!mappedPrefix) {
-      return null;
-    }
-
-    return `${mappedPrefix}${iconName}`;
-  }
 
   constructor() {
     // Subscribe to notes tree changes

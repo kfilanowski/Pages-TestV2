@@ -6,7 +6,7 @@ import { Note } from '../../core/interfaces';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { NgIconComponent } from '@ng-icons/core';
+import { IconifyIconComponent } from '../../shared/components/iconify-icon/iconify-icon.component';
 
 /**
  * Right Sidebar Component
@@ -18,6 +18,7 @@ import { NgIconComponent } from '@ng-icons/core';
  * Design decisions:
  * - Reactive component using Angular signals
  * - Uses MarkdownService to get link relationships
+ * - Uses IconifyIconComponent for consistent icon rendering across the app
  * - Single Responsibility: Display page relationships
  * - Follows Dependency Injection principle
  * - Waits for reference graph to be ready before computing links
@@ -25,7 +26,7 @@ import { NgIconComponent } from '@ng-icons/core';
  */
 @Component({
   selector: 'app-sidebar-right',
-  imports: [RouterLink, MatIconModule, MatButtonModule, MatTooltipModule, NgIconComponent],
+  imports: [RouterLink, MatIconModule, MatButtonModule, MatTooltipModule, IconifyIconComponent],
   templateUrl: './sidebar-right.component.html',
   styleUrl: './sidebar-right.component.scss',
 })
@@ -44,39 +45,6 @@ export class SidebarRightComponent {
    */
   protected onToggleSidebar(): void {
     this.toggleSidebar.emit();
-  }
-
-  /**
-   * Converts frontmatter icon names (e.g., "FiTarget", "LuSword") to ng-icons format
-   * Maps common prefixes to their ng-icons equivalents
-   * Returns null if the prefix is not recognized or icon is undefined
-   */
-  protected convertIconName(icon: string | undefined): string | null {
-    if (!icon) return null;
-
-    // Map of frontmatter icon prefixes to ng-icons library prefixes
-    const prefixMap: Record<string, string> = {
-      'Fi': 'lucide',    // Feather Icons -> Lucide (closest match)
-      'Fa': 'lucide',    // Font Awesome -> Lucide (for compatibility)
-      'Bs': 'bootstrap', // Bootstrap Icons
-      'Hi': 'hero',      // Heroicons
-      'Lu': 'lucide',    // Lucide
-      'Tb': 'tabler',    // Tabler Icons
-      'Ra': 'radix',     // Radix Icons
-      'Gi': 'game',      // Game Icons
-    };
-
-    // Extract prefix (first 2 chars) and icon name
-    const prefix = icon.substring(0, 2);
-    const iconName = icon.substring(2);
-
-    // Only return icon name if prefix is recognized
-    const mappedPrefix = prefixMap[prefix];
-    if (!mappedPrefix) {
-      return null;
-    }
-
-    return `${mappedPrefix}${iconName}`;
   }
 
   // Track if reference graph is ready

@@ -142,9 +142,10 @@ export class SearchService {
       ],
       includeScore: true,
       includeMatches: true,
-      threshold: 0.1, // Slightly relaxed for better results with aliases
-      minMatchCharLength: 2,
+      threshold: 0.2, // Stricter fuzzy matching - lower is stricter (0.0 = exact, 1.0 = match anything)
+      minMatchCharLength: 3, // Require at least 3 consecutive characters to match
       ignoreLocation: true, // Search entire content, not just beginning
+      distance: 50, // Tighter proximity - matched characters must be closer together
     });
   }
 

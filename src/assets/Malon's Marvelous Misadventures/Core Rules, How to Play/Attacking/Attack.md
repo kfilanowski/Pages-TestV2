@@ -1,5 +1,5 @@
 ---
-icon: LiSword
+icon: GiSwordman
 ---
 **Attack** rolls are any type of harmful effect targeting a creature that does not require a saving throw. This can be spells, swords, or trying to push your foe off of a cliff (see Combat Maneuvers).
 

@@ -1,5 +1,5 @@
 ---
-icon: TiEggCracked
+icon: GiCrackedGlass
 ---
 A **Limited** ability can only be used once, after which you must Long Rest to restore it.
 

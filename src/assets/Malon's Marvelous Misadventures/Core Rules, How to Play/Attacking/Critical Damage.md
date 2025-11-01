@@ -1,5 +1,5 @@
 ---
-icon: RaExplosion
+icon: GiExplosiveMaterials
 ---
 **Critical Damage**: [[Damage]] added to a [[Crit]]. 
 By default, this amount is d10+[[LUK]] damage. This is in addition to your attack's normal damage. 

@@ -1,11 +1,11 @@
-import { Component, inject, OnInit, signal, computed } from '@angular/core';
+import { Component, inject, OnInit, signal, computed, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { MarkdownService, SearchService } from '../../../../core/services';
 import { WikiLinkDirective } from '../wiki-link.directive';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { NgIconComponent } from '@ng-icons/core';
+import { IconifyIconComponent } from '../../../../shared/components/iconify-icon/iconify-icon.component';
 
 /**
  * Component for displaying markdown note content
@@ -20,7 +20,8 @@ import { NgIconComponent } from '@ng-icons/core';
  */
 @Component({
   selector: 'app-note-viewer',
-  imports: [CommonModule, WikiLinkDirective, NgIconComponent],
+  imports: [CommonModule, WikiLinkDirective, IconifyIconComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './note-viewer.component.html',
   styleUrl: './note-viewer.component.scss',
 })
@@ -37,41 +38,6 @@ export class NoteViewerComponent implements OnInit {
   protected readonly noteIcon = signal<string | undefined>(undefined);
 
   private currentNoteId: string | null = null;
-
-  /**
-   * Converts frontmatter icon names (e.g., "FiTarget", "LuSword") to ng-icons format
-   * Maps common prefixes to their ng-icons equivalents
-   * Returns null if the prefix is not recognized (preventing fallback icons)
-   */
-  protected readonly convertedIconName = computed(() => {
-    const icon = this.noteIcon();
-    if (!icon) return null;
-
-    // Map of frontmatter icon prefixes to ng-icons library prefixes
-    const prefixMap: Record<string, string> = {
-      'Fi': 'lucide',    // Feather Icons -> Lucide (closest match)
-      'Fa': 'lucide',    // Font Awesome -> Lucide (for compatibility)
-      'Bs': 'bootstrap', // Bootstrap Icons
-      'Hi': 'hero',      // Heroicons
-      'Lu': 'lucide',    // Lucide
-      'Tb': 'tabler',    // Tabler Icons
-      'Ra': 'radix',     // Radix Icons
-      'Gi': 'game',      // Game Icons
-    };
-
-    // Extract prefix (first 2 chars) and icon name
-    const prefix = icon.substring(0, 2);
-    const iconName = icon.substring(2);
-
-    // Only return icon name if prefix is recognized
-    const mappedPrefix = prefixMap[prefix];
-    if (!mappedPrefix) {
-      console.warn(`Unknown icon prefix "${prefix}" in icon "${icon}". Icon will not be displayed.`);
-      return null;
-    }
-
-    return `${mappedPrefix}${iconName}`;
-  });
 
   // Track search query
   protected readonly searchQuery = toSignal(this.searchService.searchQuery$, {
@@ -111,6 +77,9 @@ export class NoteViewerComponent implements OnInit {
    */
   private loadNote(noteId: string): void {
     this.currentNoteId = noteId;
+
+    // IMMEDIATELY reset icon to prevent showing previous page's icon
+    this.noteIcon.set(undefined);
 
     // Fade out current content
     this.contentVisible.set(false);

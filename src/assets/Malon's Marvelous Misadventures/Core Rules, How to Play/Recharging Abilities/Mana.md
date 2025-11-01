@@ -1,5 +1,5 @@
 ---
-icon: CoWaterDrop
+icon: GiWaterDrop
 ---
 **Mana Slots (Mana)**: All creatures have 2+[[LV]] Mana unless otherwise stated.
 

@@ -1,5 +1,5 @@
 ---
-icon: RaHood
+icon: GiHood
 Ability_Score:
   - Dex
 tags:

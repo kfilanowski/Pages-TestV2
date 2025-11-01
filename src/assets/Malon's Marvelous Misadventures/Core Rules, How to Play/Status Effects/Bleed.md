@@ -1,5 +1,5 @@
 ---
-icon: LiDroplet
+icon: LuDroplet
 ---
 Bleeding creatures lose the specified amount of [[HP]] at the start of each of their turns for a specified duration. If no duration is specified, it lasts indefinitely. The [[DC]] to stop the bleeding (with the [[Medicine]] skill, or magic healing with a [[CL]] check) is the attacker's [[Potency]].
 

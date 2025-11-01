@@ -62,8 +62,8 @@
                   routerLinkActive="active"
                   class="note-item"
                 >
-                  @if (convertIconName(subChild.icon); as iconName) {
-                    <ng-icon [name]="iconName" size="20" class="note-icon" />
+                  @if (subChild.icon) {
+                    <app-iconify-icon [icon]="subChild.icon" [size]="20" class="note-icon" [useFallback]="true" />
                   } @else {
                     <mat-icon class="note-icon">description</mat-icon>
                   }
@@ -91,8 +91,8 @@
               routerLinkActive="active"
               class="note-item"
             >
-              @if (convertIconName(child.icon); as iconName) {
-                <ng-icon [name]="iconName" size="20" class="note-icon" />
+              @if (child.icon) {
+                <app-iconify-icon [icon]="child.icon" [size]="20" class="note-icon" [useFallback]="true" />
               } @else {
                 <mat-icon class="note-icon">description</mat-icon>
               }
@@ -118,8 +118,8 @@
           routerLinkActive="active"
           class="note-item"
         >
-          @if (convertIconName(node.icon); as iconName) {
-            <ng-icon [name]="iconName" size="20" class="note-icon" />
+          @if (node.icon) {
+            <app-iconify-icon [icon]="node.icon" [size]="20" class="note-icon" [useFallback]="true" />
           } @else {
             <mat-icon class="note-icon">description</mat-icon>
           }

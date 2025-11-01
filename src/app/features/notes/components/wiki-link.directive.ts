@@ -11,6 +11,7 @@ import {
 import { isPlatformBrowser } from '@angular/common';
 import { Router } from '@angular/router';
 import { MarkdownService } from '../../../core/services';
+import { IconService } from '../../../core/services/icon.service';
 
 /**
  * Directive that adds hover preview and click navigation to wiki-links
@@ -31,6 +32,7 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
   private readonly renderer = inject(Renderer2);
   private readonly router = inject(Router);
   private readonly markdownService = inject(MarkdownService);
+  private readonly iconService = inject(IconService);
   private readonly platformId = inject(PLATFORM_ID);
   private readonly isBrowser = isPlatformBrowser(this.platformId);
 
@@ -166,7 +168,7 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
 
   /**
    * Adds an icon to a wiki-link if it has a data-icon attribute
-   * Converts icon names to ng-icons compatible format and inserts the icon before the text
+   * Converts icon names to Iconify format and inserts the icon before the text
    */
   private addIconToWikiLink(link: HTMLElement): void {
     // Check if link already has an icon element
@@ -175,75 +177,34 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
     }
 
     const iconName = link.getAttribute('data-icon');
-    if (!iconName) {
+    if (!iconName || iconName.trim() === '') {
       return; // No icon specified
     }
 
-    // Convert icon name to ng-icons format
-    const convertedIconName = this.convertIconName(iconName);
-    if (!convertedIconName) {
+    // Convert icon name to Iconify format using IconService
+    const iconifyName = this.iconService.convertToIconifyFormat(iconName);
+    if (!iconifyName) {
       return; // Icon name not recognized
     }
 
-    // Create icon element
-    const iconElement = this.renderer.createElement('ng-icon');
-    this.renderer.addClass(iconElement, 'wiki-link-icon');
-    this.renderer.setAttribute(iconElement, 'name', convertedIconName);
+    // Create iconify-icon web component element directly using document.createElement
+    // (Angular's renderer doesn't properly handle custom elements/web components)
+    const iconElement = document.createElement('iconify-icon');
+    iconElement.classList.add('wiki-link-icon');
+    iconElement.setAttribute('icon', iconifyName);
+    iconElement.setAttribute('width', '16');
+    iconElement.setAttribute('height', '16');
+    iconElement.style.marginRight = '4px';
+    iconElement.style.display = 'inline-flex';
+    iconElement.style.verticalAlign = 'middle';
     
     // Insert icon at the beginning of the link
     const firstChild = link.firstChild;
     if (firstChild) {
-      this.renderer.insertBefore(link, iconElement, firstChild);
+      link.insertBefore(iconElement, firstChild);
     } else {
-      this.renderer.appendChild(link, iconElement);
+      link.appendChild(iconElement);
     }
-  }
-
-  /**
-   * Converts frontmatter icon names to ng-icons format
-   * Handles common icon library prefixes
-   */
-  private convertIconName(iconName: string): string | null {
-    if (!iconName) {
-      return null;
-    }
-
-    // Handle emoji icons (single characters that aren't alphanumeric)
-    if (iconName.length <= 2 && !/^[a-zA-Z0-9]+$/.test(iconName)) {
-      // For now, skip emoji icons - they could be displayed as text
-      return null;
-    }
-
-    // Extract prefix (first 2-3 characters) and icon name
-    const prefixMatch = iconName.match(/^([A-Z][a-z]{1,2})/);
-    if (!prefixMatch) {
-      return null;
-    }
-
-    const prefix = prefixMatch[1];
-    const iconSuffix = iconName.substring(prefix.length);
-
-    // Map common prefixes to ng-icons library prefixes
-    const prefixMap: Record<string, string> = {
-      'Fi': 'feather', // Feather Icons
-      'Li': 'lucide',  // Lucide Icons
-      'Ti': 'tabler',  // Tabler Icons
-      'Ri': 'remix',   // Remix Icons
-      'Ib': 'iconoir', // Iconoir
-      'Ra': 'radix',   // Radix Icons
-      'Bo': 'boxicons', // Boxicons
-      'Co': 'circum',  // Circum Icons
-      'Fas': 'fontAwesome', // Font Awesome
-    };
-
-    const libraryName = prefixMap[prefix];
-    if (!libraryName) {
-      return null;
-    }
-
-    // Convert to kebab-case for ng-icons
-    const kebabCase = iconSuffix.replace(/([A-Z])/g, '-$1').toLowerCase();
-    return `${libraryName}${kebabCase}`;
   }
 
   /**
@@ -490,14 +451,22 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
 
           // Add icon if present in frontmatter
           if (note?.icon) {
-            const iconElement = this.renderer.createElement('span');
-            this.renderer.addClass(iconElement, 'material-icons');
-            this.renderer.setStyle(iconElement, 'font-size', '1.2em');
-            this.renderer.setStyle(iconElement, 'color', primaryColor);
-            this.renderer.setStyle(iconElement, 'flex-shrink', '0');
-            const iconText = this.renderer.createText(note.icon);
-            this.renderer.appendChild(iconElement, iconText);
-            this.renderer.appendChild(titleElement, iconElement);
+            // Convert icon name to Iconify format
+            const iconifyName = this.iconService.convertToIconifyFormat(note.icon);
+            if (iconifyName) {
+              // Create iconify-icon web component
+              const iconElement = document.createElement('iconify-icon');
+              iconElement.setAttribute('icon', iconifyName);
+              iconElement.setAttribute('width', '32');
+              iconElement.setAttribute('height', '32');
+              iconElement.style.fontSize = '1.2em';
+              iconElement.style.color = primaryColor;
+              iconElement.style.flexShrink = '0';
+              iconElement.style.display = 'inline-flex';
+              iconElement.style.alignItems = 'center';
+              iconElement.style.justifyContent = 'center';
+              titleElement.appendChild(iconElement);
+            }
           }
 
           const titleText = this.renderer.createText(noteTitle);

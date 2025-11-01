@@ -28,8 +28,8 @@
             [routerLink]="['/Malons-Marvelous-Misadventures', note.id]"
             class="note-link"
           >
-            @if (convertIconName(note.icon)) {
-            <ng-icon class="note-icon" [name]="convertIconName(note.icon)!" />
+            @if (note.icon) {
+            <app-iconify-icon class="note-icon" [icon]="note.icon" [size]="16" />
             }
             <span class="note-title">{{ note.title }}</span>
           </a>
@@ -53,8 +53,8 @@
             [routerLink]="['/Malons-Marvelous-Misadventures', note.id]"
             class="note-link"
           >
-            @if (convertIconName(note.icon)) {
-            <ng-icon class="note-icon" [name]="convertIconName(note.icon)!" />
+            @if (note.icon) {
+            <app-iconify-icon class="note-icon" [icon]="note.icon" [size]="16" />
             }
             <span class="note-title">{{ note.title }}</span>
           </a>
