@@ -264,8 +264,21 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
     // Position the preview
     this.positionPreview(linkElement, preview);
 
-    // Append to body
-    this.renderer.appendChild(document.body, preview);
+    // Append to body (wait for body to be available if needed)
+    const appendToBody = () => {
+      if (document.body) {
+        this.renderer.appendChild(document.body, preview);
+      } else {
+        // Wait for DOM to be ready
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', appendToBody, { once: true });
+        } else {
+          // Fallback: try again after a short delay
+          setTimeout(appendToBody, 10);
+        }
+      }
+    };
+    appendToBody();
 
     // Add hover listeners to keep preview open when hovering over it
     const previewMouseEnter = this.renderer.listen(
@@ -341,6 +354,9 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
           const noteTitle = note ? note.title : noteId;
 
           // Get CSS variables for styling
+          if (!document.body) {
+            return;
+          }
           const bodyStyles = getComputedStyle(document.body);
           const textPrimary =
             bodyStyles.getPropertyValue('--text-primary').trim() || '#3e2723';
@@ -437,6 +453,9 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
     const padding = 20; // Padding from viewport edges
 
     // Get CSS variables for theming (read from body where theme is applied)
+    if (!document.body) {
+      return;
+    }
     const bodyStyles = getComputedStyle(document.body);
     const contentBg =
       bodyStyles.getPropertyValue('--content-bg').trim() || '#faf8f3';
@@ -473,7 +492,7 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
     this.renderer.setStyle(previewElement, 'border-radius', '8px');
 
     // Use more intense shadow in dark mode for better elevation effect
-    const isDarkMode = document.body.getAttribute('data-theme') === 'dark';
+    const isDarkMode = document.body?.getAttribute('data-theme') === 'dark';
     const shadowValue = isDarkMode
       ? '0 6px 24px rgba(0, 0, 0, 0.5), 0 3px 12px rgba(0, 0, 0, 0.35)'
       : '0 4px 16px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.15)';
@@ -584,7 +603,9 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
           }
           this.cleanupPreviewListeners(preview);
           // Remove from DOM
-          this.renderer.removeChild(document.body, preview);
+          if (document.body) {
+            this.renderer.removeChild(document.body, preview);
+          }
         });
       }
     } else {
@@ -592,7 +613,9 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
       this.previewElements.forEach((preview) => {
         this.cleanupPreviewListeners(preview);
         // Remove from DOM
-        this.renderer.removeChild(document.body, preview);
+        if (document.body) {
+          this.renderer.removeChild(document.body, preview);
+        }
       });
       this.previewElements = [];
       this.mouseInsidePreview = null;
@@ -637,6 +660,9 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
     }
 
     // Get CSS variable values from body (where theme is applied)
+    if (!document.body) {
+      return;
+    }
     const bodyStyles = getComputedStyle(document.body);
     const primaryColor =
       bodyStyles.getPropertyValue('--primary-color').trim() ||
