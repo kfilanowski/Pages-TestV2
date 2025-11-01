@@ -1,0 +1,1 @@
+Large scale buildings such as castles, watchtowers, walls, factories, prisons etc. Are all built with specific purposes, facilities and defenses in mind. You can use [[Engineering]] to figure out aspects of these buildings, such as where exhaust/waste pipes lead, how far underground you might need to go to go underneath the structure, and even structural weaknesses.

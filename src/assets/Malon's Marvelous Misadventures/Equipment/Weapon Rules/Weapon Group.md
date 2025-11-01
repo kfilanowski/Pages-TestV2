@@ -1,0 +1,4 @@
+A Weapon Group is a categorization of [[Weapon|Weapons]] that describes the way it is used in combat, and is used to identify what [[Special Attack|Special Attacks]], Abilities, and [[Technique|Techniques]] they're compatible with. The categories describe how they are used to attack, rather than how they look. If a weapon has more than one main category, then that means its category changes based on the way it is used, such as throwing a dagger instead of swinging it.
+
+There are 10 main groups: [[Axe]], [[Blade]], [[Bludgeon]], [[Bow]], [[Close]], [[Dagger]], [[Polearm]], [[Thrown]]/Caster, [[Thrust]], and [[Trigger]],
+and 4 sub-groups: [[Ammunition]], [[Natural Weapon|Natural]], [[Shield]], and [[Staff]]. 

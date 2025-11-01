@@ -1,0 +1,4 @@
+---
+icon: RaSpearHead
+---
+Pierce is a [[Damage]] type [[Tag]], and represents force applied across a small surface area, usually by pointed objects.

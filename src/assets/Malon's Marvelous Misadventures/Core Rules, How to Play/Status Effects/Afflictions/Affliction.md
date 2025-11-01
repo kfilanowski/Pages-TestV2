@@ -1,0 +1,3 @@
+A type of permanent negative effect that can usually only be removed by taking some time off to rest, recuperate and relax. Afflictions come in tiers from 1-3. Higher tier afflictions usually require more extreme forms of care to remove. They are similar to [[Curse|Curses]], but are often not magical in nature.
+
+Tier 1 Afflictions usually only take a day of rest, Tier 2 tend to take a week, and Tier 3 tend to only be cured when meeting special conditions.

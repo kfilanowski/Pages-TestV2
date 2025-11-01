@@ -1,0 +1,1 @@
+A Defeated creature cannot do anything more than a mild whisper while at or below 0 HP. If they are at or are healed to positive hit points, they do not lose the Defeated condition, but they may crawl at a rate of 10 feet per turn, or move at full speed when another creature uses [[Aid]]. See [[Defeat]].

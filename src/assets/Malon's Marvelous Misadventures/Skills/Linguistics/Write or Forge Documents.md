@@ -1,0 +1,1 @@
+Using [[Linguistics]], you can make contracts, forge signatures, and make fake (or real) documents look official. Noticing oddities in such documents requires an opposed Linguistics check.

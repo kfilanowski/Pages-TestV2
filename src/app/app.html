@@ -1,0 +1,50 @@
+<div class="app-container">
+  <!-- Header Component -->
+  <app-header
+    [title]="title"
+    [leftSidebarOpen]="leftSidebarOpen()"
+    [rightSidebarOpen]="rightSidebarOpen()"
+    [isDarkMode]="isDarkMode()"
+    (toggleLeftSidebar)="toggleLeftSidebar()"
+    (toggleRightSidebar)="toggleRightSidebar()"
+    (toggleTheme)="toggleTheme()"
+  />
+
+  <!-- Left Sidebar Component -->
+  <app-sidebar-left [isOpen]="leftSidebarOpen()" />
+
+  <!-- Right Sidebar Component -->
+  <app-sidebar-right
+    [isOpen]="rightSidebarOpen()"
+    [currentNoteId]="currentNoteId()"
+  />
+
+  <!-- Main Content Area -->
+  <main
+    class="app-main"
+    [class.left-sidebar-open]="leftSidebarOpen()"
+    [class.right-sidebar-open]="rightSidebarOpen()"
+  >
+    <div class="main-content">
+      <router-outlet />
+    </div>
+  </main>
+
+  <!-- Footer Component -->
+  <app-footer
+    [appName]="title"
+    [leftSidebarOpen]="leftSidebarOpen()"
+    [rightSidebarOpen]="rightSidebarOpen()"
+  />
+
+  <!-- Overlay for mobile when sidebars are open -->
+  @if (leftSidebarOpen() || rightSidebarOpen()) {
+  <div
+    class="sidebar-overlay"
+    (click)="
+      leftSidebarOpen() && toggleLeftSidebar();
+      rightSidebarOpen() && toggleRightSidebar()
+    "
+  ></div>
+  }
+</div>

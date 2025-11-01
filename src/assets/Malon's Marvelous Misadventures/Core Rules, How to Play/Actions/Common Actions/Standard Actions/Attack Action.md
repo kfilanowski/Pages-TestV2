@@ -1,0 +1,3 @@
+When you take the Attack Action as a Standard Action, you dedicate your turn to all-out offense. This allows you to make a number of attacks up to your highest [[AS|Attack Speed]], in any non-conflicting combination. Attack Speed is a product of which weapon you have on hand, but not all attacks must be with a weapon.
+
+[[Action-Attack|Action-Attacks]] are a special type of [[Standard Action]], which by default can also be used as an Attack with an Attack Speed of 1. Most combat [[Spell|Spells]], [[Combat Maneuver|Combat Maneuvers]], and [[Technique|Techniques]] are Action-Attacks.

@@ -1,0 +1,1 @@
+A more extreme form of being [[Dazed]]. Creature cannot take any actions or movement. Creature is [[Surprised]].

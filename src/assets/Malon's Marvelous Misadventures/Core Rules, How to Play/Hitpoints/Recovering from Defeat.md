@@ -1,0 +1,3 @@
+After being [[Defeated]] for an hour after the last time it took damage, a creature may attempt to shake off the condition with a [[STR]] [[Roll]]. On a 10 or higher, they lose the Defeated condition, but as long as their [[HP]] remains negative, they are [[Staggered]]. On a fail, they [[Damage|lose]] 5 HP.
+
+After successfully recovering, the creature is [[Drained]] by d4-[[LUK]]. This drain cannot kill the creature.

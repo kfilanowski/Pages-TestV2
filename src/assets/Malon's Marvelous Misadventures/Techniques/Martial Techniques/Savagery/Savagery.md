@@ -1,0 +1,3 @@
+[[Technique]] Tree.
+
+Savagery embodies the raw, untamed essence of primal fury, and visceral instincts. Those who follow this path tap into a wellspring of unrelenting strength and ferocity, transforming their bodies into instruments of destruction. With each blow, they become forceful avatars of chaos, rending flesh and shattering earth beneath their feet. Their rage fuels an indomitable resilience, allowing them to shrug off pain as they rampage through the battlefield, leaving piles of corpses and the ruins of civilization in their wake as they advance with their bodies painted in the blood of their foes.

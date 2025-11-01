@@ -1,0 +1,5 @@
+Naturally [[Healing]] requires eating [[Food]]. Food restores varying amounts of [[HP]] based on the food eaten. You must take a [[Short Rest]] or Long Rest to eat food. The amount recovered is based on the food.
+
+With a [[Long Rest]], a character restores all of their [[HP]] and all of their [[Limited]] abilities and spent [[Mana]]. You can only Long Rest once each day. You must have eaten at least once since the last time you Long Rested (or eat during the Long Rest), or else you will not recover HP.
+
+A proper Long Rest requires being in a safe environment with the minimum necessary accommodations to not ache in one's sleep. Lacking any of these requirements results in only restoring half of one's missing [[HP]], or less if the situation is worse, at the DM's discretion. If you are interrupted but spent at least 15 minutes resting, it counts as a [[Short Rest]].

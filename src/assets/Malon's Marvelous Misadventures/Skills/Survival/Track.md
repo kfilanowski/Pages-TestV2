@@ -1,0 +1,1 @@
+Use [[Survival]] to follow the path another creature took by looking for footprints, disturbed leaves, markings, etc. The older the tracks, the higher the DC to track them. With ideal conditions, you can follow trails made days or weeks ago.

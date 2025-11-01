@@ -1,0 +1,43 @@
+Tags are descriptors that let you apply general rules to similar effects. Tags are not just limited to spells, but spells do commonly use tags. Certain tags may only effect specific parts of an ability. Use discretion when needed.
+
+See:
+
+School tags
+[[Abnegation]]
+[[Conjuration]]
+[[Divination]]
+[[Evocation]]
+[[Illusion]]
+[[Transmutation]]
+
+Regular tags
+[[Air]]
+[[Bond]]
+[[Buff]]
+[[Caloric]]
+[[Charm]]
+[[Companion]]
+[[Concentration]]
+[[Contingent]]
+[[Curse]]
+[[Dismissible]]
+[[Damage]]
+[[Darkness]]
+[[Earth]]
+[[Elusive]]
+[[Fear]]
+[[Figment]]
+[[Glamer]]
+[[Language-Dependent]]
+[[Light]]
+[[Martial]]
+[[Mind-Affecting]]
+[[Multi-Strike]]
+[[Pattern]]
+[[Persistent]]
+[[Polymorph]]
+[[Scrying]]
+[[Sigil]]
+[[Subtle]]
+[[Teleportation]]
+[[Water]]

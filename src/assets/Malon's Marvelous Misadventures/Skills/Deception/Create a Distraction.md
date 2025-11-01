@@ -1,0 +1,1 @@
+Using [[Deception]] as a [[Standard Action]], you can shout something at your enemies to briefly get them to look the other way so you can give them the slip. All creatures get a roll to try and beat yours. If you succeed, you are able to roll [[Stealth]], and they won't know where you went. This does not prevent people from finding you again using [[Perception]].

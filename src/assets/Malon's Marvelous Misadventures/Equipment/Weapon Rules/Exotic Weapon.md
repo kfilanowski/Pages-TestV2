@@ -1,0 +1,1 @@
+Exotic Weapons do not neatly fit into any [[Weapon Group|Weapon Groups]], and will list how they differ. They often break the norms of conventional weaponry.

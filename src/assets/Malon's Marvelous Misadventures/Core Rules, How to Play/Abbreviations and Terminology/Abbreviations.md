@@ -1,0 +1,20 @@
+[[AC]] - Avoidability Capacity AKA Avoidability or Avoid
+[[ACC]] - Accuracy 
+[[AoE]] - Area of Effect
+[[CC]] - Debilitating Status AKA Crowd Control
+[[DM]] - Dungeon Master
+[[HP]] - Hit Points 
+[[LV]] - Level
+[[NPC]] - Non-Player Character
+[[PC]] - Player Character
+[[CHA]] - Charisma
+[[DEX]] - Dexterity
+[[INT]] - Intelligence
+[[LUK]] - Luck
+[[STR]] - Strength
+[[WIS]] - Wisdom
+[[AoO]] - Attack of Opportunity
+[[AS]] - Attack Speed
+[[Crit]] - Critical Hit
+[[DC]] - Difficulty Class AKA Target Number
+[[Dismissible]] - Dismissible

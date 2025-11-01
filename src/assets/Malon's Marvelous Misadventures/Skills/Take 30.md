@@ -1,0 +1,1 @@
+When not under duress, you can spend ten times the time the task normally takes to achieve your best effort, automatically getting a [[Natural]] 30. It is assumed you trigger the failure result ten times, making this unsuitable for crafting or disarming traps.

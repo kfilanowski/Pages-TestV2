@@ -1,0 +1,5 @@
+Fiends are chaos incarnate. They seek to destroy the natural order in any way they can, usually by killing, burning, and corrupting everything that exists until there is nothing but suffering and ruination left.
+
+Many come from lower planes, such as devils and demons that form from the recycled souls of deceased mortals. These fiends are made from pure malice, making them almost impossible to trust or convert. There is no humanity left in them, all that remains being used only to trick and outsmart mortals. They often reflect the worst of the humanoid races, as traits that are normally considered sinful become manifest in their abilities. Luckily for the material plane, most extraplanar fiends need assistance or coordination to escape The Abyss from which the come.
+
+Despite this never-ending blasphemous source, many of the most powerful Fiends often come from the material plane itself, known as [[Yokai]]. 

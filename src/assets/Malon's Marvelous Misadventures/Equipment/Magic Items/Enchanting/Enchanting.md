@@ -1,0 +1,1 @@
+Enchanting is the process of adding magic to items via [[Crafting]]. Enchanting can only be done on items with [[Upgrade Slot|Upgrade Slots]].

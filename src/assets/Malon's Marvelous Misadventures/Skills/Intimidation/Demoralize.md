@@ -1,0 +1,3 @@
+As an [[Action-Attack]], inflict [[Shaken]] 1 on an enemy that can see or hear you within 30 feet. [[Roll]] [[Intimidation]] versus their [[Will]]. They are Shaken as long as you are nearby, and for 1 minute after. You can Demoralize a creature repeatedly to increase the penalty. If they pass their save, their shaken value from Demoralize decreases by 1.
+
+If you are [[Proficiency|Trained]], you can inflict [[Frightened]] instead on creatures you have [[Defeated]] before. This lasts one round, and can only be done once per day per creature. This doesn't work if they Defeated you once before as well.

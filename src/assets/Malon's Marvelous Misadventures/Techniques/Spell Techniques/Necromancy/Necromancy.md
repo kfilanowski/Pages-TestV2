@@ -1,0 +1,1 @@
+Necromancy focuses on the creation and maintenance of Undead creatures, as well as curses and killing magic.

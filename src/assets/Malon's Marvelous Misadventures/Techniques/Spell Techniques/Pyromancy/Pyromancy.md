@@ -1,0 +1,1 @@
+Pyromancy is magic centered on setting the world on fire, prioritizing mass destruction over anything else. Its realm of study focuses on volcanoes, wildfires, and monsters of flaming origin.

@@ -1,0 +1,3 @@
+Taking a **Long Rest** requires being in a place with no immediate threats or hazards for at least 8 hours, during which you sleep to benefit from [[Natural Healing]].
+
+Proper rest requires being in a safe environment with the minimum necessary accommodations to not ache in one's sleep. Lacking any of these requirements results in only restoring half of one's missing [[HP]], or less if the situation is worse, at the DM's discretion. If you are interrupted but spent at least 15 minutes resting, it counts as a [[Short Rest]].

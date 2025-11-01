@@ -1,0 +1,1 @@
+Use [[Profession]] to answer basic questions about a type of craft or service job. Most simple facts are [[DC]] 10, but anything higher is [[Proficiency|Trained]]-only. Proficient creatures automatically know most simple facts about their Profession.

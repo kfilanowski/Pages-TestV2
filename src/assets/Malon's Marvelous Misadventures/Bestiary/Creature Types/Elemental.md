@@ -1,0 +1,5 @@
+Elementals often blur the line between a "being" and a hazard or force of nature. They are manifestations of elemental magics, be they nearly-invisible dust devils pushing and pulling their victims, or vaguely humanoid plasma leaving a trail of fire in their wake.
+
+As entirely magical creatures, their behavior tends to be unpredictable, and their presence is often unexpected. They may form spontaneously when there is an area of uncontained concentrated mana, such as when a ritual fails, or when a specific element is present in abundance, such as in a volcano. Spontaneous elementals often use their violent magics to spread the presence of their element further from the source, or defend its element from being extinguished.
+
+Many elementals will disappear on their own when there is nothing for them to act on.

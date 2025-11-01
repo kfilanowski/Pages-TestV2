@@ -1,0 +1,1 @@
+You can take 10 on non-opposed skill checks. This means instead of rolling, you automatically get a [[Natural]] 10. This is suitable for crafting or skipping tasks that aren't too difficult for you.

@@ -1,0 +1,1 @@
+Requires a free hand or prehensile appendage. Target creature stays adjacent to you for the remainder of your turn. If the creature is not adjacent to you when you successfully drag, they are automatically pulled adjacent to you. You can choose any space within your natural reach to place the creature in at the end of your drag.

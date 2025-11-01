@@ -1,0 +1,4 @@
+---
+icon: TiSkull
+---
+Necrotic is a [[Damage]] type [[Tag]], representing the decay of flesh, poisons, and the organic disruption of life processes. May bolster [[Undead]].

@@ -1,0 +1,5 @@
+Whenever a creature makes a statement, you can roll [[Insight]] (opposed by [[Deception]]) to see if what they say aligns with what they think. If you roll lower, or if they aren't being dishonest, you don't detect dishonesty. If you succeed, you determine that something is fishy - or if a statement lacks nuance (such as a yes or no response), you can determine the correct answer. Prying further about the deception may cause the creature to reveal the truth or become hostile depending on context. 
+
+This can be combined with Deception against their Insight to hide whether or not they know you know they're being dishonest. When this is done, it may be more entertaining to have the [[DM]] roll in secret, and distribute results in secret, in order to preserve tension.
+
+You can only roll Insight on a particular assertion or topic once.

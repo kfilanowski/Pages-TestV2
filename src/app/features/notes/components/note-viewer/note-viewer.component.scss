@@ -1,0 +1,267 @@
+.note-viewer {
+  position: relative;
+  height: 100%;
+  overflow-y: auto;
+  background-color: var(--content-bg, #ffffff);
+  padding: 1rem 2rem 2rem 2rem;
+}
+
+.error-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--text-secondary, #666);
+}
+
+.error-state h2 {
+  color: var(--error-color, #f44336);
+  margin-bottom: 1rem;
+}
+
+.error-state button {
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--primary-color, #2196f3);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.error-state button:hover {
+  background-color: var(--primary-hover, #1976d2);
+}
+
+// Container for note title and content with fade transition
+.note-container {
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.note-container.visible {
+  opacity: 1;
+}
+
+// Title styling
+.note-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: var(--primary-color, rgb(231, 138, 78));
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--border-color, #d7ccc8);
+  line-height: 1.2;
+
+  .note-icon {
+    font-size: 1.2em;
+    width: 1.2em;
+    height: 1.2em;
+    flex-shrink: 0;
+    color: var(--primary-color, rgb(231, 138, 78));
+  }
+
+  .title-text {
+    flex: 1;
+  }
+}
+
+// Content styling
+.note-content {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-primary, #333);
+}
+
+/* Markdown content styling */
+.note-content ::ng-deep h1,
+.note-content ::ng-deep h2,
+.note-content ::ng-deep h3,
+.note-content ::ng-deep h4,
+.note-content ::ng-deep h5,
+.note-content ::ng-deep h6 {
+  margin-top: 0.75em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--primary-color) !important;
+}
+
+.note-content ::ng-deep h1 {
+  font-size: 1.802em;
+  border-bottom: 2px solid var(--border-color, #eee);
+  padding-bottom: 0.3em;
+  margin-top: 0.25em;
+}
+
+.note-content ::ng-deep h2 {
+  font-size: 1.602em;
+  border-bottom: 1px solid var(--border-color, #eee);
+  padding-bottom: 0.3em;
+}
+
+.note-content ::ng-deep h3 {
+  font-size: 1.424em;
+}
+.note-content ::ng-deep h4 {
+  font-size: 1.266em;
+}
+.note-content ::ng-deep h5 {
+  font-size: 1.125em;
+}
+.note-content ::ng-deep h6 {
+  font-size: 1em;
+}
+
+.note-content ::ng-deep p {
+  margin-bottom: 1em;
+}
+
+.note-content ::ng-deep a {
+  color: var(--link-color) !important;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.note-content ::ng-deep a:hover {
+  border-bottom-color: var(--link-color);
+}
+
+.note-content ::ng-deep .wiki-link {
+  color: var(--wiki-link-color) !important;
+  font-weight: 500;
+}
+
+.note-content ::ng-deep .wiki-link:hover {
+  border-bottom-color: var(--wiki-link-color);
+  background-color: var(--hover-bg);
+}
+
+.note-content ::ng-deep code {
+  background-color: var(--code-bg, #f5f5f5);
+  color: var(--text-primary);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9em;
+}
+
+.note-content ::ng-deep pre {
+  background-color: var(--code-bg, #f5f5f5);
+  color: var(--text-primary);
+  padding: 1em;
+  border-radius: 5px;
+  overflow-x: auto;
+  border-left: 3px solid var(--primary-color);
+}
+
+.note-content ::ng-deep pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+.note-content ::ng-deep blockquote {
+  margin: 1em 0;
+  padding-left: 1em;
+  border-left: 4px solid var(--border-color, #ddd);
+  color: var(--text-secondary, #666);
+  font-style: italic;
+}
+
+.note-content ::ng-deep ul,
+.note-content ::ng-deep ol {
+  margin-bottom: 1em;
+  padding-left: 2em;
+}
+
+.note-content ::ng-deep li {
+  margin-bottom: 0.25em;
+}
+
+.note-content ::ng-deep strong {
+  font-weight: 600;
+  color: var(--primary-color) !important;
+}
+
+.note-content ::ng-deep em {
+  font-style: italic;
+}
+
+.note-content ::ng-deep hr {
+  border: none;
+  border-top: 2px solid var(--border-color, #eee);
+  margin: 2em 0;
+}
+
+.note-content ::ng-deep table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+
+.note-content ::ng-deep th,
+.note-content ::ng-deep td {
+  border: 1px solid var(--border-color, #ddd);
+  padding: 0.5em;
+  text-align: left;
+  color: var(--text-primary);
+}
+
+.note-content ::ng-deep th {
+  background-color: var(--table-header-bg, #f5f5f5);
+  font-weight: 600;
+  color: var(--primary-color) !important;
+}
+
+/* Custom scrollbar */
+.note-viewer::-webkit-scrollbar {
+  width: 10px;
+}
+
+.note-viewer::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.note-viewer::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb, #ccc);
+  border-radius: 5px;
+}
+
+.note-viewer::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover, #aaa);
+}
+
+// Search highlighting - yellow works on both light and dark backgrounds
+::ng-deep mark.search-highlight {
+  background-color: #ffeb3b;
+  color: #000;
+  padding: 0.1em 0.2em;
+  border-radius: 2px;
+  font-weight: 600;
+  animation: highlight-pulse 0.5s ease;
+}
+
+@keyframes highlight-pulse {
+  0% {
+    background-color: #ffd54f;
+  }
+  50% {
+    background-color: #ffeb3b;
+  }
+  100% {
+    background-color: #ffeb3b;
+  }
+}

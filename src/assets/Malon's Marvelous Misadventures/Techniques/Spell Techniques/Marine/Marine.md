@@ -1,0 +1,1 @@
+Marine Sorceries are sorceries focusing on ocean travel and water-based magics. It is a generalist spell list with diverse spells of somewhat lesser impact than equivalent groups.

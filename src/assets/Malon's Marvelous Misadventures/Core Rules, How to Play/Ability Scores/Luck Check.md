@@ -1,0 +1,1 @@
+When the chance something will happen or fail to happen is based purely on chance, you attempt a Luck Check. You just roll a d10, add (or subtract) LUK and compare the result on the die to the DC.

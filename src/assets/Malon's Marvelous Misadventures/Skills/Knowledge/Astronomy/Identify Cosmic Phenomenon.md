@@ -1,0 +1,3 @@
+Using [[Astronomy]] with aid of devices such as telescopes (if necessary), you can determine the cause of cosmic phenomenon, or you can predict them in advance. This can be something like a solar eclipse, a comet, or something more drastic like a meteor or supernova.
+
+You can also tell if something unusual is happening, such as someone using illusions to improperly represent the night sky, or cast spells that produce effects similar to cosmic phenomenon.

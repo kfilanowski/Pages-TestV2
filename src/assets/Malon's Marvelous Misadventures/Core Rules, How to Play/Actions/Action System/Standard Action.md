@@ -1,0 +1,14 @@
+- **Standard Action**: This action occupies most of your turn, and you can perform one per turn.
+    
+    - **Example**: The Attack Action is the most common, allowing a series of smaller attacks up to your Attack Speed, executed in any order. Refer to the "Attack" section for more details.
+      
+See:
+[[Administer Potion]]
+[[Aid]]
+[[Attack Action]]
+[[Carry]]
+[[Charge]]
+[[Dash]]
+[[Disengage]]
+[[Prepare]]
+[[Total Defense]]

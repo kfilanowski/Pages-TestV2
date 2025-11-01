@@ -1,0 +1,1 @@
+You can willingly inflict [[Knocked Down]] on yourself as an [[Instant Action]].

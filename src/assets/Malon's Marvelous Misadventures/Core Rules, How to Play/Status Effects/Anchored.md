@@ -1,0 +1,1 @@
+Creature cannot use [[Teleportation]] effects. If it attempts to, the action (and ability) is wasted.

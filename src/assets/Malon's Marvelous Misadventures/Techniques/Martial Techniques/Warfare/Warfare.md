@@ -1,0 +1,3 @@
+[[Technique]] Tree.
+
+In a realm where conflict is an inevitable aspect of existence, Warfare represents the mastery of strategic combat techniques developed throughout a long history of war. This tree is designed for those who understand that warfare is not only about brute strength but also about cunning planning, decisive leadership, and the ability to adapt in the face of adversity. Whether leading a small skirmish or marching through a sea of fire, practitioners of this skill tree will become adept at turning the chaos of the battlefield into a calculated display of tactical prowess.

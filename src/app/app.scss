@@ -1,0 +1,174 @@
+/**
+ * Application Container Styles
+ *
+ * This file contains only the container-level styles.
+ * Individual component styles are in their respective component files:
+ * - Header: layout/header/header.component.scss
+ * - Footer: layout/footer/footer.component.scss
+ * - Left Sidebar: layout/sidebar-left/sidebar-left.component.scss
+ * - Right Sidebar: layout/sidebar-right/sidebar-right.component.scss
+ *
+ * Architecture:
+ * - CSS custom properties for theming
+ * - Separation of concerns (component-level styles)
+ * - Responsive design
+ */
+
+// ===========================
+// CSS Custom Properties (Layout)
+// ===========================
+:host {
+  --header-height: 64px;
+  --footer-height: 60px;
+  --sidebar-width: 280px;
+  --sidebar-transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --overlay-bg: rgba(62, 39, 35, 0.5);
+
+  // Shadow (non-color)
+  --shadow-1: 0 2px 4px rgba(62, 39, 35, 0.1);
+}
+
+// ===========================
+// Container Layout
+// ===========================
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--bg-color);
+}
+
+// ===========================
+// Main Content Area
+// ===========================
+.app-main {
+  flex: 1;
+  margin-top: var(--header-height);
+  margin-bottom: var(--footer-height);
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: margin 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  .main-content {
+    padding: 32px;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 100%;
+  }
+
+  // Adjust margins when sidebars are open on desktop
+  @media (min-width: 1280px) {
+    &.left-sidebar-open {
+      margin-left: var(--sidebar-width);
+    }
+
+    &.right-sidebar-open {
+      margin-right: var(--sidebar-width);
+    }
+  }
+}
+
+// ===========================
+// Overlay for Mobile
+// ===========================
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--overlay-bg);
+  z-index: 850;
+  cursor: pointer;
+  animation: fadeIn 0.3s ease;
+
+  @media (min-width: 1280px) {
+    display: none;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// ===========================
+// Responsive Design
+// ===========================
+
+// Mobile devices
+@media (max-width: 767px) {
+  :host {
+    --sidebar-width: 280px;
+  }
+
+  .app-main .main-content {
+    padding: 16px;
+  }
+}
+
+// Tablets
+@media (min-width: 768px) and (max-width: 1279px) {
+  :host {
+    --sidebar-width: 300px;
+  }
+
+  .app-main .main-content {
+    padding: 24px;
+  }
+}
+
+// Large screens
+@media (min-width: 1920px) {
+  :host {
+    --sidebar-width: 320px;
+  }
+
+  .app-main .main-content {
+    padding: 48px;
+  }
+}
+
+// ===========================
+// Accessibility & Print
+// ===========================
+
+// Focus styles for keyboard navigation
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+// Reduce motion for users who prefer it
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+// Print styles
+@media print {
+  app-sidebar-left,
+  app-sidebar-right,
+  .sidebar-overlay {
+    display: none !important;
+  }
+
+  .app-main {
+    margin: 0 !important;
+  }
+
+  app-footer {
+    position: static;
+  }
+}

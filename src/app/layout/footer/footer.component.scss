@@ -1,0 +1,77 @@
+/**
+ * Footer Component Styles
+ *
+ * Fixed footer bar with gradient background and responsive positioning.
+ */
+
+.app-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: var(--footer-height, 60px);
+  background: linear-gradient(
+    135deg,
+    var(--footer-bg, #263238) 0%,
+    #1a1f23 100%
+  );
+  color: rgba(255, 255, 255, 0.87);
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  transition: margin 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 24px;
+
+    p {
+      margin: 0;
+      font-size: 0.875rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+
+      a {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        font-size: 0.875rem;
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: rgba(255, 255, 255, 1);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  // Adjust margins when sidebars are open on desktop
+  @media (min-width: 1280px) {
+    &.left-sidebar-open {
+      left: var(--sidebar-width, 280px);
+    }
+
+    &.right-sidebar-open {
+      right: var(--sidebar-width, 280px);
+    }
+  }
+}
+
+// Mobile responsive adjustments
+@media (max-width: 767px) {
+  .app-footer .footer-content {
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px 16px;
+
+    .footer-links {
+      gap: 16px;
+    }
+  }
+}

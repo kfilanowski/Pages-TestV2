@@ -1,0 +1,55 @@
+<aside class="app-sidebar right-sidebar" [class.open]="isOpen()">
+  <div class="sidebar-content">
+    <h2>Page Links</h2>
+
+    @if (currentNoteId()) {
+    <!-- Outgoing Links Section -->
+    <div class="info-section" [class.fade-in]="referenceGraphReady()">
+      <h3>Referenced Pages</h3>
+      @if (referenceGraphReady()) { @if (outgoingLinks().length > 0) {
+      <p class="section-description">Pages referenced by this page:</p>
+      <ul class="links-list">
+        @for (note of outgoingLinks(); track note.id) {
+        <li>
+          <a
+            [routerLink]="['/Malons-Marvelous-Misadventures', note.id]"
+            class="note-link"
+          >
+            {{ note.title }}
+          </a>
+        </li>
+        }
+      </ul>
+      } @else {
+      <p class="empty-state">No outgoing links</p>
+      } }
+    </div>
+
+    <!-- Incoming Links (Backlinks) Section -->
+    <div class="info-section" [class.fade-in]="referenceGraphReady()">
+      <h3>Referencing Pages</h3>
+      @if (referenceGraphReady()) { @if (incomingLinks().length > 0) {
+      <p class="section-description">Pages that reference this page:</p>
+      <ul class="links-list">
+        @for (note of incomingLinks(); track note.id) {
+        <li>
+          <a
+            [routerLink]="['/Malons-Marvelous-Misadventures', note.id]"
+            class="note-link"
+          >
+            {{ note.title }}
+          </a>
+        </li>
+        }
+      </ul>
+      } @else {
+      <p class="empty-state">No backlinks</p>
+      } }
+    </div>
+    } @else {
+    <div class="info-content fade-in">
+      <p class="empty-state">Select a note to view its links</p>
+    </div>
+    }
+  </div>
+</aside>

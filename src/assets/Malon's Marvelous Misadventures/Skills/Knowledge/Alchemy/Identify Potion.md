@@ -1,0 +1,1 @@
+Use [[Alchemy]] to identify a held [[Use Potion]] or [[Poison]] with a sniff or taste. The [[DC]] is the item's [[Craft]] DC.

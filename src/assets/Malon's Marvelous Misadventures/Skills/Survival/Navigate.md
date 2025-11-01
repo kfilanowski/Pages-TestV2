@@ -1,0 +1,1 @@
+When moving through unfamiliar territory, [[Survival]] can be used to get a sense of direction and move towards an intended destination. Higher rolls include avoiding unwanted encounters, while lower rolls represent less progress made towards the destination, or reaching the incorrect destination.

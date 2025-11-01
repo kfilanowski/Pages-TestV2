@@ -1,0 +1,5 @@
+With [[Proficiency|Trained]] [[Intimidation]], by having a conversation with a creature that lasts at least one minute, or by defeating a creature in combat, you can shape how they respond to you or anybody asking about you in the future. The strength of this creature's conviction is dependent on your Intimidation [[Roll]] against it.
+
+You can make the creature keep their mouth shut about something you did to them. Any checks to gather information from this creature about you or your party change to your roll if it would be higher than the usual [[DC]].
+
+You can greatly exaggerate what you did to further spread fear and grand tales of your strength. Any [[Knowledge]] checks that creatures make on you when hearing about information that spreads from this creature changes to your Intimidation roll if it would be higher than the usual DC, or else they learn false information.

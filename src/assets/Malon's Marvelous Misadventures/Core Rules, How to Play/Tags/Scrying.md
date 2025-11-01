@@ -1,0 +1,3 @@
+Scrying effects create a specific type of magic sensor, often from remote locations, usually for the purpose of spying on people. The sensor allows you to see and hear anything with any of your senses, so long as it is in the specified range the effect mentions.
+
+Scrying sensors are clearly visible to the naked eye. They usually take the form of an eye. Sensors that can move can use the caster's stealth bonus to hide as they move.

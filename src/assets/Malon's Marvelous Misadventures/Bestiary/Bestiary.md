@@ -1,0 +1,3 @@
+The Bestiary is a collection of creatures that populate the world, usually as fighting threats. 
+
+The bestiary is separated into 2 sections: [[Monster Quality|Monster Qualities]] and the monsters themselves. Monster Qualities are not always exclusive to bestiary creatures, but are much more common on them. Many qualities that appear frequently are not described in bestiary entries and are instead described there in order to save time/space.

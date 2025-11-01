@@ -1,0 +1,1 @@
+An Extraplanar creature is any creature that originates and lives in another plane of existence. It cannot be found in the universe unless it came through a portal from another dimension, or it was summoned.

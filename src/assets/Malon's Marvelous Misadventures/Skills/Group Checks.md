@@ -1,0 +1,1 @@
+When working cooperatively, such as to [[Craft]] an item or work a machine, use the group's highest bonus, plus 1 per helper, or 2 if they're also [[Proficiency|Proficient]] (max +10). When the weakest link can sink a team's effort, such as with [[Stealth]], use the group's lowest bonus, plus the help.

@@ -1,0 +1,5273 @@
+{
+  "version": "1.0",
+  "rootPath": "assets/Malon's Marvelous Misadventures",
+  "tree": [
+    {
+      "name": "Bestiary",
+      "children": [
+        {
+          "name": "Creature Types",
+          "children": [
+            {
+              "name": "Creature Subtypes",
+              "children": [
+                {
+                  "id": "Extraplanar",
+                  "title": "Extraplanar",
+                  "path": "Bestiary/Creature Types/Creature Subtypes/Extraplanar.md",
+                  "fileName": "Extraplanar.md"
+                },
+                {
+                  "id": "Yokai",
+                  "title": "Yokai",
+                  "path": "Bestiary/Creature Types/Creature Subtypes/Yokai.md",
+                  "fileName": "Yokai.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Elemental",
+              "children": [
+                {
+                  "name": "Level 3 Elementals",
+                  "children": [
+                    {
+                      "id": "Ifrit",
+                      "title": "Ifrit",
+                      "path": "Bestiary/Creature Types/Elemental/Level 3 Elementals/Ifrit.md",
+                      "fileName": "Ifrit.md"
+                    }
+                  ],
+                  "expanded": false
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Fey",
+              "children": [
+                {
+                  "name": "Level 0 Fey",
+                  "children": [
+                    {
+                      "id": "Straw Puppet",
+                      "title": "Straw Puppet",
+                      "path": "Bestiary/Creature Types/Fey/Level 0 Fey/Straw Puppet.md",
+                      "fileName": "Straw Puppet.md"
+                    }
+                  ],
+                  "expanded": false
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Fiend",
+              "children": [
+                {
+                  "name": "Level 9 Fiends",
+                  "children": [
+                    {
+                      "id": "Adversary Kishin",
+                      "title": "Adversary Kishin",
+                      "path": "Bestiary/Creature Types/Fiend/Level 9 Fiends/Adversary Kishin.md",
+                      "fileName": "Adversary Kishin.md"
+                    }
+                  ],
+                  "expanded": false
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "id": "Abomination",
+              "title": "Abomination",
+              "path": "Bestiary/Creature Types/Abomination.md",
+              "fileName": "Abomination.md"
+            },
+            {
+              "id": "Beast",
+              "title": "Beast",
+              "path": "Bestiary/Creature Types/Beast.md",
+              "fileName": "Beast.md"
+            },
+            {
+              "id": "Celestial",
+              "title": "Celestial",
+              "path": "Bestiary/Creature Types/Celestial.md",
+              "fileName": "Celestial.md"
+            },
+            {
+              "id": "Construct",
+              "title": "Construct",
+              "path": "Bestiary/Creature Types/Construct.md",
+              "fileName": "Construct.md"
+            },
+            {
+              "id": "Elemental",
+              "title": "Elemental",
+              "path": "Bestiary/Creature Types/Elemental.md",
+              "fileName": "Elemental.md"
+            },
+            {
+              "id": "Fey",
+              "title": "Fey",
+              "path": "Bestiary/Creature Types/Fey.md",
+              "fileName": "Fey.md"
+            },
+            {
+              "id": "Fiend",
+              "title": "Fiend",
+              "path": "Bestiary/Creature Types/Fiend.md",
+              "fileName": "Fiend.md"
+            },
+            {
+              "id": "Humanoid",
+              "title": "Humanoid",
+              "path": "Bestiary/Creature Types/Humanoid.md",
+              "fileName": "Humanoid.md"
+            },
+            {
+              "id": "Monster",
+              "title": "Monster",
+              "path": "Bestiary/Creature Types/Monster.md",
+              "fileName": "Monster.md"
+            },
+            {
+              "id": "Ooze",
+              "title": "Ooze",
+              "path": "Bestiary/Creature Types/Ooze.md",
+              "fileName": "Ooze.md"
+            },
+            {
+              "id": "Plant",
+              "title": "Plant",
+              "path": "Bestiary/Creature Types/Plant.md",
+              "fileName": "Plant.md"
+            },
+            {
+              "id": "Titan",
+              "title": "Titan",
+              "path": "Bestiary/Creature Types/Titan.md",
+              "fileName": "Titan.md"
+            },
+            {
+              "id": "Undead",
+              "title": "Undead",
+              "path": "Bestiary/Creature Types/Undead.md",
+              "fileName": "Undead.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Undead",
+          "children": [
+            {
+              "name": "Level 0 Undead",
+              "children": [
+                {
+                  "id": "Skeleton, Garden",
+                  "title": "Skeleton, Garden",
+                  "path": "Bestiary/Undead/Level 0 Undead/Skeleton, Garden.md",
+                  "fileName": "Skeleton, Garden.md"
+                }
+              ],
+              "expanded": false
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "id": "Bestiary",
+          "title": "Bestiary",
+          "path": "Bestiary/Bestiary.md",
+          "fileName": "Bestiary.md"
+        },
+        {
+          "id": "Monster Quality",
+          "title": "Monster Quality",
+          "path": "Bestiary/Monster Quality.md",
+          "fileName": "Monster Quality.md"
+        }
+      ],
+      "expanded": false
+    },
+    {
+      "name": "Classes",
+      "children": [
+        {
+          "name": "Class",
+          "children": [
+            {
+              "name": "Achievements",
+              "children": [
+                {
+                  "id": "Achievement",
+                  "title": "Achievement",
+                  "path": "Classes/Class/Achievements/Achievement.md",
+                  "fileName": "Achievement.md"
+                },
+                {
+                  "id": "Backstabber",
+                  "title": "Backstabber",
+                  "path": "Classes/Class/Achievements/Backstabber.md",
+                  "fileName": "Backstabber.md"
+                },
+                {
+                  "id": "Battle Scars",
+                  "title": "Battle Scars",
+                  "path": "Classes/Class/Achievements/Battle Scars.md",
+                  "fileName": "Battle Scars.md"
+                },
+                {
+                  "id": "Critical Pet",
+                  "title": "Critical Pet",
+                  "path": "Classes/Class/Achievements/Critical Pet.md",
+                  "fileName": "Critical Pet.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "id": "Archetype",
+              "title": "Archetype",
+              "path": "Classes/Class/Archetype.md",
+              "fileName": "Archetype.md"
+            },
+            {
+              "id": "Character Creation",
+              "title": "Character Creation",
+              "path": "Classes/Class/Character Creation.md",
+              "fileName": "Character Creation.md"
+            },
+            {
+              "id": "Class",
+              "title": "Class",
+              "path": "Classes/Class/Class.md",
+              "fileName": "Class.md"
+            },
+            {
+              "id": "Progression Outside of Class",
+              "title": "Progression Outside of Class",
+              "path": "Classes/Class/Progression Outside of Class.md",
+              "fileName": "Progression Outside of Class.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Fighter",
+          "children": [
+            {
+              "name": "Archetypes",
+              "children": [
+                {
+                  "id": "Aran",
+                  "title": "Aran",
+                  "path": "Classes/Fighter/Archetypes/Aran.md",
+                  "fileName": "Aran.md"
+                },
+                {
+                  "id": "Archer",
+                  "title": "Archer",
+                  "path": "Classes/Fighter/Archetypes/Archer.md",
+                  "fileName": "Archer.md"
+                },
+                {
+                  "id": "Dark Knight",
+                  "title": "Dark Knight",
+                  "path": "Classes/Fighter/Archetypes/Dark Knight.md",
+                  "fileName": "Dark Knight.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "id": "Fighter",
+              "title": "Fighter",
+              "path": "Classes/Fighter/Fighter.md",
+              "fileName": "Fighter.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Healer",
+          "children": [
+            {
+              "name": "Archetypes",
+              "children": [
+                {
+                  "id": "Explorer",
+                  "title": "Explorer",
+                  "path": "Classes/Healer/Archetypes/Explorer.md",
+                  "fileName": "Explorer.md"
+                },
+                {
+                  "id": "Mommy",
+                  "title": "Mommy",
+                  "path": "Classes/Healer/Archetypes/Mommy.md",
+                  "fileName": "Mommy.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "id": "Healer",
+              "title": "Healer",
+              "path": "Classes/Healer/Healer.md",
+              "fileName": "Healer.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Martial Artist",
+          "children": [
+            {
+              "name": "Archetypes",
+              "children": [
+                {
+                  "id": "Marauder",
+                  "title": "Marauder",
+                  "path": "Classes/Martial Artist/Archetypes/Marauder.md",
+                  "fileName": "Marauder.md"
+                },
+                {
+                  "id": "Monk",
+                  "title": "Monk",
+                  "path": "Classes/Martial Artist/Archetypes/Monk.md",
+                  "fileName": "Monk.md"
+                },
+                {
+                  "id": "The Boss",
+                  "title": "The Boss",
+                  "path": "Classes/Martial Artist/Archetypes/The Boss.md",
+                  "fileName": "The Boss.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "id": "Martial Artist",
+              "title": "Martial Artist",
+              "path": "Classes/Martial Artist/Martial Artist.md",
+              "fileName": "Martial Artist.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Rogue",
+          "children": [
+            {
+              "name": "Archetypes",
+              "children": [
+                {
+                  "id": "Bandit",
+                  "title": "Bandit",
+                  "path": "Classes/Rogue/Archetypes/Bandit.md",
+                  "fileName": "Bandit.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "id": "Rogue",
+              "title": "Rogue",
+              "path": "Classes/Rogue/Rogue.md",
+              "fileName": "Rogue.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Summoner",
+          "children": [
+            {
+              "name": "Archetypes",
+              "children": [
+                {
+                  "id": "Spirit Walker",
+                  "title": "Spirit Walker",
+                  "path": "Classes/Summoner/Archetypes/Spirit Walker.md",
+                  "fileName": "Spirit Walker.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "id": "AP",
+              "title": "AP",
+              "path": "Classes/Summoner/AP.md",
+              "fileName": "AP.md"
+            },
+            {
+              "id": "Avatar",
+              "title": "Avatar",
+              "path": "Classes/Summoner/Avatar.md",
+              "fileName": "Avatar.md"
+            },
+            {
+              "id": "Summoner",
+              "title": "Summoner",
+              "path": "Classes/Summoner/Summoner.md",
+              "fileName": "Summoner.md"
+            }
+          ],
+          "expanded": false
+        }
+      ],
+      "expanded": false
+    },
+    {
+      "name": "Core Rules, How to Play",
+      "children": [
+        {
+          "name": "Abbreviations and Terminology",
+          "children": [
+            {
+              "name": "Cover",
+              "children": [
+                {
+                  "id": "Concealment",
+                  "title": "Concealment",
+                  "path": "Core Rules, How to Play/Abbreviations and Terminology/Cover/Concealment.md",
+                  "fileName": "Concealment.md"
+                },
+                {
+                  "id": "Cover",
+                  "title": "Cover",
+                  "path": "Core Rules, How to Play/Abbreviations and Terminology/Cover/Cover.md",
+                  "fileName": "Cover.md"
+                },
+                {
+                  "id": "Improved Cover",
+                  "title": "Improved Cover",
+                  "path": "Core Rules, How to Play/Abbreviations and Terminology/Cover/Improved Cover.md",
+                  "fileName": "Improved Cover.md"
+                },
+                {
+                  "id": "Partial Concealment",
+                  "title": "Partial Concealment",
+                  "path": "Core Rules, How to Play/Abbreviations and Terminology/Cover/Partial Concealment.md",
+                  "fileName": "Partial Concealment.md"
+                },
+                {
+                  "id": "Total Concealment",
+                  "title": "Total Concealment",
+                  "path": "Core Rules, How to Play/Abbreviations and Terminology/Cover/Total Concealment.md",
+                  "fileName": "Total Concealment.md"
+                },
+                {
+                  "id": "Total Cover",
+                  "title": "Total Cover",
+                  "path": "Core Rules, How to Play/Abbreviations and Terminology/Cover/Total Cover.md",
+                  "fileName": "Total Cover.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "id": "Abbreviations",
+              "title": "Abbreviations",
+              "path": "Core Rules, How to Play/Abbreviations and Terminology/Abbreviations.md",
+              "fileName": "Abbreviations.md"
+            },
+            {
+              "id": "AC",
+              "title": "AC",
+              "path": "Core Rules, How to Play/Abbreviations and Terminology/AC.md",
+              "fileName": "AC.md",
+              "icon": "FiShield"
+            },
+            {
+              "id": "ACC",
+              "title": "ACC",
+              "path": "Core Rules, How to Play/Abbreviations and Terminology/ACC.md",
+              "fileName": "ACC.md",
+              "icon": "IbTarget"
+            },
+            {
+              "id": "AoE",
+              "title": "AoE",
+              "path": "Core Rules, How to Play/Abbreviations and Terminology/AoE.md",
+              "fileName": "AoE.md"
+            },
+            {
+              "id": "CC",
+              "title": "CC",
+              "path": "Core Rules, How to Play/Abbreviations and Terminology/CC.md",
+              "fileName": "CC.md",
+              "icon": "RaFluffySwirl"
+            },
+            {
+              "id": "Circumstance",
+              "title": "Circumstance",
+              "path": "Core Rules, How to Play/Abbreviations and Terminology/Circumstance.md",
+              "fileName": "Circumstance.md"
+            },
+            {
+              "id": "DC",
+              "title": "DC",
+              "path": "Core Rules, How to Play/Abbreviations and Terminology/DC.md",
+              "fileName": "DC.md",
+              "icon": "FiTarget"
+            },
+            {
+              "id": "DM",
+              "title": "DM",
+              "path": "Core Rules, How to Play/Abbreviations and Terminology/DM.md",
+              "fileName": "DM.md"
+            },
+            {
+              "id": "DR",
+              "title": "DR",
+              "path": "Core Rules, How to Play/Abbreviations and Terminology/DR.md",
+              "fileName": "DR.md",
+              "icon": "RiShieldStarLine"
+            },
+            {
+              "id": "FH",
+              "title": "FH",
+              "path": "Core Rules, How to Play/Abbreviations and Terminology/FH.md",
+              "fileName": "FH.md",
+              "icon": "TiHeartPlus"
+            },
+            {
+              "id": "Flanking",
+              "title": "Flanking",
+              "path": "Core Rules, How to Play/Abbreviations and Terminology/Flanking.md",
+              "fileName": "Flanking.md"
+            },
+            {
+              "id": "Initiative",
+              "title": "Initiative",
+              "path": "Core Rules, How to Play/Abbreviations and Terminology/Initiative.md",
+              "fileName": "Initiative.md"
+            },
+            {
+              "id": "Lv",
+              "title": "Lv",
+              "path": "Core Rules, How to Play/Abbreviations and Terminology/Lv.md",
+              "fileName": "Lv.md"
+            },
+            {
+              "id": "Minion",
+              "title": "Minion",
+              "path": "Core Rules, How to Play/Abbreviations and Terminology/Minion.md",
+              "fileName": "Minion.md"
+            },
+            {
+              "id": "Natural",
+              "title": "Natural",
+              "path": "Core Rules, How to Play/Abbreviations and Terminology/Natural.md",
+              "fileName": "Natural.md"
+            },
+            {
+              "id": "NPC",
+              "title": "NPC",
+              "path": "Core Rules, How to Play/Abbreviations and Terminology/NPC.md",
+              "fileName": "NPC.md"
+            },
+            {
+              "id": "PC",
+              "title": "PC",
+              "path": "Core Rules, How to Play/Abbreviations and Terminology/PC.md",
+              "fileName": "PC.md"
+            },
+            {
+              "id": "Potency",
+              "title": "Potency",
+              "path": "Core Rules, How to Play/Abbreviations and Terminology/Potency.md",
+              "fileName": "Potency.md",
+              "icon": "FiTarget"
+            },
+            {
+              "id": "Roll",
+              "title": "Roll",
+              "path": "Core Rules, How to Play/Abbreviations and Terminology/Roll.md",
+              "fileName": "Roll.md"
+            },
+            {
+              "id": "SP",
+              "title": "SP",
+              "path": "Core Rules, How to Play/Abbreviations and Terminology/SP.md",
+              "fileName": "SP.md"
+            },
+            {
+              "id": "Supernatural",
+              "title": "Supernatural",
+              "path": "Core Rules, How to Play/Abbreviations and Terminology/Supernatural.md",
+              "fileName": "Supernatural.md"
+            },
+            {
+              "id": "Threaten",
+              "title": "Threaten",
+              "path": "Core Rules, How to Play/Abbreviations and Terminology/Threaten.md",
+              "fileName": "Threaten.md"
+            },
+            {
+              "id": "XP",
+              "title": "XP",
+              "path": "Core Rules, How to Play/Abbreviations and Terminology/XP.md",
+              "fileName": "XP.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Ability Scores",
+          "children": [
+            {
+              "id": "Ability Scores",
+              "title": "Ability Scores",
+              "path": "Core Rules, How to Play/Ability Scores/Ability Scores.md",
+              "fileName": "Ability Scores.md"
+            },
+            {
+              "id": "Carry Weight",
+              "title": "Carry Weight",
+              "path": "Core Rules, How to Play/Ability Scores/Carry Weight.md",
+              "fileName": "Carry Weight.md"
+            },
+            {
+              "id": "CHA",
+              "title": "CHA",
+              "path": "Core Rules, How to Play/Ability Scores/CHA.md",
+              "fileName": "CHA.md"
+            },
+            {
+              "id": "DEX",
+              "title": "DEX",
+              "path": "Core Rules, How to Play/Ability Scores/DEX.md",
+              "fileName": "DEX.md"
+            },
+            {
+              "id": "INT",
+              "title": "INT",
+              "path": "Core Rules, How to Play/Ability Scores/INT.md",
+              "fileName": "INT.md"
+            },
+            {
+              "id": "Luck Check",
+              "title": "Luck Check",
+              "path": "Core Rules, How to Play/Ability Scores/Luck Check.md",
+              "fileName": "Luck Check.md"
+            },
+            {
+              "id": "LUK",
+              "title": "LUK",
+              "path": "Core Rules, How to Play/Ability Scores/LUK.md",
+              "fileName": "LUK.md"
+            },
+            {
+              "id": "STR",
+              "title": "STR",
+              "path": "Core Rules, How to Play/Ability Scores/STR.md",
+              "fileName": "STR.md"
+            },
+            {
+              "id": "WIS",
+              "title": "WIS",
+              "path": "Core Rules, How to Play/Ability Scores/WIS.md",
+              "fileName": "WIS.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Actions",
+          "children": [
+            {
+              "name": "Action System",
+              "children": [
+                {
+                  "name": "Movement",
+                  "children": [
+                    {
+                      "id": "Burrow",
+                      "title": "Burrow",
+                      "path": "Core Rules, How to Play/Actions/Action System/Movement/Burrow.md",
+                      "fileName": "Burrow.md"
+                    },
+                    {
+                      "id": "Difficult Terrain",
+                      "title": "Difficult Terrain",
+                      "path": "Core Rules, How to Play/Actions/Action System/Movement/Difficult Terrain.md",
+                      "fileName": "Difficult Terrain.md"
+                    },
+                    {
+                      "id": "Fly",
+                      "title": "Fly",
+                      "path": "Core Rules, How to Play/Actions/Action System/Movement/Fly.md",
+                      "fileName": "Fly.md",
+                      "icon": "RaFeatherWing"
+                    },
+                    {
+                      "id": "Hover",
+                      "title": "Hover",
+                      "path": "Core Rules, How to Play/Actions/Action System/Movement/Hover.md",
+                      "fileName": "Hover.md"
+                    },
+                    {
+                      "id": "Movement",
+                      "title": "Movement",
+                      "path": "Core Rules, How to Play/Actions/Action System/Movement/Movement.md",
+                      "fileName": "Movement.md"
+                    },
+                    {
+                      "id": "Speed",
+                      "title": "Speed",
+                      "path": "Core Rules, How to Play/Actions/Action System/Movement/Speed.md",
+                      "fileName": "Speed.md",
+                      "icon": "TiShoe"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "id": "Action System",
+                  "title": "Action System",
+                  "path": "Core Rules, How to Play/Actions/Action System/Action System.md",
+                  "fileName": "Action System.md"
+                },
+                {
+                  "id": "AoO",
+                  "title": "AoO",
+                  "path": "Core Rules, How to Play/Actions/Action System/AoO.md",
+                  "fileName": "AoO.md"
+                },
+                {
+                  "id": "Free Action",
+                  "title": "Free Action",
+                  "path": "Core Rules, How to Play/Actions/Action System/Free Action.md",
+                  "fileName": "Free Action.md"
+                },
+                {
+                  "id": "Full-Round Action",
+                  "title": "Full-Round Action",
+                  "path": "Core Rules, How to Play/Actions/Action System/Full-Round Action.md",
+                  "fileName": "Full-Round Action.md"
+                },
+                {
+                  "id": "Immediate Action",
+                  "title": "Immediate Action",
+                  "path": "Core Rules, How to Play/Actions/Action System/Immediate Action.md",
+                  "fileName": "Immediate Action.md"
+                },
+                {
+                  "id": "Instant Action",
+                  "title": "Instant Action",
+                  "path": "Core Rules, How to Play/Actions/Action System/Instant Action.md",
+                  "fileName": "Instant Action.md"
+                },
+                {
+                  "id": "Standard Action",
+                  "title": "Standard Action",
+                  "path": "Core Rules, How to Play/Actions/Action System/Standard Action.md",
+                  "fileName": "Standard Action.md"
+                },
+                {
+                  "id": "Swift Action",
+                  "title": "Swift Action",
+                  "path": "Core Rules, How to Play/Actions/Action System/Swift Action.md",
+                  "fileName": "Swift Action.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Common Actions",
+              "children": [
+                {
+                  "name": "Free Actions",
+                  "children": [
+                    {
+                      "id": "Delay",
+                      "title": "Delay",
+                      "path": "Core Rules, How to Play/Actions/Common Actions/Free Actions/Delay.md",
+                      "fileName": "Delay.md"
+                    },
+                    {
+                      "id": "Swap Item",
+                      "title": "Swap Item",
+                      "path": "Core Rules, How to Play/Actions/Common Actions/Free Actions/Swap Item.md",
+                      "fileName": "Swap Item.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Instant Actions",
+                  "children": [
+                    {
+                      "id": "Fall Prone",
+                      "title": "Fall Prone",
+                      "path": "Core Rules, How to Play/Actions/Common Actions/Instant Actions/Fall Prone.md",
+                      "fileName": "Fall Prone.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Standard Actions",
+                  "children": [
+                    {
+                      "id": "Administer Potion",
+                      "title": "Administer Potion",
+                      "path": "Core Rules, How to Play/Actions/Common Actions/Standard Actions/Administer Potion.md",
+                      "fileName": "Administer Potion.md"
+                    },
+                    {
+                      "id": "Aid",
+                      "title": "Aid",
+                      "path": "Core Rules, How to Play/Actions/Common Actions/Standard Actions/Aid.md",
+                      "fileName": "Aid.md"
+                    },
+                    {
+                      "id": "Attack Action",
+                      "title": "Attack Action",
+                      "path": "Core Rules, How to Play/Actions/Common Actions/Standard Actions/Attack Action.md",
+                      "fileName": "Attack Action.md"
+                    },
+                    {
+                      "id": "Carry",
+                      "title": "Carry",
+                      "path": "Core Rules, How to Play/Actions/Common Actions/Standard Actions/Carry.md",
+                      "fileName": "Carry.md"
+                    },
+                    {
+                      "id": "Charge",
+                      "title": "Charge",
+                      "path": "Core Rules, How to Play/Actions/Common Actions/Standard Actions/Charge.md",
+                      "fileName": "Charge.md"
+                    },
+                    {
+                      "id": "Dash",
+                      "title": "Dash",
+                      "path": "Core Rules, How to Play/Actions/Common Actions/Standard Actions/Dash.md",
+                      "fileName": "Dash.md"
+                    },
+                    {
+                      "id": "Disengage",
+                      "title": "Disengage",
+                      "path": "Core Rules, How to Play/Actions/Common Actions/Standard Actions/Disengage.md",
+                      "fileName": "Disengage.md"
+                    },
+                    {
+                      "id": "Prepare",
+                      "title": "Prepare",
+                      "path": "Core Rules, How to Play/Actions/Common Actions/Standard Actions/Prepare.md",
+                      "fileName": "Prepare.md"
+                    },
+                    {
+                      "id": "Total Defense",
+                      "title": "Total Defense",
+                      "path": "Core Rules, How to Play/Actions/Common Actions/Standard Actions/Total Defense.md",
+                      "fileName": "Total Defense.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Swift Actions",
+                  "children": [
+                    {
+                      "id": "Jump",
+                      "title": "Jump",
+                      "path": "Core Rules, How to Play/Actions/Common Actions/Swift Actions/Jump.md",
+                      "fileName": "Jump.md",
+                      "icon": "BoBxUpArrowAlt"
+                    },
+                    {
+                      "id": "Recharge Abilities",
+                      "title": "Recharge Abilities",
+                      "path": "Core Rules, How to Play/Actions/Common Actions/Swift Actions/Recharge Abilities.md",
+                      "fileName": "Recharge Abilities.md"
+                    },
+                    {
+                      "id": "Use Potion",
+                      "title": "Use Potion",
+                      "path": "Core Rules, How to Play/Actions/Common Actions/Swift Actions/Use Potion.md",
+                      "fileName": "Use Potion.md"
+                    }
+                  ],
+                  "expanded": false
+                }
+              ],
+              "expanded": false
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Alternative Win Conditions",
+          "children": [
+            {
+              "id": "Alternative Win Conditions",
+              "title": "Alternative Win Conditions",
+              "path": "Core Rules, How to Play/Alternative Win Conditions/Alternative Win Conditions.md",
+              "fileName": "Alternative Win Conditions.md"
+            },
+            {
+              "id": "Restraint",
+              "title": "Restraint",
+              "path": "Core Rules, How to Play/Alternative Win Conditions/Restraint.md",
+              "fileName": "Restraint.md"
+            },
+            {
+              "id": "Surrender and Morale",
+              "title": "Surrender and Morale",
+              "path": "Core Rules, How to Play/Alternative Win Conditions/Surrender and Morale.md",
+              "fileName": "Surrender and Morale.md"
+            },
+            {
+              "id": "Truce",
+              "title": "Truce",
+              "path": "Core Rules, How to Play/Alternative Win Conditions/Truce.md",
+              "fileName": "Truce.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Attacking",
+          "children": [
+            {
+              "name": "Combat Maneuvers",
+              "children": [
+                {
+                  "id": "Action-Attack",
+                  "title": "Action-Attack",
+                  "path": "Core Rules, How to Play/Attacking/Combat Maneuvers/Action-Attack.md",
+                  "fileName": "Action-Attack.md"
+                },
+                {
+                  "id": "Combat Maneuver",
+                  "title": "Combat Maneuver",
+                  "path": "Core Rules, How to Play/Attacking/Combat Maneuvers/Combat Maneuver.md",
+                  "fileName": "Combat Maneuver.md"
+                },
+                {
+                  "id": "Dirty Trick",
+                  "title": "Dirty Trick",
+                  "path": "Core Rules, How to Play/Attacking/Combat Maneuvers/Dirty Trick.md",
+                  "fileName": "Dirty Trick.md"
+                },
+                {
+                  "id": "Disarm",
+                  "title": "Disarm",
+                  "path": "Core Rules, How to Play/Attacking/Combat Maneuvers/Disarm.md",
+                  "fileName": "Disarm.md"
+                },
+                {
+                  "id": "Drag",
+                  "title": "Drag",
+                  "path": "Core Rules, How to Play/Attacking/Combat Maneuvers/Drag.md",
+                  "fileName": "Drag.md"
+                },
+                {
+                  "id": "Feint",
+                  "title": "Feint",
+                  "path": "Core Rules, How to Play/Attacking/Combat Maneuvers/Feint.md",
+                  "fileName": "Feint.md"
+                },
+                {
+                  "id": "Fell",
+                  "title": "Fell",
+                  "path": "Core Rules, How to Play/Attacking/Combat Maneuvers/Fell.md",
+                  "fileName": "Fell.md"
+                },
+                {
+                  "id": "Grab",
+                  "title": "Grab",
+                  "path": "Core Rules, How to Play/Attacking/Combat Maneuvers/Grab.md",
+                  "fileName": "Grab.md"
+                },
+                {
+                  "id": "Shove",
+                  "title": "Shove",
+                  "path": "Core Rules, How to Play/Attacking/Combat Maneuvers/Shove.md",
+                  "fileName": "Shove.md"
+                },
+                {
+                  "id": "Steal",
+                  "title": "Steal",
+                  "path": "Core Rules, How to Play/Attacking/Combat Maneuvers/Steal.md",
+                  "fileName": "Steal.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "id": "AS",
+              "title": "AS",
+              "path": "Core Rules, How to Play/Attacking/AS.md",
+              "fileName": "AS.md",
+              "icon": "RiSpeedLine"
+            },
+            {
+              "id": "Attack",
+              "title": "Attack",
+              "path": "Core Rules, How to Play/Attacking/Attack.md",
+              "fileName": "Attack.md",
+              "icon": "LiSword"
+            },
+            {
+              "id": "Crit",
+              "title": "Crit",
+              "path": "Core Rules, How to Play/Attacking/Crit.md",
+              "fileName": "Crit.md",
+              "icon": "RaBombExplosion"
+            },
+            {
+              "id": "Critical Damage",
+              "title": "Critical Damage",
+              "path": "Core Rules, How to Play/Attacking/Critical Damage.md",
+              "fileName": "Critical Damage.md",
+              "icon": "RaExplosion"
+            },
+            {
+              "id": "Damage",
+              "title": "Damage",
+              "path": "Core Rules, How to Play/Attacking/Damage.md",
+              "fileName": "Damage.md"
+            },
+            {
+              "id": "Dual Wielding",
+              "title": "Dual Wielding",
+              "path": "Core Rules, How to Play/Attacking/Dual Wielding.md",
+              "fileName": "Dual Wielding.md",
+              "icon": "LiSwords"
+            },
+            {
+              "id": "Line of Effect",
+              "title": "Line of Effect",
+              "path": "Core Rules, How to Play/Attacking/Line of Effect.md",
+              "fileName": "Line of Effect.md"
+            },
+            {
+              "id": "Offense Calculator",
+              "title": "Offense Calculator",
+              "path": "Core Rules, How to Play/Attacking/Offense Calculator.md",
+              "fileName": "Offense Calculator.md"
+            },
+            {
+              "id": "Ranged Attack",
+              "title": "Ranged Attack",
+              "path": "Core Rules, How to Play/Attacking/Ranged Attack.md",
+              "fileName": "Ranged Attack.md",
+              "icon": "TiBow"
+            },
+            {
+              "id": "Switching Weapons",
+              "title": "Switching Weapons",
+              "path": "Core Rules, How to Play/Attacking/Switching Weapons.md",
+              "fileName": "Switching Weapons.md"
+            },
+            {
+              "id": "Targeted",
+              "title": "Targeted",
+              "path": "Core Rules, How to Play/Attacking/Targeted.md",
+              "fileName": "Targeted.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Death and Resurrection",
+          "children": [
+            {
+              "id": "Ashen One",
+              "title": "Ashen One",
+              "path": "Core Rules, How to Play/Death and Resurrection/Ashen One.md",
+              "fileName": "Ashen One.md"
+            },
+            {
+              "id": "Cloning Device",
+              "title": "Cloning Device",
+              "path": "Core Rules, How to Play/Death and Resurrection/Cloning Device.md",
+              "fileName": "Cloning Device.md"
+            },
+            {
+              "id": "Death and Resurrection",
+              "title": "Death and Resurrection",
+              "path": "Core Rules, How to Play/Death and Resurrection/Death and Resurrection.md",
+              "fileName": "Death and Resurrection.md"
+            },
+            {
+              "id": "Limited Resurrection",
+              "title": "Limited Resurrection",
+              "path": "Core Rules, How to Play/Death and Resurrection/Limited Resurrection.md",
+              "fileName": "Limited Resurrection.md"
+            },
+            {
+              "id": "Tombstone",
+              "title": "Tombstone",
+              "path": "Core Rules, How to Play/Death and Resurrection/Tombstone.md",
+              "fileName": "Tombstone.md"
+            },
+            {
+              "id": "Withers",
+              "title": "Withers",
+              "path": "Core Rules, How to Play/Death and Resurrection/Withers.md",
+              "fileName": "Withers.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Hitpoints",
+          "children": [
+            {
+              "id": "Defeat",
+              "title": "Defeat",
+              "path": "Core Rules, How to Play/Hitpoints/Defeat.md",
+              "fileName": "Defeat.md"
+            },
+            {
+              "id": "Healing",
+              "title": "Healing",
+              "path": "Core Rules, How to Play/Hitpoints/Healing.md",
+              "fileName": "Healing.md"
+            },
+            {
+              "id": "HP",
+              "title": "HP",
+              "path": "Core Rules, How to Play/Hitpoints/HP.md",
+              "fileName": "HP.md",
+              "icon": "LiHeart"
+            },
+            {
+              "id": "Immunity",
+              "title": "Immunity",
+              "path": "Core Rules, How to Play/Hitpoints/Immunity.md",
+              "fileName": "Immunity.md"
+            },
+            {
+              "id": "Long Rest",
+              "title": "Long Rest",
+              "path": "Core Rules, How to Play/Hitpoints/Long Rest.md",
+              "fileName": "Long Rest.md"
+            },
+            {
+              "id": "Natural Healing",
+              "title": "Natural Healing",
+              "path": "Core Rules, How to Play/Hitpoints/Natural Healing.md",
+              "fileName": "Natural Healing.md"
+            },
+            {
+              "id": "Recovering from Defeat",
+              "title": "Recovering from Defeat",
+              "path": "Core Rules, How to Play/Hitpoints/Recovering from Defeat.md",
+              "fileName": "Recovering from Defeat.md"
+            },
+            {
+              "id": "Resistance",
+              "title": "Resistance",
+              "path": "Core Rules, How to Play/Hitpoints/Resistance.md",
+              "fileName": "Resistance.md"
+            },
+            {
+              "id": "Rest",
+              "title": "Rest",
+              "path": "Core Rules, How to Play/Hitpoints/Rest.md",
+              "fileName": "Rest.md"
+            },
+            {
+              "id": "Short Rest",
+              "title": "Short Rest",
+              "path": "Core Rules, How to Play/Hitpoints/Short Rest.md",
+              "fileName": "Short Rest.md"
+            },
+            {
+              "id": "Temp HP",
+              "title": "Temp HP",
+              "path": "Core Rules, How to Play/Hitpoints/Temp HP.md",
+              "fileName": "Temp HP.md",
+              "icon": "TiHearts"
+            },
+            {
+              "id": "Weakness",
+              "title": "Weakness",
+              "path": "Core Rules, How to Play/Hitpoints/Weakness.md",
+              "fileName": "Weakness.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "More Rules",
+          "children": [
+            {
+              "id": "Fall Damage",
+              "title": "Fall Damage",
+              "path": "Core Rules, How to Play/More Rules/Fall Damage.md",
+              "fileName": "Fall Damage.md"
+            },
+            {
+              "id": "Light Level",
+              "title": "Light Level",
+              "path": "Core Rules, How to Play/More Rules/Light Level.md",
+              "fileName": "Light Level.md"
+            },
+            {
+              "id": "Rounding Numbers",
+              "title": "Rounding Numbers",
+              "path": "Core Rules, How to Play/More Rules/Rounding Numbers.md",
+              "fileName": "Rounding Numbers.md"
+            },
+            {
+              "id": "Size and Reach",
+              "title": "Size and Reach",
+              "path": "Core Rules, How to Play/More Rules/Size and Reach.md",
+              "fileName": "Size and Reach.md"
+            },
+            {
+              "id": "Specific Defenses Rule",
+              "title": "Specific Defenses Rule",
+              "path": "Core Rules, How to Play/More Rules/Specific Defenses Rule.md",
+              "fileName": "Specific Defenses Rule.md"
+            },
+            {
+              "id": "Stacking Damage and Defense",
+              "title": "Stacking Damage and Defense",
+              "path": "Core Rules, How to Play/More Rules/Stacking Damage and Defense.md",
+              "fileName": "Stacking Damage and Defense.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Recharging Abilities",
+          "children": [
+            {
+              "id": "At-Will",
+              "title": "At-Will",
+              "path": "Core Rules, How to Play/Recharging Abilities/At-Will.md",
+              "fileName": "At-Will.md",
+              "icon": "RiInfinityLine"
+            },
+            {
+              "id": "Limited",
+              "title": "Limited",
+              "path": "Core Rules, How to Play/Recharging Abilities/Limited.md",
+              "fileName": "Limited.md",
+              "icon": "TiEggCracked"
+            },
+            {
+              "id": "Mana Burn",
+              "title": "Mana Burn",
+              "path": "Core Rules, How to Play/Recharging Abilities/Mana Burn.md",
+              "fileName": "Mana Burn.md"
+            },
+            {
+              "id": "Mana",
+              "title": "Mana",
+              "path": "Core Rules, How to Play/Recharging Abilities/Mana.md",
+              "fileName": "Mana.md",
+              "icon": "CoWaterDrop"
+            },
+            {
+              "id": "Recharge",
+              "title": "Recharge",
+              "path": "Core Rules, How to Play/Recharging Abilities/Recharge.md",
+              "fileName": "Recharge.md",
+              "icon": "RiLoopLeftFill"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Saving Throws",
+          "children": [
+            {
+              "id": "Fortitude",
+              "title": "Fortitude",
+              "path": "Core Rules, How to Play/Saving Throws/Fortitude.md",
+              "fileName": "Fortitude.md"
+            },
+            {
+              "id": "Reflex",
+              "title": "Reflex",
+              "path": "Core Rules, How to Play/Saving Throws/Reflex.md",
+              "fileName": "Reflex.md"
+            },
+            {
+              "id": "Saving Throw",
+              "title": "Saving Throw",
+              "path": "Core Rules, How to Play/Saving Throws/Saving Throw.md",
+              "fileName": "Saving Throw.md"
+            },
+            {
+              "id": "Will",
+              "title": "Will",
+              "path": "Core Rules, How to Play/Saving Throws/Will.md",
+              "fileName": "Will.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Status Effects",
+          "children": [
+            {
+              "name": "Afflictions",
+              "children": [
+                {
+                  "name": "Tier 1 Afflictions",
+                  "children": [
+                    {
+                      "id": "Affliction - Hamstringed",
+                      "title": "Affliction - Hamstringed",
+                      "path": "Core Rules, How to Play/Status Effects/Afflictions/Tier 1 Afflictions/Affliction - Hamstringed.md",
+                      "fileName": "Affliction - Hamstringed.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "id": "Affliction",
+                  "title": "Affliction",
+                  "path": "Core Rules, How to Play/Status Effects/Afflictions/Affliction.md",
+                  "fileName": "Affliction.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "id": "Ablaze",
+              "title": "Ablaze",
+              "path": "Core Rules, How to Play/Status Effects/Ablaze.md",
+              "fileName": "Ablaze.md"
+            },
+            {
+              "id": "Anchored",
+              "title": "Anchored",
+              "path": "Core Rules, How to Play/Status Effects/Anchored.md",
+              "fileName": "Anchored.md"
+            },
+            {
+              "id": "Asleep",
+              "title": "Asleep",
+              "path": "Core Rules, How to Play/Status Effects/Asleep.md",
+              "fileName": "Asleep.md"
+            },
+            {
+              "id": "Bleed",
+              "title": "Bleed",
+              "path": "Core Rules, How to Play/Status Effects/Bleed.md",
+              "fileName": "Bleed.md",
+              "icon": "LiDroplet"
+            },
+            {
+              "id": "Blinded",
+              "title": "Blinded",
+              "path": "Core Rules, How to Play/Status Effects/Blinded.md",
+              "fileName": "Blinded.md"
+            },
+            {
+              "id": "Blurred Vision",
+              "title": "Blurred Vision",
+              "path": "Core Rules, How to Play/Status Effects/Blurred Vision.md",
+              "fileName": "Blurred Vision.md"
+            },
+            {
+              "id": "Charmed",
+              "title": "Charmed",
+              "path": "Core Rules, How to Play/Status Effects/Charmed.md",
+              "fileName": "Charmed.md"
+            },
+            {
+              "id": "Chilled",
+              "title": "Chilled",
+              "path": "Core Rules, How to Play/Status Effects/Chilled.md",
+              "fileName": "Chilled.md"
+            },
+            {
+              "id": "Clumsy",
+              "title": "Clumsy",
+              "path": "Core Rules, How to Play/Status Effects/Clumsy.md",
+              "fileName": "Clumsy.md"
+            },
+            {
+              "id": "Confused",
+              "title": "Confused",
+              "path": "Core Rules, How to Play/Status Effects/Confused.md",
+              "fileName": "Confused.md"
+            },
+            {
+              "id": "Cursed",
+              "title": "Cursed",
+              "path": "Core Rules, How to Play/Status Effects/Cursed.md",
+              "fileName": "Cursed.md"
+            },
+            {
+              "id": "Dazed",
+              "title": "Dazed",
+              "path": "Core Rules, How to Play/Status Effects/Dazed.md",
+              "fileName": "Dazed.md"
+            },
+            {
+              "id": "Defeated",
+              "title": "Defeated",
+              "path": "Core Rules, How to Play/Status Effects/Defeated.md",
+              "fileName": "Defeated.md"
+            },
+            {
+              "id": "Dominated",
+              "title": "Dominated",
+              "path": "Core Rules, How to Play/Status Effects/Dominated.md",
+              "fileName": "Dominated.md"
+            },
+            {
+              "id": "Drained",
+              "title": "Drained",
+              "path": "Core Rules, How to Play/Status Effects/Drained.md",
+              "fileName": "Drained.md"
+            },
+            {
+              "id": "Entangled",
+              "title": "Entangled",
+              "path": "Core Rules, How to Play/Status Effects/Entangled.md",
+              "fileName": "Entangled.md"
+            },
+            {
+              "id": "Entombed",
+              "title": "Entombed",
+              "path": "Core Rules, How to Play/Status Effects/Entombed.md",
+              "fileName": "Entombed.md"
+            },
+            {
+              "id": "Fascinated",
+              "title": "Fascinated",
+              "path": "Core Rules, How to Play/Status Effects/Fascinated.md",
+              "fileName": "Fascinated.md"
+            },
+            {
+              "id": "Fatigued",
+              "title": "Fatigued",
+              "path": "Core Rules, How to Play/Status Effects/Fatigued.md",
+              "fileName": "Fatigued.md"
+            },
+            {
+              "id": "Frightened",
+              "title": "Frightened",
+              "path": "Core Rules, How to Play/Status Effects/Frightened.md",
+              "fileName": "Frightened.md"
+            },
+            {
+              "id": "Glowing",
+              "title": "Glowing",
+              "path": "Core Rules, How to Play/Status Effects/Glowing.md",
+              "fileName": "Glowing.md"
+            },
+            {
+              "id": "Grounded",
+              "title": "Grounded",
+              "path": "Core Rules, How to Play/Status Effects/Grounded.md",
+              "fileName": "Grounded.md"
+            },
+            {
+              "id": "Held Down",
+              "title": "Held Down",
+              "path": "Core Rules, How to Play/Status Effects/Held Down.md",
+              "fileName": "Held Down.md"
+            },
+            {
+              "id": "Invincible",
+              "title": "Invincible",
+              "path": "Core Rules, How to Play/Status Effects/Invincible.md",
+              "fileName": "Invincible.md"
+            },
+            {
+              "id": "Invisible",
+              "title": "Invisible",
+              "path": "Core Rules, How to Play/Status Effects/Invisible.md",
+              "fileName": "Invisible.md"
+            },
+            {
+              "id": "Knocked Down",
+              "title": "Knocked Down",
+              "path": "Core Rules, How to Play/Status Effects/Knocked Down.md",
+              "fileName": "Knocked Down.md"
+            },
+            {
+              "id": "Mindless",
+              "title": "Mindless",
+              "path": "Core Rules, How to Play/Status Effects/Mindless.md",
+              "fileName": "Mindless.md"
+            },
+            {
+              "id": "Necrosed",
+              "title": "Necrosed",
+              "path": "Core Rules, How to Play/Status Effects/Necrosed.md",
+              "fileName": "Necrosed.md"
+            },
+            {
+              "id": "Pacified",
+              "title": "Pacified",
+              "path": "Core Rules, How to Play/Status Effects/Pacified.md",
+              "fileName": "Pacified.md"
+            },
+            {
+              "id": "Prone",
+              "title": "Prone",
+              "path": "Core Rules, How to Play/Status Effects/Prone.md",
+              "fileName": "Prone.md"
+            },
+            {
+              "id": "Shaken",
+              "title": "Shaken",
+              "path": "Core Rules, How to Play/Status Effects/Shaken.md",
+              "fileName": "Shaken.md"
+            },
+            {
+              "id": "Sickened",
+              "title": "Sickened",
+              "path": "Core Rules, How to Play/Status Effects/Sickened.md",
+              "fileName": "Sickened.md"
+            },
+            {
+              "id": "Silenced",
+              "title": "Silenced",
+              "path": "Core Rules, How to Play/Status Effects/Silenced.md",
+              "fileName": "Silenced.md"
+            },
+            {
+              "id": "Siphoned",
+              "title": "Siphoned",
+              "path": "Core Rules, How to Play/Status Effects/Siphoned.md",
+              "fileName": "Siphoned.md"
+            },
+            {
+              "id": "Staggered",
+              "title": "Staggered",
+              "path": "Core Rules, How to Play/Status Effects/Staggered.md",
+              "fileName": "Staggered.md"
+            },
+            {
+              "id": "Stasis",
+              "title": "Stasis",
+              "path": "Core Rules, How to Play/Status Effects/Stasis.md",
+              "fileName": "Stasis.md"
+            },
+            {
+              "id": "Status",
+              "title": "Status",
+              "path": "Core Rules, How to Play/Status Effects/Status.md",
+              "fileName": "Status.md"
+            },
+            {
+              "id": "Stunned",
+              "title": "Stunned",
+              "path": "Core Rules, How to Play/Status Effects/Stunned.md",
+              "fileName": "Stunned.md"
+            },
+            {
+              "id": "Submerged",
+              "title": "Submerged",
+              "path": "Core Rules, How to Play/Status Effects/Submerged.md",
+              "fileName": "Submerged.md"
+            },
+            {
+              "id": "Surprised",
+              "title": "Surprised",
+              "path": "Core Rules, How to Play/Status Effects/Surprised.md",
+              "fileName": "Surprised.md",
+              "icon": "❗"
+            },
+            {
+              "id": "Taunted",
+              "title": "Taunted",
+              "path": "Core Rules, How to Play/Status Effects/Taunted.md",
+              "fileName": "Taunted.md"
+            },
+            {
+              "id": "Time Out",
+              "title": "Time Out",
+              "path": "Core Rules, How to Play/Status Effects/Time Out.md",
+              "fileName": "Time Out.md"
+            },
+            {
+              "id": "Unassailable",
+              "title": "Unassailable",
+              "path": "Core Rules, How to Play/Status Effects/Unassailable.md",
+              "fileName": "Unassailable.md"
+            },
+            {
+              "id": "Unstoppable",
+              "title": "Unstoppable",
+              "path": "Core Rules, How to Play/Status Effects/Unstoppable.md",
+              "fileName": "Unstoppable.md"
+            },
+            {
+              "id": "Untargetable",
+              "title": "Untargetable",
+              "path": "Core Rules, How to Play/Status Effects/Untargetable.md",
+              "fileName": "Untargetable.md"
+            },
+            {
+              "id": "Wet",
+              "title": "Wet",
+              "path": "Core Rules, How to Play/Status Effects/Wet.md",
+              "fileName": "Wet.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Tags",
+          "children": [
+            {
+              "name": "Damage Types",
+              "children": [
+                {
+                  "id": "Cold",
+                  "title": "Cold",
+                  "path": "Core Rules, How to Play/Tags/Damage Types/Cold.md",
+                  "fileName": "Cold.md",
+                  "icon": "TiSnowflake"
+                },
+                {
+                  "id": "Crush",
+                  "title": "Crush",
+                  "path": "Core Rules, How to Play/Tags/Damage Types/Crush.md",
+                  "fileName": "Crush.md",
+                  "icon": "RaCrush"
+                },
+                {
+                  "id": "Fire",
+                  "title": "Fire",
+                  "path": "Core Rules, How to Play/Tags/Damage Types/Fire.md",
+                  "fileName": "Fire.md",
+                  "icon": "RiFireLine"
+                },
+                {
+                  "id": "Holy",
+                  "title": "Holy",
+                  "path": "Core Rules, How to Play/Tags/Damage Types/Holy.md",
+                  "fileName": "Holy.md",
+                  "icon": "RiCrossLine"
+                },
+                {
+                  "id": "Lightning",
+                  "title": "Lightning",
+                  "path": "Core Rules, How to Play/Tags/Damage Types/Lightning.md",
+                  "fileName": "Lightning.md",
+                  "icon": "IbLightning"
+                },
+                {
+                  "id": "Magic",
+                  "title": "Magic",
+                  "path": "Core Rules, How to Play/Tags/Damage Types/Magic.md",
+                  "fileName": "Magic.md",
+                  "icon": "TiComet"
+                },
+                {
+                  "id": "Necrotic",
+                  "title": "Necrotic",
+                  "path": "Core Rules, How to Play/Tags/Damage Types/Necrotic.md",
+                  "fileName": "Necrotic.md",
+                  "icon": "TiSkull"
+                },
+                {
+                  "id": "Pierce",
+                  "title": "Pierce",
+                  "path": "Core Rules, How to Play/Tags/Damage Types/Pierce.md",
+                  "fileName": "Pierce.md",
+                  "icon": "RaSpearHead"
+                },
+                {
+                  "id": "Psychic",
+                  "title": "Psychic",
+                  "path": "Core Rules, How to Play/Tags/Damage Types/Psychic.md",
+                  "fileName": "Psychic.md",
+                  "icon": "TiMagnetic"
+                },
+                {
+                  "id": "Slash",
+                  "title": "Slash",
+                  "path": "Core Rules, How to Play/Tags/Damage Types/Slash.md",
+                  "fileName": "Slash.md",
+                  "icon": "RaAxeSwing"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "School Tags",
+              "children": [
+                {
+                  "id": "Abnegation",
+                  "title": "Abnegation",
+                  "path": "Core Rules, How to Play/Tags/School Tags/Abnegation.md",
+                  "fileName": "Abnegation.md"
+                },
+                {
+                  "id": "Conjuration",
+                  "title": "Conjuration",
+                  "path": "Core Rules, How to Play/Tags/School Tags/Conjuration.md",
+                  "fileName": "Conjuration.md"
+                },
+                {
+                  "id": "Divination",
+                  "title": "Divination",
+                  "path": "Core Rules, How to Play/Tags/School Tags/Divination.md",
+                  "fileName": "Divination.md"
+                },
+                {
+                  "id": "Evocation",
+                  "title": "Evocation",
+                  "path": "Core Rules, How to Play/Tags/School Tags/Evocation.md",
+                  "fileName": "Evocation.md"
+                },
+                {
+                  "id": "Illusion",
+                  "title": "Illusion",
+                  "path": "Core Rules, How to Play/Tags/School Tags/Illusion.md",
+                  "fileName": "Illusion.md"
+                },
+                {
+                  "id": "Transmutation",
+                  "title": "Transmutation",
+                  "path": "Core Rules, How to Play/Tags/School Tags/Transmutation.md",
+                  "fileName": "Transmutation.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "id": "Air",
+              "title": "Air",
+              "path": "Core Rules, How to Play/Tags/Air.md",
+              "fileName": "Air.md"
+            },
+            {
+              "id": "Bond",
+              "title": "Bond",
+              "path": "Core Rules, How to Play/Tags/Bond.md",
+              "fileName": "Bond.md"
+            },
+            {
+              "id": "Buff",
+              "title": "Buff",
+              "path": "Core Rules, How to Play/Tags/Buff.md",
+              "fileName": "Buff.md"
+            },
+            {
+              "id": "Caloric",
+              "title": "Caloric",
+              "path": "Core Rules, How to Play/Tags/Caloric.md",
+              "fileName": "Caloric.md"
+            },
+            {
+              "id": "Charm",
+              "title": "Charm",
+              "path": "Core Rules, How to Play/Tags/Charm.md",
+              "fileName": "Charm.md"
+            },
+            {
+              "id": "Companion",
+              "title": "Companion",
+              "path": "Core Rules, How to Play/Tags/Companion.md",
+              "fileName": "Companion.md"
+            },
+            {
+              "id": "Concentration",
+              "title": "Concentration",
+              "path": "Core Rules, How to Play/Tags/Concentration.md",
+              "fileName": "Concentration.md"
+            },
+            {
+              "id": "Contingent",
+              "title": "Contingent",
+              "path": "Core Rules, How to Play/Tags/Contingent.md",
+              "fileName": "Contingent.md"
+            },
+            {
+              "id": "Curse",
+              "title": "Curse",
+              "path": "Core Rules, How to Play/Tags/Curse.md",
+              "fileName": "Curse.md"
+            },
+            {
+              "id": "Darkness",
+              "title": "Darkness",
+              "path": "Core Rules, How to Play/Tags/Darkness.md",
+              "fileName": "Darkness.md"
+            },
+            {
+              "id": "Dismissible",
+              "title": "Dismissible",
+              "path": "Core Rules, How to Play/Tags/Dismissible.md",
+              "fileName": "Dismissible.md"
+            },
+            {
+              "id": "Earth",
+              "title": "Earth",
+              "path": "Core Rules, How to Play/Tags/Earth.md",
+              "fileName": "Earth.md"
+            },
+            {
+              "id": "Elusive",
+              "title": "Elusive",
+              "path": "Core Rules, How to Play/Tags/Elusive.md",
+              "fileName": "Elusive.md"
+            },
+            {
+              "id": "Emotion",
+              "title": "Emotion",
+              "path": "Core Rules, How to Play/Tags/Emotion.md",
+              "fileName": "Emotion.md"
+            },
+            {
+              "id": "Fear",
+              "title": "Fear",
+              "path": "Core Rules, How to Play/Tags/Fear.md",
+              "fileName": "Fear.md"
+            },
+            {
+              "id": "Figment",
+              "title": "Figment",
+              "path": "Core Rules, How to Play/Tags/Figment.md",
+              "fileName": "Figment.md"
+            },
+            {
+              "id": "Glamer",
+              "title": "Glamer",
+              "path": "Core Rules, How to Play/Tags/Glamer.md",
+              "fileName": "Glamer.md"
+            },
+            {
+              "id": "Language-Dependent",
+              "title": "Language-Dependent",
+              "path": "Core Rules, How to Play/Tags/Language-Dependent.md",
+              "fileName": "Language-Dependent.md"
+            },
+            {
+              "id": "Light",
+              "title": "Light",
+              "path": "Core Rules, How to Play/Tags/Light.md",
+              "fileName": "Light.md"
+            },
+            {
+              "id": "Martial",
+              "title": "Martial",
+              "path": "Core Rules, How to Play/Tags/Martial.md",
+              "fileName": "Martial.md"
+            },
+            {
+              "id": "Mind-Affecting",
+              "title": "Mind-Affecting",
+              "path": "Core Rules, How to Play/Tags/Mind-Affecting.md",
+              "fileName": "Mind-Affecting.md"
+            },
+            {
+              "id": "Multi-Strike",
+              "title": "Multi-Strike",
+              "path": "Core Rules, How to Play/Tags/Multi-Strike.md",
+              "fileName": "Multi-Strike.md"
+            },
+            {
+              "id": "Pattern",
+              "title": "Pattern",
+              "path": "Core Rules, How to Play/Tags/Pattern.md",
+              "fileName": "Pattern.md"
+            },
+            {
+              "id": "Persistent",
+              "title": "Persistent",
+              "path": "Core Rules, How to Play/Tags/Persistent.md",
+              "fileName": "Persistent.md"
+            },
+            {
+              "id": "Polymorph",
+              "title": "Polymorph",
+              "path": "Core Rules, How to Play/Tags/Polymorph.md",
+              "fileName": "Polymorph.md"
+            },
+            {
+              "id": "Scrying",
+              "title": "Scrying",
+              "path": "Core Rules, How to Play/Tags/Scrying.md",
+              "fileName": "Scrying.md"
+            },
+            {
+              "id": "Sigil",
+              "title": "Sigil",
+              "path": "Core Rules, How to Play/Tags/Sigil.md",
+              "fileName": "Sigil.md"
+            },
+            {
+              "id": "Subtle",
+              "title": "Subtle",
+              "path": "Core Rules, How to Play/Tags/Subtle.md",
+              "fileName": "Subtle.md"
+            },
+            {
+              "id": "Summoning",
+              "title": "Summoning",
+              "path": "Core Rules, How to Play/Tags/Summoning.md",
+              "fileName": "Summoning.md"
+            },
+            {
+              "id": "Tag",
+              "title": "Tag",
+              "path": "Core Rules, How to Play/Tags/Tag.md",
+              "fileName": "Tag.md"
+            },
+            {
+              "id": "Teleportation",
+              "title": "Teleportation",
+              "path": "Core Rules, How to Play/Tags/Teleportation.md",
+              "fileName": "Teleportation.md"
+            },
+            {
+              "id": "Water",
+              "title": "Water",
+              "path": "Core Rules, How to Play/Tags/Water.md",
+              "fileName": "Water.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "id": "Rolling Dice and Statistics",
+          "title": "Rolling Dice and Statistics",
+          "path": "Core Rules, How to Play/Rolling Dice and Statistics.md",
+          "fileName": "Rolling Dice and Statistics.md"
+        }
+      ],
+      "expanded": false
+    },
+    {
+      "name": "Equipment",
+      "children": [
+        {
+          "name": "Armor and Shield Rules",
+          "children": [
+            {
+              "id": "Armor",
+              "title": "Armor",
+              "path": "Equipment/Armor and Shield Rules/Armor.md",
+              "fileName": "Armor.md"
+            },
+            {
+              "id": "Shield",
+              "title": "Shield",
+              "path": "Equipment/Armor and Shield Rules/Shield.md",
+              "fileName": "Shield.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Backgrounds",
+          "children": [
+            {
+              "id": "Background",
+              "title": "Background",
+              "path": "Equipment/Backgrounds/Background.md",
+              "fileName": "Background.md"
+            },
+            {
+              "id": "Family Man",
+              "title": "Family Man",
+              "path": "Equipment/Backgrounds/Family Man.md",
+              "fileName": "Family Man.md"
+            },
+            {
+              "id": "Noble",
+              "title": "Noble",
+              "path": "Equipment/Backgrounds/Noble.md",
+              "fileName": "Noble.md"
+            },
+            {
+              "id": "Tradesman",
+              "title": "Tradesman",
+              "path": "Equipment/Backgrounds/Tradesman.md",
+              "fileName": "Tradesman.md"
+            },
+            {
+              "id": "Wanderer",
+              "title": "Wanderer",
+              "path": "Equipment/Backgrounds/Wanderer.md",
+              "fileName": "Wanderer.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Crafting",
+          "children": [
+            {
+              "id": "Crafting",
+              "title": "Crafting",
+              "path": "Equipment/Crafting/Crafting.md",
+              "fileName": "Crafting.md"
+            },
+            {
+              "id": "Labor",
+              "title": "Labor",
+              "path": "Equipment/Crafting/Labor.md",
+              "fileName": "Labor.md"
+            },
+            {
+              "id": "Mana Crystal",
+              "title": "Mana Crystal",
+              "path": "Equipment/Crafting/Mana Crystal.md",
+              "fileName": "Mana Crystal.md"
+            },
+            {
+              "id": "Resources",
+              "title": "Resources",
+              "path": "Equipment/Crafting/Resources.md",
+              "fileName": "Resources.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Economics",
+          "children": [
+            {
+              "id": "Common Prices",
+              "title": "Common Prices",
+              "path": "Equipment/Economics/Common Prices.md",
+              "fileName": "Common Prices.md"
+            },
+            {
+              "id": "Economics",
+              "title": "Economics",
+              "path": "Equipment/Economics/Economics.md",
+              "fileName": "Economics.md"
+            },
+            {
+              "id": "Mana Donation",
+              "title": "Mana Donation",
+              "path": "Equipment/Economics/Mana Donation.md",
+              "fileName": "Mana Donation.md"
+            },
+            {
+              "id": "Populations",
+              "title": "Populations",
+              "path": "Equipment/Economics/Populations.md",
+              "fileName": "Populations.md"
+            },
+            {
+              "id": "The Cost of Living",
+              "title": "The Cost of Living",
+              "path": "Equipment/Economics/The Cost of Living.md",
+              "fileName": "The Cost of Living.md"
+            },
+            {
+              "id": "The Value of Gold",
+              "title": "The Value of Gold",
+              "path": "Equipment/Economics/The Value of Gold.md",
+              "fileName": "The Value of Gold.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Food",
+          "children": [
+            {
+              "id": "Food",
+              "title": "Food",
+              "path": "Equipment/Food/Food.md",
+              "fileName": "Food.md"
+            },
+            {
+              "id": "Ingredients",
+              "title": "Ingredients",
+              "path": "Equipment/Food/Ingredients.md",
+              "fileName": "Ingredients.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Magic Items",
+          "children": [
+            {
+              "name": "Enchanting",
+              "children": [
+                {
+                  "id": "Enchanting",
+                  "title": "Enchanting",
+                  "path": "Equipment/Magic Items/Enchanting/Enchanting.md",
+                  "fileName": "Enchanting.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Infusion Scrolls",
+              "children": [
+                {
+                  "name": "Weapon Infusion Scrolls",
+                  "children": [
+                    {
+                      "id": "Scroll for Weapon Accuracy",
+                      "title": "Scroll for Weapon Accuracy",
+                      "path": "Equipment/Magic Items/Infusion Scrolls/Weapon Infusion Scrolls/Scroll for Weapon Accuracy.md",
+                      "fileName": "Scroll for Weapon Accuracy.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "id": "Infusion Scroll",
+                  "title": "Infusion Scroll",
+                  "path": "Equipment/Magic Items/Infusion Scrolls/Infusion Scroll.md",
+                  "fileName": "Infusion Scroll.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "id": "Upgrade Slot",
+              "title": "Upgrade Slot",
+              "path": "Equipment/Magic Items/Upgrade Slot.md",
+              "fileName": "Upgrade Slot.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Mundane Items",
+          "children": [
+            {
+              "id": "Mundane Item",
+              "title": "Mundane Item",
+              "path": "Equipment/Mundane Items/Mundane Item.md",
+              "fileName": "Mundane Item.md"
+            },
+            {
+              "id": "Property",
+              "title": "Property",
+              "path": "Equipment/Mundane Items/Property.md",
+              "fileName": "Property.md"
+            },
+            {
+              "id": "Tools",
+              "title": "Tools",
+              "path": "Equipment/Mundane Items/Tools.md",
+              "fileName": "Tools.md"
+            },
+            {
+              "id": "Torch",
+              "title": "Torch",
+              "path": "Equipment/Mundane Items/Torch.md",
+              "fileName": "Torch.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Specific Armor",
+          "children": [
+            {
+              "id": "Adamant Armor",
+              "title": "Adamant Armor",
+              "path": "Equipment/Specific Armor/Adamant Armor.md",
+              "fileName": "Adamant Armor.md"
+            },
+            {
+              "id": "Full Plate Armor",
+              "title": "Full Plate Armor",
+              "path": "Equipment/Specific Armor/Full Plate Armor.md",
+              "fileName": "Full Plate Armor.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Specific Weapons",
+          "children": [
+            {
+              "id": "Cleaving Axe",
+              "title": "Cleaving Axe",
+              "path": "Equipment/Specific Weapons/Cleaving Axe.md",
+              "fileName": "Cleaving Axe.md"
+            },
+            {
+              "id": "Longbow",
+              "title": "Longbow",
+              "path": "Equipment/Specific Weapons/Longbow.md",
+              "fileName": "Longbow.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Weapon Rules",
+          "children": [
+            {
+              "name": "Weapon Types and Basic Weapons",
+              "children": [
+                {
+                  "name": "Subtypes",
+                  "children": [
+                    {
+                      "id": "Ammunition",
+                      "title": "Ammunition",
+                      "path": "Equipment/Weapon Rules/Weapon Types and Basic Weapons/Subtypes/Ammunition.md",
+                      "fileName": "Ammunition.md"
+                    },
+                    {
+                      "id": "Natural Weapon",
+                      "title": "Natural Weapon",
+                      "path": "Equipment/Weapon Rules/Weapon Types and Basic Weapons/Subtypes/Natural Weapon.md",
+                      "fileName": "Natural Weapon.md"
+                    },
+                    {
+                      "id": "Staff",
+                      "title": "Staff",
+                      "path": "Equipment/Weapon Rules/Weapon Types and Basic Weapons/Subtypes/Staff.md",
+                      "fileName": "Staff.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "id": "Axe",
+                  "title": "Axe",
+                  "path": "Equipment/Weapon Rules/Weapon Types and Basic Weapons/Axe.md",
+                  "fileName": "Axe.md"
+                },
+                {
+                  "id": "Blade",
+                  "title": "Blade",
+                  "path": "Equipment/Weapon Rules/Weapon Types and Basic Weapons/Blade.md",
+                  "fileName": "Blade.md"
+                },
+                {
+                  "id": "Bludgeon",
+                  "title": "Bludgeon",
+                  "path": "Equipment/Weapon Rules/Weapon Types and Basic Weapons/Bludgeon.md",
+                  "fileName": "Bludgeon.md"
+                },
+                {
+                  "id": "Bow",
+                  "title": "Bow",
+                  "path": "Equipment/Weapon Rules/Weapon Types and Basic Weapons/Bow.md",
+                  "fileName": "Bow.md"
+                },
+                {
+                  "id": "Close",
+                  "title": "Close",
+                  "path": "Equipment/Weapon Rules/Weapon Types and Basic Weapons/Close.md",
+                  "fileName": "Close.md"
+                },
+                {
+                  "id": "Dagger",
+                  "title": "Dagger",
+                  "path": "Equipment/Weapon Rules/Weapon Types and Basic Weapons/Dagger.md",
+                  "fileName": "Dagger.md"
+                },
+                {
+                  "id": "Polearm",
+                  "title": "Polearm",
+                  "path": "Equipment/Weapon Rules/Weapon Types and Basic Weapons/Polearm.md",
+                  "fileName": "Polearm.md"
+                },
+                {
+                  "id": "Thrown",
+                  "title": "Thrown",
+                  "path": "Equipment/Weapon Rules/Weapon Types and Basic Weapons/Thrown.md",
+                  "fileName": "Thrown.md"
+                },
+                {
+                  "id": "Thrust",
+                  "title": "Thrust",
+                  "path": "Equipment/Weapon Rules/Weapon Types and Basic Weapons/Thrust.md",
+                  "fileName": "Thrust.md"
+                },
+                {
+                  "id": "Trigger",
+                  "title": "Trigger",
+                  "path": "Equipment/Weapon Rules/Weapon Types and Basic Weapons/Trigger.md",
+                  "fileName": "Trigger.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "id": "Basic Weapon",
+              "title": "Basic Weapon",
+              "path": "Equipment/Weapon Rules/Basic Weapon.md",
+              "fileName": "Basic Weapon.md"
+            },
+            {
+              "id": "Close Range",
+              "title": "Close Range",
+              "path": "Equipment/Weapon Rules/Close Range.md",
+              "fileName": "Close Range.md"
+            },
+            {
+              "id": "Exotic Weapon",
+              "title": "Exotic Weapon",
+              "path": "Equipment/Weapon Rules/Exotic Weapon.md",
+              "fileName": "Exotic Weapon.md"
+            },
+            {
+              "id": "Range",
+              "title": "Range",
+              "path": "Equipment/Weapon Rules/Range.md",
+              "fileName": "Range.md"
+            },
+            {
+              "id": "Special Attack",
+              "title": "Special Attack",
+              "path": "Equipment/Weapon Rules/Special Attack.md",
+              "fileName": "Special Attack.md"
+            },
+            {
+              "id": "Unarmed",
+              "title": "Unarmed",
+              "path": "Equipment/Weapon Rules/Unarmed.md",
+              "fileName": "Unarmed.md"
+            },
+            {
+              "id": "Weapon Group",
+              "title": "Weapon Group",
+              "path": "Equipment/Weapon Rules/Weapon Group.md",
+              "fileName": "Weapon Group.md"
+            },
+            {
+              "id": "Weapon Qualities",
+              "title": "Weapon Qualities",
+              "path": "Equipment/Weapon Rules/Weapon Qualities.md",
+              "fileName": "Weapon Qualities.md"
+            },
+            {
+              "id": "Weapon",
+              "title": "Weapon",
+              "path": "Equipment/Weapon Rules/Weapon.md",
+              "fileName": "Weapon.md"
+            },
+            {
+              "id": "Wide Range",
+              "title": "Wide Range",
+              "path": "Equipment/Weapon Rules/Wide Range.md",
+              "fileName": "Wide Range.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "id": "Equipment Slot",
+          "title": "Equipment Slot",
+          "path": "Equipment/Equipment Slot.md",
+          "fileName": "Equipment Slot.md"
+        }
+      ],
+      "expanded": false
+    },
+    {
+      "name": "Feats",
+      "children": [
+        {
+          "name": "Combat Feat",
+          "children": [
+            {
+              "name": "Fighting Style Feats",
+              "children": [
+                {
+                  "id": "Cerberus Style",
+                  "title": "Cerberus Style",
+                  "path": "Feats/Combat Feat/Fighting Style Feats/Cerberus Style.md",
+                  "fileName": "Cerberus Style.md"
+                },
+                {
+                  "id": "Demon Style",
+                  "title": "Demon Style",
+                  "path": "Feats/Combat Feat/Fighting Style Feats/Demon Style.md",
+                  "fileName": "Demon Style.md"
+                },
+                {
+                  "id": "Dragon Style",
+                  "title": "Dragon Style",
+                  "path": "Feats/Combat Feat/Fighting Style Feats/Dragon Style.md",
+                  "fileName": "Dragon Style.md"
+                },
+                {
+                  "id": "Fighting Style",
+                  "title": "Fighting Style",
+                  "path": "Feats/Combat Feat/Fighting Style Feats/Fighting Style.md",
+                  "fileName": "Fighting Style.md"
+                },
+                {
+                  "id": "Grabbing Style",
+                  "title": "Grabbing Style",
+                  "path": "Feats/Combat Feat/Fighting Style Feats/Grabbing Style.md",
+                  "fileName": "Grabbing Style.md"
+                },
+                {
+                  "id": "Monkey Style",
+                  "title": "Monkey Style",
+                  "path": "Feats/Combat Feat/Fighting Style Feats/Monkey Style.md",
+                  "fileName": "Monkey Style.md"
+                },
+                {
+                  "id": "Snake Style",
+                  "title": "Snake Style",
+                  "path": "Feats/Combat Feat/Fighting Style Feats/Snake Style.md",
+                  "fileName": "Snake Style.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "id": "Antagonize",
+              "title": "Antagonize",
+              "path": "Feats/Combat Feat/Antagonize.md",
+              "fileName": "Antagonize.md"
+            },
+            {
+              "id": "Back to the Wall",
+              "title": "Back to the Wall",
+              "path": "Feats/Combat Feat/Back to the Wall.md",
+              "fileName": "Back to the Wall.md"
+            },
+            {
+              "id": "Blind Fight",
+              "title": "Blind Fight",
+              "path": "Feats/Combat Feat/Blind Fight.md",
+              "fileName": "Blind Fight.md"
+            },
+            {
+              "id": "Bodyguard",
+              "title": "Bodyguard",
+              "path": "Feats/Combat Feat/Bodyguard.md",
+              "fileName": "Bodyguard.md"
+            },
+            {
+              "id": "Bonded Weapons",
+              "title": "Bonded Weapons",
+              "path": "Feats/Combat Feat/Bonded Weapons.md",
+              "fileName": "Bonded Weapons.md"
+            },
+            {
+              "id": "Clustered Blows",
+              "title": "Clustered Blows",
+              "path": "Feats/Combat Feat/Clustered Blows.md",
+              "fileName": "Clustered Blows.md"
+            },
+            {
+              "id": "Combat Reflexes",
+              "title": "Combat Reflexes",
+              "path": "Feats/Combat Feat/Combat Reflexes.md",
+              "fileName": "Combat Reflexes.md"
+            },
+            {
+              "id": "Dimensional Reflexes",
+              "title": "Dimensional Reflexes",
+              "path": "Feats/Combat Feat/Dimensional Reflexes.md",
+              "fileName": "Dimensional Reflexes.md"
+            },
+            {
+              "id": "Elemental Adept",
+              "title": "Elemental Adept",
+              "path": "Feats/Combat Feat/Elemental Adept.md",
+              "fileName": "Elemental Adept.md"
+            },
+            {
+              "id": "Endurance",
+              "title": "Endurance",
+              "path": "Feats/Combat Feat/Endurance.md",
+              "fileName": "Endurance.md"
+            },
+            {
+              "id": "Fan Club",
+              "title": "Fan Club",
+              "path": "Feats/Combat Feat/Fan Club.md",
+              "fileName": "Fan Club.md"
+            },
+            {
+              "id": "Fearsome Finisher",
+              "title": "Fearsome Finisher",
+              "path": "Feats/Combat Feat/Fearsome Finisher.md",
+              "fileName": "Fearsome Finisher.md"
+            },
+            {
+              "id": "Fleet Footwork",
+              "title": "Fleet Footwork",
+              "path": "Feats/Combat Feat/Fleet Footwork.md",
+              "fileName": "Fleet Footwork.md"
+            },
+            {
+              "id": "Ghost Buster",
+              "title": "Ghost Buster",
+              "path": "Feats/Combat Feat/Ghost Buster.md",
+              "fileName": "Ghost Buster.md"
+            },
+            {
+              "id": "Longshot",
+              "title": "Longshot",
+              "path": "Feats/Combat Feat/Longshot.md",
+              "fileName": "Longshot.md"
+            },
+            {
+              "id": "Maneuver Adept",
+              "title": "Maneuver Adept",
+              "path": "Feats/Combat Feat/Maneuver Adept.md",
+              "fileName": "Maneuver Adept.md"
+            },
+            {
+              "id": "Quickstep",
+              "title": "Quickstep",
+              "path": "Feats/Combat Feat/Quickstep.md",
+              "fileName": "Quickstep.md"
+            },
+            {
+              "id": "Spellbreaker",
+              "title": "Spellbreaker",
+              "path": "Feats/Combat Feat/Spellbreaker.md",
+              "fileName": "Spellbreaker.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Teamwork Feats",
+          "children": [
+            {
+              "id": "Escape Route",
+              "title": "Escape Route",
+              "path": "Feats/Teamwork Feats/Escape Route.md",
+              "fileName": "Escape Route.md"
+            },
+            {
+              "id": "Move As One",
+              "title": "Move As One",
+              "path": "Feats/Teamwork Feats/Move As One.md",
+              "fileName": "Move As One.md"
+            },
+            {
+              "id": "Pack Tactics",
+              "title": "Pack Tactics",
+              "path": "Feats/Teamwork Feats/Pack Tactics.md",
+              "fileName": "Pack Tactics.md"
+            },
+            {
+              "id": "Shield Brothers",
+              "title": "Shield Brothers",
+              "path": "Feats/Teamwork Feats/Shield Brothers.md",
+              "fileName": "Shield Brothers.md"
+            },
+            {
+              "id": "Tandem Charge",
+              "title": "Tandem Charge",
+              "path": "Feats/Teamwork Feats/Tandem Charge.md",
+              "fileName": "Tandem Charge.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "id": "Feat",
+          "title": "Feat",
+          "path": "Feats/Feat.md",
+          "fileName": "Feat.md"
+        },
+        {
+          "id": "Stat Feat",
+          "title": "Stat Feat",
+          "path": "Feats/Stat Feat.md",
+          "fileName": "Stat Feat.md"
+        },
+        {
+          "id": "Teamwork Feat",
+          "title": "Teamwork Feat",
+          "path": "Feats/Teamwork Feat.md",
+          "fileName": "Teamwork Feat.md"
+        }
+      ],
+      "expanded": false
+    },
+    {
+      "name": "Game Design Rambling",
+      "children": [
+        {
+          "id": "Difficulty and Integrity",
+          "title": "Difficulty and Integrity",
+          "path": "Game Design Rambling/Difficulty and Integrity.md",
+          "fileName": "Difficulty and Integrity.md"
+        },
+        {
+          "id": "Math and Worldbuilding",
+          "title": "Math and Worldbuilding",
+          "path": "Game Design Rambling/Math and Worldbuilding.md",
+          "fileName": "Math and Worldbuilding.md"
+        },
+        {
+          "id": "Random YouTube Comment",
+          "title": "Random YouTube Comment",
+          "path": "Game Design Rambling/Random YouTube Comment.md",
+          "fileName": "Random YouTube Comment.md"
+        }
+      ],
+      "expanded": false
+    },
+    {
+      "name": "Races",
+      "children": [
+        {
+          "name": "Elf Races",
+          "children": [
+            {
+              "name": "Ancestries",
+              "children": [
+                {
+                  "id": "Ero-Elf",
+                  "title": "Ero-Elf",
+                  "path": "Races/Elf Races/Ancestries/Ero-Elf.md",
+                  "fileName": "Ero-Elf.md"
+                },
+                {
+                  "id": "Moon Elf",
+                  "title": "Moon Elf",
+                  "path": "Races/Elf Races/Ancestries/Moon Elf.md",
+                  "fileName": "Moon Elf.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "id": "Elf",
+              "title": "Elf",
+              "path": "Races/Elf Races/Elf.md",
+              "fileName": "Elf.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Half-Link Races",
+          "children": [
+            {
+              "name": "Ancestries",
+              "children": [
+                {
+                  "id": "Bambuken",
+                  "title": "Bambuken",
+                  "path": "Races/Half-Link Races/Ancestries/Bambuken.md",
+                  "fileName": "Bambuken.md"
+                },
+                {
+                  "id": "Kitsune",
+                  "title": "Kitsune",
+                  "path": "Races/Half-Link Races/Ancestries/Kitsune.md",
+                  "fileName": "Kitsune.md"
+                },
+                {
+                  "id": "Usa",
+                  "title": "Usa",
+                  "path": "Races/Half-Link Races/Ancestries/Usa.md",
+                  "fileName": "Usa.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "id": "Half-Link",
+              "title": "Half-Link",
+              "path": "Races/Half-Link Races/Half-Link.md",
+              "fileName": "Half-Link.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "id": "Dwarf",
+          "title": "Dwarf",
+          "path": "Races/Dwarf.md",
+          "fileName": "Dwarf.md"
+        },
+        {
+          "id": "Human",
+          "title": "Human",
+          "path": "Races/Human.md",
+          "fileName": "Human.md"
+        },
+        {
+          "id": "Orc",
+          "title": "Orc",
+          "path": "Races/Orc.md",
+          "fileName": "Orc.md"
+        },
+        {
+          "id": "Race",
+          "title": "Race",
+          "path": "Races/Race.md",
+          "fileName": "Race.md"
+        }
+      ],
+      "expanded": false
+    },
+    {
+      "name": "Skills",
+      "children": [
+        {
+          "name": "Acrobatics",
+          "children": [
+            {
+              "id": "Acrobatics",
+              "title": "Acrobatics",
+              "path": "Skills/Acrobatics/Acrobatics.md",
+              "fileName": "Acrobatics.md",
+              "icon": "TiRun"
+            },
+            {
+              "id": "Balance",
+              "title": "Balance",
+              "path": "Skills/Acrobatics/Balance.md",
+              "fileName": "Balance.md"
+            },
+            {
+              "id": "Tumble",
+              "title": "Tumble",
+              "path": "Skills/Acrobatics/Tumble.md",
+              "fileName": "Tumble.md"
+            },
+            {
+              "id": "Wall Kick",
+              "title": "Wall Kick",
+              "path": "Skills/Acrobatics/Wall Kick.md",
+              "fileName": "Wall Kick.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Athletics",
+          "children": [
+            {
+              "id": "Aquatic Combat",
+              "title": "Aquatic Combat",
+              "path": "Skills/Athletics/Aquatic Combat.md",
+              "fileName": "Aquatic Combat.md"
+            },
+            {
+              "id": "Athletics",
+              "title": "Athletics",
+              "path": "Skills/Athletics/Athletics.md",
+              "fileName": "Athletics.md",
+              "icon": "BoBxSwim"
+            },
+            {
+              "id": "Brute Force",
+              "title": "Brute Force",
+              "path": "Skills/Athletics/Brute Force.md",
+              "fileName": "Brute Force.md"
+            },
+            {
+              "id": "Catch Fall",
+              "title": "Catch Fall",
+              "path": "Skills/Athletics/Catch Fall.md",
+              "fileName": "Catch Fall.md"
+            },
+            {
+              "id": "Climb",
+              "title": "Climb",
+              "path": "Skills/Athletics/Climb.md",
+              "fileName": "Climb.md"
+            },
+            {
+              "id": "Swim",
+              "title": "Swim",
+              "path": "Skills/Athletics/Swim.md",
+              "fileName": "Swim.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Deception",
+          "children": [
+            {
+              "id": "Create a Distraction",
+              "title": "Create a Distraction",
+              "path": "Skills/Deception/Create a Distraction.md",
+              "fileName": "Create a Distraction.md"
+            },
+            {
+              "id": "Deception",
+              "title": "Deception",
+              "path": "Skills/Deception/Deception.md",
+              "fileName": "Deception.md",
+              "icon": "TiMoustache"
+            },
+            {
+              "id": "Disguise",
+              "title": "Disguise",
+              "path": "Skills/Deception/Disguise.md",
+              "fileName": "Disguise.md"
+            },
+            {
+              "id": "Lie",
+              "title": "Lie",
+              "path": "Skills/Deception/Lie.md",
+              "fileName": "Lie.md"
+            },
+            {
+              "id": "Subtle Message",
+              "title": "Subtle Message",
+              "path": "Skills/Deception/Subtle Message.md",
+              "fileName": "Subtle Message.md"
+            },
+            {
+              "id": "Sucker Punch",
+              "title": "Sucker Punch",
+              "path": "Skills/Deception/Sucker Punch.md",
+              "fileName": "Sucker Punch.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Hands",
+          "children": [
+            {
+              "id": "Conceal Item",
+              "title": "Conceal Item",
+              "path": "Skills/Hands/Conceal Item.md",
+              "fileName": "Conceal Item.md"
+            },
+            {
+              "id": "Disable Device",
+              "title": "Disable Device",
+              "path": "Skills/Hands/Disable Device.md",
+              "fileName": "Disable Device.md"
+            },
+            {
+              "id": "Hands",
+              "title": "Hands",
+              "path": "Skills/Hands/Hands.md",
+              "fileName": "Hands.md",
+              "icon": "FasHands"
+            },
+            {
+              "id": "Pick Lock",
+              "title": "Pick Lock",
+              "path": "Skills/Hands/Pick Lock.md",
+              "fileName": "Pick Lock.md"
+            },
+            {
+              "id": "Pickpocket",
+              "title": "Pickpocket",
+              "path": "Skills/Hands/Pickpocket.md",
+              "fileName": "Pickpocket.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Insight",
+          "children": [
+            {
+              "id": "Detect Compulsion",
+              "title": "Detect Compulsion",
+              "path": "Skills/Insight/Detect Compulsion.md",
+              "fileName": "Detect Compulsion.md"
+            },
+            {
+              "id": "Detect Dishonesty",
+              "title": "Detect Dishonesty",
+              "path": "Skills/Insight/Detect Dishonesty.md",
+              "fileName": "Detect Dishonesty.md"
+            },
+            {
+              "id": "Insight",
+              "title": "Insight",
+              "path": "Skills/Insight/Insight.md",
+              "fileName": "Insight.md",
+              "icon": "TiUserQuestion"
+            },
+            {
+              "id": "Intuition",
+              "title": "Intuition",
+              "path": "Skills/Insight/Intuition.md",
+              "fileName": "Intuition.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Intimidation",
+          "children": [
+            {
+              "id": "Coercion",
+              "title": "Coercion",
+              "path": "Skills/Intimidation/Coercion.md",
+              "fileName": "Coercion.md"
+            },
+            {
+              "id": "Demoralize",
+              "title": "Demoralize",
+              "path": "Skills/Intimidation/Demoralize.md",
+              "fileName": "Demoralize.md"
+            },
+            {
+              "id": "Intimidation",
+              "title": "Intimidation",
+              "path": "Skills/Intimidation/Intimidation.md",
+              "fileName": "Intimidation.md",
+              "icon": "RiGhost2Line"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Invocation",
+          "children": [
+            {
+              "id": "Invocation",
+              "title": "Invocation",
+              "path": "Skills/Invocation/Invocation.md",
+              "fileName": "Invocation.md",
+              "icon": "TiPentagram"
+            },
+            {
+              "id": "Ritual",
+              "title": "Ritual",
+              "path": "Skills/Invocation/Ritual.md",
+              "fileName": "Ritual.md"
+            },
+            {
+              "id": "Trigger Magic Device",
+              "title": "Trigger Magic Device",
+              "path": "Skills/Invocation/Trigger Magic Device.md",
+              "fileName": "Trigger Magic Device.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Knowledge",
+          "children": [
+            {
+              "name": "Alchemy",
+              "children": [
+                {
+                  "id": "Alchemy",
+                  "title": "Alchemy",
+                  "path": "Skills/Knowledge/Alchemy/Alchemy.md",
+                  "fileName": "Alchemy.md",
+                  "icon": "LiBookOpenText"
+                },
+                {
+                  "id": "Identify Composition",
+                  "title": "Identify Composition",
+                  "path": "Skills/Knowledge/Alchemy/Identify Composition.md",
+                  "fileName": "Identify Composition.md"
+                },
+                {
+                  "id": "Identify Potion",
+                  "title": "Identify Potion",
+                  "path": "Skills/Knowledge/Alchemy/Identify Potion.md",
+                  "fileName": "Identify Potion.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Arcana",
+              "children": [
+                {
+                  "id": "Arcana",
+                  "title": "Arcana",
+                  "path": "Skills/Knowledge/Arcana/Arcana.md",
+                  "fileName": "Arcana.md",
+                  "icon": "LiBookOpenText"
+                },
+                {
+                  "id": "Identify Magic Item",
+                  "title": "Identify Magic Item",
+                  "path": "Skills/Knowledge/Arcana/Identify Magic Item.md",
+                  "fileName": "Identify Magic Item.md"
+                },
+                {
+                  "id": "Identify Spell",
+                  "title": "Identify Spell",
+                  "path": "Skills/Knowledge/Arcana/Identify Spell.md",
+                  "fileName": "Identify Spell.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Astronomy",
+              "children": [
+                {
+                  "id": "Astronomy",
+                  "title": "Astronomy",
+                  "path": "Skills/Knowledge/Astronomy/Astronomy.md",
+                  "fileName": "Astronomy.md",
+                  "icon": "LiBookOpenText"
+                },
+                {
+                  "id": "Identify Cosmic Phenomenon",
+                  "title": "Identify Cosmic Phenomenon",
+                  "path": "Skills/Knowledge/Astronomy/Identify Cosmic Phenomenon.md",
+                  "fileName": "Identify Cosmic Phenomenon.md"
+                },
+                {
+                  "id": "Navigation",
+                  "title": "Navigation",
+                  "path": "Skills/Knowledge/Astronomy/Navigation.md",
+                  "fileName": "Navigation.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Engineering",
+              "children": [
+                {
+                  "id": "Engineering",
+                  "title": "Engineering",
+                  "path": "Skills/Knowledge/Engineering/Engineering.md",
+                  "fileName": "Engineering.md",
+                  "icon": "LiBookOpenText"
+                },
+                {
+                  "id": "Hack",
+                  "title": "Hack",
+                  "path": "Skills/Knowledge/Engineering/Hack.md",
+                  "fileName": "Hack.md"
+                },
+                {
+                  "id": "Identify Function",
+                  "title": "Identify Function",
+                  "path": "Skills/Knowledge/Engineering/Identify Function.md",
+                  "fileName": "Identify Function.md"
+                },
+                {
+                  "id": "Identify Structural Quirk",
+                  "title": "Identify Structural Quirk",
+                  "path": "Skills/Knowledge/Engineering/Identify Structural Quirk.md",
+                  "fileName": "Identify Structural Quirk.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Humanities",
+              "children": [
+                {
+                  "id": "Humanities",
+                  "title": "Humanities",
+                  "path": "Skills/Knowledge/Humanities/Humanities.md",
+                  "fileName": "Humanities.md",
+                  "icon": "LiBookOpenText"
+                },
+                {
+                  "id": "Recall Customs",
+                  "title": "Recall Customs",
+                  "path": "Skills/Knowledge/Humanities/Recall Customs.md",
+                  "fileName": "Recall Customs.md"
+                },
+                {
+                  "id": "Recall Locale",
+                  "title": "Recall Locale",
+                  "path": "Skills/Knowledge/Humanities/Recall Locale.md",
+                  "fileName": "Recall Locale.md"
+                },
+                {
+                  "id": "Recognize Figure",
+                  "title": "Recognize Figure",
+                  "path": "Skills/Knowledge/Humanities/Recognize Figure.md",
+                  "fileName": "Recognize Figure.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Nature",
+              "children": [
+                {
+                  "id": "Identify Natural Phenomenon",
+                  "title": "Identify Natural Phenomenon",
+                  "path": "Skills/Knowledge/Nature/Identify Natural Phenomenon.md",
+                  "fileName": "Identify Natural Phenomenon.md"
+                },
+                {
+                  "id": "Nature",
+                  "title": "Nature",
+                  "path": "Skills/Knowledge/Nature/Nature.md",
+                  "fileName": "Nature.md",
+                  "icon": "LiBookOpenText"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Planes",
+              "children": [
+                {
+                  "id": "Detect Portal",
+                  "title": "Detect Portal",
+                  "path": "Skills/Knowledge/Planes/Detect Portal.md",
+                  "fileName": "Detect Portal.md"
+                },
+                {
+                  "id": "Planes",
+                  "title": "Planes",
+                  "path": "Skills/Knowledge/Planes/Planes.md",
+                  "fileName": "Planes.md",
+                  "icon": "LiBookOpenText"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Religion",
+              "children": [
+                {
+                  "id": "Divine Lore",
+                  "title": "Divine Lore",
+                  "path": "Skills/Knowledge/Religion/Divine Lore.md",
+                  "fileName": "Divine Lore.md"
+                },
+                {
+                  "id": "Religion",
+                  "title": "Religion",
+                  "path": "Skills/Knowledge/Religion/Religion.md",
+                  "fileName": "Religion.md",
+                  "icon": "LiBookOpenText"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "id": "History",
+              "title": "History",
+              "path": "Skills/Knowledge/History.md",
+              "fileName": "History.md"
+            },
+            {
+              "id": "Knowledge",
+              "title": "Knowledge",
+              "path": "Skills/Knowledge/Knowledge.md",
+              "fileName": "Knowledge.md",
+              "icon": "LiBookOpenText"
+            },
+            {
+              "id": "Monster Lore",
+              "title": "Monster Lore",
+              "path": "Skills/Knowledge/Monster Lore.md",
+              "fileName": "Monster Lore.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Linguistics",
+          "children": [
+            {
+              "id": "Encode or Decode Documents",
+              "title": "Encode or Decode Documents",
+              "path": "Skills/Linguistics/Encode or Decode Documents.md",
+              "fileName": "Encode or Decode Documents.md"
+            },
+            {
+              "id": "Interpret Text",
+              "title": "Interpret Text",
+              "path": "Skills/Linguistics/Interpret Text.md",
+              "fileName": "Interpret Text.md"
+            },
+            {
+              "id": "Language",
+              "title": "Language",
+              "path": "Skills/Linguistics/Language.md",
+              "fileName": "Language.md"
+            },
+            {
+              "id": "Linguistics",
+              "title": "Linguistics",
+              "path": "Skills/Linguistics/Linguistics.md",
+              "fileName": "Linguistics.md",
+              "icon": "RiPenNibLine"
+            },
+            {
+              "id": "Write or Forge Documents",
+              "title": "Write or Forge Documents",
+              "path": "Skills/Linguistics/Write or Forge Documents.md",
+              "fileName": "Write or Forge Documents.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Medicine",
+          "children": [
+            {
+              "id": "Assess Vitality",
+              "title": "Assess Vitality",
+              "path": "Skills/Medicine/Assess Vitality.md",
+              "fileName": "Assess Vitality.md"
+            },
+            {
+              "id": "Identify Affliction or Curse",
+              "title": "Identify Affliction or Curse",
+              "path": "Skills/Medicine/Identify Affliction or Curse.md",
+              "fileName": "Identify Affliction or Curse.md"
+            },
+            {
+              "id": "Long Term Care",
+              "title": "Long Term Care",
+              "path": "Skills/Medicine/Long Term Care.md",
+              "fileName": "Long Term Care.md"
+            },
+            {
+              "id": "Medicine",
+              "title": "Medicine",
+              "path": "Skills/Medicine/Medicine.md",
+              "fileName": "Medicine.md",
+              "icon": "RiMedicineBottleLine"
+            },
+            {
+              "id": "Prevent Recovery",
+              "title": "Prevent Recovery",
+              "path": "Skills/Medicine/Prevent Recovery.md",
+              "fileName": "Prevent Recovery.md"
+            },
+            {
+              "id": "Provide First Aid",
+              "title": "Provide First Aid",
+              "path": "Skills/Medicine/Provide First Aid.md",
+              "fileName": "Provide First Aid.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Perception",
+          "children": [
+            {
+              "id": "Detect",
+              "title": "Detect",
+              "path": "Skills/Perception/Detect.md",
+              "fileName": "Detect.md"
+            },
+            {
+              "id": "Perception",
+              "title": "Perception",
+              "path": "Skills/Perception/Perception.md",
+              "fileName": "Perception.md",
+              "icon": "LiEye"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Perform",
+          "children": [
+            {
+              "id": "Perform",
+              "title": "Perform",
+              "path": "Skills/Perform/Perform.md",
+              "fileName": "Perform.md",
+              "icon": "LiMusic2"
+            },
+            {
+              "id": "Performance",
+              "title": "Performance",
+              "path": "Skills/Perform/Performance.md",
+              "fileName": "Performance.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Persuasion",
+          "children": [
+            {
+              "id": "Coax",
+              "title": "Coax",
+              "path": "Skills/Persuasion/Coax.md",
+              "fileName": "Coax.md"
+            },
+            {
+              "id": "Example DCs",
+              "title": "Example DCs",
+              "path": "Skills/Persuasion/Example DCs.md",
+              "fileName": "Example DCs.md"
+            },
+            {
+              "id": "Gather Information",
+              "title": "Gather Information",
+              "path": "Skills/Persuasion/Gather Information.md",
+              "fileName": "Gather Information.md"
+            },
+            {
+              "id": "Persuasion",
+              "title": "Persuasion",
+              "path": "Skills/Persuasion/Persuasion.md",
+              "fileName": "Persuasion.md",
+              "icon": "IbMessageBubble"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Profession",
+          "children": [
+            {
+              "name": "Specific Professions",
+              "children": [
+                {
+                  "id": "Cooking",
+                  "title": "Cooking",
+                  "path": "Skills/Profession/Specific Professions/Cooking.md",
+                  "fileName": "Cooking.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "id": "Profession",
+              "title": "Profession",
+              "path": "Skills/Profession/Profession.md",
+              "fileName": "Profession.md",
+              "icon": "TiShovelPitchforks"
+            },
+            {
+              "id": "Quiz",
+              "title": "Quiz",
+              "path": "Skills/Profession/Quiz.md",
+              "fileName": "Quiz.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Stealth",
+          "children": [
+            {
+              "id": "Hide Trail",
+              "title": "Hide Trail",
+              "path": "Skills/Stealth/Hide Trail.md",
+              "fileName": "Hide Trail.md"
+            },
+            {
+              "id": "Hide",
+              "title": "Hide",
+              "path": "Skills/Stealth/Hide.md",
+              "fileName": "Hide.md"
+            },
+            {
+              "id": "Stealth",
+              "title": "Stealth",
+              "path": "Skills/Stealth/Stealth.md",
+              "fileName": "Stealth.md",
+              "icon": "RaHood"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Survival",
+          "children": [
+            {
+              "id": "Butcher",
+              "title": "Butcher",
+              "path": "Skills/Survival/Butcher.md",
+              "fileName": "Butcher.md"
+            },
+            {
+              "id": "Forage",
+              "title": "Forage",
+              "path": "Skills/Survival/Forage.md",
+              "fileName": "Forage.md"
+            },
+            {
+              "id": "Navigate",
+              "title": "Navigate",
+              "path": "Skills/Survival/Navigate.md",
+              "fileName": "Navigate.md"
+            },
+            {
+              "id": "Survival",
+              "title": "Survival",
+              "path": "Skills/Survival/Survival.md",
+              "fileName": "Survival.md",
+              "icon": "LiPawPrint"
+            },
+            {
+              "id": "Track",
+              "title": "Track",
+              "path": "Skills/Survival/Track.md",
+              "fileName": "Track.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "id": "Group Checks",
+          "title": "Group Checks",
+          "path": "Skills/Group Checks.md",
+          "fileName": "Group Checks.md"
+        },
+        {
+          "id": "Proficiency",
+          "title": "Proficiency",
+          "path": "Skills/Proficiency.md",
+          "fileName": "Proficiency.md"
+        },
+        {
+          "id": "Skill",
+          "title": "Skill",
+          "path": "Skills/Skill.md",
+          "fileName": "Skill.md"
+        },
+        {
+          "id": "Take 10",
+          "title": "Take 10",
+          "path": "Skills/Take 10.md",
+          "fileName": "Take 10.md"
+        },
+        {
+          "id": "Take 30",
+          "title": "Take 30",
+          "path": "Skills/Take 30.md",
+          "fileName": "Take 30.md"
+        },
+        {
+          "id": "Tie",
+          "title": "Tie",
+          "path": "Skills/Tie.md",
+          "fileName": "Tie.md"
+        }
+      ],
+      "expanded": false
+    },
+    {
+      "name": "Techniques",
+      "children": [
+        {
+          "name": "Bestial",
+          "children": [
+            {
+              "id": "Bestial",
+              "title": "Bestial",
+              "path": "Techniques/Bestial/Bestial.md",
+              "fileName": "Bestial.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Class and Weapon Abilities",
+          "children": [
+            {
+              "name": "Fighter",
+              "children": [
+                {
+                  "id": "Hyper Body",
+                  "title": "Hyper Body",
+                  "path": "Techniques/Class and Weapon Abilities/Fighter/Hyper Body.md",
+                  "fileName": "Hyper Body.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Healer",
+              "children": [
+                {
+                  "id": "Blessing of Restoration",
+                  "title": "Blessing of Restoration",
+                  "path": "Techniques/Class and Weapon Abilities/Healer/Blessing of Restoration.md",
+                  "fileName": "Blessing of Restoration.md"
+                },
+                {
+                  "id": "Channel Energy",
+                  "title": "Channel Energy",
+                  "path": "Techniques/Class and Weapon Abilities/Healer/Channel Energy.md",
+                  "fileName": "Channel Energy.md"
+                },
+                {
+                  "id": "Focus Dispel",
+                  "title": "Focus Dispel",
+                  "path": "Techniques/Class and Weapon Abilities/Healer/Focus Dispel.md",
+                  "fileName": "Focus Dispel.md"
+                },
+                {
+                  "id": "Healing Touch",
+                  "title": "Healing Touch",
+                  "path": "Techniques/Class and Weapon Abilities/Healer/Healing Touch.md",
+                  "fileName": "Healing Touch.md"
+                },
+                {
+                  "id": "Holy Arrow",
+                  "title": "Holy Arrow",
+                  "path": "Techniques/Class and Weapon Abilities/Healer/Holy Arrow.md",
+                  "fileName": "Holy Arrow.md"
+                },
+                {
+                  "id": "Hug",
+                  "title": "Hug",
+                  "path": "Techniques/Class and Weapon Abilities/Healer/Hug.md",
+                  "fileName": "Hug.md"
+                },
+                {
+                  "id": "Mystic Door",
+                  "title": "Mystic Door",
+                  "path": "Techniques/Class and Weapon Abilities/Healer/Mystic Door.md",
+                  "fileName": "Mystic Door.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Martial Abilities",
+              "children": [
+                {
+                  "id": "Endure",
+                  "title": "Endure",
+                  "path": "Techniques/Class and Weapon Abilities/Martial Abilities/Endure.md",
+                  "fileName": "Endure.md"
+                },
+                {
+                  "id": "Fury",
+                  "title": "Fury",
+                  "path": "Techniques/Class and Weapon Abilities/Martial Abilities/Fury.md",
+                  "fileName": "Fury.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Rogue",
+              "children": [
+                {
+                  "id": "Dark Sight",
+                  "title": "Dark Sight",
+                  "path": "Techniques/Class and Weapon Abilities/Rogue/Dark Sight.md",
+                  "fileName": "Dark Sight.md"
+                },
+                {
+                  "id": "Haste",
+                  "title": "Haste",
+                  "path": "Techniques/Class and Weapon Abilities/Rogue/Haste.md",
+                  "fileName": "Haste.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Weapon Abilities",
+              "children": [
+                {
+                  "name": "Common",
+                  "children": [
+                    {
+                      "id": "Cleave",
+                      "title": "Cleave",
+                      "path": "Techniques/Class and Weapon Abilities/Weapon Abilities/Common/Cleave.md",
+                      "fileName": "Cleave.md"
+                    },
+                    {
+                      "id": "Great Cleave",
+                      "title": "Great Cleave",
+                      "path": "Techniques/Class and Weapon Abilities/Weapon Abilities/Common/Great Cleave.md",
+                      "fileName": "Great Cleave.md"
+                    },
+                    {
+                      "id": "Skewer",
+                      "title": "Skewer",
+                      "path": "Techniques/Class and Weapon Abilities/Weapon Abilities/Common/Skewer.md",
+                      "fileName": "Skewer.md"
+                    }
+                  ],
+                  "expanded": false
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "id": "Class and Weapon Abilities",
+              "title": "Class and Weapon Abilities",
+              "path": "Techniques/Class and Weapon Abilities/Class and Weapon Abilities.md",
+              "fileName": "Class and Weapon Abilities.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Hybrid Techniques",
+          "children": [
+            {
+              "name": "Blood Art",
+              "children": [
+                {
+                  "name": "Blood Art 1",
+                  "children": [
+                    {
+                      "id": "Blood Bath",
+                      "title": "Blood Bath",
+                      "path": "Techniques/Hybrid Techniques/Blood Art/Blood Art 1/Blood Bath.md",
+                      "fileName": "Blood Bath.md"
+                    },
+                    {
+                      "id": "Blood Rush",
+                      "title": "Blood Rush",
+                      "path": "Techniques/Hybrid Techniques/Blood Art/Blood Art 1/Blood Rush.md",
+                      "fileName": "Blood Rush.md"
+                    },
+                    {
+                      "id": "Pyrrhic Might",
+                      "title": "Pyrrhic Might",
+                      "path": "Techniques/Hybrid Techniques/Blood Art/Blood Art 1/Pyrrhic Might.md",
+                      "fileName": "Pyrrhic Might.md"
+                    },
+                    {
+                      "id": "Soul Blade",
+                      "title": "Soul Blade",
+                      "path": "Techniques/Hybrid Techniques/Blood Art/Blood Art 1/Soul Blade.md",
+                      "fileName": "Soul Blade.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Blood Art 2",
+                  "children": [
+                    {
+                      "id": "Bloodline Mimicry",
+                      "title": "Bloodline Mimicry",
+                      "path": "Techniques/Hybrid Techniques/Blood Art/Blood Art 2/Bloodline Mimicry.md",
+                      "fileName": "Bloodline Mimicry.md"
+                    },
+                    {
+                      "id": "Gemarteld",
+                      "title": "Gemarteld",
+                      "path": "Techniques/Hybrid Techniques/Blood Art/Blood Art 2/Gemarteld.md",
+                      "fileName": "Gemarteld.md"
+                    },
+                    {
+                      "id": "Sanguivory",
+                      "title": "Sanguivory",
+                      "path": "Techniques/Hybrid Techniques/Blood Art/Blood Art 2/Sanguivory.md",
+                      "fileName": "Sanguivory.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Blood Art 3",
+                  "children": [
+                    {
+                      "id": "Blood Armor",
+                      "title": "Blood Armor",
+                      "path": "Techniques/Hybrid Techniques/Blood Art/Blood Art 3/Blood Armor.md",
+                      "fileName": "Blood Armor.md"
+                    },
+                    {
+                      "id": "Blood Blitz",
+                      "title": "Blood Blitz",
+                      "path": "Techniques/Hybrid Techniques/Blood Art/Blood Art 3/Blood Blitz.md",
+                      "fileName": "Blood Blitz.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Blood Art 4",
+                  "children": [
+                    {
+                      "id": "Death's Dance",
+                      "title": "Death's Dance",
+                      "path": "Techniques/Hybrid Techniques/Blood Art/Blood Art 4/Death's Dance.md",
+                      "fileName": "Death's Dance.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Blood Art 5",
+                  "children": [
+                    {
+                      "id": "Blood Barrage",
+                      "title": "Blood Barrage",
+                      "path": "Techniques/Hybrid Techniques/Blood Art/Blood Art 5/Blood Barrage.md",
+                      "fileName": "Blood Barrage.md"
+                    },
+                    {
+                      "id": "Soul Split",
+                      "title": "Soul Split",
+                      "path": "Techniques/Hybrid Techniques/Blood Art/Blood Art 5/Soul Split.md",
+                      "fileName": "Soul Split.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "id": "Blood Art",
+                  "title": "Blood Art",
+                  "path": "Techniques/Hybrid Techniques/Blood Art/Blood Art.md",
+                  "fileName": "Blood Art.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "id": "Hybrid Techniques",
+              "title": "Hybrid Techniques",
+              "path": "Techniques/Hybrid Techniques/Hybrid Techniques.md",
+              "fileName": "Hybrid Techniques.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Martial Techniques",
+          "children": [
+            {
+              "name": "Deceit",
+              "children": [
+                {
+                  "name": "Deceit 1",
+                  "children": [
+                    {
+                      "id": "Blindspot",
+                      "title": "Blindspot",
+                      "path": "Techniques/Martial Techniques/Deceit/Deceit 1/Blindspot.md",
+                      "fileName": "Blindspot.md"
+                    },
+                    {
+                      "id": "Dodge Roll",
+                      "title": "Dodge Roll",
+                      "path": "Techniques/Martial Techniques/Deceit/Deceit 1/Dodge Roll.md",
+                      "fileName": "Dodge Roll.md"
+                    },
+                    {
+                      "id": "Finisher",
+                      "title": "Finisher",
+                      "path": "Techniques/Martial Techniques/Deceit/Deceit 1/Finisher.md",
+                      "fileName": "Finisher.md"
+                    },
+                    {
+                      "id": "Heartseeker",
+                      "title": "Heartseeker",
+                      "path": "Techniques/Martial Techniques/Deceit/Deceit 1/Heartseeker.md",
+                      "fileName": "Heartseeker.md"
+                    },
+                    {
+                      "id": "Kidnap",
+                      "title": "Kidnap",
+                      "path": "Techniques/Martial Techniques/Deceit/Deceit 1/Kidnap.md",
+                      "fileName": "Kidnap.md"
+                    },
+                    {
+                      "id": "Pocket Sand",
+                      "title": "Pocket Sand",
+                      "path": "Techniques/Martial Techniques/Deceit/Deceit 1/Pocket Sand.md",
+                      "fileName": "Pocket Sand.md"
+                    },
+                    {
+                      "id": "Single Out",
+                      "title": "Single Out",
+                      "path": "Techniques/Martial Techniques/Deceit/Deceit 1/Single Out.md",
+                      "fileName": "Single Out.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "id": "Deceit",
+                  "title": "Deceit",
+                  "path": "Techniques/Martial Techniques/Deceit/Deceit.md",
+                  "fileName": "Deceit.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Marksmanship",
+              "children": [
+                {
+                  "name": "Marksmanship 1",
+                  "children": [
+                    {
+                      "id": "Arrow Splitter",
+                      "title": "Arrow Splitter",
+                      "path": "Techniques/Martial Techniques/Marksmanship/Marksmanship 1/Arrow Splitter.md",
+                      "fileName": "Arrow Splitter.md"
+                    },
+                    {
+                      "id": "Curved Shot",
+                      "title": "Curved Shot",
+                      "path": "Techniques/Martial Techniques/Marksmanship/Marksmanship 1/Curved Shot.md",
+                      "fileName": "Curved Shot.md"
+                    },
+                    {
+                      "id": "Disarming Shot",
+                      "title": "Disarming Shot",
+                      "path": "Techniques/Martial Techniques/Marksmanship/Marksmanship 1/Disarming Shot.md",
+                      "fileName": "Disarming Shot.md"
+                    },
+                    {
+                      "id": "Dive",
+                      "title": "Dive",
+                      "path": "Techniques/Martial Techniques/Marksmanship/Marksmanship 1/Dive.md",
+                      "fileName": "Dive.md"
+                    },
+                    {
+                      "id": "Eye of the Amazon",
+                      "title": "Eye of the Amazon",
+                      "path": "Techniques/Martial Techniques/Marksmanship/Marksmanship 1/Eye of the Amazon.md",
+                      "fileName": "Eye of the Amazon.md"
+                    },
+                    {
+                      "id": "Final Attack",
+                      "title": "Final Attack",
+                      "path": "Techniques/Martial Techniques/Marksmanship/Marksmanship 1/Final Attack.md",
+                      "fileName": "Final Attack.md"
+                    },
+                    {
+                      "id": "Focus Shot",
+                      "title": "Focus Shot",
+                      "path": "Techniques/Martial Techniques/Marksmanship/Marksmanship 1/Focus Shot.md",
+                      "fileName": "Focus Shot.md"
+                    },
+                    {
+                      "id": "Pinning Shot",
+                      "title": "Pinning Shot",
+                      "path": "Techniques/Martial Techniques/Marksmanship/Marksmanship 1/Pinning Shot.md",
+                      "fileName": "Pinning Shot.md"
+                    },
+                    {
+                      "id": "Ranger Whack",
+                      "title": "Ranger Whack",
+                      "path": "Techniques/Martial Techniques/Marksmanship/Marksmanship 1/Ranger Whack.md",
+                      "fileName": "Ranger Whack.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Marksmanship 2",
+                  "children": [
+                    {
+                      "id": "Distant Shot",
+                      "title": "Distant Shot",
+                      "path": "Techniques/Martial Techniques/Marksmanship/Marksmanship 2/Distant Shot.md",
+                      "fileName": "Distant Shot.md"
+                    },
+                    {
+                      "id": "Double Shot",
+                      "title": "Double Shot",
+                      "path": "Techniques/Martial Techniques/Marksmanship/Marksmanship 2/Double Shot.md",
+                      "fileName": "Double Shot.md"
+                    },
+                    {
+                      "id": "Eagle Eye",
+                      "title": "Eagle Eye",
+                      "path": "Techniques/Martial Techniques/Marksmanship/Marksmanship 2/Eagle Eye.md",
+                      "fileName": "Eagle Eye.md"
+                    },
+                    {
+                      "id": "Hailbreaker",
+                      "title": "Hailbreaker",
+                      "path": "Techniques/Martial Techniques/Marksmanship/Marksmanship 2/Hailbreaker.md",
+                      "fileName": "Hailbreaker.md"
+                    },
+                    {
+                      "id": "Inferno Quiver",
+                      "title": "Inferno Quiver",
+                      "path": "Techniques/Martial Techniques/Marksmanship/Marksmanship 2/Inferno Quiver.md",
+                      "fileName": "Inferno Quiver.md"
+                    },
+                    {
+                      "id": "Piercing Shot",
+                      "title": "Piercing Shot",
+                      "path": "Techniques/Martial Techniques/Marksmanship/Marksmanship 2/Piercing Shot.md",
+                      "fileName": "Piercing Shot.md"
+                    },
+                    {
+                      "id": "Slaying Shot",
+                      "title": "Slaying Shot",
+                      "path": "Techniques/Martial Techniques/Marksmanship/Marksmanship 2/Slaying Shot.md",
+                      "fileName": "Slaying Shot.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Marksmanship 3",
+                  "children": [
+                    {
+                      "id": "Arrow Rain",
+                      "title": "Arrow Rain",
+                      "path": "Techniques/Martial Techniques/Marksmanship/Marksmanship 3/Arrow Rain.md",
+                      "fileName": "Arrow Rain.md"
+                    },
+                    {
+                      "id": "Hamstring Shot",
+                      "title": "Hamstring Shot",
+                      "path": "Techniques/Martial Techniques/Marksmanship/Marksmanship 3/Hamstring Shot.md",
+                      "fileName": "Hamstring Shot.md"
+                    },
+                    {
+                      "id": "Slide",
+                      "title": "Slide",
+                      "path": "Techniques/Martial Techniques/Marksmanship/Marksmanship 3/Slide.md",
+                      "fileName": "Slide.md"
+                    },
+                    {
+                      "id": "Straw Puppet Milicien",
+                      "title": "Straw Puppet Milicien",
+                      "path": "Techniques/Martial Techniques/Marksmanship/Marksmanship 3/Straw Puppet Milicien.md",
+                      "fileName": "Straw Puppet Milicien.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Marksmanship 4",
+                  "children": [
+                    {
+                      "id": "Fire Back",
+                      "title": "Fire Back",
+                      "path": "Techniques/Martial Techniques/Marksmanship/Marksmanship 4/Fire Back.md",
+                      "fileName": "Fire Back.md"
+                    },
+                    {
+                      "id": "Named Bullet",
+                      "title": "Named Bullet",
+                      "path": "Techniques/Martial Techniques/Marksmanship/Marksmanship 4/Named Bullet.md",
+                      "fileName": "Named Bullet.md"
+                    },
+                    {
+                      "id": "Silver Hawk",
+                      "title": "Silver Hawk",
+                      "path": "Techniques/Martial Techniques/Marksmanship/Marksmanship 4/Silver Hawk.md",
+                      "fileName": "Silver Hawk.md"
+                    },
+                    {
+                      "id": "Strafe",
+                      "title": "Strafe",
+                      "path": "Techniques/Martial Techniques/Marksmanship/Marksmanship 4/Strafe.md",
+                      "fileName": "Strafe.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Marksmanship 5",
+                  "children": [
+                    {
+                      "id": "Snipe",
+                      "title": "Snipe",
+                      "path": "Techniques/Martial Techniques/Marksmanship/Marksmanship 5/Snipe.md",
+                      "fileName": "Snipe.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "id": "Marksmanship",
+                  "title": "Marksmanship",
+                  "path": "Techniques/Martial Techniques/Marksmanship/Marksmanship.md",
+                  "fileName": "Marksmanship.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Martial Arts",
+              "children": [
+                {
+                  "name": "Martial Arts 1",
+                  "children": [
+                    {
+                      "id": "Clothesline",
+                      "title": "Clothesline",
+                      "path": "Techniques/Martial Techniques/Martial Arts/Martial Arts 1/Clothesline.md",
+                      "fileName": "Clothesline.md"
+                    },
+                    {
+                      "id": "Defensive Spin",
+                      "title": "Defensive Spin",
+                      "path": "Techniques/Martial Techniques/Martial Arts/Martial Arts 1/Defensive Spin.md",
+                      "fileName": "Defensive Spin.md"
+                    },
+                    {
+                      "id": "Focus Punch",
+                      "title": "Focus Punch",
+                      "path": "Techniques/Martial Techniques/Martial Arts/Martial Arts 1/Focus Punch.md",
+                      "fileName": "Focus Punch.md"
+                    },
+                    {
+                      "id": "Foot Stomp",
+                      "title": "Foot Stomp",
+                      "path": "Techniques/Martial Techniques/Martial Arts/Martial Arts 1/Foot Stomp.md",
+                      "fileName": "Foot Stomp.md"
+                    },
+                    {
+                      "id": "Night Punch",
+                      "title": "Night Punch",
+                      "path": "Techniques/Martial Techniques/Martial Arts/Martial Arts 1/Night Punch.md",
+                      "fileName": "Night Punch.md"
+                    },
+                    {
+                      "id": "Sky Uppercut",
+                      "title": "Sky Uppercut",
+                      "path": "Techniques/Martial Techniques/Martial Arts/Martial Arts 1/Sky Uppercut.md",
+                      "fileName": "Sky Uppercut.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Martial Arts 2",
+                  "children": [
+                    {
+                      "id": "Body Slam",
+                      "title": "Body Slam",
+                      "path": "Techniques/Martial Techniques/Martial Arts/Martial Arts 2/Body Slam.md",
+                      "fileName": "Body Slam.md"
+                    },
+                    {
+                      "id": "Catch Blade",
+                      "title": "Catch Blade",
+                      "path": "Techniques/Martial Techniques/Martial Arts/Martial Arts 2/Catch Blade.md",
+                      "fileName": "Catch Blade.md"
+                    },
+                    {
+                      "id": "Chi Block",
+                      "title": "Chi Block",
+                      "path": "Techniques/Martial Techniques/Martial Arts/Martial Arts 2/Chi Block.md",
+                      "fileName": "Chi Block.md"
+                    },
+                    {
+                      "id": "Chokehold",
+                      "title": "Chokehold",
+                      "path": "Techniques/Martial Techniques/Martial Arts/Martial Arts 2/Chokehold.md",
+                      "fileName": "Chokehold.md"
+                    },
+                    {
+                      "id": "Dropkick",
+                      "title": "Dropkick",
+                      "path": "Techniques/Martial Techniques/Martial Arts/Martial Arts 2/Dropkick.md",
+                      "fileName": "Dropkick.md"
+                    },
+                    {
+                      "id": "Flash Kick",
+                      "title": "Flash Kick",
+                      "path": "Techniques/Martial Techniques/Martial Arts/Martial Arts 2/Flash Kick.md",
+                      "fileName": "Flash Kick.md"
+                    },
+                    {
+                      "id": "Low Sweep",
+                      "title": "Low Sweep",
+                      "path": "Techniques/Martial Techniques/Martial Arts/Martial Arts 2/Low Sweep.md",
+                      "fileName": "Low Sweep.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Martial Arts 3",
+                  "children": [
+                    {
+                      "id": "Axe Kick",
+                      "title": "Axe Kick",
+                      "path": "Techniques/Martial Techniques/Martial Arts/Martial Arts 3/Axe Kick.md",
+                      "fileName": "Axe Kick.md"
+                    },
+                    {
+                      "id": "Chi Reflection",
+                      "title": "Chi Reflection",
+                      "path": "Techniques/Martial Techniques/Martial Arts/Martial Arts 3/Chi Reflection.md",
+                      "fileName": "Chi Reflection.md"
+                    },
+                    {
+                      "id": "Gust Dive",
+                      "title": "Gust Dive",
+                      "path": "Techniques/Martial Techniques/Martial Arts/Martial Arts 3/Gust Dive.md",
+                      "fileName": "Gust Dive.md"
+                    },
+                    {
+                      "id": "Power Fists",
+                      "title": "Power Fists",
+                      "path": "Techniques/Martial Techniques/Martial Arts/Martial Arts 3/Power Fists.md",
+                      "fileName": "Power Fists.md"
+                    },
+                    {
+                      "id": "Resonating Strike",
+                      "title": "Resonating Strike",
+                      "path": "Techniques/Martial Techniques/Martial Arts/Martial Arts 3/Resonating Strike.md",
+                      "fileName": "Resonating Strike.md"
+                    },
+                    {
+                      "id": "Transformation",
+                      "title": "Transformation",
+                      "path": "Techniques/Martial Techniques/Martial Arts/Martial Arts 3/Transformation.md",
+                      "fileName": "Transformation.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Martial Arts 4",
+                  "children": [
+                    {
+                      "id": "Star KO",
+                      "title": "Star KO",
+                      "path": "Techniques/Martial Techniques/Martial Arts/Martial Arts 4/Star KO.md",
+                      "fileName": "Star KO.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Martial Arts 5",
+                  "children": [
+                    {
+                      "id": "Ora Aura",
+                      "title": "Ora Aura",
+                      "path": "Techniques/Martial Techniques/Martial Arts/Martial Arts 5/Ora Aura.md",
+                      "fileName": "Ora Aura.md"
+                    },
+                    {
+                      "id": "Super Transformation",
+                      "title": "Super Transformation",
+                      "path": "Techniques/Martial Techniques/Martial Arts/Martial Arts 5/Super Transformation.md",
+                      "fileName": "Super Transformation.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "id": "Martial Arts",
+                  "title": "Martial Arts",
+                  "path": "Techniques/Martial Techniques/Martial Arts/Martial Arts.md",
+                  "fileName": "Martial Arts.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Savagery",
+              "children": [
+                {
+                  "name": "Savagery 1",
+                  "children": [
+                    {
+                      "id": "Bloodlust",
+                      "title": "Bloodlust",
+                      "path": "Techniques/Martial Techniques/Savagery/Savagery 1/Bloodlust.md",
+                      "fileName": "Bloodlust.md"
+                    },
+                    {
+                      "id": "Foe Throw",
+                      "title": "Foe Throw",
+                      "path": "Techniques/Martial Techniques/Savagery/Savagery 1/Foe Throw.md",
+                      "fileName": "Foe Throw.md"
+                    },
+                    {
+                      "id": "Gore Paint",
+                      "title": "Gore Paint",
+                      "path": "Techniques/Martial Techniques/Savagery/Savagery 1/Gore Paint.md",
+                      "fileName": "Gore Paint.md"
+                    },
+                    {
+                      "id": "Ground Pound",
+                      "title": "Ground Pound",
+                      "path": "Techniques/Martial Techniques/Savagery/Savagery 1/Ground Pound.md",
+                      "fileName": "Ground Pound.md"
+                    },
+                    {
+                      "id": "Raging Blow",
+                      "title": "Raging Blow",
+                      "path": "Techniques/Martial Techniques/Savagery/Savagery 1/Raging Blow.md",
+                      "fileName": "Raging Blow.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Savagery 2",
+                  "children": [
+                    {
+                      "id": "Revenge",
+                      "title": "Revenge",
+                      "path": "Techniques/Martial Techniques/Savagery/Savagery 2/Revenge.md",
+                      "fileName": "Revenge.md"
+                    },
+                    {
+                      "id": "Seismic Stomp",
+                      "title": "Seismic Stomp",
+                      "path": "Techniques/Martial Techniques/Savagery/Savagery 2/Seismic Stomp.md",
+                      "fileName": "Seismic Stomp.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "id": "Savagery",
+                  "title": "Savagery",
+                  "path": "Techniques/Martial Techniques/Savagery/Savagery.md",
+                  "fileName": "Savagery.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Warfare",
+              "children": [
+                {
+                  "name": "Warfare 1",
+                  "children": [
+                    {
+                      "id": "Callout",
+                      "title": "Callout",
+                      "path": "Techniques/Martial Techniques/Warfare/Warfare 1/Callout.md",
+                      "fileName": "Callout.md"
+                    },
+                    {
+                      "id": "Lunge",
+                      "title": "Lunge",
+                      "path": "Techniques/Martial Techniques/Warfare/Warfare 1/Lunge.md",
+                      "fileName": "Lunge.md"
+                    },
+                    {
+                      "id": "Panic",
+                      "title": "Panic",
+                      "path": "Techniques/Martial Techniques/Warfare/Warfare 1/Panic.md",
+                      "fileName": "Panic.md"
+                    },
+                    {
+                      "id": "Quickdraw",
+                      "title": "Quickdraw",
+                      "path": "Techniques/Martial Techniques/Warfare/Warfare 1/Quickdraw.md",
+                      "fileName": "Quickdraw.md"
+                    },
+                    {
+                      "id": "Second Wind",
+                      "title": "Second Wind",
+                      "path": "Techniques/Martial Techniques/Warfare/Warfare 1/Second Wind.md",
+                      "fileName": "Second Wind.md"
+                    },
+                    {
+                      "id": "Taunt",
+                      "title": "Taunt",
+                      "path": "Techniques/Martial Techniques/Warfare/Warfare 1/Taunt.md",
+                      "fileName": "Taunt.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Warfare 5",
+                  "children": [
+                    {
+                      "id": "Unbreakable Body",
+                      "title": "Unbreakable Body",
+                      "path": "Techniques/Martial Techniques/Warfare/Warfare 5/Unbreakable Body.md",
+                      "fileName": "Unbreakable Body.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "id": "Warfare",
+                  "title": "Warfare",
+                  "path": "Techniques/Martial Techniques/Warfare/Warfare.md",
+                  "fileName": "Warfare.md"
+                }
+              ],
+              "expanded": false
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Spell Techniques",
+          "children": [
+            {
+              "name": "Academy",
+              "children": [
+                {
+                  "name": "Academy 1",
+                  "children": [
+                    {
+                      "id": "Alarming Sigil",
+                      "title": "Alarming Sigil",
+                      "path": "Techniques/Spell Techniques/Academy/Academy 1/Alarming Sigil.md",
+                      "fileName": "Alarming Sigil.md"
+                    },
+                    {
+                      "id": "Feather Fall",
+                      "title": "Feather Fall",
+                      "path": "Techniques/Spell Techniques/Academy/Academy 1/Feather Fall.md",
+                      "fileName": "Feather Fall.md"
+                    },
+                    {
+                      "id": "Levitate",
+                      "title": "Levitate",
+                      "path": "Techniques/Spell Techniques/Academy/Academy 1/Levitate.md",
+                      "fileName": "Levitate.md"
+                    },
+                    {
+                      "id": "Lighten Object",
+                      "title": "Lighten Object",
+                      "path": "Techniques/Spell Techniques/Academy/Academy 1/Lighten Object.md",
+                      "fileName": "Lighten Object.md"
+                    },
+                    {
+                      "id": "Mage's Weapon",
+                      "title": "Mage's Weapon",
+                      "path": "Techniques/Spell Techniques/Academy/Academy 1/Mage's Weapon.md",
+                      "fileName": "Mage's Weapon.md"
+                    },
+                    {
+                      "id": "Magic Claw",
+                      "title": "Magic Claw",
+                      "path": "Techniques/Spell Techniques/Academy/Academy 1/Magic Claw.md",
+                      "fileName": "Magic Claw.md"
+                    },
+                    {
+                      "id": "Magic Guard",
+                      "title": "Magic Guard",
+                      "path": "Techniques/Spell Techniques/Academy/Academy 1/Magic Guard.md",
+                      "fileName": "Magic Guard.md"
+                    },
+                    {
+                      "id": "Ritual Infusion",
+                      "title": "Ritual Infusion",
+                      "path": "Techniques/Spell Techniques/Academy/Academy 1/Ritual Infusion.md",
+                      "fileName": "Ritual Infusion.md"
+                    },
+                    {
+                      "id": "Scholar's Hand",
+                      "title": "Scholar's Hand",
+                      "path": "Techniques/Spell Techniques/Academy/Academy 1/Scholar's Hand.md",
+                      "fileName": "Scholar's Hand.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Academy 2",
+                  "children": [
+                    {
+                      "id": "Detect Magic",
+                      "title": "Detect Magic",
+                      "path": "Techniques/Spell Techniques/Academy/Academy 2/Detect Magic.md",
+                      "fileName": "Detect Magic.md"
+                    },
+                    {
+                      "id": "Dimensional Anchor",
+                      "title": "Dimensional Anchor",
+                      "path": "Techniques/Spell Techniques/Academy/Academy 2/Dimensional Anchor.md",
+                      "fileName": "Dimensional Anchor.md"
+                    },
+                    {
+                      "id": "Dispel",
+                      "title": "Dispel",
+                      "path": "Techniques/Spell Techniques/Academy/Academy 2/Dispel.md",
+                      "fileName": "Dispel.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "id": "Academy",
+                  "title": "Academy",
+                  "path": "Techniques/Spell Techniques/Academy/Academy.md",
+                  "fileName": "Academy.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Enthrallment",
+              "children": [
+                {
+                  "name": "Enthrallment 1",
+                  "children": [
+                    {
+                      "id": "Charming Gaze",
+                      "title": "Charming Gaze",
+                      "path": "Techniques/Spell Techniques/Enthrallment/Enthrallment 1/Charming Gaze.md",
+                      "fileName": "Charming Gaze.md"
+                    },
+                    {
+                      "id": "Command",
+                      "title": "Command",
+                      "path": "Techniques/Spell Techniques/Enthrallment/Enthrallment 1/Command.md",
+                      "fileName": "Command.md"
+                    },
+                    {
+                      "id": "Darting Duplicate",
+                      "title": "Darting Duplicate",
+                      "path": "Techniques/Spell Techniques/Enthrallment/Enthrallment 1/Darting Duplicate.md",
+                      "fileName": "Darting Duplicate.md"
+                    },
+                    {
+                      "id": "Double Speak",
+                      "title": "Double Speak",
+                      "path": "Techniques/Spell Techniques/Enthrallment/Enthrallment 1/Double Speak.md",
+                      "fileName": "Double Speak.md"
+                    },
+                    {
+                      "id": "Rapid Wardrobe",
+                      "title": "Rapid Wardrobe",
+                      "path": "Techniques/Spell Techniques/Enthrallment/Enthrallment 1/Rapid Wardrobe.md",
+                      "fileName": "Rapid Wardrobe.md"
+                    },
+                    {
+                      "id": "Tongues",
+                      "title": "Tongues",
+                      "path": "Techniques/Spell Techniques/Enthrallment/Enthrallment 1/Tongues.md",
+                      "fileName": "Tongues.md"
+                    },
+                    {
+                      "id": "Unnatural Lust",
+                      "title": "Unnatural Lust",
+                      "path": "Techniques/Spell Techniques/Enthrallment/Enthrallment 1/Unnatural Lust.md",
+                      "fileName": "Unnatural Lust.md"
+                    },
+                    {
+                      "id": "Verboden Taal",
+                      "title": "Verboden Taal",
+                      "path": "Techniques/Spell Techniques/Enthrallment/Enthrallment 1/Verboden Taal.md",
+                      "fileName": "Verboden Taal.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Enthrallment 2",
+                  "children": [
+                    {
+                      "id": "Confide",
+                      "title": "Confide",
+                      "path": "Techniques/Spell Techniques/Enthrallment/Enthrallment 2/Confide.md",
+                      "fileName": "Confide.md"
+                    },
+                    {
+                      "id": "Exhibition",
+                      "title": "Exhibition",
+                      "path": "Techniques/Spell Techniques/Enthrallment/Enthrallment 2/Exhibition.md",
+                      "fileName": "Exhibition.md"
+                    },
+                    {
+                      "id": "Sense Motive",
+                      "title": "Sense Motive",
+                      "path": "Techniques/Spell Techniques/Enthrallment/Enthrallment 2/Sense Motive.md",
+                      "fileName": "Sense Motive.md"
+                    },
+                    {
+                      "id": "Stage Fright",
+                      "title": "Stage Fright",
+                      "path": "Techniques/Spell Techniques/Enthrallment/Enthrallment 2/Stage Fright.md",
+                      "fileName": "Stage Fright.md"
+                    },
+                    {
+                      "id": "Stunt Double",
+                      "title": "Stunt Double",
+                      "path": "Techniques/Spell Techniques/Enthrallment/Enthrallment 2/Stunt Double.md",
+                      "fileName": "Stunt Double.md"
+                    },
+                    {
+                      "id": "Tongue Twister",
+                      "title": "Tongue Twister",
+                      "path": "Techniques/Spell Techniques/Enthrallment/Enthrallment 2/Tongue Twister.md",
+                      "fileName": "Tongue Twister.md"
+                    },
+                    {
+                      "id": "Unfiltered",
+                      "title": "Unfiltered",
+                      "path": "Techniques/Spell Techniques/Enthrallment/Enthrallment 2/Unfiltered.md",
+                      "fileName": "Unfiltered.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Enthrallment 3",
+                  "children": [
+                    {
+                      "id": "Dominate",
+                      "title": "Dominate",
+                      "path": "Techniques/Spell Techniques/Enthrallment/Enthrallment 3/Dominate.md",
+                      "fileName": "Dominate.md"
+                    },
+                    {
+                      "id": "Ecstasy",
+                      "title": "Ecstasy",
+                      "path": "Techniques/Spell Techniques/Enthrallment/Enthrallment 3/Ecstasy.md",
+                      "fileName": "Ecstasy.md"
+                    },
+                    {
+                      "id": "Order 66",
+                      "title": "Order 66",
+                      "path": "Techniques/Spell Techniques/Enthrallment/Enthrallment 3/Order 66.md",
+                      "fileName": "Order 66.md"
+                    },
+                    {
+                      "id": "The Hand that Feeds",
+                      "title": "The Hand that Feeds",
+                      "path": "Techniques/Spell Techniques/Enthrallment/Enthrallment 3/The Hand that Feeds.md",
+                      "fileName": "The Hand that Feeds.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Enthrallment 4",
+                  "children": [
+                    {
+                      "id": "Seduce",
+                      "title": "Seduce",
+                      "path": "Techniques/Spell Techniques/Enthrallment/Enthrallment 4/Seduce.md",
+                      "fileName": "Seduce.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Enthrallment 5",
+                  "children": [
+                    {
+                      "id": "Thrall",
+                      "title": "Thrall",
+                      "path": "Techniques/Spell Techniques/Enthrallment/Enthrallment 5/Thrall.md",
+                      "fileName": "Thrall.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "id": "Enthrallment",
+                  "title": "Enthrallment",
+                  "path": "Techniques/Spell Techniques/Enthrallment/Enthrallment.md",
+                  "fileName": "Enthrallment.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Lunar",
+              "children": [
+                {
+                  "name": "Lunar 1",
+                  "children": [
+                    {
+                      "id": "Astrology",
+                      "title": "Astrology",
+                      "path": "Techniques/Spell Techniques/Lunar/Lunar 1/Astrology.md",
+                      "fileName": "Astrology.md"
+                    },
+                    {
+                      "id": "Enchant Sapphire",
+                      "title": "Enchant Sapphire",
+                      "path": "Techniques/Spell Techniques/Lunar/Lunar 1/Enchant Sapphire.md",
+                      "fileName": "Enchant Sapphire.md"
+                    },
+                    {
+                      "id": "Natural Geomancy",
+                      "title": "Natural Geomancy",
+                      "path": "Techniques/Spell Techniques/Lunar/Lunar 1/Natural Geomancy.md",
+                      "fileName": "Natural Geomancy.md"
+                    },
+                    {
+                      "id": "Provider's Station",
+                      "title": "Provider's Station",
+                      "path": "Techniques/Spell Techniques/Lunar/Lunar 1/Provider's Station.md",
+                      "fileName": "Provider's Station.md"
+                    },
+                    {
+                      "id": "Star Sight",
+                      "title": "Star Sight",
+                      "path": "Techniques/Spell Techniques/Lunar/Lunar 1/Star Sight.md",
+                      "fileName": "Star Sight.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Lunar 2",
+                  "children": [
+                    {
+                      "id": "Lunar Dream",
+                      "title": "Lunar Dream",
+                      "path": "Techniques/Spell Techniques/Lunar/Lunar 2/Lunar Dream.md",
+                      "fileName": "Lunar Dream.md"
+                    },
+                    {
+                      "id": "Unseen Blade",
+                      "title": "Unseen Blade",
+                      "path": "Techniques/Spell Techniques/Lunar/Lunar 2/Unseen Blade.md",
+                      "fileName": "Unseen Blade.md"
+                    },
+                    {
+                      "id": "Unseen Form",
+                      "title": "Unseen Form",
+                      "path": "Techniques/Spell Techniques/Lunar/Lunar 2/Unseen Form.md",
+                      "fileName": "Unseen Form.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Lunar 3",
+                  "children": [
+                    {
+                      "id": "Astral Alignment",
+                      "title": "Astral Alignment",
+                      "path": "Techniques/Spell Techniques/Lunar/Lunar 3/Astral Alignment.md",
+                      "fileName": "Astral Alignment.md"
+                    },
+                    {
+                      "id": "Sacrificial Heal",
+                      "title": "Sacrificial Heal",
+                      "path": "Techniques/Spell Techniques/Lunar/Lunar 3/Sacrificial Heal.md",
+                      "fileName": "Sacrificial Heal.md"
+                    },
+                    {
+                      "id": "Vengeance",
+                      "title": "Vengeance",
+                      "path": "Techniques/Spell Techniques/Lunar/Lunar 3/Vengeance.md",
+                      "fileName": "Vengeance.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Lunar 4",
+                  "children": [
+                    {
+                      "id": "Energy Transfer",
+                      "title": "Energy Transfer",
+                      "path": "Techniques/Spell Techniques/Lunar/Lunar 4/Energy Transfer.md",
+                      "fileName": "Energy Transfer.md"
+                    },
+                    {
+                      "id": "Vengeance Other",
+                      "title": "Vengeance Other",
+                      "path": "Techniques/Spell Techniques/Lunar/Lunar 4/Vengeance Other.md",
+                      "fileName": "Vengeance Other.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Lunar 5",
+                  "children": [
+                    {
+                      "id": "Magic Imbue",
+                      "title": "Magic Imbue",
+                      "path": "Techniques/Spell Techniques/Lunar/Lunar 5/Magic Imbue.md",
+                      "fileName": "Magic Imbue.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "id": "Lunar",
+                  "title": "Lunar",
+                  "path": "Techniques/Spell Techniques/Lunar/Lunar.md",
+                  "fileName": "Lunar.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Marine",
+              "children": [
+                {
+                  "id": "Marine",
+                  "title": "Marine",
+                  "path": "Techniques/Spell Techniques/Marine/Marine.md",
+                  "fileName": "Marine.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Necromancy",
+              "children": [
+                {
+                  "name": "Necromancy 1",
+                  "children": [
+                    {
+                      "id": "Boneshaker",
+                      "title": "Boneshaker",
+                      "path": "Techniques/Spell Techniques/Necromancy/Necromancy 1/Boneshaker.md",
+                      "fileName": "Boneshaker.md"
+                    },
+                    {
+                      "id": "Decompose",
+                      "title": "Decompose",
+                      "path": "Techniques/Spell Techniques/Necromancy/Necromancy 1/Decompose.md",
+                      "fileName": "Decompose.md"
+                    },
+                    {
+                      "id": "Enervate",
+                      "title": "Enervate",
+                      "path": "Techniques/Spell Techniques/Necromancy/Necromancy 1/Enervate.md",
+                      "fileName": "Enervate.md"
+                    },
+                    {
+                      "id": "Grasp of the Grave",
+                      "title": "Grasp of the Grave",
+                      "path": "Techniques/Spell Techniques/Necromancy/Necromancy 1/Grasp of the Grave.md",
+                      "fileName": "Grasp of the Grave.md"
+                    },
+                    {
+                      "id": "Grave Robber",
+                      "title": "Grave Robber",
+                      "path": "Techniques/Spell Techniques/Necromancy/Necromancy 1/Grave Robber.md",
+                      "fileName": "Grave Robber.md"
+                    },
+                    {
+                      "id": "Halt Undead",
+                      "title": "Halt Undead",
+                      "path": "Techniques/Spell Techniques/Necromancy/Necromancy 1/Halt Undead.md",
+                      "fileName": "Halt Undead.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "id": "Necromancy",
+                  "title": "Necromancy",
+                  "path": "Techniques/Spell Techniques/Necromancy/Necromancy.md",
+                  "fileName": "Necromancy.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Prismancy",
+              "children": [
+                {
+                  "name": "Prismancy 1",
+                  "children": [
+                    {
+                      "id": "Brilliant Barrage",
+                      "title": "Brilliant Barrage",
+                      "path": "Techniques/Spell Techniques/Prismancy/Prismancy 1/Brilliant Barrage.md",
+                      "fileName": "Brilliant Barrage.md"
+                    },
+                    {
+                      "id": "Illumination",
+                      "title": "Illumination",
+                      "path": "Techniques/Spell Techniques/Prismancy/Prismancy 1/Illumination.md",
+                      "fileName": "Illumination.md"
+                    },
+                    {
+                      "id": "Lady of Light",
+                      "title": "Lady of Light",
+                      "path": "Techniques/Spell Techniques/Prismancy/Prismancy 1/Lady of Light.md",
+                      "fileName": "Lady of Light.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Prismancy 2",
+                  "children": [
+                    {
+                      "id": "Prismatic Barrier",
+                      "title": "Prismatic Barrier",
+                      "path": "Techniques/Spell Techniques/Prismancy/Prismancy 2/Prismatic Barrier.md",
+                      "fileName": "Prismatic Barrier.md"
+                    },
+                    {
+                      "id": "Ricochet Reflection",
+                      "title": "Ricochet Reflection",
+                      "path": "Techniques/Spell Techniques/Prismancy/Prismancy 2/Ricochet Reflection.md",
+                      "fileName": "Ricochet Reflection.md"
+                    },
+                    {
+                      "id": "Shimmering Ray",
+                      "title": "Shimmering Ray",
+                      "path": "Techniques/Spell Techniques/Prismancy/Prismancy 2/Shimmering Ray.md",
+                      "fileName": "Shimmering Ray.md"
+                    },
+                    {
+                      "id": "Solar Flash",
+                      "title": "Solar Flash",
+                      "path": "Techniques/Spell Techniques/Prismancy/Prismancy 2/Solar Flash.md",
+                      "fileName": "Solar Flash.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Prismancy 3",
+                  "children": [
+                    {
+                      "id": "Repelling Light",
+                      "title": "Repelling Light",
+                      "path": "Techniques/Spell Techniques/Prismancy/Prismancy 3/Repelling Light.md",
+                      "fileName": "Repelling Light.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Prismancy 4",
+                  "children": [
+                    {
+                      "id": "Rainbow Beam",
+                      "title": "Rainbow Beam",
+                      "path": "Techniques/Spell Techniques/Prismancy/Prismancy 4/Rainbow Beam.md",
+                      "fileName": "Rainbow Beam.md"
+                    },
+                    {
+                      "id": "Sabre of Light",
+                      "title": "Sabre of Light",
+                      "path": "Techniques/Spell Techniques/Prismancy/Prismancy 4/Sabre of Light.md",
+                      "fileName": "Sabre of Light.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Prismancy 5",
+                  "children": [
+                    {
+                      "id": "Zonnestraal",
+                      "title": "Zonnestraal",
+                      "path": "Techniques/Spell Techniques/Prismancy/Prismancy 5/Zonnestraal.md",
+                      "fileName": "Zonnestraal.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "id": "Prismancy",
+                  "title": "Prismancy",
+                  "path": "Techniques/Spell Techniques/Prismancy/Prismancy.md",
+                  "fileName": "Prismancy.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Psychomancy",
+              "children": [
+                {
+                  "name": "Psychomancy 1",
+                  "children": [
+                    {
+                      "id": "Sending",
+                      "title": "Sending",
+                      "path": "Techniques/Spell Techniques/Psychomancy/Psychomancy 1/Sending.md",
+                      "fileName": "Sending.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "id": "Psychomancy",
+                  "title": "Psychomancy",
+                  "path": "Techniques/Spell Techniques/Psychomancy/Psychomancy.md",
+                  "fileName": "Psychomancy.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Pyromancy",
+              "children": [
+                {
+                  "name": "Pyromancy 1",
+                  "children": [
+                    {
+                      "id": "Blazing Palm",
+                      "title": "Blazing Palm",
+                      "path": "Techniques/Spell Techniques/Pyromancy/Pyromancy 1/Blazing Palm.md",
+                      "fileName": "Blazing Palm.md"
+                    },
+                    {
+                      "id": "Flame Blade",
+                      "title": "Flame Blade",
+                      "path": "Techniques/Spell Techniques/Pyromancy/Pyromancy 1/Flame Blade.md",
+                      "fileName": "Flame Blade.md"
+                    },
+                    {
+                      "id": "Flame Foil",
+                      "title": "Flame Foil",
+                      "path": "Techniques/Spell Techniques/Pyromancy/Pyromancy 1/Flame Foil.md",
+                      "fileName": "Flame Foil.md"
+                    },
+                    {
+                      "id": "Flame Pillar",
+                      "title": "Flame Pillar",
+                      "path": "Techniques/Spell Techniques/Pyromancy/Pyromancy 1/Flame Pillar.md",
+                      "fileName": "Flame Pillar.md"
+                    },
+                    {
+                      "id": "Flame Surge",
+                      "title": "Flame Surge",
+                      "path": "Techniques/Spell Techniques/Pyromancy/Pyromancy 1/Flame Surge.md",
+                      "fileName": "Flame Surge.md"
+                    },
+                    {
+                      "id": "Self-Immolation",
+                      "title": "Self-Immolation",
+                      "path": "Techniques/Spell Techniques/Pyromancy/Pyromancy 1/Self-Immolation.md",
+                      "fileName": "Self-Immolation.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Pyromancy 2",
+                  "children": [
+                    {
+                      "id": "Burning Hands",
+                      "title": "Burning Hands",
+                      "path": "Techniques/Spell Techniques/Pyromancy/Pyromancy 2/Burning Hands.md",
+                      "fileName": "Burning Hands.md"
+                    },
+                    {
+                      "id": "Detonate",
+                      "title": "Detonate",
+                      "path": "Techniques/Spell Techniques/Pyromancy/Pyromancy 2/Detonate.md",
+                      "fileName": "Detonate.md"
+                    },
+                    {
+                      "id": "Flame Tempest",
+                      "title": "Flame Tempest",
+                      "path": "Techniques/Spell Techniques/Pyromancy/Pyromancy 2/Flame Tempest.md",
+                      "fileName": "Flame Tempest.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Pyromancy 3",
+                  "children": [
+                    {
+                      "id": "Fire Blast",
+                      "title": "Fire Blast",
+                      "path": "Techniques/Spell Techniques/Pyromancy/Pyromancy 3/Fire Blast.md",
+                      "fileName": "Fire Blast.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Pyromancy 4",
+                  "children": [
+                    {
+                      "id": "Ifrit Milicien",
+                      "title": "Ifrit Milicien",
+                      "path": "Techniques/Spell Techniques/Pyromancy/Pyromancy 4/Ifrit Milicien.md",
+                      "fileName": "Ifrit Milicien.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Pyromancy 5",
+                  "children": [
+                    {
+                      "id": "Meteor Swarm",
+                      "title": "Meteor Swarm",
+                      "path": "Techniques/Spell Techniques/Pyromancy/Pyromancy 5/Meteor Swarm.md",
+                      "fileName": "Meteor Swarm.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "id": "Pyromancy",
+                  "title": "Pyromancy",
+                  "path": "Techniques/Spell Techniques/Pyromancy/Pyromancy.md",
+                  "fileName": "Pyromancy.md"
+                }
+              ],
+              "expanded": false
+            },
+            {
+              "name": "Vitalism",
+              "children": [
+                {
+                  "name": "Vitalism 1",
+                  "children": [
+                    {
+                      "id": "Bless",
+                      "title": "Bless",
+                      "path": "Techniques/Spell Techniques/Vitalism/Vitalism 1/Bless.md",
+                      "fileName": "Bless.md"
+                    },
+                    {
+                      "id": "Caloric Healing",
+                      "title": "Caloric Healing",
+                      "path": "Techniques/Spell Techniques/Vitalism/Vitalism 1/Caloric Healing.md",
+                      "fileName": "Caloric Healing.md"
+                    },
+                    {
+                      "id": "Death Ward",
+                      "title": "Death Ward",
+                      "path": "Techniques/Spell Techniques/Vitalism/Vitalism 1/Death Ward.md",
+                      "fileName": "Death Ward.md"
+                    },
+                    {
+                      "id": "Handholding",
+                      "title": "Handholding",
+                      "path": "Techniques/Spell Techniques/Vitalism/Vitalism 1/Handholding.md",
+                      "fileName": "Handholding.md"
+                    },
+                    {
+                      "id": "Heal",
+                      "title": "Heal",
+                      "path": "Techniques/Spell Techniques/Vitalism/Vitalism 1/Heal.md",
+                      "fileName": "Heal.md"
+                    },
+                    {
+                      "id": "Invigorate",
+                      "title": "Invigorate",
+                      "path": "Techniques/Spell Techniques/Vitalism/Vitalism 1/Invigorate.md",
+                      "fileName": "Invigorate.md"
+                    },
+                    {
+                      "id": "Spare Life",
+                      "title": "Spare Life",
+                      "path": "Techniques/Spell Techniques/Vitalism/Vitalism 1/Spare Life.md",
+                      "fileName": "Spare Life.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Vitalism 2",
+                  "children": [
+                    {
+                      "id": "Circle of Sealing",
+                      "title": "Circle of Sealing",
+                      "path": "Techniques/Spell Techniques/Vitalism/Vitalism 2/Circle of Sealing.md",
+                      "fileName": "Circle of Sealing.md"
+                    },
+                    {
+                      "id": "Turn Undead",
+                      "title": "Turn Undead",
+                      "path": "Techniques/Spell Techniques/Vitalism/Vitalism 2/Turn Undead.md",
+                      "fileName": "Turn Undead.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "name": "Vitalism 3",
+                  "children": [
+                    {
+                      "id": "Regenerate",
+                      "title": "Regenerate",
+                      "path": "Techniques/Spell Techniques/Vitalism/Vitalism 3/Regenerate.md",
+                      "fileName": "Regenerate.md"
+                    }
+                  ],
+                  "expanded": false
+                },
+                {
+                  "id": "Vitalism",
+                  "title": "Vitalism",
+                  "path": "Techniques/Spell Techniques/Vitalism/Vitalism.md",
+                  "fileName": "Vitalism.md"
+                }
+              ],
+              "expanded": false
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Spellcasting Rules",
+          "children": [
+            {
+              "id": "CL",
+              "title": "CL",
+              "path": "Techniques/Spellcasting Rules/CL.md",
+              "fileName": "CL.md"
+            },
+            {
+              "id": "M",
+              "title": "M",
+              "path": "Techniques/Spellcasting Rules/M.md",
+              "fileName": "M.md"
+            },
+            {
+              "id": "S",
+              "title": "S",
+              "path": "Techniques/Spellcasting Rules/S.md",
+              "fileName": "S.md"
+            },
+            {
+              "id": "Spell Components",
+              "title": "Spell Components",
+              "path": "Techniques/Spellcasting Rules/Spell Components.md",
+              "fileName": "Spell Components.md"
+            },
+            {
+              "id": "Spell",
+              "title": "Spell",
+              "path": "Techniques/Spellcasting Rules/Spell.md",
+              "fileName": "Spell.md",
+              "icon": "FasWandMagicSparkles"
+            },
+            {
+              "id": "Untitled",
+              "title": "Untitled",
+              "path": "Techniques/Spellcasting Rules/Untitled.md",
+              "fileName": "Untitled.md"
+            },
+            {
+              "id": "V",
+              "title": "V",
+              "path": "Techniques/Spellcasting Rules/V.md",
+              "fileName": "V.md"
+            },
+            {
+              "id": "Weather and Terrain vs Spells",
+              "title": "Weather and Terrain vs Spells",
+              "path": "Techniques/Spellcasting Rules/Weather and Terrain vs Spells.md",
+              "fileName": "Weather and Terrain vs Spells.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "name": "Uncategorized Techniques",
+          "children": [
+            {
+              "id": "Nebula",
+              "title": "Nebula",
+              "path": "Techniques/Uncategorized Techniques/Nebula.md",
+              "fileName": "Nebula.md"
+            }
+          ],
+          "expanded": false
+        },
+        {
+          "id": "Innate Technique",
+          "title": "Innate Technique",
+          "path": "Techniques/Innate Technique.md",
+          "fileName": "Innate Technique.md"
+        },
+        {
+          "id": "Preparing Techniques",
+          "title": "Preparing Techniques",
+          "path": "Techniques/Preparing Techniques.md",
+          "fileName": "Preparing Techniques.md"
+        },
+        {
+          "id": "Technique",
+          "title": "Technique",
+          "path": "Techniques/Technique.md",
+          "fileName": "Technique.md"
+        },
+        {
+          "id": "Upcast",
+          "title": "Upcast",
+          "path": "Techniques/Upcast.md",
+          "fileName": "Upcast.md"
+        }
+      ],
+      "expanded": false
+    },
+    {
+      "name": "Templates",
+      "children": [
+        {
+          "id": "Template, Affliction",
+          "title": "Template, Affliction",
+          "path": "Templates/Template, Affliction.md",
+          "fileName": "Template, Affliction.md"
+        },
+        {
+          "id": "Template, Bestiary Entry",
+          "title": "Template, Bestiary Entry",
+          "path": "Templates/Template, Bestiary Entry.md",
+          "fileName": "Template, Bestiary Entry.md"
+        },
+        {
+          "id": "Template, Class",
+          "title": "Template, Class",
+          "path": "Templates/Template, Class.md",
+          "fileName": "Template, Class.md"
+        },
+        {
+          "id": "Template, Innate Technique",
+          "title": "Template, Innate Technique",
+          "path": "Templates/Template, Innate Technique.md",
+          "fileName": "Template, Innate Technique.md"
+        },
+        {
+          "id": "Template, Race",
+          "title": "Template, Race",
+          "path": "Templates/Template, Race.md",
+          "fileName": "Template, Race.md"
+        },
+        {
+          "id": "Template, Spell",
+          "title": "Template, Spell",
+          "path": "Templates/Template, Spell.md",
+          "fileName": "Template, Spell.md"
+        },
+        {
+          "id": "Template, Technique",
+          "title": "Template, Technique",
+          "path": "Templates/Template, Technique.md",
+          "fileName": "Template, Technique.md"
+        },
+        {
+          "id": "Template, Weapon Technique",
+          "title": "Template, Weapon Technique",
+          "path": "Templates/Template, Weapon Technique.md",
+          "fileName": "Template, Weapon Technique.md"
+        },
+        {
+          "id": "Template, Weapon",
+          "title": "Template, Weapon",
+          "path": "Templates/Template, Weapon.md",
+          "fileName": "Template, Weapon.md"
+        }
+      ],
+      "expanded": false
+    },
+    {
+      "id": "Chinese Folklore Notes",
+      "title": "Chinese Folklore Notes",
+      "path": "Chinese Folklore Notes.md",
+      "fileName": "Chinese Folklore Notes.md"
+    },
+    {
+      "id": "Index",
+      "title": "Index",
+      "path": "Index.md",
+      "fileName": "Index.md"
+    },
+    {
+      "id": "Placeholder",
+      "title": "Placeholder",
+      "path": "Placeholder.md",
+      "fileName": "Placeholder.md"
+    },
+    {
+      "id": "TEST",
+      "title": "TEST",
+      "path": "TEST.md",
+      "fileName": "TEST.md"
+    }
+  ]
+}

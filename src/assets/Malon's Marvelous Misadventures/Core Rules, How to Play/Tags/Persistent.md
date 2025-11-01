@@ -1,0 +1,1 @@
+**Persistent Effects** have an initial effect and an effect that persists over time. This type of effect cannot deal its persistent effect on the same round as its initial effect. Persistent effects end preemptively if the user is [[Defeated]].

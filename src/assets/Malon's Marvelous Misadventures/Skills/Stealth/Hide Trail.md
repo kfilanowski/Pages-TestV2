@@ -1,0 +1,1 @@
+Use [[Proficiency|Trained]] [[Stealth]] to hide your trail, turning attempts to [[Track]] you into an opposed check of their [[Survival]] vs your [[Stealth]] -5.

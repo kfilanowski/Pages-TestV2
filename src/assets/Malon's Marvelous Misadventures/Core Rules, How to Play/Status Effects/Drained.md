@@ -1,0 +1,1 @@
+A stacking condition that decreases all [[Roll|Rolls]] and [[Potency]] by 1. Lowers your current and maximum [[HP]] by 5 each stack. One stack is removed when [[Rest|Resting]] for a week straight.

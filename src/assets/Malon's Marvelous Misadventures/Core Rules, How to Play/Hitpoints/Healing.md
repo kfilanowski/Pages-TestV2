@@ -1,0 +1,1 @@
+**Healing** is an effect that restores current [[HP]] up to your maximum HP, grants [[Temp HP]], or removes debilitating status conditions.

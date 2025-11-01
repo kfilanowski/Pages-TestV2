@@ -1,0 +1,1 @@
+Use [[Proficiency|Trained]] [[Medicine]] as a [[Standard Action]] to cure a creature in reach of [[Status]] ailments. You can remove [[Sickened]] stacks, [[Bleed]], and [[Blurred Vision]]. The [[DC]] of removing any of these conditions is the DC of the ability that inflicted them.

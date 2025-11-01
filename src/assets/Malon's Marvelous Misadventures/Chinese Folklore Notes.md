@@ -1,0 +1,2 @@
+Feat: Corpse Walker
+Using a bell, hand signs, or spell tags, unburied bodies can be temporarily animated with mana to follow the driver. This is primarily used to bring corpses to sacred burial grounds in a ceremonial way or through prohibitive terrain.

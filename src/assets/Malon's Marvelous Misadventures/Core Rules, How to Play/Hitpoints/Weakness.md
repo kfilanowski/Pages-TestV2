@@ -1,0 +1,1 @@
+Having a Weakness means you take 50% more damage from [[Damage]] of that type, or have a -4 penalty to [[Saving Throw|Saves]] against effects of a certain type if they are not damage.

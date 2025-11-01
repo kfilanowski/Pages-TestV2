@@ -1,0 +1,1 @@
+With a clear view of the night time sky, you can determine where you are and where you need to be. You can use [[Astronomy]] as an alternative to [[Survival]] for navigation in such circumstances. This skill replaces Survival during space travel.

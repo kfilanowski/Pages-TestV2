@@ -1,0 +1,3 @@
+At the start of your turn, you can decide what's in your hands from your inventory. You can draw and put away any weapons without penalty. This is a [[Free Action]] as long as it's done at the start of your turn. If you decide to change what you're wielding at another point in your turn, it becomes a [[Swift Action]] - and you can't do both.
+
+Handedness is an important concept here. When you use your hand for something other than a free action, you usually cannot use it for something else on the same turn. The main exception to this is Two-Handed items, which allow you to let go with one hand to perform an action. Any other exceptions should be handled with discretion.

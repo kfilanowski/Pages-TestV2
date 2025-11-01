@@ -1,0 +1,1 @@
+Using [[Humanities]], you can attach a name to a face, or vice versa. You generally understand aspects of a creature's reputation, their affiliations, and their general capabilities. Exceptionally high rolls might even land you some secrets or gossip related to this creature.

@@ -1,0 +1,6 @@
+For when killing everything that moves isn't what you want, alternative win conditions seek to answer the question of "How do I end combat without reducing the enemy hp to 0?"
+
+See:
+[[Restraint]]
+[[Surrender and Morale]]
+[[Truce]]

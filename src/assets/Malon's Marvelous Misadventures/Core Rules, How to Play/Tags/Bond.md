@@ -1,0 +1,1 @@
+An effect with the [[Buff]] or **Bond** tag grants a boon to a creature, or a shared effect. If an unwilling creature has a buff or bond used on it, it can choose to deny it.

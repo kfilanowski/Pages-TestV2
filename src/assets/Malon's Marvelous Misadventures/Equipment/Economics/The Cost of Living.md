@@ -1,0 +1,5 @@
+Staying alive requires resources and food. The easiest way to obtain and represent these is to spend money. ~={orange}Only accounting for minimum food and necessities, the basic cost to remaining alive is 10g per day.=~
+
+In a town, where sleeping on the streets isn't advised, ~={orange}the cost increases to 30g.=~
+
+The savings from living in the wilderness are made up by the time spent setting up camps and creating one's own resources, as per [[Forage]]. Characters that do not spend this money must spend additional time collecting enough food to survive. Players should lose this much gold every day to represent the use of supplies. If they are on a particularly long journey where they will not encounter others to sell them supplies, they must spend this money ahead of time to avoid running out of supplies.

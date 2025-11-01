@@ -1,0 +1,1 @@
+Hybrid Techniques are sets of abilities that have a combination of [[Passive|Passives]], [[Martial]] [[Technique|Techniques]], and [[Spell|Spells]]. They are intended for general use, secondary ability sets, or spellswords.

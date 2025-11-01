@@ -1,0 +1,1 @@
+These spells focus on the manipulating elements and focusing power to destructive effect.

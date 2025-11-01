@@ -1,0 +1,2 @@
+Feint is the use of Deception vs the target's Insight.
+Feint is NOT considered an [[Attack]], but you can still use your [[ACC]] in place of Deception. It is still classified as a [[Combat Maneuver]], and can benefit from any bonuses or defenses relevant to them.

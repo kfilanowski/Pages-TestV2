@@ -1,0 +1,2 @@
+Mana Burn is the loss of a daily [[Mana]] slot such that it cannot be recovered until you take a [[Long Rest]], and needing to re-prepare the ability to another slot to use it again. 
+This is usually voluntary, but can also be the result of an offensive effect.

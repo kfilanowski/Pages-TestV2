@@ -1,0 +1,2 @@
+Attempt to put on a show for other creatures using [[Perform]]. Whether it's music, action, or stand-up, benefits will be extended to entertaining individuals.
+Performances are an important part of every culture. They are a commonly desired luxury, and some [[Affliction|Afflictions]] require Performance as a cure.

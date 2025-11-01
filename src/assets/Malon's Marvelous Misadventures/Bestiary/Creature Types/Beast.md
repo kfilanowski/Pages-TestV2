@@ -1,0 +1,3 @@
+The Beast group contains a wide variety of mundane animals, ranging from nimble rodents and cunning predators to massive herbivores and resilient scavengers. Whether encountered in dense forests, treacherous mountains, or bustling urban areas, these beasts are simplistic and feral, reminding players of the wilderness's unpredictable nature and the survival instinct that drives all living things.
+
+Beasts are mostly unintelligent one-trick ponies, and are quick to flee when their trick fails, or when their opponent proves more dangerous than their value in meat. Herbivorous beasts typically only fight in self-defense, and will flee unnecessary battles.

@@ -1,0 +1,3 @@
+Constructs encompass all constructed beings, ranging from ancient golems animated by arcane forces to intricate automatons powered by sophisticated machinery. Most constructs are created by an intelligent mind, but some are formed from natural primal magic. Their purpose can vary greatly, most serving as simple guards or weapons, while technological or intelligent constructs may be made to write, convey information, and research.
+
+Most constructs tend to have a "master" when made, or a method of establishing control over it. Their minds tend to work like programs, working entirely within the scope of their directives, or with a single-minded purpose - however, autonomous, free-thinking constructs are not unheard of.

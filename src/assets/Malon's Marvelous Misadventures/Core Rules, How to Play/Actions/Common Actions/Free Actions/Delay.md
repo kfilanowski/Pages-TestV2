@@ -1,0 +1,1 @@
+You can wait for a later spot in [[Initiative]]. If you're already at the bottom, you can wait until a later round. When you decide to re-enter Initiative, your Initiative changes to the spot you enter.

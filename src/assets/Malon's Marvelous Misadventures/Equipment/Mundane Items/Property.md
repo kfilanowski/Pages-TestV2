@@ -1,0 +1,2 @@
+[[Mundane Item]].
+Property is synonymous with land, and everything on it. Property can include facilities, homes, or resources of interest. The price of property changes based on a few factors, such as size, buildings, appearance, location, and the overall state its in, to name a few.

@@ -1,0 +1,1 @@
+Having an Immunity represents that a particular [[Damage]] type or classification of ability has no effect on you.

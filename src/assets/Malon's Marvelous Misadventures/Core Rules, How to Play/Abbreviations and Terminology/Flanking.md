@@ -1,0 +1,1 @@
+Flanking is a [[Circumstance]] that grants +2 [[ACC]] against a target that you and an ally are [[Threaten|Threatening]] from opposite sides.

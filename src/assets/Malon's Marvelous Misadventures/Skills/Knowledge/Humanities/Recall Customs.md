@@ -1,0 +1,1 @@
+Using [[Humanities]], you can recall information about how to conduct yourself with foreign cultures. This can be particularly useful when trying to gain someone's favor, such as royalty. You can also recall information about holidays, festivals and ceremonies.

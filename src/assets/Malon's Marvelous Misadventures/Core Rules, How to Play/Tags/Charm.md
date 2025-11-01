@@ -1,0 +1,1 @@
+Charm effects allow the creature inflicting it to exert some degree of control over others. All charm effects are also [[Mind-Affecting]].

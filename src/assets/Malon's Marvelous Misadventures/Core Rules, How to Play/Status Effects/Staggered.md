@@ -1,0 +1,1 @@
+Creature can only take a [[Standard Action]] or [[Swift Action]] each turn, not both. -15 [[Speed]].

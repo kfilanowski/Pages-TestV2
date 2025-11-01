@@ -1,0 +1,3 @@
+Sometimes, a player or creature will have bonuses to their defenses against specific effects. For example, they may have +4 [[AC]] against [[Fell]] attempts.
+
+If not otherwise stated (such as "Fell attempts from Attack Rolls"), apply these bonuses to any instance of an ability that performs a similar function, especially when it is a secondary effect. For example, [[Fire Blast]] and [[Low Sweep]] will cause Knocked Down. The defender should receive their bonus against these effects, even though these are Reflex Saves. In the case of Fire Blast, the bonus would only apply to the Knocked Down portion, allowing them to fail the save against the blast and take full damage, but not be Knocked Down.

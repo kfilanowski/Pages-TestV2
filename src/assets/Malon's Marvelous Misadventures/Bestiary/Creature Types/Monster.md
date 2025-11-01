@@ -1,0 +1,1 @@
+Monsters are a magical and significantly more intelligent step up from otherwise mundane creature types. They are rare mythical creatures, larger than life and saturated with power, ranging from the inescapable Minotaur to the mighty Dragon. They almost always come with incredible magic powers, such as deadly breath weapons, teleportation, and even illusions.

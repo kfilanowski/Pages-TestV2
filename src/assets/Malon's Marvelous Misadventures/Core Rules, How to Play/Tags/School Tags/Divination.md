@@ -1,0 +1,1 @@
+These spells focus on gaining knowledge through spying and querying the universe.

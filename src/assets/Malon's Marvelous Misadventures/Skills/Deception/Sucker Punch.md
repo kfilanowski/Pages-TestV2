@@ -1,0 +1,3 @@
+If you are in some kind of standoff where you aren't quite fighting your enemy yet, you can use [[Proficiency|Trained]] [[Deception]] or Trained [[Hands]] as a replacement for [[Stealth]] to [[Surprised|Surprise]] your enemy with a melee [[Attack]]. The enemy must be aware of you in order to Sucker Punch, otherwise it is [[Stealth]], and you must already be adjacent to use Hands for it. If you don't use an [[Unarmed Strike]], then you have disadvantage on this check, unless you use Hands.
+
+Certain situations where you are not able to get close to your aggressors, such as having bows pointed at you from a garrison above you, make Sucker Punching impossible.

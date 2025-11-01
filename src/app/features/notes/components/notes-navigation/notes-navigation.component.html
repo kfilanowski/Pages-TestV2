@@ -1,0 +1,132 @@
+<div class="notes-navigation">
+  <div class="navigation-header">
+    <h3>Notes</h3>
+    <div class="search-container">
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Search notes..."
+        [(ngModel)]="searchQuery"
+        (ngModelChange)="onSearchChange($event)"
+      />
+      @if (searchQuery()) {
+      <button class="clear-button" (click)="clearSearch()" title="Clear search">
+        <mat-icon>close</mat-icon>
+      </button>
+      }
+      <mat-icon class="search-icon">search</mat-icon>
+    </div>
+  </div>
+
+  <div class="tree-container">
+    @if (treeNodes().length === 0) {
+    <div class="empty-state">
+      <p>No notes found</p>
+      <small>Add your notes to assets/Malon's Marvelous Misadventures/</small>
+    </div>
+    } @else {
+    <ul class="tree-root">
+      @for (node of treeNodes(); track trackNode($index, node)) {
+      <li>
+        @if (isFolder(node)) {
+        <div class="folder-item" (click)="toggleFolder(node)">
+          <mat-icon class="folder-icon">
+            {{ node.expanded ? "folder_open" : "folder" }}
+          </mat-icon>
+          <span class="folder-name">{{ node.name }}</span>
+        </div>
+
+        @if (node.expanded) {
+        <ul class="tree-children">
+          @for (child of node.children; track trackNode($index, child)) {
+          <li>
+            @if (isFolder(child)) {
+            <div class="folder-item" (click)="toggleFolder(child)">
+              <mat-icon class="folder-icon">
+                {{ child.expanded ? "folder_open" : "folder" }}
+              </mat-icon>
+              <span class="folder-name">{{ child.name }}</span>
+            </div>
+
+            @if (child.expanded) {
+            <ul class="tree-children">
+              @for ( subChild of child.children; track trackNode($index,
+              subChild) ) {
+              <li>
+                @if (isNote(subChild)) {
+                <a
+                  [routerLink]="[
+                    '/Malons-Marvelous-Misadventures',
+                    subChild.id
+                  ]"
+                  routerLinkActive="active"
+                  class="note-item"
+                >
+                  <mat-icon class="note-icon">description</mat-icon>
+                  <div class="note-content">
+                    <span class="note-name">{{ subChild.title }}</span>
+                    @if (searchQuery() &&
+                    getSearchResult(subChild.id)?.matchedText) {
+                    <small
+                      class="match-snippet"
+                      [innerHTML]="
+                        getSearchResult(subChild.id)?.matchedText
+                          | highlightMatch
+                      "
+                    ></small>
+                    }
+                  </div>
+                </a>
+                }
+              </li>
+              }
+            </ul>
+            } } @else if (isNote(child)) {
+            <a
+              [routerLink]="['/Malons-Marvelous-Misadventures', child.id]"
+              routerLinkActive="active"
+              class="note-item"
+            >
+              <mat-icon class="note-icon">description</mat-icon>
+              <div class="note-content">
+                <span class="note-name">{{ child.title }}</span>
+                @if (searchQuery() && getSearchResult(child.id)?.matchedText) {
+                <small
+                  class="match-snippet"
+                  [innerHTML]="
+                    getSearchResult(child.id)?.matchedText | highlightMatch
+                  "
+                ></small>
+                }
+              </div>
+            </a>
+            }
+          </li>
+          }
+        </ul>
+        } } @else if (isNote(node)) {
+        <a
+          [routerLink]="['/Malons-Marvelous-Misadventures', node.id]"
+          routerLinkActive="active"
+          class="note-item"
+        >
+          <mat-icon class="note-icon">description</mat-icon>
+          <div class="note-content">
+            <span class="note-name">{{ node.title }}</span>
+            @if (searchQuery() && getSearchResult(node.id)?.matchedText) {
+            <small
+              class="match-snippet"
+              [innerHTML]="
+                getSearchResult(node.id)?.matchedText | highlightMatch
+              "
+            ></small>
+            }
+          </div>
+        </a>
+        }
+      </li>
+      }
+    </ul>
+    }
+  </div>
+</div>

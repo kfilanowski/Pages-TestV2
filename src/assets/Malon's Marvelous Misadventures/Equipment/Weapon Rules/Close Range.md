@@ -1,0 +1,1 @@
+Close Range is the shorter of the two [[Range]] increments for [[Ranged Attack|Ranged Attacks]] with Ranged [[Weapon|Weapons]], where there is no [[ACC]] penalty.

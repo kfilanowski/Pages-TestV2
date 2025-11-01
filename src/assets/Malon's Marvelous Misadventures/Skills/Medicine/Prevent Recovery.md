@@ -1,0 +1,1 @@
+Use [[Proficiency|Trained]] [[Medicine]] for one minute to prevent a Defeated creature from being able to recover on their own. This lasts 24 hours.

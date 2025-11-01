@@ -1,0 +1,1 @@
+This effect, when used with an [[Action-Attack]], is improved by attacking multiple times. It may apply its effect to every attack on your turn.

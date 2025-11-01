@@ -1,0 +1,2 @@
+Bestial Techniques are collections of abilities that are intended to be used with [[Natural Weapon|Natural Weapons]]. Most are restricted to certain types of attacks, such as claws or tail sweeps.
+[[Beast|Beasts]] and Natural Weapon-wielding creatures from the Bestiary will often have access to these as [[Innate Technique|Innate Techniques]].
