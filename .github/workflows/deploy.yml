@@ -31,26 +31,23 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('MMM/package-lock.json') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
 
       - name: Install dependencies
-        working-directory: ./MMM
         run: npm ci
 
       - name: Generate manifest
-        working-directory: ./MMM
         run: npm run generate:manifest
 
       - name: Build for GitHub Pages
-        working-directory: ./MMM
         run: npm run build:gh-pages
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./MMM/dist/MMM/browser
+          path: ./dist/MMM/browser
 
   deploy:
     environment:
