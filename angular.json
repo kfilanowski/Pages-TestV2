@@ -71,7 +71,7 @@
               "sourceMap": false,
               "extractLicenses": true,
               "outputMode": "static",
-              "baseHref": "/MMM/",
+              "baseHref": "/Pages-TestV2/",
               "ssr": false
             }
           },
