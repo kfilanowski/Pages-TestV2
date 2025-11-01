@@ -6,42 +6,10 @@
   <base href="/Pages-TestV2/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <!-- Meta refresh as fallback -->
-  <meta http-equiv="refresh" content="0; url=/Pages-TestV2/index.html">
-  <script type="text/javascript">
-    // GitHub Pages 404.html workaround for Angular routing
-    (function() {
-      var pathname = window.location.pathname;
-      var basePath = '/Pages-TestV2/';
-      
-      // Check if this is already the index page
-      var isIndexPage = pathname === basePath + 'index.html' || 
-                       pathname === basePath || 
-                       pathname === basePath.slice(0, -1);
-      
-      // If not the index page, redirect
-      if (!isIndexPage) {
-        // Save original URL for Angular router
-        var originalUrl = pathname + window.location.search + window.location.hash;
-        
-        // Use localStorage to persist across redirects
-        try {
-          if (typeof Storage !== 'undefined' && localStorage) {
-            localStorage.setItem('ghp-original-url', originalUrl);
-          }
-        } catch(e) {
-          // Ignore localStorage errors (e.g., private browsing)
-        }
-        
-        // Redirect to index.html immediately
-        // Angular will read the stored URL and route accordingly
-        window.location.replace(basePath + 'index.html');
-      }
-    })();
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-  <p>Redirecting...</p>
-  <p>If you are not redirected, <a href="/Pages-TestV2/index.html">click here</a>.</p>
+  <app-root></app-root>
 </body>
 </html>
