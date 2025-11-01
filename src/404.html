@@ -8,18 +8,24 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <script type="text/javascript">
     // GitHub Pages 404.html workaround for Angular routing
-    // When GitHub Pages serves 404.html, preserve the original URL
-    var originalPath = window.location.pathname;
-    var originalSearch = window.location.search;
-    var originalHash = window.location.hash;
-    
-    // Save the full original URL
-    var originalUrl = originalPath + originalSearch + originalHash;
-    sessionStorage.setItem('ghp-original-url', originalUrl);
-    
-    // Redirect to index.html
-    var basePath = '/Pages-TestV2/';
-    window.location.replace(basePath + 'index.html');
+    // Only redirect if we're not already on index.html and haven't redirected already
+    var hasRedirected = sessionStorage.getItem('ghp-redirecting');
+    if (!hasRedirected && !window.location.pathname.endsWith('/index.html') && !window.location.pathname.endsWith('/')) {
+      var originalPath = window.location.pathname;
+      var originalSearch = window.location.search;
+      var originalHash = window.location.hash;
+      
+      // Mark that we're redirecting to prevent loops
+      sessionStorage.setItem('ghp-redirecting', 'true');
+      
+      // Save the full original URL (relative to base)
+      var originalUrl = originalPath + originalSearch + originalHash;
+      sessionStorage.setItem('ghp-original-url', originalUrl);
+      
+      // Redirect to index.html
+      var basePath = '/Pages-TestV2/';
+      window.location.replace(basePath + 'index.html');
+    }
   </script>
 </head>
 <body>
