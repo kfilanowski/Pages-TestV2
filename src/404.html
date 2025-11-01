@@ -6,10 +6,23 @@
   <base href="/Pages-TestV2/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type="text/javascript">
+    // GitHub Pages 404.html workaround for Angular routing
+    // When GitHub Pages serves 404.html, preserve the original URL
+    var originalPath = window.location.pathname;
+    var originalSearch = window.location.search;
+    var originalHash = window.location.hash;
+    
+    // Save the full original URL
+    var originalUrl = originalPath + originalSearch + originalHash;
+    sessionStorage.setItem('ghp-original-url', originalUrl);
+    
+    // Redirect to index.html
+    var basePath = '/Pages-TestV2/';
+    window.location.replace(basePath + 'index.html');
+  </script>
 </head>
 <body>
-  <app-root></app-root>
+  <p>Redirecting...</p>
 </body>
 </html>
