@@ -71,7 +71,11 @@ export class MarkdownService {
     // Only load manifest in browser to avoid SSR issues
     if (this.isBrowser) {
       this.loadManifest();
-      this.buildReferencesGraph();
+      // Delay reference graph building until after initial page load
+      // This prevents blocking the first note from loading
+      setTimeout(() => {
+        this.buildReferencesGraph();
+      }, 2000); // Build graph 2 seconds after page load
     }
   }
 
@@ -379,28 +383,65 @@ export class MarkdownService {
 
   /**
    * Gets all notes that the specified note references (outgoing links)
+   * If the reference graph isn't built yet, extracts links from the cached note content
    */
   public getOutgoingLinks(noteId: string): Note[] {
-    const linkIds = this.outgoingLinks.get(noteId);
-    if (!linkIds) {
-      return [];
+    // If reference graph is ready, use it
+    if (this.referenceGraphReadySubject.value) {
+      const linkIds = this.outgoingLinks.get(noteId);
+      if (!linkIds) {
+        return [];
+      }
+
+      const notes: Note[] = [];
+      for (const linkId of linkIds) {
+        const note = this.notesMap.get(linkId);
+        if (note) {
+          notes.push(note);
+        }
+      }
+
+      return notes.sort((a, b) => a.title.localeCompare(b.title));
     }
 
-    const notes: Note[] = [];
-    for (const linkId of linkIds) {
-      const note = this.notesMap.get(linkId);
-      if (note) {
-        notes.push(note);
+    // Otherwise, extract links from cached note content if available
+    const cachedContent = this.notesCache.get(noteId);
+    if (cachedContent) {
+      // Try to extract links from HTML (wiki-links are converted to <a> tags)
+      const linkMatches = cachedContent.match(/data-note-id="([^"]+)"/g);
+      if (linkMatches) {
+        // Extract unique note IDs
+        const uniqueLinkIds = new Set(
+          linkMatches
+            .map((match) => match.replace('data-note-id="', '').replace('"', ''))
+            .filter((id) => this.notesMap.has(id))
+        );
+        
+        const notes: Note[] = [];
+        for (const linkId of uniqueLinkIds) {
+          const note = this.notesMap.get(linkId);
+          if (note) {
+            notes.push(note);
+          }
+        }
+
+        return notes.sort((a, b) => a.title.localeCompare(b.title));
       }
     }
 
-    return notes.sort((a, b) => a.title.localeCompare(b.title));
+    return [];
   }
 
   /**
    * Gets all notes that reference the specified note (incoming links/backlinks)
+   * Returns empty array if reference graph isn't built yet (backlinks require full graph)
    */
   public getIncomingLinks(noteId: string): Note[] {
+    // Backlinks require the full reference graph to be built
+    if (!this.referenceGraphReadySubject.value) {
+      return [];
+    }
+
     const linkIds = this.incomingLinks.get(noteId);
     if (!linkIds) {
       return [];

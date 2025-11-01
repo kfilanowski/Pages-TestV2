@@ -40,15 +40,14 @@ export class SidebarRightComponent {
   );
 
   // Computed properties for outgoing and incoming links
-  // Only compute when reference graph is ready
+  // Outgoing links can be shown immediately from cached content
+  // Incoming links require the full reference graph to be built
   protected readonly outgoingLinks = computed<Note[]>(() => {
     const noteId = this.currentNoteId();
-    const isReady = this.referenceGraphReady();
-
-    if (!noteId || !isReady) {
+    if (!noteId) {
       return [];
     }
-
+    // Can work immediately from cached note content
     return this.markdownService.getOutgoingLinks(noteId);
   });
 
@@ -56,6 +55,7 @@ export class SidebarRightComponent {
     const noteId = this.currentNoteId();
     const isReady = this.referenceGraphReady();
 
+    // Incoming links require full reference graph
     if (!noteId || !isReady) {
       return [];
     }

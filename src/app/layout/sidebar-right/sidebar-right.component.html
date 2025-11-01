@@ -4,9 +4,9 @@
 
     @if (currentNoteId()) {
     <!-- Outgoing Links Section -->
-    <div class="info-section" [class.fade-in]="referenceGraphReady()">
+    <div class="info-section" [class.fade-in]="true">
       <h3>Referenced Pages</h3>
-      @if (referenceGraphReady()) { @if (outgoingLinks().length > 0) {
+      @if (outgoingLinks().length > 0) {
       <p class="section-description">Pages referenced by this page:</p>
       <ul class="links-list">
         @for (note of outgoingLinks(); track note.id) {
@@ -22,7 +22,7 @@
       </ul>
       } @else {
       <p class="empty-state">No outgoing links</p>
-      } }
+      }
     </div>
 
     <!-- Incoming Links (Backlinks) Section -->

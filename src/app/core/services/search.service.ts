@@ -64,13 +64,25 @@ export class SearchService {
   private fuse?: Fuse<SearchableNote>;
 
   constructor() {
-    this.initializeSearch();
+    // Don't load all notes immediately - wait until search is first used or after initial page load
+    // This prevents blocking the initial page render
+    if (typeof window !== 'undefined') {
+      // Delay initialization until after initial page load
+      setTimeout(() => {
+        this.initializeSearch();
+      }, 3000); // Initialize search 3 seconds after page load
+    }
   }
 
   /**
    * Initialize the search by loading all notes and their content
+   * Can be called manually to initialize earlier if needed
    */
   private initializeSearch(): void {
+    if (this.notesLoadingComplete) {
+      return; // Already initialized
+    }
+
     // Wait for manifest to load, then load all note contents
     combineLatest([
       this.markdownService.notesTree$,
@@ -96,6 +108,16 @@ export class SearchService {
         // Load content for all notes
         this.loadNoteContents(notes);
       });
+  }
+
+  /**
+   * Ensures search is initialized when user starts searching
+   */
+  private ensureSearchInitialized(): void {
+    if (!this.notesLoadingComplete && !this.fuse) {
+      // Initialize immediately if user is searching
+      this.initializeSearch();
+    }
   }
 
   /**
@@ -176,8 +198,23 @@ export class SearchService {
   public search(query: string): void {
     this.searchQuerySubject.next(query);
 
+    // Ensure search is initialized if user is searching
+    this.ensureSearchInitialized();
+
     if (!query.trim() || !this.fuse) {
-      this.searchResultsSubject.next([]);
+      // If fuse isn't ready yet, show message or wait for initialization
+      if (query.trim() && !this.fuse) {
+        // Search is still loading, try again in a moment
+        setTimeout(() => {
+          if (this.fuse) {
+            this.search(query);
+          } else {
+            this.searchResultsSubject.next([]);
+          }
+        }, 100);
+      } else {
+        this.searchResultsSubject.next([]);
+      }
       return;
     }
 
