@@ -10,25 +10,26 @@
   <meta http-equiv="refresh" content="0; url=/Pages-TestV2/index.html">
   <script type="text/javascript">
     // GitHub Pages 404.html workaround for Angular routing
-    // Save the original URL before redirecting
     var pathname = window.location.pathname;
     var isIndexPage = pathname.endsWith('/index.html') || 
                      pathname === '/Pages-TestV2/' || 
                      pathname === '/Pages-TestV2';
     
     if (!isIndexPage) {
-      // Save original URL for Angular router to restore
+      // Save original URL for Angular router
       var originalUrl = pathname + window.location.search + window.location.hash;
+      
+      // Use localStorage instead of sessionStorage to persist across redirects
       try {
-        if (sessionStorage) {
-          sessionStorage.setItem('ghp-original-url', originalUrl);
-          sessionStorage.setItem('ghp-redirecting', 'true');
+        if (localStorage) {
+          localStorage.setItem('ghp-original-url', originalUrl);
         }
       } catch(e) {
-        // Ignore sessionStorage errors
+        // Ignore localStorage errors
       }
       
-      // Redirect immediately
+      // Redirect to index.html - don't change the URL in the address bar
+      // Angular will read the stored URL and route accordingly
       window.location.replace('/Pages-TestV2/index.html');
     }
   </script>
