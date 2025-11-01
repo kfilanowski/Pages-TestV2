@@ -8,24 +8,38 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <script type="text/javascript">
     // GitHub Pages 404.html workaround for Angular routing
-    // Only redirect if we're not already on index.html and haven't redirected already
-    var hasRedirected = sessionStorage.getItem('ghp-redirecting');
-    if (!hasRedirected && !window.location.pathname.endsWith('/index.html') && !window.location.pathname.endsWith('/')) {
-      var originalPath = window.location.pathname;
-      var originalSearch = window.location.search;
-      var originalHash = window.location.hash;
-      
-      // Mark that we're redirecting to prevent loops
-      sessionStorage.setItem('ghp-redirecting', 'true');
-      
-      // Save the full original URL (relative to base)
-      var originalUrl = originalPath + originalSearch + originalHash;
-      sessionStorage.setItem('ghp-original-url', originalUrl);
-      
-      // Redirect to index.html
-      var basePath = '/Pages-TestV2/';
-      window.location.replace(basePath + 'index.html');
-    }
+    // Redirect to index.html and preserve the original URL for Angular router
+    (function() {
+      try {
+        var pathname = window.location.pathname;
+        // Check if we're already on index.html or the root
+        var isIndexPage = pathname.endsWith('/index.html') || 
+                         pathname === '/Pages-TestV2/' || 
+                         pathname === '/Pages-TestV2';
+        
+        // Check if we've already redirected (prevent loops)
+        var hasRedirected = sessionStorage ? sessionStorage.getItem('ghp-redirecting') : null;
+        
+        // Only redirect if we're not already on index.html and haven't redirected
+        if (!isIndexPage && !hasRedirected) {
+          // Save original URL for Angular router
+          var originalUrl = pathname + window.location.search + window.location.hash;
+          if (sessionStorage) {
+            sessionStorage.setItem('ghp-original-url', originalUrl);
+            sessionStorage.setItem('ghp-redirecting', 'true');
+          }
+          
+          // Redirect to index.html immediately
+          window.location.replace('/Pages-TestV2/index.html');
+        } else if (isIndexPage && sessionStorage) {
+          // Clear any stale redirect flags if we're on index
+          sessionStorage.removeItem('ghp-redirecting');
+        }
+      } catch (e) {
+        // Fallback: just redirect to index
+        window.location.replace('/Pages-TestV2/index.html');
+      }
+    })();
   </script>
 </head>
 <body>

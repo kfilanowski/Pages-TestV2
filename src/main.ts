@@ -6,23 +6,45 @@ import { App } from './app/app';
 (function() {
   if (typeof window !== 'undefined' && window.sessionStorage) {
     // Clear the redirecting flag
+    const hasRedirected = sessionStorage.getItem('ghp-redirecting');
     sessionStorage.removeItem('ghp-redirecting');
     
-    const originalUrl = sessionStorage.getItem('ghp-original-url');
-    // Only restore if we came from a 404.html redirect (we're on index.html now)
-    if (originalUrl && window.location.pathname.endsWith('/index.html')) {
-      sessionStorage.removeItem('ghp-original-url');
-      
-      // Parse the original URL
-      const urlParts = originalUrl.split('?');
-      const path = urlParts[0];
-      const search = urlParts[1] ? '?' + urlParts[1] : '';
-      const hash = window.location.hash; // Keep current hash if any
-      
-      // Only restore if the path is different and valid
-      if (path !== window.location.pathname && path.startsWith('/Pages-TestV2/')) {
-        // Restore the full path before Angular boots so router can handle it correctly
-        window.history.replaceState(null, '', path + search + hash);
+    // If we came from a redirect, restore the original URL
+    if (hasRedirected) {
+      const originalUrl = sessionStorage.getItem('ghp-original-url');
+      if (originalUrl) {
+        sessionStorage.removeItem('ghp-original-url');
+        
+        // Parse the original URL - split by ? first, then handle hash
+        let path = originalUrl;
+        let search = '';
+        let hash = '';
+        
+        if (originalUrl.includes('?')) {
+          const parts = originalUrl.split('?');
+          path = parts[0];
+          const queryAndHash = parts[1];
+          if (queryAndHash.includes('#')) {
+            const queryParts = queryAndHash.split('#');
+            search = '?' + queryParts[0];
+            hash = '#' + queryParts[1];
+          } else {
+            search = '?' + queryAndHash;
+          }
+        } else if (originalUrl.includes('#')) {
+          const parts = originalUrl.split('#');
+          path = parts[0];
+          hash = '#' + parts[1];
+        }
+        
+        // Restore the original path before Angular boots so router can handle it
+        if (path && path.startsWith('/Pages-TestV2/')) {
+          const newUrl = path + search + hash;
+          const currentUrl = window.location.pathname + window.location.search + window.location.hash;
+          if (newUrl !== currentUrl) {
+            window.history.replaceState(null, '', newUrl);
+          }
+        }
       }
     }
   }
