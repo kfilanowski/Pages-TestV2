@@ -71,7 +71,8 @@
               "sourceMap": false,
               "extractLicenses": true,
               "outputMode": "static",
-              "baseHref": "/MMM/"
+              "baseHref": "/MMM/",
+              "ssr": false
             }
           },
           "defaultConfiguration": "production"

@@ -1,4 +1,5 @@
-import { Injectable, inject } from '@angular/core';
+import { Injectable, inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import {
   Observable,
@@ -36,6 +37,8 @@ import {
 })
 export class MarkdownService {
   private readonly http = inject(HttpClient);
+  private readonly platformId = inject(PLATFORM_ID);
+  private readonly isBrowser = isPlatformBrowser(this.platformId);
 
   // Cache for loaded notes to avoid redundant HTTP requests
   private readonly notesCache = new Map<string, string>();
@@ -65,8 +68,11 @@ export class MarkdownService {
 
   constructor() {
     this.configureMarked();
-    this.loadManifest();
-    this.buildReferencesGraph();
+    // Only load manifest in browser to avoid SSR issues
+    if (this.isBrowser) {
+      this.loadManifest();
+      this.buildReferencesGraph();
+    }
   }
 
   /**
