@@ -10,28 +10,34 @@
   <meta http-equiv="refresh" content="0; url=/Pages-TestV2/index.html">
   <script type="text/javascript">
     // GitHub Pages 404.html workaround for Angular routing
-    var pathname = window.location.pathname;
-    var isIndexPage = pathname.endsWith('/index.html') || 
-                     pathname === '/Pages-TestV2/' || 
-                     pathname === '/Pages-TestV2';
-    
-    if (!isIndexPage) {
-      // Save original URL for Angular router
-      var originalUrl = pathname + window.location.search + window.location.hash;
+    (function() {
+      var pathname = window.location.pathname;
+      var basePath = '/Pages-TestV2/';
       
-      // Use localStorage instead of sessionStorage to persist across redirects
-      try {
-        if (localStorage) {
-          localStorage.setItem('ghp-original-url', originalUrl);
+      // Check if this is already the index page
+      var isIndexPage = pathname === basePath + 'index.html' || 
+                       pathname === basePath || 
+                       pathname === basePath.slice(0, -1);
+      
+      // If not the index page, redirect
+      if (!isIndexPage) {
+        // Save original URL for Angular router
+        var originalUrl = pathname + window.location.search + window.location.hash;
+        
+        // Use localStorage to persist across redirects
+        try {
+          if (typeof Storage !== 'undefined' && localStorage) {
+            localStorage.setItem('ghp-original-url', originalUrl);
+          }
+        } catch(e) {
+          // Ignore localStorage errors (e.g., private browsing)
         }
-      } catch(e) {
-        // Ignore localStorage errors
+        
+        // Redirect to index.html immediately
+        // Angular will read the stored URL and route accordingly
+        window.location.replace(basePath + 'index.html');
       }
-      
-      // Redirect to index.html - don't change the URL in the address bar
-      // Angular will read the stored URL and route accordingly
-      window.location.replace('/Pages-TestV2/index.html');
-    }
+    })();
   </script>
 </head>
 <body>
