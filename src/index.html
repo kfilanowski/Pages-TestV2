@@ -8,6 +8,15 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script>
+    // Set dark mode immediately to prevent flash of light mode
+    (function() {
+      const stored = localStorage.getItem('mmm-theme-preference');
+      const theme = stored === 'light' ? 'light' : 'dark';
+      document.documentElement.style.colorScheme = theme;
+      document.body.setAttribute('data-theme', theme);
+    })();
+  </script>
 </head>
 <body>
   <app-root></app-root>

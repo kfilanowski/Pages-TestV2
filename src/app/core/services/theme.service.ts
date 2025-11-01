@@ -56,18 +56,18 @@ export class ThemeService {
   }
 
   /**
-   * Gets the initial theme from localStorage or defaults to 'light'
+   * Gets the initial theme from localStorage or defaults to 'dark'
    */
   private getInitialTheme(): 'light' | 'dark' {
     if (!this.isBrowser) {
-      return 'light'; // Default for SSR
+      return 'dark'; // Default for SSR
     }
 
     try {
       const stored = localStorage.getItem(this.THEME_STORAGE_KEY);
-      return stored === 'dark' ? 'dark' : 'light';
+      return stored === 'light' ? 'light' : 'dark';
     } catch {
-      return 'light';
+      return 'dark';
     }
   }
 

@@ -5,22 +5,8 @@
 // custom components at https://material.angular.dev/guide/theming
 @use "@angular/material" as mat;
 
-// Light theme configuration
+// Dark theme configuration for Angular Material components (default)
 html {
-  @include mat.theme(
-    (
-      color: (
-        primary: mat.$rose-palette,
-        tertiary: mat.$red-palette,
-      ),
-      typography: Roboto,
-      density: 0,
-    )
-  );
-}
-
-// Dark theme configuration for Angular Material components
-body[data-theme="dark"] {
   @include mat.theme(
     (
       color: (
@@ -34,10 +20,24 @@ body[data-theme="dark"] {
   );
 }
 
+// Light theme configuration for Angular Material components
+body[data-theme="light"] {
+  @include mat.theme(
+    (
+      color: (
+        primary: mat.$rose-palette,
+        tertiary: mat.$red-palette,
+      ),
+      typography: Roboto,
+      density: 0,
+    )
+  );
+}
+
 body {
   // Color scheme is set dynamically by ThemeService via theme.service.ts
-  // Default to light, but will be overridden when dark mode is active
-  color-scheme: light;
+  // Default to dark, but will be overridden when light mode is active
+  color-scheme: dark;
 
   // Use our custom CSS variables for consistent theming
   background-color: var(--bg-color);
@@ -125,8 +125,57 @@ a {
   }
 }
 
+// Dark Theme - Sophisticated Dark Mode with Warm Accents (default)
+:root {
+  // Background colors - lighter dark mode with sidebar contrast
+  --content-bg: rgb(40, 40, 40);
+  --surface-color: rgb(40, 40, 40);
+  --header-bg: rgb(40, 40, 40);
+  --sidebar-bg: rgb(32, 32, 32);
+  --bg-color: rgb(40, 40, 40);
+
+  // Text colors - warm beige tones
+  --text-primary: rgb(212, 190, 152);
+  --text-secondary: rgb(180, 160, 130);
+
+  // Orange accent colors - slightly brighter for dark backgrounds
+  --primary-color: rgb(255, 160, 100);
+  --primary-hover: rgb(255, 180, 120);
+  --primary-dark: rgb(231, 138, 78);
+  --primary-darker: rgb(207, 118, 58);
+  --link-color: rgb(255, 160, 100);
+  --wiki-link-color: rgb(255, 160, 100);
+  --accent-color: rgb(255, 160, 100);
+
+  // Border and separator colors - lighter for better visibility
+  --border-color: rgb(70, 70, 70);
+
+  // Interactive states
+  --hover-bg: rgba(255, 160, 100, 0.12);
+  --active-bg: rgba(255, 160, 100, 0.18);
+
+  // Code blocks - slightly lighter than background
+  --code-bg: rgb(50, 50, 50);
+
+  // Table styling
+  --table-header-bg: rgb(50, 50, 50);
+
+  // Scrollbar - orange with good contrast
+  --scrollbar-thumb: rgb(255, 160, 100);
+  --scrollbar-thumb-hover: rgb(255, 180, 120);
+
+  // Error color - brighter red for dark backgrounds
+  --error-color: #ff5252;
+
+  // Footer - slightly darker than main background
+  --footer-bg: rgb(30, 30, 30);
+
+  // Shadows - softer for lighter dark mode
+  --shadow-2: 0 4px 8px rgba(0, 0, 0, 0.3);
+  --shadow-3: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
 // Light Theme - Warm Orange Color Scheme
-:root,
 body[data-theme="light"] {
   // Background colors - warm parchment tones
   --content-bg: #faf8f3;
@@ -176,7 +225,7 @@ body[data-theme="light"] {
   --shadow-3: 0 8px 16px rgba(62, 39, 35, 0.2);
 }
 
-// Dark Theme - Sophisticated Dark Mode with Warm Accents
+// Dark Theme - Explicit dark mode override (when data-theme="dark" is set)
 body[data-theme="dark"] {
   // Background colors - lighter dark mode with sidebar contrast
   --content-bg: rgb(40, 40, 40);
