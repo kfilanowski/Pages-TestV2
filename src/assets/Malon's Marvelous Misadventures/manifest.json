@@ -1084,21 +1084,21 @@
               "title": "Attack",
               "path": "Core Rules, How to Play/Attacking/Attack.md",
               "fileName": "Attack.md",
-              "icon": "LiSword"
+              "icon": "GiSwordman"
             },
             {
               "id": "Crit",
               "title": "Crit",
               "path": "Core Rules, How to Play/Attacking/Crit.md",
               "fileName": "Crit.md",
-              "icon": "RaBombExplosion"
+              "icon": "GiBurstBlob"
             },
             {
               "id": "Critical Damage",
               "title": "Critical Damage",
               "path": "Core Rules, How to Play/Attacking/Critical Damage.md",
               "fileName": "Critical Damage.md",
-              "icon": "RaExplosion"
+              "icon": "GiExplosiveMaterials"
             },
             {
               "id": "Damage",
@@ -1348,7 +1348,7 @@
               "title": "Limited",
               "path": "Core Rules, How to Play/Recharging Abilities/Limited.md",
               "fileName": "Limited.md",
-              "icon": "TiEggCracked"
+              "icon": "GiCrackedGlass"
             },
             {
               "id": "Mana Burn",
@@ -1361,7 +1361,7 @@
               "title": "Mana",
               "path": "Core Rules, How to Play/Recharging Abilities/Mana.md",
               "fileName": "Mana.md",
-              "icon": "CoWaterDrop"
+              "icon": "GiWaterDrop"
             },
             {
               "id": "Recharge",
@@ -3489,7 +3489,7 @@
               "title": "Stealth",
               "path": "Skills/Stealth/Stealth.md",
               "fileName": "Stealth.md",
-              "icon": "RaHood",
+              "icon": "GiHood",
               "tags": [
                 "DEX"
               ]
