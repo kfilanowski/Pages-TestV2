@@ -105,11 +105,12 @@ export class IconifyIconComponent implements OnInit, AfterViewInit {
    * Design decision:
    * - Uses cascading fallback across multiple icon libraries
    * - Automatically finds a working icon without manual intervention
+   * - Optimized timing: 50ms initial check, 20ms between retries
    * - Logs which library was used for debugging
    * - Falls back to default icon if none work
    */
   private tryNextIconCandidate(iconElement: HTMLElement): void {
-    // Give the current icon 500ms to load
+    // Give the current icon 50ms to load (Iconify is very fast)
     setTimeout(() => {
       const hasSvg = iconElement.shadowRoot?.querySelector('svg');
       
@@ -125,8 +126,8 @@ export class IconifyIconComponent implements OnInit, AfterViewInit {
           // Trigger Angular change detection to update the template
           this.cdr.detectChanges();
           
-          // Recursively try next candidate
-          setTimeout(() => this.tryNextIconCandidate(iconElement), 100);
+          // Recursively try next candidate (minimal delay)
+          setTimeout(() => this.tryNextIconCandidate(iconElement), 20);
         } else {
           // All candidates failed
           this.handleAllCandidatesFailed();
@@ -145,7 +146,7 @@ export class IconifyIconComponent implements OnInit, AfterViewInit {
           );
         }
       }
-    }, 500);
+    }, 50);
   }
 
   /**

@@ -213,6 +213,7 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
   /**
    * Tries icon candidates in sequence for wiki-links
    * Uses the same cascading fallback strategy as the main icon component
+   * Optimized for speed: 50ms per attempt
    */
   private tryWikiIconCandidates(
     iconElement: HTMLElement,
@@ -226,14 +227,14 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
     // Set the current candidate
     iconElement.setAttribute('icon', candidates[index]);
 
-    // Check if this icon loads successfully after a short delay
+    // Check if this icon loads successfully after a short delay (50ms)
     setTimeout(() => {
       const hasSvg = iconElement.shadowRoot?.querySelector('svg');
       if (!hasSvg && index + 1 < candidates.length) {
         // This candidate failed, try the next one
         this.tryWikiIconCandidates(iconElement, candidates, index + 1);
       }
-    }, 300);
+    }, 50);
   }
 
   /**
