@@ -168,6 +168,64 @@ export class IconService {
   }
 
   /**
+   * Priority order for trying different icon libraries
+   * Ordered by likelihood of having RPG/general purpose icons
+   */
+  private readonly libraryFallbackOrder = [
+    'game-icons',      // Best for RPG content - 4,000+ icons
+    'lucide',          // Clean, modern - good coverage
+    'fa6-solid',       // Font Awesome - huge variety
+    'heroicons',       // Good general purpose
+    'tabler',          // Large collection
+    'ion',             // Ionicons - mobile friendly
+    'mdi',             // Material Design - comprehensive
+  ];
+
+  /**
+   * Generates fallback icon candidates by trying the same icon name across multiple libraries
+   * 
+   * @param iconName - Original icon name (e.g., "IbTarget")
+   * @returns Array of icon candidates in Iconify format, ordered by priority
+   * 
+   * Design decision:
+   * - Tries the original conversion first
+   * - Then tries the same icon name in other libraries (priority order)
+   * - Allows automatic discovery of working icons without manual intervention
+   * - Returns empty array if icon name is invalid
+   * 
+   * @example
+   * getIconFallbackCandidates('IbTarget')
+   * // Returns: ['ion:target', 'game-icons:target', 'lucide:target', 'fa6-solid:target', ...]
+   */
+  getIconFallbackCandidates(iconName: string | undefined): string[] {
+    if (!iconName || iconName.trim() === '') {
+      return [];
+    }
+
+    const candidates: string[] = [];
+    
+    // First, try the original conversion
+    const primaryIcon = this.convertToIconifyFormat(iconName);
+    if (primaryIcon) {
+      candidates.push(primaryIcon);
+      
+      // Extract the icon suffix (the part after the colon)
+      const [, iconSuffix] = primaryIcon.split(':');
+      
+      // Try the same icon name in other libraries
+      this.libraryFallbackOrder.forEach(library => {
+        const candidate = `${library}:${iconSuffix}`;
+        // Don't add duplicates
+        if (!candidates.includes(candidate)) {
+          candidates.push(candidate);
+        }
+      });
+    }
+    
+    return candidates;
+  }
+
+  /**
    * Gets a fallback icon name for when the specified icon cannot be loaded
    * 
    * @returns Default fallback icon in Iconify format

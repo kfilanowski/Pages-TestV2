@@ -11,6 +11,7 @@
     "serve:ssr:MMM": "node dist/MMM/server/server.mjs",
     "generate:data": "node scripts/generate-data-files.js",
     "generate:manifest": "node scripts/generate-data-files.js",
+    "validate:icons": "node scripts/validate-icons.js",
     "prebuild": "npm run generate:data"
   },
   "prettier": {

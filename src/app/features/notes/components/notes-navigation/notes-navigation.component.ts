@@ -22,10 +22,11 @@ import { IconifyIconComponent } from '../../../../shared/components/iconify-icon
  *
  * Design decisions:
  * - Uses Angular signals for reactive state management
- * - Recursive template for rendering nested folder structure
+ * - Recursive ng-template for rendering nested folder structure at any depth
  * - Auto-expands folders when navigating to a note
  * - Material-inspired tree UI without direct Material dependency
  * - Single Responsibility: handles only navigation tree display and interaction
+ * - Recursive design follows Open/Closed Principle: extensible to any tree depth
  */
 @Component({
   selector: 'app-notes-navigation',
@@ -90,7 +91,8 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
       const match = url.match(/\/Malons-Marvelous-Misadventures\/(.+)/);
       
       if (match) {
-        const noteId = match[1];
+        // Decode URL-encoded characters (e.g., %20 -> space) to match note IDs in tree
+        const noteId = decodeURIComponent(match[1].split('?')[0].split('#')[0]);
         this.expandPathToNote(tree, noteId);
       }
       
@@ -111,7 +113,9 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
           const match = url.match(/\/Malons-Marvelous-Misadventures\/(.+)/);
           
           if (match) {
-            const noteId = match[1];
+            // Decode URL-encoded characters (e.g., %20 -> space) to match note IDs in tree
+            // Also strip query params and fragments
+            const noteId = decodeURIComponent(match[1].split('?')[0].split('#')[0]);
             this.expandPathToNote(tree, noteId);
             // Trigger update by creating new reference
             this.allTreeNodes.set([...tree]);

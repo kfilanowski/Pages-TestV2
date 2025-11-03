@@ -58,8 +58,8 @@
     min-height: 100%;
   }
 
-  // Adjust margins when sidebars are open on desktop
-  @media (min-width: 1280px) {
+  // Adjust margins when sidebars are open on desktop/tablet
+  @media (min-width: 768px) {
     &.left-sidebar-open {
       margin-left: var(--sidebar-width);
     }
@@ -114,7 +114,7 @@
   cursor: pointer;
   animation: fadeIn 0.3s ease;
 
-  @media (min-width: 1280px) {
+  @media (min-width: 768px) {
     display: none;
   }
 }
@@ -143,7 +143,7 @@
   }
 }
 
-// Tablets
+// Tablets and small desktops
 @media (min-width: 768px) and (max-width: 1279px) {
   :host {
     --sidebar-width: 300px;

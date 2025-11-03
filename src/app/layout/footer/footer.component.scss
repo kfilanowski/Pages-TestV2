@@ -51,8 +51,8 @@
     }
   }
 
-  // Adjust margins when sidebars are open on desktop (matching app-main behavior)
-  @media (min-width: 1280px) {
+  // Adjust margins when sidebars are open on desktop/tablet (matching app-main behavior)
+  @media (min-width: 768px) {
     &.left-sidebar-open {
       margin-left: var(--sidebar-width, 280px);
     }

@@ -169,6 +169,7 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
   /**
    * Adds an icon to a wiki-link if it has a data-icon attribute
    * Converts icon names to Iconify format and inserts the icon before the text
+   * Uses cascading fallback to try multiple libraries if the first one fails
    */
   private addIconToWikiLink(link: HTMLElement): void {
     // Check if link already has an icon element
@@ -181,9 +182,9 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
       return; // No icon specified
     }
 
-    // Convert icon name to Iconify format using IconService
-    const iconifyName = this.iconService.convertToIconifyFormat(iconName);
-    if (!iconifyName) {
+    // Get list of icon candidates (with cascading fallback)
+    const iconCandidates = this.iconService.getIconFallbackCandidates(iconName);
+    if (iconCandidates.length === 0) {
       return; // Icon name not recognized
     }
 
@@ -191,12 +192,14 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
     // (Angular's renderer doesn't properly handle custom elements/web components)
     const iconElement = document.createElement('iconify-icon');
     iconElement.classList.add('wiki-link-icon');
-    iconElement.setAttribute('icon', iconifyName);
     iconElement.setAttribute('width', '16');
     iconElement.setAttribute('height', '16');
     iconElement.style.marginRight = '4px';
     iconElement.style.display = 'inline-flex';
     iconElement.style.verticalAlign = 'middle';
+    
+    // Try icon candidates with cascading fallback
+    this.tryWikiIconCandidates(iconElement, iconCandidates, 0);
     
     // Insert icon at the beginning of the link
     const firstChild = link.firstChild;
@@ -205,6 +208,32 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
     } else {
       link.appendChild(iconElement);
     }
+  }
+
+  /**
+   * Tries icon candidates in sequence for wiki-links
+   * Uses the same cascading fallback strategy as the main icon component
+   */
+  private tryWikiIconCandidates(
+    iconElement: HTMLElement,
+    candidates: string[],
+    index: number
+  ): void {
+    if (index >= candidates.length) {
+      return; // No more candidates to try
+    }
+
+    // Set the current candidate
+    iconElement.setAttribute('icon', candidates[index]);
+
+    // Check if this icon loads successfully after a short delay
+    setTimeout(() => {
+      const hasSvg = iconElement.shadowRoot?.querySelector('svg');
+      if (!hasSvg && index + 1 < candidates.length) {
+        // This candidate failed, try the next one
+        this.tryWikiIconCandidates(iconElement, candidates, index + 1);
+      }
+    }, 300);
   }
 
   /**

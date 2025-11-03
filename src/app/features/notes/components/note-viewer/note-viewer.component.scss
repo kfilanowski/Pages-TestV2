@@ -3,7 +3,7 @@
   height: 100%;
   overflow-y: auto;
   background-color: var(--content-bg, #ffffff);
-  padding: 1rem 2rem 2rem 2rem;
+  padding: 38px 2rem 2rem 2rem;
 }
 
 .error-state {
@@ -37,7 +37,7 @@
 
 // Container for note title and content with fade transition
 .note-container {
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
   opacity: 0;
   transition: opacity 0.125s ease-in-out;

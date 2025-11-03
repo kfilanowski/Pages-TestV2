@@ -1,4 +1,4 @@
-import { Component, Input, CUSTOM_ELEMENTS_SCHEMA, OnInit, inject } from '@angular/core';
+import { Component, Input, CUSTOM_ELEMENTS_SCHEMA, OnInit, AfterViewInit, ElementRef, ChangeDetectorRef, inject } from '@angular/core';
 import { IconService } from '../../../core/services/icon.service';
 
 /**
@@ -10,6 +10,7 @@ import { IconService } from '../../../core/services/icon.service';
  * - Provides type-safe API for icon usage throughout the app
  * - Supports size and color customization
  * - Handles fallback icons gracefully
+ * - Detects when icons fail to load and provides helpful warnings
  * - Follows Single Responsibility Principle
  * 
  * Usage:
@@ -48,8 +49,10 @@ import { IconService } from '../../../core/services/icon.service';
     }
   `]
 })
-export class IconifyIconComponent implements OnInit {
+export class IconifyIconComponent implements OnInit, AfterViewInit {
   private readonly iconService = inject(IconService);
+  private readonly elementRef = inject(ElementRef);
+  private readonly cdr = inject(ChangeDetectorRef);
 
   /** 
    * Icon name in custom format (FiTarget, LuSword) or Iconify format (lucide:target)
@@ -68,18 +71,108 @@ export class IconifyIconComponent implements OnInit {
 
   /** Converted icon name in Iconify format */
   protected iconifyName: string | null = null;
+  
+  /** List of icon candidates to try (for cascading fallback) */
+  private iconCandidates: string[] = [];
+  private currentCandidateIndex = 0;
 
   ngOnInit(): void {
-    this.iconifyName = this.iconService.convertToIconifyFormat(this.icon);
+    // Generate list of icon candidates (primary + fallbacks)
+    this.iconCandidates = this.iconService.getIconFallbackCandidates(this.icon);
     
-    // Use fallback if conversion failed and fallback is enabled
-    if (!this.iconifyName && this.useFallback) {
+    if (this.iconCandidates.length > 0) {
+      // Start with the first candidate (original conversion)
+      this.iconifyName = this.iconCandidates[0];
+    } else if (this.useFallback) {
+      // If no candidates and fallback enabled, use default
       this.iconifyName = this.iconService.getFallbackIcon();
-    }
-
-    // Warn in development if icon cannot be converted
-    if (!this.iconifyName && this.icon) {
+    } else if (this.icon) {
       console.warn(`Could not convert icon: ${this.icon}`);
+    }
+  }
+
+  ngAfterViewInit(): void {
+    // Start the cascading fallback detection
+    const iconElement = this.elementRef.nativeElement.querySelector('iconify-icon');
+    if (iconElement && this.iconCandidates.length > 0) {
+      this.tryNextIconCandidate(iconElement);
+    }
+  }
+
+  /**
+   * Tries icon candidates in sequence until one loads successfully
+   * 
+   * Design decision:
+   * - Uses cascading fallback across multiple icon libraries
+   * - Automatically finds a working icon without manual intervention
+   * - Logs which library was used for debugging
+   * - Falls back to default icon if none work
+   */
+  private tryNextIconCandidate(iconElement: HTMLElement): void {
+    // Give the current icon 500ms to load
+    setTimeout(() => {
+      const hasSvg = iconElement.shadowRoot?.querySelector('svg');
+      
+      if (!hasSvg) {
+        // Current icon failed to load
+        this.currentCandidateIndex++;
+        
+        if (this.currentCandidateIndex < this.iconCandidates.length) {
+          // Try next candidate
+          const nextCandidate = this.iconCandidates[this.currentCandidateIndex];
+          this.iconifyName = nextCandidate;
+          
+          // Trigger Angular change detection to update the template
+          this.cdr.detectChanges();
+          
+          // Recursively try next candidate
+          setTimeout(() => this.tryNextIconCandidate(iconElement), 100);
+        } else {
+          // All candidates failed
+          this.handleAllCandidatesFailed();
+        }
+      } else {
+        // Icon loaded successfully!
+        if (this.currentCandidateIndex > 0) {
+          // We used a fallback, log it for awareness
+          const [originalLibrary] = this.iconCandidates[0].split(':');
+          const [usedLibrary] = this.iconifyName!.split(':');
+          console.log(
+            `%c✓ Icon fallback: ${this.icon}`,
+            'color: #4CAF50; font-weight: bold;',
+            `\n  Original: ${this.iconCandidates[0]} (not found in ${originalLibrary})`,
+            `\n  Using: ${this.iconifyName} (found in ${usedLibrary})`
+          );
+        }
+      }
+    }, 500);
+  }
+
+  /**
+   * Handles the case where all icon candidates failed to load
+   */
+  private handleAllCandidatesFailed(): void {
+    const [, iconName] = this.iconCandidates[0].split(':');
+    
+    console.group(`⚠️ Icon not found in any library: ${this.icon}`);
+    console.warn(`Tried ${this.iconCandidates.length} libraries:`);
+    this.iconCandidates.forEach((candidate, index) => {
+      const [library] = candidate.split(':');
+      console.log(`  ${index + 1}. ${candidate} (${library}) ✗`);
+    });
+    console.log('%cSuggestions:', 'font-weight: bold; color: #FF9800;');
+    console.log(`1. The icon name "${iconName}" doesn't exist in any library`);
+    console.log('2. Search for similar icons: https://icon-sets.iconify.design/');
+    console.log('3. Common alternatives:');
+    console.log(`   - For "target": GiTarget, LuTarget, FaTarget`);
+    console.log(`   - For "sword": GiSword, LuSword, FaSword`);
+    console.log(`   - For "shield": GiShield, LuShield, FaShield`);
+    console.log('4. Check the Icon Usage Guide in your assets folder');
+    console.groupEnd();
+    
+    // Use ultimate fallback if enabled
+    if (this.useFallback) {
+      this.iconifyName = this.iconService.getFallbackIcon();
     }
   }
 

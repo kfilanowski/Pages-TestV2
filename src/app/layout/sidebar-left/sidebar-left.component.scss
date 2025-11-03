@@ -153,8 +153,8 @@
   }
 }
 
-// Desktop - push content
-@media (min-width: 1280px) {
+// Desktop/Tablet - push content (no overlay)
+@media (min-width: 768px) {
   .left-sidebar {
     border-right: 1px solid var(--border-color, #e0e0e0);
 

@@ -1,5 +1,5 @@
 import { Component, signal, inject, OnInit, OnDestroy } from '@angular/core';
-import { RouterOutlet, Router, ActivationEnd } from '@angular/router';
+import { RouterOutlet, Router, ActivationEnd, NavigationEnd } from '@angular/router';
 import { filter, Subscription } from 'rxjs';
 
 // Layout components (using barrel export for cleaner imports)
@@ -30,6 +30,7 @@ import { ThemeService } from './core/services';
  * - Separation of concerns: state management vs presentation
  * - Tracks current route to pass note ID to sidebar
  * - Integrates ThemeService for global theme state
+ * - Mobile-first: sidebars start closed on mobile devices
  */
 @Component({
   selector: 'app-root',
@@ -50,12 +51,21 @@ export class App implements OnInit, OnDestroy {
   private readonly router = inject(Router);
   private readonly themeService = inject(ThemeService);
   private routerSubscription?: Subscription;
+  private navigationSubscription?: Subscription;
+
+  // Mobile breakpoint - sidebars closed below this width
+  private readonly MOBILE_BREAKPOINT = 768;
+  // Desktop breakpoint - left sidebar can be open above this width
+  private readonly DESKTOP_BREAKPOINT = 1000;
+  // Wide desktop breakpoint - right sidebar can be open above this width
+  private readonly WIDE_DESKTOP_BREAKPOINT = 1250;
 
   protected readonly title = 'Malon\'s Marvelous Misadventures';
 
   // Reactive state for sidebar visibility using Angular signals
-  protected readonly leftSidebarOpen = signal(true);
-  protected readonly rightSidebarOpen = signal(true);
+  // Initialize based on screen size: closed on mobile, open on desktop
+  protected readonly leftSidebarOpen = signal(this.getInitialLeftSidebarState());
+  protected readonly rightSidebarOpen = signal(this.getInitialRightSidebarState());
 
   // Track current note ID for sidebar reference display
   protected readonly currentNoteId = signal<string | null>(null);
@@ -83,14 +93,87 @@ export class App implements OnInit, OnDestroy {
         }
       });
 
+    // Listen to navigation end events to close sidebars on mobile
+    this.navigationSubscription = this.router.events
+      .pipe(
+        filter((event) => event instanceof NavigationEnd),
+      )
+      .subscribe(() => {
+        // Close sidebars on mobile after navigation
+        if (this.isMobile()) {
+          this.leftSidebarOpen.set(false);
+          this.rightSidebarOpen.set(false);
+        }
+      });
+
     // Set initial note ID
     const noteId = this.extractNoteIdFromRoute();
     this.currentNoteId.set(noteId);
   }
 
   ngOnDestroy(): void {
-    // Clean up subscription
+    // Clean up subscriptions
     this.routerSubscription?.unsubscribe();
+    this.navigationSubscription?.unsubscribe();
+  }
+
+  /**
+   * Determines initial left sidebar state based on screen size
+   * On mobile (< 768px), left sidebar starts closed
+   * On tablet and desktop (>= 768px), left sidebar starts open
+   */
+  private getInitialLeftSidebarState(): boolean {
+    // Default to closed for SSR, will be correct on hydration
+    if (typeof window === 'undefined') {
+      return false;
+    }
+    return window.innerWidth >= this.MOBILE_BREAKPOINT;
+  }
+
+  /**
+   * Determines initial right sidebar state based on screen size
+   * On screens (< 1250px), right sidebar starts closed
+   * On wide desktop (>= 1250px), right sidebar starts open
+   */
+  private getInitialRightSidebarState(): boolean {
+    // Default to closed for SSR, will be correct on hydration
+    if (typeof window === 'undefined') {
+      return false;
+    }
+    return window.innerWidth >= this.WIDE_DESKTOP_BREAKPOINT;
+  }
+
+  /**
+   * Checks if the current viewport is mobile size
+   */
+  private isMobile(): boolean {
+    if (typeof window === 'undefined') {
+      return false;
+    }
+    return window.innerWidth < this.MOBILE_BREAKPOINT;
+  }
+
+  /**
+   * Checks if the current viewport is tablet size (768px-999px)
+   * In this range, only one sidebar can be open at a time
+   */
+  private isTablet(): boolean {
+    if (typeof window === 'undefined') {
+      return false;
+    }
+    const width = window.innerWidth;
+    return width >= this.MOBILE_BREAKPOINT && width < this.DESKTOP_BREAKPOINT;
+  }
+
+  /**
+   * Checks if the current viewport is below desktop size (< 1000px)
+   * Includes both mobile and tablet - only one sidebar can be open at a time
+   */
+  private isBelowDesktop(): boolean {
+    if (typeof window === 'undefined') {
+      return false;
+    }
+    return window.innerWidth < this.DESKTOP_BREAKPOINT;
   }
 
   /**
@@ -117,16 +200,32 @@ export class App implements OnInit, OnDestroy {
 
   /**
    * Toggles the left sidebar visibility state
+   * Below 1000px (mobile/tablet), opening left sidebar closes right sidebar
    */
   protected toggleLeftSidebar(): void {
-    this.leftSidebarOpen.update((value) => !value);
+    const willBeOpen = !this.leftSidebarOpen();
+    
+    // Below desktop breakpoint, only one sidebar can be open at a time
+    if (willBeOpen && this.isBelowDesktop()) {
+      this.rightSidebarOpen.set(false);
+    }
+    
+    this.leftSidebarOpen.set(willBeOpen);
   }
 
   /**
    * Toggles the right sidebar visibility state
+   * Below 1000px (mobile/tablet), opening right sidebar closes left sidebar
    */
   protected toggleRightSidebar(): void {
-    this.rightSidebarOpen.update((value) => !value);
+    const willBeOpen = !this.rightSidebarOpen();
+    
+    // Below desktop breakpoint, only one sidebar can be open at a time
+    if (willBeOpen && this.isBelowDesktop()) {
+      this.leftSidebarOpen.set(false);
+    }
+    
+    this.rightSidebarOpen.set(willBeOpen);
   }
 
   /**
