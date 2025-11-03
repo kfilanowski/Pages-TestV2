@@ -5223,7 +5223,10 @@
       "Weapon Qualities"
     ],
     "Icon Usage Guide": [
-      "Roll"
+      "Dragon Lore",
+      "Evocation",
+      "Fire Damage",
+      "Spell Casting"
     ],
     "Index": [
       "🍔 Mission Statement"
@@ -5710,7 +5713,6 @@
       "Fortitude",
       "Grab",
       "Hide",
-      "Icon Usage Guide",
       "LUK",
       "Lv",
       "Natural",
@@ -7815,6 +7817,7 @@
       "Flame Pillar",
       "Flame Surge",
       "Flame Tempest",
+      "Icon Usage Guide",
       "Illumination",
       "Lady of Light",
       "Levitate",
@@ -10361,6 +10364,15 @@
     ],
     "Tome": [
       "S"
+    ],
+    "Dragon Lore": [
+      "Icon Usage Guide"
+    ],
+    "Fire Damage": [
+      "Icon Usage Guide"
+    ],
+    "Spell Casting": [
+      "Icon Usage Guide"
     ],
     "🍔 Mission Statement": [
       "Index"

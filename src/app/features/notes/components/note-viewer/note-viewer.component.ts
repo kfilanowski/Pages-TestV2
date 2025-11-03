@@ -74,14 +74,17 @@ export class NoteViewerComponent implements OnInit {
   /**
    * Loads a note by its ID with smooth fade-out/fade-in transition
    * Creates a seamless transition through the background color
+   * 
+   * Design decision:
+   * - Old content (including icon) fades out completely
+   * - New content loads during the fade-out
+   * - New content (including icon) fades in
+   * - This creates a smooth, continuous transition without icon flickering
    */
   private loadNote(noteId: string): void {
     this.currentNoteId = noteId;
 
-    // IMMEDIATELY reset icon to prevent showing previous page's icon
-    this.noteIcon.set(undefined);
-
-    // Fade out current content
+    // Fade out current content (keep icon visible during fade-out)
     this.contentVisible.set(false);
 
     // Wait for fade-out animation to complete before loading new content

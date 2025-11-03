@@ -1,4 +1,4 @@
-import { Component, Input, CUSTOM_ELEMENTS_SCHEMA, OnInit, AfterViewInit, ElementRef, ChangeDetectorRef, inject } from '@angular/core';
+import { Component, Input, CUSTOM_ELEMENTS_SCHEMA, OnInit, AfterViewInit, OnChanges, SimpleChanges, ElementRef, ChangeDetectorRef, inject } from '@angular/core';
 import { IconService } from '../../../core/services/icon.service';
 
 /**
@@ -49,7 +49,7 @@ import { IconService } from '../../../core/services/icon.service';
     }
   `]
 })
-export class IconifyIconComponent implements OnInit, AfterViewInit {
+export class IconifyIconComponent implements OnInit, AfterViewInit, OnChanges {
   private readonly iconService = inject(IconService);
   private readonly elementRef = inject(ElementRef);
   private readonly cdr = inject(ChangeDetectorRef);
@@ -75,8 +75,44 @@ export class IconifyIconComponent implements OnInit, AfterViewInit {
   /** List of icon candidates to try (for cascading fallback) */
   private iconCandidates: string[] = [];
   private currentCandidateIndex = 0;
+  private afterViewInitCalled = false;
 
   ngOnInit(): void {
+    this.initializeIcon();
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    // React to icon input changes (e.g., when navigating between pages)
+    if (changes['icon'] && !changes['icon'].firstChange) {
+      this.initializeIcon();
+      
+      // If AfterViewInit has already run, restart the fallback detection
+      if (this.afterViewInitCalled) {
+        const iconElement = this.elementRef.nativeElement.querySelector('iconify-icon');
+        if (iconElement && this.iconCandidates.length > 0) {
+          this.tryNextIconCandidate(iconElement);
+        }
+      }
+    }
+  }
+
+  ngAfterViewInit(): void {
+    this.afterViewInitCalled = true;
+    // Start the cascading fallback detection
+    const iconElement = this.elementRef.nativeElement.querySelector('iconify-icon');
+    if (iconElement && this.iconCandidates.length > 0) {
+      this.tryNextIconCandidate(iconElement);
+    }
+  }
+
+  /**
+   * Initializes or re-initializes the icon
+   * Used both on init and when icon input changes
+   */
+  private initializeIcon(): void {
+    // Reset state
+    this.currentCandidateIndex = 0;
+    
     // Generate list of icon candidates (primary + fallbacks)
     this.iconCandidates = this.iconService.getIconFallbackCandidates(this.icon);
     
@@ -88,14 +124,6 @@ export class IconifyIconComponent implements OnInit, AfterViewInit {
       this.iconifyName = this.iconService.getFallbackIcon();
     } else if (this.icon) {
       console.warn(`Could not convert icon: ${this.icon}`);
-    }
-  }
-
-  ngAfterViewInit(): void {
-    // Start the cascading fallback detection
-    const iconElement = this.elementRef.nativeElement.querySelector('iconify-icon');
-    if (iconElement && this.iconCandidates.length > 0) {
-      this.tryNextIconCandidate(iconElement);
     }
   }
 

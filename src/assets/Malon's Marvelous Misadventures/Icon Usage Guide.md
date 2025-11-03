@@ -1,277 +1,238 @@
-# Icon Usage Guide
+# Icon Usage Guide for Content Writers
 
-This guide shows you how to add icons to your markdown notes!
+This guide shows you how to add beautiful icons to your markdown notes - both in the navigation sidebar and inside your content!
 
-## 🎯 Quick Start: Adding Icons to Notes
+## 🎯 Quick Start: Adding Icons to Note Titles
 
-### Step 1: Add Icon to Frontmatter
+Want an icon to appear next to your note in the sidebar? It's easy!
 
-At the top of any `.md` file, add frontmatter with an `icon` field:
+### Step 1: Add Icon to Your Note's Frontmatter
+
+At the very top of your `.md` file, add a special section called "frontmatter" with an `icon` line:
 
 ```markdown
 ---
 icon: GiDragonHead
 ---
 
-# Your Note Title
+# Dragon Lore
 
-Your content here...
+Dragons are powerful creatures...
 ```
 
-### Step 2: Regenerate Manifest
+The `---` lines are important - they tell the system where the frontmatter starts and ends.
 
-After adding or changing icons, run:
-```bash
-npm run generate:data
-```
-(or `npm run generate:manifest` - they're the same)
+### Step 2: Save and Regenerate
 
-### Step 3: Reload Page
+After you save your file:
+1. Let your developer friend know you added icons
+2. They'll run a quick command to update the system
+3. Refresh your browser page
 
-The icon will appear:
-- Next to the note title in the navigation sidebar
-- In the note header when viewing the note
-- In wiki-links to that note (if configured)
+### Step 3: Enjoy Your Icon!
+
+The icon will now appear:
+- ✨ Next to your note title in the left sidebar
+- ✨ In the page header when viewing the note
+- ✨ In any wiki-links that point to that note
 
 ---
 
-## 🌐 Available Icons (Iconify - 150+ Libraries!)
+## 📝 Using Icons Inside Your Content
 
-This project uses **Iconify**, which provides access to **over 200,000 icons** from **150+ icon libraries**. You can use almost any icon without pre-registration!
+You can also use icons directly in your note content! Any time you create a wiki-link to another note, if that note has an icon, it will automatically appear next to the link.
 
-Browse all available icons at: **https://icon-sets.iconify.design/**
+### Example:
 
-### Most Useful Icon Libraries for D&D/RPG Content:
-
-#### 🎮 **Game Icons** (`Gi`)
-**Best for RPG/D&D content** - 4,000+ fantasy, medieval, and gaming icons
-- Website: https://game-icons.net/
-- Example: `GiDragonHead`, `GiBroadsword`, `GiSpellBook`
-
-#### ✨ **Lucide** (`Lu`)
-**Clean, modern icons** - Great for UI elements and simple concepts
-- Website: https://lucide.dev/icons/
-- Example: `LuSword`, `LuShield`, `LuSparkles`
-
-#### 🎨 **Heroicons** (`Hi`)
-**Beautiful, consistent icons** - Good for general UI
-- Website: https://heroicons.com/
-- Example: `HiSparkles`, `HiShield`, `HiFire`
-
-#### 🔷 **Font Awesome** (`Fa`, `Fas`, `Far`)
-**Industry standard** - Huge variety of general-purpose icons
-- Website: https://fontawesome.com/icons
-- Example: `FaDragon`, `FaScroll`, `FaDiceD20`
-
-#### 📦 **Material Design Icons** (`Md`, `Mi`)
-**Google's icon set** - Professional, widely recognized
-- Example: `MdCastle`, `MdSecurity`, `MiSword`
-
----
-
-## 📝 Icon Name Format
-
-Icons use a **prefix + PascalCase name** format:
-
-### Supported Prefixes
-
-The system supports **22 icon prefixes** registered in `icon.service.ts`:
-
-| Prefix | Library | Iconify Collection | Best For |
-|--------|---------|-------------------|----------|
-| `Gi` | Game Icons | `game-icons` | **RPG/D&D content (HIGHLY recommended!)** |
-| `Lu` | Lucide Icons | `lucide` | Clean, modern UI elements |
-| `Tb` | Tabler Icons | `tabler` | Consistent, beautiful UI icons |
-| `Hi` | Heroicons | `heroicons` | Modern web UI |
-| `Bs` | Bootstrap Icons | `bi` | Web UI elements |
-| `Fa`, `Fas` | Font Awesome 6 Solid | `fa6-solid` | General-purpose icons |
-| `Far` | Font Awesome 6 Regular | `fa6-regular` | Outlined versions |
-| `Md` | Material Design Icons | `mdi` | Material Design |
-| `Mi` | Material Symbols | `material-symbols` | Google's newer icon set |
-| `Ri` | Remix Icons | `ri` | Open-source UI icons |
-| `Io` | Ionicons | `ion` | Mobile-friendly icons |
-| `Ai` | Ant Design Icons | `ant-design` | Enterprise UI |
-| `Si` | Simple Icons | `simple-icons` | Brand/logo icons |
-| `Bi` | BoxIcons | `bx` | General web icons |
-| `Ra` | Radix Icons | `radix-icons` | Modern UI primitives |
-| `Ci` | Cryptocurrency Icons | `cryptocurrency` | Crypto/blockchain |
-| `Di` | Devicons | `devicon` | Development tools |
-| `Vi` | VSCode Icons | `vscode-icons` | File type icons |
-| `Wi` | Weather Icons | `wi` | Weather symbols |
-| `Fi` | Feather Icons* | `lucide` | Use `Lu` instead |
-
-*Note: Feather is deprecated; Lucide (`Lu`) is its successor.
-
-### ✨ Auto-Corrected Prefixes
-
-These "incorrect" prefixes **automatically work** through prefix aliases in `IconService`:
-
-| You Write | Auto-Corrects To | Result |
-|-----------|-----------------|--------|
-| `LiHeart` | `LuHeart` | ✅ Works! (Lucide) |
-| `TiRun` | `TbRun` | ✅ Works! (Tabler) |
-| `IbTarget` | `IoTarget` | ✅ Works! (Ionicons) |
-| `BoBxSwim` | `BiBxSwim` | ✅ Works! (BoxIcons) |
-| `CoWaterDrop` | `GiWaterDrop` | ✅ Works! (Game Icons) |
-
-**You don't need to fix these!** The system automatically maps them to the correct prefixes. 
-
-However, it's still better to use the correct prefix from the start for clarity.
-
-### Converting Icon Names to PascalCase
-
-**Website Format → Your Format:**
-- Website shows: `"dragon-head"` → Use: `GiDragonHead`
-- Website shows: `"shield-alert"` → Use: `LuShieldAlert`
-- Website shows: `"magic-swirl"` → Use: `GiMagicSwirl`
-
-**PascalCase Rules:**
-1. Capitalize the first letter of each word
-2. Remove all spaces and hyphens
-3. Add the correct prefix (Gi, Lu, etc.)
-
-Examples:
-- `"bow arrow"` → `GiBowArrow`
-- `"skull-crossed-bones"` → `GiSkullCrossedBones`
-- `"lightning-trio"` → `GiLightningTrio`
-
-### Alternative: Direct Iconify Format
-
-You can also use Iconify's native format directly:
-```yaml
-icon: game-icons:dragon-head    # Same as GiDragonHead
-icon: lucide:sword              # Same as LuSword
-icon: heroicons:sparkles        # Same as HiSparkles
+```markdown
+Check out the [[Dragon Lore]] page for more information.
 ```
 
+If "Dragon Lore" has `icon: GiDragonHead` in its frontmatter, the dragon icon will appear automatically next to the link! No extra work needed.
+
 ---
 
-## 🔍 How to Find Icons
+## 🔍 Where to Find Icons
 
-### Step 1: Browse Iconify
-Go to **https://icon-sets.iconify.design/** and search for what you need.
+You have access to **over 200,000 icons** from 150+ icon libraries! Here are the best places to browse:
 
-Example searches:
-- "dragon" → Find dragon-related icons
-- "sword" → Find weapon icons
-- "spell" → Find magic-related icons
+### 🎮 **Game Icons** (Best for D&D/RPG content!)
+**4,000+ fantasy, medieval, and gaming icons** - this is your go-to for RPG content!
 
-### Step 2: Find the Icon Set
-Look at the icon's collection name:
-- If it's from **"game-icons"** → Use `Gi` prefix
-- If it's from **"lucide"** → Use `Lu` prefix  
-- If it's from **"heroicons"** → Use `Hi` prefix
-- etc.
+- **Browse all Game Icons:** [https://game-icons.net/](https://game-icons.net/)
+- **Search on Iconify:** [https://icon-sets.iconify.design/game-icons/](https://icon-sets.iconify.design/game-icons/)
 
-### Step 3: Convert the Name
-- Icon shown as: `game-icons:dragon-head`
-- You use: `GiDragonHead`
+Examples: Dragons, swords, spells, dice, shields, potions, scrolls, monsters
 
-That's it! No registration needed - if it exists on Iconify, it works!
+### ✨ **Lucide Icons** (Best for simple concepts)
+**Clean, modern icons** - great for abstract ideas and UI elements
+
+- **Browse Lucide:** [https://lucide.dev/icons/](https://lucide.dev/icons/)
+- **Search on Iconify:** [https://icon-sets.iconify.design/lucide/](https://icon-sets.iconify.design/lucide/)
+
+Examples: Heart, brain, eye, sparkles, clock, target
+
+### 🔷 **Font Awesome** (General purpose)
+**Huge variety** - good for common objects and concepts
+
+- **Browse Font Awesome:** [https://fontawesome.com/icons](https://fontawesome.com/icons)
+- **Search on Iconify:** [https://icon-sets.iconify.design/fa6-solid/](https://icon-sets.iconify.design/fa6-solid/)
+
+### 🔎 **Search ALL Icons**
+Not sure which library to use? Search everything at once:
+
+**Main Search:** [https://icon-sets.iconify.design/](https://icon-sets.iconify.design/)
+
+Just type what you're looking for (like "dragon" or "sword") and browse the results!
+
+---
+
+## 📝 How to Write Icon Names
+
+Icon names have two parts: a **prefix** (which library) + the **icon name**.
+
+### The Magic Formula
+
+```
+Prefix + IconName (in PascalCase)
+```
+
+**PascalCase** means: CapitalizeTheFirstLetterOfEachWord
+
+### Common Prefixes (What You'll Use Most)
+
+| Prefix | Library | Use For |
+|--------|---------|---------|
+| `Gi` | Game Icons | **⭐ RPG/D&D stuff (use this most!)** |
+| `Lu` | Lucide | Simple concepts (heart, brain, eye) |
+| `Fa` | Font Awesome | General items |
+| `Hi` | Heroicons | Modern UI icons |
+
+**There are 20+ more libraries available** - but these four cover 95% of what you'll need!
+
+### 🎯 Converting Icon Names (The Easy Way)
+
+When you find an icon on a website, the name usually has hyphens (like `dragon-head`). Here's how to convert it:
+
+**Step 1:** Look at which library it's from
+- Game Icons → Use `Gi`
+- Lucide → Use `Lu`
+- Font Awesome → Use `Fa`
+
+**Step 2:** Convert the icon name to PascalCase
+- Remove all hyphens and spaces
+- Capitalize the first letter of each word
+
+**Examples:**
+
+| Website Shows | You Write |
+|---------------|-----------|
+| `game-icons:dragon-head` | `GiDragonHead` |
+| `game-icons:broadsword` | `GiBroadsword` |
+| `lucide:shield` | `LuShield` |
+| `lucide:sparkles` | `LuSparkles` |
+| `fa6-solid:dragon` | `FaDragon` |
+| `game-icons:magic-swirl` | `GiMagicSwirl` |
+| `game-icons:rolling-dices` | `GiRollingDices` |
+
+### 💡 Pro Tip: The System is Smart!
+
+Don't worry too much about getting the prefix exactly right - the system automatically tries multiple icon libraries if it can't find your icon in the first one. So if you write `IbTarget` but that icon doesn't exist in Ionicons, it'll automatically try Game Icons, Lucide, Font Awesome, and others until it finds a match!
+
+Just focus on getting the icon name close, and the system will help you out.
 
 ---
 
 ## 📖 Complete Example
 
-Here's a complete markdown file with an icon:
+Here's a complete note with an icon and wiki-links:
 
 ```markdown
 ---
 aliases:
-  - DC
-  - Target Number
-icon: LuTarget
+  - Fireball
+icon: GiFireball
 ---
 
-# Difficulty Class
+# Fireball Spell
 
-**Difficulty Class (DC)** is the target number that a [[Roll]] must reach to be considered a success.
+Fireball is a powerful [[Evocation]] spell that deals [[Fire Damage]] to all creatures in an area.
 
-A higher DC means the task is more difficult.
+**Casting Time:** 1 action  
+**Range:** 150 feet  
+**Components:** Verbal, Somatic  
+**Duration:** Instantaneous
 
-## Common DCs
+## Description
+A bright streak flashes from your pointing finger to a point you choose within range...
 
-| Difficulty | DC |
-|------------|-----|
-| Very Easy | 5 |
-| Easy | 10 |
-| Medium | 15 |
-| Hard | 20 |
+For rules on [[Spell Casting]], see the main rules page.
 ```
 
-The `LuTarget` icon will appear:
-- In the navigation sidebar next to "Difficulty Class"
-- In the page header when viewing this note
-- In wiki-links that reference this note
+**What happens:**
+- 🔥 The fireball icon appears in the sidebar next to "Fireball Spell"
+- 🔥 The icon shows in the page header when you view this note
+- 🔥 Any wiki-links to this note will show the icon automatically
+- If "Evocation", "Fire Damage", and "Spell Casting" have their own icons, those will appear next to their links too!
 
 ---
 
 ## ❓ Troubleshooting
 
-### Icon Not Showing?
+### My Icon Isn't Showing - Help!
 
-Most common issues are **auto-corrected** now! But if you still have problems:
+**Most Common Issues:**
 
-**1. Check the icon name format**
-```yaml
-❌ icon: dragonhead           # Missing prefix
-❌ icon: Gidragonhead         # Not PascalCase
-❌ icon: GiDragon_Head        # Underscores not allowed
-✅ icon: GiDragonHead         # Correct!
-✅ icon: LiDragonHead         # Also works! (auto-corrects to Lu)
-✅ icon: game-icons:dragon-head  # Iconify format (also works)
-```
+**1. Check your frontmatter format**
+```markdown
+❌ WRONG - Missing the --- lines:
+icon: GiDragonHead
 
-**2. Verify the icon exists on Iconify**
-- Go to https://icon-sets.iconify.design/
-- Search for your icon
-- Make sure the icon name matches (case-insensitive, use hyphens)
+# My Note
 
-**3. Check your frontmatter syntax**
-```yaml
+✅ CORRECT - Has the --- wrapper:
 ---
-icon: GiDragonHead    # ✅ Correct
+icon: GiDragonHead
 ---
+
+# My Note
 ```
-- Must have `---` before and after
-- Use `icon:` (lowercase)
-- No quotes needed around the icon name
-- Icon name must be in PascalCase (or kebab-case for direct Iconify format)
 
-**4. Regenerate the manifest**
-```bash
-npm run generate:data
+**2. Check your icon name**
+```markdown
+❌ icon: dragonhead           # Missing the Gi prefix
+❌ icon: Gidragonhead         # Not capitalized correctly
+❌ icon: GiDragon_Head        # No underscores - use GiDragonHead
+✅ icon: GiDragonHead         # Perfect! ✨
 ```
-The manifest file must be regenerated whenever you add or change icons in frontmatter.
 
-**5. Hard refresh the page**
-- Windows/Linux: `Ctrl + F5` or `Ctrl + Shift + R`
-- Mac: `Cmd + Shift + R`
+**3. Does the icon actually exist?**
+- Go to [https://icon-sets.iconify.design/](https://icon-sets.iconify.design/)
+- Search for your icon name
+- If you can't find it, try a different search term or similar icon
 
-### Common Issues
+**4. Did you tell your developer friend?**
+- After adding icons, let them know
+- They need to run a command to update the system
+- Then refresh your browser (Ctrl + F5)
 
-**Issue: "Icon shows as a box or doesn't load"**
-- The icon name might not exist in that library
-- Check the browser console for the actual Iconify name it's trying to load
-- Search for the icon on https://icon-sets.iconify.design/
-- Try a similar icon from Game Icons (`Gi` prefix) instead
+### Still Not Working?
 
-**Issue: "Changes not appearing"**
-- Did you regenerate the manifest? (`npm run generate:data`)
-- Did you hard refresh the page?
-- Check that the frontmatter is correctly formatted with `---` delimiters
+Ask your developer friend to:
+1. Run `npm run generate:data` 
+2. Check the browser console for error messages
+3. Verify the icon exists on Iconify
 
-**Issue: "Console shows 'Unknown icon prefix'"**
-- Check if the prefix is in the supported list (see table above)
-- If it's a common mistake (`Li`, `Ti`, `Bo`, `Ib`, `Co`), it should auto-correct
-- If it's a new unsupported prefix, add it to `iconReplacements` in `icon.service.ts`
+The system will automatically try different icon libraries if the first one doesn't work, so don't worry too much about getting the prefix perfect!
 
 ---
 
-## 🌟 Recommended Icons for Common D&D/RPG Content
+## 🌟 Icon Cheat Sheet for D&D/RPG Content
 
-### Character Classes
-```yaml
+Copy and paste these directly into your notes!
+
+### ⚔️ Character Classes
+```markdown
 icon: GiSwordman        # Fighter/Warrior
 icon: GiWizardFace      # Wizard/Mage  
 icon: GiBowArrow        # Ranger/Archer
@@ -284,8 +245,8 @@ icon: GiDruidStaff      # Druid
 icon: GiGuitar          # Bard
 ```
 
-### Ability Scores
-```yaml
+### 📊 Ability Scores
+```markdown
 icon: GiMuscleUp        # Strength (STR)
 icon: GiQuickSlash      # Dexterity (DEX)
 icon: LuHeart           # Constitution (CON)
@@ -294,8 +255,8 @@ icon: LuEye             # Wisdom (WIS)
 icon: LuSparkles        # Charisma (CHA)
 ```
 
-### Damage Types
-```yaml
+### 💥 Damage Types
+```markdown
 icon: GiFireBowl        # Fire damage
 icon: GiIceBolt         # Cold/Ice damage
 icon: GiLightningTrio   # Lightning damage
@@ -308,8 +269,8 @@ icon: GiSoundWaves      # Thunder damage
 icon: LuWind            # Force damage
 ```
 
-### Equipment Categories
-```yaml
+### 🎒 Equipment Categories
+```markdown
 icon: GiBroadsword      # Weapons
 icon: GiChestArmor      # Armor
 icon: GiHealthPotion    # Potions & Consumables
@@ -320,20 +281,20 @@ icon: GiTreasureMap     # Maps & documents
 icon: GiDiamondRing     # Valuable items
 ```
 
-### Game Mechanics
-```yaml
+### 🎲 Game Mechanics
+```markdown
 icon: GiRollingDices    # Dice rolls
-icon: LuTarget          # Attack rolls / AC
+icon: GiTarget          # Attack rolls / Accuracy
 icon: GiHealing         # Healing
-icon: GiPoisonGas       # Status effects (negative)
-icon: GiShield          # Defense / Protection
+icon: GiFluffySwirl     # Status effects (debuffs)
+icon: GiShield          # Defense / Armor Class
 icon: GiRunningShoe     # Movement / Speed
 icon: LuClock           # Time / Duration
 icon: GiLevelFour       # Character level
 ```
 
-### Creature Types
-```yaml
+### 🐉 Creature Types
+```markdown
 icon: GiDragonHead      # Dragons
 icon: GiGoblin          # Goblins & small humanoids
 icon: GiOrcHead         # Orcs & large humanoids
@@ -346,85 +307,37 @@ icon: GiImperialCrown   # Royalty/Leaders
 
 ---
 
-## 💡 Pro Tips
+## 💡 Quick Tips
 
-### Icon Selection Strategy
-1. **Start with Game Icons (`Gi`)** - They have the most RPG-specific content
-2. **Use Lucide (`Lu`) for concepts** - Great for abstract ideas (intelligence, wisdom, etc.)
-3. **Font Awesome (`Fa`) for general items** - Good for common objects
-4. **Search before browsing** - Iconify's search is powerful - try multiple keywords
+### Finding the Perfect Icon
+1. **Start with Game Icons** - Browse at [https://game-icons.net/](https://game-icons.net/)
+2. **Can't find it?** Search all libraries at [https://icon-sets.iconify.design/](https://icon-sets.iconify.design/)
+3. **Use descriptive names** - `GiFireball` is better than `GiBall`
+4. **Don't stress** - The system automatically tries multiple libraries if one doesn't work!
 
 ### Best Practices
-- **Be consistent** - Use similar styles for related content (all abilities from one library)
-- **Test your icons** - Some icons look different than their name suggests
-- **Fallback gracefully** - If no perfect icon exists, use a related one
-- **Icons enhance, don't replace** - Good note titles matter more than perfect icons
-
-### Performance Note
-Iconify loads icons on-demand, so using many different icon libraries won't slow down your site. Feel free to mix and match!
+- Use icons consistently across related notes
+- Preview your icon before committing - some look different than their name suggests
+- When in doubt, use a Game Icons (`Gi`) icon - they have the best RPG coverage
+- Icons should enhance your content, not distract from it
 
 ---
 
-## 🆘 Still Need Help?
+## 🔗 Useful Links
 
-### Useful Resources
-- **Iconify Icon Sets**: https://icon-sets.iconify.design/ (main search)
-- **Game Icons**: https://game-icons.net/ (RPG-focused)
-- **Lucide**: https://lucide.dev/icons/ (clean modern icons)
-- **Icon Service Code**: `src/app/core/services/icon.service.ts` (see supported prefixes)
-
-### Technical Details
-- Icons are stored in frontmatter and extracted during manifest generation
-- The `IconService` converts prefix format to Iconify format automatically
-- Icons appear in navigation, note headers, and wiki-links
-- Manifest must be regenerated after adding/changing icons
-
-**Need an icon from a library not listed?** Check if it's on Iconify - most major icon libraries are supported!
+- **Search ALL Icons:** [https://icon-sets.iconify.design/](https://icon-sets.iconify.design/)
+- **Game Icons (RPG-focused):** [https://game-icons.net/](https://game-icons.net/)
+- **Lucide Icons (Simple/Modern):** [https://lucide.dev/icons/](https://lucide.dev/icons/)
+- **Font Awesome (General):** [https://fontawesome.com/icons](https://fontawesome.com/icons)
 
 ---
 
-## 🔧 How Icon Auto-Correction Works
+## 🎉 You're All Set!
 
-The `IconService` automatically corrects common prefix mistakes:
+You now know everything you need to add beautiful icons to your notes. Remember:
 
-### Prefix Aliases
-When you use an unsupported prefix like `Li`, it automatically maps to the correct one (`Lu`):
-```typescript
-// In your markdown:
-icon: LiDroplet
+1. Add `icon: GiIconName` to your frontmatter
+2. Save the file and let your developer friend know
+3. Refresh the page and enjoy your icons!
 
-// Automatically becomes:
-icon: LuDroplet → lucide:droplet ✅
-```
-
-### Specific Icon Replacements
-Some icons don't exist in certain libraries, so they're automatically replaced:
-```typescript
-// In your markdown:
-icon: RaHood
-
-// Automatically becomes:
-icon: GiHood → game-icons:hood ✅
-```
-
-**This means you DON'T need to fix old markdown files!** They'll work automatically. But using correct prefixes from the start makes debugging easier.
-
-### Adding New Mappings
-
-If you discover a new problematic icon prefix, you can add it to `icon.service.ts`:
-
-**For prefix mappings:** Edit `prefixAliases`
-```typescript
-private readonly prefixAliases: Record<string, string> = {
-  'Li': 'Lu',  // Li → Lu (Lucide)
-  'YourPrefix': 'CorrectPrefix',
-};
-```
-
-**For specific icons:** Edit `iconReplacements`
-```typescript
-private readonly iconReplacements: Record<string, string> = {
-  'RaHood': 'GiHood',  // Radix hood → Game Icons hood
-  'YourIcon': 'ReplacementIcon',
-};
-```
+Happy writing! ✨
