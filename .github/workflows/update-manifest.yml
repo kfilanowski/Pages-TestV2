@@ -27,22 +27,18 @@ jobs:
       
       - name: Install dependencies
         run: npm ci
-        working-directory: MMM
       
       - name: Generate manifest
         run: npm run generate:manifest
-        working-directory: MMM
       
       - name: Check for changes
         id: git-check
         run: |
-          cd MMM
           git diff --exit-code "src/assets/Malon's Marvelous Misadventures/manifest.json" || echo "changed=true" >> $GITHUB_OUTPUT
       
       - name: Commit and push if changed
         if: steps.git-check.outputs.changed == 'true'
         run: |
-          cd MMM
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add "src/assets/Malon's Marvelous Misadventures/manifest.json"
