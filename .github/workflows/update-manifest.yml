@@ -6,7 +6,7 @@ on:
       - main
       - master
     paths:
-      - 'src/assets/Malon\'s Marvelous Misadventures/**/*.md'
+      - "src/assets/Malon's Marvelous Misadventures/**/*.md"
   workflow_dispatch:  # Allow manual trigger
 
 jobs:
@@ -37,7 +37,7 @@ jobs:
         id: git-check
         run: |
           cd MMM
-          git diff --exit-code src/assets/Malon\'s\ Marvelous\ Misadventures/manifest.json || echo "changed=true" >> $GITHUB_OUTPUT
+          git diff --exit-code "src/assets/Malon's Marvelous Misadventures/manifest.json" || echo "changed=true" >> $GITHUB_OUTPUT
       
       - name: Commit and push if changed
         if: steps.git-check.outputs.changed == 'true'
@@ -45,7 +45,7 @@ jobs:
           cd MMM
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add src/assets/Malon\'s\ Marvelous\ Misadventures/manifest.json
+          git add "src/assets/Malon's Marvelous Misadventures/manifest.json"
           git commit -m "chore: auto-update manifest.json [skip ci]"
           git push
 
