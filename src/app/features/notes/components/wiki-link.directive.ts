@@ -238,6 +238,33 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
   }
 
   /**
+   * Tries icon candidates in sequence for preview icons
+   * Same logic as wiki-link icons, but separate method for clarity
+   * Optimized for speed: 50ms per attempt
+   */
+  private tryPreviewIconCandidates(
+    iconElement: HTMLElement,
+    candidates: string[],
+    index: number
+  ): void {
+    if (index >= candidates.length) {
+      return; // No more candidates to try
+    }
+
+    // Set the current candidate
+    iconElement.setAttribute('icon', candidates[index]);
+
+    // Check if this icon loads successfully after a short delay (50ms)
+    setTimeout(() => {
+      const hasSvg = iconElement.shadowRoot?.querySelector('svg');
+      if (!hasSvg && index + 1 < candidates.length) {
+        // This candidate failed, try the next one
+        this.tryPreviewIconCandidates(iconElement, candidates, index + 1);
+      }
+    }, 50);
+  }
+
+  /**
    * Handles mouse enter event on wiki-link
    */
   private onWikiLinkHover(linkElement: HTMLElement): void {
@@ -479,14 +506,13 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
           );
           this.renderer.setStyle(titleElement, 'line-height', '1.2');
 
-          // Add icon if present in frontmatter
+          // Add icon if present in frontmatter (with cascading fallback)
           if (note?.icon) {
-            // Convert icon name to Iconify format
-            const iconifyName = this.iconService.convertToIconifyFormat(note.icon);
-            if (iconifyName) {
+            // Get list of icon candidates (with cascading fallback)
+            const iconCandidates = this.iconService.getIconFallbackCandidates(note.icon);
+            if (iconCandidates.length > 0) {
               // Create iconify-icon web component
               const iconElement = document.createElement('iconify-icon');
-              iconElement.setAttribute('icon', iconifyName);
               iconElement.setAttribute('width', '32');
               iconElement.setAttribute('height', '32');
               iconElement.style.fontSize = '1.2em';
@@ -496,6 +522,9 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
               iconElement.style.alignItems = 'center';
               iconElement.style.justifyContent = 'center';
               titleElement.appendChild(iconElement);
+              
+              // Try icon candidates with cascading fallback
+              this.tryPreviewIconCandidates(iconElement, iconCandidates, 0);
             }
           }
 

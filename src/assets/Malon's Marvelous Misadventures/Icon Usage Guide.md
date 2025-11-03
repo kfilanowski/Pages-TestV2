@@ -22,12 +22,12 @@ Dragons are powerful creatures...
 
 The `---` lines are important - they tell the system where the frontmatter starts and ends.
 
-### Step 2: Save and Regenerate
+### Step 2: Save and Commit
 
 After you save your file:
-1. Let your developer friend know you added icons
-2. They'll run a quick command to update the system
-3. Refresh your browser page
+1. Commit and push your changes to GitHub
+2. The system automatically updates (GitHub Actions does this for you!)
+3. Wait a minute for the deployment, then refresh your browser
 
 ### Step 3: Enjoy Your Icon!
 
@@ -211,17 +211,19 @@ icon: GiDragonHead
 - Search for your icon name
 - If you can't find it, try a different search term or similar icon
 
-**4. Did you tell your developer friend?**
-- After adding icons, let them know
-- They need to run a command to update the system
-- Then refresh your browser (Ctrl + F5)
+**4. Did you commit and push your changes?**
+- After adding icons, commit and push to GitHub
+- GitHub Actions automatically updates the system
+- Wait a minute for deployment, then refresh your browser (Ctrl + F5)
 
 ### Still Not Working?
 
-Ask your developer friend to:
-1. Run `npm run generate:data` 
-2. Check the browser console for error messages
-3. Verify the icon exists on Iconify
+Try these steps:
+1. Make sure you committed and pushed your changes to GitHub
+2. Check that GitHub Actions completed successfully (green checkmark)
+3. Wait a minute or two for the deployment to finish
+4. Do a hard refresh: Ctrl + F5 (Windows) or Cmd + Shift + R (Mac)
+5. If still not working, check the browser console for error messages (F12 → Console tab)
 
 The system will automatically try different icon libraries if the first one doesn't work, so don't worry too much about getting the prefix perfect!
 
@@ -337,7 +339,10 @@ icon: GiImperialCrown   # Royalty/Leaders
 You now know everything you need to add beautiful icons to your notes. Remember:
 
 1. Add `icon: GiIconName` to your frontmatter
-2. Save the file and let your developer friend know
-3. Refresh the page and enjoy your icons!
+2. Save, commit, and push to GitHub
+3. Wait a minute for automatic deployment
+4. Refresh the page and enjoy your icons!
 
-Happy writing! ✨
+The system handles everything automatically - no need to bother anyone! ✨
+
+Happy writing! 🎨
