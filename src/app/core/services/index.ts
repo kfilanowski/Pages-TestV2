@@ -5,3 +5,5 @@
 export * from './markdown.service';
 export * from './search.service';
 export * from './theme.service';
+export * from './icon.service';
+export * from './icon-preload.service';

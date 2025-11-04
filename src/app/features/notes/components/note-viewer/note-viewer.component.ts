@@ -17,7 +17,7 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
-import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { DomSanitizer, SafeHtml, Meta, Title } from '@angular/platform-browser';
 import { MarkdownService, SearchService } from '../../../../core/services';
 import { WikiLinkDirective } from '../wiki-link.directive';
 import { toSignal } from '@angular/core/rxjs-interop';
@@ -51,6 +51,8 @@ export class NoteViewerComponent implements OnInit, AfterViewChecked {
   private readonly elementRef = inject(ElementRef);
   private readonly injector = inject(EnvironmentInjector);
   private readonly appRef = inject(ApplicationRef);
+  private readonly meta = inject(Meta);
+  private readonly titleService = inject(Title);
 
   @ViewChild('noteContent', { read: ElementRef }) noteContentElement?: ElementRef;
 
@@ -117,6 +119,7 @@ export class NoteViewerComponent implements OnInit, AfterViewChecked {
    * - New content loads during the fade-out
    * - New content (including icon) fades in
    * - This creates a smooth, continuous transition without icon flickering
+   * - Updates SEO meta tags dynamically for each page
    */
   private loadNote(noteId: string): void {
     this.currentNoteId = noteId;
@@ -133,15 +136,25 @@ export class NoteViewerComponent implements OnInit, AfterViewChecked {
       if (note) {
         this.noteTitle.set(note.title);
         this.noteIcon.set(note.icon);
+        
+        // Update SEO meta tags for the page
+        this.updateMetaTags(note.title, noteId);
       } else {
         this.noteTitle.set(noteId);
         this.noteIcon.set(undefined);
+        
+        // Update with default meta tags
+        this.updateMetaTags(noteId, noteId);
       }
 
       this.markdownService.loadNoteById(noteId).subscribe({
         next: (html) => {
           // Store raw content for highlighting
           this.rawContent.set(html);
+          
+          // Extract text content for description (first 160 chars)
+          const textContent = this.extractTextContent(html);
+          this.updateMetaDescription(textContent);
 
           // Brief delay to ensure DOM is updated, then fade in
           setTimeout(() => {
@@ -154,6 +167,61 @@ export class NoteViewerComponent implements OnInit, AfterViewChecked {
         },
       });
     }, 125); // Match fade-out duration
+  }
+
+  /**
+   * Updates meta tags for SEO optimization
+   * Sets title, Open Graph, and Twitter Card tags
+   */
+  private updateMetaTags(title: string, noteId: string): void {
+    const fullTitle = `${title} - Malon's Marvelous Misadventures`;
+    const url = `https://yourusername.github.io/Pages-TestV2/Malons-Marvelous-Misadventures/${encodeURIComponent(noteId)}`;
+    
+    // Update page title
+    this.titleService.setTitle(fullTitle);
+    
+    // Update Open Graph tags
+    this.meta.updateTag({ property: 'og:title', content: fullTitle });
+    this.meta.updateTag({ property: 'og:url', content: url });
+    this.meta.updateTag({ property: 'og:type', content: 'article' });
+    
+    // Update Twitter Card tags
+    this.meta.updateTag({ name: 'twitter:title', content: fullTitle });
+    this.meta.updateTag({ name: 'twitter:url', content: url });
+    
+    // Update canonical URL
+    const canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (canonicalLink) {
+      canonicalLink.setAttribute('href', url);
+    }
+  }
+
+  /**
+   * Updates the meta description based on the content
+   */
+  private updateMetaDescription(textContent: string): void {
+    // Create a meaningful description from the first 160 characters
+    const description = textContent.substring(0, 160).trim() + '...';
+    
+    this.meta.updateTag({ name: 'description', content: description });
+    this.meta.updateTag({ property: 'og:description', content: description });
+    this.meta.updateTag({ name: 'twitter:description', content: description });
+  }
+
+  /**
+   * Extracts plain text content from HTML for meta descriptions
+   */
+  private extractTextContent(html: string): string {
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = html;
+    
+    // Remove script and style elements
+    const scripts = tempDiv.querySelectorAll('script, style');
+    scripts.forEach(el => el.remove());
+    
+    // Get text content and clean up whitespace
+    const text = tempDiv.textContent || tempDiv.innerText || '';
+    return text.replace(/\s+/g, ' ').trim();
   }
 
   /**

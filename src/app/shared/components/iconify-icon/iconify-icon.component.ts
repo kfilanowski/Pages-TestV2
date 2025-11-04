@@ -76,9 +76,17 @@ export class IconifyIconComponent implements OnInit, AfterViewInit, OnChanges {
   private iconCandidates: string[] = [];
   private currentCandidateIndex = 0;
   private afterViewInitCalled = false;
+  
+  /** Retry configuration for handling transient network failures */
+  private readonly MAX_RETRIES = 3;
+  private retryCount = 0;
+  private readonly RETRY_DELAYS = [100, 300, 1000]; // Progressive backoff in ms
 
   ngOnInit(): void {
-    this.initializeIcon();
+    // Wait for Iconify to be ready before initializing
+    this.waitForIconify().then(() => {
+      this.initializeIcon();
+    });
   }
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -112,6 +120,7 @@ export class IconifyIconComponent implements OnInit, AfterViewInit, OnChanges {
   private initializeIcon(): void {
     // Reset state
     this.currentCandidateIndex = 0;
+    this.retryCount = 0;
     
     // Generate list of icon candidates (primary + fallbacks)
     this.iconCandidates = this.iconService.getIconFallbackCandidates(this.icon);
@@ -133,21 +142,33 @@ export class IconifyIconComponent implements OnInit, AfterViewInit, OnChanges {
    * Design decision:
    * - Uses cascading fallback across multiple icon libraries
    * - Automatically finds a working icon without manual intervention
-   * - Optimized timing: 50ms initial check, 20ms between retries
+   * - Implements retry logic with progressive backoff for transient failures
+   * - Optimized timing: 50ms initial check, progressive retries, 20ms between library fallbacks
    * - Logs which library was used for debugging
    * - Falls back to default icon if none work
    */
   private tryNextIconCandidate(iconElement: HTMLElement): void {
-    // Give the current icon 50ms to load (Iconify is very fast)
+    // Give the current icon time to load (50ms for first attempt, longer for retries)
+    const delay = this.retryCount === 0 ? 50 : this.RETRY_DELAYS[this.retryCount - 1] || 1000;
+    
     setTimeout(() => {
       const hasSvg = iconElement.shadowRoot?.querySelector('svg');
       
       if (!hasSvg) {
-        // Current icon failed to load
+        // Current icon failed to load - try retry logic first
+        if (this.retryCount < this.MAX_RETRIES) {
+          // Retry the same icon (handles transient network failures)
+          this.retryCount++;
+          this.tryNextIconCandidate(iconElement);
+          return;
+        }
+        
+        // Max retries exhausted, try next library
+        this.retryCount = 0; // Reset retry counter for next candidate
         this.currentCandidateIndex++;
         
         if (this.currentCandidateIndex < this.iconCandidates.length) {
-          // Try next candidate
+          // Try next candidate from different library
           const nextCandidate = this.iconCandidates[this.currentCandidateIndex];
           this.iconifyName = nextCandidate;
           
@@ -162,19 +183,28 @@ export class IconifyIconComponent implements OnInit, AfterViewInit, OnChanges {
         }
       } else {
         // Icon loaded successfully!
-        if (this.currentCandidateIndex > 0) {
-          // We used a fallback, log it for awareness
+        if (this.currentCandidateIndex > 0 || this.retryCount > 0) {
+          // We used a fallback or retry, log it for awareness
           const [originalLibrary] = this.iconCandidates[0].split(':');
           const [usedLibrary] = this.iconifyName!.split(':');
-          console.log(
-            `%c✓ Icon fallback: ${this.icon}`,
-            'color: #4CAF50; font-weight: bold;',
-            `\n  Original: ${this.iconCandidates[0]} (not found in ${originalLibrary})`,
-            `\n  Using: ${this.iconifyName} (found in ${usedLibrary})`
-          );
+          
+          if (this.retryCount > 0) {
+            console.log(
+              `%c✓ Icon loaded after ${this.retryCount} ${this.retryCount === 1 ? 'retry' : 'retries'}: ${this.icon}`,
+              'color: #2196F3; font-weight: bold;',
+              `\n  Icon: ${this.iconifyName}`
+            );
+          } else {
+            console.log(
+              `%c✓ Icon fallback: ${this.icon}`,
+              'color: #4CAF50; font-weight: bold;',
+              `\n  Original: ${this.iconCandidates[0]} (not found in ${originalLibrary})`,
+              `\n  Using: ${this.iconifyName} (found in ${usedLibrary})`
+            );
+          }
         }
       }
-    }, 50);
+    }, delay);
   }
 
   /**
@@ -208,6 +238,43 @@ export class IconifyIconComponent implements OnInit, AfterViewInit, OnChanges {
   /** Convert size to string for iconify-icon compatibility */
   get sizeAsString(): string {
     return typeof this.size === 'number' ? `${this.size}` : this.size;
+  }
+
+  /**
+   * Waits for Iconify web component to be fully defined
+   * Prevents race conditions where Angular tries to use icons before Iconify is ready
+   * 
+   * @returns Promise that resolves when Iconify is ready
+   */
+  private waitForIconify(): Promise<void> {
+    return new Promise((resolve) => {
+      // Check if we're on the server (SSR)
+      if (typeof window === 'undefined' || typeof customElements === 'undefined') {
+        resolve();
+        return;
+      }
+
+      // Check if iconify-icon web component is already defined
+      if (customElements.get('iconify-icon')) {
+        resolve();
+        return;
+      }
+
+      // Wait for iconify-icon to be defined (with timeout)
+      const timeout = setTimeout(() => {
+        console.warn('Iconify web component took too long to load');
+        resolve(); // Resolve anyway to prevent blocking
+      }, 5000);
+
+      customElements.whenDefined('iconify-icon').then(() => {
+        clearTimeout(timeout);
+        resolve();
+      }).catch(() => {
+        clearTimeout(timeout);
+        console.warn('Failed to load Iconify web component');
+        resolve();
+      });
+    });
   }
 }
 
