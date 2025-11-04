@@ -1,4 +1,20 @@
-import { Component, inject, OnInit, signal, computed, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { 
+  Component, 
+  inject, 
+  OnInit, 
+  signal, 
+  computed, 
+  CUSTOM_ELEMENTS_SCHEMA,
+  ViewContainerRef,
+  ComponentRef,
+  AfterViewChecked,
+  ElementRef,
+  createComponent,
+  EnvironmentInjector,
+  ApplicationRef,
+  ViewChild,
+  effect
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
@@ -6,6 +22,7 @@ import { MarkdownService, SearchService } from '../../../../core/services';
 import { WikiLinkDirective } from '../wiki-link.directive';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { IconifyIconComponent } from '../../../../shared/components/iconify-icon/iconify-icon.component';
+import { CalculatorComponent } from '../../../../shared/components/calculator/calculator.component';
 
 /**
  * Component for displaying markdown note content
@@ -17,6 +34,7 @@ import { IconifyIconComponent } from '../../../../shared/components/iconify-icon
  * - Handles note loading states
  * - Implements fade-in/fade-out transitions between notes
  * - Uses DomSanitizer.bypassSecurityTrustHtml to preserve data-* attributes needed for wiki-links
+ * - Dynamically renders calculator components from markdown placeholders
  */
 @Component({
   selector: 'app-note-viewer',
@@ -25,11 +43,16 @@ import { IconifyIconComponent } from '../../../../shared/components/iconify-icon
   templateUrl: './note-viewer.component.html',
   styleUrl: './note-viewer.component.scss',
 })
-export class NoteViewerComponent implements OnInit {
+export class NoteViewerComponent implements OnInit, AfterViewChecked {
   private readonly route = inject(ActivatedRoute);
   private readonly markdownService = inject(MarkdownService);
   private readonly searchService = inject(SearchService);
   private readonly sanitizer = inject(DomSanitizer);
+  private readonly elementRef = inject(ElementRef);
+  private readonly injector = inject(EnvironmentInjector);
+  private readonly appRef = inject(ApplicationRef);
+
+  @ViewChild('noteContent', { read: ElementRef }) noteContentElement?: ElementRef;
 
   protected readonly rawContent = signal<string>('');
   protected readonly error = signal<string | null>(null);
@@ -38,6 +61,20 @@ export class NoteViewerComponent implements OnInit {
   protected readonly noteIcon = signal<string | undefined>(undefined);
 
   private currentNoteId: string | null = null;
+  private calculatorComponents: ComponentRef<CalculatorComponent>[] = [];
+  private lastProcessedContent = '';
+
+  constructor() {
+    // Use effect to watch for content changes and render calculators
+    effect(() => {
+      const content = this.rawContent();
+      if (content && content !== this.lastProcessedContent) {
+        this.lastProcessedContent = content;
+        // Use setTimeout to ensure DOM is updated
+        setTimeout(() => this.renderCalculatorComponents(), 100);
+      }
+    });
+  }
 
   // Track search query
   protected readonly searchQuery = toSignal(this.searchService.searchQuery$, {
@@ -130,7 +167,7 @@ export class NoteViewerComponent implements OnInit {
 
   /**
    * Highlights search terms in HTML content
-   * Avoids highlighting inside HTML tags
+   * Avoids highlighting inside HTML tags and preserves calculator placeholders
    */
   private highlightSearchTerms(html: string, query: string): string {
     if (!query.trim()) {
@@ -145,6 +182,72 @@ export class NoteViewerComponent implements OnInit {
     this.highlightTextNodes(tempDiv, query);
 
     return tempDiv.innerHTML;
+  }
+
+  /**
+   * After view is checked, we could render calculator components here too
+   * but we're using effect() in the constructor instead for better reactivity
+   */
+  ngAfterViewChecked(): void {
+    // This is now handled by the effect() in the constructor
+  }
+
+  /**
+   * Finds calculator placeholders in the DOM and replaces them with actual calculator components
+   */
+  private renderCalculatorComponents(): void {
+    // Clean up existing calculator components
+    this.cleanupCalculatorComponents();
+
+    // Find all calculator placeholder elements
+    const placeholders = this.elementRef.nativeElement.querySelectorAll('.calculator-placeholder');
+    
+    placeholders.forEach((placeholder: HTMLElement) => {
+      const configAttr = placeholder.getAttribute('data-calculator-config');
+      if (!configAttr) return;
+
+      try {
+        // Decode HTML entities and parse JSON
+        const decodedConfig = configAttr.replace(/&quot;/g, '"');
+        const config = JSON.parse(decodedConfig);
+
+        // Create calculator component dynamically
+        const componentRef = createComponent(CalculatorComponent, {
+          environmentInjector: this.injector,
+          elementInjector: this.injector,
+        });
+
+        // Set the config input
+        componentRef.setInput('config', config);
+
+        // Attach to application ref for change detection
+        this.appRef.attachView(componentRef.hostView);
+
+        // Insert the component's host element before the placeholder
+        const componentElement = (componentRef.hostView as any).rootNodes[0] as HTMLElement;
+        placeholder.parentNode?.insertBefore(componentElement, placeholder);
+
+        // Remove the placeholder
+        placeholder.remove();
+
+        // Store reference for cleanup
+        this.calculatorComponents.push(componentRef);
+      } catch (error) {
+        console.error('Error rendering calculator:', error);
+        placeholder.innerHTML = '<div class="calculator-error">Error rendering calculator</div>';
+      }
+    });
+  }
+
+  /**
+   * Cleans up dynamically created calculator components
+   */
+  private cleanupCalculatorComponents(): void {
+    this.calculatorComponents.forEach(componentRef => {
+      this.appRef.detachView(componentRef.hostView);
+      componentRef.destroy();
+    });
+    this.calculatorComponents = [];
   }
 
   /**

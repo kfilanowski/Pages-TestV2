@@ -184,10 +184,30 @@ export class MarkdownService {
       renderer,
       gfm: true, // GitHub Flavored Markdown
       breaks: true, // Convert \n to <br>
+      // pedantic: false, // Allow non-standard markdown features
+      // sanitize: false (deprecated in newer versions, HTML is allowed by default)
     });
     
-    // Use a custom extension to recognize wiki: protocol links
+    // Use walkTokens to intercept code blocks that should be calculator blocks
     marked.use({
+      walkTokens: (token: any) => {
+        // Intercept code blocks with 'calculator' as the language
+        if (token.type === 'code' && token.lang === 'calculator') {
+          // Convert this code token to an html token
+          token.type = 'html';
+          
+          try {
+            const config = this.parseCalculatorBlock(token.text.trim());
+            const configJson = JSON.stringify(config);
+            const encodedConfig = configJson.replace(/"/g, '&quot;');
+            token.text = `<div class="calculator-placeholder" data-calculator-config="${encodedConfig}"></div>`;
+          } catch (error) {
+            console.error('Error parsing calculator:', error);
+            console.error('Content was:', token.text.substring(0, 200));
+            token.text = `<div class="calculator-error">Error parsing calculator: ${(error as Error).message}</div>`;
+          }
+        }
+      },
       extensions: [
         {
           name: 'wikiLink',
@@ -319,17 +339,22 @@ export class MarkdownService {
   }
 
   /**
-   * Parses markdown content to HTML, handling Obsidian wiki-links, custom color syntax, and custom icon syntax
+   * Parses markdown content to HTML, handling Obsidian wiki-links, custom color syntax, custom icon syntax, and calculator blocks
    * 
    * Supports:
    * - Wiki-links: [[link]] or [[link|display text]]
    * - Color syntax: ~={color}text=~ (e.g., ~={blue}colored text=~)
    * - Icon syntax: :icon:icon-name: or :icon:icon-name|size: or :icon:icon-name|size|color:
+   * - Calculator blocks: ```calculator ... ```
    */
   private parseMarkdown(markdown: string): string {
     // Strip YAML frontmatter (content between --- delimiters at the start)
     const frontmatterRegex = /^---\s*\n[\s\S]*?\n---\s*\n/;
     const contentWithoutFrontmatter = markdown.replace(frontmatterRegex, '');
+
+    // Calculator blocks are now handled by marked's walkTokens (see configureMarked)
+    // GFM will parse :::calculator as a code block with lang='calculator'
+    // Then walkTokens converts it to HTML
 
     // Pre-process wiki-links: [[link]] or [[link|display text]]
     const wikiLinkRegex = /\[\[([^\]|]+)(\|([^\]]+))?\]\]/g;
@@ -594,5 +619,71 @@ export class MarkdownService {
    */
   public getNotesMap(): Map<string, Note> {
     return this.notesMap;
+  }
+
+  /**
+   * Parses a calculator block's YAML-like content into a configuration object
+   * Supports simple key: value syntax and nested structures
+   */
+  private parseCalculatorBlock(content: string): any {
+    const lines = content.trim().split('\n');
+    const config: any = {
+      inputs: [],
+    };
+
+    let currentInput: any = null;
+
+    for (const line of lines) {
+      const trimmedLine = line.trim();
+      if (!trimmedLine || trimmedLine.startsWith('#')) continue;
+
+      // Check for main keys
+      if (trimmedLine.startsWith('formula:')) {
+        config.formula = trimmedLine.substring(8).trim();
+      } else if (trimmedLine.startsWith('description:')) {
+        config.description = trimmedLine.substring(12).trim();
+      } else if (trimmedLine.startsWith('graph:')) {
+        const value = trimmedLine.substring(6).trim();
+        config.graph = value === 'true' || value === 'yes';
+      } else if (trimmedLine.startsWith('graphPoints:')) {
+        config.graphPoints = parseInt(trimmedLine.substring(12).trim(), 10);
+      } else if (trimmedLine.startsWith('inputs:')) {
+        // Start of inputs section
+        continue;
+      } else if (trimmedLine.startsWith('- ')) {
+        // New input definition: "- name: { ... }"
+        const inputLine = trimmedLine.substring(2);
+        const colonIndex = inputLine.indexOf(':');
+        if (colonIndex > 0) {
+          const name = inputLine.substring(0, colonIndex).trim();
+          const propsStr = inputLine.substring(colonIndex + 1).trim();
+          
+          currentInput = { name };
+          
+          // Parse properties within { }
+          if (propsStr.startsWith('{') && propsStr.includes('}')) {
+            const propsContent = propsStr.substring(1, propsStr.lastIndexOf('}')).trim();
+            const props = propsContent.split(',');
+            
+            for (const prop of props) {
+              const [key, value] = prop.split(':').map(s => s.trim());
+              if (key && value) {
+                // Remove quotes from string values
+                let parsedValue: any = value.replace(/['"]/g, '');
+                // Try to parse as number
+                if (!isNaN(Number(parsedValue))) {
+                  parsedValue = Number(parsedValue);
+                }
+                currentInput[key] = parsedValue;
+              }
+            }
+          }
+          
+          config.inputs.push(currentInput);
+        }
+      }
+    }
+
+    return config;
   }
 }
