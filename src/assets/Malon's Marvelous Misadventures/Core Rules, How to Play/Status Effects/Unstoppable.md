@@ -1,1 +1,0 @@
-Creature cannot be moved by force, and can move and take actions normally regardless of any status.

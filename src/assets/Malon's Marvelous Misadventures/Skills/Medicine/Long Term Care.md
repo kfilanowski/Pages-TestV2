@@ -1,1 +1,0 @@
-Use [[Proficiency|Trained]] [[Medicine]] to assist yourself or another creature such that they can recover a stack of Drained every 3 days instead of 7. This care is required for some [[Affliction]]s.

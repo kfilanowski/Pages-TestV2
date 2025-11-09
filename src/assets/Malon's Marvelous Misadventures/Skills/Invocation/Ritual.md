@@ -1,1 +1,0 @@
-Rituals are complicated and time-consuming projects that use a large amount of materials and [[Mana]] to produce a powerful effect far beyond the strength of an individual spell. It is similar to [[Craft|Crafting]].

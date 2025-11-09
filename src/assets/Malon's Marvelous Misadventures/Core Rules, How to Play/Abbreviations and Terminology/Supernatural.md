@@ -1,1 +1,0 @@
-Supernatural abilities encompass any ability that is magical, but not a [[Spell]].

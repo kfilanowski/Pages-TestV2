@@ -1,1 +1,0 @@
-Always round decimals down, minimum 1.

@@ -1,1 +1,0 @@
-Humanoids represent the humanoid races, as well as anything sufficiently humanoid to use the same weapons and armor that a human does. They tend towards using tools, techniques, and teamwork to defeat their enemies, rather than natural attacks or abilities.

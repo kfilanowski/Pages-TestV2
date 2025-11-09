@@ -1,1 +1,0 @@
-Titans are enormous, long-lived and usually ancient creatures similar to [[Humanoid|Humanoids]]. They are almost always intelligent, and often have their own societies and cultures. This is the realm of giants and mythical beasts of incredible proportions.

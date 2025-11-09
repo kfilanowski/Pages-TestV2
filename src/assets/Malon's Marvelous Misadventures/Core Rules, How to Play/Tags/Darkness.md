@@ -1,1 +1,0 @@
-Effect either creates darkness, or has special interactions when in it.

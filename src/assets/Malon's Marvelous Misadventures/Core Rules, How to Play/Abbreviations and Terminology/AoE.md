@@ -1,3 +1,0 @@
-Stands for "Area of Effect." It is used as shorthand to describe an attack that affects a wide area, such as an explosion, or a line of fire from a dragon's breath.
-
-Area attacks have a point of origin. When the origin is a creature, such as with a breath weapon, determine [[Cover]] from one specific point in its occupied space. If the origin is a targeted point in space, such as with an explosion radiating outward, that point should be used to determine cover.

@@ -18,7 +18,7 @@ import {
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { DomSanitizer, SafeHtml, Meta, Title } from '@angular/platform-browser';
-import { MarkdownService, SearchService } from '../../../../core/services';
+import { MarkdownService, SearchService, ProjectConfigService } from '../../../../core/services';
 import { WikiLinkDirective } from '../wiki-link.directive';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { IconifyIconComponent } from '../../../../shared/components/iconify-icon/iconify-icon.component';
@@ -53,6 +53,7 @@ export class NoteViewerComponent implements OnInit, AfterViewChecked {
   private readonly appRef = inject(ApplicationRef);
   private readonly meta = inject(Meta);
   private readonly titleService = inject(Title);
+  private readonly projectConfig = inject(ProjectConfigService);
 
   @ViewChild('noteContent', { read: ElementRef }) noteContentElement?: ElementRef;
 
@@ -174,8 +175,8 @@ export class NoteViewerComponent implements OnInit, AfterViewChecked {
    * Sets title, Open Graph, and Twitter Card tags
    */
   private updateMetaTags(title: string, noteId: string): void {
-    const fullTitle = `${title} - Malon's Marvelous Misadventures`;
-    const url = `https://yourusername.github.io/Pages-TestV2/Malons-Marvelous-Misadventures/${encodeURIComponent(noteId)}`;
+    const fullTitle = this.projectConfig.getPageTitle(title);
+    const url = this.projectConfig.getContentUrl(noteId);
     
     // Update page title
     this.titleService.setTitle(fullTitle);

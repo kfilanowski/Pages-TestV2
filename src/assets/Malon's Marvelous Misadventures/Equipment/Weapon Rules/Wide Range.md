@@ -1,1 +1,0 @@
-Wide Range is the longer of the two [[Range]] increments for Ranged [[Weapon|Weapons]], in which you take a -4 [[ACC]] penalty.

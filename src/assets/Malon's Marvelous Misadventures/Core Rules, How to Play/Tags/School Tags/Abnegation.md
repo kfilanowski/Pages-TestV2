@@ -1,1 +1,0 @@
-These spells focus on disabling magic and protection.

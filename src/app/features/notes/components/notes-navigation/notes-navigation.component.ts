@@ -2,8 +2,8 @@ import { Component, inject, signal, OnInit, OnDestroy, computed, ChangeDetection
 import { CommonModule } from '@angular/common';
 import { Router, RouterModule, NavigationEnd } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { filter } from 'rxjs';
-import { MarkdownService, SearchService } from '../../../../core/services';
+import { filter, Subject, Subscription, debounceTime } from 'rxjs';
+import { MarkdownService, SearchService, ProjectConfigService } from '../../../../core/services';
 import {
   NoteTreeNode,
   NoteFolder,
@@ -47,11 +47,18 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
   private readonly markdownService = inject(MarkdownService);
   private readonly searchService = inject(SearchService);
   private readonly router = inject(Router);
+  private readonly projectConfig = inject(ProjectConfigService);
+
+  // Project configuration exposed to template
+  protected readonly projectName = this.projectConfig.getProjectName();
+  protected readonly projectSlug = this.projectConfig.getProjectNameSlug();
 
   // Reactive state for tree nodes
   private readonly allTreeNodes = signal<NoteTreeNode[]>([]);
 
-  // Search state
+  // Search state with debouncing
+  private readonly searchInputSubject = new Subject<string>();
+  private searchSubscription?: Subscription;
   protected readonly searchQuery = signal<string>('');
   protected readonly searchResults = toSignal(
     this.searchService.searchResults$,
@@ -88,7 +95,8 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
       // Expand to current route first, then set the tree
       // This ensures only one render cycle with the expanded state
       const url = this.router.url;
-      const match = url.match(/\/Malons-Marvelous-Misadventures\/(.+)/);
+      const regex = new RegExp(`\\/${this.projectSlug}\\/(.+)`);
+      const match = url.match(regex);
       
       if (match) {
         // Decode URL-encoded characters (e.g., %20 -> space) to match note IDs in tree
@@ -102,6 +110,19 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
+    // Set up debounced search with 200ms delay
+    this.searchSubscription = this.searchInputSubject
+      .pipe(debounceTime(200))
+      .subscribe((query) => {
+        this.searchService.search(query);
+
+        // Auto-expand all folders when searching
+        if (query.trim()) {
+          this.expandAllFolders(this.allTreeNodes());
+          this.allTreeNodes.set([...this.allTreeNodes()]);
+        }
+      });
+
     // Listen to route changes to expand the tree
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
@@ -110,7 +131,8 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
         const tree = this.allTreeNodes();
         if (tree.length > 0) {
           const url = this.router.url;
-          const match = url.match(/\/Malons-Marvelous-Misadventures\/(.+)/);
+          const regex = new RegExp(`\\/${this.projectSlug}\\/(.+)`);
+          const match = url.match(regex);
           
           if (match) {
             // Decode URL-encoded characters (e.g., %20 -> space) to match note IDs in tree
@@ -125,24 +147,20 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
   }
 
   /**
-   * Handles search input changes
+   * Handles search input changes with debouncing
+   * Updates the signal immediately for UI feedback, but debounces the actual search
    */
   protected onSearchChange(query: string): void {
     this.searchQuery.set(query);
-    this.searchService.search(query);
-
-    // Auto-expand all folders when searching
-    if (query.trim()) {
-      this.expandAllFolders(this.allTreeNodes());
-      this.allTreeNodes.set([...this.allTreeNodes()]);
-    }
+    this.searchInputSubject.next(query);
   }
 
   /**
-   * Clears the search
+   * Clears the search and resets search state
    */
   protected clearSearch(): void {
     this.searchQuery.set('');
+    this.searchInputSubject.next('');
     this.searchService.clearSearch();
   }
 
@@ -252,6 +270,7 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    // Cleanup if needed
+    // Clean up search subscription to prevent memory leaks
+    this.searchSubscription?.unsubscribe();
   }
 }

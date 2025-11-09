@@ -2,12 +2,89 @@
 
 This directory contains utility scripts for the project.
 
-## generate-manifest.js
+## Configuration System
+
+The project uses a **centralized configuration file** at the root: `project.config.json`
+
+### project.config.json
+
+This file contains all project metadata in one place:
+
+```json
+{
+  "projectName": "Malon's Marvelous Misadventures",
+  "projectNameShort": "MMM",
+  "projectNameSlug": "Malons-Marvelous-Misadventures",
+  "projectDescription": "A comprehensive tabletop RPG system...",
+  "projectUrl": "https://yourusername.github.io/Pages-TestV2",
+  "author": "Malon's Marvelous Misadventures",
+  "tagline": "Tabletop RPG System",
+  "keywords": "tabletop RPG, role playing game..."
+}
+```
+
+**To customize the project name and branding:**
+1. Edit `project.config.json`
+2. Change `projectName`, `projectNameSlug`, or any other values
+3. Run `npm run process:html` to update HTML files
+4. Rebuild the project with `npm run build`
+
+All scripts, components, and HTML files will automatically use the new values.
+
+## process-html-templates.js
+
+**Purpose:** Processes HTML template files and replaces placeholders with values from `project.config.json`.
+
+**What it does:**
+- Reads `src/index.html` and `src/404.html`
+- Replaces `{{PROJECT_NAME}}`, `{{PROJECT_URL}}`, etc. with actual values
+- Ensures consistent branding across all static HTML files
+
+### Usage
+
+```bash
+npm run process:html
+```
+
+This script runs automatically before builds (`npm start`, `npm run build`).
+
+### Placeholders
+
+Available placeholders in HTML files:
+- `{{PROJECT_NAME}}` - Full project name
+- `{{PROJECT_NAME_SHORT}}` - Short name (e.g., "MMM")
+- `{{PROJECT_NAME_SLUG}}` - URL-safe slug
+- `{{PROJECT_FULL_TITLE}}` - Name + tagline
+- `{{PROJECT_DESCRIPTION}}` - Project description
+- `{{PROJECT_URL}}` - Base URL
+- `{{PROJECT_AUTHOR}}` - Author name
+- `{{PROJECT_TAGLINE}}` - Tagline
+- `{{PROJECT_KEYWORDS}}` - SEO keywords
+
+## generate-sitemap.js
+
+**Purpose:** Generates a `sitemap.xml` file for SEO optimization.
+
+**What it does:**
+- Reads the manifest to find all pages
+- Uses configuration from `project.config.json`
+- Generates sitemap with proper URLs
+- Outputs to `public/sitemap.xml`
+
+### Usage
+
+```bash
+npm run generate:sitemap
+```
+
+This script runs automatically during builds.
+
+## generate-manifest.js (generate-data-files.js)
 
 **Purpose:** Automatically generates `manifest.json` from your markdown files.
 
 **What it does:**
-- Scans `src/assets/Malon's Marvelous Misadventures/` directory
+- Scans `src/assets/` directory
 - Recursively processes all folders and `.md` files
 - Extracts frontmatter metadata (like icons)
 - Generates a tree structure for navigation
@@ -57,7 +134,7 @@ The `icon` field will be included in the manifest and can be used by the UI.
 ```json
 {
   "version": "1.0",
-  "rootPath": "assets/Malon's Marvelous Misadventures",
+  "rootPath": "assets",
   "tree": [
     {
       "name": "Folder Name",

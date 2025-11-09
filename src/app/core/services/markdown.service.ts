@@ -249,7 +249,7 @@ export class MarkdownService {
   private loadManifest(): void {
     this.http
       .get<NotesManifest>(
-        "assets/Malon's Marvelous Misadventures/manifest.json"
+        "assets/manifest.json"
       )
       .pipe(
         tap((manifest) => {
@@ -262,7 +262,7 @@ export class MarkdownService {
           this.manifestLoadedSubject.next(true); // Mark as loaded even on error
           return of({
             version: '1.0',
-            rootPath: "assets/Malon's Marvelous Misadventures",
+            rootPath: "assets",
             tree: [],
           } as NotesManifest);
         })
@@ -324,7 +324,7 @@ export class MarkdownService {
       return of(this.notesCache.get(note.id)!);
     }
 
-    const notePath = `assets/Malon's Marvelous Misadventures/${note.path}`;
+    const notePath = `assets/${note.path}`;
 
     return this.http.get(notePath, { responseType: 'text' }).pipe(
       map((markdownContent) => this.parseMarkdown(markdownContent)),
@@ -426,7 +426,7 @@ export class MarkdownService {
       return of('Note not found');
     }
 
-    const notePath = `assets/Malon's Marvelous Misadventures/${note.path}`;
+    const notePath = `assets/${note.path}`;
 
     return this.http.get(notePath, { responseType: 'text' }).pipe(
       map((content) => {
@@ -466,7 +466,7 @@ export class MarkdownService {
       return of('<p>Note not found</p>');
     }
 
-    const notePath = `assets/Malon's Marvelous Misadventures/${note.path}`;
+    const notePath = `assets/${note.path}`;
 
     return this.http.get(notePath, { responseType: 'text' }).pipe(
       map((content) => {
@@ -515,7 +515,7 @@ export class MarkdownService {
   private loadReferenceGraph(): void {
     this.http
       .get<ReferenceGraph>(
-        "assets/Malon's Marvelous Misadventures/reference-graph.json"
+        "assets/reference-graph.json"
       )
       .pipe(
         tap((graph) => {
@@ -555,7 +555,7 @@ export class MarkdownService {
 
     return this.http
       .get<SearchIndex>(
-        "assets/Malon's Marvelous Misadventures/search-index.json"
+        "assets/search-index.json"
       )
       .pipe(
         tap((index) => {

@@ -1,1 +1,0 @@
-Creature is covered in ice. Creature has -2 [[AC]], [[Resistance]] to Fire [[Damage]] and -15 [[Speed]]. This status ends when they take physical or fire damage.

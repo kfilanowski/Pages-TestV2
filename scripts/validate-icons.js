@@ -129,7 +129,7 @@ function toPascalCase(str) {
  * Validates all icons in the manifest
  */
 function validateIcons() {
-  const manifestPath = path.join(__dirname, '../src/assets/Malon\'s Marvelous Misadventures/manifest.json');
+  const manifestPath = path.join(__dirname, '../src/assets/manifest.json');
   
   if (!fs.existsSync(manifestPath)) {
     console.error('❌ manifest.json not found. Run `npm run generate:data` first.');

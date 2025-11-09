@@ -17,8 +17,7 @@ const NOTES_DIR = path.join(
   __dirname,
   "..",
   "src",
-  "assets",
-  "Malon's Marvelous Misadventures"
+  "assets"
 );
 
 const OUTPUT_MANIFEST = path.join(NOTES_DIR, "manifest.json");
@@ -351,7 +350,7 @@ function buildIncomingLinks() {
 function generateManifest(tree) {
   const manifest = {
     version: "1.0",
-    rootPath: "assets/Malon's Marvelous Misadventures",
+    rootPath: "assets",
     tree: tree,
   };
 

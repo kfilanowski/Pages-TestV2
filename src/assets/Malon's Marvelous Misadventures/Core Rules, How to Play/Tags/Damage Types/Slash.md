@@ -1,4 +1,0 @@
----
-icon: RaAxeSwing
----
-Slash is a [[Damage]] type [[Tag]], and represents damage dealt by cuts, chops, and slices with a sharp or thin weapon.

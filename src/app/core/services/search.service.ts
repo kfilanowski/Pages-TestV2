@@ -142,15 +142,18 @@ export class SearchService {
       ],
       includeScore: true,
       includeMatches: true,
-      threshold: 0.2, // Stricter fuzzy matching - lower is stricter (0.0 = exact, 1.0 = match anything)
+      threshold: 0.3, // Moderate fuzzy matching - allows some typos but not too loose
       minMatchCharLength: 3, // Require at least 3 consecutive characters to match
       ignoreLocation: true, // Search entire content, not just beginning
-      distance: 50, // Tighter proximity - matched characters must be closer together
+      distance: 100, // Allow moderate distance for longer text
+      findAllMatches: false, // Stop at first match for efficiency
+      useExtendedSearch: false, // Disable extended search syntax for simpler matching
     });
   }
 
   /**
-   * Performs a fuzzy search on notes
+   * Performs a search on notes
+   * Uses exact substring matching for better precision
    */
   public async search(query: string): Promise<void> {
     this.searchQuerySubject.next(query);
@@ -169,10 +172,58 @@ export class SearchService {
       return;
     }
 
+    // For very short queries (1-2 chars), require even stricter matching
+    // by filtering results that don't contain the exact query as substring
     const fuseResults = this.fuse.search(query);
+    const normalizedQuery = query.toLowerCase().trim();
 
     const searchResults: SearchResult[] = fuseResults
-      .filter((result) => result.item.note) // Only include entries with valid notes
+      .filter((result) => {
+        if (!result.item.note) return false;
+        
+        // Check match quality to prevent poor matches like "cat" matching "attac"
+        const entry = result.item;
+        const matches = result.matches || [];
+        
+        // For each match, verify the quality
+        for (const match of matches) {
+          if (!match.value || !match.indices || match.indices.length === 0) continue;
+          
+          const matchedText = match.value.toLowerCase();
+          
+          // Check if query appears as a substring (best case)
+          if (matchedText.includes(normalizedQuery)) {
+            return true;
+          }
+          
+          // For fuzzy matches, calculate match quality
+          // by checking how much of the matched text is actually the query
+          const queryLen = normalizedQuery.length;
+          
+          // Get the span of the matched indices
+          let minIdx = Infinity;
+          let maxIdx = -1;
+          for (const [start, end] of match.indices) {
+            minIdx = Math.min(minIdx, start);
+            maxIdx = Math.max(maxIdx, end);
+          }
+          
+          if (minIdx === Infinity) continue;
+          
+          const matchSpan = maxIdx - minIdx + 1;
+          
+          // Match quality: query length should be at least 60% of the matched span
+          // This prevents "cat" from matching "attac" (3 chars in 5 char span = 60%)
+          // but allows "weakness" to match "weaknes" with small typos
+          const matchQuality = queryLen / matchSpan;
+          
+          if (matchQuality >= 0.65) {
+            return true;
+          }
+        }
+        
+        return false;
+      })
       .map((result) => {
         const entry = result.item;
         const note = entry.note!; // Safe because we filtered above

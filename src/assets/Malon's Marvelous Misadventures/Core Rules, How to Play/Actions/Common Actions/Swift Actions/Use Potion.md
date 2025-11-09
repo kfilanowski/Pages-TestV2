@@ -1,1 +1,0 @@
-Retrieve and drink a potion.

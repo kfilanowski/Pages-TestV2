@@ -1,1 +1,0 @@
-When a creature is set Ablaze, it takes 2d8 Fire [[Damage]] at the end of each turn and suffers -2 [[AC]]. Before taking damage, it gets a [[Reflex]] save to end the effect. A creature can choose to inflict [[Knocked Down|Knockdown]] on itself at the end of its turn for a +4 bonus to this save.

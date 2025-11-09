@@ -1,1 +1,0 @@
-Sighted creature takes a -4 penalty to [[Perception]] and treats all creatures as though they had [[Partial Concealment]].

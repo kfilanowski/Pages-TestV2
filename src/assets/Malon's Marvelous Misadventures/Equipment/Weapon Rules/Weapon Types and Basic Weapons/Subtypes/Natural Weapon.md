@@ -1,3 +1,0 @@
-Natural Weapons are a subtype [[Weapon Group]]. All Natural Weapons are also part of another Weapon Group.
-These weapons are part of a creature's being. Examples include claws, fists, tails, horns, stingers, and tentacles. 
-Most natural weapons are not universal, meaning they are different for each creature that has them and will be noted as such in their stat block. However, they do follow common trends.

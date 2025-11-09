@@ -39,6 +39,10 @@ import { Injectable } from '@angular/core';
  * ---
  * icon: lucide:sword
  * ---
+ * OR (plain kebab-case without prefix - defaults to game-icons)
+ * ---
+ * icon: bullseye-arrow
+ * ---
  */
 @Injectable({
   providedIn: 'root',
@@ -99,7 +103,7 @@ export class IconService {
   /**
    * Converts a custom icon name to Iconify format
    * 
-   * @param iconName - Icon name from frontmatter (e.g., "FiTarget", "LuSword", "GiDragonHead", "LiHeart")
+   * @param iconName - Icon name from frontmatter (e.g., "FiTarget", "LuSword", "GiDragonHead", "bullseye-arrow")
    * @returns Iconify format icon name (e.g., "lucide:target") or null if invalid
    * 
    * @example
@@ -107,6 +111,7 @@ export class IconService {
    * convertToIconifyFormat('LuSword') // returns 'lucide:sword'
    * convertToIconifyFormat('GiDragonHead') // returns 'game-icons:dragon-head'
    * convertToIconifyFormat('LiHeart') // returns 'lucide:heart' (auto-corrected from Li to Lu)
+   * convertToIconifyFormat('bullseye-arrow') // returns 'game-icons:bullseye-arrow' (plain kebab-case defaults to game-icons)
    * convertToIconifyFormat('lucide:target') // returns 'lucide:target' (already in Iconify format)
    */
   convertToIconifyFormat(iconName: string | undefined): string | null {
@@ -128,6 +133,15 @@ export class IconService {
     if (iconName.length <= 2 && !/^[a-zA-Z0-9]+$/.test(iconName)) {
       // Return null - emojis should be handled differently
       return null;
+    }
+
+    // Check if this is a plain kebab-case icon name (no prefix)
+    // Examples: "bullseye-arrow", "dragon-head", "sword"
+    const isKebabCase = /^[a-z0-9]+(-[a-z0-9]+)*$/.test(iconName);
+    if (isKebabCase) {
+      // Assume game-icons as default for RPG content
+      // The fallback system will try other libraries if this doesn't work
+      return `game-icons:${iconName}`;
     }
 
     // Extract prefix (first 2-3 characters)

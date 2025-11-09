@@ -1,1 +1,0 @@
-Target is completely surrounded in liquid. This triggers [[Aquatic Combat]] and [[Improved Cover]].

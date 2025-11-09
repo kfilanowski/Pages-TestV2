@@ -1,6 +1,6 @@
 <div class="notes-navigation">
   <div class="navigation-header">
-    <h3>Malon's Marvelous Misadventures</h3>
+    <h3>{{ projectName }}</h3>
     <div class="search-container">
       <input
         type="text"
@@ -22,7 +22,7 @@
     @if (treeNodes().length === 0) {
     <div class="empty-state">
       <p>No notes found</p>
-      <small>Add your notes to assets/Malon's Marvelous Misadventures/</small>
+      <small>Add your notes to assets/</small>
     </div>
     } @else {
     <ul class="tree-root">
@@ -58,9 +58,9 @@
     </li>
     }
   </ul>
-  } } @else if (isNote(node)) {
+  }   } @else if (isNote(node)) {
   <a
-    [routerLink]="['/Malons-Marvelous-Misadventures', node.id]"
+    [routerLink]="['/' + projectSlug, node.id]"
     routerLinkActive="active"
     class="note-item"
   >

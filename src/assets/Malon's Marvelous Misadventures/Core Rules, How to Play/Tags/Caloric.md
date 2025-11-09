@@ -1,1 +1,0 @@
-Effect either creates [[Food]], or has special interactions when using it.

@@ -1,7 +1,7 @@
 import { Component, input, output, inject, computed } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { MarkdownService } from '../../core/services';
+import { MarkdownService, ProjectConfigService } from '../../core/services';
 import { Note } from '../../core/interfaces';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -32,6 +32,10 @@ import { IconifyIconComponent } from '../../shared/components/iconify-icon/iconi
 })
 export class SidebarRightComponent {
   private readonly markdownService = inject(MarkdownService);
+  private readonly projectConfig = inject(ProjectConfigService);
+
+  // Project configuration exposed to template
+  protected readonly projectSlug = this.projectConfig.getProjectNameSlug();
 
   // Inputs
   readonly isOpen = input.required<boolean>();

@@ -1,1 +1,0 @@
-Creature cannot be targeted.

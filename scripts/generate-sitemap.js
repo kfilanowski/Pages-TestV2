@@ -8,14 +8,24 @@
  * 
  * Run this script after building the project:
  * node scripts/generate-sitemap.js
+ * 
+ * Design decision:
+ * - Reads project configuration from centralized config file
+ * - Ensures consistency across all generated artifacts
  */
 
 const fs = require('fs');
 const path = require('path');
 
+// Load project configuration
+const projectConfig = JSON.parse(
+  fs.readFileSync(path.join(__dirname, '../project.config.json'), 'utf-8')
+);
+
 // Configuration
-const BASE_URL = 'https://yourusername.github.io/Pages-TestV2';
-const MANIFEST_PATH = path.join(__dirname, '../src/assets/Malon\'s Marvelous Misadventures/manifest.json');
+const BASE_URL = projectConfig.projectUrl;
+const PROJECT_SLUG = projectConfig.projectNameSlug;
+const MANIFEST_PATH = path.join(__dirname, '../src/assets/manifest.json');
 const OUTPUT_PATH = path.join(__dirname, '../public/sitemap.xml');
 
 // Priority levels for different content types
@@ -91,7 +101,7 @@ function generateSitemap(pages) {
   
   // Add content pages from manifest
   pages.forEach(page => {
-    const url = `${BASE_URL}/Malons-Marvelous-Misadventures/${encodeURIComponent(page.id)}`;
+    const url = `${BASE_URL}/${PROJECT_SLUG}/${encodeURIComponent(page.id)}`;
     
     xml += `  <url>
     <loc>${escapeXml(url)}</loc>

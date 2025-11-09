@@ -1,1 +1,0 @@
-Get +4 to [[AC]] and [[Saving Throw|Saves]] until the start of your next turn. Remove all Clumsy stacks. You can't make an [[AoO|AoO]] while using Total Defense.

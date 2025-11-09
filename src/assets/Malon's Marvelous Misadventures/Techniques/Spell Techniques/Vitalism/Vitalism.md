@@ -1,1 +1,0 @@
-Vitalism spells are a supporting caster's best toolkit. They are tailored towards protecting the sanctity of life, and reaching and increasing the strength of allies. These spells are typically [[Holy]]-aligned, and any offensive abilities are typically tailored towards disrupting [[Fiend|Fiends]] and [[Undead]].

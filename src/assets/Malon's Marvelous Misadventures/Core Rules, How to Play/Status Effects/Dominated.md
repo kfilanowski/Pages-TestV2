@@ -1,1 +1,0 @@
-A creature that is dominated is hit with a powerful charm effect, possessed, or controlled by some other means. They are unable to control their own actions and are subject to the will of another creature.

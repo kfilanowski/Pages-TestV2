@@ -1,1 +1,0 @@
-**Mind-Affecting** effects are a more general group that include things like [[Fear]] effects, [[Charm]]s, and more. Creatures that are [[Mindless]] cannot be affected by mind-affecting effects.

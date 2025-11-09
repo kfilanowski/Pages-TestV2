@@ -1,1 +1,0 @@
-When making an opposed [[Skill]] check, ties are rerolled.

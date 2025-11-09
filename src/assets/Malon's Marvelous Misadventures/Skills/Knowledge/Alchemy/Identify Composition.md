@@ -1,1 +1,0 @@
-Use [[Alchemy]] on an unknown substance to learn how to create it, if it has or can be created through Alchemy. The [[DC]] is the [[Craft]] DC+5. 

@@ -1,1 +1,0 @@
-A Teamwork Feat is a [[Feat]] that provides a benefit only if used with other creatures that have the same feat.

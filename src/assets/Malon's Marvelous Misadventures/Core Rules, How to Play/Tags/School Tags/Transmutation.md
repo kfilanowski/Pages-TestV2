@@ -1,1 +1,0 @@
-These spells focus on changing things into other things.

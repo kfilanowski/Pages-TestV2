@@ -1,1 +1,0 @@
-**Elusive:** This action doesn't provoke an [[AoO]].

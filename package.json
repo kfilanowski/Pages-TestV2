@@ -3,17 +3,18 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "npm run generate:data && ng serve",
-    "build": "npm run generate:data && npm run generate:sitemap && ng build",
-    "build:gh-pages": "npm run generate:data && npm run generate:sitemap && ng build --configuration=github-pages",
+    "start": "npm run process:html && npm run generate:data && ng serve",
+    "build": "npm run process:html && npm run generate:data && npm run generate:sitemap && ng build",
+    "build:gh-pages": "npm run process:html && npm run generate:data && npm run generate:sitemap && ng build --configuration=github-pages",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:MMM": "node dist/MMM/server/server.mjs",
     "generate:data": "node scripts/generate-data-files.js",
     "generate:manifest": "node scripts/generate-data-files.js",
     "generate:sitemap": "node scripts/generate-sitemap.js",
+    "process:html": "node scripts/process-html-templates.js",
     "validate:icons": "node scripts/validate-icons.js",
-    "prebuild": "npm run generate:data"
+    "prebuild": "npm run process:html && npm run generate:data"
   },
   "prettier": {
     "overrides": [

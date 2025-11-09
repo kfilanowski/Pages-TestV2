@@ -1,1 +1,0 @@
-Creature ignores penalties that result from [[Circumstance]] or [[Status]].

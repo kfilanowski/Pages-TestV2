@@ -1,1 +1,0 @@
-Having Resistance to a [[Damage]] type makes you take half damage from it.

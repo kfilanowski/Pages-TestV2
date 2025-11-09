@@ -1,1 +1,0 @@
-**Language-Dependent** effects require the target to understand your spoken words, or requires some form of clear communication that mimics language (like **Telepathy**).

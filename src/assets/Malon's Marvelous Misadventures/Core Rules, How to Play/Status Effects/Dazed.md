@@ -1,1 +1,0 @@
-A more severe version of [[Staggered]]. Creature cannot take a [[Standard Action]] and cannot make [[AoO|AoOs]]. -15 [[Speed]].

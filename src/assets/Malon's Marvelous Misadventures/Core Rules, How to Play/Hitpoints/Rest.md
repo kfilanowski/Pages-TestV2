@@ -1,1 +1,0 @@
-Take a [[Short Rest]] or [[Long Rest]].
