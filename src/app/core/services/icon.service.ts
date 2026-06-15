@@ -212,7 +212,7 @@ export class IconService {
    * // Returns: ['ion:target', 'game-icons:target', 'lucide:target', 'fa6-solid:target', ...]
    */
   getIconFallbackCandidates(iconName: string | undefined): string[] {
-    if (!iconName || iconName.trim() === '') {
+    if (!iconName || typeof iconName !== 'string' || iconName.trim() === '') {
       return [];
     }
 

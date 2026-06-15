@@ -1287,8 +1287,7 @@
       "Ups and Downs",
       "WIS",
       "Weakness",
-      "Wet",
-      "dark iron enforcer.jpg"
+      "Wet"
     ],
     "Glass Cannon": [
       "+Perception",
@@ -2601,7 +2600,6 @@
       "+Deception",
       "+Nature",
       "+Perception",
-      "421.309.png",
       "Advantage",
       "Arcana",
       "Blinded",
@@ -3145,7 +3143,6 @@
       "Most Annoying Sound",
       "Multiattack",
       "Nightvision",
-      "Pasted image 20251011225922.png",
       "Reach",
       "Recharge",
       "Rend Vision",
@@ -3248,7 +3245,6 @@
       "Nightvision",
       "On-hit",
       "Order 66",
-      "Pasted image 20251011002428.png",
       "Perfect Positioning",
       "Polymorph",
       "Reach",
@@ -3428,7 +3424,6 @@
       "Multiattack",
       "Nightvision",
       "One Eye Open (SS)",
-      "Pasted image 20251011230357.png",
       "Quick Scan (SS)",
       "Quicken Spell",
       "Reach",
@@ -4564,7 +4559,6 @@
       "Blur",
       "Breakout",
       "CHA",
-      "Chrimbus spit snatcher.png",
       "DD",
       "DEX",
       "Denied",
@@ -4999,8 +4993,7 @@
       "Wrestler"
     ],
     "Distributing Ability Scores": [
-      "Ability Scores",
-      "Ability Scores.png"
+      "Ability Scores"
     ],
     "Main Character Status": [
       "Afflictions",
@@ -5349,8 +5342,7 @@
       "Shroomlette",
       "Skills",
       "Technique Point",
-      "WIS",
-      "ankylotortoise.png"
+      "WIS"
     ],
     "Airbender": [
       "AoO",
@@ -5958,8 +5950,7 @@
       "Repairing Equipment",
       "Resistance",
       "Temp HP",
-      "Unbreakable Advance",
-      "iron knuckle.avif"
+      "Unbreakable Advance"
     ],
     "Kazekenshin": [
       "Air",
@@ -7942,14 +7933,7 @@
       "Knocked Down",
       "Temperamental Tempest",
       "Wall of Fire",
-      "Wildfire Wyrm",
-      "{06FF7A7B-EF4D-48B4-9826-EF0A949D6958}.png",
-      "{2B096B05-E656-4B11-8246-A098122460F8}.png",
-      "{48E252F4-DEE0-4D2B-BB36-CC28FC876D53}.png",
-      "{75685A16-0054-49BA-9AAF-64F189D38C22}.png",
-      "{81A99A89-CBB0-4C4D-8350-11000D5854C4}.png",
-      "{EF0F4894-4857-445B-B907-960494D4C3E2}.png",
-      "{F23B9B96-0481-4D2E-BC1E-A4C2AD65B1EC}.png"
+      "Wildfire Wyrm"
     ],
     "Attack": [
       "+Class",
@@ -8092,9 +8076,7 @@
     ],
     "Random Direction": [
       "Rift Bolt",
-      "Temperamental Tempest",
-      "{D74BC3E6-7CAA-44FD-862C-0CFD92A854B9}.png",
-      "{DF9BAAF4-7668-4FFE-ADBC-02C9D2E9D634}.png"
+      "Temperamental Tempest"
     ],
     "Reach": [
       "Melee Attack",
@@ -8128,7 +8110,6 @@
       "Luck Check"
     ],
     "Ability Scores": [
-      "Ability Scores.png",
       "CHA",
       "DEX",
       "INT",
@@ -18051,7 +18032,6 @@
       "+Minigames",
       "D420",
       "Drinking Contest",
-      "NICK NACKS showcase n logo.png",
       "Necromancy",
       "Pyromancy",
       "Skills",
@@ -34885,9 +34865,6 @@
       "Duedette",
       "Exalted - Fallen"
     ],
-    "dark iron enforcer.jpg": [
-      "Dark Iron Enforcer"
-    ],
     "Fake Out": [
       "Bog Creeper",
       "Firebending Style",
@@ -34902,27 +34879,8 @@
     "Loot Goblin": [
       "Minotaur"
     ],
-    "421.309.png": [
-      "Crystal Muncher"
-    ],
     "The Master": [
       "Blessing"
-    ],
-    "Pasted image 20251011225922.png": [
-      "Vrock"
-    ],
-    "Pasted image 20251011002428.png": [
-      "Succubus"
-    ],
-    "Pasted image 20251011230357.png": [
-      "Balor"
-    ],
-    "Chrimbus spit snatcher.png": [
-      "Chrimbus Spirit Snatcher"
-    ],
-    "Ability Scores.png": [
-      "Ability Scores",
-      "Distributing Ability Scores"
     ],
     "Celestial": [
       "Purifier"
@@ -34937,17 +34895,11 @@
       "Purifier",
       "Reincarnate"
     ],
-    "ankylotortoise.png": [
-      "Beast Trainer"
-    ],
     "Linguistics": [
       "Druid"
     ],
     "Lunar": [
       "Druid"
-    ],
-    "iron knuckle.avif": [
-      "Iron Knuckle"
     ],
     "innate techniques": [
       "Mime"
@@ -35035,35 +34987,8 @@
       "Line of Effect",
       "Total Cover"
     ],
-    "{06FF7A7B-EF4D-48B4-9826-EF0A949D6958}.png": [
-      "AoE"
-    ],
-    "{2B096B05-E656-4B11-8246-A098122460F8}.png": [
-      "AoE"
-    ],
-    "{48E252F4-DEE0-4D2B-BB36-CC28FC876D53}.png": [
-      "AoE"
-    ],
-    "{75685A16-0054-49BA-9AAF-64F189D38C22}.png": [
-      "AoE"
-    ],
-    "{81A99A89-CBB0-4C4D-8350-11000D5854C4}.png": [
-      "AoE"
-    ],
-    "{EF0F4894-4857-445B-B907-960494D4C3E2}.png": [
-      "AoE"
-    ],
-    "{F23B9B96-0481-4D2E-BC1E-A4C2AD65B1EC}.png": [
-      "AoE"
-    ],
     "Technique": [
       "Memory"
-    ],
-    "{D74BC3E6-7CAA-44FD-862C-0CFD92A854B9}.png": [
-      "Random Direction"
-    ],
-    "{DF9BAAF4-7668-4FFE-ADBC-02C9D2E9D634}.png": [
-      "Random Direction"
     ],
     "Crafting": [
       "XP"
@@ -35355,9 +35280,6 @@
     ],
     "blindsense": [
       "Sniffer"
-    ],
-    "NICK NACKS showcase n logo.png": [
-      "Index"
     ]
   }
 }

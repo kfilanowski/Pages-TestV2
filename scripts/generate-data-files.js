@@ -165,6 +165,10 @@ function extractWikiLinks(markdown) {
   let match;
 
   while ((match = doubleBracketRegex.exec(markdown)) !== null) {
+    // Skip ![[...]] image embeds
+    if (match.index > 0 && markdown[match.index - 1] === '!') {
+      continue;
+    }
     const noteId = match[1].trim().replace(/\\+$/, '');
     if (noteId) {
       links.push(noteId);
