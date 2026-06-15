@@ -309,7 +309,47 @@ export class SearchService {
         };
       });
 
-    this.searchResultsSubject.next(searchResults);
+    this.searchResultsSubject.next(this.sortResults(searchResults, query));
+  }
+
+  /**
+   * Sorts search results so exact and prefix title matches appear first,
+   * then falls back to Fuse's relevance score
+   */
+  private sortResults(results: SearchResult[], query: string): SearchResult[] {
+    const q = query.toLowerCase().trim();
+
+    // Separate into tiers:
+    // 1. Exact title match
+    // 2. Title starts with query
+    // 3. Title contains query as a word
+    // 4. Everything else by Fuse score
+    const exact: SearchResult[] = [];
+    const startsWith: SearchResult[] = [];
+    const contains: SearchResult[] = [];
+    const rest: SearchResult[] = [];
+
+    for (const r of results) {
+      const title = r.note.title.toLowerCase();
+      if (title === q) {
+        exact.push(r);
+      } else if (title.startsWith(q)) {
+        startsWith.push(r);
+      } else if (title.includes(q)) {
+        contains.push(r);
+      } else {
+        rest.push(r);
+      }
+    }
+
+    // Sort each group by Fuse score (lower = better)
+    const byScore = (a: SearchResult, b: SearchResult) => a.score - b.score;
+    exact.sort(byScore);
+    startsWith.sort(byScore);
+    contains.sort(byScore);
+    rest.sort(byScore);
+
+    return [...exact, ...startsWith, ...contains, ...rest];
   }
 
   /**

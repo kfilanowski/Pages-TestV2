@@ -246,6 +246,7 @@ export class MarkdownService {
       )
       .pipe(
         tap((manifest) => {
+          this.sortTreeNatural(manifest.tree);
           this.notesTreeSubject.next(manifest.tree);
           this.buildNotesMap(manifest.tree);
           this.manifestLoadedSubject.next(true);
@@ -261,6 +262,29 @@ export class MarkdownService {
         })
       )
       .subscribe();
+  }
+
+  /**
+   * Recursively sorts the tree with natural number ordering.
+   * Folders come before notes; within each group names are sorted
+   * so that "3" comes before "10" and "12" ("Level Folder Aberr" works correctly).
+   */
+  private sortTreeNatural(nodes: NoteTreeNode[]): void {
+    const collator = new Intl.Collator(undefined, { numeric: true, sensitivity: 'base' });
+    nodes.sort((a, b) => {
+      const aIsFolder = isFolder(a);
+      const bIsFolder = isFolder(b);
+      if (aIsFolder && !bIsFolder) return -1;
+      if (!aIsFolder && bIsFolder) return 1;
+      const aName = isFolder(a) ? a.name : a.title;
+      const bName = isFolder(b) ? b.name : b.title;
+      return collator.compare(aName, bName);
+    });
+    for (const node of nodes) {
+      if (isFolder(node)) {
+        this.sortTreeNatural(node.children);
+      }
+    }
   }
 
   /**

@@ -200,7 +200,8 @@ function buildTreeAndCollectData(dirPath, relativePath = "") {
   const items = fs.readdirSync(dirPath);
   const tree = [];
 
-  // Sort items: folders first, then files, alphabetically
+  // Sort items: folders first, then files, alphabetically with natural number ordering
+  const collator = new Intl.Collator(undefined, { numeric: true });
   const sortedItems = items.sort((a, b) => {
     const aPath = path.join(dirPath, a);
     const bPath = path.join(dirPath, b);
@@ -209,7 +210,7 @@ function buildTreeAndCollectData(dirPath, relativePath = "") {
 
     if (aIsDir && !bIsDir) return -1;
     if (!aIsDir && bIsDir) return 1;
-    return a.localeCompare(b);
+    return collator.compare(a, b);
   });
 
   for (const item of sortedItems) {

@@ -77,7 +77,33 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
     }
 
     // Build a filtered tree showing only matched notes and their parent folders
-    return this.buildFilteredTree(this.allTreeNodes(), results);
+    const filtered = this.buildFilteredTree(this.allTreeNodes(), results);
+
+    // Sort tree branches so the most relevant matches appear first
+    const rankMap = new Map(results.map((r, i) => [r.note.id, i]));
+
+    const bestRank = (node: NoteTreeNode): number => {
+      if (isNote(node)) {
+        return rankMap.get(node.id) ?? Infinity;
+      }
+      let best = Infinity;
+      for (const child of node.children) {
+        best = Math.min(best, bestRank(child));
+      }
+      return best;
+    };
+
+    const sortTree = (nodes: NoteTreeNode[]): void => {
+      nodes.sort((a, b) => bestRank(a) - bestRank(b));
+      for (const node of nodes) {
+        if (isFolder(node)) {
+          sortTree(node.children);
+        }
+      }
+    };
+
+    sortTree(filtered);
+    return filtered;
   });
 
   // Type guards exposed to template
