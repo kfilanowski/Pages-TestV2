@@ -33,24 +33,41 @@ const TEMPLATE_FILES = [
     template: path.join(__dirname, '../src/404.html.template'),
     output: path.join(__dirname, '../src/404.html'),
   },
+  {
+    template: path.join(__dirname, '../public/robots.txt.template'),
+    output: path.join(__dirname, '../public/robots.txt'),
+  },
 ];
+
+/**
+ * Derives the GitHub Pages base path from the project URL (e.g. "/Pages-TestV2/")
+ */
+function getProjectBasePath(projectUrl) {
+  const url = new URL(
+    projectUrl.includes('://') ? projectUrl : `https://${projectUrl}`
+  );
+  const pathname = url.pathname.replace(/\/$/, '');
+  return `${pathname}/`;
+}
 
 /**
  * Replaces placeholders in content with config values
  */
 function replacePlaceholders(content, config) {
   let result = content;
+  const projectBasePath = getProjectBasePath(config.projectUrl);
   
   // Replace all config values
   result = result.replace(/\{\{PROJECT_NAME\}\}/g, config.projectName);
   result = result.replace(/\{\{PROJECT_NAME_SHORT\}\}/g, config.projectNameShort);
   result = result.replace(/\{\{PROJECT_NAME_SLUG\}\}/g, config.projectNameSlug);
   result = result.replace(/\{\{PROJECT_DESCRIPTION\}\}/g, config.projectDescription);
-  result = result.replace(/\{\{PROJECT_URL\}\}/g, config.projectUrl);
+  result = result.replace(/\{\{PROJECT_URL\}\}/g, config.projectUrl.replace(/\/$/, ''));
   result = result.replace(/\{\{PROJECT_AUTHOR\}\}/g, config.author);
   result = result.replace(/\{\{PROJECT_TAGLINE\}\}/g, config.tagline);
   result = result.replace(/\{\{PROJECT_KEYWORDS\}\}/g, config.keywords);
   result = result.replace(/\{\{PROJECT_FULL_TITLE\}\}/g, `${config.projectName} - ${config.tagline}`);
+  result = result.replace(/\{\{PROJECT_BASE_PATH\}\}/g, projectBasePath);
   
   return result;
 }

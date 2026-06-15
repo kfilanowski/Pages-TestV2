@@ -12,6 +12,7 @@ import { isPlatformBrowser } from '@angular/common';
 import { Router } from '@angular/router';
 import { MarkdownService } from '../../../core/services';
 import { IconService } from '../../../core/services/icon.service';
+import { ProjectConfigService } from '../../../core/services/project-config.service';
 
 /**
  * Directive that adds hover preview and click navigation to wiki-links
@@ -33,6 +34,7 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
   private readonly router = inject(Router);
   private readonly markdownService = inject(MarkdownService);
   private readonly iconService = inject(IconService);
+  private readonly projectConfig = inject(ProjectConfigService);
   private readonly platformId = inject(PLATFORM_ID);
   private readonly isBrowser = isPlatformBrowser(this.platformId);
 
@@ -141,7 +143,10 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
 
           const noteId = (link as HTMLElement).getAttribute('data-note-id');
           if (noteId) {
-            this.router.navigate(['/Malons-Marvelous-Misadventures', noteId]);
+            this.router.navigate([
+              this.projectConfig.getProjectNameSlug(),
+              noteId,
+            ]);
           }
         }
       );

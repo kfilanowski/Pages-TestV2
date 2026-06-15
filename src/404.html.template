@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Nick Nacks</title>
-  <base href="/Pages-TestV2/">
+  <title>{{PROJECT_NAME}}</title>
+  <base href="{{PROJECT_BASE_PATH}}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="favicon.png">
   

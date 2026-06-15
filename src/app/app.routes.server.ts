@@ -1,4 +1,5 @@
 import { RenderMode, ServerRoute } from '@angular/ssr';
+import projectConfig from '../../project.config.json';
 
 /**
  * Server-side routing configuration
@@ -10,7 +11,7 @@ import { RenderMode, ServerRoute } from '@angular/ssr';
  */
 export const serverRoutes: ServerRoute[] = [
   {
-    path: 'Malons-Marvelous-Misadventures/**',
+    path: `${projectConfig.projectNameSlug}/**`,
     renderMode: RenderMode.Client,
   },
   {

@@ -51,7 +51,7 @@ export class ProjectConfigService {
   }
 
   /**
-   * Gets the URL-safe slug version (e.g., "Malons-Marvelous-Misadventures")
+   * Gets the URL-safe slug version (e.g., "Nick-Nacks")
    */
   getProjectNameSlug(): string {
     return this.config.projectNameSlug;

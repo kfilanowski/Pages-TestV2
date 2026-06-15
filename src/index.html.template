@@ -2,33 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Nick Nacks - Tabletop RPG System</title>
+  <title>{{PROJECT_FULL_TITLE}}</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="favicon.png">
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Nick Nacks is my very own fantasy tabletop role-playing game (TTRPG).">
-  <meta name="keywords" content="tabletop RPG, role playing game, RPG rules, character classes, bestiary, TTRPG, game system, combat rules, character creation, RPG equipment, skills, techniques, feats, interactive calculators">
-  <meta name="author" content="Nick Nacks">
+  <meta name="description" content="{{PROJECT_DESCRIPTION}}">
+  <meta name="keywords" content="{{PROJECT_KEYWORDS}}">
+  <meta name="author" content="{{PROJECT_AUTHOR}}">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://kfilanowski.github.io/Pages-TestV2/">
-  <meta property="og:title" content="Nick Nacks - Tabletop RPG System">
-  <meta property="og:description" content="Nick Nacks is my very own fantasy tabletop role-playing game (TTRPG).">
-  <meta property="og:site_name" content="Nick Nacks">
+  <meta property="og:url" content="{{PROJECT_URL}}/">
+  <meta property="og:title" content="{{PROJECT_FULL_TITLE}}">
+  <meta property="og:description" content="{{PROJECT_DESCRIPTION}}">
+  <meta property="og:site_name" content="{{PROJECT_NAME}}">
   
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://kfilanowski.github.io/Pages-TestV2/">
-  <meta name="twitter:title" content="Nick Nacks - Tabletop RPG System">
-  <meta name="twitter:description" content="Nick Nacks is my very own fantasy tabletop role-playing game (TTRPG).">
+  <meta name="twitter:url" content="{{PROJECT_URL}}/">
+  <meta name="twitter:title" content="{{PROJECT_FULL_TITLE}}">
+  <meta name="twitter:description" content="{{PROJECT_DESCRIPTION}}">
   
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://kfilanowski.github.io/Pages-TestV2/">
+  <link rel="canonical" href="{{PROJECT_URL}}/">
   
   <!-- Preconnect to external resources for faster loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -68,19 +68,19 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Nick Nacks",
-    "alternateName": "NN TTRPG System",
-    "url": "https://kfilanowski.github.io/Pages-TestV2/",
-    "description": "Nick Nacks is my very own fantasy tabletop role-playing game (TTRPG).",
+    "name": "{{PROJECT_NAME}}",
+    "alternateName": "{{PROJECT_NAME_SHORT}} TTRPG System",
+    "url": "{{PROJECT_URL}}/",
+    "description": "{{PROJECT_DESCRIPTION}}",
     "inLanguage": "en-US",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://kfilanowski.github.io/Pages-TestV2/?q={search_term_string}",
+      "target": "{{PROJECT_URL}}/?q={search_term_string}",
       "query-input": "required name=search_term_string"
     },
     "mainEntity": {
       "@type": "Game",
-      "name": "Nick Nacks",
+      "name": "{{PROJECT_NAME}}",
       "gameItem": ["Character Classes", "Bestiary", "Equipment", "Skills", "Techniques", "Feats"],
       "genre": "Tabletop Role-Playing Game"
     }

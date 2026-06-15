@@ -25,6 +25,7 @@ import {
   isNote,
   isFolder,
 } from '../interfaces';
+import projectConfig from '../../../../project.config.json';
 
 /**
  * Service responsible for loading, parsing, and managing Obsidian markdown notes.
@@ -94,6 +95,7 @@ export class MarkdownService {
    * Configures the marked library with custom renderers for Obsidian syntax
    */
   private configureMarked(): void {
+    const projectSlug = projectConfig.projectNameSlug;
     const renderer = new marked.Renderer();
 
     // Helper function to extract YouTube video ID from various URL formats
@@ -152,7 +154,7 @@ export class MarkdownService {
 
         // Note: data-note-id and data-icon are preserved by Angular's sanitizer
         // If icon exists, include it in the data attribute for client-side rendering
-        return `<a href="/Malons-Marvelous-Misadventures/${noteId}" class="wiki-link" data-note-id="${noteId}" data-icon="${iconName}">${displayText}</a>`;
+        return `<a href="/${projectSlug}/${noteId}" class="wiki-link" data-note-id="${noteId}" data-icon="${iconName}">${displayText}</a>`;
       }
 
       // Check if this is a YouTube link and embed it
@@ -236,7 +238,7 @@ export class MarkdownService {
             const note = this.notesMap.get(noteId);
             const iconName = note?.icon || '';
             
-            return `<a href="/Malons-Marvelous-Misadventures/${noteId}" class="wiki-link" data-note-id="${noteId}" data-icon="${iconName}">${displayText}</a>`;
+            return `<a href="/${projectSlug}/${noteId}" class="wiki-link" data-note-id="${noteId}" data-icon="${iconName}">${displayText}</a>`;
           }
         }
       ]

@@ -46,6 +46,7 @@ jobs:
 
       - name: Create 404.html from built index
         run: |
+          BASE_PATH=$(node -p "(() => { const u = new URL(require('./project.config.json').projectUrl); const p = u.pathname.replace(/\\/$/, ''); return p + '/'; })()")
           # Find the built index file (could be index.csr.html or index.html)
           if [ -f "dist/MMM/browser/index.csr.html" ]; then
             INDEX_FILE="dist/MMM/browser/index.csr.html"
@@ -55,11 +56,10 @@ jobs:
             echo "Error: No index file found"
             exit 1
           fi
-          # Copy to 404.html and update base href for GitHub Pages
+          # Copy to 404.html and ensure base href matches GitHub Pages path
           cp "$INDEX_FILE" dist/MMM/browser/404.html
-          # Update base href to /Pages-TestV2/ if it's not already set
-          sed -i 's|<base href="/">|<base href="/Pages-TestV2/">|g' dist/MMM/browser/404.html
-          sed -i 's|<base href="">|<base href="/Pages-TestV2/">|g' dist/MMM/browser/404.html
+          sed -i "s|<base href=\"/\">|<base href=\"${BASE_PATH}\">|g" dist/MMM/browser/404.html
+          sed -i "s|<base href=\"\">|<base href=\"${BASE_PATH}\">|g" dist/MMM/browser/404.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

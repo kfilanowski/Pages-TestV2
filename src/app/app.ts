@@ -15,6 +15,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 
 // Core services
 import { ThemeService } from './core/services';
+import { ProjectConfigService } from './core/services/project-config.service';
 
 /**
  * Root application component implementing a responsive layout with:
@@ -50,6 +51,7 @@ import { ThemeService } from './core/services';
 export class App implements OnInit, OnDestroy {
   private readonly router = inject(Router);
   private readonly themeService = inject(ThemeService);
+  private readonly projectConfig = inject(ProjectConfigService);
   private routerSubscription?: Subscription;
   private navigationSubscription?: Subscription;
 
@@ -60,7 +62,7 @@ export class App implements OnInit, OnDestroy {
   // Wide desktop breakpoint - right sidebar can be open above this width
   private readonly WIDE_DESKTOP_BREAKPOINT = 1250;
 
-  protected readonly title = 'Malon\'s Marvelous Misadventures';
+  protected readonly title = this.projectConfig.getProjectName();
 
   // Reactive state for sidebar visibility using Angular signals
   // Initialize based on screen size: closed on mobile, open on desktop
@@ -186,10 +188,12 @@ export class App implements OnInit, OnDestroy {
     const url = this.router.url.split('?')[0].split('#')[0];
     const urlSegments = url.split('/');
     
-    // Check if we're on a /Malons-Marvelous-Misadventures/:id route
+    const projectSlug = this.projectConfig.getProjectNameSlug();
+
+    // Check if we're on a /{projectSlug}/:id route
     if (
       urlSegments.length >= 3 &&
-      urlSegments[1] === 'Malons-Marvelous-Misadventures'
+      urlSegments[1] === projectSlug
     ) {
       // Decode URL-encoded characters (e.g., %20 -> space)
       const encodedNoteId = urlSegments[2];
