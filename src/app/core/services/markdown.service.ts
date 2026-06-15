@@ -425,7 +425,9 @@ export class MarkdownService {
     const processedMarkdown = processedImages.replace(
       wikiLinkRegex,
       (match, link, _, displayText) => {
-        const noteId = link.trim();
+        // Strip trailing backslashes from the link target - they come from
+        // GFM table pipe-escape sequences (\|) in wiki-links inside table cells
+        const noteId = link.trim().replace(/\\+$/, '');
         const text = displayText ? displayText.trim() : noteId;
 
         // Convert to a special format that marked will recognize
