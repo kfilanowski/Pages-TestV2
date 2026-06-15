@@ -27,42 +27,6 @@
                       "expanded": false
                     },
                     {
-                      "name": "10",
-                      "children": [
-                        {
-                          "id": "Grandma",
-                          "title": "Grandma",
-                          "path": "Bestiary/Bestiary/Aberrations/Level Folder Aberr/10/Grandma.md",
-                          "fileName": "Grandma.md"
-                        }
-                      ],
-                      "expanded": false
-                    },
-                    {
-                      "name": "11",
-                      "children": [
-                        {
-                          "id": "Beholder",
-                          "title": "Beholder",
-                          "path": "Bestiary/Bestiary/Aberrations/Level Folder Aberr/11/Beholder.md",
-                          "fileName": "Beholder.md"
-                        }
-                      ],
-                      "expanded": false
-                    },
-                    {
-                      "name": "12",
-                      "children": [
-                        {
-                          "id": "Besmolder",
-                          "title": "Besmolder",
-                          "path": "Bestiary/Bestiary/Aberrations/Level Folder Aberr/12/Besmolder.md",
-                          "fileName": "Besmolder.md"
-                        }
-                      ],
-                      "expanded": false
-                    },
-                    {
                       "name": "3",
                       "children": [
                         {
@@ -130,6 +94,42 @@
                           "title": "Xenomorph",
                           "path": "Bestiary/Bestiary/Aberrations/Level Folder Aberr/8/Xenomorph.md",
                           "fileName": "Xenomorph.md"
+                        }
+                      ],
+                      "expanded": false
+                    },
+                    {
+                      "name": "10",
+                      "children": [
+                        {
+                          "id": "Grandma",
+                          "title": "Grandma",
+                          "path": "Bestiary/Bestiary/Aberrations/Level Folder Aberr/10/Grandma.md",
+                          "fileName": "Grandma.md"
+                        }
+                      ],
+                      "expanded": false
+                    },
+                    {
+                      "name": "11",
+                      "children": [
+                        {
+                          "id": "Beholder",
+                          "title": "Beholder",
+                          "path": "Bestiary/Bestiary/Aberrations/Level Folder Aberr/11/Beholder.md",
+                          "fileName": "Beholder.md"
+                        }
+                      ],
+                      "expanded": false
+                    },
+                    {
+                      "name": "12",
+                      "children": [
+                        {
+                          "id": "Besmolder",
+                          "title": "Besmolder",
+                          "path": "Bestiary/Bestiary/Aberrations/Level Folder Aberr/12/Besmolder.md",
+                          "fileName": "Besmolder.md"
                         }
                       ],
                       "expanded": false
@@ -629,18 +629,6 @@
                       "expanded": false
                     },
                     {
-                      "name": "12",
-                      "children": [
-                        {
-                          "id": "Wildfire Wyrm",
-                          "title": "Wildfire Wyrm",
-                          "path": "Bestiary/Bestiary/Dragons/Level Folder Dragon/12/Wildfire Wyrm.md",
-                          "fileName": "Wildfire Wyrm.md"
-                        }
-                      ],
-                      "expanded": false
-                    },
-                    {
                       "name": "3",
                       "children": [
                         {
@@ -687,6 +675,18 @@
                         }
                       ],
                       "expanded": false
+                    },
+                    {
+                      "name": "12",
+                      "children": [
+                        {
+                          "id": "Wildfire Wyrm",
+                          "title": "Wildfire Wyrm",
+                          "path": "Bestiary/Bestiary/Dragons/Level Folder Dragon/12/Wildfire Wyrm.md",
+                          "fileName": "Wildfire Wyrm.md"
+                        }
+                      ],
+                      "expanded": false
                     }
                   ],
                   "expanded": false
@@ -721,6 +721,48 @@
                           "title": "Snowman",
                           "path": "Bestiary/Bestiary/Elementals/Level Folder Elemental/1/Snowman.md",
                           "fileName": "Snowman.md"
+                        }
+                      ],
+                      "expanded": false
+                    },
+                    {
+                      "name": "3",
+                      "children": [
+                        {
+                          "id": "Miner's Delight",
+                          "title": "Miner's Delight",
+                          "path": "Bestiary/Bestiary/Elementals/Level Folder Elemental/3/Miner's Delight.md",
+                          "fileName": "Miner's Delight.md"
+                        }
+                      ],
+                      "expanded": false
+                    },
+                    {
+                      "name": "5",
+                      "children": [
+                        {
+                          "id": "Garnet Guardian",
+                          "title": "Garnet Guardian",
+                          "path": "Bestiary/Bestiary/Elementals/Level Folder Elemental/5/Garnet Guardian.md",
+                          "fileName": "Garnet Guardian.md"
+                        },
+                        {
+                          "id": "Quartzite Crusher",
+                          "title": "Quartzite Crusher",
+                          "path": "Bestiary/Bestiary/Elementals/Level Folder Elemental/5/Quartzite Crusher.md",
+                          "fileName": "Quartzite Crusher.md"
+                        }
+                      ],
+                      "expanded": false
+                    },
+                    {
+                      "name": "6",
+                      "children": [
+                        {
+                          "id": "Cheez",
+                          "title": "Cheez",
+                          "path": "Bestiary/Bestiary/Elementals/Level Folder Elemental/6/Cheez.md",
+                          "fileName": "Cheez.md"
                         }
                       ],
                       "expanded": false
@@ -775,48 +817,6 @@
                             }
                           ],
                           "expanded": false
-                        }
-                      ],
-                      "expanded": false
-                    },
-                    {
-                      "name": "3",
-                      "children": [
-                        {
-                          "id": "Miner's Delight",
-                          "title": "Miner's Delight",
-                          "path": "Bestiary/Bestiary/Elementals/Level Folder Elemental/3/Miner's Delight.md",
-                          "fileName": "Miner's Delight.md"
-                        }
-                      ],
-                      "expanded": false
-                    },
-                    {
-                      "name": "5",
-                      "children": [
-                        {
-                          "id": "Garnet Guardian",
-                          "title": "Garnet Guardian",
-                          "path": "Bestiary/Bestiary/Elementals/Level Folder Elemental/5/Garnet Guardian.md",
-                          "fileName": "Garnet Guardian.md"
-                        },
-                        {
-                          "id": "Quartzite Crusher",
-                          "title": "Quartzite Crusher",
-                          "path": "Bestiary/Bestiary/Elementals/Level Folder Elemental/5/Quartzite Crusher.md",
-                          "fileName": "Quartzite Crusher.md"
-                        }
-                      ],
-                      "expanded": false
-                    },
-                    {
-                      "name": "6",
-                      "children": [
-                        {
-                          "id": "Cheez",
-                          "title": "Cheez",
-                          "path": "Bestiary/Bestiary/Elementals/Level Folder Elemental/6/Cheez.md",
-                          "fileName": "Cheez.md"
                         }
                       ],
                       "expanded": false
@@ -980,72 +980,6 @@
                       "expanded": false
                     },
                     {
-                      "name": "10",
-                      "children": [
-                        {
-                          "name": "slurnesh",
-                          "children": [
-                            {
-                              "id": "README",
-                              "title": "README",
-                              "path": "Bestiary/Bestiary/Fiends/Level Folder Fiend/10/slurnesh/README.md",
-                              "fileName": "README.md"
-                            },
-                            {
-                              "id": "slurnesh-true-form",
-                              "title": "slurnesh-true-form",
-                              "path": "Bestiary/Bestiary/Fiends/Level Folder Fiend/10/slurnesh/slurnesh-true-form.md",
-                              "fileName": "slurnesh-true-form.md"
-                            }
-                          ],
-                          "expanded": false
-                        }
-                      ],
-                      "expanded": false
-                    },
-                    {
-                      "name": "11",
-                      "children": [
-                        {
-                          "id": "Balrogue",
-                          "title": "Balrogue",
-                          "path": "Bestiary/Bestiary/Fiends/Level Folder Fiend/11/Balrogue.md",
-                          "fileName": "Balrogue.md"
-                        },
-                        {
-                          "id": "Chained Oblivion",
-                          "title": "Chained Oblivion",
-                          "path": "Bestiary/Bestiary/Fiends/Level Folder Fiend/11/Chained Oblivion.md",
-                          "fileName": "Chained Oblivion.md"
-                        }
-                      ],
-                      "expanded": false
-                    },
-                    {
-                      "name": "12",
-                      "children": [
-                        {
-                          "id": "the-master",
-                          "title": "the-master",
-                          "path": "Bestiary/Bestiary/Fiends/Level Folder Fiend/12/the-master.md",
-                          "fileName": "the-master.md"
-                        }
-                      ],
-                      "expanded": false
-                    },
-                    {
-                      "name": "12+",
-                      "children": [
-                        {
-                          "id": "Balor",
-                          "title": "Balor",
-                          "path": "Bestiary/Bestiary/Fiends/Level Folder Fiend/12+/Balor.md",
-                          "fileName": "Balor.md"
-                        }
-                      ],
-                      "expanded": false
-                    },
-                    {
                       "name": "2",
                       "children": [
                         {
@@ -1164,6 +1098,72 @@
                         }
                       ],
                       "expanded": false
+                    },
+                    {
+                      "name": "10",
+                      "children": [
+                        {
+                          "name": "slurnesh",
+                          "children": [
+                            {
+                              "id": "README",
+                              "title": "README",
+                              "path": "Bestiary/Bestiary/Fiends/Level Folder Fiend/10/slurnesh/README.md",
+                              "fileName": "README.md"
+                            },
+                            {
+                              "id": "slurnesh-true-form",
+                              "title": "slurnesh-true-form",
+                              "path": "Bestiary/Bestiary/Fiends/Level Folder Fiend/10/slurnesh/slurnesh-true-form.md",
+                              "fileName": "slurnesh-true-form.md"
+                            }
+                          ],
+                          "expanded": false
+                        }
+                      ],
+                      "expanded": false
+                    },
+                    {
+                      "name": "11",
+                      "children": [
+                        {
+                          "id": "Balrogue",
+                          "title": "Balrogue",
+                          "path": "Bestiary/Bestiary/Fiends/Level Folder Fiend/11/Balrogue.md",
+                          "fileName": "Balrogue.md"
+                        },
+                        {
+                          "id": "Chained Oblivion",
+                          "title": "Chained Oblivion",
+                          "path": "Bestiary/Bestiary/Fiends/Level Folder Fiend/11/Chained Oblivion.md",
+                          "fileName": "Chained Oblivion.md"
+                        }
+                      ],
+                      "expanded": false
+                    },
+                    {
+                      "name": "12",
+                      "children": [
+                        {
+                          "id": "the-master",
+                          "title": "the-master",
+                          "path": "Bestiary/Bestiary/Fiends/Level Folder Fiend/12/the-master.md",
+                          "fileName": "the-master.md"
+                        }
+                      ],
+                      "expanded": false
+                    },
+                    {
+                      "name": "12+",
+                      "children": [
+                        {
+                          "id": "Balor",
+                          "title": "Balor",
+                          "path": "Bestiary/Bestiary/Fiends/Level Folder Fiend/12+/Balor.md",
+                          "fileName": "Balor.md"
+                        }
+                      ],
+                      "expanded": false
                     }
                   ],
                   "expanded": false
@@ -1184,30 +1184,6 @@
                 {
                   "name": "Level Folder Giant",
                   "children": [
-                    {
-                      "name": "10",
-                      "children": [
-                        {
-                          "id": "Cloud Giant",
-                          "title": "Cloud Giant",
-                          "path": "Bestiary/Bestiary/Giant/Level Folder Giant/10/Cloud Giant.md",
-                          "fileName": "Cloud Giant.md"
-                        }
-                      ],
-                      "expanded": false
-                    },
-                    {
-                      "name": "12",
-                      "children": [
-                        {
-                          "id": "Bingus Mingus",
-                          "title": "Bingus Mingus",
-                          "path": "Bestiary/Bestiary/Giant/Level Folder Giant/12/Bingus Mingus.md",
-                          "fileName": "Bingus Mingus.md"
-                        }
-                      ],
-                      "expanded": false
-                    },
                     {
                       "name": "3",
                       "children": [
@@ -1252,6 +1228,30 @@
                           "title": "Molten Giant",
                           "path": "Bestiary/Bestiary/Giant/Level Folder Giant/5/Molten Giant.md",
                           "fileName": "Molten Giant.md"
+                        }
+                      ],
+                      "expanded": false
+                    },
+                    {
+                      "name": "10",
+                      "children": [
+                        {
+                          "id": "Cloud Giant",
+                          "title": "Cloud Giant",
+                          "path": "Bestiary/Bestiary/Giant/Level Folder Giant/10/Cloud Giant.md",
+                          "fileName": "Cloud Giant.md"
+                        }
+                      ],
+                      "expanded": false
+                    },
+                    {
+                      "name": "12",
+                      "children": [
+                        {
+                          "id": "Bingus Mingus",
+                          "title": "Bingus Mingus",
+                          "path": "Bestiary/Bestiary/Giant/Level Folder Giant/12/Bingus Mingus.md",
+                          "fileName": "Bingus Mingus.md"
                         }
                       ],
                       "expanded": false
@@ -6167,18 +6167,6 @@
                       "name": "Pricing",
                       "children": [
                         {
-                          "name": "10k - 25k",
-                          "children": [
-                            {
-                              "id": "Bull Goat",
-                              "title": "Bull Goat",
-                              "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Baubles/Pricing/10k - 25k/Bull Goat.md",
-                              "fileName": "Bull Goat.md"
-                            }
-                          ],
-                          "expanded": false
-                        },
-                        {
                           "name": "1gp - 2k",
                           "children": [
                             {
@@ -6222,6 +6210,18 @@
                               "title": "Target",
                               "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Baubles/Pricing/2k - 10k/Target.md",
                               "fileName": "Target.md"
+                            }
+                          ],
+                          "expanded": false
+                        },
+                        {
+                          "name": "10k - 25k",
+                          "children": [
+                            {
+                              "id": "Bull Goat",
+                              "title": "Bull Goat",
+                              "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Baubles/Pricing/10k - 25k/Bull Goat.md",
+                              "fileName": "Bull Goat.md"
                             }
                           ],
                           "expanded": false
@@ -6289,6 +6289,18 @@
                           "name": "Pricing",
                           "children": [
                             {
+                              "name": "10k - 25k",
+                              "children": [
+                                {
+                                  "id": "Barrows Armor (heavy)",
+                                  "title": "Barrows Armor (heavy)",
+                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Body and Shields/Heavy Armor/Pricing/10k - 25k/Barrows Armor (heavy).md",
+                                  "fileName": "Barrows Armor (heavy).md"
+                                }
+                              ],
+                              "expanded": false
+                            },
+                            {
                               "name": "100k+",
                               "children": [
                                 {
@@ -6305,18 +6317,6 @@
                                 }
                               ],
                               "expanded": false
-                            },
-                            {
-                              "name": "10k - 25k",
-                              "children": [
-                                {
-                                  "id": "Barrows Armor (heavy)",
-                                  "title": "Barrows Armor (heavy)",
-                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Body and Shields/Heavy Armor/Pricing/10k - 25k/Barrows Armor (heavy).md",
-                                  "fileName": "Barrows Armor (heavy).md"
-                                }
-                              ],
-                              "expanded": false
                             }
                           ],
                           "expanded": false
@@ -6330,6 +6330,24 @@
                         {
                           "name": "Pricing",
                           "children": [
+                            {
+                              "name": "2k - 10k",
+                              "children": [
+                                {
+                                  "id": "Cybertron Armor",
+                                  "title": "Cybertron Armor",
+                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Body and Shields/Light Armor/Pricing/2k - 10k/Cybertron Armor.md",
+                                  "fileName": "Cybertron Armor.md"
+                                },
+                                {
+                                  "id": "Sand Cloak",
+                                  "title": "Sand Cloak",
+                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Body and Shields/Light Armor/Pricing/2k - 10k/Sand Cloak.md",
+                                  "fileName": "Sand Cloak.md"
+                                }
+                              ],
+                              "expanded": false
+                            },
                             {
                               "name": "10k - 25k",
                               "children": [
@@ -6353,24 +6371,6 @@
                                 }
                               ],
                               "expanded": false
-                            },
-                            {
-                              "name": "2k - 10k",
-                              "children": [
-                                {
-                                  "id": "Cybertron Armor",
-                                  "title": "Cybertron Armor",
-                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Body and Shields/Light Armor/Pricing/2k - 10k/Cybertron Armor.md",
-                                  "fileName": "Cybertron Armor.md"
-                                },
-                                {
-                                  "id": "Sand Cloak",
-                                  "title": "Sand Cloak",
-                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Body and Shields/Light Armor/Pricing/2k - 10k/Sand Cloak.md",
-                                  "fileName": "Sand Cloak.md"
-                                }
-                              ],
-                              "expanded": false
                             }
                           ],
                           "expanded": false
@@ -6384,6 +6384,18 @@
                         {
                           "name": "Pricing",
                           "children": [
+                            {
+                              "name": "2k - 10k",
+                              "children": [
+                                {
+                                  "id": "Jingle Armor",
+                                  "title": "Jingle Armor",
+                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Body and Shields/Medium Armor/Pricing/2k - 10k/Jingle Armor.md",
+                                  "fileName": "Jingle Armor.md"
+                                }
+                              ],
+                              "expanded": false
+                            },
                             {
                               "name": "10k - 25k",
                               "children": [
@@ -6410,18 +6422,6 @@
                                   "title": "Sunfire Armor",
                                   "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Body and Shields/Medium Armor/Pricing/25k - 100k/Sunfire Armor.md",
                                   "fileName": "Sunfire Armor.md"
-                                }
-                              ],
-                              "expanded": false
-                            },
-                            {
-                              "name": "2k - 10k",
-                              "children": [
-                                {
-                                  "id": "Jingle Armor",
-                                  "title": "Jingle Armor",
-                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Body and Shields/Medium Armor/Pricing/2k - 10k/Jingle Armor.md",
-                                  "fileName": "Jingle Armor.md"
                                 }
                               ],
                               "expanded": false
@@ -6484,24 +6484,6 @@
                           "expanded": false
                         },
                         {
-                          "name": "25k - 100k",
-                          "children": [
-                            {
-                              "id": "Giganite Boots",
-                              "title": "Giganite Boots",
-                              "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Footwear/Pricing/25k - 100k/Giganite Boots.md",
-                              "fileName": "Giganite Boots.md"
-                            },
-                            {
-                              "id": "Ninja Tabi",
-                              "title": "Ninja Tabi",
-                              "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Footwear/Pricing/25k - 100k/Ninja Tabi.md",
-                              "fileName": "Ninja Tabi.md"
-                            }
-                          ],
-                          "expanded": false
-                        },
-                        {
                           "name": "2k - 10k",
                           "children": [
                             {
@@ -6515,6 +6497,24 @@
                               "title": "Journeyman Boots",
                               "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Footwear/Pricing/2k - 10k/Journeyman Boots.md",
                               "fileName": "Journeyman Boots.md"
+                            }
+                          ],
+                          "expanded": false
+                        },
+                        {
+                          "name": "25k - 100k",
+                          "children": [
+                            {
+                              "id": "Giganite Boots",
+                              "title": "Giganite Boots",
+                              "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Footwear/Pricing/25k - 100k/Giganite Boots.md",
+                              "fileName": "Giganite Boots.md"
+                            },
+                            {
+                              "id": "Ninja Tabi",
+                              "title": "Ninja Tabi",
+                              "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Footwear/Pricing/25k - 100k/Ninja Tabi.md",
+                              "fileName": "Ninja Tabi.md"
                             }
                           ],
                           "expanded": false
@@ -6532,18 +6532,6 @@
                       "name": "Pricing",
                       "children": [
                         {
-                          "name": "25k - 100k",
-                          "children": [
-                            {
-                              "id": "Free Man's Chains",
-                              "title": "Free Man's Chains",
-                              "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Gloves/Pricing/25k - 100k/Free Man's Chains.md",
-                              "fileName": "Free Man's Chains.md"
-                            }
-                          ],
-                          "expanded": false
-                        },
-                        {
                           "name": "2k - 10k",
                           "children": [
                             {
@@ -6551,6 +6539,18 @@
                               "title": "Barrows Gloves",
                               "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Gloves/Pricing/2k - 10k/Barrows Gloves.md",
                               "fileName": "Barrows Gloves.md"
+                            }
+                          ],
+                          "expanded": false
+                        },
+                        {
+                          "name": "25k - 100k",
+                          "children": [
+                            {
+                              "id": "Free Man's Chains",
+                              "title": "Free Man's Chains",
+                              "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Gloves/Pricing/25k - 100k/Free Man's Chains.md",
+                              "fileName": "Free Man's Chains.md"
                             }
                           ],
                           "expanded": false
@@ -6810,18 +6810,6 @@
                       "name": "Pricing",
                       "children": [
                         {
-                          "name": "10k - 25k",
-                          "children": [
-                            {
-                              "id": "Nullifying Nail",
-                              "title": "Nullifying Nail",
-                              "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Slotless Items/Pricing/10k - 25k/Nullifying Nail.md",
-                              "fileName": "Nullifying Nail.md"
-                            }
-                          ],
-                          "expanded": false
-                        },
-                        {
                           "name": "1gp - 2k",
                           "children": [
                             {
@@ -6871,6 +6859,18 @@
                               "title": "Mini Me",
                               "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Slotless Items/Pricing/2k - 10k/Mini Me.md",
                               "fileName": "Mini Me.md"
+                            }
+                          ],
+                          "expanded": false
+                        },
+                        {
+                          "name": "10k - 25k",
+                          "children": [
+                            {
+                              "id": "Nullifying Nail",
+                              "title": "Nullifying Nail",
+                              "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Slotless Items/Pricing/10k - 25k/Nullifying Nail.md",
+                              "fileName": "Nullifying Nail.md"
                             }
                           ],
                           "expanded": false
@@ -6937,18 +6937,6 @@
                           "name": "Pricing",
                           "children": [
                             {
-                              "name": "10k - 25k",
-                              "children": [
-                                {
-                                  "id": "Blighted Staff",
-                                  "title": "Blighted Staff",
-                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Spell Focus Items/Staves/Pricing/10k - 25k/Blighted Staff.md",
-                                  "fileName": "Blighted Staff.md"
-                                }
-                              ],
-                              "expanded": false
-                            },
-                            {
                               "name": "1gp - 2k",
                               "children": [
                                 {
@@ -6974,6 +6962,18 @@
                                   "title": "Likk'em",
                                   "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Spell Focus Items/Staves/Pricing/2k - 10k/Likk'em.md",
                                   "fileName": "Likk'em.md"
+                                }
+                              ],
+                              "expanded": false
+                            },
+                            {
+                              "name": "10k - 25k",
+                              "children": [
+                                {
+                                  "id": "Blighted Staff",
+                                  "title": "Blighted Staff",
+                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Spell Focus Items/Staves/Pricing/10k - 25k/Blighted Staff.md",
+                                  "fileName": "Blighted Staff.md"
                                 }
                               ],
                               "expanded": false
@@ -7085,18 +7085,6 @@
                           "name": "Pricing",
                           "children": [
                             {
-                              "name": "10k - 25k",
-                              "children": [
-                                {
-                                  "id": "Orcish Hammer",
-                                  "title": "Orcish Hammer",
-                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Weapons/1h Weapons/Pricing/10k - 25k/Orcish Hammer.md",
-                                  "fileName": "Orcish Hammer.md"
-                                }
-                              ],
-                              "expanded": false
-                            },
-                            {
                               "name": "1gp - 2k",
                               "children": [
                                 {
@@ -7155,6 +7143,18 @@
                                 }
                               ],
                               "expanded": false
+                            },
+                            {
+                              "name": "10k - 25k",
+                              "children": [
+                                {
+                                  "id": "Orcish Hammer",
+                                  "title": "Orcish Hammer",
+                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Weapons/1h Weapons/Pricing/10k - 25k/Orcish Hammer.md",
+                                  "fileName": "Orcish Hammer.md"
+                                }
+                              ],
+                              "expanded": false
                             }
                           ],
                           "expanded": false
@@ -7168,48 +7168,6 @@
                         {
                           "name": "Pricing",
                           "children": [
-                            {
-                              "name": "10k - 25k",
-                              "children": [
-                                {
-                                  "id": "Corrupted Hammers",
-                                  "title": "Corrupted Hammers",
-                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Weapons/2h Weapons/Pricing/10k - 25k/Corrupted Hammers.md",
-                                  "fileName": "Corrupted Hammers.md"
-                                },
-                                {
-                                  "id": "Defiled Flail",
-                                  "title": "Defiled Flail",
-                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Weapons/2h Weapons/Pricing/10k - 25k/Defiled Flail.md",
-                                  "fileName": "Defiled Flail.md"
-                                },
-                                {
-                                  "id": "Infested Spear",
-                                  "title": "Infested Spear",
-                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Weapons/2h Weapons/Pricing/10k - 25k/Infested Spear.md",
-                                  "fileName": "Infested Spear.md"
-                                },
-                                {
-                                  "id": "Soul Eater",
-                                  "title": "Soul Eater",
-                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Weapons/2h Weapons/Pricing/10k - 25k/Soul Eater.md",
-                                  "fileName": "Soul Eater.md"
-                                },
-                                {
-                                  "id": "The Dimensional Anchor",
-                                  "title": "The Dimensional Anchor",
-                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Weapons/2h Weapons/Pricing/10k - 25k/The Dimensional Anchor.md",
-                                  "fileName": "The Dimensional Anchor.md"
-                                },
-                                {
-                                  "id": "Wretched Axe",
-                                  "title": "Wretched Axe",
-                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Weapons/2h Weapons/Pricing/10k - 25k/Wretched Axe.md",
-                                  "fileName": "Wretched Axe.md"
-                                }
-                              ],
-                              "expanded": false
-                            },
                             {
                               "name": "1gp - 2k",
                               "children": [
@@ -7263,6 +7221,48 @@
                                 }
                               ],
                               "expanded": false
+                            },
+                            {
+                              "name": "10k - 25k",
+                              "children": [
+                                {
+                                  "id": "Corrupted Hammers",
+                                  "title": "Corrupted Hammers",
+                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Weapons/2h Weapons/Pricing/10k - 25k/Corrupted Hammers.md",
+                                  "fileName": "Corrupted Hammers.md"
+                                },
+                                {
+                                  "id": "Defiled Flail",
+                                  "title": "Defiled Flail",
+                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Weapons/2h Weapons/Pricing/10k - 25k/Defiled Flail.md",
+                                  "fileName": "Defiled Flail.md"
+                                },
+                                {
+                                  "id": "Infested Spear",
+                                  "title": "Infested Spear",
+                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Weapons/2h Weapons/Pricing/10k - 25k/Infested Spear.md",
+                                  "fileName": "Infested Spear.md"
+                                },
+                                {
+                                  "id": "Soul Eater",
+                                  "title": "Soul Eater",
+                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Weapons/2h Weapons/Pricing/10k - 25k/Soul Eater.md",
+                                  "fileName": "Soul Eater.md"
+                                },
+                                {
+                                  "id": "The Dimensional Anchor",
+                                  "title": "The Dimensional Anchor",
+                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Weapons/2h Weapons/Pricing/10k - 25k/The Dimensional Anchor.md",
+                                  "fileName": "The Dimensional Anchor.md"
+                                },
+                                {
+                                  "id": "Wretched Axe",
+                                  "title": "Wretched Axe",
+                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Weapons/2h Weapons/Pricing/10k - 25k/Wretched Axe.md",
+                                  "fileName": "Wretched Axe.md"
+                                }
+                              ],
+                              "expanded": false
                             }
                           ],
                           "expanded": false
@@ -7276,18 +7276,6 @@
                         {
                           "name": "Pricing",
                           "children": [
-                            {
-                              "name": "10k - 25k",
-                              "children": [
-                                {
-                                  "id": "Ray Gun",
-                                  "title": "Ray Gun",
-                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Weapons/Exotic Weapons/Pricing/10k - 25k/Ray Gun.md",
-                                  "fileName": "Ray Gun.md"
-                                }
-                              ],
-                              "expanded": false
-                            },
                             {
                               "name": "1gp - 2k",
                               "children": [
@@ -7311,6 +7299,18 @@
                                 }
                               ],
                               "expanded": false
+                            },
+                            {
+                              "name": "10k - 25k",
+                              "children": [
+                                {
+                                  "id": "Ray Gun",
+                                  "title": "Ray Gun",
+                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Weapons/Exotic Weapons/Pricing/10k - 25k/Ray Gun.md",
+                                  "fileName": "Ray Gun.md"
+                                }
+                              ],
+                              "expanded": false
                             }
                           ],
                           "expanded": false
@@ -7324,18 +7324,6 @@
                         {
                           "name": "Pricing",
                           "children": [
-                            {
-                              "name": "100k+",
-                              "children": [
-                                {
-                                  "id": "Boring Blade",
-                                  "title": "Boring Blade",
-                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Weapons/Light Weapons/Pricing/100k+/Boring Blade.md",
-                                  "fileName": "Boring Blade.md"
-                                }
-                              ],
-                              "expanded": false
-                            },
                             {
                               "name": "1gp - 2k",
                               "children": [
@@ -7377,6 +7365,18 @@
                                 }
                               ],
                               "expanded": false
+                            },
+                            {
+                              "name": "100k+",
+                              "children": [
+                                {
+                                  "id": "Boring Blade",
+                                  "title": "Boring Blade",
+                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Weapons/Light Weapons/Pricing/100k+/Boring Blade.md",
+                                  "fileName": "Boring Blade.md"
+                                }
+                              ],
+                              "expanded": false
                             }
                           ],
                           "expanded": false
@@ -7391,18 +7391,6 @@
                           "name": "Pricing",
                           "children": [
                             {
-                              "name": "10k - 25k",
-                              "children": [
-                                {
-                                  "id": "Tainted Crossbow",
-                                  "title": "Tainted Crossbow",
-                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Weapons/Ranged Weapons/Pricing/10k - 25k/Tainted Crossbow.md",
-                                  "fileName": "Tainted Crossbow.md"
-                                }
-                              ],
-                              "expanded": false
-                            },
-                            {
                               "name": "2k - 10k",
                               "children": [
                                 {
@@ -7410,6 +7398,18 @@
                                   "title": "Crystal Bow",
                                   "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Weapons/Ranged Weapons/Pricing/2k - 10k/Crystal Bow.md",
                                   "fileName": "Crystal Bow.md"
+                                }
+                              ],
+                              "expanded": false
+                            },
+                            {
+                              "name": "10k - 25k",
+                              "children": [
+                                {
+                                  "id": "Tainted Crossbow",
+                                  "title": "Tainted Crossbow",
+                                  "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Weapons/Ranged Weapons/Pricing/10k - 25k/Tainted Crossbow.md",
+                                  "fileName": "Tainted Crossbow.md"
                                 }
                               ],
                               "expanded": false
@@ -7430,18 +7430,6 @@
                       "name": "Pricing",
                       "children": [
                         {
-                          "name": "10k - 25k",
-                          "children": [
-                            {
-                              "id": "Tome of Knowledge (T2)",
-                              "title": "Tome of Knowledge (T2)",
-                              "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Wieldables/Pricing/10k - 25k/Tome of Knowledge (T2).md",
-                              "fileName": "Tome of Knowledge (T2).md"
-                            }
-                          ],
-                          "expanded": false
-                        },
-                        {
                           "name": "2k - 10k",
                           "children": [
                             {
@@ -7449,6 +7437,18 @@
                               "title": "Tome of Knowledge (T1)",
                               "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Wieldables/Pricing/2k - 10k/Tome of Knowledge (T1).md",
                               "fileName": "Tome of Knowledge (T1).md"
+                            }
+                          ],
+                          "expanded": false
+                        },
+                        {
+                          "name": "10k - 25k",
+                          "children": [
+                            {
+                              "id": "Tome of Knowledge (T2)",
+                              "title": "Tome of Knowledge (T2)",
+                              "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Wieldables/Pricing/10k - 25k/Tome of Knowledge (T2).md",
+                              "fileName": "Tome of Knowledge (T2).md"
                             }
                           ],
                           "expanded": false

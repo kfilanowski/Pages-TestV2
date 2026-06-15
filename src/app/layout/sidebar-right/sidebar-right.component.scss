@@ -6,8 +6,8 @@
 
 .app-sidebar {
   position: fixed;
-  top: 0; // Changed from var(--header-height) since header is hidden
-  bottom: var(--footer-height, 60px); // Stop at footer, don't overlap it
+  top: 0;
+  bottom: 0;
   width: var(--sidebar-width, 280px);
   background-color: var(--sidebar-bg, #ffffff);
   box-shadow: var(--shadow-3, 0 8px 16px rgba(0, 0, 0, 0.2));
@@ -161,7 +161,7 @@
           text-decoration: none;
           padding: 4px 0;
           transition: all 0.2s ease;
-          font-size: 0.9rem;
+          font-size: 0.875rem;
 
           .note-icon {
             font-size: 1rem;

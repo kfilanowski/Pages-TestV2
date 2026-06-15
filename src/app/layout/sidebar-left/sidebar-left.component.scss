@@ -6,12 +6,14 @@
 
 .app-sidebar {
   position: fixed;
-  top: 0; // Changed from var(--header-height) since header is hidden
-  bottom: var(--footer-height, 60px); // Stop at footer, don't overlap it
+  top: 0;
+  bottom: 0;
   width: var(--sidebar-width, 280px);
   background-color: var(--sidebar-bg, #ffffff);
   box-shadow: var(--shadow-3, 0 8px 16px rgba(0, 0, 0, 0.2));
   z-index: 900; // Above footer (800) and content
+  overflow-y: auto;
+  overflow-x: hidden;
   transition: var(--sidebar-transition, transform 0.3s cubic-bezier(0.4, 0, 0.2, 1));
   
   // Use flexbox to properly constrain child components
