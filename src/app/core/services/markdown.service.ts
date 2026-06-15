@@ -148,7 +148,7 @@ export class MarkdownService {
 
       // Check if this is a wiki-link (will be processed before this in preprocessing)
       if (href && href.startsWith('wiki:')) {
-        const noteId = href.substring(5); // Remove 'wiki:' prefix
+        const noteId = decodeURIComponent(href.substring(5)); // Remove 'wiki:' prefix
         const displayText = text || noteId;
         return self.renderWikiLink(noteId, displayText);
       }
@@ -227,7 +227,7 @@ export class MarkdownService {
             return undefined;
           },
           renderer: (token: any) => {
-            const noteId = token.href.substring(5); // Remove 'wiki:' prefix
+            const noteId = decodeURIComponent(token.href.substring(5)); // Remove 'wiki:' prefix
             const displayText = token.text || noteId;
             return this.renderWikiLink(noteId, displayText);
           }
@@ -429,7 +429,12 @@ export class MarkdownService {
         const text = displayText ? displayText.trim() : noteId;
 
         // Convert to a special format that marked will recognize
-        return `[${text}](wiki:${noteId})`;
+        // URL-encode to handle note IDs with parentheses (e.g. "First Aid (P)")
+        // encodeURIComponent leaves ( ) unencoded, so we replace them explicitly
+        const encoded = encodeURIComponent(noteId)
+          .replace(/\(/g, '%28')
+          .replace(/\)/g, '%29');
+        return `[${text}](wiki:${encoded})`;
       }
     );
 
