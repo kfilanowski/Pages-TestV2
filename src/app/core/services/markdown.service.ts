@@ -356,10 +356,21 @@ export class MarkdownService {
     // GFM will parse :::calculator as a code block with lang='calculator'
     // Then walkTokens converts it to HTML
 
+    // Pre-process image embeds: ![[file]] or ![[file|alt]] or ![[file|alt|width]]
+    const imageEmbedRegex = /!\[\[([^\]|]+)(?:\|([^\]|]*))?(?:\|(\d+))?\]\]/g;
+    const processedImages = contentWithoutFrontmatter.replace(
+      imageEmbedRegex,
+      (_match: string, path: string, altText?: string, width?: string) => {
+        const alt = (altText && altText.trim()) ? altText.trim() : path.trim();
+        const widthAttr = width ? ` width="${width}"` : '';
+        return `<img src="assets/IMAGES/${path.trim()}" alt="${alt}"${widthAttr}>`;
+      }
+    );
+
     // Pre-process wiki-links: [[link]] or [[link|display text]]
     const wikiLinkRegex = /\[\[([^\]|]+)(\|([^\]]+))?\]\]/g;
 
-    const processedMarkdown = contentWithoutFrontmatter.replace(
+    const processedMarkdown = processedImages.replace(
       wikiLinkRegex,
       (match, link, _, displayText) => {
         const noteId = link.trim();

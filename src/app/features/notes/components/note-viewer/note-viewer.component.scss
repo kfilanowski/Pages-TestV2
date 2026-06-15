@@ -83,6 +83,12 @@
   color: var(--text-primary, #333);
 }
 
+/* Responsive images */
+.note-content ::ng-deep img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Markdown content styling */
 .note-content ::ng-deep h1,
 .note-content ::ng-deep h2,
