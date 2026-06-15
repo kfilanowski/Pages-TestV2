@@ -223,7 +223,7 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
       if (activeItem) {
         activeItem.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
       }
-    }, 0);
+    }, 200); // Wait for expand animation (150ms) + buffer
   }
 
   /**

@@ -56,8 +56,7 @@
     <span class="folder-name">{{ node.name }}</span>
   </div>
 
-  @if (node.expanded) {
-  <ul class="tree-children" [attr.data-depth]="depth + 1">
+  <ul class="tree-children" [class.expanded]="node.expanded" [attr.data-depth]="depth + 1">
     @for (child of node.children; track trackNode($index, child)) {
     <li>
       <ng-container
@@ -69,7 +68,7 @@
     </li>
     }
   </ul>
-  }   } @else if (isNote(node)) {
+  } @else if (isNote(node)) {
   <a
     [routerLink]="['/' + projectSlug, node.id]"
     routerLinkActive="active"

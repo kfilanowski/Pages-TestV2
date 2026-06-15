@@ -141,7 +141,20 @@
   --tree-guide-width: 1.5px;
   margin-left: 0.75rem;
   padding-left: var(--tree-indent);
-  border-left: var(--tree-guide-width) solid var(--tree-guide-color, rgba(109, 76, 65, 0.22));
+  border-left: var(--tree-guide-width) solid transparent;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+
+  &.expanded {
+    max-height: 9999px;
+    overflow: visible;
+    opacity: 1;
+    transform: translateY(0);
+    border-color: var(--tree-guide-color, rgba(109, 76, 65, 0.22));
+  }
 
   > li {
     position: relative;
