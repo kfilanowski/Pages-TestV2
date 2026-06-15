@@ -409,13 +409,42 @@ export class MarkdownService {
     // Then walkTokens converts it to HTML
 
     // Pre-process image embeds: ![[file]] or ![[file|alt]] or ![[file|alt|width]]
-    const imageEmbedRegex = /!\[\[([^\]|]+)(?:\|([^\]|]*))?(?:\|(\d+))?\]\]/g;
+    // Uses a lazy inner match and manual | splitting to handle brackets inside alt text
+    // (e.g. ![[image.jpg|[Markdown Link](url), Game Name|512]])
+    const imageEmbedRegex = /!\[\[(.+?)\]\]/g;
     const processedImages = contentWithoutFrontmatter.replace(
       imageEmbedRegex,
-      (_match: string, path: string, altText?: string, width?: string) => {
-        const alt = (altText && altText.trim()) ? altText.trim() : path.trim();
+      (_match: string, inner: string) => {
+        const parts = inner.split('|');
+        const path = parts[0]?.trim() || '';
+        let alt = '';
+        let width = '';
+        if (parts.length >= 3) {
+          // path|alt|width
+          alt = parts.slice(1, -1).join('|').trim();
+          width = parts[parts.length - 1].trim();
+        } else if (parts.length === 2) {
+          // path|alt  or  path|width (if second part is all digits)
+          if (/^\d+$/.test(parts[1].trim())) {
+            width = parts[1].trim();
+          } else {
+            alt = parts[1].trim();
+          }
+        }
+        const altText = alt || path;
         const widthAttr = width ? ` width="${width}"` : '';
-        return `<img src="assets/IMAGES/${path.trim()}" alt="${alt}"${widthAttr}>`;
+
+        // If there's caption text, render as figure+figcaption so credit links stay visible
+        // Convert any markdown links [text](url) in the caption to HTML links
+        if (alt) {
+          const captionHtml = alt.replace(
+            /\[([^\]]+)\]\(([^)]+)\)/g,
+            '<a href="$2">$1</a>'
+          );
+          return `<figure><img src="assets/IMAGES/${path}" alt="${altText}"${widthAttr}><figcaption>${captionHtml}</figcaption></figure>`;
+        }
+
+        return `<img src="assets/IMAGES/${path}" alt="${altText}"${widthAttr}>`;
       }
     );
 

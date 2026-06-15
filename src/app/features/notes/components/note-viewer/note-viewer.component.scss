@@ -85,6 +85,23 @@
   height: auto;
 }
 
+/* Figure/figcaption for images with credit captions */
+.note-content ::ng-deep figure {
+  margin: 1em 0;
+  text-align: center;
+}
+
+.note-content ::ng-deep figure figcaption {
+  margin-top: 0.4em;
+  font-size: 0.85rem;
+  color: var(--text-secondary, #999);
+  line-height: 1.3;
+}
+
+.note-content ::ng-deep figure figcaption a {
+  color: var(--primary-color, #7b9aff);
+}
+
 /* Markdown content styling */
 .note-content ::ng-deep h1,
 .note-content ::ng-deep h2,
