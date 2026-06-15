@@ -459,10 +459,10 @@ export class MarkdownService {
             /\[([^\]]+)\]\(([^)]+)\)/g,
             '<a href="$2">$1</a>'
           );
-          return `<figure><img src="assets/IMAGES/${path}" alt="${altText}"${widthAttr}><figcaption>${captionHtml}</figcaption></figure>`;
+          return `<figure><img src="assets/IMAGES/${path}" alt="${altText}"${widthAttr}><figcaption>${captionHtml}</figcaption></figure>\n`;
         }
 
-        return `<img src="assets/IMAGES/${path}" alt="${altText}"${widthAttr}>`;
+        return `<img src="assets/IMAGES/${path}" alt="${altText}"${widthAttr}>\n`;
       }
     );
 
