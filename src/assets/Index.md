@@ -1,3 +1,7 @@
+---
+title: Home Page
+---
+
 # <span style="color:rgb(103, 254, 120)">What is Nick Nacks?</span>
 ![[NICK NACKS showcase n logo.png]]
 Nick Nacks is my very own fantasy tabletop role-playing game (TTRPG). My biggest sources of inspiration are Pathfinder 1e and Divinity Original Sin 2.

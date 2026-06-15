@@ -262,6 +262,9 @@ function buildTreeAndCollectData(dirPath, relativePath = "") {
 
         // Add frontmatter fields if they exist
         if (frontmatter) {
+          if (frontmatter.title) {
+            noteData.title = frontmatter.title;
+          }
           if (frontmatter.icon) {
             noteData.icon = frontmatter.icon;
           }
@@ -283,7 +286,7 @@ function buildTreeAndCollectData(dirPath, relativePath = "") {
         // Add to search index
         searchEntries.push({
           id: id,
-          title: id,
+          title: noteData.title,
           content: plainContent,
           path: itemRelativePath,
           aliases: noteData.aliases || [],
