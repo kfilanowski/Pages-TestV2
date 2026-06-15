@@ -106,6 +106,7 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
       
       // Now set the tree with expansion already applied
       this.allTreeNodes.set(tree);
+      this.scrollToActiveNote();
     });
   }
 
@@ -141,6 +142,7 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
             this.expandPathToNote(tree, noteId);
             // Trigger update by creating new reference
             this.allTreeNodes.set([...tree]);
+            this.scrollToActiveNote();
           }
         }
       });
@@ -209,6 +211,19 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
     };
     collapse(this.allTreeNodes());
     this.allTreeNodes.set([...this.allTreeNodes()]);
+  }
+
+  /**
+   * Scrolls the active note item into view after tree expansion
+   */
+  private scrollToActiveNote(): void {
+    setTimeout(() => {
+      const treeContainer = document.querySelector('.tree-container');
+      const activeItem = treeContainer?.querySelector('.note-item.active');
+      if (activeItem) {
+        activeItem.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      }
+    }, 0);
   }
 
   /**
