@@ -385,7 +385,7 @@ function resolveOutgoingLinks() {
 
 /**
  * Applies folder colors from the config file and propagates inheritance.
- * Reads folder-colors.json from assets/config/, matches folders by their
+ * Reads folder-colors.json from src/config/, matches folders by their
  * relative path (e.g. "Bestiary", "Core Rules, How to Play/Status Effects"),
  * and propagates colors to child folders and notes.
  * Children inherit parent color unless they have an explicit color of their own.
@@ -503,7 +503,7 @@ function main() {
   const tree = buildTreeAndCollectData(NOTES_DIR);
 
   // Apply folder colors from config (if available)
-  const FOLDER_COLORS_PATH = path.join(NOTES_DIR, 'config', 'folder-colors.json');
+  const FOLDER_COLORS_PATH = path.join(__dirname, '..', 'src', 'config', 'folder-colors.json');
   let folderColors = {};
   if (fs.existsSync(FOLDER_COLORS_PATH)) {
     try {
