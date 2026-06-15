@@ -114,10 +114,6 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
 
       let mouseenterListener: (() => void) | undefined;
       let mouseleaveListener: (() => void) | undefined;
-      let touchStartListener: (() => void) | undefined;
-      let touchEndListener: (() => void) | undefined;
-      let touchStartTime = 0;
-      let lastTouchWasTap = false;
 
       // Hover previews only on desktop — mobile uses tap-to-preview
       if (!this.isMobile) {
@@ -137,26 +133,6 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
             this.onWikiLinkLeave(link as HTMLElement);
           }
         );
-      } else {
-        // Mobile: touch tracking to distinguish tap vs long-press
-        touchStartListener = this.renderer.listen(link, 'touchstart', () => {
-          touchStartTime = Date.now();
-          lastTouchWasTap = false;
-        });
-
-        touchEndListener = this.renderer.listen(link, 'touchend', (event: TouchEvent) => {
-          const elapsed = Date.now() - touchStartTime;
-          if (elapsed < 300) {
-            // Quick tap — intercept and show preview
-            lastTouchWasTap = true;
-            event.preventDefault();
-            const noteId = link.getAttribute('data-note-id');
-            if (noteId) {
-              this.showMobilePreview(link, noteId);
-            }
-          }
-          // Long press (≥300ms) — do nothing, browser shows native context menu
-        });
       }
 
       // Click listener for navigation
@@ -164,13 +140,13 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
         link,
         'click',
         (event: Event) => {
-          // On mobile: only prevent default if this was a quick tap (already handled in touchend)
+          // On mobile: single tap shows preview overlay instead of navigating
           if (this.isMobile) {
-            if (lastTouchWasTap) {
-              event.preventDefault();
-              // Preview already showing from touchend handler
+            event.preventDefault();
+            const noteId = (link as HTMLElement).getAttribute('data-note-id');
+            if (noteId) {
+              this.showMobilePreview(link as HTMLElement, noteId);
             }
-            // Long press: let browser handle context menu actions normally
             return;
           }
 
@@ -222,8 +198,6 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
       const listenersToStore: (() => void)[] = [];
       if (mouseenterListener) listenersToStore.push(mouseenterListener);
       if (mouseleaveListener) listenersToStore.push(mouseleaveListener);
-      if (touchStartListener) listenersToStore.push(touchStartListener);
-      if (touchEndListener) listenersToStore.push(touchEndListener);
       listenersToStore.push(clickListener);
 
       if (isPreview && containerElement) {
