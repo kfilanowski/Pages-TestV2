@@ -94,4 +94,16 @@ export class SidebarRightComponent {
     // The computed signal will re-evaluate whenever currentNoteId or referenceGraphReady changes
     return this.markdownService.getIncomingLinks(noteId);
   });
+
+  // Unresolved links (wiki-links to notes that don't exist yet)
+  protected readonly unresolvedLinks = computed<string[]>(() => {
+    const noteId = this.currentNoteId();
+    const isReady = this.referenceGraphReady();
+
+    if (!noteId || !noteId.trim() || !isReady) {
+      return [];
+    }
+
+    return this.markdownService.getUnresolvedLinks(noteId);
+  });
 }

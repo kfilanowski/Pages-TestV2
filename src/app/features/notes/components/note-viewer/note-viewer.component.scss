@@ -183,6 +183,13 @@
   background-color: var(--hover-bg);
 }
 
+.note-content ::ng-deep .wiki-link.coming-soon {
+  color: var(--text-secondary) !important;
+  opacity: 0.55;
+  font-style: italic;
+  border-bottom-style: dashed;
+}
+
 .note-content ::ng-deep .wiki-link-icon {
   font-size: 0.9em;
   width: 0.9em;

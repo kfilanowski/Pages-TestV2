@@ -321,8 +321,9 @@ export class MarkdownService {
     const canonicalId = this.resolveNoteId(hrefNoteId);
     const note = this.notesMap.get(canonicalId);
     const iconName = note?.icon || '';
+    const extraClass = note ? '' : ' coming-soon';
 
-    return `<a href="/${projectSlug}/${canonicalId}" class="wiki-link" data-note-id="${canonicalId}" data-icon="${iconName}">${displayText}</a>`;
+    return `<a href="/${projectSlug}/${canonicalId}" class="wiki-link${extraClass}" data-note-id="${canonicalId}" data-icon="${iconName}">${displayText}</a>`;
   }
 
   private getGraphLinks(
@@ -363,7 +364,7 @@ export class MarkdownService {
           console.log('Available notes:', Array.from(this.notesMap.keys()));
           return of(
             this.parseMarkdown(
-              `# Note Not Found\n\nThe note "${noteId}" could not be found.`
+              `# Coming Soon`
             )
           );
         }
@@ -536,7 +537,7 @@ export class MarkdownService {
     const note = this.notesMap.get(this.resolveNoteId(noteId));
 
     if (!note) {
-      return of('Note not found');
+      return of('Coming Soon');
     }
 
     const notePath = `assets/${note.path}`;
@@ -576,7 +577,7 @@ export class MarkdownService {
     const note = this.notesMap.get(this.resolveNoteId(noteId));
 
     if (!note) {
-      return of('<p>Note not found</p>');
+      return of('<p>Coming Soon</p>');
     }
 
     const notePath = `assets/${note.path}`;
@@ -725,6 +726,27 @@ export class MarkdownService {
     }
 
     return notes.sort((a, b) => a.title.localeCompare(b.title));
+  }
+
+  /**
+   * Gets all outgoing link IDs that point to notes NOT in the manifest
+   * These are "Coming Soon" placeholders — wiki-links to pages that don't exist yet
+   */
+  public getUnresolvedLinks(noteId: string): string[] {
+    const linkIds = this.getGraphLinks(this.outgoingLinks, noteId);
+    if (linkIds.length === 0) {
+      return [];
+    }
+
+    const unresolved: string[] = [];
+    for (const linkId of linkIds) {
+      const resolvedId = this.resolveNoteId(linkId);
+      if (!this.notesMap.has(resolvedId)) {
+        unresolved.push(linkId);
+      }
+    }
+
+    return unresolved.sort((a, b) => a.localeCompare(b));
   }
 
   /**

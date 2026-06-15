@@ -65,6 +65,28 @@
       <p class="empty-state">No backlinks</p>
       } }
     </div>
+
+    <!-- Coming Soon Section -->
+    <div class="info-section coming-soon-section" [class.fade-in]="unresolvedLinks().length > 0">
+      <h3>Coming Soon</h3>
+      @if (unresolvedLinks().length > 0) {
+      <p class="section-description">Pages referenced but not yet created:</p>
+      <ul class="links-list">
+        @for (linkId of unresolvedLinks(); track linkId) {
+        <li>
+          <a
+            [routerLink]="['/' + projectSlug, linkId]"
+            class="note-link coming-soon-link"
+          >
+            <span class="note-title">{{ linkId }}</span>
+          </a>
+        </li>
+        }
+      </ul>
+      } @else {
+      <p class="empty-state">All linked pages exist</p>
+      }
+    </div>
     } @else {
     <div class="info-content fade-in">
       <p class="empty-state">Select a note to view its links</p>

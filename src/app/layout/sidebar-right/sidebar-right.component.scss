@@ -198,6 +198,23 @@
         }
       }
     }
+
+    // Coming Soon section — dimmed accent
+    &.coming-soon-section {
+      border-left-color: var(--text-secondary, #757575);
+
+      .coming-soon-link {
+        color: var(--text-secondary) !important;
+        opacity: 0.55;
+        font-style: italic;
+
+        &:hover {
+          opacity: 0.85;
+          padding-left: 4px;
+          font-weight: 500;
+        }
+      }
+    }
   }
 }
 
