@@ -102,6 +102,19 @@
   color: var(--primary-color, #7b9aff);
 }
 
+/* External links: small arrow indicator */
+.note-content ::ng-deep a[href^="http"]::after {
+  content: " ↗";
+  font-size: 0.75em;
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+.note-content ::ng-deep a[href^="http"] {
+  text-decoration: underline dotted;
+  text-underline-offset: 2px;
+}
+
 /* Markdown content styling */
 .note-content ::ng-deep h1,
 .note-content ::ng-deep h2,

@@ -159,6 +159,12 @@ export class MarkdownService {
         return createYouTubeEmbed(youtubeVideoId);
       }
 
+      // External links: open in new tab with security attributes
+      if (href && (href.startsWith('http://') || href.startsWith('https://'))) {
+        const titleAttr = title ? ` title="${title}"` : '';
+        return `<a href="${href}"${titleAttr} target="_blank" rel="noopener noreferrer">${text}</a>`;
+      }
+
       // Use original renderer for normal links
       return originalLink.call(this, token);
     };

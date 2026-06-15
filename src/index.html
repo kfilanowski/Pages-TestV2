@@ -61,9 +61,9 @@
       document.documentElement.style.colorScheme = theme;
       document.documentElement.setAttribute('data-theme', theme);
     })();
-  </script>
-  <!-- GitHub Pages SPA redirect handler: restore original URL from redirect param -->
-  <script>
+
+    // GitHub Pages SPA redirect: restore original URL from ?redirect= param
+    // (placed here so it survives Angular's build optimizer alongside the theme script)
     (function() {
       var params = new URLSearchParams(window.location.search);
       var redirect = params.get('redirect');
