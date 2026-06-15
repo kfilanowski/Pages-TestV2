@@ -19,24 +19,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Grandma</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Beholder</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Besmolder</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Ayylmao</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -80,6 +62,24 @@
   </url>
   <url>
     <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Xenomorph</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Grandma</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Beholder</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Besmolder</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -373,12 +373,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Wildfire%20Wyrm</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Shrubbagazzor</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -403,6 +397,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Wildfire%20Wyrm</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Dragons</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -416,6 +416,30 @@
   </url>
   <url>
     <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Snowman</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Miner&apos;s%20Delight</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Garnet%20Guardian</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Quartzite%20Crusher</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Cheez</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -458,30 +482,6 @@
   </url>
   <url>
     <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/(7)%20Jad</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Miner&apos;s%20Delight</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Garnet%20Guardian</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Quartzite%20Crusher</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Cheez</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -565,42 +565,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/README</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/slurnesh-true-form</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Balrogue</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Chained%20Oblivion</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/the-master</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Balor</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Blessing</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -679,19 +643,43 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/README</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/slurnesh-true-form</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Balrogue</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Chained%20Oblivion</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/the-master</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Balor</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Fiends</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Cloud%20Giant</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Bingus%20Mingus</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -722,6 +710,18 @@
   </url>
   <url>
     <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Molten%20Giant</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Cloud%20Giant</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Bingus%20Mingus</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -4177,12 +4177,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Bull%20Goat</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Cloud</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -4219,6 +4213,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Bull%20Goat</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/%2BBaubles</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -4243,6 +4243,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Barrows%20Armor%20(heavy)</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Giganite%20Armor</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -4255,7 +4261,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Barrows%20Armor%20(heavy)</loc>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Cybertron%20Armor</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Sand%20Cloak</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -4279,13 +4291,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Cybertron%20Armor</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Sand%20Cloak</loc>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Jingle%20Armor</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -4309,12 +4315,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Jingle%20Armor</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Dwarven%20Aegis</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -4333,18 +4333,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Giganite%20Boots</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Ninja%20Tabi</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Barrows%20Boots</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -4357,13 +4345,25 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Free%20Man&apos;s%20Chains</loc>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Giganite%20Boots</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Ninja%20Tabi</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Barrows%20Gloves</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Free%20Man&apos;s%20Chains</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -4567,12 +4567,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Nullifying%20Nail</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Tracking%20Device</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -4615,6 +4609,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Nullifying%20Nail</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Summoning%20Contract</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -4633,12 +4633,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Blighted%20Staff</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Amplifying%20Staff</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -4652,6 +4646,12 @@
   </url>
   <url>
     <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Likk&apos;em</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Blighted%20Staff</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -4711,12 +4711,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Orcish%20Hammer</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Garish%20Gavel</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -4765,37 +4759,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Corrupted%20Hammers</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Defiled%20Flail</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Infested%20Spear</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Soul%20Eater</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/The%20Dimensional%20Anchor</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Wretched%20Axe</loc>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Orcish%20Hammer</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -4843,7 +4807,37 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Ray%20Gun</loc>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Corrupted%20Hammers</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Defiled%20Flail</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Infested%20Spear</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Soul%20Eater</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/The%20Dimensional%20Anchor</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Wretched%20Axe</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -4861,7 +4855,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Boring%20Blade</loc>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Ray%20Gun</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -4897,7 +4891,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Tainted%20Crossbow</loc>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Boring%20Blade</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -4909,13 +4903,19 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Tome%20of%20Knowledge%20(T2)</loc>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Tainted%20Crossbow</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Tome%20of%20Knowledge%20(T1)</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kfilanowski.github.io/Pages-TestV2/Nick-Nacks/Tome%20of%20Knowledge%20(T2)</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
