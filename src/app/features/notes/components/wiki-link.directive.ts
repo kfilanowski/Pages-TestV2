@@ -126,6 +126,11 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
         link,
         'click',
         (event: Event) => {
+          // Let the browser handle Ctrl+Click / Cmd+Click natively (open in new tab)
+          if ((event as MouseEvent).ctrlKey || (event as MouseEvent).metaKey) {
+            return;
+          }
+
           event.preventDefault();
 
           // Close any open preview and clear pending timeouts
