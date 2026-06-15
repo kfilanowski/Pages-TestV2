@@ -46,6 +46,17 @@ jobs:
             exit 1
           fi
 
+      - name: Promote CSR index to default index
+        run: |
+          # When Angular builds with ssr=false + outputMode=static, it may produce
+          # index.csr.html (the real app) alongside a template index.html (redirect).
+          # GitHub Pages serves index.html at root — promote the real app so it boots.
+          if [ -f "dist/MMM/browser/index.csr.html" ]; then
+            echo "Promoting index.csr.html → index.html"
+            cp dist/MMM/browser/index.csr.html dist/MMM/browser/index.html
+          fi
+          echo "index.html size: $(wc -c < dist/MMM/browser/index.html) bytes"
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
