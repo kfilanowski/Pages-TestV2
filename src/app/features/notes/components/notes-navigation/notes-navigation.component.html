@@ -1,6 +1,11 @@
 <div class="notes-navigation">
   <div class="navigation-header">
-    <h3>{{ projectName }}</h3>
+    <div class="header-row">
+      <h3>{{ projectName }}</h3>
+      <button class="collapse-button" (click)="collapseAllFolders()" title="Collapse all folders" mat-icon-button>
+        <mat-icon>unfold_less</mat-icon>
+      </button>
+    </div>
     <div class="search-container">
       <input
         type="text"
