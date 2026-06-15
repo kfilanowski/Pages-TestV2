@@ -165,7 +165,7 @@ function extractWikiLinks(markdown) {
   let match;
 
   while ((match = doubleBracketRegex.exec(markdown)) !== null) {
-    const noteId = match[1].trim();
+    const noteId = match[1].trim().replace(/\\+$/, '');
     if (noteId) {
       links.push(noteId);
     }
@@ -174,7 +174,7 @@ function extractWikiLinks(markdown) {
   // Extract [text](wiki:link) format
   const markdownWikiRegex = /\[([^\]]+)\]\(wiki:([^)]+)\)/g;
   while ((match = markdownWikiRegex.exec(markdown)) !== null) {
-    const noteId = match[2].trim();
+    const noteId = match[2].trim().replace(/\\+$/, '');
     if (noteId) {
       links.push(noteId);
     }
@@ -234,6 +234,7 @@ function buildTreeAndCollectData(dirPath, relativePath = "") {
       if (children.length > 0) {
         tree.push({
           name: item,
+          path: itemRelativePath,
           children: children,
           expanded: false,
         });
@@ -341,6 +342,65 @@ function buildIncomingLinks() {
   return incomingLinks;
 }
 
+/**
+ * Resolves wiki-link targets in outgoingLinks to canonical note IDs.
+ * Some wiki-links use full file paths (e.g. "Core Rules, How to Play/.../Charge")
+ * instead of the note's simple ID ("Charge"). This resolves them so the
+ * reference graph and frontend only deal with note IDs.
+ */
+function resolveOutgoingLinks() {
+  // Build reverse lookup: file path (without .md) -> note ID, plus note ID -> itself
+  const pathToId = new Map();
+  for (const [id, noteData] of allNotes.entries()) {
+    const filePath = noteData.path.replace(/\.md$/i, '');
+    pathToId.set(filePath.toLowerCase(), id);
+    pathToId.set(id.toLowerCase(), id);
+  }
+
+  let resolvedCount = 0;
+  for (const [sourceId, targetIds] of outgoingLinks.entries()) {
+    const resolved = targetIds.map(targetId => {
+      const canonical = pathToId.get(targetId.toLowerCase());
+      if (canonical && canonical !== targetId) {
+        resolvedCount++;
+        return canonical;
+      }
+      return targetId;
+    });
+    // Deduplicate and sort
+    outgoingLinks.set(sourceId, [...new Set(resolved)].sort());
+  }
+
+  if (resolvedCount > 0) {
+    console.log(`  - Resolved ${resolvedCount} wiki-link(s) via path mapping`);
+  }
+}
+
+/**
+ * Applies folder colors from the config file and propagates inheritance.
+ * Reads folder-colors.json from assets/config/, matches folders by their
+ * relative path (e.g. "Bestiary", "Core Rules, How to Play/Status Effects"),
+ * and propagates colors to child folders and notes.
+ * Children inherit parent color unless they have an explicit color of their own.
+ */
+function applyFolderColors(nodes, folderColors, parentPath, inheritedColor) {
+  for (const node of nodes) {
+    if (node.children) {
+      // This is a folder — compute its path
+      const folderPath = parentPath ? `${parentPath}/${node.name}` : node.name;
+      // Check for an explicit color for THIS folder path
+      const explicitColor = folderColors[folderPath];
+      node.color = explicitColor || inheritedColor || undefined;
+
+      // Recurse into children with the resolved color as the inherited one
+      applyFolderColors(node.children, folderColors, folderPath, node.color);
+    } else if (inheritedColor) {
+      // This is a note — it inherits color from its parent folder
+      node.color = inheritedColor;
+    }
+  }
+}
+
 // ============================================================================
 // File Generation
 // ============================================================================
@@ -435,9 +495,30 @@ function main() {
   // Build tree and collect all data in one pass
   const tree = buildTreeAndCollectData(NOTES_DIR);
 
+  // Apply folder colors from config (if available)
+  const FOLDER_COLORS_PATH = path.join(NOTES_DIR, 'config', 'folder-colors.json');
+  let folderColors = {};
+  if (fs.existsSync(FOLDER_COLORS_PATH)) {
+    try {
+      folderColors = JSON.parse(fs.readFileSync(FOLDER_COLORS_PATH, 'utf-8'));
+      // Strip internal keys starting with $
+      for (const key of Object.keys(folderColors)) {
+        if (key.startsWith('$')) {
+          delete folderColors[key];
+        }
+      }
+      applyFolderColors(tree, folderColors, '', undefined);
+      const coloredCount = Object.keys(folderColors).length;
+      console.log(`  - Applied ${coloredCount} folder color(s) with inheritance`);
+    } catch (err) {
+      console.warn(`  ⚠ Could not parse folder-colors.json: ${err.message}`);
+    }
+  }
+
   // Generate all output files
   generateManifest(tree);
   generateSearchIndex();
+  resolveOutgoingLinks();
   generateReferenceGraph();
 
   console.log();

@@ -57,7 +57,7 @@
 <!-- Recursive template for tree nodes -->
 <ng-template #treeNodeTemplate let-node let-depth="depth">
   @if (isFolder(node)) {
-  <div class="folder-item" (click)="toggleFolder(node)">
+  <div class="folder-item" (click)="toggleFolder(node)" [style.color]="node.color">
     <mat-icon class="folder-icon">
       {{ node.expanded ? "folder_open" : "folder" }}
     </mat-icon>
@@ -81,6 +81,7 @@
     [routerLink]="['/' + projectSlug, node.id]"
     routerLinkActive="active"
     class="note-item"
+    [style.color]="node.color"
   >
     @if (node.icon) {
     <app-iconify-icon

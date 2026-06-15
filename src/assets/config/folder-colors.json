@@ -1,0 +1,17 @@
+{
+  "$schema": "folder-colors-schema.json",
+  "$comment": "Map folder names (relative to assets/) to hex colors. Nested folders inherit parent color unless overridden. To color a nested folder, use its relative path: 'Parent Folder/Child Folder'.",
+  "Bestiary": "#FF69B4",
+  "Classes": "#FF4444",
+  "Gods": "#4488FF",
+  "Lore": "#44BB88",
+  "Feats": "#FFAA00",
+  "Races": "#AA88FF",
+  "Skills": "#44CCDD",
+  "Techniques": "#FF7744",
+  "Equipment and Economics": "#DDBB33",
+  "Core Rules, How to Play": "#88BBFF",
+  "Minigames": "#FF88AA",
+  "Meta Discussions": "#9988CC",
+  "Random Charts": "#669966"
+}

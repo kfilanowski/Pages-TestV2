@@ -7,9 +7,10 @@ export interface Note {
   path: string;
   fileName: string;
   content?: string;
-  icon?: string; // Icon name from frontmatter (e.g., Material icons, Font Awesome)
-  aliases?: string[]; // Alternative names from frontmatter
-  tags?: string[]; // Tags from frontmatter
+  icon?: string;
+  color?: string;
+  aliases?: string[];
+  tags?: string[];
 }
 
 /**
@@ -19,6 +20,7 @@ export interface NoteFolder {
   name: string;
   path: string;
   expanded?: boolean;
+  color?: string;
   children: NoteTreeNode[];
 }
 

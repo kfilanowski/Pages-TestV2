@@ -56,6 +56,7 @@ export class MarkdownService {
 
   // Case-insensitive lookup: lowercase id -> canonical id from manifest
   private readonly noteIdLookup = new Map<string, string>();
+  private readonly pathLookup = new Map<string, string>();
 
   // Pre-built search index loaded from JSON
   private searchIndex?: SearchIndex;
@@ -302,6 +303,12 @@ export class MarkdownService {
       if (isNote(node)) {
         this.notesMap.set(node.id, node);
         this.noteIdLookup.set(node.id.toLowerCase(), node.id);
+        // Also index by file path (without extension) so wiki-links
+        // using full paths like "Core Rules, .../Charge" resolve correctly
+        if (node.path) {
+          const pathKey = node.path.replace(/\.md$/i, '').toLowerCase();
+          this.pathLookup.set(pathKey, node.id);
+        }
       } else if (isFolder(node)) {
         this.buildNotesMap(node.children);
       }
@@ -313,7 +320,7 @@ export class MarkdownService {
    * Wiki-links and URLs may use any casing (e.g. "necromancy" -> "Necromancy").
    */
   public resolveNoteId(noteId: string): string {
-    return this.noteIdLookup.get(noteId.toLowerCase()) ?? noteId;
+    return this.noteIdLookup.get(noteId.toLowerCase()) ?? this.pathLookup.get(noteId.toLowerCase()) ?? noteId;
   }
 
   private renderWikiLink(hrefNoteId: string, displayText: string): string {
@@ -464,7 +471,12 @@ export class MarkdownService {
         // Strip trailing backslashes from the link target - they come from
         // GFM table pipe-escape sequences (\|) in wiki-links inside table cells
         const noteId = link.trim().replace(/\\+$/, '');
-        const text = displayText ? displayText.trim() : noteId;
+        // When no explicit display text, derive a friendly name
+        const text = displayText
+          ? displayText.trim()
+          : noteId.includes('/')
+            ? noteId.split('/').pop() ?? noteId
+            : noteId;
 
         // Convert to a special format that marked will recognize
         // URL-encode to handle note IDs with parentheses (e.g. "First Aid (P)")
