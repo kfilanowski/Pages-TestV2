@@ -8,6 +8,8 @@ export interface Note {
   fileName: string;
   content?: string;
   icon?: string;
+  iconSvg?: string;    // Resolved SVG path (e.g. "icons/sword.svg")
+  iconType?: 'svg' | 'emoji';  // How the icon should be rendered
   color?: string;
   aliases?: string[];
   tags?: string[];
@@ -21,6 +23,9 @@ export interface NoteFolder {
   path: string;
   expanded?: boolean;
   color?: string;
+  icon?: string;
+  iconSvg?: string;
+  iconType?: 'svg' | 'emoji';
   children: NoteTreeNode[];
 }
 

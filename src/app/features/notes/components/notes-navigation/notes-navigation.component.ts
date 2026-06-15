@@ -1,4 +1,4 @@
-import { Component, inject, input, output, signal, OnInit, OnDestroy, computed, ChangeDetectionStrategy, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, inject, input, output, signal, OnInit, OnDestroy, computed, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterModule, NavigationEnd } from '@angular/router';
 import { FormsModule } from '@angular/forms';
@@ -38,7 +38,7 @@ import { IconifyIconComponent } from '../../../../shared/components/iconify-icon
     FormsModule,
     HighlightMatchPipe,
   ],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  schemas: [],
   templateUrl: './notes-navigation.component.html',
   styleUrl: './notes-navigation.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

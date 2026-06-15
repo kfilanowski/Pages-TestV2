@@ -1,18 +1,1 @@
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-coffin"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M7 3l-2 6l2 12h6l2 -12l-2 -6z" />
-  <path d="M10 7v5" />
-  <path d="M8 9h4" />
-  <path d="M13 21h4l2 -12l-2 -6h-4" />
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#000" d="m312.094 21.97 59.094 119.686h52.093L362.595 22l-50.5-.03zM173 22.687l-63.594 127.218 65.844 345.75 114.688.094L354.467 150 291.626 22.75 173 22.687zm16.063 76.28h88.78v18.688h-88.78V98.97zm0 36.22h88.78v18.687h-88.78v-18.688zm182.5 25.156L309 495.438l47.25.03 68.313-335.124h-53z"/></svg>

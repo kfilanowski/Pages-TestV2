@@ -58,9 +58,13 @@
 <ng-template #treeNodeTemplate let-node let-depth="depth">
   @if (isFolder(node)) {
   <div class="folder-item" (click)="toggleFolder(node)" [style.color]="node.color">
+    @if (node.iconSvg) {
+    <app-iconify-icon [icon]="node.iconSvg" [size]="20" class="folder-icon" />
+    } @else {
     <mat-icon class="folder-icon">
       {{ node.expanded ? "folder_open" : "folder" }}
     </mat-icon>
+    }
     <span class="folder-name">{{ node.name }}</span>
   </div>
 
@@ -83,12 +87,11 @@
     class="note-item"
     [style.color]="node.color"
   >
-    @if (node.icon) {
+    @if (node.iconSvg || node.icon) {
     <app-iconify-icon
-      [icon]="node.icon"
+      [icon]="node.iconSvg || node.icon"
       [size]="20"
       class="note-icon"
-      [useFallback]="true"
     />
     }
     <div class="note-content">

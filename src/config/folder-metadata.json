@@ -1,0 +1,17 @@
+{
+  "$schema": "folder-metadata-schema.json",
+  "$comment": "Map folder names (relative to assets/) to color and optional icon. Use object format: { \"color\": \"#hex\", \"icon\": \"name\" }. Children inherit parent icon unless overridden. Nested folders use relative path: 'Parent Folder/Child Folder'.",
+  "Bestiary": { "color": "#FF69B4", "icon": "pawprint" },
+  "Classes": { "color": "#FF4444", "icon": "helmet" },
+  "Gods": { "color": "#4488FF", "icon": "crown" },
+  "Lore": { "color": "#44BB88", "icon": "book" },
+  "Feats": { "color": "#FFAA00", "icon": "trophy" },
+  "Races": { "color": "#AA88FF", "icon": "users" },
+  "Skills": { "color": "#44CCDD", "icon": "star" },
+  "Techniques": { "color": "#FF7744", "icon": "fist" },
+  "Equipment and Economics": { "color": "#DDBB33", "icon": "coin" },
+  "Core Rules, How to Play": { "color": "#88BBFF", "icon": "dice" },
+  "Minigames": { "color": "#FF88AA", "icon": "gamepad" },
+  "Meta Discussions": { "color": "#9988CC", "icon": "chat" },
+  "Random Charts": { "color": "#669966", "icon": "chart" }
+}

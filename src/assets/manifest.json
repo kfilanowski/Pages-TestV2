@@ -176,7 +176,8 @@
                   "path": "Bestiary/Bestiary/Aberrations/Aberrations.md",
                   "fileName": "Aberrations.md",
                   "icon": "👽",
-                  "color": "#FF69B4"
+                  "color": "#FF69B4",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -433,7 +434,8 @@
                   "path": "Bestiary/Bestiary/Beasts/Beasts.md",
                   "fileName": "Beasts.md",
                   "icon": "🐻",
-                  "color": "#FF69B4"
+                  "color": "#FF69B4",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -487,7 +489,8 @@
                   "path": "Bestiary/Bestiary/Celestials/Celestials.md",
                   "fileName": "Celestials.md",
                   "icon": "👼",
-                  "color": "#FF69B4"
+                  "color": "#FF69B4",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -647,7 +650,8 @@
                   "aliases": [
                     "construct"
                   ],
-                  "color": "#FF69B4"
+                  "color": "#FF69B4",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -738,7 +742,9 @@
                   "path": "Bestiary/Bestiary/Cryptids/Cryptids.md",
                   "fileName": "Cryptids.md",
                   "icon": "FasSpaghettiMonsterFlying",
-                  "color": "#FF69B4"
+                  "color": "#FF69B4",
+                  "iconSvg": "icons/spaghetti-monster-flying.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -859,7 +865,8 @@
                   "path": "Bestiary/Bestiary/Dragons/Dragons.md",
                   "fileName": "Dragons.md",
                   "icon": "🐲",
-                  "color": "#FF69B4"
+                  "color": "#FF69B4",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -1022,7 +1029,8 @@
                   "path": "Bestiary/Bestiary/Elementals/Elementals.md",
                   "fileName": "Elementals.md",
                   "icon": "🔥",
-                  "color": "#FF69B4"
+                  "color": "#FF69B4",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -1165,7 +1173,9 @@
                   "path": "Bestiary/Bestiary/Fey/Fey.md",
                   "fileName": "Fey.md",
                   "icon": "RaFairy",
-                  "color": "#FF69B4"
+                  "color": "#FF69B4",
+                  "iconSvg": "icons/fairy.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -1448,7 +1458,8 @@
                   "path": "Bestiary/Bestiary/Fiends/Fiends.md",
                   "fileName": "Fiends.md",
                   "icon": "👿",
-                  "color": "#FF69B4"
+                  "color": "#FF69B4",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -1561,7 +1572,9 @@
                   "path": "Bestiary/Bestiary/Giant/Giants.md",
                   "fileName": "Giants.md",
                   "icon": "SiActigraph",
-                  "color": "#FF69B4"
+                  "color": "#FF69B4",
+                  "iconSvg": "icons/actigraph.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -1718,7 +1731,9 @@
                   "path": "Bestiary/Bestiary/Humanoids/Humanoids.md",
                   "fileName": "Humanoids.md",
                   "icon": "FasPerson",
-                  "color": "#FF69B4"
+                  "color": "#FF69B4",
+                  "iconSvg": "icons/person.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -1734,7 +1749,9 @@
                   "path": "Bestiary/Bestiary/Inevitable/Inevitable.md",
                   "fileName": "Inevitable.md",
                   "icon": "RaScythe",
-                  "color": "#FF69B4"
+                  "color": "#FF69B4",
+                  "iconSvg": "icons/scythe.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -1818,7 +1835,9 @@
                   "path": "Bestiary/Bestiary/Oozes/Oozes.md",
                   "fileName": "Oozes.md",
                   "icon": "RaGloop",
-                  "color": "#FF69B4"
+                  "color": "#FF69B4",
+                  "iconSvg": "icons/gloop.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -1908,7 +1927,8 @@
                   "path": "Bestiary/Bestiary/Plants/Plants.md",
                   "fileName": "Plants.md",
                   "icon": "🪴",
-                  "color": "#FF69B4"
+                  "color": "#FF69B4",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -2057,7 +2077,8 @@
                   "path": "Bestiary/Bestiary/Undead/Undead.md",
                   "fileName": "Undead.md",
                   "icon": "💀",
-                  "color": "#FF69B4"
+                  "color": "#FF69B4",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -2069,7 +2090,9 @@
               "path": "Bestiary/Bestiary/Navigating the Bestiary.md",
               "fileName": "Navigating the Bestiary.md",
               "icon": "LiAnchor",
-              "color": "#FF69B4"
+              "color": "#FF69B4",
+              "iconSvg": "icons/anchor.svg",
+              "iconType": "svg"
             }
           ],
           "expanded": false,
@@ -2121,7 +2144,9 @@
               "path": "Bestiary/Environmental Hazards/+Environmental Hazards.md",
               "fileName": "+Environmental Hazards.md",
               "icon": "RaLightningStorm",
-              "color": "#FF69B4"
+              "color": "#FF69B4",
+              "iconSvg": "icons/lightning-storm.svg",
+              "iconType": "svg"
             },
             {
               "id": "Fog",
@@ -2129,7 +2154,8 @@
               "path": "Bestiary/Environmental Hazards/Fog.md",
               "fileName": "Fog.md",
               "icon": "🌫",
-              "color": "#FF69B4"
+              "color": "#FF69B4",
+              "iconType": "emoji"
             },
             {
               "id": "Frosty Terrain",
@@ -2137,7 +2163,8 @@
               "path": "Bestiary/Environmental Hazards/Frosty Terrain.md",
               "fileName": "Frosty Terrain.md",
               "icon": "❄",
-              "color": "#FF69B4"
+              "color": "#FF69B4",
+              "iconType": "emoji"
             },
             {
               "id": "Gravity",
@@ -2145,7 +2172,9 @@
               "path": "Bestiary/Environmental Hazards/Gravity.md",
               "fileName": "Gravity.md",
               "icon": "TiPlanet",
-              "color": "#FF69B4"
+              "color": "#FF69B4",
+              "iconSvg": "icons/planet.svg",
+              "iconType": "svg"
             },
             {
               "id": "Lava",
@@ -2153,7 +2182,8 @@
               "path": "Bestiary/Environmental Hazards/Lava.md",
               "fileName": "Lava.md",
               "icon": "🌋",
-              "color": "#FF69B4"
+              "color": "#FF69B4",
+              "iconType": "emoji"
             },
             {
               "id": "Slippery Surfaces",
@@ -2164,7 +2194,9 @@
               "aliases": [
                 "slippery surface"
               ],
-              "color": "#FF69B4"
+              "color": "#FF69B4",
+              "iconSvg": "icons/falling.svg",
+              "iconType": "svg"
             },
             {
               "id": "Sticky Surfaces",
@@ -2175,7 +2207,8 @@
               "aliases": [
                 "sticky surface"
               ],
-              "color": "#FF69B4"
+              "color": "#FF69B4",
+              "iconType": "emoji"
             }
           ],
           "expanded": false,
@@ -2404,7 +2437,9 @@
                     "envenomed",
                     "Venomous"
                   ],
-                  "color": "#FF69B4"
+                  "color": "#FF69B4",
+                  "iconSvg": "icons/snake.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -2594,7 +2629,10 @@
         }
       ],
       "expanded": false,
-      "color": "#FF69B4"
+      "color": "#FF69B4",
+      "icon": "pawprint",
+      "iconSvg": "icons/pawprint.svg",
+      "iconType": "svg"
     },
     {
       "name": "Classes",
@@ -2618,7 +2656,8 @@
                       "path": "Classes/+Class Details/Progression Outside of Class/Achievements/+Achievement.md",
                       "fileName": "+Achievement.md",
                       "icon": "🏆",
-                      "color": "#FF4444"
+                      "color": "#FF4444",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "Backstabber",
@@ -2655,7 +2694,9 @@
                       "path": "Classes/+Class Details/Progression Outside of Class/Ascendance/Ascendance.md",
                       "fileName": "Ascendance.md",
                       "icon": "IbGraphLineUp",
-                      "color": "#FF4444"
+                      "color": "#FF4444",
+                      "iconSvg": "icons/GraphLineUp.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Demigod",
@@ -2695,7 +2736,9 @@
                   "path": "Classes/+Class Details/Progression Outside of Class/Progression Outside of Class.md",
                   "fileName": "Progression Outside of Class.md",
                   "icon": "bars-progress",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/bars-progress.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -2711,7 +2754,9 @@
                   "path": "Classes/+Class Details/Quick Character Creation Guide/Character Creation.md",
                   "fileName": "Character Creation.md",
                   "icon": "TiUserQuestion",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/user-question.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Class Descriptions and Completion Status",
@@ -2724,7 +2769,9 @@
                     "class completion status",
                     "completion status"
                   ],
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/percent.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Distributing Ability Scores",
@@ -2732,7 +2779,9 @@
                   "path": "Classes/+Class Details/Quick Character Creation Guide/Distributing Ability Scores.md",
                   "fileName": "Distributing Ability Scores.md",
                   "icon": "RiBarChartGroupedLine",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/bar-chart-grouped-line.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Main Character Status",
@@ -2744,7 +2793,8 @@
                     "main character",
                     "main characters"
                   ],
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -2756,7 +2806,9 @@
               "path": "Classes/+Class Details/+Class.md",
               "fileName": "+Class.md",
               "icon": "LiAnchor",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconSvg": "icons/anchor.svg",
+              "iconType": "svg"
             },
             {
               "id": "Archetype",
@@ -2783,7 +2835,8 @@
                   "path": "Classes/Alchemist/Archetypes/Bomberman.md",
                   "fileName": "Bomberman.md",
                   "icon": "💣",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconType": "emoji"
                 },
                 {
                   "id": "Plague",
@@ -2791,7 +2844,9 @@
                   "path": "Classes/Alchemist/Archetypes/Plague.md",
                   "fileName": "Plague.md",
                   "icon": "FasBiohazard",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/biohazard.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Potion Man",
@@ -2799,7 +2854,9 @@
                   "path": "Classes/Alchemist/Archetypes/Potion Man.md",
                   "fileName": "Potion Man.md",
                   "icon": "RaBubblingPotion",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/bubbling-potion.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -2815,7 +2872,9 @@
                   "path": "Classes/Alchemist/Major/Alchemist Majors.md",
                   "fileName": "Alchemist Majors.md",
                   "icon": "LiAnchor",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/anchor.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Boomkin",
@@ -2823,7 +2882,9 @@
                   "path": "Classes/Alchemist/Major/Boomkin.md",
                   "fileName": "Boomkin.md",
                   "icon": "FasExplosion",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/explosion.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Mutant",
@@ -2831,7 +2892,9 @@
                   "path": "Classes/Alchemist/Major/Mutant.md",
                   "fileName": "Mutant.md",
                   "icon": "RaMuscleUp",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/muscle-up.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Nekomancer",
@@ -2839,7 +2902,9 @@
                   "path": "Classes/Alchemist/Major/Nekomancer.md",
                   "fileName": "Nekomancer.md",
                   "icon": "RaCat",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/cat.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Purifier",
@@ -2847,7 +2912,9 @@
                   "path": "Classes/Alchemist/Major/Purifier.md",
                   "fileName": "Purifier.md",
                   "icon": "FasHandHoldingMedical",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/hand-holding-medical.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -2859,7 +2926,9 @@
               "path": "Classes/Alchemist/Alchemist.md",
               "fileName": "Alchemist.md",
               "icon": "RaPotion",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconSvg": "icons/potion.svg",
+              "iconType": "svg"
             }
           ],
           "expanded": false,
@@ -2879,7 +2948,9 @@
                   "path": "Classes/Barbarian/Archetypes/Avalancher.md",
                   "fileName": "Avalancher.md",
                   "icon": "FasHillRockslide",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/hill-rockslide.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Beast Totem",
@@ -2887,7 +2958,9 @@
                   "path": "Classes/Barbarian/Archetypes/Beast Totem.md",
                   "fileName": "Beast Totem.md",
                   "icon": "RaPawprint",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/pawprint.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Bronze Totem (Bronzebarian)",
@@ -2895,7 +2968,8 @@
                   "path": "Classes/Barbarian/Archetypes/Bronze Totem (Bronzebarian).md",
                   "fileName": "Bronze Totem (Bronzebarian).md",
                   "icon": "🥉",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconType": "emoji"
                 },
                 {
                   "id": "Gigantotem",
@@ -2903,7 +2977,9 @@
                   "path": "Classes/Barbarian/Archetypes/Gigantotem.md",
                   "fileName": "Gigantotem.md",
                   "icon": "TiArrowBigUp",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/arrow-big-up.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Superstitious Totem",
@@ -2911,7 +2987,9 @@
                   "path": "Classes/Barbarian/Archetypes/Superstitious Totem.md",
                   "fileName": "Superstitious Totem.md",
                   "icon": "FarFaceAngry",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/face-angry.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -2923,7 +3001,8 @@
               "path": "Classes/Barbarian/Barbarian.md",
               "fileName": "Barbarian.md",
               "icon": "💢",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconType": "emoji"
             },
             {
               "id": "Rage Powers",
@@ -2950,7 +3029,8 @@
                   "path": "Classes/Bard/Archetypes/Bard of the Blues.md",
                   "fileName": "Bard of the Blues.md",
                   "icon": "📯",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconType": "emoji"
                 },
                 {
                   "id": "Cheerleader",
@@ -2958,7 +3038,8 @@
                   "path": "Classes/Bard/Archetypes/Cheerleader.md",
                   "fileName": "Cheerleader.md",
                   "icon": "🎉",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconType": "emoji"
                 },
                 {
                   "id": "Jack of All Trades",
@@ -2966,7 +3047,9 @@
                   "path": "Classes/Bard/Archetypes/Jack of All Trades.md",
                   "fileName": "Jack of All Trades.md",
                   "icon": "LiMusic",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/music.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -2978,7 +3061,8 @@
               "path": "Classes/Bard/Bard.md",
               "fileName": "Bard.md",
               "icon": "🎸",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconType": "emoji"
             }
           ],
           "expanded": false,
@@ -2998,7 +3082,9 @@
                   "path": "Classes/Beast Trainer/Archetypes/Magical Beasts.md",
                   "fileName": "Magical Beasts.md",
                   "icon": "RaFairyWand",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/fairy-wand.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Prey Seeker",
@@ -3006,7 +3092,9 @@
                   "path": "Classes/Beast Trainer/Archetypes/Prey Seeker.md",
                   "fileName": "Prey Seeker.md",
                   "icon": "RaWolfHead",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/wolf-head.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -3021,7 +3109,8 @@
               "aliases": [
                 "beast companions"
               ],
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconType": "emoji"
             },
             {
               "id": "Beast Trainer",
@@ -3029,7 +3118,9 @@
               "path": "Classes/Beast Trainer/Beast Trainer.md",
               "fileName": "Beast Trainer.md",
               "icon": "RaDinosaur",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconSvg": "icons/dinosaur.svg",
+              "iconType": "svg"
             }
           ],
           "expanded": false,
@@ -3053,7 +3144,8 @@
                       "path": "Classes/Bender/Archetypes/Airbender/Airbender.md",
                       "fileName": "Airbender.md",
                       "icon": "🌪",
-                      "color": "#FF4444"
+                      "color": "#FF4444",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "Airbending Style",
@@ -3076,7 +3168,8 @@
                       "path": "Classes/Bender/Archetypes/Earthbender/Earthbender.md",
                       "fileName": "Earthbender.md",
                       "icon": "🪨",
-                      "color": "#FF4444"
+                      "color": "#FF4444",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "Earthbending Style",
@@ -3099,7 +3192,8 @@
                       "path": "Classes/Bender/Archetypes/Firebender/Firebender.md",
                       "fileName": "Firebender.md",
                       "icon": "🔥",
-                      "color": "#FF4444"
+                      "color": "#FF4444",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "Firebending Style",
@@ -3122,7 +3216,8 @@
                       "path": "Classes/Bender/Archetypes/Waterbender/Waterbender.md",
                       "fileName": "Waterbender.md",
                       "icon": "🌊",
-                      "color": "#FF4444"
+                      "color": "#FF4444",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "Waterbending Style",
@@ -3145,7 +3240,9 @@
               "path": "Classes/Bender/Bender.md",
               "fileName": "Bender.md",
               "icon": "FasCloudSunRain",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconSvg": "icons/cloud-sun-rain.svg",
+              "iconType": "svg"
             },
             {
               "id": "Oddball Spells",
@@ -3160,7 +3257,9 @@
               "path": "Classes/Bender/When can I Bend.md",
               "fileName": "When can I Bend.md",
               "icon": "question",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconSvg": "icons/question.svg",
+              "iconType": "svg"
             }
           ],
           "expanded": false,
@@ -3184,7 +3283,8 @@
                       "path": "Classes/Druid/Archetypes/Vegetable/Vegetable.md",
                       "fileName": "Vegetable.md",
                       "icon": "🥕",
-                      "color": "#FF4444"
+                      "color": "#FF4444",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "Veggie Talents",
@@ -3203,7 +3303,8 @@
                   "path": "Classes/Druid/Archetypes/Beast Whisperer.md",
                   "fileName": "Beast Whisperer.md",
                   "icon": "🐴",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconType": "emoji"
                 },
                 {
                   "id": "Hive",
@@ -3211,7 +3312,8 @@
                   "path": "Classes/Druid/Archetypes/Hive.md",
                   "fileName": "Hive.md",
                   "icon": "🐝",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconType": "emoji"
                 },
                 {
                   "id": "Mushroomancer",
@@ -3219,7 +3321,8 @@
                   "path": "Classes/Druid/Archetypes/Mushroomancer.md",
                   "fileName": "Mushroomancer.md",
                   "icon": "🍄",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -3231,7 +3334,8 @@
               "path": "Classes/Druid/Druid.md",
               "fileName": "Druid.md",
               "icon": "🌍",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconType": "emoji"
             }
           ],
           "expanded": false,
@@ -3251,7 +3355,9 @@
                   "path": "Classes/Fiend Shifter/Archetypes/Destroyer.md",
                   "fileName": "Destroyer.md",
                   "icon": "FasExplosion",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/explosion.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Succ",
@@ -3259,7 +3365,8 @@
                   "path": "Classes/Fiend Shifter/Archetypes/Succ.md",
                   "fileName": "Succ.md",
                   "icon": "💋",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconType": "emoji"
                 },
                 {
                   "id": "Unchained",
@@ -3267,7 +3374,8 @@
                   "path": "Classes/Fiend Shifter/Archetypes/Unchained.md",
                   "fileName": "Unchained.md",
                   "icon": "⛓",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconType": "emoji"
                 },
                 {
                   "id": "Youkai",
@@ -3275,7 +3383,8 @@
                   "path": "Classes/Fiend Shifter/Archetypes/Youkai.md",
                   "fileName": "Youkai.md",
                   "icon": "👺",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -3287,7 +3396,8 @@
               "path": "Classes/Fiend Shifter/Fiend Shifter.md",
               "fileName": "Fiend Shifter.md",
               "icon": "😈",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconType": "emoji"
             },
             {
               "id": "Universal Fiendish Growths",
@@ -3314,7 +3424,9 @@
                   "path": "Classes/Fighter/Archetypes/Aran.md",
                   "fileName": "Aran.md",
                   "icon": "RaAxeSwing",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/axe-swing.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Basic Bitch Fighter",
@@ -3322,7 +3434,9 @@
                   "path": "Classes/Fighter/Archetypes/Basic Bitch Fighter.md",
                   "fileName": "Basic Bitch Fighter.md",
                   "icon": "FasBreadSlice",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/bread-slice.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Bloody Finger",
@@ -3330,7 +3444,9 @@
                   "path": "Classes/Fighter/Archetypes/Bloody Finger.md",
                   "fileName": "Bloody Finger.md",
                   "icon": "RaDrippingSword",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/dripping-sword.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Dark Knight",
@@ -3338,7 +3454,9 @@
                   "path": "Classes/Fighter/Archetypes/Dark Knight.md",
                   "fileName": "Dark Knight.md",
                   "icon": "RaEyeball",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/eyeball.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Full Attacker",
@@ -3346,7 +3464,9 @@
                   "path": "Classes/Fighter/Archetypes/Full Attacker.md",
                   "fileName": "Full Attacker.md",
                   "icon": "BoBxRun",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/bx-run.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Iron Knuckle",
@@ -3354,7 +3474,9 @@
                   "path": "Classes/Fighter/Archetypes/Iron Knuckle.md",
                   "fileName": "Iron Knuckle.md",
                   "icon": "RaHelmet",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/helmet.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Kazekenshin",
@@ -3362,7 +3484,9 @@
                   "path": "Classes/Fighter/Archetypes/Kazekenshin.md",
                   "fileName": "Kazekenshin.md",
                   "icon": "LiTornado",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/tornado.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Standard Fighter",
@@ -3370,7 +3494,9 @@
                   "path": "Classes/Fighter/Archetypes/Standard Fighter.md",
                   "fileName": "Standard Fighter.md",
                   "icon": "LiFlag",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/flag.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Swashbuckler",
@@ -3378,7 +3504,8 @@
                   "path": "Classes/Fighter/Archetypes/Swashbuckler.md",
                   "fileName": "Swashbuckler.md",
                   "icon": "🤺",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -3390,7 +3517,8 @@
               "path": "Classes/Fighter/Fighter.md",
               "fileName": "Fighter.md",
               "icon": "⚔",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconType": "emoji"
             }
           ],
           "expanded": false,
@@ -3421,7 +3549,9 @@
                       "path": "Classes/Healer/Archetypes/mom/Mom.md",
                       "fileName": "Mom.md",
                       "icon": "RiHeartsFill",
-                      "color": "#FF4444"
+                      "color": "#FF4444",
+                      "iconSvg": "icons/hearts-fill.svg",
+                      "iconType": "svg"
                     }
                   ],
                   "expanded": false,
@@ -3433,7 +3563,9 @@
                   "path": "Classes/Healer/Archetypes/Divine Protector.md",
                   "fileName": "Divine Protector.md",
                   "icon": "RiShieldCrossFill",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/shield-cross-fill.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Explorer",
@@ -3441,7 +3573,9 @@
                   "path": "Classes/Healer/Archetypes/Explorer.md",
                   "fileName": "Explorer.md",
                   "icon": "FarCompass",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/compass.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Symbiote",
@@ -3449,7 +3583,9 @@
                   "path": "Classes/Healer/Archetypes/Symbiote.md",
                   "fileName": "Symbiote.md",
                   "icon": "TiVirus",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/virus.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -3461,7 +3597,9 @@
               "path": "Classes/Healer/Healer.md",
               "fileName": "Healer.md",
               "icon": "RiFirstAidKitFill",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconSvg": "icons/first-aid-kit-fill.svg",
+              "iconType": "svg"
             }
           ],
           "expanded": false,
@@ -3477,7 +3615,8 @@
               "path": "Classes/Hero/Hero.md",
               "fileName": "Hero.md",
               "icon": "🪵",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconType": "emoji"
             },
             {
               "id": "Hero's Quest",
@@ -3507,7 +3646,9 @@
               "path": "Classes/Hex Maniac/+Hex Maniac.md",
               "fileName": "+Hex Maniac.md",
               "icon": "LiCookingPot",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconSvg": "icons/cooking-pot.svg",
+              "iconType": "svg"
             },
             {
               "id": "Cauldron Concoctions",
@@ -3541,7 +3682,9 @@
                   "path": "Classes/Jester/Archetypes/Actor.md",
                   "fileName": "Actor.md",
                   "icon": "LiTheater",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/theater.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Mime",
@@ -3549,7 +3692,9 @@
                   "path": "Classes/Jester/Archetypes/Mime.md",
                   "fileName": "Mime.md",
                   "icon": "TiWall",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/wall.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Prankster",
@@ -3557,7 +3702,8 @@
                   "path": "Classes/Jester/Archetypes/Prankster.md",
                   "fileName": "Prankster.md",
                   "icon": "🤣",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -3569,7 +3715,8 @@
               "path": "Classes/Jester/Jester.md",
               "fileName": "Jester.md",
               "icon": "🤡",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconType": "emoji"
             },
             {
               "id": "Universal Talents",
@@ -3592,7 +3739,8 @@
               "path": "Classes/Lunatic/Lunatic.md",
               "fileName": "Lunatic.md",
               "icon": "🐸",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconType": "emoji"
             },
             {
               "id": "Wild Magic",
@@ -3600,7 +3748,9 @@
               "path": "Classes/Lunatic/Wild Magic.md",
               "fileName": "Wild Magic.md",
               "icon": "FasFrog",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconSvg": "icons/frog.svg",
+              "iconType": "svg"
             }
           ],
           "expanded": false,
@@ -3620,7 +3770,9 @@
                   "path": "Classes/Magus/Archetypes/Dimensional Warrior.md",
                   "fileName": "Dimensional Warrior.md",
                   "icon": "TiWhirl",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/whirl.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Thunderlord",
@@ -3628,7 +3780,9 @@
                   "path": "Classes/Magus/Archetypes/Thunderlord.md",
                   "fileName": "Thunderlord.md",
                   "icon": "RiThunderstormsLine",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/thunderstorms-line.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -3640,7 +3794,9 @@
               "path": "Classes/Magus/Arcane Strikes.md",
               "fileName": "Arcane Strikes.md",
               "icon": "RaLightningSword",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconSvg": "icons/lightning-sword.svg",
+              "iconType": "svg"
             },
             {
               "id": "Magus",
@@ -3648,7 +3804,9 @@
               "path": "Classes/Magus/Magus.md",
               "fileName": "Magus.md",
               "icon": "FasHandSparkles",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconSvg": "icons/hand-sparkles.svg",
+              "iconType": "svg"
             }
           ],
           "expanded": false,
@@ -3679,7 +3837,9 @@
                       "path": "Classes/Martial Artist/Archteypes/Monk/Monk.md",
                       "fileName": "Monk.md",
                       "icon": "FasYinYang",
-                      "color": "#FF4444"
+                      "color": "#FF4444",
+                      "iconSvg": "icons/yin-yang.svg",
+                      "iconType": "svg"
                     }
                   ],
                   "expanded": false,
@@ -3695,7 +3855,9 @@
                       "path": "Classes/Martial Artist/Archteypes/Wrestler/Wrestler.md",
                       "fileName": "Wrestler.md",
                       "icon": "SiWwe",
-                      "color": "#FF4444"
+                      "color": "#FF4444",
+                      "iconSvg": "icons/wwe.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Wrestling Moves",
@@ -3714,7 +3876,8 @@
                   "path": "Classes/Martial Artist/Archteypes/Barroom Brawler.md",
                   "fileName": "Barroom Brawler.md",
                   "icon": "🍺",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconType": "emoji"
                 },
                 {
                   "id": "Marauder",
@@ -3722,7 +3885,9 @@
                   "path": "Classes/Martial Artist/Archteypes/Marauder.md",
                   "fileName": "Marauder.md",
                   "icon": "RaVineWhip",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/vine-whip.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Merciful Monk",
@@ -3730,7 +3895,8 @@
                   "path": "Classes/Martial Artist/Archteypes/Merciful Monk.md",
                   "fileName": "Merciful Monk.md",
                   "icon": "☮",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconType": "emoji"
                 },
                 {
                   "id": "striker",
@@ -3752,7 +3918,8 @@
                   "path": "Classes/Martial Artist/Archteypes/The Boss.md",
                   "fileName": "The Boss.md",
                   "icon": "👑",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -3771,7 +3938,8 @@
               "path": "Classes/Martial Artist/Martial Artist.md",
               "fileName": "Martial Artist.md",
               "icon": "👊",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconType": "emoji"
             }
           ],
           "expanded": false,
@@ -3791,7 +3959,9 @@
                   "path": "Classes/Mechanic/Archetypes/Pilot.md",
                   "fileName": "Pilot.md",
                   "icon": "LiCar",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/car.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Siege Engineer",
@@ -3799,7 +3969,9 @@
                   "path": "Classes/Mechanic/Archetypes/Siege Engineer.md",
                   "fileName": "Siege Engineer.md",
                   "icon": "TiTank",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/tank.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Suitor",
@@ -3807,7 +3979,9 @@
                   "path": "Classes/Mechanic/Archetypes/Suitor.md",
                   "fileName": "Suitor.md",
                   "icon": "FasUserAstronaut",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/user-astronaut.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -3826,7 +4000,9 @@
               "path": "Classes/Mechanic/Mechanic.md",
               "fileName": "Mechanic.md",
               "icon": "FasWrench",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconSvg": "icons/wrench.svg",
+              "iconType": "svg"
             },
             {
               "id": "Pilot",
@@ -3864,7 +4040,8 @@
               "path": "Classes/Mesmerist/Mesmerist.md",
               "fileName": "Mesmerist.md",
               "icon": "👁",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconType": "emoji"
             },
             {
               "id": "Painful Stares",
@@ -3898,7 +4075,9 @@
                   "path": "Classes/Necromancer/Archetypes/Death Knight.md",
                   "fileName": "Death Knight.md",
                   "icon": "RaHelmet",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/helmet.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Medium",
@@ -3906,7 +4085,8 @@
                   "path": "Classes/Necromancer/Archetypes/Medium.md",
                   "fileName": "Medium.md",
                   "icon": "💀",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconType": "emoji"
                 },
                 {
                   "id": "Restless Spirit",
@@ -3914,7 +4094,8 @@
                   "path": "Classes/Necromancer/Archetypes/Restless Spirit.md",
                   "fileName": "Restless Spirit.md",
                   "icon": "👻",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -3926,7 +4107,8 @@
               "path": "Classes/Necromancer/Necromancer.md",
               "fileName": "Necromancer.md",
               "icon": "💀",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconType": "emoji"
             }
           ],
           "expanded": false,
@@ -3946,7 +4128,9 @@
                   "path": "Classes/Paladin/Archetypes/Dashing Hero.md",
                   "fileName": "Dashing Hero.md",
                   "icon": "FasHorseHead",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/horse-head.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Inquisitor",
@@ -3954,7 +4138,9 @@
                   "path": "Classes/Paladin/Archetypes/Inquisitor.md",
                   "fileName": "Inquisitor.md",
                   "icon": "RaExplosion",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/explosion.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Invincible Champion",
@@ -3962,7 +4148,9 @@
                   "path": "Classes/Paladin/Archetypes/Invincible Champion.md",
                   "fileName": "Invincible Champion.md",
                   "icon": "FasFaceGrinTongueSquint",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/face-grin-tongue-squint.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -3981,7 +4169,8 @@
               "path": "Classes/Paladin/Paladin.md",
               "fileName": "Paladin.md",
               "icon": "😇",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconType": "emoji"
             }
           ],
           "expanded": false,
@@ -4019,7 +4208,9 @@
                       "path": "Classes/Psychic/Archetypes/Fate Spinner/Fate Spinner.md",
                       "fileName": "Fate Spinner.md",
                       "icon": "RaSpadesCard",
-                      "color": "#FF4444"
+                      "color": "#FF4444",
+                      "iconSvg": "icons/spades-card.svg",
+                      "iconType": "svg"
                     }
                   ],
                   "expanded": false,
@@ -4035,7 +4226,9 @@
                       "path": "Classes/Psychic/Archetypes/Spy/Glass Reflection.md",
                       "fileName": "Glass Reflection.md",
                       "icon": "RaMirror",
-                      "color": "#FF4444"
+                      "color": "#FF4444",
+                      "iconSvg": "icons/mirror.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Spy",
@@ -4043,7 +4236,9 @@
                       "path": "Classes/Psychic/Archetypes/Spy/Spy.md",
                       "fileName": "Spy.md",
                       "icon": "magnifying-glass",
-                      "color": "#FF4444"
+                      "color": "#FF4444",
+                      "iconSvg": "icons/magnifying-glass.svg",
+                      "iconType": "svg"
                     }
                   ],
                   "expanded": false,
@@ -4055,7 +4250,9 @@
                   "path": "Classes/Psychic/Archetypes/Disco.md",
                   "fileName": "Disco.md",
                   "icon": "FasChampagneGlasses",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/champagne-glasses.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Telekineticist",
@@ -4063,7 +4260,9 @@
                   "path": "Classes/Psychic/Archetypes/Telekineticist.md",
                   "fileName": "Telekineticist.md",
                   "icon": "FasHand",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/hand.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -4075,7 +4274,9 @@
               "path": "Classes/Psychic/Psychic (C).md",
               "fileName": "Psychic (C).md",
               "icon": "RiPsychotherapyLine",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconSvg": "icons/psychotherapy-line.svg",
+              "iconType": "svg"
             }
           ],
           "expanded": false,
@@ -4095,7 +4296,9 @@
                   "path": "Classes/Rogue/Archetypes/Assassin.md",
                   "fileName": "Assassin.md",
                   "icon": "RaKnife",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/knife.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Bandit 1",
@@ -4117,7 +4320,9 @@
                   "path": "Classes/Rogue/Archetypes/Mastermind.md",
                   "fileName": "Mastermind.md",
                   "icon": "brain",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/brain.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Ninja",
@@ -4125,7 +4330,9 @@
                   "path": "Classes/Rogue/Archetypes/Ninja.md",
                   "fileName": "Ninja.md",
                   "icon": "FasUserNinja",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/user-ninja.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Thug",
@@ -4133,7 +4340,9 @@
                   "path": "Classes/Rogue/Archetypes/Thug.md",
                   "fileName": "Thug.md",
                   "icon": "FasBaseballBatBall",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/baseball-bat-ball.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "vigilante",
@@ -4159,7 +4368,9 @@
               "path": "Classes/Rogue/Rogue.md",
               "fileName": "Rogue.md",
               "icon": "FasMask",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconSvg": "icons/mask.svg",
+              "iconType": "svg"
             }
           ],
           "expanded": false,
@@ -4179,7 +4390,9 @@
                   "path": "Classes/Shapeshifter/Archetypes/Goober.md",
                   "fileName": "Goober.md",
                   "icon": "FasBacterium",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/bacterium.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Spiderman",
@@ -4187,7 +4400,8 @@
                   "path": "Classes/Shapeshifter/Archetypes/Spiderman.md",
                   "fileName": "Spiderman.md",
                   "icon": "🕸",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -4202,7 +4416,8 @@
               "aliases": [
                 "adaptation points"
               ],
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconType": "emoji"
             },
             {
               "id": "Shapeshifter",
@@ -4210,7 +4425,9 @@
               "path": "Classes/Shapeshifter/Shapeshifter.md",
               "fileName": "Shapeshifter.md",
               "icon": "RaWolfHowl",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconSvg": "icons/wolf-howl.svg",
+              "iconType": "svg"
             }
           ],
           "expanded": false,
@@ -4233,7 +4450,9 @@
               "path": "Classes/Skyman/Skyman.md",
               "fileName": "Skyman.md",
               "icon": "RaDragon",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconSvg": "icons/dragon.svg",
+              "iconType": "svg"
             },
             {
               "id": "Talents",
@@ -4260,7 +4479,9 @@
                   "path": "Classes/Slayer/Archetypes/Parry Fiend.md",
                   "fileName": "Parry Fiend.md",
                   "icon": "FasShieldVirus",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/shield-virus.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -4272,7 +4493,8 @@
               "path": "Classes/Slayer/Slayer.md",
               "fileName": "Slayer.md",
               "icon": "🐇",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconType": "emoji"
             }
           ],
           "expanded": false,
@@ -4292,7 +4514,8 @@
                   "path": "Classes/Wizard/Archetypes/Chronomancer.md",
                   "fileName": "Chronomancer.md",
                   "icon": "⏰",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconType": "emoji"
                 },
                 {
                   "id": "Controller",
@@ -4308,7 +4531,9 @@
                   "path": "Classes/Wizard/Archetypes/Destruction.md",
                   "fileName": "Destruction.md",
                   "icon": "RaExplosion",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/explosion.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Financial",
@@ -4316,7 +4541,9 @@
                   "path": "Classes/Wizard/Archetypes/Financial.md",
                   "fileName": "Financial.md",
                   "icon": "FasSackDollar",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconSvg": "icons/sack-dollar.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Rainbow Mage",
@@ -4324,7 +4551,8 @@
                   "path": "Classes/Wizard/Archetypes/Rainbow Mage.md",
                   "fileName": "Rainbow Mage.md",
                   "icon": "🌈",
-                  "color": "#FF4444"
+                  "color": "#FF4444",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -4343,7 +4571,9 @@
               "path": "Classes/Wizard/Wizard.md",
               "fileName": "Wizard.md",
               "icon": "FasHatWizard",
-              "color": "#FF4444"
+              "color": "#FF4444",
+              "iconSvg": "icons/hat-wizard.svg",
+              "iconType": "svg"
             }
           ],
           "expanded": false,
@@ -4355,7 +4585,8 @@
           "path": "Classes/Blood Hunter.md",
           "fileName": "Blood Hunter.md",
           "icon": "🩸",
-          "color": "#FF4444"
+          "color": "#FF4444",
+          "iconType": "emoji"
         },
         {
           "id": "Hunter",
@@ -4363,7 +4594,9 @@
           "path": "Classes/Hunter.md",
           "fileName": "Hunter.md",
           "icon": "LiCrosshair",
-          "color": "#FF4444"
+          "color": "#FF4444",
+          "iconSvg": "icons/crosshair.svg",
+          "iconType": "svg"
         },
         {
           "id": "Light Guardian",
@@ -4371,7 +4604,8 @@
           "path": "Classes/Light Guardian.md",
           "fileName": "Light Guardian.md",
           "icon": "🌞",
-          "color": "#FF4444"
+          "color": "#FF4444",
+          "iconType": "emoji"
         },
         {
           "id": "Maligner",
@@ -4379,7 +4613,9 @@
           "path": "Classes/Maligner.md",
           "fileName": "Maligner.md",
           "icon": "FasMasksTheater",
-          "color": "#FF4444"
+          "color": "#FF4444",
+          "iconSvg": "icons/masks-theater.svg",
+          "iconType": "svg"
         },
         {
           "id": "Mana Addict",
@@ -4387,7 +4623,8 @@
           "path": "Classes/Mana Addict.md",
           "fileName": "Mana Addict.md",
           "icon": "💎",
-          "color": "#FF4444"
+          "color": "#FF4444",
+          "iconType": "emoji"
         },
         {
           "id": "Pack Mule",
@@ -4395,7 +4632,8 @@
           "path": "Classes/Pack Mule.md",
           "fileName": "Pack Mule.md",
           "icon": "🐴",
-          "color": "#FF4444"
+          "color": "#FF4444",
+          "iconType": "emoji"
         },
         {
           "id": "Virtuoso",
@@ -4407,7 +4645,10 @@
         }
       ],
       "expanded": false,
-      "color": "#FF4444"
+      "color": "#FF4444",
+      "icon": "helmet",
+      "iconSvg": "icons/helmet.svg",
+      "iconType": "svg"
     },
     {
       "name": "Core Rules, How to Play",
@@ -4483,7 +4724,9 @@
               "aliases": [
                 "AC"
               ],
-              "color": "#88BBFF"
+              "color": "#88BBFF",
+              "iconSvg": "icons/shield.svg",
+              "iconType": "svg"
             },
             {
               "id": "Advantage",
@@ -4517,7 +4760,9 @@
               "path": "Core Rules, How to Play/Abbreviations and Terminology/CC.md",
               "fileName": "CC.md",
               "icon": "RaFluffySwirl",
-              "color": "#88BBFF"
+              "color": "#88BBFF",
+              "iconSvg": "icons/fluffy-swirl.svg",
+              "iconType": "svg"
             },
             {
               "id": "Circumstance",
@@ -4543,7 +4788,9 @@
               "aliases": [
                 "Difficulty Class"
               ],
-              "color": "#88BBFF"
+              "color": "#88BBFF",
+              "iconSvg": "icons/target.svg",
+              "iconType": "svg"
             },
             {
               "id": "Dispel",
@@ -4566,7 +4813,9 @@
                 "DRA",
                 "damage reduction"
               ],
-              "color": "#88BBFF"
+              "color": "#88BBFF",
+              "iconSvg": "icons/shield-star-line.svg",
+              "iconType": "svg"
             },
             {
               "id": "Flanking",
@@ -4669,7 +4918,8 @@
               "path": "Core Rules, How to Play/Abbreviations and Terminology/Mana.md",
               "fileName": "Mana.md",
               "icon": "💎",
-              "color": "#88BBFF"
+              "color": "#88BBFF",
+              "iconType": "emoji"
             },
             {
               "id": "Martial Specialization",
@@ -4747,7 +4997,9 @@
               "aliases": [
                 "[]"
               ],
-              "color": "#88BBFF"
+              "color": "#88BBFF",
+              "iconSvg": "icons/fall.svg",
+              "iconType": "svg"
             },
             {
               "id": "Proc",
@@ -4938,7 +5190,9 @@
               "path": "Core Rules, How to Play/Ability Scores/Prayer.md",
               "fileName": "Prayer.md",
               "icon": "FasPersonPraying",
-              "color": "#88BBFF"
+              "color": "#88BBFF",
+              "iconSvg": "icons/person-praying.svg",
+              "iconType": "svg"
             },
             {
               "id": "Serendipity",
@@ -4991,7 +5245,9 @@
                       "path": "Core Rules, How to Play/Actions/Action System/Movement/Burrow.md",
                       "fileName": "Burrow.md",
                       "icon": "LiShovel",
-                      "color": "#88BBFF"
+                      "color": "#88BBFF",
+                      "iconSvg": "icons/shovel.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Climb",
@@ -4999,7 +5255,8 @@
                       "path": "Core Rules, How to Play/Actions/Action System/Movement/Climb.md",
                       "fileName": "Climb.md",
                       "icon": "🧗",
-                      "color": "#88BBFF"
+                      "color": "#88BBFF",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "Difficult Terrain",
@@ -5018,7 +5275,9 @@
                         "flight",
                         "flying"
                       ],
-                      "color": "#88BBFF"
+                      "color": "#88BBFF",
+                      "iconSvg": "icons/feathered-wing.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Glide",
@@ -5043,7 +5302,9 @@
                       "path": "Core Rules, How to Play/Actions/Action System/Movement/Land Speed.md",
                       "fileName": "Land Speed.md",
                       "icon": "RiFootprintFill",
-                      "color": "#88BBFF"
+                      "color": "#88BBFF",
+                      "iconSvg": "icons/footprint-fill.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Movement",
@@ -5069,7 +5330,9 @@
                       "path": "Core Rules, How to Play/Actions/Action System/Movement/Swim.md",
                       "fileName": "Swim.md",
                       "icon": "TiSwimming",
-                      "color": "#88BBFF"
+                      "color": "#88BBFF",
+                      "iconSvg": "icons/swimming.svg",
+                      "iconType": "svg"
                     }
                   ],
                   "expanded": false,
@@ -5205,7 +5468,9 @@
                       "path": "Core Rules, How to Play/Actions/Common Actions/Standard Actions/Aid.md",
                       "fileName": "Aid.md",
                       "icon": "FasHandHoldingHand",
-                      "color": "#88BBFF"
+                      "color": "#88BBFF",
+                      "iconSvg": "icons/hand-holding-hand.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Carry",
@@ -5273,7 +5538,9 @@
                       "aliases": [
                         "jumping"
                       ],
-                      "color": "#88BBFF"
+                      "color": "#88BBFF",
+                      "iconSvg": "icons/arrow-up-double-fill.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Mount",
@@ -5285,7 +5552,8 @@
                         "dismount",
                         "mounted"
                       ],
-                      "color": "#88BBFF"
+                      "color": "#88BBFF",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "Use Potion",
@@ -5360,7 +5628,8 @@
                     "combat maneuvers",
                     "combat maneuver"
                   ],
-                  "color": "#88BBFF"
+                  "color": "#88BBFF",
+                  "iconType": "emoji"
                 },
                 {
                   "id": "Bully",
@@ -5434,7 +5703,8 @@
                       "path": "Core Rules, How to Play/Attacking/Types of Attack Rolls/Ranged Attack/High Ground.md",
                       "fileName": "High Ground.md",
                       "icon": "⛰",
-                      "color": "#88BBFF"
+                      "color": "#88BBFF",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "Long",
@@ -5442,7 +5712,8 @@
                       "path": "Core Rules, How to Play/Attacking/Types of Attack Rolls/Ranged Attack/Long.md",
                       "fileName": "Long.md",
                       "icon": "🏹",
-                      "color": "#88BBFF"
+                      "color": "#88BBFF",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "Range Increments",
@@ -5453,7 +5724,9 @@
                       "aliases": [
                         "range increment"
                       ],
-                      "color": "#88BBFF"
+                      "color": "#88BBFF",
+                      "iconSvg": "icons/ruler-measure.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Ranged Attack",
@@ -5466,7 +5739,9 @@
                         "Range",
                         "ranged attacks"
                       ],
-                      "color": "#88BBFF"
+                      "color": "#88BBFF",
+                      "iconSvg": "icons/crossbow.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Short",
@@ -5474,7 +5749,9 @@
                       "path": "Core Rules, How to Play/Attacking/Types of Attack Rolls/Ranged Attack/Short.md",
                       "fileName": "Short.md",
                       "icon": "RaCrossedPistols",
-                      "color": "#88BBFF"
+                      "color": "#88BBFF",
+                      "iconSvg": "icons/crossed-pistols.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Thrown",
@@ -5485,7 +5762,9 @@
                       "aliases": [
                         "throw"
                       ],
-                      "color": "#88BBFF"
+                      "color": "#88BBFF",
+                      "iconSvg": "icons/plain-dagger.svg",
+                      "iconType": "svg"
                     }
                   ],
                   "expanded": false,
@@ -5504,7 +5783,9 @@
                       "aliases": [
                         "siege weapons"
                       ],
-                      "color": "#88BBFF"
+                      "color": "#88BBFF",
+                      "iconSvg": "icons/tank.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Ballista",
@@ -5530,7 +5811,9 @@
                   "path": "Core Rules, How to Play/Attacking/Types of Attack Rolls/+Types of Attack Rolls.md",
                   "fileName": "+Types of Attack Rolls.md",
                   "icon": "LiAnchor",
-                  "color": "#88BBFF"
+                  "color": "#88BBFF",
+                  "iconSvg": "icons/anchor.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Melee Attack",
@@ -5542,7 +5825,9 @@
                     "melee attacks",
                     "melee"
                   ],
-                  "color": "#88BBFF"
+                  "color": "#88BBFF",
+                  "iconSvg": "icons/daggers.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Natural Attack",
@@ -5553,7 +5838,9 @@
                   "aliases": [
                     "natural attacks"
                   ],
-                  "color": "#88BBFF"
+                  "color": "#88BBFF",
+                  "iconSvg": "icons/bird-claw.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Spell Attack",
@@ -5564,7 +5851,9 @@
                   "aliases": [
                     "spell attacks"
                   ],
-                  "color": "#88BBFF"
+                  "color": "#88BBFF",
+                  "iconSvg": "icons/magic-fill.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Unarmed Attack",
@@ -5577,7 +5866,9 @@
                     "unarmed strike",
                     "unarmed strikes"
                   ],
-                  "color": "#88BBFF"
+                  "color": "#88BBFF",
+                  "iconSvg": "icons/hand-fist.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Weapon Attack",
@@ -5588,7 +5879,9 @@
                   "aliases": [
                     "weapon attacks"
                   ],
-                  "color": "#88BBFF"
+                  "color": "#88BBFF",
+                  "iconSvg": "icons/broadsword.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -5646,7 +5939,9 @@
                 "grazes",
                 "grazed"
               ],
-              "color": "#88BBFF"
+              "color": "#88BBFF",
+              "iconSvg": "icons/bomb-explosion.svg",
+              "iconType": "svg"
             },
             {
               "id": "Line of Effect",
@@ -5665,7 +5960,9 @@
                 "simple",
                 "simple attacks"
               ],
-              "color": "#88BBFF"
+              "color": "#88BBFF",
+              "iconSvg": "icons/sword.svg",
+              "iconType": "svg"
             },
             {
               "id": "Special Attack",
@@ -5676,7 +5973,9 @@
               "aliases": [
                 "special attacks"
               ],
-              "color": "#88BBFF"
+              "color": "#88BBFF",
+              "iconSvg": "icons/sword.svg",
+              "iconType": "svg"
             },
             {
               "id": "Target",
@@ -5700,7 +5999,8 @@
               "path": "Core Rules, How to Play/Death and Resurrection/+Death and Resurrection.md",
               "fileName": "+Death and Resurrection.md",
               "icon": "⚰",
-              "color": "#88BBFF"
+              "color": "#88BBFF",
+              "iconType": "emoji"
             },
             {
               "id": "Ashen One",
@@ -5751,7 +6051,9 @@
               "path": "Core Rules, How to Play/Hitpoints/+HP.md",
               "fileName": "+HP.md",
               "icon": "FasHeart",
-              "color": "#88BBFF"
+              "color": "#88BBFF",
+              "iconSvg": "icons/heart.svg",
+              "iconType": "svg"
             },
             {
               "id": "Defeat",
@@ -5817,7 +6119,9 @@
               "path": "Core Rules, How to Play/Hitpoints/Temp HP.md",
               "fileName": "Temp HP.md",
               "icon": "TiHearts",
-              "color": "#88BBFF"
+              "color": "#88BBFF",
+              "iconSvg": "icons/hearts.svg",
+              "iconType": "svg"
             },
             {
               "id": "Weakness",
@@ -5908,7 +6212,9 @@
                 "saving throws",
                 "saving throw"
               ],
-              "color": "#88BBFF"
+              "color": "#88BBFF",
+              "iconSvg": "icons/save.svg",
+              "iconType": "svg"
             },
             {
               "id": "Fortitude",
@@ -6057,7 +6363,8 @@
                 "Surprise",
                 "surprised"
               ],
-              "color": "#88BBFF"
+              "color": "#88BBFF",
+              "iconType": "emoji"
             },
             {
               "id": "Deafened",
@@ -6768,7 +7075,10 @@
         }
       ],
       "expanded": false,
-      "color": "#88BBFF"
+      "color": "#88BBFF",
+      "icon": "dice",
+      "iconSvg": "icons/dice.svg",
+      "iconType": "svg"
     },
     {
       "name": "Equipment and Economics",
@@ -6795,7 +7105,9 @@
                       "aliases": [
                         "other utility"
                       ],
-                      "color": "#DDBB33"
+                      "color": "#DDBB33",
+                      "iconSvg": "icons/toolbox.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Anchoring Paint",
@@ -6970,7 +7282,9 @@
                       "aliases": [
                         "thrown concoctions"
                       ],
-                      "color": "#DDBB33"
+                      "color": "#DDBB33",
+                      "iconSvg": "icons/explosion.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Alchemist Fire",
@@ -7054,7 +7368,9 @@
                         "Toxin",
                         "toxins"
                       ],
-                      "color": "#DDBB33"
+                      "color": "#DDBB33",
+                      "iconSvg": "icons/biohazard.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Styx Serum",
@@ -7096,7 +7412,9 @@
                         "background",
                         "backgrounds"
                       ],
-                      "color": "#DDBB33"
+                      "color": "#DDBB33",
+                      "iconSvg": "icons/passport.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Businessman",
@@ -7104,7 +7422,8 @@
                       "path": "Equipment and Economics/Equipment Types/Approximating Golds Value/Background/Businessman.md",
                       "fileName": "Businessman.md",
                       "icon": "💼",
-                      "color": "#DDBB33"
+                      "color": "#DDBB33",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "Family Man",
@@ -7120,7 +7439,8 @@
                       "path": "Equipment and Economics/Equipment Types/Approximating Golds Value/Background/Noble.md",
                       "fileName": "Noble.md",
                       "icon": "👑",
-                      "color": "#DDBB33"
+                      "color": "#DDBB33",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "Tradesman",
@@ -7128,7 +7448,8 @@
                       "path": "Equipment and Economics/Equipment Types/Approximating Golds Value/Background/Tradesman.md",
                       "fileName": "Tradesman.md",
                       "icon": "🔨",
-                      "color": "#DDBB33"
+                      "color": "#DDBB33",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "Wanderer",
@@ -7136,7 +7457,9 @@
                       "path": "Equipment and Economics/Equipment Types/Approximating Golds Value/Background/Wanderer.md",
                       "fileName": "Wanderer.md",
                       "icon": "FasPersonHiking",
-                      "color": "#DDBB33"
+                      "color": "#DDBB33",
+                      "iconSvg": "icons/person-hiking.svg",
+                      "iconType": "svg"
                     }
                   ],
                   "expanded": false,
@@ -7152,7 +7475,9 @@
                       "path": "Equipment and Economics/Equipment Types/Approximating Golds Value/Economics/Economics.md",
                       "fileName": "Economics.md",
                       "icon": "IbGraphLineUp",
-                      "color": "#DDBB33"
+                      "color": "#DDBB33",
+                      "iconSvg": "icons/GraphLineUp.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Mana Donation",
@@ -7168,7 +7493,9 @@
                       "path": "Equipment and Economics/Equipment Types/Approximating Golds Value/Economics/Populations.md",
                       "fileName": "Populations.md",
                       "icon": "people-group",
-                      "color": "#DDBB33"
+                      "color": "#DDBB33",
+                      "iconSvg": "icons/people-group.svg",
+                      "iconType": "svg"
                     }
                   ],
                   "expanded": false,
@@ -7180,7 +7507,8 @@
                   "path": "Equipment and Economics/Equipment Types/Approximating Golds Value/Approximating Gold's Value.md",
                   "fileName": "Approximating Gold's Value.md",
                   "icon": "💲",
-                  "color": "#DDBB33"
+                  "color": "#DDBB33",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -7204,7 +7532,9 @@
                         "shield action",
                         "shield actions"
                       ],
-                      "color": "#DDBB33"
+                      "color": "#DDBB33",
+                      "iconSvg": "icons/shield.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "+Shield",
@@ -7216,7 +7546,9 @@
                         "shield",
                         "shields"
                       ],
-                      "color": "#DDBB33"
+                      "color": "#DDBB33",
+                      "iconSvg": "icons/shield.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Blast Shield",
@@ -7272,7 +7604,9 @@
                   "aliases": [
                     "parry"
                   ],
-                  "color": "#DDBB33"
+                  "color": "#DDBB33",
+                  "iconSvg": "icons/circle.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -7299,7 +7633,8 @@
                   "path": "Equipment and Economics/Equipment Types/Downtime/Crystallized Mana.md",
                   "fileName": "Crystallized Mana.md",
                   "icon": "💎",
-                  "color": "#DDBB33"
+                  "color": "#DDBB33",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -7835,7 +8170,9 @@
                               "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Headwear/Pricing/1gp - 2k/Face Mask.md",
                               "fileName": "Face Mask.md",
                               "icon": "FasMasksTheater",
-                              "color": "#DDBB33"
+                              "color": "#DDBB33",
+                              "iconSvg": "icons/masks-theater.svg",
+                              "iconType": "svg"
                             },
                             {
                               "id": "Full Helmet",
@@ -8070,7 +8407,9 @@
                       "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Magic Weapon Properties/Seeking.md",
                       "fileName": "Seeking.md",
                       "icon": "IbTarget",
-                      "color": "#DDBB33"
+                      "color": "#DDBB33",
+                      "iconSvg": "icons/target.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Sticky",
@@ -8198,7 +8537,9 @@
                       "aliases": [
                         "summoning sickness"
                       ],
-                      "color": "#DDBB33"
+                      "color": "#DDBB33",
+                      "iconSvg": "icons/scroll.svg",
+                      "iconType": "svg"
                     }
                   ],
                   "expanded": false,
@@ -8930,7 +9271,9 @@
                   "path": "Equipment and Economics/Equipment Types/Gear Upgrades/Gear Upgrades.md",
                   "fileName": "Gear Upgrades.md",
                   "icon": "wand-sparkles",
-                  "color": "#DDBB33"
+                  "color": "#DDBB33",
+                  "iconSvg": "icons/wand-sparkles.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Pricing Gear Upgrades",
@@ -8960,7 +9303,8 @@
                       "aliases": [
                         "rock"
                       ],
-                      "color": "#DDBB33"
+                      "color": "#DDBB33",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "Rocks",
@@ -8969,7 +9313,8 @@
                       "fileName": "Rocks.md",
                       "icon": "🪨",
                       "aliases": [],
-                      "color": "#DDBB33"
+                      "color": "#DDBB33",
+                      "iconType": "emoji"
                     }
                   ],
                   "expanded": false,
@@ -8981,7 +9326,9 @@
                   "path": "Equipment and Economics/Equipment Types/Goods and Services/+Goods and Services.md",
                   "fileName": "+Goods and Services.md",
                   "icon": "hotel",
-                  "color": "#DDBB33"
+                  "color": "#DDBB33",
+                  "iconSvg": "icons/hotel.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Gmail",
@@ -8992,7 +9339,9 @@
                   "aliases": [
                     "courier"
                   ],
-                  "color": "#DDBB33"
+                  "color": "#DDBB33",
+                  "iconSvg": "icons/mail.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Teleportation Circles",
@@ -9019,7 +9368,9 @@
                       "path": "Equipment and Economics/Equipment Types/Mundane Items/Lead/Lead Architecture.md",
                       "fileName": "Lead Architecture.md",
                       "icon": "shop-lock",
-                      "color": "#DDBB33"
+                      "color": "#DDBB33",
+                      "iconSvg": "icons/shop-lock.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Lead Container",
@@ -9027,7 +9378,9 @@
                       "path": "Equipment and Economics/Equipment Types/Mundane Items/Lead/Lead Container.md",
                       "fileName": "Lead Container.md",
                       "icon": "box",
-                      "color": "#DDBB33"
+                      "color": "#DDBB33",
+                      "iconSvg": "icons/box.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Lead Paint",
@@ -9035,7 +9388,9 @@
                       "path": "Equipment and Economics/Equipment Types/Mundane Items/Lead/Lead Paint.md",
                       "fileName": "Lead Paint.md",
                       "icon": "fill-drip",
-                      "color": "#DDBB33"
+                      "color": "#DDBB33",
+                      "iconSvg": "icons/fill-drip.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Lead",
@@ -9046,7 +9401,9 @@
                       "aliases": [
                         "lead poisoning"
                       ],
-                      "color": "#DDBB33"
+                      "color": "#DDBB33",
+                      "iconSvg": "icons/pencil.svg",
+                      "iconType": "svg"
                     }
                   ],
                   "expanded": false,
@@ -9099,7 +9456,9 @@
                   "path": "Equipment and Economics/Equipment Types/Mundane Items/Caltrops.md",
                   "fileName": "Caltrops.md",
                   "icon": "road-spikes",
-                  "color": "#DDBB33"
+                  "color": "#DDBB33",
+                  "iconSvg": "icons/road-spikes.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Holy Water",
@@ -9107,7 +9466,8 @@
                   "path": "Equipment and Economics/Equipment Types/Mundane Items/Holy Water.md",
                   "fileName": "Holy Water.md",
                   "icon": "💧",
-                  "color": "#DDBB33"
+                  "color": "#DDBB33",
+                  "iconType": "emoji"
                 },
                 {
                   "id": "Property",
@@ -9115,7 +9475,9 @@
                   "path": "Equipment and Economics/Equipment Types/Mundane Items/Property.md",
                   "fileName": "Property.md",
                   "icon": "image",
-                  "color": "#DDBB33"
+                  "color": "#DDBB33",
+                  "iconSvg": "icons/image.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Tools",
@@ -9134,7 +9496,9 @@
                   "path": "Equipment and Economics/Equipment Types/Mundane Items/Torch.md",
                   "fileName": "Torch.md",
                   "icon": "RaTorch",
-                  "color": "#DDBB33"
+                  "color": "#DDBB33",
+                  "iconSvg": "icons/torch.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -9154,7 +9518,9 @@
                       "path": "Equipment and Economics/Equipment Types/Weapons/Exotic Weapons/+Exotic Weapons.md",
                       "fileName": "+Exotic Weapons.md",
                       "icon": "gun",
-                      "color": "#DDBB33"
+                      "color": "#DDBB33",
+                      "iconSvg": "icons/gun.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Bola",
@@ -9183,7 +9549,9 @@
                         "rifle",
                         "blunderbuss"
                       ],
-                      "color": "#DDBB33"
+                      "color": "#DDBB33",
+                      "iconSvg": "icons/crossed-pistols.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Harpoon",
@@ -9514,7 +9882,9 @@
                   "path": "Equipment and Economics/Equipment Types/Weapons/Weapon Examples.md",
                   "fileName": "Weapon Examples.md",
                   "icon": "sword",
-                  "color": "#DDBB33"
+                  "color": "#DDBB33",
+                  "iconSvg": "icons/sword.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -9530,7 +9900,8 @@
                 "inventory slot",
                 "inventory slots"
               ],
-              "color": "#DDBB33"
+              "color": "#DDBB33",
+              "iconType": "emoji"
             },
             {
               "id": "Jizzle Physicks",
@@ -9538,7 +9909,9 @@
               "path": "Equipment and Economics/Equipment Types/Jizzle Physicks.md",
               "fileName": "Jizzle Physicks.md",
               "icon": "FasFlask",
-              "color": "#DDBB33"
+              "color": "#DDBB33",
+              "iconSvg": "icons/flask.svg",
+              "iconType": "svg"
             },
             {
               "id": "Prices+Weight of Common Equipment",
@@ -9567,7 +9940,9 @@
               "aliases": [
                 "black market"
               ],
-              "color": "#DDBB33"
+              "color": "#DDBB33",
+              "iconSvg": "icons/mask.svg",
+              "iconType": "svg"
             }
           ],
           "expanded": false,
@@ -9582,7 +9957,10 @@
         }
       ],
       "expanded": false,
-      "color": "#DDBB33"
+      "color": "#DDBB33",
+      "icon": "coin",
+      "iconSvg": "icons/coin.svg",
+      "iconType": "svg"
     },
     {
       "name": "Feats",
@@ -9798,7 +10176,9 @@
               "path": "Feats/Combat Feats/+Combat Feats.md",
               "fileName": "+Combat Feats.md",
               "icon": "swords",
-              "color": "#FFAA00"
+              "color": "#FFAA00",
+              "iconSvg": "icons/swords.svg",
+              "iconType": "svg"
             },
             {
               "id": "Ambrosia",
@@ -10042,7 +10422,9 @@
               "path": "Feats/General Feats/+General Feats.md",
               "fileName": "+General Feats.md",
               "icon": "toolbox",
-              "color": "#FFAA00"
+              "color": "#FFAA00",
+              "iconSvg": "icons/toolbox.svg",
+              "iconType": "svg"
             },
             {
               "id": "Brilliant Planner",
@@ -10121,7 +10503,9 @@
               "path": "Feats/Magic Feats/+Magic Feats.md",
               "fileName": "+Magic Feats.md",
               "icon": "LiWand",
-              "color": "#FFAA00"
+              "color": "#FFAA00",
+              "iconSvg": "icons/wand.svg",
+              "iconType": "svg"
             },
             {
               "id": "Callous Casting",
@@ -10291,7 +10675,8 @@
               "path": "Feats/Multiclass/+Multiclass.md",
               "fileName": "+Multiclass.md",
               "icon": "☯",
-              "color": "#FFAA00"
+              "color": "#FFAA00",
+              "iconType": "emoji"
             },
             {
               "id": "Bending Initiate",
@@ -10639,7 +11024,9 @@
                 "teamwork feat",
                 "teamwork feats"
               ],
-              "color": "#FFAA00"
+              "color": "#FFAA00",
+              "iconSvg": "icons/users-group.svg",
+              "iconType": "svg"
             },
             {
               "id": "Artillery Team",
@@ -10728,11 +11115,16 @@
             "feats",
             "feat"
           ],
-          "color": "#FFAA00"
+          "color": "#FFAA00",
+          "iconSvg": "icons/shoe-prints.svg",
+          "iconType": "svg"
         }
       ],
       "expanded": false,
-      "color": "#FFAA00"
+      "color": "#FFAA00",
+      "icon": "trophy",
+      "iconSvg": "icons/trophy.svg",
+      "iconType": "svg"
     },
     {
       "name": "Gods",
@@ -10756,7 +11148,9 @@
                       "path": "Gods/Gods/Demigods/Anime Jesus/Anime Jesus.md",
                       "fileName": "Anime Jesus.md",
                       "icon": "RaAura",
-                      "color": "#4488FF"
+                      "color": "#4488FF",
+                      "iconSvg": "icons/aura.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "T1 - Power of Prayer",
@@ -10782,7 +11176,9 @@
                       "path": "Gods/Gods/Demigods/Ao Shin the Storm Dragon/Ao Shin the Storm Dragon.md",
                       "fileName": "Ao Shin the Storm Dragon.md",
                       "icon": "RaLightningStorm",
-                      "color": "#4488FF"
+                      "color": "#4488FF",
+                      "iconSvg": "icons/lightning-storm.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "T1 - Air Pressure",
@@ -10818,7 +11214,8 @@
                       "path": "Gods/Gods/Demigods/Artemis/Artemis.md",
                       "fileName": "Artemis.md",
                       "icon": "🌒",
-                      "color": "#4488FF"
+                      "color": "#4488FF",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "Moongaloids vs Lunartics",
@@ -10871,7 +11268,8 @@
                       "path": "Gods/Gods/Demigods/Chrimbus Spirit/Chrimbus Spirit.md",
                       "fileName": "Chrimbus Spirit.md",
                       "icon": "🎄",
-                      "color": "#4488FF"
+                      "color": "#4488FF",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "T1 - Gift of Giving",
@@ -10897,7 +11295,9 @@
                       "path": "Gods/Gods/Demigods/Clairvoyance (G)/Clairvoyance (G).md",
                       "fileName": "Clairvoyance (G).md",
                       "icon": "FasCloud",
-                      "color": "#4488FF"
+                      "color": "#4488FF",
+                      "iconSvg": "icons/cloud.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "T1 - Blade of Avarice",
@@ -10936,7 +11336,9 @@
                       "aliases": [
                         "Gralth"
                       ],
-                      "color": "#4488FF"
+                      "color": "#4488FF",
+                      "iconSvg": "icons/dragonframe.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "T1 - Roar of Dragons",
@@ -10972,7 +11374,8 @@
                       "path": "Gods/Gods/Demigods/Shroomlette/Shroomlette.md",
                       "fileName": "Shroomlette.md",
                       "icon": "🍄",
-                      "color": "#4488FF"
+                      "color": "#4488FF",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "T1 - Form of Baby",
@@ -11078,7 +11481,8 @@
                       "path": "Gods/Gods/Demigods/Ulule/Ulule.md",
                       "fileName": "Ulule.md",
                       "icon": "💎",
-                      "color": "#4488FF"
+                      "color": "#4488FF",
+                      "iconType": "emoji"
                     }
                   ],
                   "expanded": false,
@@ -11090,7 +11494,9 @@
                   "path": "Gods/Gods/Demigods/+Demigods.md",
                   "fileName": "+Demigods.md",
                   "icon": "RiLandscapeFill",
-                  "color": "#4488FF"
+                  "color": "#4488FF",
+                  "iconSvg": "icons/landscape-fill.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -11113,7 +11519,8 @@
                       "aliases": [
                         "The Cataclysm"
                       ],
-                      "color": "#4488FF"
+                      "color": "#4488FF",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "Daughters of the Cataclysm",
@@ -11121,7 +11528,8 @@
                       "path": "Gods/Gods/Demon Lords/Caldera, The Cataclysm/Daughters of the Cataclysm.md",
                       "fileName": "Daughters of the Cataclysm.md",
                       "icon": "👧",
-                      "color": "#4488FF"
+                      "color": "#4488FF",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "T1 - Huge",
@@ -11177,7 +11585,8 @@
                       "path": "Gods/Gods/Demon Lords/Moogen, The Murderer/Moogen, The Murderer.md",
                       "fileName": "Moogen, The Murderer.md",
                       "icon": "👁",
-                      "color": "#4488FF"
+                      "color": "#4488FF",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "T1 - From my Cold Dead Head",
@@ -11225,7 +11634,8 @@
                       "path": "Gods/Gods/Demon Lords/Moogen, The Murderer/The Eye of Moogen.md",
                       "fileName": "The Eye of Moogen.md",
                       "icon": "👁",
-                      "color": "#4488FF"
+                      "color": "#4488FF",
+                      "iconType": "emoji"
                     }
                   ],
                   "expanded": false,
@@ -11241,7 +11651,8 @@
                       "path": "Gods/Gods/Demon Lords/Shira, The She-Devil/Shira, the She-Devil.md",
                       "fileName": "Shira, the She-Devil.md",
                       "icon": "💋",
-                      "color": "#4488FF"
+                      "color": "#4488FF",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "T1 - Party Animal",
@@ -11283,7 +11694,8 @@
                   "path": "Gods/Gods/Demon Lords/Demon Lords.md",
                   "fileName": "Demon Lords.md",
                   "icon": "👿",
-                  "color": "#4488FF"
+                  "color": "#4488FF",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -11303,7 +11715,8 @@
                       "path": "Gods/Gods/Earthly Deities/Earth Mother/Earth Mother.md",
                       "fileName": "Earth Mother.md",
                       "icon": "🍃",
-                      "color": "#4488FF"
+                      "color": "#4488FF",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "T1 - Animal Instincts",
@@ -11379,7 +11792,8 @@
                       "path": "Gods/Gods/Earthly Deities/Frogg Saran/Frogg Saran.md",
                       "fileName": "Frogg Saran.md",
                       "icon": "🐸",
-                      "color": "#4488FF"
+                      "color": "#4488FF",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "T1 - Enlightened",
@@ -11443,7 +11857,8 @@
                       "path": "Gods/Gods/Earthly Deities/Hades/Hades.md",
                       "fileName": "Hades.md",
                       "icon": "👻",
-                      "color": "#4488FF"
+                      "color": "#4488FF",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "Life After Death",
@@ -11505,7 +11920,8 @@
                   "path": "Gods/Gods/Earthly Deities/+Earthly Deities.md",
                   "fileName": "+Earthly Deities.md",
                   "icon": "🌍",
-                  "color": "#4488FF"
+                  "color": "#4488FF",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -11550,7 +11966,8 @@
                       "path": "Gods/Gods/Heavenly Deities/Brazzeria/Brazzeria.md",
                       "fileName": "Brazzeria.md",
                       "icon": "🌖",
-                      "color": "#4488FF"
+                      "color": "#4488FF",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "Brazzerian Purification",
@@ -11603,7 +12020,8 @@
                       "path": "Gods/Gods/Heavenly Deities/Celeste/Celeste.md",
                       "fileName": "Celeste.md",
                       "icon": "📖",
-                      "color": "#4488FF"
+                      "color": "#4488FF",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "T1 - Good Reads",
@@ -11684,11 +12102,16 @@
           "aliases": [
             "invoke deity"
           ],
-          "color": "#4488FF"
+          "color": "#4488FF",
+          "iconSvg": "icons/hands-praying.svg",
+          "iconType": "svg"
         }
       ],
       "expanded": false,
-      "color": "#4488FF"
+      "color": "#4488FF",
+      "icon": "crown",
+      "iconSvg": "icons/crown.svg",
+      "iconType": "svg"
     },
     {
       "name": "Lore",
@@ -11740,7 +12163,8 @@
               "path": "Lore/Noteworthy People/Santa.md",
               "fileName": "Santa.md",
               "icon": "🎅",
-              "color": "#44BB88"
+              "color": "#44BB88",
+              "iconType": "emoji"
             }
           ],
           "expanded": false,
@@ -11776,7 +12200,9 @@
               "path": "Lore/Planes/Feywilds.md",
               "fileName": "Feywilds.md",
               "icon": "TiTrees",
-              "color": "#44BB88"
+              "color": "#44BB88",
+              "iconSvg": "icons/trees.svg",
+              "iconType": "svg"
             },
             {
               "id": "Planes",
@@ -11787,7 +12213,9 @@
               "aliases": [
                 "Plane"
               ],
-              "color": "#44BB88"
+              "color": "#44BB88",
+              "iconSvg": "icons/whirl.svg",
+              "iconType": "svg"
             },
             {
               "id": "The Demon Realm",
@@ -11795,7 +12223,9 @@
               "path": "Lore/Planes/The Demon Realm.md",
               "fileName": "The Demon Realm.md",
               "icon": "RaHorns",
-              "color": "#44BB88"
+              "color": "#44BB88",
+              "iconSvg": "icons/horns.svg",
+              "iconType": "svg"
             },
             {
               "id": "The Shadow Realm",
@@ -11803,7 +12233,8 @@
               "path": "Lore/Planes/The Shadow Realm.md",
               "fileName": "The Shadow Realm.md",
               "icon": "⬛",
-              "color": "#44BB88"
+              "color": "#44BB88",
+              "iconType": "emoji"
             }
           ],
           "expanded": false,
@@ -11861,7 +12292,10 @@
         }
       ],
       "expanded": false,
-      "color": "#44BB88"
+      "color": "#44BB88",
+      "icon": "book",
+      "iconSvg": "icons/book.svg",
+      "iconType": "svg"
     },
     {
       "name": "Meta Discussions",
@@ -11885,7 +12319,8 @@
               "path": "Meta Discussions/Advice for Playing the Game/+Rules, Mechanics and Expectations, Oh My!.md",
               "fileName": "+Rules, Mechanics and Expectations, Oh My!.md",
               "icon": "😱",
-              "color": "#9988CC"
+              "color": "#9988CC",
+              "iconType": "emoji"
             },
             {
               "id": "But Who is the Game Master",
@@ -11893,7 +12328,8 @@
               "path": "Meta Discussions/Advice for Playing the Game/But Who is the Game Master.md",
               "fileName": "But Who is the Game Master.md",
               "icon": "❓",
-              "color": "#9988CC"
+              "color": "#9988CC",
+              "iconType": "emoji"
             },
             {
               "id": "It's Matt!",
@@ -11901,7 +12337,9 @@
               "path": "Meta Discussions/Advice for Playing the Game/It's Matt!.md",
               "fileName": "It's Matt!.md",
               "icon": "youtube",
-              "color": "#9988CC"
+              "color": "#9988CC",
+              "iconSvg": "icons/youtube.svg",
+              "iconType": "svg"
             }
           ],
           "expanded": false,
@@ -11939,7 +12377,9 @@
               "path": "Meta Discussions/I'm New to Tabletop Role-Playing/+I'm New to Tabletop Role-Playing.md",
               "fileName": "+I'm New to Tabletop Role-Playing.md",
               "icon": "FasBaby",
-              "color": "#9988CC"
+              "color": "#9988CC",
+              "iconSvg": "icons/baby.svg",
+              "iconType": "svg"
             }
           ],
           "expanded": false,
@@ -11962,7 +12402,9 @@
               "path": "Meta Discussions/Shameless Self Plugs/Social Media.md",
               "fileName": "Social Media.md",
               "icon": "SiYoutube",
-              "color": "#9988CC"
+              "color": "#9988CC",
+              "iconSvg": "icons/youtube.svg",
+              "iconType": "svg"
             },
             {
               "id": "Who am I",
@@ -11981,7 +12423,9 @@
           "path": "Meta Discussions/Pros and Cons of Nick Nacks.md",
           "fileName": "Pros and Cons of Nick Nacks.md",
           "icon": "FasN",
-          "color": "#9988CC"
+          "color": "#9988CC",
+          "iconSvg": "icons/n.svg",
+          "iconType": "svg"
         },
         {
           "id": "Pros and Cons of TTRPGs",
@@ -11989,11 +12433,16 @@
           "path": "Meta Discussions/Pros and Cons of TTRPGs.md",
           "fileName": "Pros and Cons of TTRPGs.md",
           "icon": "LiPlus",
-          "color": "#9988CC"
+          "color": "#9988CC",
+          "iconSvg": "icons/plus.svg",
+          "iconType": "svg"
         }
       ],
       "expanded": false,
-      "color": "#9988CC"
+      "color": "#9988CC",
+      "icon": "chat",
+      "iconSvg": "icons/chat.svg",
+      "iconType": "svg"
     },
     {
       "name": "Minigames",
@@ -12012,7 +12461,9 @@
               "aliases": [
                 "chases"
               ],
-              "color": "#FF88AA"
+              "color": "#FF88AA",
+              "iconSvg": "icons/bx-run.svg",
+              "iconType": "svg"
             },
             {
               "id": "Advantages",
@@ -12060,7 +12511,9 @@
           "path": "Minigames/D420.md",
           "fileName": "D420.md",
           "icon": "TiPlant2",
-          "color": "#FF88AA"
+          "color": "#FF88AA",
+          "iconSvg": "icons/plant-2.svg",
+          "iconType": "svg"
         },
         {
           "id": "Drinking Contest",
@@ -12068,11 +12521,16 @@
           "path": "Minigames/Drinking Contest.md",
           "fileName": "Drinking Contest.md",
           "icon": "LiBeer",
-          "color": "#FF88AA"
+          "color": "#FF88AA",
+          "iconSvg": "icons/beer.svg",
+          "iconType": "svg"
         }
       ],
       "expanded": false,
-      "color": "#FF88AA"
+      "color": "#FF88AA",
+      "icon": "gamepad",
+      "iconSvg": "icons/gamepad.svg",
+      "iconType": "svg"
     },
     {
       "name": "Races",
@@ -12088,7 +12546,9 @@
               "path": "Races/Beastfolk/Beastfolk.md",
               "fileName": "Beastfolk.md",
               "icon": "FasPaw",
-              "color": "#AA88FF"
+              "color": "#AA88FF",
+              "iconSvg": "icons/paw.svg",
+              "iconType": "svg"
             },
             {
               "id": "Bestial Boons",
@@ -12113,7 +12573,8 @@
           "aliases": [
             "race"
           ],
-          "color": "#AA88FF"
+          "color": "#AA88FF",
+          "iconType": "emoji"
         },
         {
           "id": "Amazon",
@@ -12121,7 +12582,8 @@
           "path": "Races/Amazon.md",
           "fileName": "Amazon.md",
           "icon": "🏋️‍♀️",
-          "color": "#AA88FF"
+          "color": "#AA88FF",
+          "iconType": "emoji"
         },
         {
           "id": "Anime",
@@ -12129,7 +12591,8 @@
           "path": "Races/Anime.md",
           "fileName": "Anime.md",
           "icon": "🎌",
-          "color": "#AA88FF"
+          "color": "#AA88FF",
+          "iconType": "emoji"
         },
         {
           "id": "Boner",
@@ -12137,7 +12600,8 @@
           "path": "Races/Boner.md",
           "fileName": "Boner.md",
           "icon": "💀",
-          "color": "#AA88FF"
+          "color": "#AA88FF",
+          "iconType": "emoji"
         },
         {
           "id": "Centaur",
@@ -12145,7 +12609,8 @@
           "path": "Races/Centaur.md",
           "fileName": "Centaur.md",
           "icon": "🦌",
-          "color": "#AA88FF"
+          "color": "#AA88FF",
+          "iconType": "emoji"
         },
         {
           "id": "Cyborg",
@@ -12153,7 +12618,9 @@
           "path": "Races/Cyborg.md",
           "fileName": "Cyborg.md",
           "icon": "RaGears",
-          "color": "#AA88FF"
+          "color": "#AA88FF",
+          "iconSvg": "icons/gears.svg",
+          "iconType": "svg"
         },
         {
           "id": "Drakonid",
@@ -12161,7 +12628,9 @@
           "path": "Races/Drakonid.md",
           "fileName": "Drakonid.md",
           "icon": "RaDragon",
-          "color": "#AA88FF"
+          "color": "#AA88FF",
+          "iconSvg": "icons/dragon.svg",
+          "iconType": "svg"
         },
         {
           "id": "Dwarf",
@@ -12169,7 +12638,8 @@
           "path": "Races/Dwarf.md",
           "fileName": "Dwarf.md",
           "icon": "⛏",
-          "color": "#AA88FF"
+          "color": "#AA88FF",
+          "iconType": "emoji"
         },
         {
           "id": "Elf",
@@ -12177,7 +12647,8 @@
           "path": "Races/Elf.md",
           "fileName": "Elf.md",
           "icon": "🧝",
-          "color": "#AA88FF"
+          "color": "#AA88FF",
+          "iconType": "emoji"
         },
         {
           "id": "Eternal",
@@ -12185,7 +12656,8 @@
           "path": "Races/Eternal.md",
           "fileName": "Eternal.md",
           "icon": "🫶",
-          "color": "#AA88FF"
+          "color": "#AA88FF",
+          "iconType": "emoji"
         },
         {
           "id": "Exalted - Fallen",
@@ -12197,7 +12669,9 @@
             "Exalted",
             "Fallen"
           ],
-          "color": "#AA88FF"
+          "color": "#AA88FF",
+          "iconSvg": "icons/angel-wings.svg",
+          "iconType": "svg"
         },
         {
           "id": "Fairy",
@@ -12205,7 +12679,8 @@
           "path": "Races/Fairy.md",
           "fileName": "Fairy.md",
           "icon": "🧚",
-          "color": "#AA88FF"
+          "color": "#AA88FF",
+          "iconType": "emoji"
         },
         {
           "id": "Geniekin",
@@ -12213,7 +12688,8 @@
           "path": "Races/Geniekin.md",
           "fileName": "Geniekin.md",
           "icon": "🧞",
-          "color": "#AA88FF"
+          "color": "#AA88FF",
+          "iconType": "emoji"
         },
         {
           "id": "Goblin",
@@ -12221,7 +12697,8 @@
           "path": "Races/Goblin.md",
           "fileName": "Goblin.md",
           "icon": "💚",
-          "color": "#AA88FF"
+          "color": "#AA88FF",
+          "iconType": "emoji"
         },
         {
           "id": "Hellion",
@@ -12229,7 +12706,8 @@
           "path": "Races/Hellion.md",
           "fileName": "Hellion.md",
           "icon": "😈",
-          "color": "#AA88FF"
+          "color": "#AA88FF",
+          "iconType": "emoji"
         },
         {
           "id": "Human",
@@ -12237,7 +12715,9 @@
           "path": "Races/Human.md",
           "fileName": "Human.md",
           "icon": "FasPerson",
-          "color": "#AA88FF"
+          "color": "#AA88FF",
+          "iconSvg": "icons/person.svg",
+          "iconType": "svg"
         },
         {
           "id": "Orc",
@@ -12245,7 +12725,9 @@
           "path": "Races/Orc.md",
           "fileName": "Orc.md",
           "icon": "RaBatteredAxe",
-          "color": "#AA88FF"
+          "color": "#AA88FF",
+          "iconSvg": "icons/battered-axe.svg",
+          "iconType": "svg"
         },
         {
           "id": "Pints",
@@ -12253,7 +12735,9 @@
           "path": "Races/Pints.md",
           "fileName": "Pints.md",
           "icon": "FasHandsHoldingChild",
-          "color": "#AA88FF"
+          "color": "#AA88FF",
+          "iconSvg": "icons/hands-holding-child.svg",
+          "iconType": "svg"
         },
         {
           "id": "Plantalones",
@@ -12261,7 +12745,8 @@
           "path": "Races/Plantalones.md",
           "fileName": "Plantalones.md",
           "icon": "🌿",
-          "color": "#AA88FF"
+          "color": "#AA88FF",
+          "iconType": "emoji"
         },
         {
           "id": "Polymerization",
@@ -12269,7 +12754,9 @@
           "path": "Races/Polymerization.md",
           "fileName": "Polymerization.md",
           "icon": "RaGloop",
-          "color": "#AA88FF"
+          "color": "#AA88FF",
+          "iconSvg": "icons/gloop.svg",
+          "iconType": "svg"
         },
         {
           "id": "Poplin",
@@ -12277,7 +12764,8 @@
           "path": "Races/Poplin.md",
           "fileName": "Poplin.md",
           "icon": "🧸",
-          "color": "#AA88FF"
+          "color": "#AA88FF",
+          "iconType": "emoji"
         },
         {
           "id": "Puppest",
@@ -12285,7 +12773,8 @@
           "path": "Races/Puppest.md",
           "fileName": "Puppest.md",
           "icon": "🐕",
-          "color": "#AA88FF"
+          "color": "#AA88FF",
+          "iconType": "emoji"
         },
         {
           "id": "Shades",
@@ -12293,7 +12782,9 @@
           "path": "Races/Shades.md",
           "fileName": "Shades.md",
           "icon": "RaMoonSun",
-          "color": "#AA88FF"
+          "color": "#AA88FF",
+          "iconSvg": "icons/moon-sun.svg",
+          "iconType": "svg"
         },
         {
           "id": "Shroomkin",
@@ -12301,11 +12792,15 @@
           "path": "Races/Shroomkin.md",
           "fileName": "Shroomkin.md",
           "icon": "🍄",
-          "color": "#AA88FF"
+          "color": "#AA88FF",
+          "iconType": "emoji"
         }
       ],
       "expanded": false,
-      "color": "#AA88FF"
+      "color": "#AA88FF",
+      "icon": "users",
+      "iconSvg": "icons/users.svg",
+      "iconType": "svg"
     },
     {
       "name": "Random Charts",
@@ -12321,7 +12816,9 @@
               "path": "Random Charts/Afflictions/Afflictions.md",
               "fileName": "Afflictions.md",
               "icon": "TiHeartBroken",
-              "color": "#669966"
+              "color": "#669966",
+              "iconSvg": "icons/heart-broken.svg",
+              "iconType": "svg"
             },
             {
               "id": "Tier 1",
@@ -12358,7 +12855,9 @@
               "path": "Random Charts/Character Creation/+Character Creation.md",
               "fileName": "+Character Creation.md",
               "icon": "slot-machine",
-              "color": "#669966"
+              "color": "#669966",
+              "iconSvg": "icons/slot-machine.svg",
+              "iconType": "svg"
             },
             {
               "id": "Abnormalities",
@@ -12391,7 +12890,8 @@
           "path": "Random Charts/Banes.md",
           "fileName": "Banes.md",
           "icon": "🐈‍⬛",
-          "color": "#669966"
+          "color": "#669966",
+          "iconType": "emoji"
         },
         {
           "id": "Boons",
@@ -12399,7 +12899,8 @@
           "path": "Random Charts/Boons.md",
           "fileName": "Boons.md",
           "icon": "🍀",
-          "color": "#669966"
+          "color": "#669966",
+          "iconType": "emoji"
         },
         {
           "id": "Resurrection Chart",
@@ -12407,11 +12908,16 @@
           "path": "Random Charts/Resurrection Chart.md",
           "fileName": "Resurrection Chart.md",
           "icon": "tombstone",
-          "color": "#669966"
+          "color": "#669966",
+          "iconSvg": "icons/tombstone.svg",
+          "iconType": "svg"
         }
       ],
       "expanded": false,
-      "color": "#669966"
+      "color": "#669966",
+      "icon": "chart",
+      "iconSvg": "icons/chart.svg",
+      "iconType": "svg"
     },
     {
       "name": "Skills",
@@ -12508,7 +13014,8 @@
                   "path": "Skills/Skills/Acrobatics/+Acrobatics.md",
                   "fileName": "+Acrobatics.md",
                   "icon": "⚖",
-                  "color": "#44CCDD"
+                  "color": "#44CCDD",
+                  "iconType": "emoji"
                 },
                 {
                   "id": "Avoid AoO (P)",
@@ -12605,7 +13112,8 @@
                   "path": "Skills/Skills/Athletics/+Athletics.md",
                   "fileName": "+Athletics.md",
                   "icon": "🏊",
-                  "color": "#44CCDD"
+                  "color": "#44CCDD",
+                  "iconType": "emoji"
                 },
                 {
                   "id": "Aquatic Combatant (P)",
@@ -12779,7 +13287,9 @@
                   "path": "Skills/Skills/Disguise/+Disguise.md",
                   "fileName": "+Disguise.md",
                   "icon": "FasMasksTheater",
-                  "color": "#44CCDD"
+                  "color": "#44CCDD",
+                  "iconSvg": "icons/masks-theater.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Costume Expert (SS)",
@@ -12832,7 +13342,8 @@
                   "path": "Skills/Skills/Insight/+Insight.md",
                   "fileName": "+Insight.md",
                   "icon": "🤔",
-                  "color": "#44CCDD"
+                  "color": "#44CCDD",
+                  "iconType": "emoji"
                 },
                 {
                   "id": "5 Steps Ahead (SS)",
@@ -12885,7 +13396,8 @@
                   "path": "Skills/Skills/Intimidation/+Intimidation.md",
                   "fileName": "+Intimidation.md",
                   "icon": "😱",
-                  "color": "#44CCDD"
+                  "color": "#44CCDD",
+                  "iconType": "emoji"
                 },
                 {
                   "id": "Big Shot (SS)",
@@ -12952,7 +13464,9 @@
                       "path": "Skills/Skills/Knowledge/Alchemy/Alchemy.md",
                       "fileName": "Alchemy.md",
                       "icon": "FasFlaskVial",
-                      "color": "#44CCDD"
+                      "color": "#44CCDD",
+                      "iconSvg": "icons/flask-vial.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Create Alchemical Item",
@@ -12989,7 +13503,9 @@
                       "path": "Skills/Skills/Knowledge/Arcana/Arcana.md",
                       "fileName": "Arcana.md",
                       "icon": "FasHatWizard",
-                      "color": "#44CCDD"
+                      "color": "#44CCDD",
+                      "iconSvg": "icons/hat-wizard.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Identify Active Spell",
@@ -13026,7 +13542,9 @@
                       "path": "Skills/Skills/Knowledge/Cryptozoology/+Cryptozoology.md",
                       "fileName": "+Cryptozoology.md",
                       "icon": "FasSpaghettiMonsterFlying",
-                      "color": "#44CCDD"
+                      "color": "#44CCDD",
+                      "iconSvg": "icons/spaghetti-monster-flying.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Astronomy",
@@ -13070,7 +13588,8 @@
                       "path": "Skills/Skills/Knowledge/Engineering/Engineering.md",
                       "fileName": "Engineering.md",
                       "icon": "🤖",
-                      "color": "#44CCDD"
+                      "color": "#44CCDD",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "Hacking",
@@ -13107,7 +13626,9 @@
                       "path": "Skills/Skills/Knowledge/History/+History.md",
                       "fileName": "+History.md",
                       "icon": "SiFossilscm",
-                      "color": "#44CCDD"
+                      "color": "#44CCDD",
+                      "iconSvg": "icons/fossilscm.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Example DCs",
@@ -13165,7 +13686,9 @@
                       "path": "Skills/Skills/Knowledge/Local/+Local.md",
                       "fileName": "+Local.md",
                       "icon": "FasPerson",
-                      "color": "#44CCDD"
+                      "color": "#44CCDD",
+                      "iconSvg": "icons/person.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Classes and Monster Lore",
@@ -13173,7 +13696,8 @@
                       "path": "Skills/Skills/Knowledge/Local/Classes and Monster Lore.md",
                       "fileName": "Classes and Monster Lore.md",
                       "icon": "❓",
-                      "color": "#44CCDD"
+                      "color": "#44CCDD",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "Recall Customs",
@@ -13210,7 +13734,8 @@
                       "path": "Skills/Skills/Knowledge/Nature/+Nature.md",
                       "fileName": "+Nature.md",
                       "icon": "🍃",
-                      "color": "#44CCDD"
+                      "color": "#44CCDD",
+                      "iconType": "emoji"
                     },
                     {
                       "id": "Example DCs",
@@ -13254,7 +13779,9 @@
                       "path": "Skills/Skills/Knowledge/Planes/+Planes.md",
                       "fileName": "+Planes.md",
                       "icon": "TiWhirl",
-                      "color": "#44CCDD"
+                      "color": "#44CCDD",
+                      "iconSvg": "icons/whirl.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Disable or Destroy Portal",
@@ -13291,7 +13818,9 @@
                       "path": "Skills/Skills/Knowledge/Religion/+Religion.md",
                       "fileName": "+Religion.md",
                       "icon": "FasBookBible",
-                      "color": "#44CCDD"
+                      "color": "#44CCDD",
+                      "iconSvg": "icons/book-bible.svg",
+                      "iconType": "svg"
                     },
                     {
                       "id": "Identify Chosen",
@@ -13324,7 +13853,8 @@
                   "path": "Skills/Skills/Knowledge/+Knowledge.md",
                   "fileName": "+Knowledge.md",
                   "icon": "🧠",
-                  "color": "#44CCDD"
+                  "color": "#44CCDD",
+                  "iconType": "emoji"
                 },
                 {
                   "id": "+Monster Lore",
@@ -13332,7 +13862,8 @@
                   "path": "Skills/Skills/Knowledge/+Monster Lore.md",
                   "fileName": "+Monster Lore.md",
                   "icon": "📖",
-                  "color": "#44CCDD"
+                  "color": "#44CCDD",
+                  "iconType": "emoji"
                 },
                 {
                   "id": "Lore Dump (SS)",
@@ -13375,7 +13906,8 @@
                   "path": "Skills/Skills/Linguistics/+Linguistics.md",
                   "fileName": "+Linguistics.md",
                   "icon": "㊙",
-                  "color": "#44CCDD"
+                  "color": "#44CCDD",
+                  "iconType": "emoji"
                 },
                 {
                   "id": "Cliff's Notes (SS)",
@@ -13470,7 +14002,8 @@
                   "path": "Skills/Skills/Medicine/+Medicine.md",
                   "fileName": "+Medicine.md",
                   "icon": "💉",
-                  "color": "#44CCDD"
+                  "color": "#44CCDD",
+                  "iconType": "emoji"
                 },
                 {
                   "id": "Assess the Wounded",
@@ -13564,7 +14097,8 @@
                   "path": "Skills/Skills/Perception/+Perception.md",
                   "fileName": "+Perception.md",
                   "icon": "👀",
-                  "color": "#44CCDD"
+                  "color": "#44CCDD",
+                  "iconType": "emoji"
                 },
                 {
                   "id": "Detect Hidden Presence",
@@ -13617,7 +14151,9 @@
                   "aliases": [
                     "purrsuasion"
                   ],
-                  "color": "#44CCDD"
+                  "color": "#44CCDD",
+                  "iconSvg": "icons/handshake-simple.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Contacts (SS)",
@@ -13635,7 +14171,9 @@
                   "path": "Skills/Skills/Persuasion/Dice vs Roleplay.md",
                   "fileName": "Dice vs Roleplay.md",
                   "icon": "FasQuestion",
-                  "color": "#44CCDD"
+                  "color": "#44CCDD",
+                  "iconSvg": "icons/question.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Example DCs",
@@ -13685,7 +14223,8 @@
                   "path": "Skills/Skills/Profession/+Profession.md",
                   "fileName": "+Profession.md",
                   "icon": "🧑‍🌾",
-                  "color": "#44CCDD"
+                  "color": "#44CCDD",
+                  "iconType": "emoji"
                 },
                 {
                   "id": "Experienced (P)",
@@ -13728,7 +14267,9 @@
                   "aliases": [
                     "SoH"
                   ],
-                  "color": "#44CCDD"
+                  "color": "#44CCDD",
+                  "iconSvg": "icons/lock-open.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Conceal Weapon (P)",
@@ -13803,7 +14344,9 @@
                   "path": "Skills/Skills/Stealth/+Stealth.md",
                   "fileName": "+Stealth.md",
                   "icon": "RaHood",
-                  "color": "#44CCDD"
+                  "color": "#44CCDD",
+                  "iconSvg": "icons/hood.svg",
+                  "iconType": "svg"
                 },
                 {
                   "id": "Dampen Presence (SS)",
@@ -13866,7 +14409,8 @@
                   "path": "Skills/Skills/Survival/+Survival.md",
                   "fileName": "+Survival.md",
                   "icon": "🐾",
-                  "color": "#44CCDD"
+                  "color": "#44CCDD",
+                  "iconType": "emoji"
                 },
                 {
                   "id": "Advanced Tracking (SS)",
@@ -13947,7 +14491,10 @@
         }
       ],
       "expanded": false,
-      "color": "#44CCDD"
+      "color": "#44CCDD",
+      "icon": "star",
+      "iconSvg": "icons/star.svg",
+      "iconType": "svg"
     },
     {
       "name": "Techniques",
@@ -14161,7 +14708,9 @@
                   "aliases": [
                     "cantrip"
                   ],
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconSvg": "icons/wand.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -14335,7 +14884,8 @@
                   "path": "Techniques/Magical Techniques/Academy/Academy.md",
                   "fileName": "Academy.md",
                   "icon": "📖",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -14524,7 +15074,9 @@
                   "path": "Techniques/Magical Techniques/Alchemy/Alchemy (T).md",
                   "fileName": "Alchemy (T).md",
                   "icon": "OcBeaker16",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconSvg": "icons/beaker-16.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -14770,7 +15322,9 @@
                   "path": "Techniques/Magical Techniques/Arcane/Arcane.md",
                   "fileName": "Arcane.md",
                   "icon": "FasHatWizard",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconSvg": "icons/hat-wizard.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -14995,7 +15549,9 @@
                   "path": "Techniques/Magical Techniques/Brazzeria (T)/Brazzeria (T).md",
                   "fileName": "Brazzeria (T).md",
                   "icon": "RaAngelWings",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconSvg": "icons/angel-wings.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -15199,7 +15755,9 @@
                   "path": "Techniques/Magical Techniques/Clairvoyance (T)/Clairvoyance (T).md",
                   "fileName": "Clairvoyance (T).md",
                   "icon": "RaLightningStorm",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconSvg": "icons/lightning-storm.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -15424,7 +15982,8 @@
                   "path": "Techniques/Magical Techniques/Corruption/Corruption.md",
                   "fileName": "Corruption.md",
                   "icon": "🦹",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -15598,7 +16157,9 @@
                   "path": "Techniques/Magical Techniques/Cryomancy/Cryomancy.md",
                   "fileName": "Cryomancy.md",
                   "icon": "snowflake",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconSvg": "icons/snowflake.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -15865,7 +16426,8 @@
                   "path": "Techniques/Magical Techniques/Frogg-Saran (T)/Frogg Saran (T).md",
                   "fileName": "Frogg Saran (T).md",
                   "icon": "🐸",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -16069,7 +16631,9 @@
                   "path": "Techniques/Magical Techniques/God Mode/God Mode.md",
                   "fileName": "God Mode.md",
                   "icon": "alarm-clock",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconSvg": "icons/alarm-clock.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -16224,7 +16788,9 @@
                   "path": "Techniques/Magical Techniques/Golden Order/Golden Order.md",
                   "fileName": "Golden Order.md",
                   "icon": "RaAura",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconSvg": "icons/aura.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -16441,7 +17007,8 @@
                   "path": "Techniques/Magical Techniques/Goomshroom/Goomshroom.md",
                   "fileName": "Goomshroom.md",
                   "icon": "🍄",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -16715,7 +17282,8 @@
                   "path": "Techniques/Magical Techniques/Moogen/Moogen.md",
                   "fileName": "Moogen.md",
                   "icon": "👁",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -16989,7 +17557,8 @@
                   "path": "Techniques/Magical Techniques/Mother Earth/Mother Earth.md",
                   "fileName": "Mother Earth.md",
                   "icon": "🍃",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -17123,7 +17692,8 @@
                   "path": "Techniques/Magical Techniques/Nack/Nack.md",
                   "fileName": "Nack.md",
                   "icon": "🎉",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -17383,7 +17953,9 @@
                   "path": "Techniques/Magical Techniques/Necromancy/Necromancy.md",
                   "fileName": "Necromancy.md",
                   "icon": "skull",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconSvg": "icons/skull.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -17517,7 +18089,8 @@
                   "path": "Techniques/Magical Techniques/Prismancy/Prismancy.md",
                   "fileName": "Prismancy.md",
                   "icon": "🌈",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -17749,7 +18322,8 @@
                   "path": "Techniques/Magical Techniques/Psionics/Psionics.md",
                   "fileName": "Psionics.md",
                   "icon": "🤯",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -17917,7 +18491,8 @@
                   "path": "Techniques/Magical Techniques/Pyromancy/Pyromancy.md",
                   "fileName": "Pyromancy.md",
                   "icon": "🔥",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -18128,7 +18703,8 @@
                   "path": "Techniques/Magical Techniques/Shira/Shira.md",
                   "fileName": "Shira.md",
                   "icon": "💋",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -18281,7 +18857,8 @@
                   "path": "Techniques/Magical Techniques/Vampirism/Vampirism.md",
                   "fileName": "Vampirism.md",
                   "icon": "🧛",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -18495,7 +19072,9 @@
                   "path": "Techniques/Martial Techniques/+Warfare/Warfare.md",
                   "fileName": "Warfare.md",
                   "icon": "swords",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconSvg": "icons/swords.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -18924,7 +19503,8 @@
                   "path": "Techniques/Martial Techniques/Barbarism/Barbarism.md",
                   "fileName": "Barbarism.md",
                   "icon": "💢",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -19170,7 +19750,9 @@
                   "path": "Techniques/Martial Techniques/Beastmode/Beastmode.md",
                   "fileName": "Beastmode.md",
                   "icon": "RaPawprint",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconSvg": "icons/pawprint.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -19395,7 +19977,8 @@
                   "path": "Techniques/Martial Techniques/Cataclysm/Cataclysm.md",
                   "fileName": "Cataclysm.md",
                   "icon": "🌋",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -19605,7 +20188,8 @@
                   "path": "Techniques/Martial Techniques/Marksman/Marksman.md",
                   "fileName": "Marksman.md",
                   "icon": "🏹",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -19816,7 +20400,9 @@
                   "path": "Techniques/Martial Techniques/Protector/Protector.md",
                   "fileName": "Protector.md",
                   "icon": "shield",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconSvg": "icons/shield.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -20020,7 +20606,9 @@
                   "path": "Techniques/Martial Techniques/Pupper/Pupper.md",
                   "fileName": "Pupper.md",
                   "icon": "dog",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconSvg": "icons/dog.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -20224,7 +20812,9 @@
                   "path": "Techniques/Martial Techniques/Scoundrel/Scoundrel.md",
                   "fileName": "Scoundrel.md",
                   "icon": "RaHood",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconSvg": "icons/hood.svg",
+                  "iconType": "svg"
                 }
               ],
               "expanded": false,
@@ -20479,7 +21069,8 @@
                   "path": "Techniques/Martial Techniques/Unarmed/Unarmed.md",
                   "fileName": "Unarmed.md",
                   "icon": "👊",
-                  "color": "#FF7744"
+                  "color": "#FF7744",
+                  "iconType": "emoji"
                 }
               ],
               "expanded": false,
@@ -20628,7 +21219,10 @@
         }
       ],
       "expanded": false,
-      "color": "#FF7744"
+      "color": "#FF7744",
+      "icon": "fist",
+      "iconSvg": "icons/fist.svg",
+      "iconType": "svg"
     },
     {
       "id": "Index",

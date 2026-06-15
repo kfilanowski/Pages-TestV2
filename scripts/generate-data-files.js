@@ -384,26 +384,202 @@ function resolveOutgoingLinks() {
 }
 
 /**
+ * Resolves frontmatter icon names to SVG files in the icons directory.
+ * Tries: exact match, case-insensitive, prefix-stripped (e.g. FasPerson → Person),
+ * and kebab-to-Pascal (e.g. dice-d4 → DiceD4). Emojis are flagged as-is.
+ * Icons that can't be resolved are left empty (no icon renders).
+ */
+const ICONS_DIR = path.join(__dirname, '..', 'src', 'icons');
+const KNOWN_PREFIXES_3 = ['Fas', 'Far'];
+const KNOWN_PREFIXES_2 = ['Fi','Lu','Li','Hi','Bs','Fa','Gi','Tb','Ra','Mi','Md',
+  'Ri','Io','Ai','Si','Bi','Ci','Di','Vi','Wi','Ti','Bo','Ib','Co','Oc'];
+
+function stripIconPrefix(name) {
+  for (const p of KNOWN_PREFIXES_3) {
+    if (name.startsWith(p)) return name.slice(p.length);
+  }
+  for (const p of KNOWN_PREFIXES_2) {
+    if (name.startsWith(p)) return name.slice(p.length);
+  }
+  return name;
+}
+
+function kebabToPascal(str) {
+  return str.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join('');
+}
+
+function isEmoji(val) {
+  return typeof val === 'string' && val.length > 0 && [...val].some(c => c.codePointAt(0) > 0x2000);
+}
+
+function resolveIcons(tree) {
+  const ICONS_PATH = ICONS_DIR;
+  if (!fs.existsSync(ICONS_PATH)) {
+    console.log(`  ℹ No icons directory found at ${ICONS_PATH}, skipping icon resolution`);
+    return;
+  }
+
+  // Build case-insensitive SVG filename lookup
+  const svgFiles = fs.readdirSync(ICONS_PATH).filter(f => f.endsWith('.svg'));
+  const svgNames = new Map(); // lowercase stem -> actual stem
+  for (const f of svgFiles) {
+    const stem = f.slice(0, -4);
+    svgNames.set(stem.toLowerCase(), stem);
+  }
+
+  console.log(`  - ${svgFiles.length} SVG icons available for resolution`);
+
+  // Resolve icons by walking tree nodes (handles duplicate IDs in allNotes)
+  let resolved = 0, emojiCount = 0, unresolved = 0;
+
+  function resolveIconNode(node) {
+    if (node.iconType) return; // already resolved
+    const rawIcon = node.icon;
+    if (!rawIcon) return;
+
+    // Emojis
+    if (typeof rawIcon === 'string' && isEmoji(rawIcon)) {
+      node.iconType = 'emoji';
+      emojiCount++;
+      return;
+    }
+
+    if (typeof rawIcon !== 'string') return;
+    const val = rawIcon.trim();
+
+    // 1. Exact match (case-insensitive)
+    const valLower = val.toLowerCase();
+    if (svgNames.has(valLower)) {
+      node.iconSvg = `icons/${svgNames.get(valLower)}.svg`;
+      node.iconType = 'svg';
+      resolved++;
+      return;
+    }
+
+    // 2. Strip prefix (FasPerson -> Person, RaHorns -> Horns)
+    const stripped = stripIconPrefix(val);
+    if (stripped !== val) {
+      const strippedLower = stripped.toLowerCase();
+      if (svgNames.has(strippedLower)) {
+        node.iconSvg = `icons/${svgNames.get(strippedLower)}.svg`;
+        node.iconType = 'svg';
+        resolved++;
+        return;
+      }
+    }
+
+    // 3. Lowercase the first character (PascalCase SVGs)
+    const pascalLower = val.charAt(0).toLowerCase() + val.slice(1);
+    if (pascalLower !== val && svgNames.has(pascalLower.toLowerCase())) {
+      node.iconSvg = `icons/${svgNames.get(pascalLower.toLowerCase())}.svg`;
+      node.iconType = 'svg';
+      resolved++;
+      return;
+    }
+
+    // 4. Kebab-case to PascalCase (dice-d4 -> DiceD4)
+    if (val.includes('-')) {
+      const pascal = kebabToPascal(val);
+      const pascalLower = pascal.toLowerCase();
+      if (svgNames.has(pascalLower)) {
+        node.iconSvg = `icons/${svgNames.get(pascalLower)}.svg`;
+        node.iconType = 'svg';
+        resolved++;
+        return;
+      }
+    }
+
+    // 5. Try PascalCase of the stripped name
+    const pascalStrip = stripped.charAt(0).toUpperCase() + stripped.slice(1);
+    if (pascalStrip !== stripped && svgNames.has(pascalStrip.toLowerCase())) {
+      node.iconSvg = `icons/${svgNames.get(pascalStrip.toLowerCase())}.svg`;
+      node.iconType = 'svg';
+      resolved++;
+      return;
+    }
+
+    // 6. PascalCase to kebab-case (HatWizard -> hat-wizard)
+    // Catches Game Icons naming where "FasHatWizard" -> stripped "HatWizard" -> "hat-wizard"
+    if (stripped !== val && stripped !== stripped.toLowerCase()) {
+      const kebab = stripped.replace(/([A-Z])/g, '-$1').toLowerCase().replace(/^-/, '')
+                            .replace(/(\d+)$/, '-$1');
+      if (kebab !== stripped.toLowerCase() && svgNames.has(kebab)) {
+        node.iconSvg = `icons/${svgNames.get(kebab)}.svg`;
+        node.iconType = 'svg';
+        resolved++;
+        return;
+      }
+    }
+
+    unresolved++;
+  }
+
+  // Walk tree to resolve (handles duplicate IDs correctly)
+  function walkTree(nodes) {
+    for (const node of nodes) {
+      if (node.children) {
+        resolveIconNode(node); // resolve folder icons too
+        walkTree(node.children);
+      } else {
+        resolveIconNode(node);
+      }
+    }
+  }
+
+  // Walk both tree and allNotes to catch everything
+  // Tree carries the canonical data; allNotes catches orphan entries
+  for (const node of tree) {
+    if (node.children) {
+      resolveIconNode(node); // resolve root-level folder icons too
+      walkTree(node.children);
+    } else {
+      resolveIconNode(node);
+    }
+  }
+  for (const [, noteData] of allNotes.entries()) {
+    resolveIconNode(noteData);
+  }
+
+  if (resolved > 0) console.log(`  - Resolved ${resolved} icons to SVG files`);
+  if (emojiCount > 0) console.log(`  - ${emojiCount} icons are emoji (keep as text)`);
+  if (unresolved > 0) console.log(`  - ${unresolved} icons could not be resolved (no matching SVG)`);
+}
+
+/**
  * Applies folder colors from the config file and propagates inheritance.
- * Reads folder-colors.json from src/config/, matches folders by their
+ * Reads folder-metadata.json from src/config/, matches folders by their
  * relative path (e.g. "Bestiary", "Core Rules, How to Play/Status Effects"),
  * and propagates colors to child folders and notes.
  * Children inherit parent color unless they have an explicit color of their own.
  */
-function applyFolderColors(nodes, folderColors, parentPath, inheritedColor) {
+function applyFolderColors(nodes, folderColors, parentPath, inheritedColor, inheritedIcon) {
   for (const node of nodes) {
     if (node.children) {
       // This is a folder — compute its path
       const folderPath = parentPath ? `${parentPath}/${node.name}` : node.name;
-      // Check for an explicit color for THIS folder path
-      const explicitColor = folderColors[folderPath];
+      
+      // Check for an explicit config for THIS folder path
+      // Supports both string (legacy: "#color") and object ({ color, icon }) formats
+      const config = folderColors[folderPath];
+      let explicitColor, explicitIcon;
+      if (typeof config === 'string') {
+        explicitColor = config;
+      } else if (config && typeof config === 'object') {
+        explicitColor = config.color;
+        explicitIcon = config.icon;
+      }
+      
       node.color = explicitColor || inheritedColor || undefined;
-
-      // Recurse into children with the resolved color as the inherited one
-      applyFolderColors(node.children, folderColors, folderPath, node.color);
-    } else if (inheritedColor) {
-      // This is a note — it inherits color from its parent folder
-      node.color = inheritedColor;
+      if (explicitIcon) {
+        node.icon = explicitIcon;
+      }
+      
+      // Recurse into children with inherited color but NO icon inheritance
+      applyFolderColors(node.children, folderColors, folderPath, node.color, undefined);
+    } else {
+      // This is a note — it only inherits color from its parent folder
+      // (icon is NEVER inherited, only frontmatter icons or nothing)
+      if (inheritedColor) node.color = inheritedColor;
     }
   }
 }
@@ -502,8 +678,8 @@ function main() {
   // Build tree and collect all data in one pass
   const tree = buildTreeAndCollectData(NOTES_DIR);
 
-  // Apply folder colors from config (if available)
-  const FOLDER_COLORS_PATH = path.join(__dirname, '..', 'src', 'config', 'folder-colors.json');
+  // Apply folder colors and icons from config (if available)
+  const FOLDER_COLORS_PATH = path.join(__dirname, '..', 'src', 'config', 'folder-metadata.json');
   let folderColors = {};
   if (fs.existsSync(FOLDER_COLORS_PATH)) {
     try {
@@ -514,13 +690,16 @@ function main() {
           delete folderColors[key];
         }
       }
-      applyFolderColors(tree, folderColors, '', undefined);
+      applyFolderColors(tree, folderColors, '', undefined, undefined);
       const coloredCount = Object.keys(folderColors).length;
       console.log(`  - Applied ${coloredCount} folder color(s) with inheritance`);
     } catch (err) {
-      console.warn(`  ⚠ Could not parse folder-colors.json: ${err.message}`);
+      console.warn(`  ⚠ Could not parse folder-metadata.json: ${err.message}`);
     }
   }
+
+  // Resolve frontmatter icons (notes + folder icons from config) to SVG files
+  resolveIcons(tree);
 
   // Generate all output files
   generateManifest(tree);

@@ -28,8 +28,8 @@
             [routerLink]="['/' + projectSlug, note.id]"
             class="note-link"
           >
-            @if (note.icon) {
-            <app-iconify-icon class="note-icon" [icon]="note.icon" [size]="16" />
+            @if (note.iconSvg || note.icon) {
+            <app-iconify-icon class="note-icon" [icon]="note.iconSvg || note.icon" [size]="16" />
             }
             <span class="note-title">{{ note.title }}</span>
           </a>
@@ -53,8 +53,8 @@
             [routerLink]="['/' + projectSlug, note.id]"
             class="note-link"
           >
-            @if (note.icon) {
-            <app-iconify-icon class="note-icon" [icon]="note.icon" [size]="16" />
+            @if (note.iconSvg || note.icon) {
+            <app-iconify-icon class="note-icon" [icon]="note.iconSvg || note.icon" [size]="16" />
             }
             <span class="note-title">{{ note.title }}</span>
           </a>

@@ -56,6 +56,11 @@
   // Shadows
   --shadow-2: 0 4px 8px rgba(0, 0, 0, 0.3);
   --shadow-3: 0 8px 16px rgba(0, 0, 0, 0.4);
+
+  // SVG icons: invert black icons to white on dark backgrounds
+  img.svg-icon, img.wiki-link-icon {
+    filter: brightness(0) invert(1);
+  }
 }
 
 // ============================================================
@@ -109,6 +114,11 @@ html[data-theme="light"] {
   // Shadows — subtle gray
   --shadow-2: 0 4px 8px rgba(0, 0, 0, 0.08);
   --shadow-3: 0 8px 16px rgba(0, 0, 0, 0.12);
+
+  // SVG icons: show original colors on light background
+  img.svg-icon, img.wiki-link-icon {
+    filter: none;
+  }
 }
 
 // ============================================================
@@ -162,4 +172,9 @@ html[data-theme="dark"] {
   // Shadows
   --shadow-2: 0 4px 8px rgba(0, 0, 0, 0.3);
   --shadow-3: 0 8px 16px rgba(0, 0, 0, 0.4);
+
+  // SVG icons: invert black icons to white on dark backgrounds
+  img.svg-icon, img.wiki-link-icon {
+    filter: brightness(0) invert(1);
+  }
 }

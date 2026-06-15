@@ -11,7 +11,6 @@ import {
 import { isPlatformBrowser } from '@angular/common';
 import { Router } from '@angular/router';
 import { MarkdownService } from '../../../core/services';
-import { IconService } from '../../../core/services/icon.service';
 import { ProjectConfigService } from '../../../core/services/project-config.service';
 
 /**
@@ -33,7 +32,6 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
   private readonly renderer = inject(Renderer2);
   private readonly router = inject(Router);
   private readonly markdownService = inject(MarkdownService);
-  private readonly iconService = inject(IconService);
   private readonly projectConfig = inject(ProjectConfigService);
   private readonly platformId = inject(PLATFORM_ID);
   private readonly isBrowser = isPlatformBrowser(this.platformId);
@@ -189,25 +187,10 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
       return; // No icon specified
     }
 
-    // Get list of icon candidates (with cascading fallback)
-    const iconCandidates = this.iconService.getIconFallbackCandidates(iconName);
-    if (iconCandidates.length === 0) {
-      return; // Icon name not recognized
-    }
+    // Render icon inline: SVG path or emoji text
+    const iconElement = this.createIconElement(iconName, '16');
+    if (!iconElement) return;
 
-    // Create iconify-icon web component element directly using document.createElement
-    // (Angular's renderer doesn't properly handle custom elements/web components)
-    const iconElement = document.createElement('iconify-icon');
-    iconElement.classList.add('wiki-link-icon');
-    iconElement.setAttribute('width', '16');
-    iconElement.setAttribute('height', '16');
-    iconElement.style.marginRight = '4px';
-    iconElement.style.display = 'inline-flex';
-    iconElement.style.verticalAlign = 'middle';
-    
-    // Try icon candidates with cascading fallback
-    this.tryWikiIconCandidates(iconElement, iconCandidates, 0);
-    
     // Insert icon at the beginning of the link
     const firstChild = link.firstChild;
     if (firstChild) {
@@ -218,57 +201,41 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
   }
 
   /**
-   * Tries icon candidates in sequence for wiki-links
-   * Uses the same cascading fallback strategy as the main icon component
-   * Optimized for speed: 50ms per attempt
+   * Creates a DOM element for an icon: SVG img or emoji span.
+   * Returns null if the icon value is empty/unrecognized.
    */
-  private tryWikiIconCandidates(
-    iconElement: HTMLElement,
-    candidates: string[],
-    index: number
-  ): void {
-    if (index >= candidates.length) {
-      return; // No more candidates to try
+  private createIconElement(iconName: string, sizePx: string): HTMLElement | null {
+    if (!iconName) return null;
+
+    // SVG path from icons/ folder
+    if (iconName.startsWith('icons/')) {
+      const img = document.createElement('img');
+      img.className = 'wiki-link-icon';
+      img.setAttribute('src', iconName);
+      img.style.width = sizePx + 'px';
+      img.style.height = sizePx + 'px';
+      img.style.marginRight = '4px';
+      img.style.display = 'inline-flex';
+      img.style.verticalAlign = 'middle';
+      img.setAttribute('alt', '');
+      return img;
     }
 
-    // Set the current candidate
-    iconElement.setAttribute('icon', candidates[index]);
-
-    // Check if this icon loads successfully after a short delay (50ms)
-    setTimeout(() => {
-      const hasSvg = iconElement.shadowRoot?.querySelector('svg');
-      if (!hasSvg && index + 1 < candidates.length) {
-        // This candidate failed, try the next one
-        this.tryWikiIconCandidates(iconElement, candidates, index + 1);
-      }
-    }, 50);
-  }
-
-  /**
-   * Tries icon candidates in sequence for preview icons
-   * Same logic as wiki-link icons, but separate method for clarity
-   * Optimized for speed: 50ms per attempt
-   */
-  private tryPreviewIconCandidates(
-    iconElement: HTMLElement,
-    candidates: string[],
-    index: number
-  ): void {
-    if (index >= candidates.length) {
-      return; // No more candidates to try
+    // Emoji: render as text
+    const isEmoji = [...iconName].some(c => c.codePointAt(0)! > 0x2000);
+    if (isEmoji) {
+      const span = document.createElement('span');
+      span.className = 'wiki-link-icon wiki-link-emoji';
+      span.textContent = iconName;
+      span.style.marginRight = '4px';
+      span.style.display = 'inline-flex';
+      span.style.verticalAlign = 'middle';
+      span.style.fontSize = sizePx + 'px';
+      span.style.lineHeight = '1';
+      return span;
     }
 
-    // Set the current candidate
-    iconElement.setAttribute('icon', candidates[index]);
-
-    // Check if this icon loads successfully after a short delay (50ms)
-    setTimeout(() => {
-      const hasSvg = iconElement.shadowRoot?.querySelector('svg');
-      if (!hasSvg && index + 1 < candidates.length) {
-        // This candidate failed, try the next one
-        this.tryPreviewIconCandidates(iconElement, candidates, index + 1);
-      }
-    }, 50);
+    return null;
   }
 
   /**
@@ -513,25 +480,14 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
           );
           this.renderer.setStyle(titleElement, 'line-height', '1.2');
 
-          // Add icon if present in frontmatter (with cascading fallback)
-          if (note?.icon) {
-            // Get list of icon candidates (with cascading fallback)
-            const iconCandidates = this.iconService.getIconFallbackCandidates(note.icon);
-            if (iconCandidates.length > 0) {
-              // Create iconify-icon web component
-              const iconElement = document.createElement('iconify-icon');
-              iconElement.setAttribute('width', '32');
-              iconElement.setAttribute('height', '32');
-              iconElement.style.fontSize = '1.2em';
-              iconElement.style.color = primaryColor;
+          // Add icon if present in frontmatter
+          const iconValue = note?.iconSvg || note?.icon;
+          if (iconValue) {
+            const iconElement = this.createIconElement(iconValue, '32');
+            if (iconElement) {
               iconElement.style.flexShrink = '0';
-              iconElement.style.display = 'inline-flex';
-              iconElement.style.alignItems = 'center';
-              iconElement.style.justifyContent = 'center';
+              iconElement.style.color = primaryColor;
               titleElement.appendChild(iconElement);
-              
-              // Try icon candidates with cascading fallback
-              this.tryPreviewIconCandidates(iconElement, iconCandidates, 0);
             }
           }
 

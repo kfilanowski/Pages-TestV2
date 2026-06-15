@@ -1,5 +1,1 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="Arrow / Expand">
-<path id="Vector" d="M10 19H5V14M14 5H19V10" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#000" d="M64 64v128l48-48 48 48 32-32-48-48 48-48H64zm256 0 48 48-48 48 32 32 48-48 48 48V64H320zM64 320v128h128l-48-48 48-48-32-32-48 48-48-48zm288 0-32 32 48 48-48 48h128V320l-48 48-48-48z"/></svg>

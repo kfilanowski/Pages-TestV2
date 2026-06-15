@@ -3,8 +3,7 @@ import {
   inject, 
   OnInit, 
   signal, 
-  computed, 
-  CUSTOM_ELEMENTS_SCHEMA,
+  computed,
   ViewContainerRef,
   ComponentRef,
   AfterViewChecked,
@@ -39,7 +38,6 @@ import { CalculatorComponent } from '../../../../shared/components/calculator/ca
 @Component({
   selector: 'app-note-viewer',
   imports: [CommonModule, WikiLinkDirective, IconifyIconComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './note-viewer.component.html',
   styleUrl: './note-viewer.component.scss',
 })
@@ -137,7 +135,7 @@ export class NoteViewerComponent implements OnInit, AfterViewChecked {
       const canonicalId = note?.id ?? noteId;
       if (note) {
         this.noteTitle.set(note.title);
-        this.noteIcon.set(note.icon);
+        this.noteIcon.set(note.iconSvg || note.icon);
         
         // Update SEO meta tags for the page
         this.updateMetaTags(note.title, canonicalId);

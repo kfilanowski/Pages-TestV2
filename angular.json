@@ -32,6 +32,11 @@
                 "output": "assets"
               },
               {
+                "glob": "**/*.svg",
+                "input": "src/icons",
+                "output": "icons"
+              },
+              {
                 "glob": "404.html",
                 "input": "src",
                 "output": "/"

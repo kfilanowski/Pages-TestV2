@@ -327,7 +327,7 @@ export class MarkdownService {
     const projectSlug = projectConfig.projectNameSlug;
     const canonicalId = this.resolveNoteId(hrefNoteId);
     const note = this.notesMap.get(canonicalId);
-    const iconName = note?.icon || '';
+    const iconName = note?.iconSvg || note?.icon || '';
     const extraClass = note ? '' : ' coming-soon';
 
     return `<a href="/${projectSlug}/${canonicalId}" class="wiki-link${extraClass}" data-note-id="${canonicalId}" data-icon="${iconName}">${displayText}</a>`;
