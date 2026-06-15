@@ -330,7 +330,11 @@ export class MarkdownService {
     const iconName = note?.iconSvg || note?.icon || '';
     const extraClass = note ? '' : ' coming-soon';
 
-    return `<a href="/${projectSlug}/${canonicalId}" class="wiki-link${extraClass}" data-note-id="${canonicalId}" data-icon="${iconName}">${displayText}</a>`;
+    // Include the base href so browser-native navigation (right-click, Ctrl+Click) resolves correctly
+    const base = this.isBrowser
+      ? (document.querySelector('base')?.getAttribute('href') || '/').replace(/\/$/, '')
+      : '';
+    return `<a href="${base}/${projectSlug}/${canonicalId}" class="wiki-link${extraClass}" data-note-id="${canonicalId}" data-icon="${iconName}">${displayText}</a>`;
   }
 
   private getGraphLinks(

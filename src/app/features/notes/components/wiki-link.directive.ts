@@ -128,6 +128,20 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
         (event: Event) => {
           // Let the browser handle Ctrl+Click / Cmd+Click natively (open in new tab)
           if ((event as MouseEvent).ctrlKey || (event as MouseEvent).metaKey) {
+            event.preventDefault();
+            const noteId = (link as HTMLElement).getAttribute('data-note-id');
+            if (noteId) {
+              const canonicalId =
+                this.markdownService.getNoteById(noteId)?.id ?? noteId;
+              // Use Angular's router to generate the correct URL (includes base href)
+              const urlTree = this.router.createUrlTree([
+                this.projectConfig.getProjectNameSlug(),
+                canonicalId,
+              ]);
+              const base = document.querySelector('base')?.getAttribute('href') || '/';
+              const cleanBase = base.endsWith('/') ? base.slice(0, -1) : base;
+              window.open(window.location.origin + cleanBase + urlTree.toString(), '_blank');
+            }
             return;
           }
 
@@ -570,17 +584,17 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
     this.renderer.setStyle(
       previewElement,
       'max-width',
-      `${Math.min(700, viewportWidth - padding * 2)}px`
+      `${Math.min(400, viewportWidth - padding * 2)}px`
     );
     this.renderer.setStyle(
       previewElement,
       'min-width',
-      `${Math.min(500, viewportWidth - padding * 2)}px`
+      `${Math.min(300, viewportWidth - padding * 2)}px`
     );
     this.renderer.setStyle(
       previewElement,
       'max-height',
-      `${Math.min(500, viewportHeight - padding * 2)}px`
+      `${Math.min(350, viewportHeight - padding * 2)}px`
     );
     this.renderer.setStyle(previewElement, 'overflow-y', 'auto');
     this.renderer.setStyle(previewElement, 'background-color', contentBg);
@@ -669,8 +683,8 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
       const maxTop = viewportHeight - previewRect.height - padding;
       top = Math.max(minTop, Math.min(top, maxTop));
 
-      // Handle horizontal positioning - start aligned with link
-      left = rect.left;
+      // Handle horizontal positioning - offset slightly to the right to avoid covering adjacent content
+      left = rect.left + 30;
 
       // Clamp horizontal position to viewport bounds with padding
       const minLeft = padding;
