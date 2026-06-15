@@ -20,7 +20,7 @@
 :host {
   --header-height: 64px;
   --footer-height: 60px;
-  --sidebar-width: 280px;
+  --sidebar-width: 330px;
   --sidebar-transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --overlay-bg: rgba(62, 39, 35, 0.5);
 
@@ -53,7 +53,7 @@
 
   .main-content {
     padding: 32px;
-    max-width: 1400px;
+    max-width: 1500px;
     margin: 0 auto;
     min-height: 100%;
   }
@@ -135,7 +135,7 @@
 // Mobile devices
 @media (max-width: 767px) {
   :host {
-    --sidebar-width: 280px;
+    --sidebar-width: 330px;
   }
 
   .app-main .main-content {
@@ -146,7 +146,7 @@
 // Tablets and small desktops
 @media (min-width: 768px) and (max-width: 1279px) {
   :host {
-    --sidebar-width: 300px;
+    --sidebar-width: 350px;
   }
 
   .app-main .main-content {
@@ -157,10 +157,11 @@
 // Large screens
 @media (min-width: 1920px) {
   :host {
-    --sidebar-width: 320px;
+    --sidebar-width: 370px;
   }
 
   .app-main .main-content {
+    max-width: 1500px;
     padding: 48px;
   }
 }

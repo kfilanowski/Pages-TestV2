@@ -29,7 +29,10 @@
       @for (node of treeNodes(); track trackNode($index, node)) {
       <li>
         <ng-container
-          *ngTemplateOutlet="treeNodeTemplate; context: { $implicit: node }"
+          *ngTemplateOutlet="
+            treeNodeTemplate;
+            context: { $implicit: node, depth: 0 }
+          "
         ></ng-container>
       </li>
       }
@@ -39,7 +42,7 @@
 </div>
 
 <!-- Recursive template for tree nodes -->
-<ng-template #treeNodeTemplate let-node>
+<ng-template #treeNodeTemplate let-node let-depth="depth">
   @if (isFolder(node)) {
   <div class="folder-item" (click)="toggleFolder(node)">
     <mat-icon class="folder-icon">
@@ -49,11 +52,14 @@
   </div>
 
   @if (node.expanded) {
-  <ul class="tree-children">
+  <ul class="tree-children" [attr.data-depth]="depth + 1">
     @for (child of node.children; track trackNode($index, child)) {
     <li>
       <ng-container
-        *ngTemplateOutlet="treeNodeTemplate; context: { $implicit: child }"
+        *ngTemplateOutlet="
+          treeNodeTemplate;
+          context: { $implicit: child, depth: depth + 1 }
+        "
       ></ng-container>
     </li>
     }

@@ -152,6 +152,7 @@ a {
 
   // Border and separator colors - lighter for better visibility
   --border-color: rgb(70, 70, 70);
+  --tree-guide-color: rgba(255, 160, 100, 0.28);
 
   // Interactive states
   --hover-bg: rgba(255, 160, 100, 0.12);
@@ -202,6 +203,7 @@ html[data-theme="light"] {
 
   // Border and separator colors - warm beige
   --border-color: #d7ccc8;
+  --tree-guide-color: rgba(109, 76, 65, 0.22);
 
   // Interactive states
   --hover-bg: rgba(231, 138, 78, 0.08);
@@ -252,6 +254,7 @@ html[data-theme="dark"] {
 
   // Border and separator colors - lighter for better visibility
   --border-color: rgb(70, 70, 70);
+  --tree-guide-color: rgba(255, 160, 100, 0.28);
 
   // Interactive states
   --hover-bg: rgba(255, 160, 100, 0.12);
