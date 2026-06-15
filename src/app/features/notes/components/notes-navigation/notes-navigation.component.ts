@@ -252,7 +252,10 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
     targetNoteId: string
   ): boolean {
     for (const node of nodes) {
-      if (isNote(node) && node.id === targetNoteId) {
+      if (
+        isNote(node) &&
+        node.id.toLowerCase() === targetNoteId.toLowerCase()
+      ) {
         return true;
       }
 

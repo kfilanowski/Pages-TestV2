@@ -54,6 +54,9 @@ export class MarkdownService {
   // Flat map of all notes for quick lookup (used for wiki-links)
   private readonly notesMap = new Map<string, Note>();
 
+  // Case-insensitive lookup: lowercase id -> canonical id from manifest
+  private readonly noteIdLookup = new Map<string, string>();
+
   // Pre-built search index loaded from JSON
   private searchIndex?: SearchIndex;
 
@@ -147,14 +150,7 @@ export class MarkdownService {
       if (href && href.startsWith('wiki:')) {
         const noteId = href.substring(5); // Remove 'wiki:' prefix
         const displayText = text || noteId;
-        
-        // Look up the note to get its icon
-        const note = self.notesMap.get(noteId);
-        const iconName = note?.icon || '';
-
-        // Note: data-note-id and data-icon are preserved by Angular's sanitizer
-        // If icon exists, include it in the data attribute for client-side rendering
-        return `<a href="/${projectSlug}/${noteId}" class="wiki-link" data-note-id="${noteId}" data-icon="${iconName}">${displayText}</a>`;
+        return self.renderWikiLink(noteId, displayText);
       }
 
       // Check if this is a YouTube link and embed it
@@ -233,12 +229,7 @@ export class MarkdownService {
           renderer: (token: any) => {
             const noteId = token.href.substring(5); // Remove 'wiki:' prefix
             const displayText = token.text || noteId;
-            
-            // Look up the note to get its icon
-            const note = this.notesMap.get(noteId);
-            const iconName = note?.icon || '';
-            
-            return `<a href="/${projectSlug}/${noteId}" class="wiki-link" data-note-id="${noteId}" data-icon="${iconName}">${displayText}</a>`;
+            return this.renderWikiLink(noteId, displayText);
           }
         }
       ]
@@ -280,10 +271,44 @@ export class MarkdownService {
     for (const node of nodes) {
       if (isNote(node)) {
         this.notesMap.set(node.id, node);
+        this.noteIdLookup.set(node.id.toLowerCase(), node.id);
       } else if (isFolder(node)) {
         this.buildNotesMap(node.children);
       }
     }
+  }
+
+  /**
+   * Resolves a note ID to its canonical casing from the manifest.
+   * Wiki-links and URLs may use any casing (e.g. "necromancy" -> "Necromancy").
+   */
+  public resolveNoteId(noteId: string): string {
+    return this.noteIdLookup.get(noteId.toLowerCase()) ?? noteId;
+  }
+
+  private renderWikiLink(hrefNoteId: string, displayText: string): string {
+    const projectSlug = projectConfig.projectNameSlug;
+    const canonicalId = this.resolveNoteId(hrefNoteId);
+    const note = this.notesMap.get(canonicalId);
+    const iconName = note?.icon || '';
+
+    return `<a href="/${projectSlug}/${canonicalId}" class="wiki-link" data-note-id="${canonicalId}" data-icon="${iconName}">${displayText}</a>`;
+  }
+
+  private getGraphLinks(
+    linkMap: Map<string, string[]>,
+    noteId: string
+  ): string[] {
+    const normalizedId = noteId.toLowerCase();
+    const links: string[] = [];
+
+    for (const [key, value] of linkMap.entries()) {
+      if (key.toLowerCase() === normalizedId) {
+        links.push(...value);
+      }
+    }
+
+    return [...new Set(links)];
   }
 
   /**
@@ -300,7 +325,8 @@ export class MarkdownService {
       take(1),
       // Switch to the note loading logic
       switchMap(() => {
-        const note = this.notesMap.get(noteId);
+        const resolvedId = this.resolveNoteId(noteId);
+        const note = this.notesMap.get(resolvedId);
 
         if (!note) {
           console.warn(`Note not found in manifest: ${noteId}`);
@@ -426,14 +452,14 @@ export class MarkdownService {
    * Gets a note by its ID (for preview generation)
    */
   public getNoteById(noteId: string): Note | undefined {
-    return this.notesMap.get(noteId);
+    return this.notesMap.get(this.resolveNoteId(noteId));
   }
 
   /**
    * Generates a preview of a note (first 200 characters of content)
    */
   public generatePreview(noteId: string): Observable<string> {
-    const note = this.notesMap.get(noteId);
+    const note = this.notesMap.get(this.resolveNoteId(noteId));
 
     if (!note) {
       return of('Note not found');
@@ -473,7 +499,7 @@ export class MarkdownService {
    * Returns parsed markdown HTML for better formatting in tooltips
    */
   public generateHtmlPreview(noteId: string): Observable<string> {
-    const note = this.notesMap.get(noteId);
+    const note = this.notesMap.get(this.resolveNoteId(noteId));
 
     if (!note) {
       return of('<p>Note not found</p>');
@@ -590,14 +616,14 @@ export class MarkdownService {
    * Uses pre-loaded reference graph for instant results
    */
   public getOutgoingLinks(noteId: string): Note[] {
-    const linkIds = this.outgoingLinks.get(noteId);
-    if (!linkIds || linkIds.length === 0) {
+    const linkIds = this.getGraphLinks(this.outgoingLinks, noteId);
+    if (linkIds.length === 0) {
       return [];
     }
 
     const notes: Note[] = [];
     for (const linkId of linkIds) {
-      const note = this.notesMap.get(linkId);
+      const note = this.notesMap.get(this.resolveNoteId(linkId));
       if (note) {
         notes.push(note);
       }
@@ -611,14 +637,14 @@ export class MarkdownService {
    * Uses pre-loaded reference graph for instant results
    */
   public getIncomingLinks(noteId: string): Note[] {
-    const linkIds = this.incomingLinks.get(noteId);
-    if (!linkIds || linkIds.length === 0) {
+    const linkIds = this.getGraphLinks(this.incomingLinks, noteId);
+    if (linkIds.length === 0) {
       return [];
     }
 
     const notes: Note[] = [];
     for (const linkId of linkIds) {
-      const note = this.notesMap.get(linkId);
+      const note = this.notesMap.get(this.resolveNoteId(linkId));
       if (note) {
         notes.push(note);
       }

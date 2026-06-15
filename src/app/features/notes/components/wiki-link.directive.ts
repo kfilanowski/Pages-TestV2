@@ -143,9 +143,11 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
 
           const noteId = (link as HTMLElement).getAttribute('data-note-id');
           if (noteId) {
+            const canonicalId =
+              this.markdownService.getNoteById(noteId)?.id ?? noteId;
             this.router.navigate([
               this.projectConfig.getProjectNameSlug(),
-              noteId,
+              canonicalId,
             ]);
           }
         }

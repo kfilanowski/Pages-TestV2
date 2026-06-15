@@ -134,18 +134,19 @@ export class NoteViewerComponent implements OnInit, AfterViewChecked {
 
       // Get note metadata for title and icon
       const note = this.markdownService.getNoteById(noteId);
+      const canonicalId = note?.id ?? noteId;
       if (note) {
         this.noteTitle.set(note.title);
         this.noteIcon.set(note.icon);
         
         // Update SEO meta tags for the page
-        this.updateMetaTags(note.title, noteId);
+        this.updateMetaTags(note.title, canonicalId);
       } else {
         this.noteTitle.set(noteId);
         this.noteIcon.set(undefined);
         
         // Update with default meta tags
-        this.updateMetaTags(noteId, noteId);
+        this.updateMetaTags(noteId, canonicalId);
       }
 
       this.markdownService.loadNoteById(noteId).subscribe({
