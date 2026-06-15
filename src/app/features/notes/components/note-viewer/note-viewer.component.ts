@@ -125,10 +125,10 @@ export class NoteViewerComponent implements OnInit, AfterViewChecked {
   private loadNote(noteId: string): void {
     this.currentNoteId = noteId;
 
-    // Fade out current content (keep icon visible during fade-out)
+    // Fast fade-out of old content to signal transition
     this.contentVisible.set(false);
 
-    // Wait for fade-out animation to complete before loading new content
+    // Wait for quick fade-out, then load new content
     setTimeout(() => {
       this.error.set(null);
 
@@ -158,17 +158,15 @@ export class NoteViewerComponent implements OnInit, AfterViewChecked {
           const textContent = this.extractTextContent(html);
           this.updateMetaDescription(textContent);
 
-          // Brief delay to ensure DOM is updated, then fade in
-          setTimeout(() => {
-            this.contentVisible.set(true);
-          }, 50);
+          // Fade in when content is ready
+          this.contentVisible.set(true);
         },
         error: (err) => {
           this.error.set(`Failed to load note: ${err.message}`);
           this.contentVisible.set(false);
         },
       });
-    }, 125); // Match fade-out duration
+    }, 200); // Match smooth fade-out duration
   }
 
   /**

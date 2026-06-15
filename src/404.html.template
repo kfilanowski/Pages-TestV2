@@ -39,6 +39,17 @@
       document.documentElement.setAttribute('data-theme', theme);
     })();
   </script>
+  <!-- GitHub Pages SPA redirect: capture the requested path and redirect to index.html -->
+  <script>
+    (function() {
+      // Always redirect to index.html with the original path preserved
+      // This file is only served when GitHub Pages can't find a static file
+      var dest = location.protocol + '//' + location.host + '{{PROJECT_BASE_PATH}}?redirect=' + encodeURIComponent(location.href);
+      if (location.search.indexOf('redirect=') === -1) {
+        location.replace(dest);
+      }
+    })();
+  </script>
 </head>
 <body>
   <app-root></app-root>
