@@ -865,9 +865,35 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
         this.renderer.setStyle(contentEl, 'line-height', '1.6');
         this.renderer.setStyle(contentEl, 'font-size', '15px');
         this.renderer.setStyle(contentEl, 'margin-bottom', '1rem');
+        // Constrain images so they don't overflow the card
+        this.renderer.setStyle(contentEl, 'max-width', '100%');
+        this.renderer.setStyle(contentEl, 'overflow-x', 'hidden');
         this.renderer.setProperty(contentEl, 'innerHTML', htmlContent);
         this.applyPreviewStyling(contentEl);
         this.renderer.appendChild(card, contentEl);
+
+        // Constrain all images inside preview content
+        const imgs = contentEl.querySelectorAll('img');
+        imgs.forEach((img: Element) => {
+          this.renderer.setStyle(img, 'max-width', '100%');
+          this.renderer.setStyle(img, 'height', 'auto');
+        });
+
+        // Allow wiki-links inside the preview to navigate to another preview
+        const nestedLinks = contentEl.querySelectorAll('a.wiki-link');
+        nestedLinks.forEach((wl: Element) => {
+          const nestedClick = this.renderer.listen(wl, 'click', (e: Event) => {
+            e.preventDefault();
+            const nestedId = wl.getAttribute('data-note-id');
+            if (nestedId) {
+              this.hidePreview(overlay);
+              this.showMobilePreview(wl as HTMLElement, nestedId);
+            }
+          });
+          const contentListeners = this.previewListeners.get(contentEl) || [];
+          contentListeners.push(nestedClick);
+          this.previewListeners.set(contentEl, contentListeners);
+        });
 
         // Open button
         const openBtn = this.renderer.createElement('button');
