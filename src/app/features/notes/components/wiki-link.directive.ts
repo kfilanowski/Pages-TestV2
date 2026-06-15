@@ -36,6 +36,14 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
   private readonly platformId = inject(PLATFORM_ID);
   private readonly isBrowser = isPlatformBrowser(this.platformId);
 
+  /**
+   * Check if this is a touch device (mobile/tablet).
+   * On these devices we use tap-to-preview instead of hover.
+   */
+  private get isMobile(): boolean {
+    return this.isBrowser && 'ontouchstart' in window;
+  }
+
   private previewElements: HTMLElement[] = [];
   private currentHoverTarget: HTMLElement | null = null;
   private hoverTimeout: any = null;
@@ -103,37 +111,76 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
     wikiLinks.forEach((link: HTMLElement) => {
       // Add icon to wiki-link if it has a data-icon attribute
       this.addIconToWikiLink(link);
-      
-      // Hover listeners for preview
-      const mouseenterListener = this.renderer.listen(
-        link,
-        'mouseenter',
-        (event) => {
-          this.onWikiLinkHover(event.target as HTMLElement);
-        }
-      );
 
-      const mouseleaveListener = this.renderer.listen(
-        link,
-        'mouseleave',
-        () => {
-          this.onWikiLinkLeave(link as HTMLElement);
-        }
-      );
+      let mouseenterListener: (() => void) | undefined;
+      let mouseleaveListener: (() => void) | undefined;
+      let touchStartListener: (() => void) | undefined;
+      let touchEndListener: (() => void) | undefined;
+      let touchStartTime = 0;
+      let lastTouchWasTap = false;
+
+      // Hover previews only on desktop — mobile uses tap-to-preview
+      if (!this.isMobile) {
+        // Hover listeners for preview
+        mouseenterListener = this.renderer.listen(
+          link,
+          'mouseenter',
+          (event) => {
+            this.onWikiLinkHover(event.target as HTMLElement);
+          }
+        );
+
+        mouseleaveListener = this.renderer.listen(
+          link,
+          'mouseleave',
+          () => {
+            this.onWikiLinkLeave(link as HTMLElement);
+          }
+        );
+      } else {
+        // Mobile: touch tracking to distinguish tap vs long-press
+        touchStartListener = this.renderer.listen(link, 'touchstart', () => {
+          touchStartTime = Date.now();
+          lastTouchWasTap = false;
+        });
+
+        touchEndListener = this.renderer.listen(link, 'touchend', (event: TouchEvent) => {
+          const elapsed = Date.now() - touchStartTime;
+          if (elapsed < 300) {
+            // Quick tap — intercept and show preview
+            lastTouchWasTap = true;
+            event.preventDefault();
+            const noteId = link.getAttribute('data-note-id');
+            if (noteId) {
+              this.showMobilePreview(link, noteId);
+            }
+          }
+          // Long press (≥300ms) — do nothing, browser shows native context menu
+        });
+      }
 
       // Click listener for navigation
       const clickListener = this.renderer.listen(
         link,
         'click',
         (event: Event) => {
-          // Let the browser handle Ctrl+Click / Cmd+Click natively (open in new tab)
+          // On mobile: only prevent default if this was a quick tap (already handled in touchend)
+          if (this.isMobile) {
+            if (lastTouchWasTap) {
+              event.preventDefault();
+              // Preview already showing from touchend handler
+            }
+            // Long press: let browser handle context menu actions normally
+            return;
+          }
+
+          // Desktop: Ctrl+Click / Cmd+Click opens in new tab
           if ((event as MouseEvent).ctrlKey || (event as MouseEvent).metaKey) {
             event.preventDefault();
             const noteId = (link as HTMLElement).getAttribute('data-note-id');
             if (noteId) {
               const canonicalId =
                 this.markdownService.getNoteById(noteId)?.id ?? noteId;
-              // Use Angular's router to generate the correct URL (includes base href)
               const urlTree = this.router.createUrlTree([
                 this.projectConfig.getProjectNameSlug(),
                 canonicalId,
@@ -145,6 +192,7 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
             return;
           }
 
+          // Desktop regular click: navigate
           event.preventDefault();
 
           // Close any open preview and clear pending timeouts
@@ -171,21 +219,20 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
       );
 
       // Store listeners in appropriate collection
+      const listenersToStore: (() => void)[] = [];
+      if (mouseenterListener) listenersToStore.push(mouseenterListener);
+      if (mouseleaveListener) listenersToStore.push(mouseleaveListener);
+      if (touchStartListener) listenersToStore.push(touchStartListener);
+      if (touchEndListener) listenersToStore.push(touchEndListener);
+      listenersToStore.push(clickListener);
+
       if (isPreview && containerElement) {
         const previewListeners =
           this.previewListeners.get(containerElement) || [];
-        previewListeners.push(
-          mouseenterListener,
-          mouseleaveListener,
-          clickListener
-        );
+        listenersToStore.forEach(l => previewListeners.push(l));
         this.previewListeners.set(containerElement, previewListeners);
       } else {
-        this.listeners.push(
-          mouseenterListener,
-          mouseleaveListener,
-          clickListener
-        );
+        listenersToStore.forEach(l => this.listeners.push(l));
       }
     });
   }
@@ -739,6 +786,152 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
     if (this.previewElements.length === 0) {
       this.currentHoverTarget = null;
     }
+  }
+
+  /**
+   * Shows a centered preview overlay on mobile with an "Open" button.
+   * Tap on the backdrop to dismiss.
+   */
+  private showMobilePreview(linkElement: HTMLElement, noteId: string): void {
+    if (!this.isBrowser) return;
+
+    const note = this.markdownService.getNoteById(noteId);
+    const canonicalId = note?.id ?? noteId;
+    const noteTitle = note ? note.title : noteId;
+
+    // Get theme colors
+    if (!document.body) return;
+    const bodyStyles = getComputedStyle(document.body);
+    const contentBg = bodyStyles.getPropertyValue('--content-bg').trim() || '#faf8f3';
+    const primaryColor = bodyStyles.getPropertyValue('--primary-color').trim() || 'rgb(231, 138, 78)';
+    const textPrimary = bodyStyles.getPropertyValue('--text-primary').trim() || '#3e2723';
+    const borderColor = bodyStyles.getPropertyValue('--border-color').trim() || '#d7ccc8';
+
+    // Overlay
+    const overlay = this.renderer.createElement('div');
+    this.renderer.setStyle(overlay, 'position', 'fixed');
+    this.renderer.setStyle(overlay, 'top', '0');
+    this.renderer.setStyle(overlay, 'left', '0');
+    this.renderer.setStyle(overlay, 'width', '100%');
+    this.renderer.setStyle(overlay, 'height', '100%');
+    this.renderer.setStyle(overlay, 'background', 'rgba(0, 0, 0, 0.5)');
+    this.renderer.setStyle(overlay, 'z-index', '10001');
+    this.renderer.setStyle(overlay, 'display', 'flex');
+    this.renderer.setStyle(overlay, 'align-items', 'center');
+    this.renderer.setStyle(overlay, 'justify-content', 'center');
+    this.renderer.setStyle(overlay, 'padding', '20px');
+
+    // Card
+    const card = this.renderer.createElement('div');
+    this.renderer.setStyle(card, 'background', contentBg);
+    this.renderer.setStyle(card, 'border-radius', '12px');
+    this.renderer.setStyle(card, 'max-width', 'min(90vw, 450px)');
+    this.renderer.setStyle(card, 'max-height', '80vh');
+    this.renderer.setStyle(card, 'overflow-y', 'auto');
+    this.renderer.setStyle(card, 'padding', '24px');
+    this.renderer.setStyle(card, 'box-shadow', '0 8px 32px rgba(0,0,0,0.3)');
+    this.renderer.setStyle(card, 'color', textPrimary);
+    this.renderer.setStyle(card, 'font-size', '16px');
+    this.renderer.setStyle(card, 'line-height', '1.6');
+    this.renderer.setStyle(card, 'font-family', '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif');
+
+    // Loading state
+    const loadingText = this.renderer.createText('Loading preview...');
+    this.renderer.appendChild(card, loadingText);
+    this.renderer.appendChild(overlay, card);
+    this.renderer.appendChild(document.body, overlay);
+
+    // Track for cleanup
+    this.previewElements.push(overlay);
+
+    // Dismiss on backdrop tap
+    const backdropClick = this.renderer.listen(overlay, 'click', (e: Event) => {
+      if (e.target === overlay) {
+        this.hidePreview(overlay);
+      }
+    });
+    const overlayListeners = this.previewListeners.get(overlay) || [];
+    overlayListeners.push(backdropClick);
+    this.previewListeners.set(overlay, overlayListeners);
+
+    // Load preview content
+    this.markdownService.generateHtmlPreview(canonicalId).subscribe({
+      next: (htmlContent) => {
+        if (!this.previewElements.includes(overlay)) return;
+
+        // Clear loading text
+        while (card.firstChild) {
+          this.renderer.removeChild(card, card.firstChild);
+        }
+
+        // Title
+        const titleEl = this.renderer.createElement('h1');
+        this.renderer.setStyle(titleEl, 'font-size', '1.5em');
+        this.renderer.setStyle(titleEl, 'font-weight', '700');
+        this.renderer.setStyle(titleEl, 'color', primaryColor);
+        this.renderer.setStyle(titleEl, 'margin', '0 0 0.75rem 0');
+        this.renderer.setStyle(titleEl, 'padding-bottom', '0.5rem');
+        this.renderer.setStyle(titleEl, 'border-bottom', `2px solid ${borderColor}`);
+
+        const iconValue = note?.iconSvg || note?.icon;
+        if (iconValue) {
+          const iconEl = this.createIconElement(iconValue, '24');
+          if (iconEl) {
+            iconEl.style.flexShrink = '0';
+            titleEl.appendChild(iconEl);
+          }
+        }
+        const titleText = this.renderer.createText(noteTitle);
+        titleEl.appendChild(titleText);
+        this.renderer.appendChild(card, titleEl);
+
+        // Content
+        const contentEl = this.renderer.createElement('div');
+        this.renderer.setStyle(contentEl, 'color', textPrimary);
+        this.renderer.setStyle(contentEl, 'line-height', '1.6');
+        this.renderer.setStyle(contentEl, 'font-size', '15px');
+        this.renderer.setStyle(contentEl, 'margin-bottom', '1rem');
+        this.renderer.setProperty(contentEl, 'innerHTML', htmlContent);
+        this.applyPreviewStyling(contentEl);
+        this.renderer.appendChild(card, contentEl);
+
+        // Open button
+        const openBtn = this.renderer.createElement('button');
+        this.renderer.setStyle(openBtn, 'display', 'block');
+        this.renderer.setStyle(openBtn, 'width', '100%');
+        this.renderer.setStyle(openBtn, 'padding', '12px');
+        this.renderer.setStyle(openBtn, 'background', primaryColor);
+        this.renderer.setStyle(openBtn, 'color', '#fff');
+        this.renderer.setStyle(openBtn, 'border', 'none');
+        this.renderer.setStyle(openBtn, 'border-radius', '8px');
+        this.renderer.setStyle(openBtn, 'font-size', '16px');
+        this.renderer.setStyle(openBtn, 'font-weight', '600');
+        this.renderer.setStyle(openBtn, 'cursor', 'pointer');
+        const btnText = this.renderer.createText('Open');
+        this.renderer.appendChild(openBtn, btnText);
+
+        const openClick = this.renderer.listen(openBtn, 'click', () => {
+          this.router.navigate([
+            this.projectConfig.getProjectNameSlug(),
+            canonicalId,
+          ]);
+          this.hidePreview(overlay);
+        });
+        const btnListeners = this.previewListeners.get(overlay) || [];
+        btnListeners.push(openClick);
+        this.previewListeners.set(overlay, btnListeners);
+
+        this.renderer.appendChild(card, openBtn);
+      },
+      error: () => {
+        if (!this.previewElements.includes(overlay)) return;
+        while (card.firstChild) {
+          this.renderer.removeChild(card, card.firstChild);
+        }
+        const errText = this.renderer.createText('Failed to load preview');
+        this.renderer.appendChild(card, errText);
+      },
+    });
   }
 
   /**
