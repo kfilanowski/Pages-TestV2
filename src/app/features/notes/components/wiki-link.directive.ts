@@ -801,7 +801,9 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
     this.renderer.setStyle(card, 'border-radius', '12px');
     this.renderer.setStyle(card, 'max-width', 'min(90vw, 450px)');
     this.renderer.setStyle(card, 'max-height', '80vh');
-    this.renderer.setStyle(card, 'overflow-y', 'auto');
+    this.renderer.setStyle(card, 'display', 'flex');
+    this.renderer.setStyle(card, 'flex-direction', 'column');
+    this.renderer.setStyle(card, 'overflow-y', 'hidden');
     this.renderer.setStyle(card, 'padding', '24px');
     this.renderer.setStyle(card, 'box-shadow', '0 8px 32px rgba(0,0,0,0.3)');
     this.renderer.setStyle(card, 'color', textPrimary);
@@ -809,9 +811,16 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
     this.renderer.setStyle(card, 'line-height', '1.6');
     this.renderer.setStyle(card, 'font-family', '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif');
 
+    // Scrollable content area (title + content), button is stuck below
+    const scrollArea = this.renderer.createElement('div');
+    this.renderer.setStyle(scrollArea, 'flex', '1');
+    this.renderer.setStyle(scrollArea, 'overflow-y', 'auto');
+    this.renderer.setStyle(scrollArea, 'min-height', '0');
+
     // Loading state
     const loadingText = this.renderer.createText('Loading preview...');
-    this.renderer.appendChild(card, loadingText);
+    this.renderer.appendChild(scrollArea, loadingText);
+    this.renderer.appendChild(card, scrollArea);
     this.renderer.appendChild(overlay, card);
     this.renderer.appendChild(document.body, overlay);
 
@@ -833,9 +842,9 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
       next: (htmlContent) => {
         if (!this.previewElements.includes(overlay)) return;
 
-        // Clear loading text
-        while (card.firstChild) {
-          this.renderer.removeChild(card, card.firstChild);
+        // Clear loading text from the scrollable area
+        while (scrollArea.firstChild) {
+          this.renderer.removeChild(scrollArea, scrollArea.firstChild);
         }
 
         // Title
@@ -857,20 +866,20 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
         }
         const titleText = this.renderer.createText(noteTitle);
         titleEl.appendChild(titleText);
-        this.renderer.appendChild(card, titleEl);
+        this.renderer.appendChild(scrollArea, titleEl);
 
         // Content
         const contentEl = this.renderer.createElement('div');
         this.renderer.setStyle(contentEl, 'color', textPrimary);
         this.renderer.setStyle(contentEl, 'line-height', '1.6');
         this.renderer.setStyle(contentEl, 'font-size', '15px');
-        this.renderer.setStyle(contentEl, 'margin-bottom', '1rem');
+        this.renderer.setStyle(contentEl, 'margin-bottom', '0');
         // Constrain images so they don't overflow the card
         this.renderer.setStyle(contentEl, 'max-width', '100%');
         this.renderer.setStyle(contentEl, 'overflow-x', 'hidden');
         this.renderer.setProperty(contentEl, 'innerHTML', htmlContent);
         this.applyPreviewStyling(contentEl);
-        this.renderer.appendChild(card, contentEl);
+        this.renderer.appendChild(scrollArea, contentEl);
 
         // Constrain all images inside preview content
         const imgs = contentEl.querySelectorAll('img');
@@ -900,6 +909,8 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
         this.renderer.setStyle(openBtn, 'display', 'block');
         this.renderer.setStyle(openBtn, 'width', '100%');
         this.renderer.setStyle(openBtn, 'padding', '12px');
+        this.renderer.setStyle(openBtn, 'margin-top', '12px');
+        this.renderer.setStyle(openBtn, 'flex-shrink', '0');
         this.renderer.setStyle(openBtn, 'background', primaryColor);
         this.renderer.setStyle(openBtn, 'color', '#fff');
         this.renderer.setStyle(openBtn, 'border', 'none');
@@ -925,11 +936,11 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
       },
       error: () => {
         if (!this.previewElements.includes(overlay)) return;
-        while (card.firstChild) {
-          this.renderer.removeChild(card, card.firstChild);
+        while (scrollArea.firstChild) {
+          this.renderer.removeChild(scrollArea, scrollArea.firstChild);
         }
         const errText = this.renderer.createText('Failed to load preview');
-        this.renderer.appendChild(card, errText);
+        this.renderer.appendChild(scrollArea, errText);
       },
     });
   }
