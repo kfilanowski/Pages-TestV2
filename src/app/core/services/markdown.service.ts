@@ -426,8 +426,16 @@ export class MarkdownService {
       }
     );
 
+    // Ensure blank line between a table (line ending with |) and any
+    // following content line that doesn't start with |, otherwise marked's
+    // GFM parser swallows it as part of the table
+    const tableHrFix = processedWithColors.replace(
+      /(\|[^\n]*)\n(?=[^\n|])/g,
+      '$1\n\n'
+    );
+
     // Parse markdown to HTML
-    let html = marked.parse(processedWithColors) as string;
+    let html = marked.parse(tableHrFix) as string;
 
     // Post-process: Convert custom icon syntax to Font Awesome icons
     // Syntax: :icon:icon-name: or :icon:icon-name|size: or :icon:icon-name|size|color:
