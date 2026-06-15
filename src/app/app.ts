@@ -76,6 +76,10 @@ export class App implements OnInit, OnDestroy {
   protected readonly isDarkMode = this.themeService.isDarkMode;
 
   ngOnInit(): void {
+    // GitHub Pages SPA redirect: restore original URL from ?redirect= parameter
+    // The 404.html redirects from any sub-route to index.html?redirect=originalUrl
+    this.restoreSpaRedirect();
+
     // Listen to all navigation events and extract note ID from activated routes
     this.routerSubscription = this.router.events
       .pipe(
@@ -176,6 +180,24 @@ export class App implements OnInit, OnDestroy {
       return false;
     }
     return window.innerWidth < this.DESKTOP_BREAKPOINT;
+  }
+
+  /**
+   * Restores the original URL from the ?redirect= parameter.
+   * Used for GitHub Pages SPA support: when a user navigates to a sub-route
+   * (e.g. /Pages-TestV2/Nick-Nacks/Barbarian), the 404.html redirects them to
+   * /Pages-TestV2/?redirect=<encodedUrl>. Angular then restores the original URL
+   * so the router picks up the correct route.
+   */
+  private restoreSpaRedirect(): void {
+    if (typeof window === 'undefined') return;
+
+    const params = new URLSearchParams(window.location.search);
+    const redirect = params.get('redirect');
+    if (redirect) {
+      const decodedUrl = decodeURIComponent(redirect);
+      history.replaceState(null, '', decodedUrl);
+    }
   }
 
   /**
