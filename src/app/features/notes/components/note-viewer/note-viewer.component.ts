@@ -158,8 +158,11 @@ export class NoteViewerComponent implements OnInit, AfterViewChecked {
           const textContent = this.extractTextContent(html);
           this.updateMetaDescription(textContent);
 
-          // Fade in when content is ready
-          this.contentVisible.set(true);
+          // Wait one frame so browser paints new content at opacity 0,
+          // then fade in so the transition actually fires
+          setTimeout(() => {
+            this.contentVisible.set(true);
+          }, 20);
         },
         error: (err) => {
           this.error.set(`Failed to load note: ${err.message}`);
