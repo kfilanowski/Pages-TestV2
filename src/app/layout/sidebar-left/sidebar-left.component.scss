@@ -29,41 +29,6 @@
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-
-    .sidebar-title {
-      margin: 0;
-      font-size: 1.25rem;
-      font-weight: 500;
-      color: var(--text-color, var(--text-primary, #212121));
-    }
-
-    .sidebar-actions {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-    }
-
-    .theme-toggle,
-    .close-toggle {
-      color: var(--text-color, var(--text-primary, #212121));
-      transition: transform 0.2s ease;
-
-      &:hover {
-        transform: scale(1.1);
-      }
-
-      &:active {
-        transform: scale(0.95);
-      }
-    }
-
-    .theme-toggle mat-icon {
-      transition: transform 0.3s ease;
-    }
-
-    .theme-toggle:hover mat-icon {
-      transform: rotate(20deg);
-    }
   }
 
   // Navigation Component - constrain to remaining space

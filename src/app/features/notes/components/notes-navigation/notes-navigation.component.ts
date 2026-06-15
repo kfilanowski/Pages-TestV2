@@ -1,4 +1,4 @@
-import { Component, inject, signal, OnInit, OnDestroy, computed, ChangeDetectionStrategy, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, inject, input, output, signal, OnInit, OnDestroy, computed, ChangeDetectionStrategy, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterModule, NavigationEnd } from '@angular/router';
 import { FormsModule } from '@angular/forms';
@@ -52,6 +52,13 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
   // Project configuration exposed to template
   protected readonly projectName = this.projectConfig.getProjectName();
   protected readonly projectSlug = this.projectConfig.getProjectNameSlug();
+
+  // Inputs from parent
+  readonly isDarkMode = input.required<boolean>();
+
+  // Outputs to parent
+  readonly toggleTheme = output<void>();
+  readonly toggleSidebar = output<void>();
 
   // Reactive state for tree nodes
   private readonly allTreeNodes = signal<NoteTreeNode[]>([]);

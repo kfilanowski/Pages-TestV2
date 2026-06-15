@@ -1,23 +1,14 @@
 import { Component, input, output } from '@angular/core';
 import { NotesNavigationComponent } from '../../features/notes/components';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
-import { MatTooltipModule } from '@angular/material/tooltip';
 
 /**
  * Left Sidebar Component
  *
- * Displays the notes navigation tree in the left sidebar with header controls
- *
- * Design decisions:
- * - Delegates notes navigation to NotesNavigationComponent
- * - Visibility controlled by parent component
- * - Single Responsibility: Container for notes navigation
- * - Now includes sidebar header with close and theme toggle buttons
+ * Container for the notes navigation tree.
  */
 @Component({
   selector: 'app-sidebar-left',
-  imports: [NotesNavigationComponent, MatIconModule, MatButtonModule, MatTooltipModule],
+  imports: [NotesNavigationComponent],
   templateUrl: './sidebar-left.component.html',
   styleUrl: './sidebar-left.component.scss',
 })

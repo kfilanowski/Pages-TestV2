@@ -2,9 +2,17 @@
   <div class="navigation-header">
     <div class="header-row">
       <h3>{{ projectName }}</h3>
-      <button class="collapse-button" (click)="collapseAllFolders()" title="Collapse all folders" mat-icon-button>
-        <mat-icon>unfold_less</mat-icon>
-      </button>
+      <div class="header-actions">
+        <button class="icon-button" (click)="collapseAllFolders()" title="Collapse all folders">
+          <mat-icon>unfold_less</mat-icon>
+        </button>
+        <button class="icon-button" (click)="toggleTheme.emit()" [title]="isDarkMode() ? 'Light mode' : 'Dark mode'">
+          <mat-icon>{{ isDarkMode() ? "light_mode" : "dark_mode" }}</mat-icon>
+        </button>
+        <button class="icon-button" (click)="toggleSidebar.emit()" title="Close sidebar">
+          <mat-icon>close</mat-icon>
+        </button>
+      </div>
     </div>
     <div class="search-container">
       <input
