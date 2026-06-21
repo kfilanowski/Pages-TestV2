@@ -31,11 +31,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Generate manifest
-        run: npm run generate:manifest
-
       - name: Build for GitHub Pages
-        run: npm run build:gh-pages
+        run: node scripts/build-gh-pages.js
 
       - name: Verify 404.html exists in build output
         run: |

@@ -83,7 +83,6 @@
               "sourceMap": false,
               "extractLicenses": true,
               "outputMode": "static",
-              "baseHref": "/Pages-TestV2/",
               "ssr": false,
               "namedChunks": true,
               "budgets": [
