@@ -14,6 +14,7 @@ import {
   forkJoin,
   firstValueFrom,
   combineLatest,
+  Subject,
 } from 'rxjs';
 import { marked } from 'marked';
 import {
@@ -82,6 +83,14 @@ export class MarkdownService {
   ]).pipe(
     map(([manifestReady, graphReady]) => manifestReady && graphReady),
   );
+
+  // Event bus for focusing a folder in the sidebar tree
+  private readonly focusFolderSubject = new Subject<string>();
+  public readonly focusFolder$ = this.focusFolderSubject.asObservable();
+
+  public focusFolder(folderPath: string): void {
+    this.focusFolderSubject.next(folderPath);
+  }
 
   // Track if search index is loaded
   private readonly searchIndexReadySubject = new BehaviorSubject<boolean>(
@@ -770,6 +779,36 @@ export class MarkdownService {
     }
 
     return unresolved.sort((a, b) => a.localeCompare(b));
+  }
+
+  /**
+   * Finds the first note ID inside a folder by its relative path.
+   * Walks the tree recursively; returns null if the folder is empty or not found.
+   */
+  public getFolderFirstNoteId(folderPath: string): string | null {
+    const tree = this.notesTreeSubject.getValue();
+    return this.findFirstNoteInTree(tree, folderPath);
+  }
+
+  private findFirstNoteInTree(nodes: NoteTreeNode[], targetPath: string): string | null {
+    for (const node of nodes) {
+      if (isFolder(node)) {
+        if (node.path === targetPath) {
+          return this.firstNoteId(node);
+        }
+        const child = this.findFirstNoteInTree(node.children, targetPath);
+        if (child) return child;
+      }
+    }
+    return null;
+  }
+
+  private firstNoteId(folder: NoteFolder): string | null {
+    for (const child of folder.children) {
+      if (isNote(child)) return child.id;
+      if (isFolder(child)) return this.firstNoteId(child);
+    }
+    return null;
   }
 
   /**

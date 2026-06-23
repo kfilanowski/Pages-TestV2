@@ -6,6 +6,21 @@
     <button (click)="retry()">Retry</button>
   </div>
   } @else {
+  <!-- Breadcrumb trail — above the fade container for persistent placement -->
+  @if (breadcrumbs().length) {
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    @for (crumb of breadcrumbs(); track $index; let last = $last) {
+      <span class="crumb-segment"
+        [class.clickable]="crumb.folderPath !== null"
+        [class.current]="crumb.folderPath === null"
+        (click)="onCrumbClick(crumb)"
+        role="button"
+        tabindex="0"
+      >{{ crumb.label }}</span>
+      @if (!last) { <span class="crumb-sep">›</span> }
+    }
+  </nav>
+  }
   <div class="note-container" [style.opacity]="contentVisible() ? 1 : 0">
     <h1 class="note-title">
       @if (noteIcon()) {

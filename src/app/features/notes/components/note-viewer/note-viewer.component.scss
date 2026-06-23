@@ -3,7 +3,50 @@
   height: 100%;
   overflow-y: auto;
   background-color: var(--content-bg, #ffffff);
-  padding: 38px 2rem 2rem 2rem;
+  padding: 0 2rem 2rem 2rem;
+}
+
+// Breadcrumb navigation trail — natural document flow
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 0.5rem 0 2rem 0;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: var(--text-secondary, #888);
+}
+
+.crumb-segment {
+  color: var(--text-secondary, #888);
+  font-weight: 400;
+
+  &.clickable {
+    cursor: pointer;
+    padding: 0.1em 0.35em;
+    border-radius: 4px;
+    transition: background 0.15s ease, color 0.15s ease;
+    color: var(--link-color, #7b9aff);
+
+    &:hover {
+      background: var(--hover-bg, rgba(128, 128, 128, 0.1));
+      text-decoration: underline;
+    }
+  }
+
+  &.current {
+    color: var(--text-primary, #333);
+    font-weight: 500;
+  }
+}
+
+.crumb-sep {
+  margin: 0 0.3em;
+  color: var(--text-tertiary, #bbb);
+  user-select: none;
+  font-size: 1.1em;
 }
 
 .error-state {

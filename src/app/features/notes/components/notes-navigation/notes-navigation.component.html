@@ -57,7 +57,7 @@
 <!-- Recursive template for tree nodes -->
 <ng-template #treeNodeTemplate let-node let-depth="depth">
   @if (isFolder(node)) {
-  <div class="folder-item" (click)="toggleFolder(node)" [style.color]="node.color">
+  <div class="folder-item" (click)="toggleFolder(node)" [style.color]="node.color" [attr.data-folder-path]="node.path">
     @if (node.iconSvg || node.icon) {
     <app-iconify-icon [icon]="node.iconSvg || node.icon" [size]="20" class="folder-icon" />
     } @else {

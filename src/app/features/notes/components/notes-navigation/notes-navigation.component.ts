@@ -66,6 +66,7 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
   // Search state with debouncing
   private readonly searchInputSubject = new Subject<string>();
   private searchSubscription?: Subscription;
+  private focusSubscription?: Subscription;
   protected readonly searchQuery = signal<string>('');
   protected readonly searchResults = toSignal(
     this.searchService.searchResults$,
@@ -156,6 +157,11 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
           this.allTreeNodes.set([...this.allTreeNodes()]);
         }
       });
+
+    // Listen for breadcrumb folder focus events
+    this.focusSubscription = this.markdownService.focusFolder$.subscribe((folderPath) => {
+      this.expandAndScrollToFolder(folderPath);
+    });
 
     // Listen to route changes to expand the tree
     this.router.events
@@ -336,8 +342,20 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
     return false;
   }
 
+  /**
+   * Called when a breadcrumb folder segment is clicked.
+   * Scrolls the sidebar to that folder without changing expanded state.
+   */
+  private expandAndScrollToFolder(folderPath: string): void {
+    setTimeout(() => {
+      const el = document.querySelector(`[data-folder-path="${folderPath}"]`);
+      el?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    }, 200);
+  }
+
   ngOnDestroy(): void {
     // Clean up search subscription to prevent memory leaks
     this.searchSubscription?.unsubscribe();
+    this.focusSubscription?.unsubscribe();
   }
 }
