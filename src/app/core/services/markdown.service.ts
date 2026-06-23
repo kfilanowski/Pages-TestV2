@@ -13,6 +13,7 @@ import {
   filter,
   forkJoin,
   firstValueFrom,
+  combineLatest,
 } from 'rxjs';
 import { marked } from 'marked';
 import {
@@ -73,8 +74,14 @@ export class MarkdownService {
   private readonly referenceGraphReadySubject = new BehaviorSubject<boolean>(
     false
   );
-  public readonly referenceGraphReady$ =
-    this.referenceGraphReadySubject.asObservable();
+
+  /** Emits true when both the manifest and reference graph have loaded */
+  public readonly referenceGraphReady$ = combineLatest([
+    this.manifestLoaded$,
+    this.referenceGraphReadySubject,
+  ]).pipe(
+    map(([manifestReady, graphReady]) => manifestReady && graphReady),
+  );
 
   // Track if search index is loaded
   private readonly searchIndexReadySubject = new BehaviorSubject<boolean>(
