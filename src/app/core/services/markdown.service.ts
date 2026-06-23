@@ -457,7 +457,7 @@ export class MarkdownService {
       imageEmbedRegex,
       (_match: string, inner: string) => {
         const parts = inner.split('|');
-        const path = parts[0]?.trim() || '';
+        const path = encodeURI(parts[0]?.trim() || '');
         let alt = '';
         let width = '';
         if (parts.length >= 3) {
