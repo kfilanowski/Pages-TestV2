@@ -21,11 +21,13 @@
   />
 
   <!-- Right Sidebar Component -->
+  @if (features.isEnabled('right_sidebar')) {
   <app-sidebar-right
     [isOpen]="rightSidebarOpen()"
     [currentNoteId]="currentNoteId()"
     (toggleSidebar)="toggleRightSidebar()"
   />
+  }
 
   <!-- Main Content Area -->
   <main
@@ -61,7 +63,7 @@
   </button>
   }
   
-  @if (!rightSidebarOpen() && !features.isEnabled('header')) {
+  @if (!rightSidebarOpen() && !features.isEnabled('header') && features.isEnabled('right_sidebar')) {
   <button
     class="floating-toggle right-floating-toggle"
     mat-icon-button

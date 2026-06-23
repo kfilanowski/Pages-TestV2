@@ -28,6 +28,7 @@ import {
   isFolder,
 } from '../interfaces';
 import projectConfig from '../../../../project.config.json';
+import { FeaturesService } from './features.service';
 
 /**
  * Service responsible for loading, parsing, and managing Obsidian markdown notes.
@@ -45,6 +46,7 @@ export class MarkdownService {
   private readonly http = inject(HttpClient);
   private readonly platformId = inject(PLATFORM_ID);
   private readonly isBrowser = isPlatformBrowser(this.platformId);
+  private readonly featuresService = inject(FeaturesService);
 
   // Cache for loaded notes to avoid redundant HTTP requests
   private readonly notesCache = new Map<string, string>();
@@ -340,6 +342,11 @@ export class MarkdownService {
   }
 
   private renderWikiLink(hrefNoteId: string, displayText: string): string {
+    // When wiki-links are disabled, render as plain text
+    if (!this.featuresService.isEnabled('wiki_links')) {
+      return displayText;
+    }
+
     const projectSlug = projectConfig.projectNameSlug;
     const canonicalId = this.resolveNoteId(hrefNoteId);
     const note = this.notesMap.get(canonicalId);

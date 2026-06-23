@@ -3,6 +3,7 @@ import features from '../../../config/features.json';
 
 /**
  * Feature flag interface matching src/config/features.json
+ * Boolean fields use isEnabled() to check; string fields use getString().
  */
 export interface FeatureFlags {
   header: boolean;
@@ -10,6 +11,18 @@ export interface FeatureFlags {
   breadcrumbs: boolean;
   disclosure_chevrons: boolean;
   folder_count_badges: boolean;
+  right_sidebar: boolean;
+  referenced_pages: boolean;
+  referencing_pages: boolean;
+  coming_soon: boolean;
+  search_bar: boolean;
+  search_full_content: boolean;
+  search_highlight: boolean;
+  theme_toggle: boolean;
+  wiki_links: boolean;
+  tree_colors: boolean;
+  tree_icons: boolean;
+  collapse_all: boolean;
 }
 
 /**
@@ -17,14 +30,19 @@ export interface FeatureFlags {
  * Flags are baked in at build time — no runtime fetching needed.
  */
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class FeaturesService {
   private readonly flags: FeatureFlags = features;
 
-  /** Check if a specific feature is enabled */
+  /** Check if a specific boolean feature is enabled */
   isEnabled<K extends keyof FeatureFlags>(key: K): boolean {
-    return this.flags[key];
+    return Boolean(this.flags[key]);
+  }
+
+  /** Get a string-based config value */
+  getString<K extends keyof FeatureFlags>(key: K): string {
+    return String(this.flags[key]);
   }
 
   /** Get all feature flags (useful for templates with multiple checks) */

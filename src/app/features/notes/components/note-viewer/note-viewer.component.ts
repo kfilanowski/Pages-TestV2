@@ -94,9 +94,13 @@ export class NoteViewerComponent implements OnInit, AfterViewChecked {
       return this.sanitizer.bypassSecurityTrustHtml(content);
     }
 
-    // Apply highlighting to the content
-    const highlighted = this.highlightSearchTerms(content, query);
-    return this.sanitizer.bypassSecurityTrustHtml(highlighted);
+    // Apply highlighting only if feature flag is on
+    if (this.features.isEnabled('search_highlight')) {
+      const highlighted = this.highlightSearchTerms(content, query);
+      return this.sanitizer.bypassSecurityTrustHtml(highlighted);
+    }
+
+    return this.sanitizer.bypassSecurityTrustHtml(content);
   });
 
   ngOnInit(): void {

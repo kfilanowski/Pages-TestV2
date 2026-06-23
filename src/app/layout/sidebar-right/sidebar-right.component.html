@@ -19,6 +19,7 @@
 
     @if (currentNoteId()) {
     <!-- Outgoing Links Section -->
+    @if (features.isEnabled('referenced_pages')) {
     <div class="info-section" [class.fade-in]="true">
       <h3>Referenced Pages</h3>
       @if (outgoingLinks().length > 0) {
@@ -42,8 +43,10 @@
       <p class="empty-state">No outgoing links</p>
       }
     </div>
+    }
 
     <!-- Incoming Links (Backlinks) Section -->
+    @if (features.isEnabled('referencing_pages')) {
     <div class="info-section" [class.fade-in]="referenceGraphReady()">
       <h3>Referencing Pages</h3>
       @if (referenceGraphReady()) { @if (incomingLinks().length > 0) {
@@ -67,8 +70,10 @@
       <p class="empty-state">No backlinks</p>
       } }
     </div>
+    }
 
     <!-- Coming Soon Section -->
+    @if (features.isEnabled('coming_soon')) {
     <div class="info-section coming-soon-section" [class.fade-in]="unresolvedLinks().length > 0">
       <h3>Coming Soon</h3>
       @if (unresolvedLinks().length > 0) {
@@ -89,6 +94,7 @@
       <p class="empty-state">All linked pages exist</p>
       }
     </div>
+    }
     } @else {
     <div class="info-content fade-in">
       <p class="empty-state">Select a note to view its links</p>
