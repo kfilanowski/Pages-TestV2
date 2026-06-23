@@ -1,4 +1,4 @@
-<div class="app-container">
+<div class="app-container" [class.header-enabled]="features.isEnabled('header')">
   <!-- Header Component -->
   @if (features.isEnabled('header')) {
   <app-header
@@ -30,6 +30,7 @@
   <!-- Main Content Area -->
   <main
     class="app-main"
+    [class.header-enabled]="features.isEnabled('header')"
     [class.left-sidebar-open]="leftSidebarOpen()"
     [class.right-sidebar-open]="rightSidebarOpen()"
   >
@@ -48,7 +49,7 @@
   }
 
   <!-- Floating toggle buttons when sidebars are closed -->
-  @if (!leftSidebarOpen()) {
+  @if (!leftSidebarOpen() && !features.isEnabled('header')) {
   <button
     class="floating-toggle left-floating-toggle"
     mat-icon-button
@@ -60,7 +61,7 @@
   </button>
   }
   
-  @if (!rightSidebarOpen()) {
+  @if (!rightSidebarOpen() && !features.isEnabled('header')) {
   <button
     class="floating-toggle right-floating-toggle"
     mat-icon-button

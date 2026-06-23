@@ -39,6 +39,14 @@
   background-color: var(--bg-color);
 }
 
+// Push sidebars down when header is visible
+.app-container.header-enabled {
+  ::ng-deep app-sidebar-left .app-sidebar,
+  ::ng-deep app-sidebar-right .app-sidebar {
+    top: var(--header-height, 64px);
+  }
+}
+
 // ===========================
 // Main Content Area
 // ===========================
@@ -51,6 +59,10 @@
   overflow-y: auto;
   overflow-x: hidden;
   transition: margin 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.header-enabled {
+    margin-top: var(--header-height, 64px);
+  }
 
   .main-content {
     padding: 0 24px 24px;

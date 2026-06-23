@@ -6,12 +6,14 @@
         <button class="icon-button" (click)="collapseAllFolders()" title="Collapse all folders">
           <mat-icon>unfold_less</mat-icon>
         </button>
+        @if (!features.isEnabled('header')) {
         <button class="icon-button" (click)="toggleTheme.emit()" [title]="isDarkMode() ? 'Light mode' : 'Dark mode'">
           <mat-icon>{{ isDarkMode() ? "light_mode" : "dark_mode" }}</mat-icon>
         </button>
         <button class="icon-button" (click)="toggleSidebar.emit()" title="Close sidebar">
           <mat-icon>close</mat-icon>
         </button>
+        }
       </div>
     </div>
     <div class="search-container">

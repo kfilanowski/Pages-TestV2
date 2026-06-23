@@ -15,7 +15,9 @@
     }
   </nav>
   }
-  <div class="note-container" [style.opacity]="contentVisible() ? 1 : 0">
+  <div class="note-container"
+    [class.breadcrumbs-on]="breadcrumbs().length && features.isEnabled('breadcrumbs')"
+    [style.opacity]="contentVisible() ? 1 : 0">
     <h1 class="note-title">
       @if (noteIcon()) {
       <app-iconify-icon class="note-icon" [icon]="noteIcon()!" [size]="44" />

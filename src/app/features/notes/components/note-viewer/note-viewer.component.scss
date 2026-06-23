@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   gap: 0;
-  padding: 0.5rem 0 2rem 0;
+  padding: 0.5rem 0 0 0;
   font-size: 0.82rem;
   line-height: 1.6;
   color: var(--text-secondary, #888);
@@ -63,8 +63,13 @@
 .note-container {
   max-width: 700px;
   margin: 0 auto;
+  padding-top: 4rem;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
+}
+
+.note-container.breadcrumbs-on {
+  padding-top: 3rem;
 }
 
 // Title styling

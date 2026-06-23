@@ -3,7 +3,7 @@
   "$comment": "Set true/false to enable/disable features. Rebuild after changes.",
   "header": false,
   "footer": false,
-  "breadcrumbs": false,
+  "breadcrumbs": true,
   "disclosure_chevrons": true,
   "folder_count_badges": true
 }

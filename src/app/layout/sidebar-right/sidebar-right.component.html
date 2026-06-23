@@ -2,6 +2,7 @@
   <!-- Sidebar Header -->
   <div class="sidebar-header">
     <h2 class="sidebar-title">Page Links</h2>
+    @if (!features.isEnabled('header')) {
     <button
       mat-icon-button
       class="close-toggle"
@@ -11,6 +12,7 @@
     >
       <mat-icon>close</mat-icon>
     </button>
+    }
   </div>
 
   <div class="sidebar-content">
