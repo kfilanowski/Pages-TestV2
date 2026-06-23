@@ -46,7 +46,8 @@
   flex: 1;
   // margin-top: var(--header-height); // Header is hidden
   margin-top: 0;
-  margin-bottom: var(--footer-height);
+  // margin-bottom: var(--footer-height); // Footer is hidden
+  margin-bottom: 0;
   overflow-y: auto;
   overflow-x: hidden;
   transition: margin 0.3s cubic-bezier(0.4, 0, 0.2, 1);

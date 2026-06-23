@@ -47,7 +47,7 @@
 .note-title {
   display: flex;
   align-items: center;
-  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, 'Hoefler Text', Georgia, 'Times New Roman', serif;
+  font-family: Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   font-size: 2.5em;
   font-weight: 700;
   color: var(--text-primary);
@@ -57,11 +57,9 @@
   line-height: 1.2;
 
   .note-icon {
-    font-size: 1.2em;
-    width: 1.2em;
-    height: 1.2em;
     flex-shrink: 0;
     color: var(--text-primary);
+    margin-right: 0.8rem;
   }
 
   .title-text {
@@ -71,7 +69,7 @@
 
 // Content styling
 .note-content {
-  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, 'Hoefler Text', Georgia, 'Times New Roman', serif;
+  font-family: Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   font-size: 17px;
   line-height: 1.6;
   color: var(--text-primary, #333);

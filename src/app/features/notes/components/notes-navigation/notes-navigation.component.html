@@ -59,7 +59,7 @@
   @if (isFolder(node)) {
   <div class="folder-item" (click)="toggleFolder(node)" [style.color]="node.color">
     @if (node.iconSvg || node.icon) {
-    <app-iconify-icon [icon]="node.iconSvg || node.icon" [size]="20" class="folder-icon" [iconColor]="node.iconColor" />
+    <app-iconify-icon [icon]="node.iconSvg || node.icon" [size]="20" class="folder-icon" />
     } @else {
     <mat-icon class="folder-icon">
       {{ node.expanded ? "folder_open" : "folder" }}
@@ -92,7 +92,6 @@
       [icon]="node.iconSvg || node.icon"
       [size]="20"
       class="note-icon"
-      [iconColor]="node.iconColor"
     />
     }
     <div class="note-content">

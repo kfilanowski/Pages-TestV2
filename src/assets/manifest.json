@@ -658,7 +658,6 @@
               "expanded": false,
               "color": "#8899AA",
               "icon": "robot",
-              "iconColor": "#44aadd",
               "iconSvg": "icons/robot.svg",
               "iconType": "svg"
             },
@@ -4731,7 +4730,6 @@
       "expanded": false,
       "color": "#FF4444",
       "icon": "helmet",
-      "iconColor": "#ff8866",
       "iconSvg": "icons/helmet.svg",
       "iconType": "svg"
     },

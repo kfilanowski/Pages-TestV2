@@ -561,21 +561,17 @@ function applyFolderColors(nodes, folderColors, parentPath, inheritedColor, inhe
       // Check for an explicit config for THIS folder path
       // Supports both string (legacy: "#color") and object ({ color, icon }) formats
       const config = folderColors[folderPath];
-      let explicitColor, explicitIcon, explicitIconColor;
+      let explicitColor, explicitIcon;
       if (typeof config === 'string') {
         explicitColor = config;
       } else if (config && typeof config === 'object') {
         explicitColor = config.color;
         explicitIcon = config.icon;
-        explicitIconColor = config.iconColor;
       }
       
       node.color = explicitColor || inheritedColor || undefined;
       if (explicitIcon) {
         node.icon = explicitIcon;
-      }
-      if (explicitIconColor) {
-        node.iconColor = explicitIconColor;
       }
       
       // Recurse into children with inherited color but NO icon inheritance

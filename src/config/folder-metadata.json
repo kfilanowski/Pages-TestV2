@@ -1,12 +1,12 @@
 {
   "$schema": "folder-metadata-schema.json",
-  "$comment": "Map folder names (relative to assets/) to color and optional icon. Use object format: { \"color\": \"#hex\", \"icon\": \"name\" }. Children inherit parent color unless overridden. Nested folders use relative path: 'Parent Folder/Child Folder'. Icon can be either an SVG name (matches src/icons/ files, e.g. \"sword\") or an emoji character (e.g. \"⚔️\"). If no icon fits, leave it out. Optionally add \"iconColor\": \"#hex\" to tint SVG icons (ignored for emoji).",
+  "$comment": "Map folder names (relative to assets/) to color and optional icon. Use object format: { \"color\": \"#hex\", \"icon\": \"name\" }. Children inherit parent color unless overridden. Nested folders use relative path: 'Parent Folder/Child Folder'. Icon can be either an SVG name (matches src/icons/ files, e.g. \"sword\") or an emoji character (e.g. \"⚔️\"). If no icon fits, leave it out.",
 
   "Bestiary": { "color": "#FF69B4", "icon": "🐾" },
   "Bestiary/Bestiary/Aberrations": { "color": "#CC55CC" },
   "Bestiary/Bestiary/Beasts": { "color": "#FF8844", "icon": "wolf" },
   "Bestiary/Bestiary/Celestials": { "color": "#FFD700" },
-  "Bestiary/Bestiary/Constructs": { "color": "#8899AA", "icon": "robot", "iconColor": "#44aadd" },
+  "Bestiary/Bestiary/Constructs": { "color": "#8899AA", "icon": "robot" },
   "Bestiary/Bestiary/Cryptids": { "color": "#66BB66" },
   "Bestiary/Bestiary/Dragons": { "color": "#FF5500", "icon": "🐉" },
   "Bestiary/Bestiary/Elementals": { "color": "#44AADD" },
@@ -25,7 +25,7 @@
   "Bestiary/Monster Qualities/Offense Traits": { "color": "#DD8866" },
   "Bestiary/Monster Qualities/Other Traits": { "color": "#99AACC" },
 
-  "Classes": { "color": "#FF4444", "icon": "helmet", "iconColor": "#ff8866" },
+  "Classes": { "color": "#FF4444", "icon": "helmet" },
   "Classes/+Class Details": { "color": "#DDDDDD" },
   "Classes/+Class Details/Quick Character Creation Guide": { "color": "#88CC88" },
   "Classes/+Class Details/Progression Outside of Class": { "color": "#AAAAAA" },
