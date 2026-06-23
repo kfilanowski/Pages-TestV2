@@ -31,6 +31,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#CC55CC"
                     },
                     {
@@ -53,6 +54,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#CC55CC"
                     },
                     {
@@ -79,6 +81,7 @@
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 2,
                           "color": "#CC55CC"
                         },
                         {
@@ -90,6 +93,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 3,
                       "color": "#CC55CC"
                     },
                     {
@@ -119,6 +123,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 3,
                       "color": "#CC55CC"
                     },
                     {
@@ -134,6 +139,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#CC55CC"
                     },
                     {
@@ -149,6 +155,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#CC55CC"
                     },
                     {
@@ -164,10 +171,12 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#CC55CC"
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 12,
                   "color": "#CC55CC"
                 },
                 {
@@ -181,6 +190,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 13,
               "color": "#CC55CC"
             },
             {
@@ -204,6 +214,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#FF8844"
                     },
                     {
@@ -247,6 +258,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 5,
                       "color": "#FF8844"
                     },
                     {
@@ -290,6 +302,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 5,
                       "color": "#FF8844"
                     },
                     {
@@ -305,6 +318,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#FF8844"
                     },
                     {
@@ -327,6 +341,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#FF8844"
                     },
                     {
@@ -356,6 +371,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 3,
                       "color": "#FF8844"
                     },
                     {
@@ -378,6 +394,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#FF8844"
                     },
                     {
@@ -407,6 +424,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 3,
                       "color": "#FF8844"
                     },
                     {
@@ -422,10 +440,12 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#FF8844"
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 23,
                   "color": "#FF8844"
                 },
                 {
@@ -439,6 +459,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 24,
               "color": "#FF8844",
               "icon": "wolf"
             },
@@ -463,6 +484,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#FFD700"
                     },
                     {
@@ -478,10 +500,12 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#FFD700"
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#FFD700"
                 },
                 {
@@ -495,6 +519,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 3,
               "color": "#FFD700"
             },
             {
@@ -518,6 +543,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#8899AA"
                     },
                     {
@@ -533,6 +559,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#8899AA"
                     },
                     {
@@ -555,6 +582,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#8899AA"
                     },
                     {
@@ -577,6 +605,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#8899AA"
                     },
                     {
@@ -599,6 +628,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#8899AA"
                     },
                     {
@@ -614,6 +644,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#8899AA"
                     },
                     {
@@ -636,10 +667,12 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#8899AA"
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 11,
                   "color": "#8899AA"
                 },
                 {
@@ -656,6 +689,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 12,
               "color": "#8899AA",
               "icon": "robot",
               "iconSvg": "icons/robot.svg",
@@ -689,6 +723,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#66BB66"
                     },
                     {
@@ -704,6 +739,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#66BB66"
                     },
                     {
@@ -719,6 +755,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#66BB66"
                     },
                     {
@@ -734,10 +771,12 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#66BB66"
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 5,
                   "color": "#66BB66"
                 },
                 {
@@ -752,6 +791,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 6,
               "color": "#66BB66"
             },
             {
@@ -782,6 +822,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#FF5500"
                     },
                     {
@@ -797,6 +838,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#FF5500"
                     },
                     {
@@ -823,10 +865,12 @@
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 2,
                           "color": "#FF5500"
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#FF5500"
                     },
                     {
@@ -842,6 +886,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#FF5500"
                     },
                     {
@@ -857,10 +902,12 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#FF5500"
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 7,
                   "color": "#FF5500"
                 },
                 {
@@ -874,6 +921,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 8,
               "color": "#FF5500",
               "icon": "🐉",
               "iconType": "emoji"
@@ -906,6 +954,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#44AADD"
                     },
                     {
@@ -921,6 +970,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#44AADD"
                     },
                     {
@@ -943,6 +993,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#44AADD"
                     },
                     {
@@ -958,6 +1009,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#44AADD"
                     },
                     {
@@ -1019,14 +1071,17 @@
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 7,
                           "color": "#44AADD"
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 7,
                       "color": "#44AADD"
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 13,
                   "color": "#44AADD"
                 },
                 {
@@ -1040,6 +1095,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 14,
               "color": "#44AADD"
             },
             {
@@ -1063,6 +1119,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#88DD44"
                     },
                     {
@@ -1078,6 +1135,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#88DD44"
                     },
                     {
@@ -1093,6 +1151,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#88DD44"
                     },
                     {
@@ -1115,6 +1174,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#88DD44"
                     },
                     {
@@ -1141,10 +1201,12 @@
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 2,
                           "color": "#88DD44"
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#88DD44"
                     },
                     {
@@ -1167,10 +1229,12 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#88DD44"
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 9,
                   "color": "#88DD44"
                 },
                 {
@@ -1185,6 +1249,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 10,
               "color": "#88DD44",
               "icon": "fairy",
               "iconSvg": "icons/fairy.svg",
@@ -1211,6 +1276,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#CC2244"
                     },
                     {
@@ -1226,6 +1292,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#CC2244"
                     },
                     {
@@ -1255,6 +1322,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 3,
                       "color": "#CC2244"
                     },
                     {
@@ -1277,6 +1345,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#CC2244"
                     },
                     {
@@ -1292,6 +1361,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#CC2244"
                     },
                     {
@@ -1321,6 +1391,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 3,
                       "color": "#CC2244"
                     },
                     {
@@ -1343,6 +1414,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#CC2244"
                     },
                     {
@@ -1358,6 +1430,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#CC2244"
                     },
                     {
@@ -1373,6 +1446,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#CC2244"
                     },
                     {
@@ -1399,10 +1473,12 @@
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 2,
                           "color": "#CC2244"
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#CC2244"
                     },
                     {
@@ -1425,6 +1501,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#CC2244"
                     },
                     {
@@ -1440,6 +1517,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#CC2244"
                     },
                     {
@@ -1455,10 +1533,12 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#CC2244"
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 21,
                   "color": "#CC2244"
                 },
                 {
@@ -1472,6 +1552,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 22,
               "color": "#CC2244",
               "icon": "devil-mask",
               "iconSvg": "icons/devil-mask.svg",
@@ -1498,6 +1579,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#AA7744"
                     },
                     {
@@ -1520,6 +1602,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#AA7744"
                     },
                     {
@@ -1542,6 +1625,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#AA7744"
                     },
                     {
@@ -1557,6 +1641,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#AA7744"
                     },
                     {
@@ -1572,10 +1657,12 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#AA7744"
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 7,
                   "color": "#AA7744"
                 },
                 {
@@ -1590,6 +1677,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 8,
               "color": "#AA7744",
               "icon": "giant",
               "iconSvg": "icons/giant.svg",
@@ -1616,6 +1704,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#DDAA88"
                     },
                     {
@@ -1631,6 +1720,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#DDAA88"
                     },
                     {
@@ -1660,6 +1750,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 3,
                       "color": "#DDAA88"
                     },
                     {
@@ -1682,6 +1773,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#DDAA88"
                     },
                     {
@@ -1697,6 +1789,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#DDAA88"
                     },
                     {
@@ -1719,6 +1812,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#DDAA88"
                     },
                     {
@@ -1734,10 +1828,12 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#DDAA88"
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 11,
                   "color": "#DDAA88"
                 },
                 {
@@ -1752,6 +1848,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 12,
               "color": "#DDAA88",
               "icon": "person",
               "iconSvg": "icons/person.svg",
@@ -1773,6 +1870,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 1,
               "color": "#AAAAAA"
             },
             {
@@ -1796,6 +1894,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#88BB55"
                     },
                     {
@@ -1811,6 +1910,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#88BB55"
                     },
                     {
@@ -1826,6 +1926,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#88BB55"
                     },
                     {
@@ -1841,10 +1942,12 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#88BB55"
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#88BB55"
                 },
                 {
@@ -1859,6 +1962,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 5,
               "color": "#88BB55",
               "icon": "slime",
               "iconSvg": "icons/slime.svg",
@@ -1899,6 +2003,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 3,
                       "color": "#44AA44"
                     },
                     {
@@ -1914,6 +2019,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#44AA44"
                     },
                     {
@@ -1936,10 +2042,12 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#44AA44"
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#44AA44"
                 },
                 {
@@ -1953,6 +2061,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 7,
               "color": "#44AA44",
               "icon": "tree",
               "iconSvg": "icons/tree.svg",
@@ -1993,6 +2102,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 3,
                       "color": "#777777"
                     },
                     {
@@ -2015,6 +2125,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#777777"
                     },
                     {
@@ -2030,6 +2141,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#777777"
                     },
                     {
@@ -2052,6 +2164,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#777777"
                     },
                     {
@@ -2074,6 +2187,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#777777"
                     },
                     {
@@ -2089,10 +2203,12 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#777777"
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 11,
                   "color": "#777777"
                 },
                 {
@@ -2106,6 +2222,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 12,
               "color": "#777777",
               "icon": "ghost",
               "iconSvg": "icons/ghost.svg",
@@ -2123,6 +2240,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 158,
           "color": "#FF69B4"
         },
         {
@@ -2163,6 +2281,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 4,
               "color": "#4488CC",
               "icon": "water",
               "iconSvg": "icons/water.svg",
@@ -2242,6 +2361,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 11,
           "color": "#88AACC",
           "icon": "mountain",
           "iconSvg": "icons/mountain.svg",
@@ -2334,6 +2454,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 9,
               "color": "#AACC88"
             },
             {
@@ -2374,6 +2495,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#DD8866"
                 },
                 {
@@ -2476,6 +2598,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 17,
               "color": "#DD8866"
             },
             {
@@ -2558,6 +2681,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 10,
                   "color": "#99AACC"
                 },
                 {
@@ -2621,6 +2745,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 18,
               "color": "#99AACC"
             },
             {
@@ -2651,6 +2776,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 47,
           "color": "#CC8899"
         },
         {
@@ -2662,6 +2788,7 @@
         }
       ],
       "expanded": false,
+      "noteCount": 217,
       "color": "#FF69B4",
       "icon": "🐾",
       "iconType": "emoji"
@@ -2714,6 +2841,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#AAAAAA"
                 },
                 {
@@ -2760,6 +2888,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 5,
                   "color": "#AAAAAA"
                 },
                 {
@@ -2774,6 +2903,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 10,
               "color": "#AAAAAA"
             },
             {
@@ -2830,6 +2960,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 4,
               "color": "#88CC88"
             },
             {
@@ -2851,6 +2982,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 16,
           "color": "#DDDDDD"
         },
         {
@@ -2892,6 +3024,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 3,
               "color": "#44BB77"
             },
             {
@@ -2950,6 +3083,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 5,
               "color": "#44BB77"
             },
             {
@@ -2964,6 +3098,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 9,
           "color": "#44BB77",
           "icon": "alchemy",
           "iconSvg": "icons/alchemy.svg",
@@ -3028,6 +3163,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 5,
               "color": "#CC4422"
             },
             {
@@ -3048,6 +3184,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 7,
           "color": "#CC4422",
           "icon": "barbarian",
           "iconSvg": "icons/barbarian.svg",
@@ -3091,6 +3228,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 3,
               "color": "#CC4499"
             },
             {
@@ -3104,6 +3242,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 4,
           "color": "#CC4499"
         },
         {
@@ -3136,6 +3275,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 2,
               "color": "#66BB44"
             },
             {
@@ -3162,6 +3302,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 4,
           "color": "#66BB44",
           "icon": "dog",
           "iconSvg": "icons/dog.svg",
@@ -3197,6 +3338,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#88CCDD",
                   "icon": "wind",
                   "iconSvg": "icons/wind.svg",
@@ -3224,6 +3366,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#887744",
                   "icon": "earth",
                   "iconSvg": "icons/Earth.svg",
@@ -3251,6 +3394,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#FF6622",
                   "icon": "fire",
                   "iconSvg": "icons/fire.svg",
@@ -3278,6 +3422,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#4488CC",
                   "icon": "water",
                   "iconSvg": "icons/water.svg",
@@ -3285,6 +3430,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 8,
               "color": "#4488CC"
             },
             {
@@ -3316,6 +3462,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 11,
           "color": "#4488CC"
         },
         {
@@ -3348,6 +3495,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#44AA44"
                 },
                 {
@@ -3379,6 +3527,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 5,
               "color": "#44AA44"
             },
             {
@@ -3392,6 +3541,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 6,
           "color": "#44AA44"
         },
         {
@@ -3441,6 +3591,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 4,
               "color": "#9933AA"
             },
             {
@@ -3461,6 +3612,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 6,
           "color": "#9933AA",
           "icon": "devil-mask",
           "iconSvg": "icons/devil-mask.svg",
@@ -3565,6 +3717,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 9,
               "color": "#CC5533"
             },
             {
@@ -3578,6 +3731,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 10,
           "color": "#CC5533"
         },
         {
@@ -3611,6 +3765,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#44BB88"
                 },
                 {
@@ -3645,6 +3800,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 5,
               "color": "#44BB88"
             },
             {
@@ -3659,6 +3815,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 6,
           "color": "#44BB88",
           "icon": "health",
           "iconSvg": "icons/health.svg",
@@ -3693,6 +3850,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 3,
           "color": "#FFCC00"
         },
         {
@@ -3725,6 +3883,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 3,
           "color": "#9944CC",
           "icon": "magic",
           "iconSvg": "icons/magic.svg",
@@ -3769,6 +3928,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 3,
               "color": "#FF66AA"
             },
             {
@@ -3789,6 +3949,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 5,
           "color": "#FF66AA",
           "icon": "jester-hat",
           "iconSvg": "icons/jester-hat.svg",
@@ -3819,6 +3980,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 2,
           "color": "#6644AA"
         },
         {
@@ -3851,6 +4013,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 2,
               "color": "#4488CC"
             },
             {
@@ -3875,6 +4038,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 4,
           "color": "#4488CC"
         },
         {
@@ -3908,6 +4072,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#FF8844",
                   "icon": "monk-face",
                   "iconSvg": "icons/monk-face.svg",
@@ -3936,6 +4101,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#CC4444"
                 },
                 {
@@ -3991,6 +4157,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 10,
               "color": "#DD6633"
             },
             {
@@ -4011,6 +4178,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 12,
           "color": "#DD6633"
         },
         {
@@ -4053,6 +4221,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 3,
               "color": "#888888"
             },
             {
@@ -4081,6 +4250,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 6,
           "color": "#888888",
           "icon": "mechanic-garage",
           "iconSvg": "icons/mechanic-garage.svg",
@@ -4103,6 +4273,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 1,
               "color": "#CC44AA"
             },
             {
@@ -4130,6 +4301,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 4,
           "color": "#CC44AA"
         },
         {
@@ -4170,6 +4342,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 3,
               "color": "#664488"
             },
             {
@@ -4183,6 +4356,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 4,
           "color": "#664488"
         },
         {
@@ -4225,6 +4399,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 3,
               "color": "#DDCC44"
             },
             {
@@ -4245,6 +4420,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 5,
           "color": "#DDCC44"
         },
         {
@@ -4285,6 +4461,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#AA66CC"
                 },
                 {
@@ -4313,6 +4490,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#886699",
                   "icon": "spy",
                   "iconSvg": "icons/spy.svg",
@@ -4340,6 +4518,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 7,
               "color": "#8844CC"
             },
             {
@@ -4354,6 +4533,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 8,
           "color": "#8844CC",
           "icon": "psychic-waves",
           "iconSvg": "icons/psychic-waves.svg",
@@ -4430,6 +4610,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 7,
               "color": "#665544"
             },
             {
@@ -4451,6 +4632,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 9,
           "color": "#665544",
           "icon": "rogue",
           "iconSvg": "icons/rogue.svg",
@@ -4485,6 +4667,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 2,
               "color": "#66AA88"
             },
             {
@@ -4511,6 +4694,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 4,
           "color": "#66AA88"
         },
         {
@@ -4543,6 +4727,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 3,
           "color": "#88AAEE"
         },
         {
@@ -4565,6 +4750,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 1,
               "color": "#CC4433"
             },
             {
@@ -4578,6 +4764,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 2,
           "color": "#CC4433"
         },
         {
@@ -4636,6 +4823,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 5,
               "color": "#4488DD"
             },
             {
@@ -4657,6 +4845,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 7,
           "color": "#4488DD",
           "icon": "hat-wizard",
           "iconSvg": "icons/hat-wizard.svg",
@@ -4728,6 +4917,7 @@
         }
       ],
       "expanded": false,
+      "noteCount": 167,
       "color": "#FF4444",
       "icon": "helmet",
       "iconSvg": "icons/helmet.svg",
@@ -4789,6 +4979,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 6,
               "color": "#99AACC"
             },
             {
@@ -5173,6 +5364,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 49,
           "color": "#99AACC"
         },
         {
@@ -5308,6 +5500,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 13,
           "color": "#88AACC"
         },
         {
@@ -5419,6 +5612,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 10,
                   "color": "#77BBAA"
                 },
                 {
@@ -5487,6 +5681,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 18,
               "color": "#77BBAA"
             },
             {
@@ -5513,6 +5708,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#88BBAA"
                 },
                 {
@@ -5532,6 +5728,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#88BBAA"
                 },
                 {
@@ -5599,6 +5796,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 8,
                   "color": "#88BBAA"
                 },
                 {
@@ -5647,14 +5845,17 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#88BBAA"
                 }
               ],
               "expanded": false,
+              "noteCount": 15,
               "color": "#88BBAA"
             }
           ],
           "expanded": false,
+          "noteCount": 33,
           "color": "#88CCBB"
         },
         {
@@ -5691,6 +5892,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 4,
           "color": "#CCAA88"
         },
         {
@@ -5770,6 +5972,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 8,
               "color": "#CC7744"
             },
             {
@@ -5851,6 +6054,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#DD8866"
                 },
                 {
@@ -5886,6 +6090,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#DD8866"
                 },
                 {
@@ -5968,6 +6173,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 15,
               "color": "#DD8866"
             },
             {
@@ -6070,6 +6276,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 33,
           "color": "#DD8866"
         },
         {
@@ -6122,6 +6329,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 6,
           "color": "#886688"
         },
         {
@@ -6215,6 +6423,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 10,
           "color": "#44BB77",
           "icon": "health",
           "iconSvg": "icons/health.svg",
@@ -6280,6 +6489,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 6,
           "color": "#99AACC"
         },
         {
@@ -6325,6 +6535,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 4,
           "color": "#6699CC"
         },
         {
@@ -6799,6 +7010,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 54,
           "color": "#CC88AA"
         },
         {
@@ -7157,10 +7369,12 @@
             }
           ],
           "expanded": false,
+          "noteCount": 46,
           "color": "#AABBCC"
         }
       ],
       "expanded": false,
+      "noteCount": 258,
       "color": "#88BBFF",
       "icon": "dice",
       "iconSvg": "icons/dice.svg",
@@ -7264,6 +7478,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 10,
                   "color": "#88AA77"
                 },
                 {
@@ -7353,6 +7568,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 10,
                   "color": "#4488DD",
                   "icon": "potion",
                   "iconSvg": "icons/potion.svg",
@@ -7419,6 +7635,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 7,
                   "color": "#CC8833"
                 },
                 {
@@ -7445,6 +7662,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#77BB44"
                     },
                     {
@@ -7470,6 +7688,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#77BB44",
                   "icon": "poison",
                   "iconSvg": "icons/poison.svg",
@@ -7484,6 +7703,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 32,
               "color": "#44BB77",
               "icon": "alchemy",
               "iconSvg": "icons/alchemy.svg",
@@ -7558,6 +7778,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#DDBB33"
                 },
                 {
@@ -7594,6 +7815,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#DDBB33"
                 },
                 {
@@ -7607,6 +7829,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 10,
               "color": "#DDBB33"
             },
             {
@@ -7675,6 +7898,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#7788AA",
                   "icon": "shield",
                   "iconSvg": "icons/shield.svg",
@@ -7708,6 +7932,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 8,
               "color": "#8899AA",
               "icon": "shield",
               "iconSvg": "icons/shield.svg",
@@ -7739,6 +7964,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 2,
               "color": "#88AA88"
             },
             {
@@ -7766,6 +7992,7 @@
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 1,
                           "color": "#CC88AA"
                         },
                         {
@@ -7809,6 +8036,7 @@
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 5,
                           "color": "#CC88AA"
                         },
                         {
@@ -7824,10 +8052,12 @@
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 1,
                           "color": "#CC88AA"
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 7,
                       "color": "#CC88AA"
                     },
                     {
@@ -7844,6 +8074,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 8,
                   "color": "#CC88AA"
                 },
                 {
@@ -7885,14 +8116,17 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 3,
                               "color": "#8899AA"
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 3,
                           "color": "#8899AA"
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 3,
                       "color": "#8899AA"
                     },
                     {
@@ -7916,6 +8150,7 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 1,
                               "color": "#8899AA"
                             },
                             {
@@ -7938,14 +8173,17 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 2,
                               "color": "#8899AA"
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 3,
                           "color": "#8899AA"
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 3,
                       "color": "#8899AA"
                     },
                     {
@@ -7976,6 +8214,7 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 2,
                               "color": "#8899AA"
                             },
                             {
@@ -8005,14 +8244,17 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 3,
                               "color": "#8899AA"
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 5,
                           "color": "#8899AA"
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 5,
                       "color": "#8899AA"
                     },
                     {
@@ -8036,6 +8278,7 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 1,
                               "color": "#8899AA"
                             },
                             {
@@ -8058,6 +8301,7 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 2,
                               "color": "#8899AA"
                             },
                             {
@@ -8073,14 +8317,17 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 1,
                               "color": "#8899AA"
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 4,
                           "color": "#8899AA"
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 4,
                       "color": "#8899AA"
                     },
                     {
@@ -8104,18 +8351,22 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 1,
                               "color": "#8899AA"
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 1,
                           "color": "#8899AA"
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#8899AA"
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 16,
                   "color": "#8899AA",
                   "icon": "shield",
                   "iconSvg": "icons/shield.svg",
@@ -8149,6 +8400,7 @@
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 2,
                           "color": "#886644"
                         },
                         {
@@ -8171,6 +8423,7 @@
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 2,
                           "color": "#886644"
                         },
                         {
@@ -8193,14 +8446,17 @@
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 2,
                           "color": "#886644"
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 6,
                       "color": "#886644"
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#886644",
                   "icon": "boots",
                   "iconSvg": "icons/boots.svg",
@@ -8227,6 +8483,7 @@
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 1,
                           "color": "#AA7744"
                         },
                         {
@@ -8242,14 +8499,17 @@
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 1,
                           "color": "#AA7744"
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#AA7744"
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#AA7744",
                   "icon": "gloves",
                   "iconSvg": "icons/gloves.svg",
@@ -8314,6 +8574,7 @@
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 6,
                           "color": "#CC8844"
                         },
                         {
@@ -8350,14 +8611,17 @@
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 4,
                           "color": "#CC8844"
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 10,
                       "color": "#CC8844"
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 10,
                   "color": "#CC8844",
                   "icon": "helmet",
                   "iconSvg": "icons/helmet.svg",
@@ -8404,6 +8668,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 5,
                   "color": "#6688CC"
                 },
                 {
@@ -8547,6 +8812,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 18,
                   "color": "#CC6644"
                 },
                 {
@@ -8577,6 +8843,7 @@
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 2,
                           "color": "#AAAAAA"
                         },
                         {
@@ -8620,6 +8887,7 @@
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 5,
                           "color": "#AAAAAA"
                         },
                         {
@@ -8635,10 +8903,12 @@
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 1,
                           "color": "#AAAAAA"
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 8,
                       "color": "#AAAAAA"
                     },
                     {
@@ -8656,6 +8926,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 9,
                   "color": "#AAAAAA"
                 },
                 {
@@ -8683,6 +8954,7 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 1,
                               "color": "#7755BB"
                             },
                             {
@@ -8698,14 +8970,17 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 1,
                               "color": "#7755BB"
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 2,
                           "color": "#7755BB"
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#7755BB"
                     },
                     {
@@ -8729,6 +9004,7 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 1,
                               "color": "#8866AA"
                             },
                             {
@@ -8751,6 +9027,7 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 2,
                               "color": "#8866AA"
                             },
                             {
@@ -8766,14 +9043,17 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 1,
                               "color": "#8866AA"
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 4,
                           "color": "#8866AA"
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 4,
                       "color": "#8866AA"
                     },
                     {
@@ -8797,6 +9077,7 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 1,
                               "color": "#9977CC"
                             },
                             {
@@ -8812,14 +9093,17 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 1,
                               "color": "#9977CC"
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 2,
                           "color": "#9977CC"
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#9977CC",
                       "icon": "wand",
                       "iconSvg": "icons/wand.svg",
@@ -8827,6 +9111,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 8,
                   "color": "#6644AA",
                   "icon": "magic",
                   "iconSvg": "icons/magic.svg",
@@ -8891,6 +9176,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 7,
                   "color": "#CC8844"
                 },
                 {
@@ -8918,6 +9204,7 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 1,
                               "color": "#CC6644"
                             },
                             {
@@ -8975,6 +9262,7 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 7,
                               "color": "#CC6644"
                             },
                             {
@@ -8990,14 +9278,17 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 1,
                               "color": "#CC6644"
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 9,
                           "color": "#CC6644"
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 9,
                       "color": "#CC6644"
                     },
                     {
@@ -9028,6 +9319,7 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 2,
                               "color": "#CC6644"
                             },
                             {
@@ -9071,6 +9363,7 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 5,
                               "color": "#CC6644"
                             },
                             {
@@ -9121,14 +9414,17 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 6,
                               "color": "#CC6644"
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 13,
                           "color": "#CC6644"
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 13,
                       "color": "#CC6644"
                     },
                     {
@@ -9152,6 +9448,7 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 1,
                               "color": "#CC6644"
                             },
                             {
@@ -9167,6 +9464,7 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 1,
                               "color": "#CC6644"
                             },
                             {
@@ -9182,14 +9480,17 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 1,
                               "color": "#CC6644"
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 3,
                           "color": "#CC6644"
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 3,
                       "color": "#CC6644"
                     },
                     {
@@ -9213,6 +9514,7 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 1,
                               "color": "#CC6644"
                             },
                             {
@@ -9249,6 +9551,7 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 4,
                               "color": "#CC6644"
                             },
                             {
@@ -9264,14 +9567,17 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 1,
                               "color": "#CC6644"
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 6,
                           "color": "#CC6644"
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 6,
                       "color": "#CC6644"
                     },
                     {
@@ -9295,6 +9601,7 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 1,
                               "color": "#CC6644"
                             },
                             {
@@ -9310,18 +9617,22 @@
                                 }
                               ],
                               "expanded": false,
+                              "noteCount": 1,
                               "color": "#CC6644"
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 2,
                           "color": "#CC6644"
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#CC6644"
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 33,
                   "color": "#CC6644",
                   "icon": "sword",
                   "iconSvg": "icons/sword.svg",
@@ -9348,6 +9659,7 @@
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 1,
                           "color": "#AA7744"
                         },
                         {
@@ -9363,10 +9675,12 @@
                             }
                           ],
                           "expanded": false,
+                          "noteCount": 1,
                           "color": "#AA7744"
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#AA7744"
                     },
                     {
@@ -9378,6 +9692,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#AA7744"
                 },
                 {
@@ -9406,6 +9721,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 128,
               "color": "#AA8844"
             },
             {
@@ -9440,6 +9756,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#88AA77"
                 },
                 {
@@ -9474,6 +9791,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 5,
               "color": "#88AA77"
             },
             {
@@ -9529,6 +9847,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#998877"
                 },
                 {
@@ -9555,10 +9874,12 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 2,
                       "color": "#998877"
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#998877"
                 },
                 {
@@ -9624,6 +9945,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 12,
               "color": "#998877"
             },
             {
@@ -9719,6 +10041,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 10,
                   "color": "#CC8844"
                 },
                 {
@@ -9772,6 +10095,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#DD7755"
                 },
                 {
@@ -9812,6 +10136,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 4,
                       "color": "#BB9966"
                     },
                     {
@@ -9858,6 +10183,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 5,
                       "color": "#BB9966"
                     },
                     {
@@ -9887,6 +10213,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 3,
                       "color": "#BB9966"
                     },
                     {
@@ -9902,6 +10229,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#BB9966"
                     },
                     {
@@ -9931,6 +10259,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 3,
                       "color": "#BB9966"
                     },
                     {
@@ -9960,6 +10289,7 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 3,
                       "color": "#BB9966"
                     },
                     {
@@ -9975,10 +10305,12 @@
                         }
                       ],
                       "expanded": false,
+                      "noteCount": 1,
                       "color": "#BB9966"
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 20,
                   "color": "#BB9966"
                 },
                 {
@@ -10010,6 +10342,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 35,
               "color": "#CC6644",
               "icon": "sword",
               "iconSvg": "icons/sword.svg",
@@ -10071,6 +10404,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 237,
           "color": "#DDBB33"
         },
         {
@@ -10082,6 +10416,7 @@
         }
       ],
       "expanded": false,
+      "noteCount": 238,
       "color": "#DDBB33",
       "icon": "coin",
       "iconSvg": "icons/coin.svg",
@@ -10115,6 +10450,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 2,
               "color": "#DD7744"
             },
             {
@@ -10182,6 +10518,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 8,
               "color": "#DD7744"
             },
             {
@@ -10249,6 +10586,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 8,
               "color": "#DD7744"
             },
             {
@@ -10271,6 +10609,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 2,
               "color": "#DD7744"
             },
             {
@@ -10293,6 +10632,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 2,
               "color": "#DD7744"
             },
             {
@@ -10535,6 +10875,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 54,
           "color": "#DD7744",
           "icon": "sword",
           "iconSvg": "icons/sword.svg",
@@ -10619,6 +10960,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 10,
           "color": "#88AACC"
         },
         {
@@ -10791,6 +11133,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 23,
           "color": "#8866CC",
           "icon": "magic",
           "iconSvg": "icons/magic.svg",
@@ -10860,6 +11203,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 8,
           "color": "#AA88CC"
         },
         {
@@ -10886,6 +11230,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 2,
               "color": "#88BB88"
             },
             {
@@ -10901,6 +11246,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 1,
               "color": "#88BB88"
             },
             {
@@ -10930,6 +11276,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 3,
               "color": "#88BB88"
             },
             {
@@ -10952,6 +11299,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 2,
               "color": "#88BB88"
             },
             {
@@ -10974,6 +11322,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 2,
               "color": "#88BB88"
             },
             {
@@ -10989,6 +11338,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 1,
               "color": "#88BB88"
             },
             {
@@ -11018,6 +11368,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 3,
               "color": "#88BB88"
             },
             {
@@ -11033,6 +11384,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 1,
               "color": "#88BB88"
             },
             {
@@ -11048,6 +11400,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 1,
               "color": "#88BB88"
             },
             {
@@ -11084,6 +11437,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 4,
               "color": "#88BB88"
             },
             {
@@ -11095,6 +11449,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 21,
           "color": "#88BB88"
         },
         {
@@ -11121,6 +11476,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 2,
               "color": "#66AACC"
             },
             {
@@ -11143,6 +11499,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 2,
               "color": "#66AACC"
             },
             {
@@ -11234,6 +11591,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 15,
           "color": "#66AACC"
         },
         {
@@ -11252,6 +11610,7 @@
         }
       ],
       "expanded": false,
+      "noteCount": 132,
       "color": "#FFAA00",
       "icon": "🏆",
       "iconType": "emoji"
@@ -11294,6 +11653,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#88AAEE"
                 },
                 {
@@ -11332,6 +11692,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#88AAEE"
                 },
                 {
@@ -11386,6 +11747,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 5,
                   "color": "#88AAEE"
                 },
                 {
@@ -11413,6 +11775,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#88AAEE"
                 },
                 {
@@ -11451,6 +11814,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#88AAEE"
                 },
                 {
@@ -11492,6 +11856,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#88AAEE"
                 },
                 {
@@ -11529,6 +11894,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#88AAEE"
                 },
                 {
@@ -11554,6 +11920,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#88AAEE"
                 },
                 {
@@ -11589,6 +11956,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#88AAEE"
                 },
                 {
@@ -11616,6 +11984,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#88AAEE"
                 },
                 {
@@ -11630,6 +11999,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 29,
               "color": "#88AAEE"
             },
             {
@@ -11703,6 +12073,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#CC3344"
                 },
                 {
@@ -11769,6 +12140,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#CC3344"
                 },
                 {
@@ -11816,6 +12188,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#CC3344"
                 },
                 {
@@ -11829,6 +12202,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 17,
               "color": "#CC3344",
               "icon": "devil-mask",
               "iconSvg": "icons/devil-mask.svg",
@@ -11913,6 +12287,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 7,
                   "color": "#66BB66"
                 },
                 {
@@ -11978,6 +12353,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#66BB66"
                 },
                 {
@@ -12045,6 +12421,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 7,
                   "color": "#66BB66"
                 },
                 {
@@ -12058,6 +12435,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 21,
               "color": "#66BB66"
             },
             {
@@ -12083,6 +12461,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 2,
               "color": "#DDBB88"
             },
             {
@@ -12141,6 +12520,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 5,
                   "color": "#FFDD44"
                 },
                 {
@@ -12178,6 +12558,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#FFDD44"
                 },
                 {
@@ -12189,6 +12570,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 9,
               "color": "#FFDD44",
               "icon": "angel-wings",
               "iconSvg": "icons/angel-wings.svg",
@@ -12217,6 +12599,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 81,
           "color": "#4488FF"
         },
         {
@@ -12244,6 +12627,7 @@
         }
       ],
       "expanded": false,
+      "noteCount": 83,
       "color": "#4488FF",
       "icon": "👑",
       "iconType": "emoji"
@@ -12272,6 +12656,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 2,
           "color": "#66AACC"
         },
         {
@@ -12303,6 +12688,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 3,
           "color": "#CCAA88",
           "icon": "person",
           "iconSvg": "icons/person.svg",
@@ -12376,6 +12762,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 6,
           "color": "#8866AA"
         },
         {
@@ -12419,6 +12806,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 5,
           "color": "#AA8866"
         },
         {
@@ -12430,6 +12818,7 @@
         }
       ],
       "expanded": false,
+      "noteCount": 17,
       "color": "#44BB88",
       "icon": "book",
       "iconSvg": "icons/book.svg",
@@ -12481,6 +12870,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 4,
           "color": "#9988CC"
         },
         {
@@ -12503,6 +12893,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 2,
           "color": "#9988CC"
         },
         {
@@ -12521,6 +12912,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 1,
           "color": "#9988CC"
         },
         {
@@ -12553,6 +12945,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 3,
           "color": "#9988CC"
         },
         {
@@ -12577,6 +12970,7 @@
         }
       ],
       "expanded": false,
+      "noteCount": 12,
       "color": "#9988CC",
       "icon": "chat",
       "iconSvg": "icons/chat.svg",
@@ -12626,6 +13020,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 4,
           "color": "#88CC66",
           "icon": "run",
           "iconSvg": "icons/run.svg",
@@ -12668,6 +13063,7 @@
         }
       ],
       "expanded": false,
+      "noteCount": 8,
       "color": "#FF88AA",
       "icon": "gamepad",
       "iconSvg": "icons/gamepad.svg",
@@ -12703,6 +13099,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 2,
           "color": "#88BB66",
           "icon": "wolf"
         },
@@ -12939,6 +13336,7 @@
         }
       ],
       "expanded": false,
+      "noteCount": 26,
       "color": "#AA88FF",
       "icon": "users",
       "iconSvg": "icons/users.svg",
@@ -12985,6 +13383,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 4,
           "color": "#AA6688"
         },
         {
@@ -13024,6 +13423,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 4,
           "color": "#88AACC"
         },
         {
@@ -13056,6 +13456,7 @@
         }
       ],
       "expanded": false,
+      "noteCount": 11,
       "color": "#669966",
       "icon": "chart",
       "iconSvg": "icons/chart.svg",
@@ -13109,6 +13510,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 4,
               "color": "#99AACC"
             },
             {
@@ -13140,6 +13542,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 7,
           "color": "#99AACC"
         },
         {
@@ -13242,6 +13645,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 10,
               "color": "#DD8844"
             },
             {
@@ -13339,6 +13743,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 11,
               "color": "#CC6633"
             },
             {
@@ -13417,6 +13822,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 8,
               "color": "#AA66AA"
             },
             {
@@ -13472,6 +13878,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 5,
               "color": "#8866AA"
             },
             {
@@ -13526,6 +13933,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 5,
               "color": "#6688DD"
             },
             {
@@ -13590,6 +13998,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 6,
               "color": "#CC4433"
             },
             {
@@ -13633,6 +14042,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#44BB77",
                   "icon": "alchemy",
                   "iconSvg": "icons/alchemy.svg",
@@ -13675,6 +14085,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#6644CC",
                   "icon": "magic",
                   "iconSvg": "icons/magic.svg",
@@ -13724,6 +14135,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 5,
                   "color": "#66AA66"
                 },
                 {
@@ -13762,6 +14174,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#AA8844"
                 },
                 {
@@ -13822,6 +14235,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 7,
                   "color": "#AA8866"
                 },
                 {
@@ -13870,6 +14284,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 5,
                   "color": "#88AA88"
                 },
                 {
@@ -13915,6 +14330,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 5,
                   "color": "#44AA44",
                   "icon": "tree",
                   "iconSvg": "icons/tree.svg",
@@ -13957,6 +14373,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#8866AA"
                 },
                 {
@@ -13996,6 +14413,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#DDAA44"
                 },
                 {
@@ -14045,6 +14463,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 47,
               "color": "#4488CC"
             },
             {
@@ -14141,6 +14560,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 9,
               "color": "#88AACC"
             },
             {
@@ -14236,6 +14656,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 9,
               "color": "#44BB88",
               "icon": "health",
               "iconSvg": "icons/health.svg",
@@ -14290,6 +14711,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 5,
               "color": "#88CCAA"
             },
             {
@@ -14365,6 +14787,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 7,
               "color": "#CC88AA"
             },
             {
@@ -14406,6 +14829,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 4,
               "color": "#AA9966"
             },
             {
@@ -14486,6 +14910,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 7,
               "color": "#AA8866"
             },
             {
@@ -14551,6 +14976,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 6,
               "color": "#666688"
             },
             {
@@ -14630,6 +15056,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 8,
               "color": "#66AA55"
             },
             {
@@ -14641,10 +15068,12 @@
             }
           ],
           "expanded": false,
+          "noteCount": 148,
           "color": "#44CCDD"
         }
       ],
       "expanded": false,
+      "noteCount": 155,
       "color": "#44CCDD",
       "icon": "star",
       "iconSvg": "icons/star.svg",
@@ -14745,6 +15174,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 11,
                   "color": "#CC6644"
                 },
                 {
@@ -14851,6 +15281,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 14,
                   "color": "#88AACC"
                 },
                 {
@@ -14868,6 +15299,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 26,
               "color": "#8888CC"
             },
             {
@@ -14950,6 +15382,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 10,
                   "color": "#8888AA"
                 },
                 {
@@ -14986,6 +15419,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#8888AA"
                 },
                 {
@@ -15008,6 +15442,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#8888AA"
                 },
                 {
@@ -15030,6 +15465,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#8888AA"
                 },
                 {
@@ -15043,6 +15479,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 19,
               "color": "#8888AA"
             },
             {
@@ -15104,6 +15541,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 7,
                   "color": "#44BB77"
                 },
                 {
@@ -15147,6 +15585,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 5,
                   "color": "#44BB77"
                 },
                 {
@@ -15183,6 +15622,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#44BB77"
                 },
                 {
@@ -15205,6 +15645,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#44BB77"
                 },
                 {
@@ -15220,6 +15661,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#44BB77"
                 },
                 {
@@ -15234,6 +15676,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 20,
               "color": "#44BB77",
               "icon": "alchemy",
               "iconSvg": "icons/alchemy.svg",
@@ -15312,6 +15755,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 9,
                   "color": "#4488CC"
                 },
                 {
@@ -15341,6 +15785,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#4488CC"
                 },
                 {
@@ -15391,6 +15836,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#4488CC"
                 },
                 {
@@ -15420,6 +15866,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#4488CC"
                 },
                 {
@@ -15449,6 +15896,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#4488CC"
                 },
                 {
@@ -15471,6 +15919,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#4488CC"
                 },
                 {
@@ -15485,6 +15934,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 27,
               "color": "#4488CC",
               "icon": "magic",
               "iconSvg": "icons/magic.svg",
@@ -15549,6 +15999,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 7,
                   "color": "#FF5522"
                 },
                 {
@@ -15599,6 +16050,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#FF5522"
                 },
                 {
@@ -15635,6 +16087,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#FF5522"
                 },
                 {
@@ -15671,6 +16124,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#FF5522"
                 },
                 {
@@ -15686,6 +16140,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#FF5522"
                 },
                 {
@@ -15701,6 +16156,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#FF5522"
                 },
                 {
@@ -15715,6 +16171,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 24,
               "color": "#FF5522",
               "icon": "fire",
               "iconSvg": "icons/fire.svg",
@@ -15772,6 +16229,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#88AADD"
                 },
                 {
@@ -15815,6 +16273,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 5,
                   "color": "#88AADD"
                 },
                 {
@@ -15865,6 +16324,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#88AADD"
                 },
                 {
@@ -15880,6 +16340,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#88AADD"
                 },
                 {
@@ -15895,6 +16356,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#88AADD"
                 },
                 {
@@ -15910,6 +16372,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#88AADD"
                 },
                 {
@@ -15924,6 +16387,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 21,
               "color": "#88AADD"
             },
             {
@@ -15992,6 +16456,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 8,
                   "color": "#664466"
                 },
                 {
@@ -16035,6 +16500,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 5,
                   "color": "#664466"
                 },
                 {
@@ -16071,6 +16537,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#664466"
                 },
                 {
@@ -16100,6 +16567,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#664466"
                 },
                 {
@@ -16122,6 +16590,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#664466"
                 },
                 {
@@ -16137,6 +16606,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#664466"
                 },
                 {
@@ -16150,6 +16620,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 24,
               "color": "#664466"
             },
             {
@@ -16211,6 +16682,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 7,
                   "color": "#88CCEE"
                 },
                 {
@@ -16254,6 +16726,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 5,
                   "color": "#88CCEE"
                 },
                 {
@@ -16297,6 +16770,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 5,
                   "color": "#88CCEE"
                 },
                 {
@@ -16312,6 +16786,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#88CCEE"
                 },
                 {
@@ -16326,6 +16801,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 19,
               "color": "#88CCEE",
               "icon": "snowflake-1",
               "iconSvg": "icons/snowflake-1.svg",
@@ -16397,6 +16873,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 8,
                   "color": "#44BB44"
                 },
                 {
@@ -16454,6 +16931,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 7,
                   "color": "#44BB44"
                 },
                 {
@@ -16497,6 +16975,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 5,
                   "color": "#44BB44"
                 },
                 {
@@ -16526,6 +17005,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#44BB44"
                 },
                 {
@@ -16555,6 +17035,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#44BB44"
                 },
                 {
@@ -16584,6 +17065,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#44BB44"
                 },
                 {
@@ -16597,6 +17079,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 30,
               "color": "#44BB44",
               "icon": "frog",
               "iconSvg": "icons/frog.svg",
@@ -16647,6 +17130,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 5,
                   "color": "#FFCC00"
                 },
                 {
@@ -16683,6 +17167,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#FFCC00"
                 },
                 {
@@ -16719,6 +17204,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#FFCC00"
                 },
                 {
@@ -16748,6 +17234,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#FFCC00"
                 },
                 {
@@ -16777,6 +17264,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#FFCC00"
                 },
                 {
@@ -16792,6 +17280,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#FFCC00"
                 },
                 {
@@ -16806,6 +17295,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 21,
               "color": "#FFCC00"
             },
             {
@@ -16846,6 +17336,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#DDAA22"
                 },
                 {
@@ -16868,6 +17359,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#DDAA22"
                 },
                 {
@@ -16897,6 +17389,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#DDAA22"
                 },
                 {
@@ -16912,6 +17405,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#DDAA22"
                 },
                 {
@@ -16934,6 +17428,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#DDAA22"
                 },
                 {
@@ -16949,6 +17444,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#DDAA22"
                 },
                 {
@@ -16963,6 +17459,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 14,
               "color": "#DDAA22"
             },
             {
@@ -17045,6 +17542,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 10,
                   "color": "#CC44AA"
                 },
                 {
@@ -17095,6 +17593,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#CC44AA"
                 },
                 {
@@ -17131,6 +17630,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#CC44AA"
                 },
                 {
@@ -17153,6 +17653,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#CC44AA"
                 },
                 {
@@ -17168,6 +17669,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#CC44AA"
                 },
                 {
@@ -17181,6 +17683,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 24,
               "color": "#CC44AA",
               "icon": "mushroom",
               "iconSvg": "icons/mushroom.svg",
@@ -17252,6 +17755,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 8,
                   "color": "#8844AA"
                 },
                 {
@@ -17309,6 +17813,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 7,
                   "color": "#8844AA"
                 },
                 {
@@ -17359,6 +17864,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#8844AA"
                 },
                 {
@@ -17395,6 +17901,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#8844AA"
                 },
                 {
@@ -17424,6 +17931,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#8844AA"
                 },
                 {
@@ -17446,6 +17954,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#8844AA"
                 },
                 {
@@ -17459,6 +17968,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 31,
               "color": "#8844AA",
               "icon": "moon",
               "iconSvg": "icons/moon.svg",
@@ -17537,6 +18047,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 9,
                   "color": "#66AA44"
                 },
                 {
@@ -17601,6 +18112,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 8,
                   "color": "#66AA44"
                 },
                 {
@@ -17651,6 +18163,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#66AA44"
                 },
                 {
@@ -17687,6 +18200,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#66AA44"
                 },
                 {
@@ -17709,6 +18223,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#66AA44"
                 },
                 {
@@ -17724,6 +18239,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#66AA44"
                 },
                 {
@@ -17737,6 +18253,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 31,
               "color": "#66AA44",
               "icon": "earth",
               "iconSvg": "icons/Earth.svg",
@@ -17780,6 +18297,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#AA7744"
                 },
                 {
@@ -17795,6 +18313,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#AA7744"
                 },
                 {
@@ -17817,6 +18336,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#AA7744"
                 },
                 {
@@ -17832,6 +18352,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#AA7744"
                 },
                 {
@@ -17847,6 +18368,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#AA7744"
                 },
                 {
@@ -17862,6 +18384,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#AA7744"
                 },
                 {
@@ -17875,6 +18398,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 11,
               "color": "#AA7744",
               "icon": "mountain",
               "iconSvg": "icons/mountain.svg",
@@ -17953,6 +18477,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 9,
                   "color": "#774488"
                 },
                 {
@@ -17996,6 +18521,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 5,
                   "color": "#774488"
                 },
                 {
@@ -18046,6 +18572,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#774488"
                 },
                 {
@@ -18075,6 +18602,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#774488"
                 },
                 {
@@ -18097,6 +18625,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#774488"
                 },
                 {
@@ -18126,6 +18655,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#774488"
                 },
                 {
@@ -18140,6 +18670,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 29,
               "color": "#774488"
             },
             {
@@ -18166,6 +18697,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#CC88DD"
                 },
                 {
@@ -18188,6 +18720,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#CC88DD"
                 },
                 {
@@ -18210,6 +18743,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#CC88DD"
                 },
                 {
@@ -18232,6 +18766,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#CC88DD"
                 },
                 {
@@ -18247,6 +18782,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#CC88DD"
                 },
                 {
@@ -18262,6 +18798,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#CC88DD"
                 },
                 {
@@ -18275,6 +18812,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 11,
               "color": "#CC88DD"
             },
             {
@@ -18336,6 +18874,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 7,
                   "color": "#8844CC"
                 },
                 {
@@ -18379,6 +18918,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 5,
                   "color": "#8844CC"
                 },
                 {
@@ -18429,6 +18969,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#8844CC"
                 },
                 {
@@ -18451,6 +18992,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#8844CC"
                 },
                 {
@@ -18473,6 +19015,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#8844CC"
                 },
                 {
@@ -18495,6 +19038,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#8844CC"
                 },
                 {
@@ -18508,6 +19052,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 25,
               "color": "#8844CC",
               "icon": "psychic-waves",
               "iconSvg": "icons/psychic-waves.svg",
@@ -18572,6 +19117,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 7,
                   "color": "#FF5500"
                 },
                 {
@@ -18594,6 +19140,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#FF5500"
                 },
                 {
@@ -18630,6 +19177,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#FF5500"
                 },
                 {
@@ -18652,6 +19200,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#FF5500"
                 },
                 {
@@ -18667,6 +19216,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#FF5500"
                 },
                 {
@@ -18680,6 +19230,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 17,
               "color": "#FF5500",
               "icon": "fire",
               "iconSvg": "icons/fire.svg",
@@ -18744,6 +19295,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 7,
                   "color": "#CC2244"
                 },
                 {
@@ -18787,6 +19339,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 5,
                   "color": "#CC2244"
                 },
                 {
@@ -18823,6 +19376,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#CC2244"
                 },
                 {
@@ -18845,6 +19399,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#CC2244"
                 },
                 {
@@ -18867,6 +19422,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#CC2244"
                 },
                 {
@@ -18882,6 +19438,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#CC2244"
                 },
                 {
@@ -18895,6 +19452,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 22,
               "color": "#CC2244",
               "icon": "devil-mask",
               "iconSvg": "icons/devil-mask.svg",
@@ -18952,6 +19510,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#883344"
                 },
                 {
@@ -18988,6 +19547,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#883344"
                 },
                 {
@@ -19024,6 +19584,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#883344"
                 },
                 {
@@ -19039,6 +19600,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#883344"
                 },
                 {
@@ -19052,6 +19614,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 16,
               "color": "#883344",
               "icon": "vampire-dracula",
               "iconSvg": "icons/vampire-dracula.svg",
@@ -19059,6 +19622,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 462,
           "color": "#6644CC",
           "icon": "magic",
           "iconSvg": "icons/magic.svg",
@@ -19134,6 +19698,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 8,
                   "color": "#CC5533"
                 },
                 {
@@ -19180,6 +19745,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 5,
                   "color": "#CC5533"
                 },
                 {
@@ -19230,6 +19796,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#CC5533"
                 },
                 {
@@ -19245,6 +19812,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#CC5533"
                 },
                 {
@@ -19260,6 +19828,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#CC5533"
                 },
                 {
@@ -19274,6 +19843,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 22,
               "color": "#CC5533"
             },
             {
@@ -19328,6 +19898,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#4488DD"
                 },
                 {
@@ -19371,6 +19942,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 5,
                   "color": "#4488DD"
                 },
                 {
@@ -19414,6 +19986,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 5,
                   "color": "#4488DD"
                 },
                 {
@@ -19436,6 +20009,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#4488DD"
                 },
                 {
@@ -19458,6 +20032,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#4488DD"
                 },
                 {
@@ -19473,6 +20048,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#4488DD"
                 },
                 {
@@ -19485,6 +20061,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 22,
               "color": "#4488DD"
             },
             {
@@ -19539,6 +20116,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#CC4422"
                 },
                 {
@@ -19575,6 +20153,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#CC4422"
                 },
                 {
@@ -19625,6 +20204,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#CC4422"
                 },
                 {
@@ -19654,6 +20234,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#CC4422"
                 },
                 {
@@ -19676,6 +20257,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#CC4422"
                 },
                 {
@@ -19691,6 +20273,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#CC4422"
                 },
                 {
@@ -19704,6 +20287,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 23,
               "color": "#CC4422",
               "icon": "barbarian",
               "iconSvg": "icons/barbarian.svg",
@@ -19775,6 +20359,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 8,
                   "color": "#66BB44"
                 },
                 {
@@ -19825,6 +20410,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#66BB44"
                 },
                 {
@@ -19875,6 +20461,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#66BB44"
                 },
                 {
@@ -19897,6 +20484,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#66BB44"
                 },
                 {
@@ -19919,6 +20507,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#66BB44"
                 },
                 {
@@ -19941,6 +20530,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#66BB44"
                 },
                 {
@@ -19955,6 +20545,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 27,
               "color": "#66BB44",
               "icon": "wolf"
             },
@@ -20010,6 +20601,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#FF4422"
                 },
                 {
@@ -20053,6 +20645,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 5,
                   "color": "#FF4422"
                 },
                 {
@@ -20096,6 +20689,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 5,
                   "color": "#FF4422"
                 },
                 {
@@ -20125,6 +20719,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#FF4422"
                 },
                 {
@@ -20147,6 +20742,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#FF4422"
                 },
                 {
@@ -20169,6 +20765,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#FF4422"
                 },
                 {
@@ -20182,6 +20779,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 24,
               "color": "#FF4422"
             },
             {
@@ -20250,6 +20848,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 8,
                   "color": "#88AA44"
                 },
                 {
@@ -20300,6 +20899,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#88AA44"
                 },
                 {
@@ -20343,6 +20943,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 5,
                   "color": "#88AA44"
                 },
                 {
@@ -20358,6 +20959,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#88AA44"
                 },
                 {
@@ -20373,6 +20975,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#88AA44"
                 },
                 {
@@ -20393,6 +20996,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 23,
               "color": "#88AA44",
               "icon": "bow",
               "iconSvg": "icons/bow.svg",
@@ -20457,6 +21061,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 7,
                   "color": "#4488CC"
                 },
                 {
@@ -20493,6 +21098,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#4488CC"
                 },
                 {
@@ -20529,6 +21135,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#4488CC"
                 },
                 {
@@ -20551,6 +21158,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#4488CC"
                 },
                 {
@@ -20573,6 +21181,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#4488CC"
                 },
                 {
@@ -20595,6 +21204,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#4488CC"
                 },
                 {
@@ -20609,6 +21219,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 22,
               "color": "#4488CC",
               "icon": "shield",
               "iconSvg": "icons/shield.svg",
@@ -20666,6 +21277,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#CC8855"
                 },
                 {
@@ -20702,6 +21314,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#CC8855"
                 },
                 {
@@ -20752,6 +21365,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 6,
                   "color": "#CC8855"
                 },
                 {
@@ -20774,6 +21388,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#CC8855"
                 },
                 {
@@ -20789,6 +21404,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#CC8855"
                 },
                 {
@@ -20804,6 +21420,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#CC8855"
                 },
                 {
@@ -20818,6 +21435,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 21,
               "color": "#CC8855",
               "icon": "dog",
               "iconSvg": "icons/dog.svg",
@@ -20889,6 +21507,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 8,
                   "color": "#886644"
                 },
                 {
@@ -20918,6 +21537,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#886644"
                 },
                 {
@@ -20954,6 +21574,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#886644"
                 },
                 {
@@ -20983,6 +21604,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#886644"
                 },
                 {
@@ -20998,6 +21620,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#886644"
                 },
                 {
@@ -21013,6 +21636,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#886644"
                 },
                 {
@@ -21027,6 +21651,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 21,
               "color": "#886644"
             },
             {
@@ -21046,6 +21671,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 1,
                   "color": "#DD6633"
                 },
                 {
@@ -21057,6 +21683,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 2,
               "color": "#DD6633"
             },
             {
@@ -21118,6 +21745,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 7,
                   "color": "#CC7744"
                 },
                 {
@@ -21161,6 +21789,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 5,
                   "color": "#CC7744"
                 },
                 {
@@ -21197,6 +21826,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 4,
                   "color": "#CC7744"
                 },
                 {
@@ -21226,6 +21856,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 3,
                   "color": "#CC7744"
                 },
                 {
@@ -21248,6 +21879,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#CC7744"
                 },
                 {
@@ -21270,6 +21902,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#CC7744"
                 },
                 {
@@ -21283,6 +21916,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 24,
               "color": "#CC7744",
               "icon": "fist",
               "iconSvg": "icons/fist.svg",
@@ -21290,6 +21924,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 231,
           "color": "#DD6633",
           "icon": "fist",
           "iconSvg": "icons/fist.svg",
@@ -21326,6 +21961,7 @@
                     }
                   ],
                   "expanded": false,
+                  "noteCount": 2,
                   "color": "#9977BB"
                 },
                 {
@@ -21367,6 +22003,7 @@
                 }
               ],
               "expanded": false,
+              "noteCount": 6,
               "color": "#8866AA"
             },
             {
@@ -21401,6 +22038,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 9,
           "color": "#AA99CC"
         },
         {
@@ -21423,6 +22061,7 @@
             }
           ],
           "expanded": false,
+          "noteCount": 2,
           "color": "#FF7744"
         },
         {
@@ -21434,6 +22073,7 @@
         }
       ],
       "expanded": false,
+      "noteCount": 705,
       "color": "#FF7744",
       "icon": "🥊",
       "iconType": "emoji"

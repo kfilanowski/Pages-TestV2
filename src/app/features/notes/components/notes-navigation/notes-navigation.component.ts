@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Router, RouterModule, NavigationEnd } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { filter, Subject, Subscription, debounceTime } from 'rxjs';
-import { MarkdownService, SearchService, ProjectConfigService } from '../../../../core/services';
+import { MarkdownService, SearchService, ProjectConfigService, FeaturesService } from '../../../../core/services';
 import {
   NoteTreeNode,
   NoteFolder,
@@ -48,6 +48,7 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
   private readonly searchService = inject(SearchService);
   private readonly router = inject(Router);
   private readonly projectConfig = inject(ProjectConfigService);
+  protected readonly features = inject(FeaturesService);
 
   // Project configuration exposed to template
   protected readonly projectName = this.projectConfig.getProjectName();

@@ -1,0 +1,9 @@
+{
+  "$schema": "Feature flags for Pages-TestV2",
+  "$comment": "Set true/false to enable/disable features. Rebuild after changes.",
+  "header": false,
+  "footer": false,
+  "breadcrumbs": false,
+  "disclosure_chevrons": true,
+  "folder_count_badges": true
+}

@@ -58,6 +58,9 @@
 <ng-template #treeNodeTemplate let-node let-depth="depth">
   @if (isFolder(node)) {
   <div class="folder-item" (click)="toggleFolder(node)" [style.color]="node.color" [attr.data-folder-path]="node.path">
+    @if (features.isEnabled('disclosure_chevrons')) {
+    <span class="chevron" [class.expanded]="node.expanded">▶</span>
+    }
     @if (node.iconSvg || node.icon) {
     <app-iconify-icon [icon]="node.iconSvg || node.icon" [size]="20" class="folder-icon" />
     } @else {
@@ -66,6 +69,9 @@
     </mat-icon>
     }
     <span class="folder-name">{{ node.name }}</span>
+    @if (features.isEnabled('folder_count_badges') && node.noteCount != null && node.noteCount > 0) {
+    <span class="count-badge">{{ node.noteCount }}</span>
+    }
   </div>
 
   <ul class="tree-children" [class.expanded]="node.expanded" [attr.data-depth]="depth + 1">

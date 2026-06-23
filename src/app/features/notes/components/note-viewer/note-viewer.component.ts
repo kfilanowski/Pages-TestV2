@@ -17,7 +17,7 @@ import {
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { DomSanitizer, SafeHtml, Meta, Title } from '@angular/platform-browser';
-import { MarkdownService, SearchService, ProjectConfigService } from '../../../../core/services';
+import { MarkdownService, SearchService, ProjectConfigService, FeaturesService } from '../../../../core/services';
 import { Note } from '../../../../core/interfaces';
 import { WikiLinkDirective } from '../wiki-link.directive';
 import { toSignal } from '@angular/core/rxjs-interop';
@@ -53,6 +53,7 @@ export class NoteViewerComponent implements OnInit, AfterViewChecked {
   private readonly meta = inject(Meta);
   private readonly titleService = inject(Title);
   private readonly projectConfig = inject(ProjectConfigService);
+  protected readonly features = inject(FeaturesService);
 
   @ViewChild('noteContent', { read: ElementRef }) noteContentElement?: ElementRef;
 

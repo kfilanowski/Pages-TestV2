@@ -1,6 +1,7 @@
 <div class="app-container">
-  <!-- Header Component - HIDDEN -->
-  <!-- <app-header
+  <!-- Header Component -->
+  @if (features.isEnabled('header')) {
+  <app-header
     [title]="title"
     [leftSidebarOpen]="leftSidebarOpen()"
     [rightSidebarOpen]="rightSidebarOpen()"
@@ -8,7 +9,8 @@
     (toggleLeftSidebar)="toggleLeftSidebar()"
     (toggleRightSidebar)="toggleRightSidebar()"
     (toggleTheme)="toggleTheme()"
-  /> -->
+  />
+  }
 
   <!-- Left Sidebar Component -->
   <app-sidebar-left 
@@ -36,12 +38,14 @@
     </div>
   </main>
 
-  <!-- Footer Component - HIDDEN -->
-  <!-- <app-footer
+  <!-- Footer Component -->
+  @if (features.isEnabled('footer')) {
+  <app-footer
     [appName]="title"
     [leftSidebarOpen]="leftSidebarOpen()"
     [rightSidebarOpen]="rightSidebarOpen()"
-  /> -->
+  />
+  }
 
   <!-- Floating toggle buttons when sidebars are closed -->
   @if (!leftSidebarOpen()) {

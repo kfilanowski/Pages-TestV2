@@ -7,7 +7,7 @@
   </div>
   } @else {
   <!-- Breadcrumb trail — above the fade container for persistent placement -->
-  @if (breadcrumbs().length) {
+  @if (breadcrumbs().length && features.isEnabled('breadcrumbs')) {
   <nav class="breadcrumbs" aria-label="Breadcrumb">
     @for (crumb of breadcrumbs(); track $index; let last = $last) {
       <span class="crumb-segment">{{ crumb.label }}</span>
