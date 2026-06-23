@@ -10,13 +10,7 @@
   @if (breadcrumbs().length) {
   <nav class="breadcrumbs" aria-label="Breadcrumb">
     @for (crumb of breadcrumbs(); track $index; let last = $last) {
-      <span class="crumb-segment"
-        [class.clickable]="crumb.folderPath !== null"
-        [class.current]="crumb.folderPath === null"
-        (click)="onCrumbClick(crumb)"
-        role="button"
-        tabindex="0"
-      >{{ crumb.label }}</span>
+      <span class="crumb-segment">{{ crumb.label }}</span>
       @if (!last) { <span class="crumb-sep">›</span> }
     }
   </nav>

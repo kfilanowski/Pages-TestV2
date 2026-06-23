@@ -204,17 +204,6 @@ export class NoteViewerComponent implements OnInit, AfterViewChecked {
   }
 
   /**
-   * Called when a non-last breadcrumb is clicked.
-   * Emits a focus event so the sidebar navigates to that folder.
-   * No-op for the current-note segment (folderPath === null).
-   */
-  protected onCrumbClick(crumb: { label: string; folderPath: string | null }): void {
-    if (crumb.folderPath !== null) {
-      this.markdownService.focusFolder(crumb.folderPath);
-    }
-  }
-
-  /**
    * Updates meta tags for SEO optimization
    * Sets title, Open Graph, and Twitter Card tags
    */

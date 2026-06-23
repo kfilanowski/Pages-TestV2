@@ -22,24 +22,6 @@
 .crumb-segment {
   color: var(--text-secondary, #888);
   font-weight: 400;
-
-  &.clickable {
-    cursor: pointer;
-    padding: 0.1em 0.35em;
-    border-radius: 4px;
-    transition: background 0.15s ease, color 0.15s ease;
-    color: var(--link-color, #7b9aff);
-
-    &:hover {
-      background: var(--hover-bg, rgba(128, 128, 128, 0.1));
-      text-decoration: underline;
-    }
-  }
-
-  &.current {
-    color: var(--text-primary, #333);
-    font-weight: 500;
-  }
 }
 
 .crumb-sep {
