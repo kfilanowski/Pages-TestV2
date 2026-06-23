@@ -47,8 +47,7 @@
 .note-title {
   display: flex;
   align-items: center;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, 'Hoefler Text', Georgia, 'Times New Roman', serif;
   font-size: 2.5em;
   font-weight: 700;
   color: var(--text-primary);
@@ -72,9 +71,8 @@
 
 // Content styling
 .note-content {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, 'Hoefler Text', Georgia, 'Times New Roman', serif;
+  font-size: 17px;
   line-height: 1.6;
   color: var(--text-primary, #333);
 }
