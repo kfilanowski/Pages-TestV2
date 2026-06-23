@@ -29,7 +29,7 @@
             class="note-link"
           >
             @if (note.iconSvg || note.icon) {
-            <app-iconify-icon class="note-icon" [icon]="note.iconSvg || note.icon" [size]="16" />
+            <app-iconify-icon class="note-icon" [icon]="note.iconSvg || note.icon" [size]="16" [iconColor]="note.iconColor" />
             }
             <span class="note-title">{{ note.title }}</span>
           </a>
@@ -54,7 +54,7 @@
             class="note-link"
           >
             @if (note.iconSvg || note.icon) {
-            <app-iconify-icon class="note-icon" [icon]="note.iconSvg || note.icon" [size]="16" />
+            <app-iconify-icon class="note-icon" [icon]="note.iconSvg || note.icon" [size]="16" [iconColor]="note.iconColor" />
             }
             <span class="note-title">{{ note.title }}</span>
           </a>

@@ -658,6 +658,7 @@
               "expanded": false,
               "color": "#8899AA",
               "icon": "robot",
+              "iconColor": "#44aadd",
               "iconSvg": "icons/robot.svg",
               "iconType": "svg"
             },
@@ -875,9 +876,8 @@
               ],
               "expanded": false,
               "color": "#FF5500",
-              "icon": "dragon",
-              "iconSvg": "icons/dragon.svg",
-              "iconType": "svg"
+              "icon": "🐉",
+              "iconType": "emoji"
             },
             {
               "name": "Elementals",
@@ -2664,9 +2664,8 @@
       ],
       "expanded": false,
       "color": "#FF69B4",
-      "icon": "pawprint",
-      "iconSvg": "icons/pawprint.svg",
-      "iconType": "svg"
+      "icon": "🐾",
+      "iconType": "emoji"
     },
     {
       "name": "Classes",
@@ -4732,6 +4731,7 @@
       "expanded": false,
       "color": "#FF4444",
       "icon": "helmet",
+      "iconColor": "#ff8866",
       "iconSvg": "icons/helmet.svg",
       "iconType": "svg"
     },
@@ -11255,9 +11255,8 @@
       ],
       "expanded": false,
       "color": "#FFAA00",
-      "icon": "trophy",
-      "iconSvg": "icons/trophy.svg",
-      "iconType": "svg"
+      "icon": "🏆",
+      "iconType": "emoji"
     },
     {
       "name": "Gods",
@@ -12248,9 +12247,8 @@
       ],
       "expanded": false,
       "color": "#4488FF",
-      "icon": "crown",
-      "iconSvg": "icons/crown.svg",
-      "iconType": "svg"
+      "icon": "👑",
+      "iconType": "emoji"
     },
     {
       "name": "Lore",
@@ -21439,9 +21437,8 @@
       ],
       "expanded": false,
       "color": "#FF7744",
-      "icon": "fist",
-      "iconSvg": "icons/fist.svg",
-      "iconType": "svg"
+      "icon": "🥊",
+      "iconType": "emoji"
     },
     {
       "id": "Index",

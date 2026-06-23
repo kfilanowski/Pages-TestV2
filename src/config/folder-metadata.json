@@ -1,14 +1,14 @@
 {
   "$schema": "folder-metadata-schema.json",
-  "$comment": "Map folder names (relative to assets/) to color and optional icon. Use object format: { \"color\": \"#hex\", \"icon\": \"name\" }. Children inherit parent color unless overridden. Nested folders use relative path: 'Parent Folder/Child Folder'. Icon names match files in src/icons/ (without .svg). If no icon fits, leave it out.",
+  "$comment": "Map folder names (relative to assets/) to color and optional icon. Use object format: { \"color\": \"#hex\", \"icon\": \"name\" }. Children inherit parent color unless overridden. Nested folders use relative path: 'Parent Folder/Child Folder'. Icon can be either an SVG name (matches src/icons/ files, e.g. \"sword\") or an emoji character (e.g. \"⚔️\"). If no icon fits, leave it out. Optionally add \"iconColor\": \"#hex\" to tint SVG icons (ignored for emoji).",
 
-  "Bestiary": { "color": "#FF69B4", "icon": "pawprint" },
+  "Bestiary": { "color": "#FF69B4", "icon": "🐾" },
   "Bestiary/Bestiary/Aberrations": { "color": "#CC55CC" },
   "Bestiary/Bestiary/Beasts": { "color": "#FF8844", "icon": "wolf" },
   "Bestiary/Bestiary/Celestials": { "color": "#FFD700" },
-  "Bestiary/Bestiary/Constructs": { "color": "#8899AA", "icon": "robot" },
+  "Bestiary/Bestiary/Constructs": { "color": "#8899AA", "icon": "robot", "iconColor": "#44aadd" },
   "Bestiary/Bestiary/Cryptids": { "color": "#66BB66" },
-  "Bestiary/Bestiary/Dragons": { "color": "#FF5500", "icon": "dragon" },
+  "Bestiary/Bestiary/Dragons": { "color": "#FF5500", "icon": "🐉" },
   "Bestiary/Bestiary/Elementals": { "color": "#44AADD" },
   "Bestiary/Bestiary/Fey": { "color": "#88DD44", "icon": "fairy" },
   "Bestiary/Bestiary/Fiends": { "color": "#CC2244", "icon": "devil-mask" },
@@ -25,7 +25,7 @@
   "Bestiary/Monster Qualities/Offense Traits": { "color": "#DD8866" },
   "Bestiary/Monster Qualities/Other Traits": { "color": "#99AACC" },
 
-  "Classes": { "color": "#FF4444", "icon": "helmet" },
+  "Classes": { "color": "#FF4444", "icon": "helmet", "iconColor": "#ff8866" },
   "Classes/+Class Details": { "color": "#DDDDDD" },
   "Classes/+Class Details/Quick Character Creation Guide": { "color": "#88CC88" },
   "Classes/+Class Details/Progression Outside of Class": { "color": "#AAAAAA" },
@@ -111,7 +111,7 @@
   "Equipment and Economics/Equipment Types/Weapons/Special Attacks": { "color": "#DD7755" },
   "Equipment and Economics/Equipment Types/Weapons/Weapon Qualities": { "color": "#BB9966" },
 
-  "Feats": { "color": "#FFAA00", "icon": "trophy" },
+  "Feats": { "color": "#FFAA00", "icon": "🏆" },
   "Feats/Combat Feats": { "color": "#DD7744", "icon": "sword" },
   "Feats/General Feats": { "color": "#88AACC" },
   "Feats/Magic Feats": { "color": "#8866CC", "icon": "magic" },
@@ -119,7 +119,7 @@
   "Feats/Racial Feats": { "color": "#88BB88" },
   "Feats/Teamwork Feats": { "color": "#66AACC" },
 
-  "Gods": { "color": "#4488FF", "icon": "crown" },
+  "Gods": { "color": "#4488FF", "icon": "👑" },
   "Gods/Gods/Demigods": { "color": "#88AAEE" },
   "Gods/Gods/Demon Lords": { "color": "#CC3344", "icon": "devil-mask" },
   "Gods/Gods/Earthly Deities": { "color": "#66BB66" },
@@ -171,7 +171,7 @@
   "Skills/Skills/Stealth": { "color": "#666688" },
   "Skills/Skills/Survival": { "color": "#66AA55" },
 
-  "Techniques": { "color": "#FF7744", "icon": "fist" },
+  "Techniques": { "color": "#FF7744", "icon": "🥊" },
   "Techniques/Magical Techniques": { "color": "#6644CC", "icon": "magic" },
   "Techniques/Magical Techniques/+Cantrips": { "color": "#8888CC" },
   "Techniques/Magical Techniques/+Cantrips/Combat Cantrips": { "color": "#CC6644" },

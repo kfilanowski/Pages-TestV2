@@ -60,6 +60,7 @@ export class NoteViewerComponent implements OnInit, AfterViewChecked {
   protected readonly contentVisible = signal<boolean>(false);
   protected readonly noteTitle = signal<string>('');
   protected readonly noteIcon = signal<string | undefined>(undefined);
+  protected readonly noteIconColor = signal<string | undefined>(undefined);
 
   private currentNoteId: string | null = null;
   private calculatorComponents: ComponentRef<CalculatorComponent>[] = [];
@@ -136,12 +137,14 @@ export class NoteViewerComponent implements OnInit, AfterViewChecked {
       if (note) {
         this.noteTitle.set(note.title);
         this.noteIcon.set(note.iconSvg || note.icon);
+        this.noteIconColor.set(note.iconColor);
         
         // Update SEO meta tags for the page
         this.updateMetaTags(note.title, canonicalId);
       } else {
         this.noteTitle.set(noteId);
         this.noteIcon.set(undefined);
+        this.noteIconColor.set(undefined);
         
         // Update with default meta tags
         this.updateMetaTags(noteId, canonicalId);

@@ -9,7 +9,7 @@
   <div class="note-container" [style.opacity]="contentVisible() ? 1 : 0">
     <h1 class="note-title">
       @if (noteIcon()) {
-      <app-iconify-icon class="note-icon" [icon]="noteIcon()!" [size]="32" />
+      <app-iconify-icon class="note-icon" [icon]="noteIcon()!" [size]="32" [iconColor]="noteIconColor()" />
       }
       <span class="title-text">{{ noteTitle() }}</span>
     </h1>
