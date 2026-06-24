@@ -109,22 +109,22 @@ a {
 // Custom scrollbar styling for modern browsers
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--scrollbar-thumb) var(--bg-color);
+  scrollbar-color: var(--scrollbar-thumb) transparent;
 }
 
 // Webkit scrollbar styling (Chrome, Safari, Edge)
 *::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 
 *::-webkit-scrollbar-track {
-  background: var(--bg-color);
+  background: transparent;
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: var(--scrollbar-thumb);
-  border-radius: 4px;
+  border-radius: 3px;
 
   &:hover {
     background-color: var(--scrollbar-thumb-hover);
@@ -147,7 +147,7 @@ body::before {
   height: 100%;
   pointer-events: none;
   z-index: 9999;
-  opacity: 0.03;
+  opacity: 0.04;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   background-repeat: repeat;
   background-size: 256px 256px;
@@ -168,11 +168,11 @@ body::after {
   height: 100%;
   pointer-events: none;
   z-index: 9998;
-  background: radial-gradient(ellipse at center, transparent 60%, rgba(0,0,0,0.15) 100%);
+  background: radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,0.4) 100%);
 }
 
 html[data-theme="light"] body::after {
-  background: radial-gradient(ellipse at center, transparent 60%, rgba(60,40,20,0.08) 100%);
+  background: radial-gradient(ellipse at center, transparent 55%, rgba(60,40,20,0.12) 100%);
 }
 
 // ============================================================

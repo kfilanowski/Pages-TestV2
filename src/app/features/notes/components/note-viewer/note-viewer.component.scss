@@ -61,7 +61,8 @@
 
 // Container for note title and content with fade transition
 .note-container {
-  max-width: 700px;
+  position: relative;
+  max-width: 735px;
   margin: 0 auto;
   padding-top: 4rem;
   opacity: 0;
@@ -75,14 +76,16 @@
 // Title styling
 .note-title {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  font-family: Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 2.5em;
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-size: 2.2rem;
   font-weight: 700;
-  color: var(--text-primary);
-  margin: 0 0 1rem 0;
-  padding-bottom: 0.5rem;
-  border-bottom: 3px solid var(--border-color, #d7ccc8);
+  color: var(--primary-color);
+  margin: 0 0 0.25rem 0;
+  padding-bottom: 0;
+  border-bottom: none;
+  letter-spacing: 0.5px;
   line-height: 1.2;
 
   .note-icon {
@@ -93,6 +96,17 @@
 
   .title-text {
     flex: 1;
+  }
+
+  // Decorative gradient line under the title (folio style)
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 0.5rem 0 0;
+    background: linear-gradient(to right, var(--border-color) 20%, transparent 90%);
+    pointer-events: none;
   }
 }
 

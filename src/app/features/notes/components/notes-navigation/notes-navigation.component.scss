@@ -15,9 +15,11 @@
 
 .navigation-header h3 {
   margin: 0 0 0.75rem 0;
-  font-size: 1.2rem;
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-size: 1.25rem;
   font-weight: 600;
-  color: var(--text-primary, #333);
+  color: var(--primary-color);
+  letter-spacing: 0.04em;
 }
 
 .header-row {
@@ -28,9 +30,11 @@
 
   h3 {
     margin: 0;
-    font-size: 1.2rem;
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    font-size: 1.25rem;
     font-weight: 600;
-    color: var(--text-primary, #333);
+    color: var(--primary-color);
+    letter-spacing: 0.04em;
   }
 }
 

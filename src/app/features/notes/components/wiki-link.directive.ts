@@ -508,16 +508,14 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
           this.renderer.setStyle(titleElement, 'display', 'flex');
           this.renderer.setStyle(titleElement, 'align-items', 'center');
           this.renderer.setStyle(titleElement, 'gap', '0.75rem');
-          this.renderer.setStyle(titleElement, 'font-size', '2em');
+          this.renderer.setStyle(titleElement, 'font-family', "'Playfair Display', Georgia, 'Times New Roman', serif");
+          this.renderer.setStyle(titleElement, 'font-size', '1.6rem');
           this.renderer.setStyle(titleElement, 'font-weight', '700');
           this.renderer.setStyle(titleElement, 'color', primaryColor);
+          this.renderer.setStyle(titleElement, 'letter-spacing', '0.5px');
           this.renderer.setStyle(titleElement, 'margin', '0 0 1rem 0');
-          this.renderer.setStyle(titleElement, 'padding-bottom', '0.5rem');
-          this.renderer.setStyle(
-            titleElement,
-            'border-bottom',
-            `3px solid ${borderColor}`
-          );
+          this.renderer.setStyle(titleElement, 'padding-bottom', '0');
+          this.renderer.setStyle(titleElement, 'border-bottom', 'none');
           this.renderer.setStyle(titleElement, 'line-height', '1.2');
 
           // Add icon if present in frontmatter
@@ -534,6 +532,14 @@ export class WikiLinkDirective implements OnInit, AfterViewInit, OnDestroy {
           const titleText = this.renderer.createText(noteTitle);
           this.renderer.appendChild(titleElement, titleText);
           this.renderer.appendChild(preview, titleElement);
+
+          // Add decorative gradient line under title (matching note-viewer style)
+          const titleLine = this.renderer.createElement('div');
+          this.renderer.setStyle(titleLine, 'width', '100%');
+          this.renderer.setStyle(titleLine, 'height', '1px');
+          this.renderer.setStyle(titleLine, 'margin', '0.5rem 0 0.75rem');
+          this.renderer.setStyle(titleLine, 'background', `linear-gradient(to right, ${borderColor} 20%, transparent 90%)`);
+          this.renderer.appendChild(preview, titleLine);
 
           // Add preview content with HTML formatting
           const contentElement = this.renderer.createElement('div');

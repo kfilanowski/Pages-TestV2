@@ -7,6 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { IconifyIconComponent } from '../../shared/components/iconify-icon/iconify-icon.component';
+import { WikiLinkDirective } from '../../features/notes/components/wiki-link.directive';
 
 /**
  * Right Sidebar Component
@@ -26,7 +27,7 @@ import { IconifyIconComponent } from '../../shared/components/iconify-icon/iconi
  */
 @Component({
   selector: 'app-sidebar-right',
-  imports: [RouterLink, MatIconModule, MatButtonModule, MatTooltipModule, IconifyIconComponent],
+  imports: [RouterLink, MatIconModule, MatButtonModule, MatTooltipModule, IconifyIconComponent, WikiLinkDirective],
   templateUrl: './sidebar-right.component.html',
   styleUrl: './sidebar-right.component.scss',
 })
