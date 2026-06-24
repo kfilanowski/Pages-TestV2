@@ -13,6 +13,7 @@ export interface FeatureFlags {
   folder_count_badges: boolean;
   right_sidebar: boolean;
   sidebar_link_previews: boolean;
+  preview_dimmer: boolean;
   referenced_pages: boolean;
   referencing_pages: boolean;
   coming_soon: boolean;

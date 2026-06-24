@@ -307,7 +307,7 @@
 .note-content ::ng-deep th,
 .note-content ::ng-deep td {
   border: 1px solid var(--border-color, #ddd);
-  padding: 0.5em;
+  padding: 0.5em 0.7em;
   text-align: left;
   color: var(--text-primary);
 }
@@ -315,7 +315,7 @@
 .note-content ::ng-deep th {
   background-color: var(--table-header-bg, #f5f5f5);
   font-weight: 600;
-  color: var(--primary-color) !important;
+  color: var(--text-primary);
 }
 
 /* Custom scrollbar */
