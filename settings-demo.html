@@ -776,9 +776,11 @@
 
         <div class="tree-area">
 
-          <div style="display:flex; gap:8px; margin-bottom:12px">
+          <div style="display:flex; gap:8px; margin-bottom:12px; flex-wrap:wrap">
             <button class="btn-small" id="expandAllBtn">Expand all</button>
             <button class="btn-small" id="collapseAllBtn">Collapse all</button>
+            <button class="btn-small" id="clearIconsBtn" style="border-color:#5a3a3a; color:#c88b8b">Clear all icons</button>
+            <button class="btn-small" id="clearColorsBtn" style="border-color:#3a3a5a; color:#8b8bc8">Clear all colors</button>
             <span style="margin-left:auto; font-size:0.75rem; color:#6aa; align-self:center" id="treeCount"></span>
           </div>
 
@@ -9648,6 +9650,38 @@ document.getElementById('collapseAllBtn').addEventListener('click', () => {
   document.querySelectorAll('.tree-children').forEach(el => el.classList.remove('open'));
   document.querySelectorAll('.chevron').forEach(el => el.classList.remove('expanded'));
   syncPaletteFromTree();
+});
+document.getElementById('clearIconsBtn').addEventListener('click', () => {
+  for (const path of Object.keys(workingConfig)) {
+    const existing = workingConfig[path];
+    if (typeof existing === 'object') {
+      const { icon, ...rest } = existing;
+      if (Object.keys(rest).length > 0) workingConfig[path] = rest;
+      else delete workingConfig[path];
+    }
+  }
+  refreshAllTreeRows();
+  syncPaletteFromTree();
+  updateStats();
+  hasChanges = true;
+  document.getElementById('saveBtn').disabled = false;
+});
+document.getElementById('clearColorsBtn').addEventListener('click', () => {
+  for (const path of Object.keys(workingConfig)) {
+    const existing = workingConfig[path];
+    if (typeof existing === 'object') {
+      const { color, ...rest } = existing;
+      if (Object.keys(rest).length > 0) workingConfig[path] = rest;
+      else delete workingConfig[path];
+    } else {
+      delete workingConfig[path];
+    }
+  }
+  refreshAllTreeRows();
+  syncPaletteFromTree();
+  updateStats();
+  hasChanges = true;
+  document.getElementById('saveBtn').disabled = false;
 });
 previewRemove.addEventListener('click', clearActiveColor);
 
