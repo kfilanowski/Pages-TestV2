@@ -15,7 +15,7 @@
     padding: 48px 24px;
     min-height: 100vh;
   }
-  .container { max-width: 960px; width: 100%; }
+  .container { max-width: 1060px; width: 100%; }
   h1 { font-size: 1.4rem; margin-bottom: 4px; }
   .subtitle { color: #8a8070; font-size: 0.85rem; margin-bottom: 24px; }
   .subtitle code { background: #222; padding: 1px 5px; border-radius: 3px; }
@@ -96,6 +96,10 @@
     flex-wrap: wrap;
     gap: 6px;
     margin-bottom: 12px;
+    max-height: calc(100vh - 440px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #3a3835 transparent;
   }
   .palette-swatch {
     width: 54px; height: 30px;
@@ -276,7 +280,7 @@
     align-items: flex-start;
   }
   .picker-sidebar {
-    width: 300px;
+    width: 310px;
     flex-shrink: 0;
     position: sticky;
     top: 24px;
@@ -780,14 +784,14 @@ function renderFeatures() {
     const row = document.createElement('div');
     row.className = 'feature-row';
     row.innerHTML = `
-      <div class="feature-info">
-        <div class="feature-name">${label}</div>
-        <div class="feature-desc">${desc}</div>
-      </div>
       <label class="feature-toggle">
         <input type="checkbox" ${val ? 'checked' : ''}>
         <span class="slider"></span>
-      </label>`;
+      </label>
+      <div class="feature-info">
+        <div class="feature-name">${label}</div>
+        <div class="feature-desc">${desc}</div>
+      </div>`;
     const cb = row.querySelector('input');
     cb.addEventListener('change', () => {
       workingFeatures[key] = cb.checked;

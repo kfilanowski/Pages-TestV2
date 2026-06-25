@@ -68,8 +68,7 @@
     "color": "#99AACC"
   },
   "Classes": {
-    "icon": "helmet",
-    "color": "#26aa54"
+    "icon": "helmet"
   },
   "Classes/Alchemist": {
     "icon": "alchemy"
@@ -297,8 +296,7 @@
     "color": "#BB9966"
   },
   "Feats": {
-    "icon": "🏆",
-    "color": "#26a6aa"
+    "icon": "🏆"
   },
   "Feats/Combat Feats": {
     "icon": "sword"
@@ -317,8 +315,7 @@
     "color": "#88BB88"
   },
   "Gods": {
-    "icon": "👑",
-    "color": "#262faa"
+    "icon": "👑"
   },
   "Gods/Gods/Demon Lords": {
     "color": "#CC3344",
@@ -356,26 +353,22 @@
     "icon": "chat"
   },
   "Minigames": {
-    "icon": "gamepad",
-    "color": "#9d26aa"
+    "icon": "gamepad"
   },
   "Minigames/Chase": {
     "icon": "run"
   },
   "Races": {
-    "icon": "users",
-    "color": "#aa2668"
+    "icon": "users"
   },
   "Races/Beastfolk": {
     "icon": "wolf"
   },
   "Random Charts": {
-    "icon": "chart",
-    "color": "#aa2626"
+    "icon": "chart"
   },
   "Skills": {
-    "icon": "star",
-    "color": "#aa7a26"
+    "icon": "star"
   },
   "Skills/Skills/Knowledge/Alchemy": {
     "icon": "alchemy"
