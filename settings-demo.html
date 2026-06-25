@@ -405,9 +405,7 @@
     align-items: center;
     gap: 10px;
     padding: 8px 0;
-    border-bottom: 1px solid #2a2a2a;
   }
-  .feature-row:last-child { border-bottom: none; }
   .feature-info { flex: 1; min-width: 0; }
   .feature-name {
     font-size: 0.85rem;
@@ -420,21 +418,38 @@
     margin-top: 1px;
     line-height: 1.3;
   }
-  .feature-group {
-    margin-bottom: 16px;
-  }
-  .feature-group:last-child {
-    margin-bottom: 0;
-  }
   .feature-group-header {
     font-size: 0.78rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.04em;
     color: #8a8070;
-    padding: 6px 0 4px;
-    border-bottom: 1px solid #2a2a2a;
-    margin-bottom: 2px;
+    padding: 14px 0 6px;
+    margin-top: 8px;
+  }
+  .feature-group-header:first-child {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .feature-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+  }
+  .unsaved-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px 14px;
+    margin: 8px 0;
+    border-radius: 6px;
+    background: #2a2a1a;
+    border: 1px solid #6a5a20;
+    font-size: 0.85rem;
+    color: #d0b050;
   }
   .feature-toggle {
     position: relative;
@@ -737,6 +752,11 @@
     <button class="tab" data-tab="features">⚙️ Feature Flags</button>
   </div>
 
+  <!-- Unsaved changes banner -->
+  <div id="unsavedBanner" class="unsaved-banner" style="display:none">
+    <span id="unsavedCount"></span>
+  </div>
+
   <!-- Folder Settings tab -->
   <div id="tab-folders" class="tab-content">
 
@@ -878,11 +898,47 @@ let workingFeatures = {};
 let scannedTree = {};
 let iconResolved = new Map();
 let iconsDirHandle = null;
-let hasChanges = false;
 let featuresChanged = false;
 let activeColor = null;   // currently selected color in palette
 let activeIcon = null;     // currently selected icon name
 let allSvgIcons = [];      // [{stem, handle}] for all SVGs in icons dir
+
+function computeChanges() {
+  let colorChanges = 0, iconChanges = 0;
+  const allPaths = new Set([...Object.keys(workingConfig), ...Object.keys(origConfig)]);
+  for (const path of allPaths) {
+    if (path.startsWith('$')) continue;
+    const w = workingConfig[path], o = origConfig[path];
+    const wColor = w != null ? (typeof w === 'object' ? w.color : w) : undefined;
+    const oColor = o != null ? (typeof o === 'object' ? o.color : o) : undefined;
+    if (wColor !== oColor) colorChanges++;
+    const wIcon = w != null && typeof w === 'object' ? w.icon : undefined;
+    const oIcon = o != null && typeof o === 'object' ? o.icon : undefined;
+    if (wIcon !== oIcon) iconChanges++;
+  }
+  let flagChanges = 0;
+  for (const key of Object.keys(workingFeatures)) {
+    if (key.startsWith('$')) continue;
+    if (workingFeatures[key] !== origFeatures[key]) flagChanges++;
+  }
+  return { colorChanges, iconChanges, flagChanges, total: colorChanges + iconChanges + flagChanges };
+}
+
+function updateUnsavedBanner() {
+  const banner = document.getElementById('unsavedBanner');
+  const countEl = document.getElementById('unsavedCount');
+  const c = computeChanges();
+  if (c.total === 0) {
+    banner.style.display = 'none';
+  } else {
+    const parts = [];
+    if (c.colorChanges > 0) parts.push(c.colorChanges + ' color');
+    if (c.iconChanges > 0) parts.push(c.iconChanges + ' icon');
+    if (c.flagChanges > 0) parts.push(c.flagChanges + ' flag');
+    countEl.textContent = parts.join(', ') + ' unsaved';
+    banner.style.display = 'flex';
+  }
+}
 
 // ══════════════════════════════════════════════════
 // DOM refs
@@ -944,93 +1000,65 @@ function showModal(title, content) {
 function renderFeatures() {
   featuresList.innerHTML = '';
   const descs = workingFeatures['$descriptions'] || {};
-  const groups = workingFeatures['$groups'] || {};
-  const groupNames = Object.keys(groups);
-  const rendered = new Set();
 
-  // If no groups defined, fall back to flat list
-  if (groupNames.length === 0) {
-    renderFlatFeatureList(descs, rendered);
-    return;
+  // Hardcoded groups — no changes needed to the JSON file
+  const groups = [
+    ['Layout',        ['header', 'footer', 'theme_toggle', 'breadcrumbs', 'right_sidebar']],
+    ['Searching',     ['search_bar', 'search_full_content', 'search_highlight', 'show_tree_search_hierarchy']],
+    ['Sidebar Tree',  ['disclosure_chevrons', 'folder_count_badges', 'tree_colors', 'tree_icons', 'collapse_all']],
+    ['Right Sidebar', ['sidebar_link_previews', 'preview_dimmer', 'referenced_pages', 'referencing_pages', 'coming_soon']],
+    ['Content',       ['wiki_links']],
+  ];
+
+  function makeRow(key, val, desc) {
+    const label = key.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    const row = document.createElement('div');
+    row.className = 'feature-row';
+    row.innerHTML = `
+      <label class="feature-toggle">
+        <input type="checkbox" ${val ? 'checked' : ''}>
+        <span class="slider"></span>
+      </label>
+      <div class="feature-info">
+        <div class="feature-name">${label}</div>
+        <div class="feature-desc">${desc}</div>
+      </div>`;
+    row.querySelector('input').addEventListener('change', function () {
+      workingFeatures[key] = this.checked;
+      featuresChanged = true;
+      updateUnsavedBanner();
+      featuresSaveBtn.disabled = false;
+      featuresPreviewBtn.disabled = false;
+      featuresResetBtn.disabled = false;
+    });
+    return row;
   }
 
-  for (const groupName of groupNames) {
-    const keys = groups[groupName];
-    if (!keys || keys.length === 0) continue;
+  const rendered = new Set();
 
-    const section = document.createElement('div');
-    section.className = 'feature-group';
-
-    const header = document.createElement('div');
-    header.className = 'feature-group-header';
-    header.textContent = groupName;
-    section.appendChild(header);
-
+  for (const [sectionName, keys] of groups) {
+    let added = false;
     for (const key of keys) {
-      if (key.startsWith('$')) continue;
       const val = workingFeatures[key];
       if (val === undefined) continue;
+      if (!added) {
+        const hdr = document.createElement('div');
+        hdr.className = 'feature-group-header';
+        hdr.textContent = sectionName;
+        featuresList.appendChild(hdr);
+        added = true;
+      }
       rendered.add(key);
-      section.appendChild(createFeatureRow(key, val, descs[key] || ''));
-    }
-
-    if (section.children.length > 1) {
-      featuresList.appendChild(section);
+      featuresList.appendChild(makeRow(key, val, descs[key] || ''));
     }
   }
 
   // Any leftover keys not in any group
-  const leftover = Object.keys(workingFeatures).filter(
-    k => !k.startsWith('$') && !rendered.has(k)
-  );
-  if (leftover.length > 0) {
-    const section = document.createElement('div');
-    section.className = 'feature-group';
-    const header = document.createElement('div');
-    header.className = 'feature-group-header';
-    header.textContent = 'Other';
-    section.appendChild(header);
-    for (const key of leftover) {
-      section.appendChild(createFeatureRow(key, workingFeatures[key], descs[key] || ''));
-    }
-    featuresList.appendChild(section);
-  }
-
-  updateFeatureButtons();
-}
-
-function renderFlatFeatureList(descs, rendered) {
   for (const [key, val] of Object.entries(workingFeatures)) {
-    if (key.startsWith('$')) continue;
-    rendered.add(key);
-    featuresList.appendChild(createFeatureRow(key, val, descs[key] || ''));
+    if (key.startsWith('$') || rendered.has(key)) continue;
+    featuresList.appendChild(makeRow(key, val, descs[key] || ''));
   }
-  updateFeatureButtons();
-}
 
-function createFeatureRow(key, val, desc) {
-  const label = key.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-  const row = document.createElement('div');
-  row.className = 'feature-row';
-  row.innerHTML = `
-    <label class="feature-toggle">
-      <input type="checkbox" ${val ? 'checked' : ''}>
-      <span class="slider"></span>
-    </label>
-    <div class="feature-info">
-      <div class="feature-name">${label}</div>
-      <div class="feature-desc">${desc}</div>
-    </div>`;
-  const cb = row.querySelector('input')!;
-  cb.addEventListener('change', () => {
-    workingFeatures[key] = cb.checked;
-    featuresChanged = true;
-    updateFeatureButtons();
-  });
-  return row;
-}
-
-function updateFeatureButtons() {
   featuresSaveBtn.disabled = !featuresChanged;
   featuresPreviewBtn.disabled = false;
   featuresResetBtn.disabled = false;
@@ -1086,7 +1114,7 @@ function setFolderConfig(path, color) {
       delete workingConfig[path];
     }
   }
-  hasChanges = true;
+  updateUnsavedBanner();
   saveBtn.disabled = false;
 }
 
@@ -1112,7 +1140,7 @@ function setFolderIcon(path, iconName) {
       delete workingConfig[path];
     }
   }
-  hasChanges = true;
+  updateUnsavedBanner();
   saveBtn.disabled = false;
 }
 
@@ -1292,7 +1320,7 @@ async function backupAndSave() {
   await w.close();
 
   origConfig = JSON.parse(JSON.stringify(workingConfig));
-  hasChanges = false;
+  updateUnsavedBanner();
   saveBtn.disabled = true;
   return finalBackupName;
 }
@@ -9569,7 +9597,7 @@ async function openProject() {
   for (const k of Object.keys(origConfig)) { if (k.startsWith('$')) delete origConfig[k]; }
   workingConfig = JSON.parse(JSON.stringify(origConfig));
 
-  hasChanges = false;
+  updateUnsavedBanner();
   saveBtn.disabled = true;
   previewBtn.disabled = false;
   resetBtn.disabled = false;
@@ -9628,12 +9656,12 @@ async function openProject() {
 // Save / Reset
 // ══════════════════════════════════════════════════
 async function saveConfig() {
-  if (!srcHandle || !hasChanges) return;
+  if (!srcHandle || computeChanges().total === 0) return;
   setCardStatus('folderCardStatus', '💾 Saving with backup…', 'info');
   try {
     const backupName = await backupAndSave();
     await saveFeaturesFile();
-    hasChanges = false;
+    updateUnsavedBanner();
     saveBtn.disabled = true;
     setCardStatus('folderCardStatus', '✅ Saved! Backup: ' + backupName + '. Commit and push.', 'success');
   } catch (e) {
@@ -9656,7 +9684,8 @@ async function resetConfig() {
   if (!srcHandle) return;
   if (!confirm('Discard all unsaved changes and reset to the last saved config?')) return;
   workingConfig = JSON.parse(JSON.stringify(origConfig));
-  hasChanges = false;
+  featuresChanged = false;
+  updateUnsavedBanner();
   saveBtn.disabled = true;
   iconResolved.clear();
   const allIconNames = new Set();
@@ -9686,6 +9715,7 @@ async function featuresSave() {
   try {
     await saveFeaturesFile();
     featuresChanged = false;
+    updateUnsavedBanner();
     featuresSaveBtn.disabled = true;
     setCardStatus('featuresCardStatus', '✅ Feature flags saved.', 'success');
   } catch (e) {
@@ -9708,6 +9738,7 @@ function featuresReset() {
   if (!confirm('Discard all unsaved feature flag changes?')) return;
   workingFeatures = JSON.parse(JSON.stringify(origFeatures));
   featuresChanged = false;
+  updateUnsavedBanner();
   featuresSaveBtn.disabled = true;
   renderFeatures();
   setCardStatus('featuresCardStatus', '↩ Feature flags reset.', 'info');
@@ -9799,7 +9830,7 @@ document.getElementById('clearIconsBtn').addEventListener('click', () => {
   refreshAllTreeRows();
   syncPaletteFromTree();
   updateStats();
-  hasChanges = true;
+  updateUnsavedBanner();
   document.getElementById('saveBtn').disabled = false;
 });
 document.getElementById('clearColorsBtn').addEventListener('click', () => {
@@ -9816,7 +9847,7 @@ document.getElementById('clearColorsBtn').addEventListener('click', () => {
   refreshAllTreeRows();
   syncPaletteFromTree();
   updateStats();
-  hasChanges = true;
+  updateUnsavedBanner();
   document.getElementById('saveBtn').disabled = false;
 });
 previewRemove.addEventListener('click', clearActiveColor);

@@ -2,10 +2,34 @@
   "$schema": "Feature flags for Pages-TestV2",
   "$comment": "Set true/false to enable/disable features. Rebuild after changes.",
   "$groups": {
-    "Layout": ["header", "footer", "theme_toggle", "breadcrumbs", "right_sidebar"],
-    "Sidebar Tree": ["search_bar", "search_full_content", "search_highlight", "show_tree_search_hierarchy", "disclosure_chevrons", "folder_count_badges", "tree_colors", "tree_icons", "collapse_all"],
-    "Right Sidebar": ["sidebar_link_previews", "preview_dimmer", "referenced_pages", "referencing_pages", "coming_soon"],
-    "Content": ["wiki_links"]
+    "Layout": [
+      "header",
+      "footer",
+      "theme_toggle",
+      "breadcrumbs",
+      "right_sidebar"
+    ],
+    "Sidebar Tree": [
+      "search_bar",
+      "search_full_content",
+      "search_highlight",
+      "show_tree_search_hierarchy",
+      "disclosure_chevrons",
+      "folder_count_badges",
+      "tree_colors",
+      "tree_icons",
+      "collapse_all"
+    ],
+    "Right Sidebar": [
+      "sidebar_link_previews",
+      "preview_dimmer",
+      "referenced_pages",
+      "referencing_pages",
+      "coming_soon"
+    ],
+    "Content": [
+      "wiki_links"
+    ]
   },
   "$descriptions": {
     "header": "Top header bar with app title + sidebar toggle buttons. When off, floating toggle buttons appear instead.",
@@ -41,12 +65,12 @@
   "referencing_pages": true,
   "coming_soon": true,
   "search_bar": true,
-  "search_full_content": false,
+  "search_full_content": true,
   "search_highlight": true,
   "theme_toggle": true,
   "wiki_links": true,
   "tree_colors": true,
   "tree_icons": true,
   "collapse_all": true,
-  "show_tree_search_hierarchy": false
+  "show_tree_search_hierarchy": true
 }
