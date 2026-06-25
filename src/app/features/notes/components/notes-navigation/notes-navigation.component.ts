@@ -64,6 +64,13 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
   // Reactive state for tree nodes
   private readonly allTreeNodes = signal<NoteTreeNode[]>([]);
 
+  // Tracks folders the user has explicitly collapsed during an active search
+  // so that auto-expand respects manual collapse on subsequent search keystrokes
+  private readonly manuallyCollapsed = signal<Set<string>>(new Set());
+
+  // Whether the initial auto-expand has been applied for the current search session
+  private hasAutoExpanded = false;
+
   // Search state with debouncing
   private readonly searchInputSubject = new Subject<string>();
   private searchSubscription?: Subscription;
@@ -152,10 +159,17 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
       .subscribe((query) => {
         this.searchService.search(query);
 
-        // Auto-expand all folders when searching
+        // Auto-expand all folders once when search starts and hierarchy mode is on
         if (query.trim()) {
-          this.expandAllFolders(this.allTreeNodes());
-          this.allTreeNodes.set([...this.allTreeNodes()]);
+          if (this.features.isEnabled('show_tree_search_hierarchy') && !this.hasAutoExpanded) {
+            this.expandAllFolders(this.allTreeNodes());
+            this.allTreeNodes.set([...this.allTreeNodes()]);
+            this.hasAutoExpanded = true;
+          }
+          this.manuallyCollapsed.set(new Set());
+        } else {
+          this.hasAutoExpanded = false;
+          this.manuallyCollapsed.set(new Set());
         }
       });
 
@@ -212,6 +226,17 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
   protected toggleFolder(folder: NoteTreeNode): void {
     if (isFolder(folder)) {
       folder.expanded = !folder.expanded;
+      // Track manual collapses during search so auto-expand respects them
+      const query = this.searchQuery();
+      if (query.trim()) {
+        const path = folder.path || folder.name;
+        this.manuallyCollapsed.update(s => {
+          const next = new Set(s);
+          if (folder.expanded) next.delete(path);
+          else next.add(path);
+          return next;
+        });
+      }
       // Trigger change detection by creating new array reference
       // Shallow copy is efficient for large trees
       this.allTreeNodes.set([...this.allTreeNodes()]);
@@ -267,13 +292,16 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
   }
 
   /**
-   * Builds a filtered tree showing only matched notes and their parent folders
+   * Builds a filtered tree showing only matched notes and their parent folders.
+   * When show_tree_search_hierarchy is OFF, returns a flat list of matched notes.
    */
   private buildFilteredTree(
     nodes: NoteTreeNode[],
     results: SearchResult[]
   ): NoteTreeNode[] {
     const matchedNoteIds = new Set(results.map((r) => r.note.id));
+    const showHierarchy = this.features.isEnabled('show_tree_search_hierarchy');
+    const collapsedPaths = this.manuallyCollapsed();
     const filteredNodes: NoteTreeNode[] = [];
 
     for (const node of nodes) {
@@ -286,13 +314,21 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
         // Recursively filter children
         const filteredChildren = this.buildFilteredTree(node.children, results);
 
-        // Include folder only if it has matched children
-        if (filteredChildren.length > 0) {
-          filteredNodes.push({
-            ...node,
-            children: filteredChildren,
-            expanded: true, // Auto-expand when filtering
-          });
+        if (showHierarchy) {
+          // Include folder only if it has matched children
+          if (filteredChildren.length > 0) {
+            // Preserve manual collapse state; default to expanded
+            const fullPath = node.path || node.name;
+            const expanded = collapsedPaths.has(fullPath) ? false : true;
+            filteredNodes.push({
+              ...node,
+              children: filteredChildren,
+              expanded,
+            });
+          }
+        } else {
+          // Hierarchy off: include matching notes directly (no folder wrapper)
+          filteredNodes.push(...filteredChildren);
         }
       }
     }

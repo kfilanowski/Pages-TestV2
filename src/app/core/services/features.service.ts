@@ -25,6 +25,7 @@ export interface FeatureFlags {
   tree_colors: boolean;
   tree_icons: boolean;
   collapse_all: boolean;
+  show_tree_search_hierarchy: boolean;
 }
 
 /**
