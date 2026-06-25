@@ -3,11 +3,22 @@
     "color": "#FF4444",
     "icon": "🐾"
   },
+  "Bestiary/Bestiary/Aberrations": {
+    "color": "#CC55CC"
+  },
   "Bestiary/Bestiary/Beasts": {
+    "color": "#FF8844",
     "icon": "wolf"
   },
+  "Bestiary/Bestiary/Celestials": {
+    "color": "#FFD700"
+  },
   "Bestiary/Bestiary/Constructs": {
+    "color": "#8899AA",
     "icon": "robot"
+  },
+  "Bestiary/Bestiary/Cryptids": {
+    "color": "#66BB66"
   },
   "Bestiary/Bestiary/Dragons": {
     "color": "#FF5500",
@@ -68,16 +79,35 @@
     "color": "#99AACC"
   },
   "Classes": {
+    "color": "#FFAA00",
     "icon": "helmet"
   },
+  "Classes/+Class Details": {
+    "color": "#DDDDDD"
+  },
+  "Classes/+Class Details/Quick Character Creation Guide": {
+    "color": "#88CC88"
+  },
+  "Classes/+Class Details/Progression Outside of Class": {
+    "color": "#AAAAAA"
+  },
   "Classes/Alchemist": {
+    "color": "#44BB77",
     "icon": "alchemy"
   },
   "Classes/Barbarian": {
+    "color": "#CC4422",
     "icon": "barbarian"
   },
+  "Classes/Bard": {
+    "color": "#CC4499"
+  },
   "Classes/Beast Trainer": {
+    "color": "#66BB44",
     "icon": "dog"
+  },
+  "Classes/Bender": {
+    "color": "#4488CC"
   },
   "Classes/Bender/Archetypes/Airbender": {
     "color": "#88CCDD",
@@ -95,14 +125,25 @@
     "color": "#4488CC",
     "icon": "water"
   },
+  "Classes/Druid": {
+    "color": "#44AA44"
+  },
   "Classes/Fiend Shifter": {
+    "color": "#9933AA",
     "icon": "devil-mask"
   },
+  "Classes/Fighter": {
+    "color": "#CC5533"
+  },
   "Classes/Healer": {
+    "color": "#44BB88",
     "icon": "health"
   },
+  "Classes/Hero": {
+    "color": "#FFCC00"
+  },
   "Classes/Hex Maniac": {
-    "color": "#4488dd",
+    "color": "#9944CC",
     "icon": "magic"
   },
   "Classes/Jester": {
@@ -169,6 +210,21 @@
   "Core Rules, How to Play": {
     "color": "#66BB66",
     "icon": "dice"
+  },
+  "Core Rules, How to Play/Abbreviations and Terminology": {
+    "color": "#99AACC"
+  },
+  "Core Rules, How to Play/Ability Scores": {
+    "color": "#88AACC"
+  },
+  "Core Rules, How to Play/Actions": {
+    "color": "#88CCBB"
+  },
+  "Core Rules, How to Play/Actions/Action System": {
+    "color": "#77BBAA"
+  },
+  "Core Rules, How to Play/Actions/Common Actions": {
+    "color": "#88BBAA"
   },
   "Core Rules, How to Play/Alternative Win Conditions": {
     "color": "#CCAA88"
@@ -330,7 +386,7 @@
     "color": "#66AACC"
   },
   "Gods": {
-    "color": "#c1d0dd",
+    "color": "#888888",
     "icon": "👑"
   },
   "Gods/Gods/Demigods": {

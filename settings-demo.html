@@ -1,0 +1,1712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Folder Settings</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background: #1a1a1a;
+    color: #d0c8b8;
+    display: flex;
+    justify-content: center;
+    padding: 48px 24px;
+    min-height: 100vh;
+  }
+  .container { max-width: 800px; width: 100%; }
+  h1 { font-size: 1.4rem; margin-bottom: 4px; }
+  .subtitle { color: #8a8070; font-size: 0.85rem; margin-bottom: 24px; }
+  .subtitle code { background: #222; padding: 1px 5px; border-radius: 3px; }
+
+  .btn {
+    background: #a67c00;
+    color: #1a1a1a;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+  .btn:hover { opacity: 0.85; }
+  .btn.danger { background: #6a3030; border: 1px solid #8a4040; color: #d0b0b0; }
+  .btn.secondary { background: transparent; border: 1px solid #4a4438; color: #d0c8b8; }
+  .btn.secondary:hover { border-color: #a67c00; color: #a67c00; opacity: 1; }
+
+  .btn-small {
+    background: transparent;
+    border: 1px solid #4a4438;
+    color: #d0c8b8;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 0.78rem;
+    cursor: pointer;
+    transition: border-color 0.15s;
+  }
+  .btn-small:hover { border-color: #a67c00; color: #a67c00; }
+
+  .status {
+    margin: 16px 0;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    background: #222;
+    border: 1px solid #333;
+    display: none;
+  }
+  .status.success { display: block; border-color: #3a6b3a; color: #8bc88b; }
+  .status.error { display: block; border-color: #6b3a3a; color: #c88b8b; }
+  .status.info { display: block; border-color: #3a506b; color: #8bb8c8; }
+
+  .card {
+    background: #222;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 16px 0;
+  }
+  .card-title {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #8a8070;
+    margin-bottom: 12px;
+  }
+
+  .stats-row { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 12px; }
+  .stat {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 10px 16px;
+    flex: 1; min-width: 120px;
+  }
+  .stat-value { font-size: 1.3rem; font-weight: 600; }
+  .stat-label { font-size: 0.7rem; color: #8a8070; text-transform: uppercase; letter-spacing: 0.3px; }
+  .stat.configured .stat-value { color: #8bc88b; }
+  .stat.unconfigured .stat-value { color: #c8a88b; }
+  .stat.total .stat-value { color: #8bb8c8; }
+
+  /* ── Color palette ── */
+  .palette {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+  .palette-swatch {
+    width: 54px; height: 30px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.1s, border-color 0.1s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .palette-swatch .hex-label {
+    font-size: 0.6rem;
+    font-weight: 600;
+    font-family: monospace;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.7), 0 0 3px rgba(0,0,0,0.5);
+    pointer-events: none;
+    line-height: 1;
+  }
+  .palette-swatch:hover { transform: scale(1.15); z-index: 1; }
+  .palette-swatch.active { border-color: #fff; }
+  .palette-swatch.active::after {
+    content: '✓';
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  }
+
+  /* ── Preview bar ── */
+  .preview-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 6px;
+    margin-bottom: 14px;
+  }
+  .preview-swatch {
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.1);
+    flex-shrink: 0;
+  }
+  .preview-text {
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .preview-text .icon-placeholder {
+    display: inline-block;
+    width: 18px; height: 18px;
+    border-radius: 3px;
+    border: 1px solid currentColor;
+    opacity: 0.4;
+  }
+  .preview-remove {
+    margin-left: auto;
+    font-size: 0.75rem;
+    color: #8a8070;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    background: none;
+  }
+  .preview-remove:hover { border-color: #6a3a3a; color: #c08080; }
+
+  /* ── Color picker ── */
+  .color-picker {
+    margin-top: 10px;
+    padding: 12px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 6px;
+  }
+  .color-picker .picker-main {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+  .color-picker .sv-map-wrap {
+    width: 180px; height: 180px;
+    border-radius: 4px;
+    overflow: hidden;
+    flex-shrink: 0;
+    position: relative;
+    cursor: crosshair;
+  }
+  .color-picker .sv-map-wrap canvas {
+    display: block;
+    width: 100%; height: 100%;
+  }
+  .color-picker .sv-map-wrap .sv-cursor {
+    position: absolute;
+    width: 14px; height: 14px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  }
+  .color-picker .hue-strip-wrap {
+    width: 24px; height: 180px;
+    border-radius: 4px;
+    overflow: hidden;
+    flex-shrink: 0;
+    position: relative;
+    cursor: pointer;
+  }
+  .color-picker .hue-strip-wrap canvas {
+    display: block;
+    width: 100%; height: 100%;
+  }
+  .color-picker .hue-strip-wrap .hue-cursor {
+    position: absolute;
+    left: -3px; right: -3px;
+    height: 6px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    pointer-events: none;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  }
+  .color-picker .picker-details {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .color-picker .picker-preview {
+    width: 36px; height: 36px;
+    border-radius: 4px;
+    border: 1px solid #444;
+    flex-shrink: 0;
+  }
+  .color-picker .picker-fields {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .color-picker .picker-fields label {
+    font-size: 0.7rem;
+    color: #8a8070;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .color-picker .picker-fields input {
+    width: 60px;
+    background: #222;
+    border: 1px solid #444;
+    border-radius: 4px;
+    color: #d0c8b8;
+    padding: 3px 6px;
+    font-size: 0.78rem;
+    font-family: monospace;
+    text-align: center;
+    outline: none;
+  }
+  .color-picker .picker-fields input:focus { border-color: #a67c00; }
+  .color-picker .picker-fields input.hex-field { width: 80px; }
+
+  /* ── Feature flags ── */
+  .feature-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid #2a2a2a;
+  }
+  .feature-row:last-child { border-bottom: none; }
+  .feature-info { flex: 1; min-width: 0; }
+  .feature-name {
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+  .feature-desc {
+    font-size: 0.72rem;
+    color: #6a6050;
+    margin-top: 1px;
+    line-height: 1.3;
+  }
+  .feature-toggle {
+    position: relative;
+    width: 36px; height: 20px;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+  .feature-toggle input {
+    opacity: 0;
+    width: 0; height: 0;
+    position: absolute;
+  }
+  .feature-toggle .slider {
+    position: absolute;
+    inset: 0;
+    background: #333;
+    border-radius: 10px;
+    transition: background 0.15s;
+  }
+  .feature-toggle .slider::before {
+    content: '';
+    position: absolute;
+    width: 16px; height: 16px;
+    left: 2px; top: 2px;
+    background: #6a6050;
+    border-radius: 50%;
+    transition: transform 0.15s, background 0.15s;
+  }
+  .feature-toggle input:checked + .slider { background: #3a5a3a; }
+  .feature-toggle input:checked + .slider::before {
+    transform: translateX(16px);
+    background: #8bc88b;
+  }
+
+  /* ── Tree ── */
+  .tree { margin-top: 8px; }
+  .tree-node { margin: 0; }
+
+  .folder-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4.8px 10px 4.8px 6px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    color: var(--text-primary, #d0c8b8);
+    transition: background-color 0.1s;
+  }
+  .folder-item:hover { background: #2a2a2a; }
+
+  .apply-btn {
+    width: 72px; height: 24px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background: transparent;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: all 0.1s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-family: monospace;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+    line-height: 1;
+    letter-spacing: -0.3px;
+  }
+  .apply-btn.filled { border-color: transparent; }
+  .apply-btn:hover { transform: scale(1.08); border-color: rgba(255,255,255,0.3); }
+  .apply-btn .apply-label {
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6), 0 0 4px rgba(0,0,0,0.3);
+  }
+
+  .chevron {
+    display: inline-flex;
+    align-items: center; justify-content: center;
+    width: 14px; height: 14px;
+    font-size: 9px; color: #8a8070;
+    flex-shrink: 0; transition: transform 0.15s ease;
+    line-height: 1; opacity: 0.6;
+  }
+  .chevron.expanded { transform: rotate(90deg); }
+
+  .folder-icon {
+    width: 20px; height: 20px;
+    flex-shrink: 0;
+    display: inline-flex; align-items: center; justify-content: center;
+  }
+  .folder-icon img { width: 20px; height: 20px; display: inline-flex; vertical-align: middle; }
+  .folder-icon .emoji { font-size: 18.4px; line-height: 1; }
+
+  .folder-name { flex: 1; font-weight: 500; }
+
+  .clear-btn {
+    width: 26px; height: 26px;
+    border-radius: 5px;
+    border: none;
+    background: transparent;
+    color: #6a6050;
+    font-size: 15px;
+    line-height: 1;
+    cursor: pointer;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    transition: color 0.1s, background 0.1s;
+  }
+  .clear-btn:hover { color: #d08080; background: rgba(200,80,80,0.12); }
+
+  .tree-children {
+    padding-left: 24px;
+    display: none;
+    position: relative;
+  }
+  .tree-children.open { display: block; }
+
+  /* Tree guide lines */
+  /* Non-last children: vertical trunk on tree-node (extends through children) */
+  .tree-children > .tree-node:not(:last-child) {
+    position: relative;
+  }
+  .tree-children > .tree-node:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    left: -12px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: rgba(208, 200, 184, 0.12);
+    pointer-events: none;
+  }
+
+  /* Horizontal connector for every row */
+  .tree-children .folder-item {
+    position: relative;
+  }
+  .tree-children .folder-item::after {
+    content: '';
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    width: 12px;
+    height: 1px;
+    background: rgba(208, 200, 184, 0.12);
+    pointer-events: none;
+  }
+
+  /* Last child: L-shape — vertical on folder-item only, stops at center */
+  .tree-children > .tree-node:last-child > .folder-item::before {
+    content: '';
+    position: absolute;
+    left: -12px;
+    top: 0;
+    height: 50%;
+    bottom: auto;
+    width: 1px;
+    background: rgba(208, 200, 184, 0.12);
+    pointer-events: none;
+  }
+
+  .badge {
+    font-size: 0.72rem; padding: 2px 9px; border-radius: 9px;
+    background: #333; color: #8a8070; flex-shrink: 0;
+  }
+  .badge.new { background: #3a5a3a; color: #8bc88b; }
+  .badge.configured { background: #3a3a5a; color: #8b8bc8; }
+  .badge.inherited { background: #3a4a3a; color: #8bc8a8; }
+
+  /* ── Card status messages ── */
+  /* ── Tab bar ── */
+  .tab-bar {
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid #333;
+    margin-bottom: 24px;
+  }
+  .tab {
+    background: none;
+    border: none;
+    padding: 12px 22px;
+    font-size: 0.9rem;
+    color: #8a8070;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.15s, background 0.15s;
+    border-radius: 6px 6px 0 0;
+  }
+  .tab:hover { color: #d0c8b8; background: #222; }
+  .tab.active { color: #a67c00; }
+  .tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0; right: 0;
+    height: 2px;
+    background: #a67c00;
+  }
+  .tab-content { display: block; }
+
+  .card-status { margin-top: 12px; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; background: #1a1a1a; display: none; }
+  .card-status.success { display: block; color: #8bc88b; border: 1px solid #2a4a2a; }
+  .card-status.error { display: block; color: #c88b8b; border: 1px solid #4a2a2a; }
+  .card-status.info { display: block; color: #8bb8c8; border: 1px solid #2a3a4a; }
+
+  /* ── Modal ── */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal-box {
+    background: #222;
+    border: 1px solid #444;
+    border-radius: 8px;
+    max-width: 700px;
+    width: 90vw;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 18px;
+    border-bottom: 1px solid #333;
+  }
+  .modal-title { font-size: 0.85rem; font-weight: 600; }
+  .modal-close {
+    background: none; border: none; color: #8a8070;
+    font-size: 1.2rem; cursor: pointer; padding: 0 4px;
+    line-height: 1;
+  }
+  .modal-close:hover { color: #d0c8b8; }
+  .modal-body {
+    padding: 18px;
+    overflow: auto;
+    flex: 1;
+  }
+  .modal-body pre {
+    margin: 0;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: #c0b8a8;
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+
+  .footer { margin-top: 32px; font-size: 0.75rem; color: #5a5040; text-align: center; }
+  .footer code { background: #222; padding: 1px 5px; border-radius: 3px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>⚙️ Project Settings</h1>
+  <p class="subtitle">Pick your project's <code>src/</code> directory to configure folders and features.</p>
+
+  <button class="btn" id="openBtn">📂 Choose src/ folder</button>
+
+  <div id="status" class="status"></div>
+
+  <!-- Tab bar -->
+  <div id="tabBar" class="tab-bar" style="display:none">
+    <button class="tab active" data-tab="folders">📁 Folder Settings</button>
+    <button class="tab" data-tab="features">⚙️ Feature Flags</button>
+  </div>
+
+  <!-- Folder Settings tab -->
+  <div id="tab-folders" class="tab-content">
+
+  <div id="results" style="display:none">
+    <div class="card">
+      <div class="card-title">Project</div>
+      <div id="projectInfo" style="font-size:0.9rem"></div>
+      <div class="stats-row" id="statsRow"></div>
+      <div id="configDetail" style="font-size:0.8rem; color:#8a8070"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Pick a color from below, then click the ■ on any folder to apply it</div>
+
+      <div style="font-size:0.72rem; color:#6a6050; margin-bottom:8px">Colors visible in the expanded folder tree — click a swatch to select it.</div>
+
+      <div class="palette" id="palette"></div>
+
+      <div class="color-picker" id="colorPicker" style="display:block;margin-top:0">
+        <div class="picker-main">
+          <div class="sv-map-wrap" id="svMapWrap">
+            <canvas id="svCanvas" width="180" height="180"></canvas>
+            <div class="sv-cursor" id="svCursor"></div>
+          </div>
+          <div class="hue-strip-wrap" id="hueStripWrap">
+            <canvas id="hueCanvas" width="24" height="180"></canvas>
+            <div class="hue-cursor" id="hueCursor"></div>
+          </div>
+        </div>
+        <div class="picker-details">
+          <div class="picker-preview" id="pickerPreview"></div>
+          <div class="picker-fields">
+            <label>Hex <input class="hex-field" id="pickerHex" value="#a67c00" spellcheck="false" maxlength="7"></label>
+            <label>R <input id="pickerR" value="166" min="0" max="255"></label>
+            <label>G <input id="pickerG" value="124" min="0" max="255"></label>
+            <label>B <input id="pickerB" value="0" min="0" max="255"></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="preview-bar" id="previewBar" style="display:none">
+        <span class="folder-icon" id="previewIconWrap" style="width:20px;height:20px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0"></span>
+        <span class="preview-text">
+          <span id="previewLabel">Sample Folder</span>
+        </span>
+        <button class="preview-remove" id="previewRemove">✕ Remove</button>
+      </div>
+
+      <div style="display:flex; gap:8px; margin-bottom:12px">
+        <button class="btn-small" id="expandAllBtn">Expand all</button>
+        <button class="btn-small" id="collapseAllBtn">Collapse all</button>
+        <span style="margin-left:auto; font-size:0.75rem; color:#6aa; align-self:center" id="treeCount"></span>
+      </div>
+
+      <div id="folderTree" class="tree"></div>
+
+      <div style="display:flex; justify-content:space-between; margin-top:16px; padding-top:16px; border-top:1px solid #333">
+        <div style="display:flex; gap:8px">
+          <button class="btn" id="saveBtn" disabled>💾 Save</button>
+          <button class="btn secondary" id="previewBtn" disabled>👁️ Preview</button>
+        </div>
+        <button class="btn danger" id="resetBtn" disabled>↩ Reset</button>
+      </div>
+      <div id="folderCardStatus" class="card-status"></div>
+    </div>
+  </div><!-- /results -->
+
+  </div><!-- /tab-folders -->
+
+  <!-- Feature Flags tab -->
+  <div id="tab-features" class="tab-content" style="display:none">
+    <div class="card">
+      <div class="card-title">Feature Flags</div>
+      <div style="font-size:0.75rem; color:#6a6050; margin-bottom:12px">Toggle site features on and off.</div>
+      <div id="featuresList"></div>
+      <div style="display:flex; justify-content:space-between; margin-top:14px; padding-top:14px; border-top:1px solid #333">
+        <div style="display:flex; gap:8px">
+          <button class="btn" id="featuresSaveBtn" disabled>💾 Save flags</button>
+          <button class="btn secondary" id="featuresPreviewBtn" disabled>👁️ Preview</button>
+        </div>
+        <button class="btn danger" id="featuresResetBtn" disabled>↩ Reset flags</button>
+      </div>
+      <div id="featuresCardStatus" class="card-status"></div>
+    </div>
+  </div><!-- /tab-features -->
+
+  <div class="footer">
+    Requires Chrome/Edge. Navigate to your project's <code>src/</code> directory.
+  </div>
+</div>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box">
+    <div class="modal-header">
+      <span class="modal-title" id="modalTitle">Preview</span>
+      <button class="modal-close" id="modalClose">✕</button>
+    </div>
+    <div class="modal-body">
+      <pre id="modalContent"></pre>
+    </div>
+  </div>
+</div>
+
+<script>
+// ══════════════════════════════════════════════════
+// State
+// ══════════════════════════════════════════════════
+let srcHandle = null;
+let origConfig = {};
+let workingConfig = {};
+let origFeatures = {};
+let workingFeatures = {};
+let scannedTree = {};
+let iconResolved = new Map();
+let iconsDirHandle = null;
+let hasChanges = false;
+let featuresChanged = false;
+let activeColor = null;   // currently selected color in palette
+
+// ══════════════════════════════════════════════════
+// DOM refs
+// ══════════════════════════════════════════════════
+const openBtn = document.getElementById('openBtn');
+const status = document.getElementById('status');
+const results = document.getElementById('results');
+const projectInfo = document.getElementById('projectInfo');
+const statsRow = document.getElementById('statsRow');
+const configDetail = document.getElementById('configDetail');
+const folderTree = document.getElementById('folderTree');
+const saveBtn = document.getElementById('saveBtn');
+const resetBtn = document.getElementById('resetBtn');
+const previewBtn = document.getElementById('previewBtn');
+const palette = document.getElementById('palette');
+const previewBar = document.getElementById('previewBar');
+const previewSwatch = document.getElementById('previewSwatch');
+const previewLabel = document.getElementById('previewLabel');
+const previewRemove = document.getElementById('previewRemove');
+const featuresList = document.getElementById('featuresList');
+const featuresSaveBtn = document.getElementById('featuresSaveBtn');
+const featuresPreviewBtn = document.getElementById('featuresPreviewBtn');
+const featuresResetBtn = document.getElementById('featuresResetBtn');
+const colorPicker = document.getElementById('colorPicker');
+const previewIconWrap = document.getElementById('previewIconWrap');
+const svCanvas = document.getElementById('svCanvas');
+const svCtx = svCanvas.getContext('2d');
+const svCursor = document.getElementById('svCursor');
+const hueCanvas = document.getElementById('hueCanvas');
+const hueCtx = hueCanvas.getContext('2d');
+const hueCursor = document.getElementById('hueCursor');
+const pickerPreview = document.getElementById('pickerPreview');
+const pickerHex = document.getElementById('pickerHex');
+const pickerR = document.getElementById('pickerR');
+const pickerG = document.getElementById('pickerG');
+const pickerB = document.getElementById('pickerB');
+
+function setStatus(msg, type = 'info') {
+  status.innerHTML = msg;
+  status.className = 'status ' + type;
+}
+
+function setCardStatus(id, msg, type = 'info') {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.textContent = msg;
+  el.className = 'card-status ' + type;
+}
+
+function showModal(title, content) {
+  document.getElementById('modalTitle').textContent = title;
+  document.getElementById('modalContent').textContent = content;
+  document.getElementById('modalOverlay').classList.add('open');
+}
+
+// ══════════════════════════════════════════════════
+// Feature flags
+// ══════════════════════════════════════════════════
+function renderFeatures() {
+  featuresList.innerHTML = '';
+  const descs = workingFeatures['$descriptions'] || {};
+  for (const [key, val] of Object.entries(workingFeatures)) {
+    if (key.startsWith('$')) continue;
+    const label = key.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    const desc = descs[key] || '';
+    const row = document.createElement('div');
+    row.className = 'feature-row';
+    row.innerHTML = `
+      <div class="feature-info">
+        <div class="feature-name">${label}</div>
+        <div class="feature-desc">${desc}</div>
+      </div>
+      <label class="feature-toggle">
+        <input type="checkbox" ${val ? 'checked' : ''}>
+        <span class="slider"></span>
+      </label>`;
+    const cb = row.querySelector('input');
+    cb.addEventListener('change', () => {
+      workingFeatures[key] = cb.checked;
+      featuresChanged = true;
+      featuresSaveBtn.disabled = false;
+      featuresPreviewBtn.disabled = false;
+      featuresResetBtn.disabled = false;
+    });
+    featuresList.appendChild(row);
+  }
+  featuresSaveBtn.disabled = !featuresChanged;
+  featuresPreviewBtn.disabled = false;
+  featuresResetBtn.disabled = false;
+}
+
+async function loadFeatures(dirHandle) {
+  try {
+    const fileHandle = await dirHandle.getFileHandle('config/features.json');
+    return JSON.parse(await (await fileHandle.getFile()).text());
+  } catch {
+    try {
+      const configDir = await dirHandle.getDirectoryHandle('config');
+      const fileHandle = await configDir.getFileHandle('features.json');
+      return JSON.parse(await (await fileHandle.getFile()).text());
+    } catch {
+      return {};
+    }
+  }
+}
+// ══════════════════════════════════════════════════
+// Config helpers
+// ══════════════════════════════════════════════════
+function getFolderState(path) {
+  // Returns: 'configured' (explicit color), 'inherited' (color from parent), 'new' (no color)
+  const cfg = getConfigForPath(path);
+  const hasExplicit = cfg !== null && (typeof cfg === 'string' || (typeof cfg === 'object' && cfg.color));
+  if (hasExplicit) return 'configured';
+  // Check for inherited color from parent
+  const slash = path.lastIndexOf('/');
+  if (slash > 0) {
+    const parentState = getFolderState(path.substring(0, slash));
+    if (parentState === 'configured' || parentState === 'inherited') return 'inherited';
+  }
+  return 'new';
+}
+
+function getConfigForPath(path) {
+  return workingConfig && workingConfig[path] !== undefined ? workingConfig[path] : null;
+}
+
+function setFolderConfig(path, color) {
+  const existing = workingConfig[path];
+  if (color) {
+    if (typeof existing === 'object') {
+      workingConfig[path] = { ...existing, color };
+    } else {
+      workingConfig[path] = { color };
+    }
+  } else {
+    if (typeof existing === 'object' && existing.icon) {
+      workingConfig[path] = { icon: existing.icon };
+    } else {
+      delete workingConfig[path];
+    }
+  }
+  hasChanges = true;
+  saveBtn.disabled = false;
+}
+
+function findColor(path) {
+  const cfg = getConfigForPath(path);
+  if (cfg) {
+    if (typeof cfg === 'string') return cfg;
+    if (cfg.color) return cfg.color;
+  }
+  const slash = path.lastIndexOf('/');
+  if (slash > 0) return findColor(path.substring(0, slash));
+  return null;
+}
+
+function findIcon(path) {
+  const cfg = getConfigForPath(path);
+  if (cfg && typeof cfg === 'object' && cfg.icon) return cfg.icon;
+  return null;
+}
+
+// ══════════════════════════════════════════════════
+// Palette
+// ══════════════════════════════════════════════════
+function syncPaletteFromTree() {
+  palette.innerHTML = '';
+  // Normalize any color format to lowercase hex
+  const isRowVisible = (btn) => {
+    let el = btn.closest('.tree-node');
+    while (el) {
+      const parent = el.parentElement;
+      if (parent && parent.classList.contains('tree-children') && !parent.classList.contains('open')) return false;
+      el = parent ? parent.closest('.tree-node') : null;
+    }
+    return true;
+  };
+  const toHex = (c) => {
+    if (c.startsWith('#')) return c.toLowerCase();
+    const m = c.match(/rgb(a)?\s*\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)/);
+    if (m) return '#' + [m[2],m[3],m[4]].map(v => (+v).toString(16).padStart(2,'0')).join('');
+    return c;
+  };
+  const colors = [];
+  const seen = new Set();
+  const btns = folderTree.querySelectorAll('.apply-btn');
+  for (const btn of btns) {
+    const raw = btn.style.background;
+    if (!raw || raw === '' || raw === 'transparent') continue;
+    if (!isRowVisible(btn)) continue;
+    const hex = toHex(raw);
+    if (!seen.has(hex)) {
+      seen.add(hex);
+      colors.push(hex);
+    }
+  }
+  if (colors.length === 0) {
+    const hint = document.createElement('div');
+    hint.style.cssText = 'font-size:0.75rem; color:#6a6050; padding:4px 0 8px 0';
+    hint.textContent = 'Expand folders below to reveal their assigned colors here.';
+    palette.appendChild(hint);
+    return;
+  }
+  colors.forEach(c => {
+    const sw = document.createElement('div');
+    sw.className = 'palette-swatch';
+    sw.style.background = c;
+    const label = document.createElement('span');
+    label.className = 'hex-label';
+    label.textContent = c;
+    sw.appendChild(label);
+    sw.addEventListener('click', () => setActiveColor(c));
+    palette.appendChild(sw);
+  });
+  // Re-apply active highlight
+  if (activeColor) {
+    document.querySelectorAll('.palette-swatch').forEach(el => {
+      el.classList.toggle('active', el.style.background === activeColor);
+    });
+  }
+}
+
+function setActiveColor(color) {
+  activeColor = color;
+  document.querySelectorAll('.palette-swatch').forEach(el => {
+    el.classList.toggle('active', el.style.background === color);
+  });
+  // Update HSV picker
+  updatePickerUI(color);
+  // Show preview with an icon
+  previewIconWrap.innerHTML = '';
+  // Pick the first available resolved icon for the preview
+  let iconAdded = false;
+  for (const [, resolved] of iconResolved) {
+    if (resolved.type === 'svg') {
+      const img = document.createElement('img');
+      img.src = resolved.value;
+      img.alt = '';
+      img.style.cssText = 'width:20px;height:20px';
+      previewIconWrap.appendChild(img);
+      iconAdded = true;
+      break;
+    } else if (resolved.type === 'emoji') {
+      previewIconWrap.textContent = resolved.value;
+      previewIconWrap.style.fontSize = '18.4px';
+      iconAdded = true;
+      break;
+    }
+  }
+  if (!iconAdded) {
+    // Fallback: show a folder icon using unicode
+    previewIconWrap.textContent = '📁';
+    previewIconWrap.style.fontSize = '18.4px';
+  }
+  previewLabel.style.color = color;
+  previewBar.style.display = 'flex';
+}
+function clearActiveColor() {
+  activeColor = null;
+  document.querySelectorAll('.palette-swatch').forEach(el => el.classList.remove('active'));
+  previewBar.style.display = 'none';
+}
+
+// ══════════════════════════════════════════════════
+// File ops
+// ══════════════════════════════════════════════════
+async function readFolderMetadata(dirHandle) {
+  try {
+    const fileHandle = await dirHandle.getFileHandle('config/folder-metadata.json');
+    return JSON.parse(await (await fileHandle.getFile()).text());
+  } catch {
+    try {
+      const configDir = await dirHandle.getDirectoryHandle('config');
+      const fileHandle = await configDir.getFileHandle('folder-metadata.json');
+      return JSON.parse(await (await fileHandle.getFile()).text());
+    } catch {
+      return {};
+    }
+  }
+}
+
+async function backupAndSave() {
+  const now = new Date();
+  const dateStr = now.getFullYear() + '-' +
+    String(now.getMonth()+1).padStart(2,'0') + '-' +
+    String(now.getDate()).padStart(2,'0');
+  const backupName = 'folder-metadata.json.' + dateStr + '.bak';
+
+  let configDir;
+  try { configDir = await srcHandle.getDirectoryHandle('config'); }
+  catch { configDir = await srcHandle.getDirectoryHandle('config', { create: true }); }
+
+  let finalBackupName = backupName;
+  let idx = 1;
+  while (true) {
+    try { await configDir.getFileHandle(finalBackupName); finalBackupName = backupName.replace('.bak', `-${idx}.bak`); idx++; }
+    catch { break; }
+  }
+
+  try {
+    const existingFile = await configDir.getFileHandle('folder-metadata.json');
+    const existingContent = await (await existingFile.getFile()).text();
+    const backupHandle = await configDir.getFileHandle(finalBackupName, { create: true });
+    const w = await backupHandle.createWritable();
+    await w.write(existingContent);
+    await w.close();
+  } catch { /* no existing */ }
+
+  const output = {};
+  for (const [path, cfg] of Object.entries(workingConfig)) {
+    if (path.startsWith('$')) continue;
+    if (typeof cfg === 'object' && (cfg.color || cfg.icon)) output[path] = cfg;
+    else if (typeof cfg === 'string') output[path] = cfg;
+  }
+
+  const fileHandle = await configDir.getFileHandle('folder-metadata.json', { create: true });
+  const w = await fileHandle.createWritable();
+  await w.write(JSON.stringify(output, null, 2));
+  await w.close();
+
+  origConfig = JSON.parse(JSON.stringify(workingConfig));
+  hasChanges = false;
+  saveBtn.disabled = true;
+  return finalBackupName;
+}
+
+async function saveFeaturesFile() {
+  if (!srcHandle) return;
+  let configDir;
+  try { configDir = await srcHandle.getDirectoryHandle('config'); }
+  catch { configDir = await srcHandle.getDirectoryHandle('config', { create: true }); }
+
+  const output = {};
+  for (const [key, val] of Object.entries(workingFeatures)) {
+    if (key.startsWith('$')) { output[key] = val; continue; }
+    output[key] = val;
+  }
+
+  const fileHandle = await configDir.getFileHandle('features.json', { create: true });
+  const w = await fileHandle.createWritable();
+  await w.write(JSON.stringify(output, null, 2));
+  await w.close();
+  origFeatures = JSON.parse(JSON.stringify(workingFeatures));
+}
+
+// ══════════════════════════════════════════════════
+// Icon resolution
+// ══════════════════════════════════════════════════
+async function resolveIconsFromDisk(iconNames) {
+  const toResolve = iconNames.filter(n => !iconResolved.has(n));
+  if (toResolve.length === 0 || !iconsDirHandle) return;
+
+  const svgEntries = [];
+  for await (const entry of iconsDirHandle.values()) {
+    if (entry.kind === 'file' && entry.name.endsWith('.svg')) {
+      svgEntries.push({ stem: entry.name.slice(0, -4), handle: entry });
+    }
+  }
+  const svgNames = new Map();
+  for (const e of svgEntries) svgNames.set(e.stem.toLowerCase(), e);
+
+  const P3 = ['Fas','Far'];
+  const P2 = ['Fi','Lu','Li','Hi','Bs','Fa','Gi','Tb','Ra','Mi','Md','Ri','Io','Ai','Si','Bi','Ci','Di','Vi','Wi','Ti','Bo','Ib','Co','Oc'];
+  function sp(n) { for (const p of P3) if (n.startsWith(p)) return n.slice(p.length); for (const p of P2) if (n.startsWith(p)) return n.slice(p.length); return n; }
+  function em(v) { return typeof v === 'string' && v.length > 0 && [...v].some(c => c.codePointAt(0) > 0x2000); }
+  function kp(s) { return s.split('-').map(w => w.charAt(0).toUpperCase()+w.slice(1)).join(''); }
+
+  async function rb(entry) {
+    const f = await entry.handle.getFile();
+    let s = await f.text();
+    // Force white for dark-mode display (matches site's icon inversion)
+    s = s
+      .replace(/fill="currentColor"/gi, 'fill="#ffffff"')
+      .replace(/stroke="currentColor"/gi, 'stroke="#ffffff"')
+      .replace(/fill="#000(?:000)?"/gi, 'fill="#ffffff"')
+      .replace(/fill="black"/gi, 'fill="#ffffff"')
+      .replace(/stroke="#000(?:000)?"/gi, 'stroke="#ffffff"')
+      .replace(/stroke="black"/gi, 'stroke="#ffffff"');
+    // Set root fill fallback for unstyled elements
+    if (!s.match(/<svg[^>]*\bfill=/i)) {
+      s = s.replace(/(<svg[^>]*)/i, '$1 fill="#ffffff"');
+    }
+    return URL.createObjectURL(new Blob([s], { type: 'image/svg+xml' }));
+  }
+
+  for (const val of toResolve) {
+    if (em(val)) { iconResolved.set(val, { type: 'emoji', value: val }); continue; }
+    const vl = val.toLowerCase();
+    let m = null;
+    if (svgNames.has(vl)) m = svgNames.get(vl);
+    else { const s = sp(val); if (s !== val && svgNames.has(s.toLowerCase())) m = svgNames.get(s.toLowerCase()); }
+    if (!m) { const p = val.charAt(0).toLowerCase()+val.slice(1); if (p !== val && svgNames.has(p.toLowerCase())) m = svgNames.get(p.toLowerCase()); }
+    if (!m && val.includes('-')) { const p = kp(val); if (svgNames.has(p.toLowerCase())) m = svgNames.get(p.toLowerCase()); }
+    if (!m) { const s = sp(val); const p = s.charAt(0).toUpperCase()+s.slice(1); if (p !== s && svgNames.has(p.toLowerCase())) m = svgNames.get(p.toLowerCase()); }
+    if (!m) { const s = sp(val); if (s !== val && s !== s.toLowerCase()) { const k = s.replace(/([A-Z])/g,'-$1').toLowerCase().replace(/^-/,'').replace(/(\d+)$/,'-$1'); if (svgNames.has(k)) m = svgNames.get(k); } }
+    if (m) iconResolved.set(val, { type: 'svg', value: await rb(m) });
+    else iconResolved.set(val, { type: 'none', value: null });
+  }
+}
+
+// ══════════════════════════════════════════════════
+// Tree scanning
+// ══════════════════════════════════════════════════
+async function scanAssetsRecursive(dirHandle) {
+  const tree = {};
+  for await (const entry of dirHandle.values()) {
+    if (entry.kind === 'directory' && !entry.name.startsWith('.') && entry.name !== 'IMAGES') {
+      tree[entry.name] = await scanAssetsRecursive(entry);
+    }
+  }
+  return tree;
+}
+
+function flattenTree(tree, prefix = '') {
+  const paths = [];
+  for (const [name, children] of Object.entries(tree)) {
+    const path = prefix ? prefix + '/' + name : name;
+    paths.push(path);
+    paths.push(...flattenTree(children, path));
+  }
+  return paths;
+}
+
+function countStats(tree, prefix = '') {
+  let configured = 0, inherited = 0, unconfigured = 0, total = 0;
+  for (const [name, children] of Object.entries(tree)) {
+    const path = prefix ? prefix + '/' + name : name;
+    total++;
+    const state = getFolderState(path);
+    if (state === 'configured') configured++;
+    else if (state === 'inherited') inherited++;
+    else unconfigured++;
+    const sub = countStats(children, path);
+    configured += sub.configured; inherited += sub.inherited; unconfigured += sub.unconfigured; total += sub.total;
+  }
+  return { configured, inherited, unconfigured, total };
+}
+
+// ══════════════════════════════════════════════════
+// Render tree
+// ══════════════════════════════════════════════════
+function updateRowAppearance(row, path) {
+  const folderColor = findColor(path);
+  row.style.color = folderColor || '';
+  const nameSpan = row.querySelector('.folder-name');
+  if (nameSpan) nameSpan.style.color = folderColor || '';
+
+  // Show/hide clear button
+  const clearBtn = row.querySelector('.clear-btn');
+  if (clearBtn) clearBtn.style.visibility = getFolderState(path) === 'configured' ? 'visible' : 'hidden';
+
+  const applyBtn = row.querySelector('.apply-btn');
+  if (applyBtn) {
+    applyBtn.dataset.folderColor = folderColor || '';
+    if (folderColor) {
+      applyBtn.style.background = folderColor;
+      applyBtn.classList.add('filled');
+      applyBtn.innerHTML = `<span class="apply-label">${folderColor}</span>`;
+      applyBtn.title = 'Click to change color';
+    } else {
+      applyBtn.style.background = '';
+      applyBtn.classList.remove('filled');
+      applyBtn.textContent = '+';
+      applyBtn.title = 'Pick a color first';
+    }
+  }
+
+  const badge = row.querySelector('.badge');
+  if (badge) {
+    const state = getFolderState(path);
+    badge.className = 'badge ' + state;
+    badge.textContent = state;
+  }
+}
+
+function refreshAllApplyButtons() {
+  document.querySelectorAll('.apply-btn').forEach(btn => {
+    const path = btn.dataset.path;
+    if (!path) return;
+    const fColor = findColor(path);
+    btn.dataset.folderColor = fColor || '';
+    if (fColor) {
+      btn.style.background = fColor;
+      btn.classList.add('filled');
+      btn.innerHTML = `<span class="apply-label">${fColor}</span>`;
+      btn.title = 'Click to change color';
+    } else {
+      btn.style.background = '';
+      btn.classList.remove('filled');
+      btn.textContent = '+';
+      btn.title = 'Pick a color first';
+    }
+  });
+}
+
+function refreshAllTreeRows() {
+  folderTree.querySelectorAll('.tree-node').forEach(node => {
+    const row = node.querySelector('.folder-item');
+    const btn = row?.querySelector('.apply-btn');
+    const path = btn?.dataset.path;
+    if (path) updateRowAppearance(row, path);
+  });
+}
+
+function renderTree() {
+  folderTree.innerHTML = '';
+  const sortedTop = Object.entries(scannedTree).sort((a, b) => a[0].localeCompare(b[0]));
+  for (const [name, children] of sortedTop) {
+    folderTree.appendChild(renderTreeNode(name, children, name));
+  }
+  const total = countStats(scannedTree).total;
+  document.getElementById('treeCount').textContent = sortedTop.length + ' top-level / ' + total + ' total';
+}
+
+function renderTreeNode(name, children, path) {
+  const node = document.createElement('div');
+  node.className = 'tree-node';
+
+  const row = document.createElement('div');
+  row.className = 'folder-item';
+
+  const hasChildren = Object.keys(children).length > 0;
+  const folderColor = findColor(path);
+
+  // Clear button (X)
+  const clearBtn = document.createElement('button');
+  clearBtn.className = 'clear-btn';
+  clearBtn.textContent = '✕';
+  clearBtn.title = 'Remove color';
+  if (getFolderState(path) !== 'configured') clearBtn.style.visibility = 'hidden';
+  clearBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    setFolderConfig(path, null);
+    refreshAllTreeRows();
+    syncPaletteFromTree();
+    updateStats();
+  });
+  row.appendChild(clearBtn);
+
+  // Apply button
+  const applyBtn = document.createElement('button');
+  applyBtn.className = 'apply-btn';
+  applyBtn.dataset.path = path;
+  applyBtn.dataset.folderColor = folderColor || '';
+  if (folderColor) {
+    applyBtn.style.background = folderColor;
+    applyBtn.classList.add('filled');
+    applyBtn.innerHTML = `<span class="apply-label">${folderColor}</span>`;
+    applyBtn.title = 'Click to change color';
+  } else {
+    applyBtn.textContent = '+';
+    applyBtn.title = 'Pick a color first';
+  }
+  applyBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (!activeColor) return;
+    setFolderConfig(path, activeColor);
+    refreshAllTreeRows();
+    syncPaletteFromTree();
+    updateStats();
+  });
+  applyBtn.addEventListener('mouseenter', () => { applyBtn.style.transform = 'scale(1.3)'; });
+  applyBtn.addEventListener('mouseleave', () => { applyBtn.style.transform = ''; });
+  row.appendChild(applyBtn);
+
+  // Chevron
+  const chevron = document.createElement('span');
+  chevron.className = 'chevron';
+  if (hasChildren) chevron.textContent = '▶';
+  row.appendChild(chevron);
+
+  // Icon
+  const iconWrap = document.createElement('span');
+  iconWrap.className = 'folder-icon';
+  const rawIcon = findIcon(path);
+  let iconResolved_ = false;
+  if (rawIcon) {
+    const resolved = iconResolved.get(rawIcon);
+    if (resolved) {
+      if (resolved.type === 'svg') {
+        const img = document.createElement('img'); img.src = resolved.value; img.alt = '';
+        iconWrap.appendChild(img);
+        iconResolved_ = true;
+      } else if (resolved.type === 'emoji') {
+        const em = document.createElement('span'); em.className = 'emoji'; em.textContent = resolved.value;
+        iconWrap.appendChild(em);
+        iconResolved_ = true;
+      }
+    }
+  }
+  if (!iconResolved_) {
+    const fallback = document.createElement('span'); fallback.className = 'emoji'; fallback.textContent = '📁';
+    iconWrap.appendChild(fallback);
+  }
+  row.appendChild(iconWrap);
+
+  // Folder name
+  const nameSpan = document.createElement('span');
+  nameSpan.className = 'folder-name';
+  nameSpan.textContent = name;
+  if (folderColor) nameSpan.style.color = folderColor;
+  row.appendChild(nameSpan);
+
+  // Badge
+  const state = getFolderState(path);
+  const badge = document.createElement('span');
+  badge.className = 'badge ' + state;
+  badge.textContent = state;
+  row.appendChild(badge);
+
+  // Click row to expand
+  if (hasChildren) {
+    row.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const container = row.nextElementSibling;
+      if (container && container.classList.contains('tree-children')) {
+        container.classList.toggle('open');
+        chevron.classList.toggle('expanded');
+        syncPaletteFromTree();
+      }
+    });
+  }
+
+  node.appendChild(row);
+
+  // Children
+  if (hasChildren) {
+    const childrenContainer = document.createElement('div');
+    childrenContainer.className = 'tree-children';
+    const sorted = Object.entries(children).sort((a, b) => a[0].localeCompare(b[0]));
+    for (const [childName, grandChildren] of sorted) {
+      childrenContainer.appendChild(renderTreeNode(childName, grandChildren, path + '/' + childName));
+    }
+    node.appendChild(childrenContainer);
+  }
+
+  return node;
+}
+
+function updateStats() {
+  const stats = countStats(scannedTree);
+  const allPaths = flattenTree(scannedTree);
+  const configCount = Object.keys(workingConfig).filter(k => !k.startsWith('$')).length;
+  const pathsInAssets = Object.keys(workingConfig).filter(k => !k.startsWith('$') && allPaths.includes(k)).length;
+  const missingFromAssets = configCount - pathsInAssets;
+
+  statsRow.innerHTML = `
+    <div class="stat total"><div class="stat-value">${stats.total}</div><div class="stat-label">Total Folders</div></div>
+    <div class="stat configured"><div class="stat-value">${stats.configured}</div><div class="stat-label">Configured</div></div>
+    <div class="stat "><div class="stat-value">${stats.inherited}</div><div class="stat-label">Inherited</div></div>
+    <div class="stat unconfigured"><div class="stat-value">${stats.unconfigured}</div><div class="stat-label">Unconfigured</div></div>
+  `;
+  configDetail.innerHTML =
+    'Config entries: ' + configCount + ', ' +
+    pathsInAssets + ' match found folders' +
+    (missingFromAssets > 0
+      ? ', <span style="color:#c88b8b">' + missingFromAssets + ' reference missing folders</span>'
+      : ', <span style="color:#8bc88b">all paths valid</span>');
+}
+
+// ══════════════════════════════════════════════════
+// Main
+// ══════════════════════════════════════════════════
+async function openProject() {
+  let handle;
+  try { handle = await window.showDirectoryPicker({ mode: 'readwrite' }); }
+  catch (e) {
+    if (e.name === 'AbortError') { setStatus('Cancelled.', 'info'); return; }
+    setStatus('Error: ' + e.message, 'error'); return;
+  }
+
+  if (handle.name !== 'src') {
+    results.style.display = 'none';
+    setStatus('❌ Selected folder is <strong>' + handle.name + '</strong>. Navigate to your project\'s <code>src/</code> directory.', 'error');
+    return;
+  }
+
+  try {
+    setStatus('📂 Loading…', 'info');
+  srcHandle = handle;
+  projectInfo.textContent = '✅ Valid — src/ selected';
+
+  origConfig = await readFolderMetadata(srcHandle);
+  for (const k of Object.keys(origConfig)) { if (k.startsWith('$')) delete origConfig[k]; }
+  workingConfig = JSON.parse(JSON.stringify(origConfig));
+
+  hasChanges = false;
+  saveBtn.disabled = true;
+  previewBtn.disabled = false;
+  resetBtn.disabled = false;
+
+  try { iconsDirHandle = await srcHandle.getDirectoryHandle('icons'); } catch { iconsDirHandle = null; }
+
+  const allIconNames = new Set();
+  for (const [, cfg] of Object.entries(workingConfig)) {
+    if (typeof cfg === 'object' && cfg.icon) {
+      if (cfg.icon.length <= 2) iconResolved.set(cfg.icon, { type: 'emoji', value: cfg.icon });
+      else allIconNames.add(cfg.icon);
+    }
+  }
+  if (iconsDirHandle && allIconNames.size > 0) await resolveIconsFromDisk([...allIconNames]);
+
+  // Load feature flags
+  origFeatures = await loadFeatures(srcHandle);
+  workingFeatures = JSON.parse(JSON.stringify(origFeatures));
+  renderFeatures();
+
+  let assetsHandle;
+  try { assetsHandle = await srcHandle.getDirectoryHandle('assets'); }
+  catch {
+    results.style.display = 'none';
+    setStatus('❌ No <code>assets/</code> inside <code>src/</code>.', 'error');
+    return;
+  }
+  scannedTree = await scanAssetsRecursive(assetsHandle);
+
+  renderTree();
+  syncPaletteFromTree();
+  updateStats();
+  results.style.display = 'block';
+  tabBar.style.display = 'flex';
+  setStatus('✅ Loaded. Pick a color from the palette above, then click the ■ on any folder to apply it.', 'success');
+  } catch (e) {
+    setStatus('❌ Error: ' + (e.message || e), 'error');
+    console.error(e);
+  }
+}
+
+// ══════════════════════════════════════════════════
+// Save / Reset
+// ══════════════════════════════════════════════════
+async function saveConfig() {
+  if (!srcHandle || !hasChanges) return;
+  setCardStatus('folderCardStatus', '💾 Saving with backup…', 'info');
+  try {
+    const backupName = await backupAndSave();
+    await saveFeaturesFile();
+    hasChanges = false;
+    saveBtn.disabled = true;
+    setCardStatus('folderCardStatus', '✅ Saved! Backup: ' + backupName + '. Commit and push.', 'success');
+  } catch (e) {
+    setCardStatus('folderCardStatus', '❌ Save failed: ' + e.message, 'error');
+  }
+}
+
+async function previewConfig() {
+  if (!srcHandle) return;
+  const output = {};
+  for (const [path, cfg] of Object.entries(workingConfig)) {
+    if (path.startsWith('$')) continue;
+    if (typeof cfg === 'object' && (cfg.color || cfg.icon)) output[path] = cfg;
+    else if (typeof cfg === 'string') output[path] = cfg;
+  }
+  showModal('folder-metadata.json', JSON.stringify(output, null, 2));
+}
+
+async function resetConfig() {
+  if (!srcHandle) return;
+  if (!confirm('Discard all unsaved changes and reset to the last saved config?')) return;
+  workingConfig = JSON.parse(JSON.stringify(origConfig));
+  hasChanges = false;
+  saveBtn.disabled = true;
+  iconResolved.clear();
+  const allIconNames = new Set();
+  for (const [, cfg] of Object.entries(workingConfig)) {
+    if (typeof cfg === 'object' && cfg.icon) {
+      if (cfg.icon.length <= 2) iconResolved.set(cfg.icon, { type: 'emoji', value: cfg.icon });
+      else allIconNames.add(cfg.icon);
+    }
+  }
+  if (iconsDirHandle && allIconNames.size > 0) await resolveIconsFromDisk([...allIconNames]);
+  renderTree();
+  syncPaletteFromTree();
+  updateStats();
+  clearActiveColor();
+  // Reset features
+  workingFeatures = JSON.parse(JSON.stringify(origFeatures));
+  renderFeatures();
+  setCardStatus('folderCardStatus', '↩ Reset to last saved state.', 'info');
+}
+
+// ══════════════════════════════════════════════════
+// Features: Save / Preview / Reset
+// ══════════════════════════════════════════════════
+async function featuresSave() {
+  if (!srcHandle) return;
+  setCardStatus('featuresCardStatus', '💾 Saving feature flags…', 'info');
+  try {
+    await saveFeaturesFile();
+    featuresChanged = false;
+    featuresSaveBtn.disabled = true;
+    setCardStatus('featuresCardStatus', '✅ Feature flags saved.', 'success');
+  } catch (e) {
+    setCardStatus('featuresCardStatus', '❌ Save failed: ' + e.message, 'error');
+  }
+}
+
+function featuresPreview() {
+  if (!srcHandle) return;
+  const output = {};
+  for (const [key, val] of Object.entries(workingFeatures)) {
+    if (key.startsWith('$')) { output[key] = val; continue; }
+    output[key] = val;
+  }
+  showModal('features.json', JSON.stringify(output, null, 2));
+}
+
+function featuresReset() {
+  if (!srcHandle) return;
+  if (!confirm('Discard all unsaved feature flag changes?')) return;
+  workingFeatures = JSON.parse(JSON.stringify(origFeatures));
+  featuresChanged = false;
+  featuresSaveBtn.disabled = true;
+  renderFeatures();
+  setCardStatus('featuresCardStatus', '↩ Feature flags reset.', 'info');
+}
+
+// ══════════════════════════════════════════════════
+// Events
+// ══════════════════════════════════════════════════
+openBtn.addEventListener('click', openProject);
+saveBtn.addEventListener('click', saveConfig);
+previewBtn.addEventListener('click', previewConfig);
+resetBtn.addEventListener('click', resetConfig);
+featuresSaveBtn.addEventListener('click', featuresSave);
+featuresPreviewBtn.addEventListener('click', featuresPreview);
+featuresResetBtn.addEventListener('click', featuresReset);
+document.getElementById('expandAllBtn').addEventListener('click', () => {
+  document.querySelectorAll('.tree-children').forEach(el => el.classList.add('open'));
+  document.querySelectorAll('.chevron').forEach(el => { if (el.textContent === '▶') el.classList.add('expanded'); });
+  syncPaletteFromTree();
+});
+document.getElementById('collapseAllBtn').addEventListener('click', () => {
+  document.querySelectorAll('.tree-children').forEach(el => el.classList.remove('open'));
+  document.querySelectorAll('.chevron').forEach(el => el.classList.remove('expanded'));
+  syncPaletteFromTree();
+});
+previewRemove.addEventListener('click', clearActiveColor);
+
+// ── Modal close ──
+document.getElementById('modalClose').addEventListener('click', () => {
+  document.getElementById('modalOverlay').classList.remove('open');
+});
+document.getElementById('modalOverlay').addEventListener('click', (e) => {
+  if (e.target === e.currentTarget) e.target.classList.remove('open');
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') document.getElementById('modalOverlay').classList.remove('open');
+});
+
+// ── HSV Color Picker ──
+let currentHue = 39;
+let currentSat = 0;
+let currentVal = 0;
+let isDragging = false;
+let dragMode = null;
+
+function hexToRgb(hex) {
+  return { r: parseInt(hex.slice(1,3), 16), g: parseInt(hex.slice(3,5), 16), b: parseInt(hex.slice(5,7), 16) };
+}
+
+function rgbToHex(r, g, b) {
+  const to = v => Math.max(0, Math.min(255, Math.round(v))).toString(16).padStart(2,'0');
+  return '#' + to(r) + to(g) + to(b);
+}
+
+function hsvToRgb(h, s, v) {
+  h = ((h % 360) + 360) % 360;
+  const c = (v / 100) * (s / 100);
+  const x = c * (1 - Math.abs(((h / 60) % 2) - 1));
+  const m = (v / 100) - c;
+  let r, g, b;
+  if (h < 60) { r=c; g=x; b=0; }
+  else if (h < 120) { r=x; g=c; b=0; }
+  else if (h < 180) { r=0; g=c; b=x; }
+  else if (h < 240) { r=0; g=x; b=c; }
+  else if (h < 300) { r=x; g=0; b=c; }
+  else { r=c; g=0; b=x; }
+  return { r: (r+m)*255, g: (g+m)*255, b: (b+m)*255 };
+}
+
+function rgbToHsv(r, g, b) {
+  r /= 255; g /= 255; b /= 255;
+  const mx = Math.max(r,g,b), mn = Math.min(r,g,b);
+  const d = mx - mn;
+  let h = 0;
+  if (d !== 0) {
+    if (mx === r) h = ((g - b) / d + (g < b ? 6 : 0)) * 60;
+    else if (mx === g) h = ((b - r) / d + 2) * 60;
+    else h = ((r - g) / d + 4) * 60;
+  }
+  return { h: ((h % 360) + 360) % 360, s: mx === 0 ? 0 : (d / mx) * 100, v: mx * 100 };
+}
+
+function renderHueStrip() {
+  const W = hueCanvas.width, H = hueCanvas.height;
+  for (let y = 0; y < H; y++) {
+    const { r, g, b } = hsvToRgb((y / H) * 360, 100, 100);
+    hueCtx.fillStyle = `rgb(${r|0},${g|0},${b|0})`;
+    hueCtx.fillRect(0, y, W, 1);
+  }
+}
+
+function renderSvMap(hue) {
+  const W = svCanvas.width, H = svCanvas.height;
+  for (let y = 0; y < H; y++) {
+    for (let x = 0; x < W; x++) {
+      const { r, g, b } = hsvToRgb(hue, (x/W)*100, (1 - y/H)*100);
+      svCtx.fillStyle = `rgb(${r|0},${g|0},${b|0})`;
+      svCtx.fillRect(x, y, 1, 1);
+    }
+  }
+}
+
+function updatePickerUI(hex) {
+  const { r, g, b } = hexToRgb(hex);
+  const hsv = rgbToHsv(r, g, b);
+  currentHue = hsv.h;
+  currentSat = hsv.s;
+  currentVal = hsv.v;
+
+  // Cursor positions
+  svCursor.style.left = (hsv.s / 100 * svCanvas.width) + 'px';
+  svCursor.style.top = ((1 - hsv.v / 100) * svCanvas.height) + 'px';
+  hueCursor.style.top = (hsv.h / 360 * hueCanvas.height) + 'px';
+
+  // Redraw SV map only when hue changes
+  renderSvMap(currentHue);
+
+  // Fields
+  pickerHex.value = hex;
+  pickerR.value = r|0;
+  pickerG.value = g|0;
+  pickerB.value = b|0;
+  pickerPreview.style.background = hex;
+}
+
+function getSvColor(clientX, clientY) {
+  const rect = svCanvas.getBoundingClientRect();
+  const x = Math.max(0, Math.min(svCanvas.width, clientX - rect.left));
+  const y = Math.max(0, Math.min(svCanvas.height, clientY - rect.top));
+  svCursor.style.left = x + 'px';
+  svCursor.style.top = y + 'px';
+  const { r, g, b } = hsvToRgb(currentHue, (x/svCanvas.width)*100, (1 - y/svCanvas.height)*100);
+  return rgbToHex(r, g, b);
+}
+
+function getHueColor(clientY) {
+  const rect = hueCanvas.getBoundingClientRect();
+  const y = Math.max(0, Math.min(hueCanvas.height, clientY - rect.top));
+  hueCursor.style.top = y + 'px';
+  currentHue = (y / hueCanvas.height) * 360;
+  renderSvMap(currentHue);
+  // Recalculate based on SV cursor position
+  const svX = parseFloat(svCursor.style.left) || (svCanvas.width / 2);
+  const svY = parseFloat(svCursor.style.top) || 0;
+  const { r, g, b } = hsvToRgb(currentHue, (svX/svCanvas.width)*100, (1 - svY/svCanvas.height)*100);
+  return rgbToHex(r, g, b);
+}
+
+// ── Mouse handlers ──
+function onSvDown(e) { isDragging = 'sv'; onPickMove(e); }
+function onHueDown(e) { isDragging = 'hue'; onPickMove(e); }
+function onPickMove(e) {
+  if (!isDragging) return;
+  e.preventDefault();
+  const hex = isDragging === 'sv' ? getSvColor(e.clientX, e.clientY) : getHueColor(e.clientY);
+  setActiveColor(hex);
+}
+function onPickUp() { isDragging = false; }
+
+svMapWrap.addEventListener('mousedown', onSvDown);
+hueStripWrap.addEventListener('mousedown', onHueDown);
+document.addEventListener('mousemove', onPickMove);
+document.addEventListener('mouseup', onPickUp);
+
+// ── Field inputs ──
+pickerHex.addEventListener('input', () => {
+  const v = pickerHex.value.trim();
+  if (/^#[0-9a-fA-F]{6}$/.test(v)) setActiveColor(v);
+});
+pickerR.addEventListener('input', () => {
+  const r = Math.max(0, Math.min(255, parseInt(pickerR.value) || 0));
+  const g = Math.max(0, Math.min(255, parseInt(pickerG.value) || 0));
+  const b = Math.max(0, Math.min(255, parseInt(pickerB.value) || 0));
+  setActiveColor(rgbToHex(r, g, b));
+});
+pickerG.addEventListener('input', () => {
+  const r = Math.max(0, Math.min(255, parseInt(pickerR.value) || 0));
+  const g = Math.max(0, Math.min(255, parseInt(pickerG.value) || 0));
+  const b = Math.max(0, Math.min(255, parseInt(pickerB.value) || 0));
+  setActiveColor(rgbToHex(r, g, b));
+});
+pickerB.addEventListener('input', () => {
+  const r = Math.max(0, Math.min(255, parseInt(pickerR.value) || 0));
+  const g = Math.max(0, Math.min(255, parseInt(pickerG.value) || 0));
+  const b = Math.max(0, Math.min(255, parseInt(pickerB.value) || 0));
+  setActiveColor(rgbToHex(r, g, b));
+});
+
+// ── Tab switching ──
+const tabBar = document.getElementById('tabBar');
+tabBar.addEventListener('click', (e) => {
+  const tab = e.target.closest('.tab');
+  if (!tab) return;
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(tc => tc.style.display = 'none');
+  tab.classList.add('active');
+  document.getElementById('tab-' + tab.dataset.tab).style.display = 'block';
+});
+
+// Init
+renderHueStrip();
+renderSvMap(currentHue);
+// Set initial cursor positions to midpoint
+svCursor.style.left = (svCanvas.width / 2) + 'px';
+svCursor.style.top = '0px';
+hueCursor.style.top = (currentHue / 360 * hueCanvas.height) + 'px';
+
+if (!window.showDirectoryPicker) {
+  setStatus('⚠️ Your browser does not support the File System Access API. Use Chrome or Edge.', 'error');
+}
+</script>
+</body>
+</html>

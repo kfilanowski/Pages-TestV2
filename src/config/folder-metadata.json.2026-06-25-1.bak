@@ -3,11 +3,22 @@
     "color": "#FF4444",
     "icon": "🐾"
   },
+  "Bestiary/Bestiary/Aberrations": {
+    "color": "#CC55CC"
+  },
   "Bestiary/Bestiary/Beasts": {
+    "color": "#FF8844",
     "icon": "wolf"
   },
+  "Bestiary/Bestiary/Celestials": {
+    "color": "#FFD700"
+  },
   "Bestiary/Bestiary/Constructs": {
+    "color": "#8899AA",
     "icon": "robot"
+  },
+  "Bestiary/Bestiary/Cryptids": {
+    "color": "#66BB66"
   },
   "Bestiary/Bestiary/Dragons": {
     "color": "#FF5500",
