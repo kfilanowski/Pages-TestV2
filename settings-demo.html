@@ -727,9 +727,7 @@
   <div id="results" style="display:none">
     <div class="card">
       <div class="card-title">Project</div>
-      <div id="projectInfo" style="font-size:0.9rem"></div>
       <div class="stats-row" id="statsRow"></div>
-      <div id="configDetail" style="font-size:0.8rem; color:#8a8070"></div>
     </div>
 
     <div class="card">
@@ -783,6 +781,8 @@
             <button class="btn-small" id="clearColorsBtn" style="border-color:#3a3a5a; color:#8b8bc8">Clear all colors</button>
             <span style="margin-left:auto; font-size:0.75rem; color:#6aa; align-self:center" id="treeCount"></span>
           </div>
+
+          <input id="folderSearch" type="text" placeholder="🔍 Filter folders…" style="width:100%; padding:6px 10px; margin-bottom:8px; border-radius:5px; border:1px solid #444; background:#1a1a1a; color:#d0c8b8; font-size:0.8rem; font-family:inherit; outline:none">
 
           <div id="folderTree" class="tree"></div>
 
@@ -9443,22 +9443,24 @@ function renderTreeNode(name, children, path) {
 function updateStats() {
   const stats = countStats(scannedTree);
   const allPaths = flattenTree(scannedTree);
-  const configCount = Object.keys(workingConfig).filter(k => !k.startsWith('$')).length;
-  const pathsInAssets = Object.keys(workingConfig).filter(k => !k.startsWith('$') && allPaths.includes(k)).length;
-  const missingFromAssets = configCount - pathsInAssets;
+
+  // Count icon states
+  let withIcon = 0, withoutIcon = 0;
+  for (const path of allPaths) {
+    const cfg = getConfigForPath(path);
+    const hasIcon = cfg && typeof cfg === 'object' && cfg.icon;
+    if (hasIcon) withIcon++;
+    else withoutIcon++;
+  }
 
   statsRow.innerHTML = `
     <div class="stat total"><div class="stat-value">${stats.total}</div><div class="stat-label">Total Folders</div></div>
-    <div class="stat configured"><div class="stat-value">${stats.configured}</div><div class="stat-label">Configured</div></div>
+    <div class="stat configured"><div class="stat-value">${stats.configured}</div><div class="stat-label">Colored</div></div>
     <div class="stat "><div class="stat-value">${stats.inherited}</div><div class="stat-label">Inherited</div></div>
-    <div class="stat unconfigured"><div class="stat-value">${stats.unconfigured}</div><div class="stat-label">Unconfigured</div></div>
+    <div class="stat unconfigured"><div class="stat-value">${stats.unconfigured}</div><div class="stat-label">Uncolored</div></div>
+    <div class="stat "><div class="stat-value">${withIcon}</div><div class="stat-label">With Icon</div></div>
+    <div class="stat "><div class="stat-value">${withoutIcon}</div><div class="stat-label">No Icon</div></div>
   `;
-  configDetail.innerHTML =
-    'Config entries: ' + configCount + ', ' +
-    pathsInAssets + ' match found folders' +
-    (missingFromAssets > 0
-      ? ', <span style="color:#c88b8b">' + missingFromAssets + ' reference missing folders</span>'
-      : ', <span style="color:#8bc88b">all paths valid</span>');
 }
 
 // ══════════════════════════════════════════════════
@@ -9481,7 +9483,9 @@ async function openProject() {
   try {
     setStatus('📂 Loading…', 'info');
   srcHandle = handle;
-  projectInfo.textContent = '✅ Valid — src/ selected';
+  // Hide the initial prompt and button once a valid src/ is selected
+  document.querySelector('.subtitle').style.display = 'none';
+  document.getElementById('openBtn').style.display = 'none';
 
   origConfig = await readFolderMetadata(srcHandle);
   for (const k of Object.keys(origConfig)) { if (k.startsWith('$')) delete origConfig[k]; }
@@ -9535,7 +9539,7 @@ async function openProject() {
   updateStats();
   results.style.display = 'block';
   tabBar.style.display = 'flex';
-  setStatus('✅ Loaded. Pick a color from the palette above, then click the ■ on any folder to apply it.', 'success');
+  status.style.display = 'none';
   } catch (e) {
     setStatus('❌ Error: ' + (e.message || e), 'error');
     console.error(e);
@@ -9649,6 +9653,60 @@ document.getElementById('expandAllBtn').addEventListener('click', () => {
 document.getElementById('collapseAllBtn').addEventListener('click', () => {
   document.querySelectorAll('.tree-children').forEach(el => el.classList.remove('open'));
   document.querySelectorAll('.chevron').forEach(el => el.classList.remove('expanded'));
+  syncPaletteFromTree();
+});
+document.getElementById('folderSearch').addEventListener('input', (e) => {
+  const q = e.target.value.trim().toLowerCase();
+
+  // If empty, show everything and collapse
+  if (!q) {
+    document.querySelectorAll('.tree-node').forEach(n => n.style.display = '');
+    document.querySelectorAll('.tree-children').forEach(c => c.classList.remove('open'));
+    document.querySelectorAll('.chevron').forEach(c => c.classList.remove('expanded'));
+    syncPaletteFromTree();
+    return;
+  }
+
+  // Walk all tree-nodes bottom-up: hide those that don't match and have no matching descendants
+  const allNodes = [...document.querySelectorAll('.tree-node')];
+
+  // First pass: mark nodes that directly match
+  const matching = new Set();
+  for (const node of allNodes) {
+    const nameEl = node.querySelector('.folder-name');
+    if (nameEl && nameEl.textContent.toLowerCase().includes(q)) {
+      // Mark this node and all ancestors as visible
+      let cur = node;
+      while (cur && cur.classList.contains('tree-node')) {
+        matching.add(cur);
+        cur = cur.parentElement?.closest('.tree-node');
+      }
+    }
+  }
+
+  // Second pass: show/hide and manage expand state
+  for (const node of allNodes) {
+    if (matching.has(node)) {
+      node.style.display = '';
+      // Expand ancestors (any tree-node that has a matching descendant)
+      const children = node.querySelector('.tree-children');
+      if (children && node.querySelectorAll('.tree-node').length > 0) {
+        // Check if any descendant is in the matching set
+        const hasMatchingDescendant = [...node.querySelectorAll('.tree-node')].some(n => matching.has(n));
+        if (hasMatchingDescendant) {
+          children.classList.add('open');
+          const chevron = node.querySelector('.chevron');
+          if (chevron) chevron.classList.add('expanded');
+        } else {
+          children.classList.remove('open');
+          const chevron = node.querySelector('.chevron');
+          if (chevron) chevron.classList.remove('expanded');
+        }
+      }
+    } else {
+      node.style.display = 'none';
+    }
+  }
   syncPaletteFromTree();
 });
 document.getElementById('clearIconsBtn').addEventListener('click', () => {
