@@ -999,7 +999,7 @@ function renderFeatures() {
   updateFeatureButtons();
 }
 
-function renderFlatFeatureList(descs: Record<string, string>, rendered: Set<string>) {
+function renderFlatFeatureList(descs, rendered) {
   for (const [key, val] of Object.entries(workingFeatures)) {
     if (key.startsWith('$')) continue;
     rendered.add(key);
@@ -1008,7 +1008,7 @@ function renderFlatFeatureList(descs: Record<string, string>, rendered: Set<stri
   updateFeatureButtons();
 }
 
-function createFeatureRow(key: string, val: any, desc: string): HTMLElement {
+function createFeatureRow(key, val, desc) {
   const label = key.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
   const row = document.createElement('div');
   row.className = 'feature-row';
