@@ -15,7 +15,7 @@
     padding: 48px 24px;
     min-height: 100vh;
   }
-  .container { max-width: 1060px; width: 100%; }
+  .container { max-width: 1560px; width: 100%; }
   h1 { font-size: 1.4rem; margin-bottom: 4px; }
   .subtitle { color: #8a8070; font-size: 0.85rem; margin-bottom: 24px; }
   .subtitle code { background: #222; padding: 1px 5px; border-radius: 3px; }
@@ -280,7 +280,7 @@
     align-items: flex-start;
   }
   .picker-sidebar {
-    width: 310px;
+    width: 250px;
     flex-shrink: 0;
     position: sticky;
     top: 24px;
@@ -290,6 +290,114 @@
     flex: 1;
     min-width: 0;
   }
+
+  /* ── Icon picker (right sidebar) ── */
+  .icon-sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 24px;
+    align-self: flex-start;
+    padding: 12px;
+    background: #222;
+    border: 1px solid #333;
+    border-radius: 8px;
+  }
+  .icon-picker-title {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #8a8070;
+    margin-bottom: 8px;
+  }
+  .icon-search-wrap { margin-bottom: 6px; }
+  .icon-search-input {
+    width: 100%;
+    background: #1a1a1a;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: #d0c8b8;
+    padding: 6px 10px;
+    font-size: 0.82rem;
+    outline: none;
+    font-family: inherit;
+  }
+  .icon-search-input:focus { border-color: #a67c00; }
+  .icon-search-input::placeholder { color: #5a5040; }
+  .icon-picker-hint {
+    font-size: 0.68rem;
+    color: #5a5040;
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+  .icon-empty {
+    font-size: 0.78rem;
+    color: #6a6050;
+    padding: 12px 0;
+    text-align: center;
+  }
+  .icon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    max-height: calc(100vh - 280px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #3a3835 transparent;
+    padding: 2px 0;
+  }
+  .icon-result {
+    width: 42px; height: 42px;
+    border-radius: 6px;
+    border: 1px solid #3a3835;
+    background: #1a1a1a;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    line-height: 1;
+    transition: border-color 0.1s, background 0.1s;
+    flex-shrink: 0;
+  }
+  .icon-result:hover { border-color: #6a6050; background: #2a2a2a; }
+  .icon-result.selected {
+    border-color: #a67c00;
+    background: #2a2a1a;
+    box-shadow: 0 0 4px rgba(166,124,0,0.3);
+  }
+  .icon-result img { width: 26px; height: 26px; display: block; pointer-events: none; }
+  .icon-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding-top: 6px;
+  }
+
+  /* ── Icon apply button on tree rows ── */
+  .icon-btn {
+    width: 42px; height: 30px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background: transparent;
+    flex-shrink: 0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1;
+    transition: all 0.1s;
+    color: #8a8070;
+  }
+  .icon-btn:hover {
+    border-color: #6a6050;
+    background: #2a2a2a;
+    color: #d0c8b8;
+  }
+  .icon-btn img { width: 20px; height: 20px; display: block; pointer-events: none; }
 
   /* ── Feature flags ── */
   .feature-row {
@@ -350,10 +458,11 @@
   .tree-node { margin: 0; }
 
   .folder-item {
+    position: relative;
     display: flex;
     align-items: center;
-    gap: 6px;
-    padding: 4.8px 10px 4.8px 6px;
+    padding: 4.8px 10px 4.8px 0;
+    padding-left: 220px;
     cursor: pointer;
     user-select: none;
     border-radius: 4px;
@@ -408,72 +517,95 @@
 
   .folder-name { flex: 1; font-weight: 500; }
 
-  .clear-btn {
-    width: 26px; height: 26px;
+  .clear-select {
+    width: 90px; height: 24px;
     border-radius: 5px;
-    border: none;
-    background: transparent;
-    color: #6a6050;
-    font-size: 15px;
-    line-height: 1;
+    border: 1px solid #444;
+    background: #1a1a1a;
+    color: #8a8070;
+    font-size: 0.68rem;
+    font-family: inherit;
     cursor: pointer;
     flex-shrink: 0;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 16px;
-    transition: color 0.1s, background 0.1s;
+    padding: 0 2px;
+    outline: none;
+    transition: border-color 0.1s;
   }
-  .clear-btn:hover { color: #d08080; background: rgba(200,80,80,0.12); }
+  .clear-select:hover { border-color: #6a6050; }
+  .clear-select:focus { border-color: #a67c00; }
+
+  .tree-hierarchy {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding-left: 24px;
+    flex: 1;
+    min-width: 0;
+    position: relative;
+    margin-left: calc(24px * var(--depth, 0));
+  }
+
+  .controls {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: 220px;
+    min-width: 220px;
+    flex-shrink: 0;
+  }
 
   .tree-children {
-    padding-left: 24px;
     display: none;
     position: relative;
   }
   .tree-children.open { display: block; }
 
-  /* Tree guide lines */
-  /* Non-last children: vertical trunk on tree-node (extends through children) */
-  .tree-children > .tree-node:not(:last-child) {
+  /* Depth indentation — handled by tree-hierarchy margin-left, not by shifting the node */
+  .tree-children > .tree-node {
     position: relative;
   }
-  .tree-children > .tree-node:not(:last-child)::before {
+
+  /* ── Tree guide lines ── */
+  /* Each node draws its own vertical trunk segment at its depth's gutter position */
+  .tree-children > .tree-node::before {
     content: '';
     position: absolute;
-    left: -12px;
+    left: calc(220px + 24px * var(--depth, 1));
     top: 0;
-    bottom: 0;
     width: 1px;
-    background: rgba(208, 200, 184, 0.12);
+    height: 100%;
+    background: rgba(208, 200, 184, 0.08);
     pointer-events: none;
   }
-
-  /* Horizontal connector for every row */
-  .tree-children .folder-item {
-    position: relative;
+  /* Last child: no trunk from .tree-node (would measure against children height) */
+  .tree-children > .tree-node:last-child::before {
+    height: 0;
   }
-  .tree-children .folder-item::after {
+  /* L-shape: vertical line from top to center of the visible row only */
+  .tree-children > .tree-node:last-child > .folder-item > .tree-hierarchy::after {
     content: '';
     position: absolute;
-    left: -12px;
-    top: 50%;
-    width: 12px;
-    height: 1px;
-    background: rgba(208, 200, 184, 0.12);
-    pointer-events: none;
-  }
-
-  /* Last child: L-shape — vertical on folder-item only, stops at center */
-  .tree-children > .tree-node:last-child > .folder-item::before {
-    content: '';
-    position: absolute;
-    left: -12px;
+    left: 0;
     top: 0;
+    width: 1px;
     height: 50%;
-    bottom: auto;
-    width: 1px;
-    background: rgba(208, 200, 184, 0.12);
+    background: rgba(208, 200, 184, 0.08);
+    pointer-events: none;
+  }
+
+  /* Horizontal branch: from the hierarchy left edge (which IS the trunk) to content */
+  .tree-children .tree-hierarchy::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 24px;
+    height: 1px;
+    background: rgba(208, 200, 184, 0.08);
     pointer-events: none;
   }
 
@@ -641,6 +773,7 @@
           </div>
 
         </div>
+
         <div class="tree-area">
 
           <div style="display:flex; gap:8px; margin-bottom:12px">
@@ -661,6 +794,20 @@
           <div id="folderCardStatus" class="card-status"></div>
 
         </div>
+
+        <!-- Right sidebar: icon picker -->
+        <div class="icon-sidebar">
+
+          <div class="icon-picker-title">Pick an icon</div>
+          <div class="icon-search-wrap">
+            <input class="icon-search-input" id="iconSearchInput" type="text" placeholder="Search icons..." oninput="debouncedSearch(this.value)">
+          </div>
+          <div class="icon-picker-hint">Click an icon to select it, then click the 🖼️ on any folder to apply it.</div>
+          <div id="iconEmpty" class="icon-empty" style="display:none">No icons match your search.</div>
+          <div class="icon-grid" id="iconGrid"></div>
+
+        </div>
+
       </div>
     </div>
   </div><!-- /results -->
@@ -716,6 +863,8 @@ let iconsDirHandle = null;
 let hasChanges = false;
 let featuresChanged = false;
 let activeColor = null;   // currently selected color in palette
+let activeIcon = null;     // currently selected icon name
+let allSvgIcons = [];      // [{stem, handle}] for all SVGs in icons dir
 
 // ══════════════════════════════════════════════════
 // DOM refs
@@ -853,6 +1002,32 @@ function setFolderConfig(path, color) {
   } else {
     if (typeof existing === 'object' && existing.icon) {
       workingConfig[path] = { icon: existing.icon };
+    } else {
+      delete workingConfig[path];
+    }
+  }
+  hasChanges = true;
+  saveBtn.disabled = false;
+}
+
+function setFolderIcon(path, iconName) {
+  const existing = workingConfig[path];
+  if (iconName) {
+    if (typeof existing === 'object') {
+      workingConfig[path] = { ...existing, icon: iconName };
+    } else if (existing) {
+      workingConfig[path] = { color: existing, icon: iconName };
+    } else {
+      workingConfig[path] = { icon: iconName };
+    }
+  } else {
+    if (typeof existing === 'object') {
+      const { icon: _, ...rest } = existing;
+      if (Object.keys(rest).length) {
+        workingConfig[path] = rest;
+      } else {
+        delete workingConfig[path];
+      }
     } else {
       delete workingConfig[path];
     }
@@ -1117,6 +1292,273 @@ async function resolveIconsFromDisk(iconNames) {
 }
 
 // ══════════════════════════════════════════════════
+// Icon search / picker
+// ══════════════════════════════════════════════════
+const commonEmojis = ['🔥','⚡','🌊','🏔️','🌲','💎','📜','⭐','💡','🔧','⚙️','🎯','🌀','☀️','🌙','❄️','🌈','🍀','🎵','🎨','📁','📂','🗂️','📝','🔒','🔑','👑','💀','🌿','💧','🍃','🚀','🛸','🧪','🔬','📡','🎮','📦','🏠','⚓','🛡️','⚔️','🔮','🎪','🏕️','💫','🗡️','🧙','🏹','🧊','🪙','🗺️','🕯️','⚗️','🪄'];
+
+const emojiNames = {
+  '🔥':'fire flame burn', '⚡':'lightning bolt zap thunder', '🌊':'water wave ocean sea',
+  '🏔️':'mountain snow peak', '🌲':'tree evergreen pine', '💎':'diamond gem jewel crystal',
+  '📜':'scroll parchment', '⭐':'star', '💡':'light bulb idea',
+  '🔧':'wrench tool', '⚙️':'gear cog settings', '🎯':'target bullseye dart aim',
+  '🌀':'cyclone spiral whirl', '☀️':'sun sunny', '🌙':'moon crescent night',
+  '❄️':'snowflake cold ice freeze', '🌈':'rainbow', '🍀':'clover luck four leaf',
+  '🎵':'music note melody', '🎨':'palette art paint color', '📁':'folder',
+  '📂':'folder open', '🗂️':'folder card index dividers',
+  '📝':'memo note document write', '🔒':'lock locked secure',
+  '🔑':'key', '👑':'crown king queen royal', '💀':'skull death danger',
+  '🌿':'herb leaf plant nature', '💧':'droplet water drop',
+  '🍃':'leaves wind breeze', '🚀':'rocket launch space',
+  '🛸':'ufo flying saucer alien', '🧪':'test tube chemistry lab science',
+  '🔬':'microscope science research', '📡':'satellite antenna dish signal',
+  '🎮':'gamepad controller video game', '📦':'package box parcel',
+  '🏠':'house home', '⚓':'anchor ship boat harbor',
+  '🛡️':'shield protect armor defense', '⚔️':'crossed swords sword weapon battle',
+  '🔮':'crystal ball magic fortune', '🎪':'circus tent',
+  '🏕️':'camping tent camp', '💫':'dizzy star sparkle glow',
+  '🗡️':'dagger knife weapon blade', '🧙':'mage wizard magic sorcerer',
+  '🏹':'bow arrow archer ranged', '🧊':'ice cube cold freeze',
+  '🪙':'coin gold treasure', '🗺️':'world map globe travel',
+  '🕯️':'candle light fire', '⚗️':'alembic flask chemistry alchemy',
+  '🪄':'magic wand spell wizard',
+};
+
+// Pre-cache all emojis in the resolution map so they're available immediately
+for (const em of commonEmojis) {
+  iconResolved.set(em, { type: 'emoji', value: em });
+}
+
+let searchDebounceTimer;
+let searchQuery = '';
+let cachedMatches = [];
+let currentPage = 0;
+const perPage = 100;
+
+function debouncedSearch(val) {
+  clearTimeout(searchDebounceTimer);
+  searchQuery = val;
+  cachedMatches = [];
+  currentPage = 0;
+  searchDebounceTimer = setTimeout(() => renderIconPicker(val, true), 200);
+}
+
+function renderIconPicker(query, reset) {
+  // Cancel any in-flight icon loads from previous search
+  iconLoadQueue.length = 0;
+  iconLoading = false;
+
+  const grid = document.getElementById('iconGrid');
+  const empty = document.getElementById('iconEmpty');
+
+  const q = (query || '').trim().toLowerCase();
+
+  // Empty until searched — show a prompt instead of all 18,000 icons
+  if (!q) {
+    grid.style.display = 'none';
+    empty.style.display = 'block';
+    empty.textContent = 'Type above to search icons by name…';
+    return;
+  }
+
+  // On new search (reset=true), recollect all matches and clear the grid
+  if (reset) {
+    cachedMatches = [];
+    currentPage = 0;
+
+    // Emojis — match by character or keyword
+    for (const em of commonEmojis) {
+      const names = (emojiNames[em] || '').toLowerCase();
+      if (em.toLowerCase().includes(q) || names.includes(q)) {
+        cachedMatches.push({ type: 'emoji', name: em, display: em });
+      }
+    }
+
+    // SVGs — match by filename stem
+    for (const { stem, handle } of allSvgIcons) {
+      if (stem.toLowerCase().includes(q)) {
+        cachedMatches.push({ type: 'svg', name: stem, display: stem, handle });
+      }
+    }
+
+    if (cachedMatches.length === 0) {
+      grid.style.display = 'none';
+      empty.style.display = 'block';
+      empty.textContent = 'No icons match "' + q + '".';
+      return;
+    }
+
+    grid.innerHTML = '';
+  }
+
+  // Append next page
+  const start = currentPage * perPage;
+  const page = cachedMatches.slice(start, start + perPage);
+  const totalShown = Math.min(start + perPage, cachedMatches.length, 500);
+  const hasMore = totalShown < Math.min(cachedMatches.length, 500);
+
+  if (page.length === 0 || start >= 500) {
+    // No more results or hit 500 cap
+    if (start >= 500 && cachedMatches.length > 500) {
+      // Show the max note even without a new page
+      const oldFooter = grid.querySelector('.icon-footer');
+      if (oldFooter) oldFooter.remove();
+      const footer = document.createElement('div');
+      footer.className = 'icon-footer';
+      const note = document.createElement('div');
+      note.textContent = 'Max 500 shown — narrow your search for better results.';
+      note.style.cssText = 'font-size:0.7rem; color:#5a5040';
+      footer.appendChild(note);
+      grid.appendChild(footer);
+    }
+    return;
+  }
+
+  grid.style.display = 'flex';
+  empty.style.display = 'none';
+
+  for (const m of page) {
+    const el = document.createElement('button');
+    el.className = 'icon-result';
+    el.dataset.iconName = m.name;
+    if (activeIcon === m.name) el.classList.add('selected');
+
+    if (m.type === 'emoji') {
+      el.textContent = m.name;
+    } else {
+      // Try to show SVG preview
+      const resolved = iconResolved.get(m.name);
+      if (resolved && resolved.type === 'svg') {
+        const img = document.createElement('img');
+        img.src = resolved.value;
+        img.alt = m.name;
+        img.style.cssText = 'width:20px;height:20px';
+        el.appendChild(img);
+      } else {
+        // Show name as text; load image in background
+        el.textContent = m.name.slice(0, 3) + (m.name.length > 3 ? '…' : '');
+        el.style.fontSize = '8px';
+        el.style.fontWeight = '400';
+        el.style.fontFamily = 'monospace';
+        el.style.color = '#6a6050';
+        el.style.letterSpacing = '-0.3px';
+        // Queue background load
+        queueIconLoad(m.name, m.handle, el);
+      }
+    }
+
+    el.title = m.name;
+    el.addEventListener('click', (e) => {
+      e.stopPropagation();
+      activeIcon = m.name;
+      document.querySelectorAll('.icon-result').forEach(r => r.classList.remove('selected'));
+      el.classList.add('selected');
+      document.getElementById('iconSearchInput').placeholder = m.name + ' selected ✓';
+    });
+    grid.appendChild(el);
+  }
+
+  // Remove old footer if any
+  const oldFooter = grid.querySelector('.icon-footer');
+  if (oldFooter) oldFooter.remove();
+
+  // Build footer with count + load more
+  const footer = document.createElement('div');
+  footer.className = 'icon-footer';
+  const shown = Math.min(start + perPage, cachedMatches.length);
+  const countLabel = document.createElement('div');
+  countLabel.textContent = 'Showing ' + Math.min(shown, 500) + ' of ' + cachedMatches.length;
+  countLabel.style.cssText = 'font-size:0.7rem; color:#5a5040';
+  footer.appendChild(countLabel);
+  if (hasMore) {
+    const moreBtn = document.createElement('button');
+    moreBtn.className = 'btn-small';
+    moreBtn.textContent = 'Load next 100 ↓';
+    moreBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      renderIconPicker(query, false);
+    });
+    footer.appendChild(moreBtn);
+  }
+  // Max note
+  if (cachedMatches.length > 500) {
+    const note = document.createElement('div');
+    note.textContent = 'Max 500 shown — narrow your search for better results.';
+    note.style.cssText = 'font-size:0.65rem; color:#5a5040; margin-top:2px';
+    footer.appendChild(note);
+  }
+  grid.appendChild(footer);
+
+  currentPage++;
+}
+
+async function loadAndDisplaySvg(el, name, handle) {
+  try {
+    const f = await handle.getFile();
+    let s = await f.text();
+    // Apply white fill transformation
+    s = s.replace(/fill="currentColor"/gi, 'fill="#ffffff"')
+         .replace(/stroke="currentColor"/gi, 'stroke="#ffffff"')
+         .replace(/fill="#000(?:000)?"/gi, 'fill="#ffffff"')
+         .replace(/fill="black"/gi, 'fill="#ffffff"')
+         .replace(/stroke="#000(?:000)?"/gi, 'stroke="#ffffff"')
+         .replace(/stroke="black"/gi, 'stroke="#ffffff"');
+    if (!s.match(/<svg[^>]*\bfill=/i)) {
+      s = s.replace(/(<svg[^>]*)/i, '$1 fill="#ffffff"');
+    }
+    const blobUrl = URL.createObjectURL(new Blob([s], { type: 'image/svg+xml' }));
+    iconResolved.set(name, { type: 'svg', value: blobUrl });
+    const img = document.createElement('img');
+    img.src = blobUrl;
+    img.alt = name;
+    img.style.cssText = 'width:20px;height:20px';
+    // Swap text for image if element still exists
+    if (el && el.parentNode) {
+      el.textContent = '';
+      el.style.cssText = '';
+      el.className = 'icon-result';
+      if (activeIcon === name) el.classList.add('selected');
+      el.appendChild(img);
+    }
+  } catch {
+    if (el && el.parentNode) el.textContent = '?';
+  }
+}
+
+// Batch-load uncached SVGs one at a time
+const iconLoadQueue = [];
+let iconLoading = false;
+function queueIconLoad(name, handle, el) {
+  iconLoadQueue.push({ name, handle, el });
+  if (!iconLoading) processIconQueue();
+}
+async function processIconQueue() {
+  if (iconLoading) return;
+  iconLoading = true;
+  while (iconLoadQueue.length > 0) {
+    const { name, handle, el } = iconLoadQueue.shift();
+    // Skip if already resolved by a previous load
+    if (!iconResolved.has(name)) {
+      await loadAndDisplaySvg(el, name, handle);
+    } else {
+      // Already loaded — swap text for image
+      const resolved = iconResolved.get(name);
+      if (resolved && resolved.type === 'svg' && el && el.parentNode) {
+        const img = document.createElement('img');
+        img.src = resolved.value;
+        img.alt = name;
+        img.style.cssText = 'width:20px;height:20px';
+        el.textContent = '';
+        el.style.cssText = '';
+        el.className = 'icon-result';
+        if (activeIcon === name) el.classList.add('selected');
+        el.appendChild(img);
+      }
+    }
+  }
+  iconLoading = false;
+}
+
+// ══════════════════════════════════════════════════
 // Tree scanning
 // ══════════════════════════════════════════════════
 async function scanAssetsRecursive(dirHandle) {
@@ -1162,10 +1604,6 @@ function updateRowAppearance(row, path) {
   row.style.color = folderColor || '';
   const nameSpan = row.querySelector('.folder-name');
   if (nameSpan) nameSpan.style.color = folderColor || '';
-
-  // Show/hide clear button
-  const clearBtn = row.querySelector('.clear-btn');
-  if (clearBtn) clearBtn.style.visibility = getFolderState(path) === 'configured' ? 'visible' : 'hidden';
 
   const applyBtn = row.querySelector('.apply-btn');
   if (applyBtn) {
@@ -1216,8 +1654,61 @@ function refreshAllTreeRows() {
     const row = node.querySelector('.folder-item');
     const btn = row?.querySelector('.apply-btn');
     const path = btn?.dataset.path;
-    if (path) updateRowAppearance(row, path);
+    if (path) {
+      updateRowAppearance(row, path);
+      updateRowIcon(row, path);
+      updateRowIconBtn(row, path);
+    }
   });
+}
+
+function updateRowIconBtn(row, path) {
+  const iconBtn = row.querySelector('.icon-btn');
+  if (!iconBtn) return;
+  const iconRaw = findIcon(path);
+  iconBtn.innerHTML = '';
+  if (iconRaw) {
+    const r = iconResolved.get(iconRaw);
+    if (r) {
+      if (r.type === 'svg') {
+        const img = document.createElement('img'); img.src = r.value; img.alt = '';
+        iconBtn.appendChild(img);
+        return;
+      } else if (r.type === 'emoji') {
+        iconBtn.textContent = r.value;
+        iconBtn.style.fontSize = '18px';
+        return;
+      }
+    }
+  }
+  iconBtn.textContent = '📁';
+  iconBtn.style.fontSize = '16px';
+}
+
+function updateRowIcon(row, path) {
+  const iconWrap = row.querySelector('.folder-icon');
+  if (!iconWrap) return;
+  const rawIcon = findIcon(path);
+  iconWrap.innerHTML = '';
+  let done = false;
+  if (rawIcon) {
+    const r = iconResolved.get(rawIcon);
+    if (r) {
+      if (r.type === 'svg') {
+        const img = document.createElement('img'); img.src = r.value; img.alt = '';
+        iconWrap.appendChild(img);
+        done = true;
+      } else if (r.type === 'emoji') {
+        const em = document.createElement('span'); em.className = 'emoji'; em.textContent = r.value;
+        iconWrap.appendChild(em);
+        done = true;
+      }
+    }
+  }
+  if (!done) {
+    const fallback = document.createElement('span'); fallback.className = 'emoji'; fallback.textContent = '📁';
+    iconWrap.appendChild(fallback);
+  }
 }
 
 function renderTree() {
@@ -1239,21 +1730,31 @@ function renderTreeNode(name, children, path) {
 
   const hasChildren = Object.keys(children).length > 0;
   const folderColor = findColor(path);
+  const depth = path.split('/').length - 1;
+  row.style.setProperty('--depth', depth);
 
-  // Clear button (X)
-  const clearBtn = document.createElement('button');
-  clearBtn.className = 'clear-btn';
-  clearBtn.textContent = '✕';
-  clearBtn.title = 'Remove color';
-  if (getFolderState(path) !== 'configured') clearBtn.style.visibility = 'hidden';
-  clearBtn.addEventListener('click', (e) => {
+  // Controls wrapper — fixed width column (220px)
+  const controls = document.createElement('div');
+  controls.className = 'controls';
+
+  // Clear dropdown — clears color, icon, or both
+  const clearSelect = document.createElement('select');
+  clearSelect.className = 'clear-select';
+  clearSelect.innerHTML = '<option value="">✕ Clear…</option><option value="color">Clear color</option><option value="icon">Clear icon</option><option value="both">Clear both</option>';
+  clearSelect.addEventListener('change', (e) => {
     e.stopPropagation();
-    setFolderConfig(path, null);
+    const action = e.target.value;
+    if (!action) return;
+    if (action === 'color') setFolderConfig(path, null);
+    else if (action === 'icon') setFolderIcon(path, null);
+    else if (action === 'both') { setFolderConfig(path, null); setFolderIcon(path, null); }
     refreshAllTreeRows();
     syncPaletteFromTree();
     updateStats();
+    clearSelect.value = '';
   });
-  row.appendChild(clearBtn);
+  clearSelect.addEventListener('click', (e) => e.stopPropagation());
+  controls.appendChild(clearSelect);
 
   // Apply button
   const applyBtn = document.createElement('button');
@@ -1279,13 +1780,55 @@ function renderTreeNode(name, children, path) {
   });
   applyBtn.addEventListener('mouseenter', () => { applyBtn.style.transform = 'scale(1.3)'; });
   applyBtn.addEventListener('mouseleave', () => { applyBtn.style.transform = ''; });
-  row.appendChild(applyBtn);
+  controls.appendChild(applyBtn);
+
+  // Icon apply button — shows current folder icon
+  const iconBtn = document.createElement('button');
+  iconBtn.className = 'icon-btn';
+  iconBtn.title = activeIcon ? `Apply "${activeIcon}"` : 'Select an icon from the right panel first';
+  // Show the folder's current icon inside the button
+  const iconRaw = findIcon(path);
+  let iconSet = false;
+  if (iconRaw) {
+    const r = iconResolved.get(iconRaw);
+    if (r) {
+      if (r.type === 'svg') {
+        const img = document.createElement('img'); img.src = r.value; img.alt = '';
+        iconBtn.appendChild(img);
+        iconSet = true;
+      } else if (r.type === 'emoji') {
+        iconBtn.textContent = r.value;
+        iconBtn.style.fontSize = '18px';
+        iconSet = true;
+      }
+    }
+  }
+  if (!iconSet) {
+    iconBtn.textContent = '📁';
+    iconBtn.style.fontSize = '16px';
+  }
+  iconBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (!activeIcon) return;
+    setFolderIcon(path, activeIcon);
+    refreshAllTreeRows();
+    syncPaletteFromTree();
+    updateStats();
+  });
+  iconBtn.addEventListener('mouseenter', () => { iconBtn.style.transform = 'scale(1.3)'; });
+  iconBtn.addEventListener('mouseleave', () => { iconBtn.style.transform = ''; });
+  controls.appendChild(iconBtn);
+  row.appendChild(controls);
+
+  // Tree hierarchy — flex area with gutter for tree lines
+  const treeContent = document.createElement('div');
+  treeContent.className = 'tree-hierarchy';
 
   // Chevron
   const chevron = document.createElement('span');
   chevron.className = 'chevron';
   if (hasChildren) chevron.textContent = '▶';
-  row.appendChild(chevron);
+  treeContent.appendChild(chevron);
 
   // Icon
   const iconWrap = document.createElement('span');
@@ -1310,21 +1853,23 @@ function renderTreeNode(name, children, path) {
     const fallback = document.createElement('span'); fallback.className = 'emoji'; fallback.textContent = '📁';
     iconWrap.appendChild(fallback);
   }
-  row.appendChild(iconWrap);
+  treeContent.appendChild(iconWrap);
 
   // Folder name
   const nameSpan = document.createElement('span');
   nameSpan.className = 'folder-name';
   nameSpan.textContent = name;
   if (folderColor) nameSpan.style.color = folderColor;
-  row.appendChild(nameSpan);
+  treeContent.appendChild(nameSpan);
 
   // Badge
   const state = getFolderState(path);
   const badge = document.createElement('span');
   badge.className = 'badge ' + state;
   badge.textContent = state;
-  row.appendChild(badge);
+  treeContent.appendChild(badge);
+
+  row.appendChild(treeContent);
 
   // Click row to expand
   if (hasChildren) {
@@ -1345,6 +1890,7 @@ function renderTreeNode(name, children, path) {
   if (hasChildren) {
     const childrenContainer = document.createElement('div');
     childrenContainer.className = 'tree-children';
+    childrenContainer.style.setProperty('--depth', depth + 1);
     const sorted = Object.entries(children).sort((a, b) => a[0].localeCompare(b[0]));
     for (const [childName, grandChildren] of sorted) {
       childrenContainer.appendChild(renderTreeNode(childName, grandChildren, path + '/' + childName));
@@ -1409,6 +1955,7 @@ async function openProject() {
 
   try { iconsDirHandle = await srcHandle.getDirectoryHandle('icons'); } catch { iconsDirHandle = null; }
 
+  // Collect config-referenced icons BEFORE scanning all SVGs
   const allIconNames = new Set();
   for (const [, cfg] of Object.entries(workingConfig)) {
     if (typeof cfg === 'object' && cfg.icon) {
@@ -1417,6 +1964,18 @@ async function openProject() {
     }
   }
   if (iconsDirHandle && allIconNames.size > 0) await resolveIconsFromDisk([...allIconNames]);
+
+  // Scan all SVGs for the icon picker (after config icons are cached)
+  allSvgIcons = [];
+  if (iconsDirHandle) {
+    for await (const entry of iconsDirHandle.values()) {
+      if (entry.kind === 'file' && entry.name.endsWith('.svg')) {
+        allSvgIcons.push({ stem: entry.name.slice(0, -4), handle: entry });
+      }
+    }
+  }
+  // Show initial icon picker (SVGs already cached from config are shown immediately)
+  renderIconPicker('');
 
   // Load feature flags
   origFeatures = await loadFeatures(srcHandle);
