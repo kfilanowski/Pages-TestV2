@@ -71,6 +71,10 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
   // Whether the initial auto-expand has been applied for the current search session
   private hasAutoExpanded = false;
 
+  // Snapshot of folder expand state before search auto-expanded everything,
+  // so we can restore it when search is cleared
+  private savedExpandState: Map<string, boolean> | null = null;
+
   // Search state with debouncing
   private readonly searchInputSubject = new Subject<string>();
   private searchSubscription?: Subscription;
@@ -153,21 +157,31 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    // Set up debounced search with 200ms delay
+    // Set up debounced search with 300ms delay
     this.searchSubscription = this.searchInputSubject
-      .pipe(debounceTime(200))
+      .pipe(debounceTime(300))
       .subscribe((query) => {
         this.searchService.search(query);
 
         // Auto-expand all folders once when search starts and hierarchy mode is on
         if (query.trim()) {
           if (this.features.isEnabled('show_tree_search_hierarchy') && !this.hasAutoExpanded) {
+            // Save current expand state before auto-expanding
+            this.savedExpandState = this.captureExpandState(this.allTreeNodes());
             this.expandAllFolders(this.allTreeNodes());
             this.allTreeNodes.set([...this.allTreeNodes()]);
             this.hasAutoExpanded = true;
           }
           this.manuallyCollapsed.set(new Set());
         } else {
+          // Restore the tree to its pre-search expand state,
+          // then expand the path to the currently active note
+          if (this.savedExpandState) {
+            this.restoreExpandState(this.allTreeNodes(), this.savedExpandState);
+            this.expandToCurrentNote(this.allTreeNodes());
+            this.allTreeNodes.set([...this.allTreeNodes()]);
+            this.savedExpandState = null;
+          }
           this.hasAutoExpanded = false;
           this.manuallyCollapsed.set(new Set());
         }
@@ -259,6 +273,51 @@ export class NotesNavigationComponent implements OnInit, OnDestroy {
         node.expanded = true;
         this.expandAllFolders(node.children);
       }
+    }
+  }
+
+  /**
+   * Captures the current expand state of all folders into a path→boolean map.
+   * Used to snapshot the tree before search auto-expands everything.
+   */
+  private captureExpandState(nodes: NoteTreeNode[]): Map<string, boolean> {
+    const state = new Map<string, boolean>();
+    const walk = (ns: NoteTreeNode[]) => {
+      for (const n of ns) {
+        if (isFolder(n)) {
+          state.set(n.path || n.name, Boolean(n.expanded));
+          walk(n.children);
+        }
+      }
+    };
+    walk(nodes);
+    return state;
+  }
+
+  /**
+   * Restores a previously captured expand state onto the tree.
+   */
+  private restoreExpandState(nodes: NoteTreeNode[], state: Map<string, boolean>): void {
+    for (const n of nodes) {
+      if (isFolder(n)) {
+        const saved = state.get(n.path || n.name);
+        if (saved !== undefined) n.expanded = saved;
+        this.restoreExpandState(n.children, state);
+      }
+    }
+  }
+
+  /**
+   * Expands the tree path to whatever note the user is currently viewing.
+   * Called after restoring pre-search expand state so the active note is still visible.
+   */
+  private expandToCurrentNote(tree: NoteTreeNode[]): void {
+    const url = this.router.url;
+    const regex = new RegExp(`\\/${this.projectSlug}\\/(.+)`);
+    const match = url.match(regex);
+    if (match) {
+      const noteId = decodeURIComponent(match[1].split('?')[0].split('#')[0]);
+      this.expandPathToNote(tree, noteId);
     }
   }
 
