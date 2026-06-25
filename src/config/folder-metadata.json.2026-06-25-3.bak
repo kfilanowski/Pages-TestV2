@@ -413,12 +413,15 @@
     "color": "#8888AA"
   },
   "Techniques/Magical Techniques/Alchemy": {
+    "color": "#44BB77",
     "icon": "alchemy"
   },
   "Techniques/Magical Techniques/Arcane": {
+    "color": "#4488CC",
     "icon": "magic"
   },
   "Techniques/Magical Techniques/Brazzeria (T)": {
+    "color": "#FF5522",
     "icon": "fire"
   },
   "Techniques/Magical Techniques/Clairvoyance (T)": {
@@ -454,6 +457,7 @@
     "icon": "earth"
   },
   "Techniques/Magical Techniques/Nack": {
+    "color": "#AA7744",
     "icon": "mountain"
   },
   "Techniques/Magical Techniques/Necromancy": {
@@ -496,16 +500,35 @@
     "color": "#66BB44",
     "icon": "wolf"
   },
+  "Techniques/Martial Techniques/Cataclysm": {
+    "color": "#FF4422"
+  },
   "Techniques/Martial Techniques/Marksman": {
+    "color": "#88AA44",
     "icon": "bow"
   },
   "Techniques/Martial Techniques/Protector": {
+    "color": "#4488CC",
     "icon": "shield"
   },
   "Techniques/Martial Techniques/Pupper": {
+    "color": "#CC8855",
     "icon": "dog"
   },
+  "Techniques/Martial Techniques/Scoundrel": {
+    "color": "#886644"
+  },
   "Techniques/Martial Techniques/Unarmed": {
+    "color": "#CC7744",
     "icon": "fist"
+  },
+  "Techniques/Technique Rules": {
+    "color": "#AA99CC"
+  },
+  "Techniques/Technique Rules/Spell Mechanics": {
+    "color": "#8866AA"
+  },
+  "Techniques/Technique Rules/Spell Mechanics/Casting Components": {
+    "color": "#9977BB"
   }
 }

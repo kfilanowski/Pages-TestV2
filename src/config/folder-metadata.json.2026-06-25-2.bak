@@ -246,6 +246,7 @@
     "icon": "boots"
   },
   "Equipment and Economics/Equipment Types/Gear Upgrades/Gloves": {
+    "color": "#AA7744",
     "icon": "gloves"
   },
   "Equipment and Economics/Equipment Types/Gear Upgrades/Headwear": {
@@ -282,6 +283,15 @@
     "color": "#CC6644",
     "icon": "sword"
   },
+  "Equipment and Economics/Equipment Types/Gear Upgrades/Wieldables": {
+    "color": "#AA7744"
+  },
+  "Equipment and Economics/Equipment Types/Goods and Services": {
+    "color": "#88AA77"
+  },
+  "Equipment and Economics/Equipment Types/Mundane Items": {
+    "color": "#998877"
+  },
   "Equipment and Economics/Equipment Types/Weapons": {
     "color": "#CC6644",
     "icon": "sword"
@@ -296,9 +306,11 @@
     "color": "#BB9966"
   },
   "Feats": {
+    "color": "#DDBB33",
     "icon": "🏆"
   },
   "Feats/Combat Feats": {
+    "color": "#DD7744",
     "icon": "sword"
   },
   "Feats/General Feats": {
@@ -314,8 +326,15 @@
   "Feats/Racial Feats": {
     "color": "#88BB88"
   },
+  "Feats/Teamwork Feats": {
+    "color": "#66AACC"
+  },
   "Gods": {
+    "color": "#c1d0dd",
     "icon": "👑"
+  },
+  "Gods/Gods/Demigods": {
+    "color": "#88AAEE"
   },
   "Gods/Gods/Demon Lords": {
     "color": "#CC3344",
@@ -353,31 +372,88 @@
     "icon": "chat"
   },
   "Minigames": {
+    "color": "#FF88AA",
     "icon": "gamepad"
   },
   "Minigames/Chase": {
+    "color": "#88CC66",
     "icon": "run"
   },
   "Races": {
+    "color": "#AA88FF",
     "icon": "users"
   },
   "Races/Beastfolk": {
+    "color": "#88BB66",
     "icon": "wolf"
   },
   "Random Charts": {
+    "color": "#669966",
     "icon": "chart"
   },
+  "Random Charts/Afflictions": {
+    "color": "#AA6688"
+  },
+  "Random Charts/Character Creation": {
+    "color": "#88AACC"
+  },
   "Skills": {
+    "color": "#44CCDD",
     "icon": "star"
   },
+  "Skills/General Thoughts": {
+    "color": "#99AACC"
+  },
+  "Skills/Skills/Acrobatics": {
+    "color": "#DD8844"
+  },
+  "Skills/Skills/Athletics": {
+    "color": "#CC6633"
+  },
+  "Skills/Skills/Deception": {
+    "color": "#AA66AA"
+  },
+  "Skills/Skills/Disguise": {
+    "color": "#8866AA"
+  },
+  "Skills/Skills/Insight": {
+    "color": "#6688DD"
+  },
+  "Skills/Skills/Intimidation": {
+    "color": "#CC4433"
+  },
+  "Skills/Skills/Knowledge": {
+    "color": "#4488CC"
+  },
   "Skills/Skills/Knowledge/Alchemy": {
+    "color": "#44BB77",
     "icon": "alchemy"
   },
   "Skills/Skills/Knowledge/Arcana": {
+    "color": "#6644CC",
     "icon": "magic"
   },
+  "Skills/Skills/Knowledge/Cryptozoology": {
+    "color": "#66AA66"
+  },
+  "Skills/Skills/Knowledge/Engineering": {
+    "color": "#AA8844"
+  },
+  "Skills/Skills/Knowledge/History": {
+    "color": "#AA8866"
+  },
+  "Skills/Skills/Knowledge/Local": {
+    "color": "#88AA88"
+  },
   "Skills/Skills/Knowledge/Nature": {
+    "color": "#44AA44",
     "icon": "tree"
+  },
+  "Skills/Skills/Knowledge/Planes": {
+    "color": "#8866AA"
+  },
+  "Skills/Skills/Knowledge/Religion": {
+    "color": "#DDAA44"
   },
   "Skills/Skills/Linguistics": {
     "color": "#88AACC"
@@ -391,6 +467,18 @@
   },
   "Skills/Skills/Persuasion": {
     "color": "#CC88AA"
+  },
+  "Skills/Skills/Profession": {
+    "color": "#AA9966"
+  },
+  "Skills/Skills/Sleight of Hand": {
+    "color": "#AA8866"
+  },
+  "Skills/Skills/Stealth": {
+    "color": "#666688"
+  },
+  "Skills/Skills/Survival": {
+    "color": "#66AA55"
   },
   "Techniques": {
     "color": "#FF7744",
@@ -413,12 +501,15 @@
     "color": "#8888AA"
   },
   "Techniques/Magical Techniques/Alchemy": {
+    "color": "#44BB77",
     "icon": "alchemy"
   },
   "Techniques/Magical Techniques/Arcane": {
+    "color": "#4488CC",
     "icon": "magic"
   },
   "Techniques/Magical Techniques/Brazzeria (T)": {
+    "color": "#FF5522",
     "icon": "fire"
   },
   "Techniques/Magical Techniques/Clairvoyance (T)": {
@@ -454,6 +545,7 @@
     "icon": "earth"
   },
   "Techniques/Magical Techniques/Nack": {
+    "color": "#AA7744",
     "icon": "mountain"
   },
   "Techniques/Magical Techniques/Necromancy": {
@@ -496,16 +588,35 @@
     "color": "#66BB44",
     "icon": "wolf"
   },
+  "Techniques/Martial Techniques/Cataclysm": {
+    "color": "#FF4422"
+  },
   "Techniques/Martial Techniques/Marksman": {
+    "color": "#88AA44",
     "icon": "bow"
   },
   "Techniques/Martial Techniques/Protector": {
+    "color": "#4488CC",
     "icon": "shield"
   },
   "Techniques/Martial Techniques/Pupper": {
+    "color": "#CC8855",
     "icon": "dog"
   },
+  "Techniques/Martial Techniques/Scoundrel": {
+    "color": "#886644"
+  },
   "Techniques/Martial Techniques/Unarmed": {
+    "color": "#CC7744",
     "icon": "fist"
+  },
+  "Techniques/Technique Rules": {
+    "color": "#AA99CC"
+  },
+  "Techniques/Technique Rules/Spell Mechanics": {
+    "color": "#8866AA"
+  },
+  "Techniques/Technique Rules/Spell Mechanics/Casting Components": {
+    "color": "#9977BB"
   }
 }

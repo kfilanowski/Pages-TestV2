@@ -15,7 +15,7 @@
     padding: 48px 24px;
     min-height: 100vh;
   }
-  .container { max-width: 800px; width: 100%; }
+  .container { max-width: 960px; width: 100%; }
   h1 { font-size: 1.4rem; margin-bottom: 4px; }
   .subtitle { color: #8a8070; font-size: 0.85rem; margin-bottom: 24px; }
   .subtitle code { background: #222; padding: 1px 5px; border-radius: 3px; }
@@ -268,6 +268,24 @@
   }
   .color-picker .picker-fields input:focus { border-color: #a67c00; }
   .color-picker .picker-fields input.hex-field { width: 80px; }
+
+  /* ── Settings two-column layout ── */
+  .settings-layout {
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+  }
+  .picker-sidebar {
+    width: 300px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 24px;
+    align-self: flex-start;
+  }
+  .tree-area {
+    flex: 1;
+    min-width: 0;
+  }
 
   /* ── Feature flags ── */
   .feature-row {
@@ -581,56 +599,65 @@
     <div class="card">
       <div class="card-title">Pick a color from below, then click the ■ on any folder to apply it</div>
 
-      <div style="font-size:0.72rem; color:#6a6050; margin-bottom:8px">Colors visible in the expanded folder tree — click a swatch to select it.</div>
+      <div class="settings-layout">
+        <div class="picker-sidebar">
 
-      <div class="palette" id="palette"></div>
+          <div style="font-size:0.72rem; color:#6a6050; margin-bottom:8px">Colors visible in the expanded folder tree — click a swatch to select it.</div>
 
-      <div class="color-picker" id="colorPicker" style="display:block;margin-top:0">
-        <div class="picker-main">
-          <div class="sv-map-wrap" id="svMapWrap">
-            <canvas id="svCanvas" width="180" height="180"></canvas>
-            <div class="sv-cursor" id="svCursor"></div>
+          <div class="palette" id="palette"></div>
+
+          <div class="color-picker" id="colorPicker" style="display:block;margin-top:0">
+            <div class="picker-main">
+              <div class="sv-map-wrap" id="svMapWrap">
+                <canvas id="svCanvas" width="180" height="180"></canvas>
+                <div class="sv-cursor" id="svCursor"></div>
+              </div>
+              <div class="hue-strip-wrap" id="hueStripWrap">
+                <canvas id="hueCanvas" width="24" height="180"></canvas>
+                <div class="hue-cursor" id="hueCursor"></div>
+              </div>
+            </div>
+            <div class="picker-details">
+              <div class="picker-preview" id="pickerPreview"></div>
+              <div class="picker-fields">
+                <label>Hex <input class="hex-field" id="pickerHex" value="#a67c00" spellcheck="false" maxlength="7"></label>
+                <label>R <input id="pickerR" value="166" min="0" max="255"></label>
+                <label>G <input id="pickerG" value="124" min="0" max="255"></label>
+                <label>B <input id="pickerB" value="0" min="0" max="255"></label>
+              </div>
+            </div>
           </div>
-          <div class="hue-strip-wrap" id="hueStripWrap">
-            <canvas id="hueCanvas" width="24" height="180"></canvas>
-            <div class="hue-cursor" id="hueCursor"></div>
+
+          <div class="preview-bar" id="previewBar" style="display:none">
+            <span class="folder-icon" id="previewIconWrap" style="width:20px;height:20px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0"></span>
+            <span class="preview-text">
+              <span id="previewLabel">Sample Folder</span>
+            </span>
+            <button class="preview-remove" id="previewRemove">✕ Remove</button>
           </div>
+
         </div>
-        <div class="picker-details">
-          <div class="picker-preview" id="pickerPreview"></div>
-          <div class="picker-fields">
-            <label>Hex <input class="hex-field" id="pickerHex" value="#a67c00" spellcheck="false" maxlength="7"></label>
-            <label>R <input id="pickerR" value="166" min="0" max="255"></label>
-            <label>G <input id="pickerG" value="124" min="0" max="255"></label>
-            <label>B <input id="pickerB" value="0" min="0" max="255"></label>
+        <div class="tree-area">
+
+          <div style="display:flex; gap:8px; margin-bottom:12px">
+            <button class="btn-small" id="expandAllBtn">Expand all</button>
+            <button class="btn-small" id="collapseAllBtn">Collapse all</button>
+            <span style="margin-left:auto; font-size:0.75rem; color:#6aa; align-self:center" id="treeCount"></span>
           </div>
+
+          <div id="folderTree" class="tree"></div>
+
+          <div style="display:flex; justify-content:space-between; margin-top:16px; padding-top:16px; border-top:1px solid #333">
+            <div style="display:flex; gap:8px">
+              <button class="btn" id="saveBtn" disabled>💾 Save</button>
+              <button class="btn secondary" id="previewBtn" disabled>👁️ Preview</button>
+            </div>
+            <button class="btn danger" id="resetBtn" disabled>↩ Reset</button>
+          </div>
+          <div id="folderCardStatus" class="card-status"></div>
+
         </div>
       </div>
-
-      <div class="preview-bar" id="previewBar" style="display:none">
-        <span class="folder-icon" id="previewIconWrap" style="width:20px;height:20px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0"></span>
-        <span class="preview-text">
-          <span id="previewLabel">Sample Folder</span>
-        </span>
-        <button class="preview-remove" id="previewRemove">✕ Remove</button>
-      </div>
-
-      <div style="display:flex; gap:8px; margin-bottom:12px">
-        <button class="btn-small" id="expandAllBtn">Expand all</button>
-        <button class="btn-small" id="collapseAllBtn">Collapse all</button>
-        <span style="margin-left:auto; font-size:0.75rem; color:#6aa; align-self:center" id="treeCount"></span>
-      </div>
-
-      <div id="folderTree" class="tree"></div>
-
-      <div style="display:flex; justify-content:space-between; margin-top:16px; padding-top:16px; border-top:1px solid #333">
-        <div style="display:flex; gap:8px">
-          <button class="btn" id="saveBtn" disabled>💾 Save</button>
-          <button class="btn secondary" id="previewBtn" disabled>👁️ Preview</button>
-        </div>
-        <button class="btn danger" id="resetBtn" disabled>↩ Reset</button>
-      </div>
-      <div id="folderCardStatus" class="card-status"></div>
     </div>
   </div><!-- /results -->
 
