@@ -740,9 +740,9 @@
 <body>
 <div class="container">
   <h1>⚙️ Project Settings</h1>
-  <p class="subtitle">Pick your project's <code>src/</code> directory to configure folders and features.</p>
+  <p class="subtitle">Pick the root of your project directory to configure folders, features, and general settings.</p>
 
-  <button class="btn" id="openBtn">📂 Choose src/ folder</button>
+  <button class="btn" id="openBtn">📂 Choose project root</button>
 
   <div id="status" class="status"></div>
 
@@ -750,6 +750,7 @@
   <div id="tabBar" class="tab-bar" style="display:none">
     <button class="tab active" data-tab="folders">📁 Folder Settings</button>
     <button class="tab" data-tab="features">⚙️ Feature Flags</button>
+    <button class="tab" data-tab="general">🌐 General</button>
   </div>
 
   <!-- Unsaved changes banner -->
@@ -869,8 +870,39 @@
     </div>
   </div><!-- /tab-features -->
 
+  <!-- General Settings tab -->
+  <div id="tab-general" class="tab-content" style="display:none">
+    <div class="card">
+      <div class="card-title">Site Settings</div>
+      <div style="font-size:0.75rem; color:#6a6050; margin-bottom:16px">Configure general site behaviour.</div>
+
+      <div style="margin-bottom:16px">
+        <div style="font-size:0.82rem; font-weight:500; margin-bottom:4px">Landing Page</div>
+        <div style="font-size:0.72rem; color:#6a6050; margin-bottom:8px; line-height:1.4">
+          The note shown at the site root URL. Click one below to select it.
+        </div>
+        <div id="landingPageSelected" style="font-size:0.85rem; color:#a67c00; margin-bottom:8px; padding:6px 10px; background:#1a1a1a; border:1px solid #333; border-radius:5px; display:flex; align-items:center; gap:8px">
+          <span style="font-size:0.65rem; color:#6a6050; flex-shrink:0">SELECTED:</span>
+          <span id="landingPageSelectedLabel">Index</span>
+        </div>
+        <input id="landingPageSearch" type="text" spellcheck="false" placeholder="🔍 Search notes…"
+          style="width:100%; padding:7px 10px; margin-bottom:8px; border-radius:5px; border:1px solid #444; background:#1a1a1a; color:#d0c8b8; font-size:0.82rem; font-family:inherit; outline:none">
+        <div id="notesList" style="max-height:320px; overflow-y:auto; scrollbar-width:thin; scrollbar-color:#3a3835 transparent; background:#1a1a1a; border:1px solid #333; border-radius:5px; padding:4px"></div>
+      </div>
+
+      <div style="display:flex; justify-content:space-between; margin-top:14px; padding-top:14px; border-top:1px solid #333">
+        <div style="display:flex; gap:8px">
+          <button class="btn" id="generalSaveBtn" disabled>💾 Save</button>
+          <button class="btn secondary" id="generalPreviewBtn">👁️ Preview</button>
+        </div>
+        <button class="btn danger" id="generalResetBtn" disabled>↩ Reset</button>
+      </div>
+      <div id="generalCardStatus" class="card-status"></div>
+    </div>
+  </div><!-- /tab-general -->
+
   <div class="footer">
-    Requires Chrome/Edge. Navigate to your project's <code>src/</code> directory.
+    Requires Chrome/Edge. Pick the root directory of your project.
   </div>
 </div>
 
@@ -890,11 +922,14 @@
 // ══════════════════════════════════════════════════
 // State
 // ══════════════════════════════════════════════════
+let rootHandle = null;
 let srcHandle = null;
 let origConfig = {};
 let workingConfig = {};
 let origFeatures = {};
 let workingFeatures = {};
+let origProjectConfig = {};
+let workingProjectConfig = {};
 let scannedTree = {};
 let iconResolved = new Map();
 let iconsDirHandle = null;
@@ -902,6 +937,8 @@ let featuresChanged = false;
 let activeColor = null;   // currently selected color in palette
 let activeIcon = null;     // currently selected icon name
 let allSvgIcons = [];      // [{stem, handle}] for all SVGs in icons dir
+let selectedLandingPage = 'Index';
+let allKnownNotes = [];    // cached note paths for the general tab list
 
 function computeChanges() {
   let colorChanges = 0, iconChanges = 0;
@@ -921,7 +958,12 @@ function computeChanges() {
     if (key.startsWith('$')) continue;
     if (workingFeatures[key] !== origFeatures[key]) flagChanges++;
   }
-  return { colorChanges, iconChanges, flagChanges, total: colorChanges + iconChanges + flagChanges };
+  let generalChanges = 0;
+  for (const key of Object.keys(workingProjectConfig)) {
+    if (key.startsWith('$')) continue;
+    if (workingProjectConfig[key] !== origProjectConfig[key]) generalChanges++;
+  }
+  return { colorChanges, iconChanges, flagChanges, generalChanges, total: colorChanges + iconChanges + flagChanges + generalChanges };
 }
 
 function updateUnsavedBanner() {
@@ -935,6 +977,7 @@ function updateUnsavedBanner() {
     if (c.colorChanges > 0) parts.push(c.colorChanges + ' color');
     if (c.iconChanges > 0) parts.push(c.iconChanges + ' icon');
     if (c.flagChanges > 0) parts.push(c.flagChanges + ' flag');
+    if (c.generalChanges > 0) parts.push(c.generalChanges + ' general');
     countEl.textContent = parts.join(', ') + ' unsaved';
     banner.style.display = 'flex';
   }
@@ -1076,6 +1119,15 @@ async function loadFeatures(dirHandle) {
     } catch {
       return {};
     }
+  }
+}
+
+async function loadProjectConfig(dirHandle) {
+  try {
+    const fileHandle = await dirHandle.getFileHandle('project.config.json');
+    return JSON.parse(await (await fileHandle.getFile()).text());
+  } catch {
+    return { landingPage: 'Index' };
   }
 }
 // ══════════════════════════════════════════════════
@@ -9580,18 +9632,26 @@ async function openProject() {
     setStatus('Error: ' + e.message, 'error'); return;
   }
 
-  if (handle.name !== 'src') {
+  try {
+    setStatus('📂 Loading…', 'info');
+  rootHandle = handle;
+  // Hide the initial prompt and button once a valid directory is selected
+  document.querySelector('.subtitle').style.display = 'none';
+  document.getElementById('openBtn').style.display = 'none';
+
+  // Derive src/ handle from the project root
+  try { srcHandle = await rootHandle.getDirectoryHandle('src'); }
+  catch {
     results.style.display = 'none';
-    setStatus('❌ Selected folder is <strong>' + handle.name + '</strong>. Navigate to your project\'s <code>src/</code> directory.', 'error');
+    setStatus('❌ No <code>src/</code> directory found in the selected folder. Make sure you selected the project root.', 'error');
     return;
   }
 
-  try {
-    setStatus('📂 Loading…', 'info');
-  srcHandle = handle;
-  // Hide the initial prompt and button once a valid src/ is selected
-  document.querySelector('.subtitle').style.display = 'none';
-  document.getElementById('openBtn').style.display = 'none';
+  // Load project.config.json from root
+  origProjectConfig = await loadProjectConfig(rootHandle);
+  workingProjectConfig = JSON.parse(JSON.stringify(origProjectConfig));
+  selectedLandingPage = origProjectConfig.landingPage || 'Index';
+  renderNotesList('');
 
   origConfig = await readFolderMetadata(srcHandle);
   for (const k of Object.keys(origConfig)) { if (k.startsWith('$')) delete origConfig[k]; }
@@ -9640,6 +9700,22 @@ async function openProject() {
   }
   scannedTree = await scanAssetsRecursive(assetsHandle);
 
+  // Scan all note .md files for the landing page picker
+  allKnownNotes = [];
+  async function scanNotes(dir, prefix) {
+    for await (const entry of dir.values()) {
+      if (entry.kind === 'file' && entry.name.endsWith('.md')) {
+        const name = entry.name.slice(0, -3);
+        allKnownNotes.push(prefix ? prefix + '/' + name : name);
+      } else if (entry.kind === 'directory' && !entry.name.startsWith('.') && entry.name !== 'IMAGES') {
+        await scanNotes(entry, prefix ? prefix + '/' + entry.name : entry.name);
+      }
+    }
+  }
+  await scanNotes(assetsHandle, '');
+  allKnownNotes.sort((a, b) => a.localeCompare(b));
+  renderNotesList('');
+
   renderTree();
   syncPaletteFromTree();
   updateStats();
@@ -9661,8 +9737,11 @@ async function saveConfig() {
   try {
     const backupName = await backupAndSave();
     await saveFeaturesFile();
+    await saveProjectConfig();
     updateUnsavedBanner();
     saveBtn.disabled = true;
+    featuresSaveBtn.disabled = true;
+    document.getElementById('generalSaveBtn').disabled = true;
     setCardStatus('folderCardStatus', '✅ Saved! Backup: ' + backupName + '. Commit and push.', 'success');
   } catch (e) {
     setCardStatus('folderCardStatus', '❌ Save failed: ' + e.message, 'error');
@@ -9703,6 +9782,12 @@ async function resetConfig() {
   // Reset features
   workingFeatures = JSON.parse(JSON.stringify(origFeatures));
   renderFeatures();
+  // Reset general
+  workingProjectConfig = JSON.parse(JSON.stringify(origProjectConfig));
+  selectedLandingPage = workingProjectConfig.landingPage || 'Index';
+  renderNotesList(document.getElementById('landingPageSearch')?.value || '');
+  document.getElementById('generalSaveBtn').disabled = true;
+  document.getElementById('generalResetBtn').disabled = true;
   setCardStatus('folderCardStatus', '↩ Reset to last saved state.', 'info');
 }
 
@@ -9745,6 +9830,93 @@ function featuresReset() {
 }
 
 // ══════════════════════════════════════════════════
+// General: Save / Preview / Reset / Browse
+// ══════════════════════════════════════════════════
+async function saveProjectConfig() {
+  if (!rootHandle) return;
+  try {
+    // Merge working changes into orig, preserving $ keys
+    const output = {};
+    for (const [key, val] of Object.entries(workingProjectConfig)) {
+      output[key] = val;
+    }
+    const fileHandle = await rootHandle.getFileHandle('project.config.json', { create: true });
+    const w = await fileHandle.createWritable();
+    await w.write(JSON.stringify(output, null, 2));
+    await w.close();
+    origProjectConfig = JSON.parse(JSON.stringify(workingProjectConfig));
+  } catch (e) {
+    throw new Error('Failed to save project.config.json: ' + e.message);
+  }
+}
+
+function generalPreview() {
+  if (!rootHandle) return;
+  const output = {};
+  for (const [key, val] of Object.entries(workingProjectConfig)) {
+    output[key] = val;
+  }
+  showModal('project.config.json', JSON.stringify(output, null, 2));
+}
+
+function generalReset() {
+  if (!rootHandle) return;
+  if (!confirm('Discard unsaved general settings changes?')) return;
+  workingProjectConfig = JSON.parse(JSON.stringify(origProjectConfig));
+  selectedLandingPage = workingProjectConfig.landingPage || 'Index';
+  renderNotesList(document.getElementById('landingPageSearch').value);
+  updateUnsavedBanner();
+  document.getElementById('generalSaveBtn').disabled = true;
+  document.getElementById('generalResetBtn').disabled = true;
+  setCardStatus('generalCardStatus', '↩ General settings reset.', 'info');
+}
+
+function renderNotesList(filter) {
+  const listEl = document.getElementById('notesList');
+  const q = (filter || '').toLowerCase();
+  listEl.innerHTML = '';
+
+  document.getElementById('landingPageSelectedLabel').textContent = selectedLandingPage;
+
+  const filtered = q ? allKnownNotes.filter(n => n.toLowerCase().includes(q)) : allKnownNotes;
+
+  if (filtered.length === 0) {
+    listEl.innerHTML = '<div style="padding:12px;color:#6a6050;font-size:0.82rem;text-align:center">No matching notes.</div>';
+    return;
+  }
+
+  for (const note of filtered) {
+    const item = document.createElement('div');
+    const noteSlug = note.split('/').pop();
+    const isSelected = noteSlug === selectedLandingPage;
+    item.style.cssText = 'padding:5px 10px; cursor:pointer; border-radius:4px; font-size:0.82rem; transition:background 0.1s; display:flex; align-items:center; gap:8px';
+    const dot = document.createElement('span');
+    dot.textContent = isSelected ? '●' : '○';
+    dot.style.cssText = 'color:' + (isSelected ? '#a67c00' : '#4a4438') + '; font-size:0.65rem; flex-shrink:0';
+    const label = document.createElement('span');
+    label.textContent = note;
+    item.appendChild(dot);
+    item.appendChild(label);
+    item.addEventListener('mouseenter', () => { if (!isSelected) item.style.background = '#2a2a2a'; });
+    item.addEventListener('mouseleave', () => { item.style.background = ''; });
+    item.addEventListener('click', () => {
+      const noteSlug = note.split('/').pop();
+      selectedLandingPage = noteSlug;
+      workingProjectConfig.landingPage = noteSlug;
+      renderNotesList(document.getElementById('landingPageSearch').value);
+      updateUnsavedBanner();
+      document.getElementById('generalSaveBtn').disabled = false;
+      document.getElementById('generalResetBtn').disabled = false;
+    });
+    listEl.appendChild(item);
+  }
+}
+
+function filterNotesList() {
+  renderNotesList(document.getElementById('landingPageSearch').value);
+}
+
+// ══════════════════════════════════════════════════
 // Events
 // ══════════════════════════════════════════════════
 openBtn.addEventListener('click', openProject);
@@ -9754,6 +9926,25 @@ resetBtn.addEventListener('click', resetConfig);
 featuresSaveBtn.addEventListener('click', featuresSave);
 featuresPreviewBtn.addEventListener('click', featuresPreview);
 featuresResetBtn.addEventListener('click', featuresReset);
+document.getElementById('generalSaveBtn').addEventListener('click', async () => {
+  if (!rootHandle) return;
+  try {
+    document.getElementById('generalCardStatus').className = 'card-status info';
+    document.getElementById('generalCardStatus').textContent = '💾 Saving…';
+    await saveProjectConfig();
+    updateUnsavedBanner();
+    document.getElementById('generalSaveBtn').disabled = true;
+    document.getElementById('generalResetBtn').disabled = true;
+    document.getElementById('generalCardStatus').className = 'card-status success';
+    document.getElementById('generalCardStatus').textContent = '✅ Saved! Commit and push.';
+  } catch (e) {
+    document.getElementById('generalCardStatus').className = 'card-status error';
+    document.getElementById('generalCardStatus').textContent = '❌ ' + e.message;
+  }
+});
+document.getElementById('generalPreviewBtn').addEventListener('click', generalPreview);
+document.getElementById('generalResetBtn').addEventListener('click', generalReset);
+document.getElementById('landingPageSearch').addEventListener('input', filterNotesList);
 document.getElementById('expandAllBtn').addEventListener('click', () => {
   document.querySelectorAll('.tree-children').forEach(el => el.classList.add('open'));
   document.querySelectorAll('.chevron').forEach(el => { if (el.textContent === '▶') el.classList.add('expanded'); });
