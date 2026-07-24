@@ -79,7 +79,7 @@
     (function() {
       var landingPage = '{{LANDING_PAGE}}';
       console.log('[landing:inline] {{LANDING_PAGE}} resolved to:', landingPage);
-      if (landingPage && landingPage !== 'Index') {
+      if (landingPage) {
         var currentPath = window.location.pathname.replace(/\/+/g, '/').replace(/\/$/, '');
         var slug = '{{PROJECT_NAME_SLUG}}';
         console.log('[landing:inline] slug:', slug, 'currentPath:', currentPath);

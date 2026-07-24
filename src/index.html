@@ -75,11 +75,11 @@
     // Landing page redirect: if we're at the bare root URL, go to the
     // configured landing page. This runs before Angular bootstraps so
     // the router sees the correct URL immediately.
-    // Index is injected by the template processor from project.config.json.
+    // Besmolder is injected by the template processor from project.config.json.
     (function() {
-      var landingPage = 'Index';
-      console.log('[landing:inline] Index resolved to:', landingPage);
-      if (landingPage && landingPage !== 'Index') {
+      var landingPage = 'Besmolder';
+      console.log('[landing:inline] Besmolder resolved to:', landingPage);
+      if (landingPage) {
         var currentPath = window.location.pathname.replace(/\/+/g, '/').replace(/\/$/, '');
         var slug = 'Nick-Nacks';
         console.log('[landing:inline] slug:', slug, 'currentPath:', currentPath);
