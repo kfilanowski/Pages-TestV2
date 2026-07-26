@@ -17,14 +17,6 @@
     padding: 48px 24px;
     min-height: 100vh;
   }
-  body::after {
-    content: '';
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 9999;
-    background: radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.03) 55%, rgba(0,0,0,0.12) 70%, rgba(0,0,0,0.3) 85%, rgba(0,0,0,0.45) 100%);
-  }
   .container { max-width: 1560px; width: 100%; }
   h1 { font-size: 1.4rem; margin-bottom: 4px; }
   .subtitle { color: #8a8070; font-size: 0.85rem; margin-bottom: 24px; }
@@ -1225,8 +1217,8 @@ function renderFeatures() {
     ['Layout',        ['header', 'footer', 'theme_toggle', 'breadcrumbs', 'right_sidebar']],
     ['Searching',     ['search_bar', 'search_full_content', 'search_highlight', 'show_tree_search_hierarchy']],
     ['Sidebar Tree',  ['disclosure_chevrons', 'folder_count_badges', 'tree_colors', 'tree_icons', 'collapse_all']],
-    ['Right Sidebar', ['sidebar_link_previews', 'preview_dimmer', 'referenced_pages', 'referencing_pages', 'coming_soon']],
-    ['Content',       ['wiki_links']],
+    ['Right Sidebar', ['sidebar_link_previews', 'referenced_pages', 'referencing_pages', 'coming_soon']],
+    ['Content',       ['wiki_links', 'preview_dimmer', 'vignette_effect']],
   ];
 
   function makeRow(key, val, desc) {
