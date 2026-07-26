@@ -3,17 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 <title>Folder Settings</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
-    font-family: system-ui, -apple-system, sans-serif;
-    background: #1a1a1a;
+    font-family: 'Roboto', system-ui, -apple-system, sans-serif;
+    background: #1f1a15;
     color: #d0c8b8;
     display: flex;
     justify-content: center;
     padding: 48px 24px;
     min-height: 100vh;
+  }
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    background: radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.03) 55%, rgba(0,0,0,0.12) 70%, rgba(0,0,0,0.3) 85%, rgba(0,0,0,0.45) 100%);
   }
   .container { max-width: 1560px; width: 100%; }
   h1 { font-size: 1.4rem; margin-bottom: 4px; }
@@ -1061,6 +1071,7 @@ let workingProjectConfig = {};
 let scannedTree = {};
 let iconResolved = new Map();
 let iconsDirHandle = null;
+let assetsHandle = null;     // handle for assets/ directory (for frontmatter edits)
 let featuresChanged = false;
 let activeColor = null;   // currently selected color in palette
 let activeIcon = null;     // currently selected icon name
@@ -1509,6 +1520,76 @@ async function readFolderMetadata(dirHandle) {
   }
 }
 
+// ── Sync note icons from folder-metadata back into .md frontmatter ──
+async function syncNoteIconsToFrontmatter(changedPaths) {
+  if (!assetsHandle) return;
+  for (const notePath of changedPaths) {
+    const cfg = workingConfig[notePath];
+    const icon = cfg && typeof cfg === 'object' && cfg.icon ? cfg.icon : null;
+    // Only process paths that exist as .md files (not pure folders)
+    try {
+      const fileHandle = await resolveNoteFileHandle(notePath);
+      if (!fileHandle) continue;
+      const file = await fileHandle.getFile();
+      const content = await file.text();
+      const newContent = updateFrontmatterIcon(content, icon);
+      if (newContent !== content) {
+        const w = await fileHandle.createWritable();
+        await w.write(newContent);
+        await w.close();
+      }
+    } catch {}
+  }
+}
+
+// Resolve a note path (e.g. "Bestiary/Aberrations/Grandma") to a FileSystemFileHandle
+async function resolveNoteFileHandle(notePath) {
+  const parts = notePath.split('/');
+  let dirHandle = assetsHandle;
+  for (let i = 0; i < parts.length - 1; i++) {
+    try { dirHandle = await dirHandle.getDirectoryHandle(parts[i]); }
+    catch { return null; }
+  }
+  try { return await dirHandle.getFileHandle(parts[parts.length - 1] + '.md'); }
+  catch { return null; }
+}
+
+// Surgically update or insert the `icon:` field in YAML frontmatter
+function updateFrontmatterIcon(content, newIcon) {
+  // Match the full frontmatter block (with optional trailing whitespace)
+  const fmRegex = /^(---\s*\n)([\s\S]*?)(\n---\s*\n?)/;
+  const match = content.match(fmRegex);
+  
+  if (match) {
+    // Frontmatter exists — extract body, check for icon line
+    const body = match[2];
+    const iconLineRegex = /^icon\s*:\s*.*$/m;
+    if (newIcon) {
+      if (iconLineRegex.test(body)) {
+        // Replace existing icon line
+        const newBody = body.replace(iconLineRegex, 'icon: ' + newIcon);
+        return match[1] + newBody + match[3] + content.slice(match[0].length);
+      } else {
+        // Insert icon line at the start of frontmatter body
+        const newBody = 'icon: ' + newIcon + '\n' + body;
+        return match[1] + newBody + match[3] + content.slice(match[0].length);
+      }
+    } else {
+      // Removing icon — delete the line if present
+      if (iconLineRegex.test(body)) {
+        const newBody = body.replace(iconLineRegex, '').replace(/\n{2,}/g, '\n').replace(/^\n+/, '');
+        const result = match[1] + newBody + match[3] + content.slice(match[0].length);
+        return result;
+      }
+      return content; // no change
+    }
+  } else if (newIcon) {
+    // No frontmatter — insert a new one
+    return '---\nicon: ' + newIcon + '\n---\n' + content;
+  }
+  return content; // no change
+}
+
 async function backupAndSave() {
   const now = new Date();
   const dateStr = now.getFullYear() + '-' +
@@ -1537,16 +1618,38 @@ async function backupAndSave() {
   } catch { /* no existing */ }
 
   const output = {};
+  // Figure out which note paths had icon changes (frontmatter-only, not saved to folder-metadata.json)
+  const changedNotePaths = [];
+  const noteSet = new Set(allKnownNotes);
   for (const [path, cfg] of Object.entries(workingConfig)) {
     if (path.startsWith('$')) continue;
-    if (typeof cfg === 'object' && (cfg.color || cfg.icon)) output[path] = cfg;
-    else if (typeof cfg === 'string') output[path] = cfg;
+    const orig = origConfig[path];
+    const wIcon = cfg && typeof cfg === 'object' ? cfg.icon : undefined;
+    const oIcon = orig && typeof orig === 'object' ? orig.icon : undefined;
+    if (wIcon !== oIcon && noteSet.has(path)) changedNotePaths.push(path);
+    // Save to folder-metadata: only folder configs + note colors (NOT note icons — those go to frontmatter)
+    if (cfg && typeof cfg === 'object') {
+      if (noteSet.has(path)) {
+        // Note entry: save only color, not icon
+        if (cfg.color) output[path] = { color: cfg.color };
+      } else {
+        // Folder entry: save color and/or icon
+        if (cfg.color || cfg.icon) output[path] = cfg;
+      }
+    } else if (typeof cfg === 'string') {
+      output[path] = cfg;
+    }
   }
 
   const fileHandle = await configDir.getFileHandle('folder-metadata.json', { create: true });
   const w = await fileHandle.createWritable();
   await w.write(JSON.stringify(output, null, 2));
   await w.close();
+
+  // Sync changed note icons into .md frontmatter
+  if (changedNotePaths.length > 0) {
+    await syncNoteIconsToFrontmatter(changedNotePaths);
+  }
 
   origConfig = JSON.parse(JSON.stringify(workingConfig));
   updateUnsavedBanner();
@@ -9884,7 +9987,6 @@ async function openProject() {
   workingFeatures = JSON.parse(JSON.stringify(origFeatures));
   renderFeatures();
 
-  let assetsHandle;
   try { assetsHandle = await srcHandle.getDirectoryHandle('assets'); }
   catch {
     results.style.display = 'none';
@@ -9969,10 +10071,18 @@ async function saveConfig() {
 async function previewConfig() {
   if (!srcHandle) return;
   const output = {};
+  const noteSet = new Set(allKnownNotes);
   for (const [path, cfg] of Object.entries(workingConfig)) {
     if (path.startsWith('$')) continue;
-    if (typeof cfg === 'object' && (cfg.color || cfg.icon)) output[path] = cfg;
-    else if (typeof cfg === 'string') output[path] = cfg;
+    if (cfg && typeof cfg === 'object') {
+      if (noteSet.has(path)) {
+        if (cfg.color) output[path] = { color: cfg.color };
+      } else {
+        if (cfg.color || cfg.icon) output[path] = cfg;
+      }
+    } else if (typeof cfg === 'string') {
+      output[path] = cfg;
+    }
   }
   showModal('folder-metadata.json', JSON.stringify(output, null, 2));
 }

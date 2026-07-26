@@ -1,5 +1,5 @@
 ---
-icon: LiBicepsFlexed
+icon: epicgames
 ---
 Arm wrestling contests are tests of strength that utilize the athletics skill. Each "round" of an arm wrestling contest is effectively like a round in combat for the purposes of determining how long single round buffs last.
 

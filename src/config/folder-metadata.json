@@ -356,7 +356,7 @@
     "icon": "chat"
   },
   "Minigames": {
-    "icon": "gamepad",
+    "icon": "Games",
     "color": "#9d26aa"
   },
   "Minigames/Chase": {
@@ -595,5 +595,8 @@
   },
   "Bestiary/Bestiary/Aberrations/Level Folder Aberr/10": {
     "color": "#388954"
+  },
+  "Minigames/Arm Wrestling": {
+    "color": "#aa2626"
   }
 }
