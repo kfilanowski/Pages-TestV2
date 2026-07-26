@@ -82,13 +82,17 @@
       if (landingPage) {
         var currentPath = window.location.pathname.replace(/\/+/g, '/').replace(/\/$/, '');
         var slug = '{{PROJECT_NAME_SLUG}}';
-        console.log('[landing:inline] slug:', slug, 'currentPath:', currentPath);
+        var basePath = '{{PROJECT_BASE_PATH}}'.replace(/\/$/, '') || '';
+        console.log('[landing:inline] slug:', slug, 'currentPath:', currentPath, 'basePath:', basePath);
         // Check if we're at root (no specific content path)
+        // We need to check both the bare root AND the GitHub Pages repo subpath
         var isRoot = currentPath === '' || currentPath === '/' || currentPath === '/index.html' ||
-                     currentPath === '/' + slug || currentPath.endsWith('/' + slug);
+                     currentPath === '/' + slug || currentPath === basePath ||
+                     currentPath === basePath + '/' || currentPath.endsWith('/' + slug) ||
+                     (basePath && currentPath === basePath.split('?')[0]);
         console.log('[landing:inline] isRoot:', isRoot);
         if (isRoot) {
-          var newUrl = slug + '/' + landingPage;
+          var newUrl = basePath + '/' + slug + '/' + landingPage;
           console.log('[landing:inline] redirecting to:', newUrl);
           history.replaceState(null, '', newUrl);
         }

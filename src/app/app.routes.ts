@@ -11,6 +11,7 @@ import { Routes } from '@angular/router';
 import projectConfig from '../../project.config.json';
 const projectName = projectConfig.projectName;
 const projectSlug = projectConfig.projectNameSlug;
+const landingPage = projectConfig.landingPage || 'Index';
 
 export const routes: Routes = [
   {
@@ -38,6 +39,6 @@ export const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: `${projectSlug}/Index`,
+    redirectTo: `${projectSlug}/${landingPage}`,
   },
 ];
