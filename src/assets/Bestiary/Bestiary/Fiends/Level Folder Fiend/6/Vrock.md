@@ -1,6 +1,7 @@
 A sinister looking bird of roughly humanoid shape sheds spores as it scratches its feathers with its claws. As it picks itself with its beak, it notices you and lets out a unholy sound that sounds like a mix of hundreds screaming.
 
 Level 6 Large Fiend <span style="color:rgb(192, 0, 0)">(Minion)</span>
+Role: [[+Bruiser]]/[[+Artillery]]
 ## <span style="color:rgb(0, 176, 240)">Defense Traits</span>
 
 | <span style="color:rgb(0, 176, 240)">AC</span>    | 21                         |     |
@@ -16,7 +17,6 @@ Level 6 Large Fiend <span style="color:rgb(192, 0, 0)">(Minion)</span>
 |                                                     | 2d8+3 (12) |                                                                                 |
 | <span style="color:rgb(192, 0, 0)">Peck (P)</span>  | +9         | +4 [[Maneuver Versatility\|MV]]                                                 |
 |                                                     | 2d8+3 (12) |                                                                                 |
-
 [[Multiattack]] - Make 2 talon attacks.
 
 <span style="color:rgb(192, 0, 0)">Innate Techniques (CL 7)</span> - [[Finger Gun]], [[Rend Vision]]
@@ -44,4 +44,4 @@ As a standard action, a vrock an affect all creatures within its [[Reach|natural
 <span style="color:rgb(103, 254, 120)">Feats</span> - [[Maneuver Versatility]], [[Sniper]], [[Maneuver Master]]
 <span style="color:rgb(103, 254, 120)">Skills</span> - +10 [[+Perception]], +11 [[+Acrobatics]], +11 [[+Stealth]] +9 [[+Cryptozoology]], +9 [[+Athletics]]
 
-![[Pasted image 20251011225922.png|366]]
+![[pf2e vrock.png|366]]

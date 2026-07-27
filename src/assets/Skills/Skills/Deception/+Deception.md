@@ -1,4 +1,4 @@
 ---
-icon: LiSpeech
+icon: duality-mask
 ---
 Simply put, lying. This skill is almost always opposed to [[+Insight]]. Uses [[CHA]].

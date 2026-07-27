@@ -1,5 +1,5 @@
 ---
-icon: RaPawprint
+icon: flat-paw-print
 ---
 The techniques surrounding using natural attacks, and briefly transforming into animals. All beastmode features are [[su]]pernatural.
 

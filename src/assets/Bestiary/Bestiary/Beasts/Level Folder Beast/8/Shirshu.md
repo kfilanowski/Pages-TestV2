@@ -1,12 +1,13 @@
 This mix between bear and mole towers over you. It grunts and rapidly inhales through its nose as it inspects the item you presented, before it darts off to hunt for the items owner.
 
 Level 8 Huge Beast
+Role: [[+Controller]]
 ## <span style="color:rgb(0, 176, 240)">Defense Traits</span>
 
 | <span style="color:rgb(0, 176, 240)">AC</span>    | 23                          |     |
 | ------------------------------------------------- | --------------------------- | --- |
 | <span style="color:rgb(0, 176, 240)">HP</span>    | 84                          |     |
-| <span style="color:rgb(0, 176, 240)">Poise</span> | 33                          |     |
+| <span style="color:rgb(0, 176, 240)">Poise</span> | 41                          |     |
 | <span style="color:rgb(0, 176, 240)">Saves</span> | Fort +13, Refl +10, Will +9 |     |
 ## <span style="color:rgb(192, 0, 0)">Offense Traits (DC 20)</span>
 
@@ -15,8 +16,6 @@ Level 8 Huge Beast
 |                                                      | 2d6+3 (10) | +Venom |
 | <span style="color:rgb(192, 0, 0)">Claw (S)</span>   | +11        |        |
 |                                                      | 2d8+3 (12) |        |
-
-
 <span style="color:rgb(192, 0, 0)">Multiattack</span> - Make 1 tongue and 1 claw attack
 
 <span style="color:rgb(192, 0, 0)">Innate Techniques</span> - [[Preparation]], [[Break Free]]
@@ -29,7 +28,7 @@ Level 8 Huge Beast
 
 <span style="color:rgb(247, 138, 255)">Elite Tracking</span> -  Shirshu are practically extinct, with the few that still live existing in captivity. They are naturally gifted trackers and such talents are typically nourished by a knowledgeable captor.
 
-When presented with an item that has a creature's scent on it, very little can prevent the shirshu from finding its target. It can follow its scent across continents, under water, underground etc. If the creature currently exists on the same [[Planes|Plane]], the shirshu will follow the most direct path to reach this creature, usually informing its master of the general distance (within a mile, dozens, hundreds or thousands of miles) via gestures.
+When presented with an item that has a creature's scent on it, very little can prevent the shirshu from finding its target. It can follow its scent across continents, under water, underground etc. If the creature currently exists on the same [[-Planes|Plane]], the shirshu will follow the most direct path to reach this creature, usually informing its master of the general distance (within a mile, dozens, hundreds or thousands of miles) via gestures.
 
 If the target is dead, it will lead you to its body. If the target went to another plane, it will bring you to the portal (potentially allowing you to continue the chase) or its last location before teleporting. Other strange circumstances can also completely prevent a shirshu from smelling anything related to a creature.
 
@@ -40,5 +39,5 @@ Only through repeated exposure to powerfully smelling chemicals (such as perfume
 <span style="color:rgb(103, 254, 120)">Speed</span> - 45
 [[Sightless Blindsense]] - [[Scent]] (120 ft)
 <span style="color:rgb(103, 254, 120)">Deific Boons </span>- [[T1 - Animal Instincts|Animal Instincts]]
-<span style="color:rgb(103, 254, 120)">Feats</span> - [[Skill Focus]], [[Signature Skill]] (survival), [[Combat Reflexes]], [[Sentinel]], [[Fighter's Lament]]
+<span style="color:rgb(103, 254, 120)">Feats</span> - [[Skill Focus]], [[Signature Skill]] (survival), [[Combat Reflexes]], [[Sentinel]], [[Mage Slayer]]
 <span style="color:rgb(103, 254, 120)">Skills</span> - +11 (+8) [[+Perception]], +13 [[+Athletics]], +27 [[+Survival]]

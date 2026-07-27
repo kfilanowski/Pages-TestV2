@@ -1,6 +1,7 @@
 A muscular two-headed giant laughs maniacally as it waves its arms around wildly, smashing the ground with its club and shooting rays of shadowy energy from the other.
 
-Level 12 Huge Giant [[Boss]], [[Unique]]
+Level 12 Huge Giant
+Role: [[Boss]], [[Unique]]
 ## <span style="color:rgb(0, 176, 240)">Defense Traits</span>
 
 | <span style="color:rgb(0, 176, 240)">AC</span>    | 27                           |                                                 |
@@ -36,7 +37,7 @@ Level 12 Huge Giant [[Boss]], [[Unique]]
 
 <span style="color:rgb(247, 138, 255)">Two Heads are Better than One</span> - Bingus and Mingus are two parts of the same creature. Usually one head controls most of the body (Bingus), while the other controls one arm (Mingus) and can only nudge the rest of the body. Bingus' and Mingus' abilities are marked to tell who can do what.
 They each have their own actions and their own individual positions in initiative. They collectively still only get one <span style="color:rgb(192, 0, 0)">boss action</span>.
-Whenever a they are subject to a single target effect that inflicts a [[status]] condition, the attacker must choose to target either Bingus or Mingus.
+Whenever a they are subject to a single target effect that inflicts a [[+Status]] condition, the attacker must choose to target either Bingus or Mingus.
 <span style="color:rgb(247, 138, 255)">No This Way!</span> - If Bingus and Mingus are [[Taunted]] by two different creatures at the same time, they are [[Entangled]] as they fight for who to go for. This also happens when either is [[Dominated]] or otherwise robbed of their autonomy.
 
 <span style="color:rgb(247, 138, 255)">Anomaly</span> - BM is a herald of god of chaos [[Frogg Saran]]. His mere presence is enough to reshape the world around him. At the start of combat, a Mario Kart-esque random effect shows up above him, adding a new set of rules to the combat. Whenever ANY creature fails to follow the rules set by the random anomaly, a frog falls from the sky onto their head. Roll a d4 to decide which one triggers. A creature is <span style="color:rgb(192, 0, 0)">forced</span> to follow the rules on any turn they are confused, even if they don't understand them. People with [[Deific Boons|GBP]] for Frogg always understand the rules.
@@ -55,4 +56,4 @@ Whenever a they are subject to a single target effect that inflicts a [[status]]
 - [[MM Elemental Shift]], 
 <span style="color:rgb(103, 254, 120)">Skills</span> - +12 (adv) [[+Perception]], +18 [[+Athletics]], +17 [[Arcana]], +17 [[+Planes]], +17 [[+Cryptozoology]], +17 [[+Religion]]
 
-![[Pasted image 20251011012428.png|Cho'Gall, Twilight Chieftan, by Alex Horley Orlandelli for [Hearthstone](https://hearthstone.wiki.gg/wiki/Cho%27gall,_Twilight_Chieftain)]]
+![[cho gall.png|Cho'Gall, Twilight Chieftan, by Alex Horley Orlandelli for [Hearthstone](https://hearthstone.wiki.gg/wiki/Cho%27gall,_Twilight_Chieftain)]]

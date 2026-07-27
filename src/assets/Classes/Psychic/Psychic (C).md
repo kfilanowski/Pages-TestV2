@@ -1,5 +1,5 @@
 ---
-icon: RiPsychotherapyLine
+icon: psychic-waves
 ---
 Psychics take literally the advice "you can do anything you put your mind to" by bending reality with the power of their mind. Psychics are concerned with all matters related to the internal mental states of creatures. Some focus on manipulating objects, others gaze into the minds of creatures and some can even gaze into the future.
 

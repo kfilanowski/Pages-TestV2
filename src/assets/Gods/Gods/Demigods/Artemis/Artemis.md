@@ -1,5 +1,5 @@
 ---
-icon: 🌒
+icon: 🌘
 ---
 Artemis is the goddess of the moon, redemption and secrets. Artemis has a deep respect for community. "Love thy neighbor" is a nice-sounding statement, but the followers of Artemis live by this mantra. It is something that has always restricted a wide-reaching adoption of Artemis, but she insists that communities do not grow too large to where you no longer know everybody in your neighborhood. This even informs the city structures where Artemis is popular: Districts are limited to populations of about 200 in order to keep people integrated into their communities.
 

@@ -1,5 +1,5 @@
 ---
-icon: LiWand
+icon: fairy-wand
 aliases:
   - cantrip
 ---

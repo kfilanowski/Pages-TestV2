@@ -1,5 +1,5 @@
 ---
-icon: explosion
+icon: sparky-bomb
 aliases:
   - thrown concoctions
 ---

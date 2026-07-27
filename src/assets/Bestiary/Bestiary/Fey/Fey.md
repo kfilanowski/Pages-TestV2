@@ -1,4 +1,4 @@
 ---
-icon: RaFairy
+icon: fairy
 ---
 

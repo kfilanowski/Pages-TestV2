@@ -1,5 +1,5 @@
 ---
-icon: LiAnchor
+icon: newspaper-line
 ---
 Making your own class features can be tough, both maintaining balance and a cohesive theme. This section should help provide guidelines for not only the types of things you should be thinking about studying for your alchemist, but also the power of the mechanical effects.
 

@@ -1,6 +1,7 @@
 A hardened warrior with a trained battle stance makes up for their lack of armor with ferocity and reckless abandon. Swing first and ask questions later.
 
 Level 1 medium [[Orc]]
+Role: [[+Bruiser]]
 ## <span style="color:rgb(0, 176, 240)">Defense Traits</span>
 
 | <span style="color:rgb(0, 176, 240)">AC</span>    | 14                        |                                         |
@@ -21,13 +22,13 @@ Level 1 medium [[Orc]]
 |                                                                 | 2d8+3 (12) |                                                                     |
 | <span style="color:rgb(192, 0, 0)">Bola (C)</span>              | +4         | [[Thrown]]                                                          |
 |                                                                 | d6+3 (6)   |                                                                     |
-[[Multiattack]] - Make a [[Melee Attack]] and a [[+Combat Maneuver|combat maneuver]] attack
+[[Multiattack]] - Make 2 attacks, one of which must be a [[+Combat Maneuver|combat maneuver]] 
 
 <span style="color:rgb(192, 0, 0)">Innate Techniques</span> - [[Boasting Taunt]], [[Sonic Boom]], [[Thunder Stomp]]
 1/day - [[Put Me In!]], [[Head On]]
 
 <span style="color:rgb(192, 0, 0)">Special Attacks:</span> [[Unique Special Attacks|all in]], [[Unique Special Attacks|execution]]
-<span style="color:rgb(192, 0, 0)">Toss Up</span> - Orc raiders are blessed by [[Caldera, the Cataclysm|The Cataclysm]] with ludicrous strength. They can work together to life objects that are 10s of thousands of pounds. If at least 3 orcs work together to throw an object weighing at least a few tons, their thrown attack counts as a [[+Siege Weapon]], increases to 3d12+3 (21) and they can throw it [[Short]] range.
+<span style="color:rgb(192, 0, 0)">Toss Up</span> - Orc raiders are blessed by [[Caldera, the Cataclysm|The Cataclysm]] with ludicrous strength. They can work together to lift objects that are 10s of thousands of pounds. If at least 3 orcs work together to throw an object weighing at least a few tons, their thrown attack counts as a [[+Siege Weapon]], increases to 3d12+3 (21) and they can throw it [[Short]] range.
 ## <span style="color:rgb(247, 138, 255)">Weaknesses/Deep Lore</span>
 
 <span style="color:rgb(247, 138, 255)">Greener Pastures</span> - Orc raiders are often interested in wealth, good meat and glory in battle. By rolling a DC 14 [[+Persuasion]] or [[+Deception]] check in a neutral situation, you can convince them that an even bigger haul is on the way.
@@ -37,6 +38,6 @@ Level 1 medium [[Orc]]
 <span style="color:rgb(103, 254, 120)">Languages</span> - Common, Orcish
 <span style="color:rgb(103, 254, 120)">Equipment </span>- 1 greataxe, 1 crossbow, 1 bola
 <span style="color:rgb(103, 254, 120)">Deific Boons</span> - [[T1 - Huge|huge]]
-<span style="color:rgb(103, 254, 120)">Speed </span>- 45 [[Land Speed]]
+<span style="color:rgb(103, 254, 120)">Speed </span>- 40 [[Land Speed]]
 <span style="color:rgb(103, 254, 120)">Feats</span> - [[Maneuver Versatility]]
 <span style="color:rgb(103, 254, 120)">Skills</span> - +4 [[+Perception]], +4 [[+Survival]], +6 (+2 [[T1 - Huge|huge]]) [[+Athletics]], +8 [[+Intimidation]]

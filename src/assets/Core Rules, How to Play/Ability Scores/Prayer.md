@@ -1,5 +1,5 @@
 ---
-icon: FasPersonPraying
+icon: person-praying
 ---
 You get a number of uses of prayer equal to ([[WIS]]+1).
 

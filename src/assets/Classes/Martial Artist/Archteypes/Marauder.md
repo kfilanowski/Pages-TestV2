@@ -1,5 +1,5 @@
 ---
-icon: RaVineWhip
+icon: slavery-whip
 ---
 A Marauder runs down and disrupts vulnerable targets using tether abilities, breaking ranks and exposing weaknesses for their team while diving in and out of the battle.
 
@@ -42,7 +42,9 @@ This effect ends when you are [[defeated]].
 You gain this benefit passively.
 ## <span style="color:rgb(103, 254, 120)">4 - The Leash (Su)</span>
 A creature restrained by you with a tether is [[pacified]] as long as you're holding the leash, and are forced to follow your movement orders.
-
+## <span style="color:rgb(103, 254, 120)">6 - Explosive Capture (Su)</span> [[Figment]] [[Fear]] [[Psychic]]
+Whenever you drag a creature into a location where their allies do not have line of sight, you cause an explosion to appear from their location making the dragged creature and any that can see it are [[frightened]] for 1 round (will negates). 
+If the dragged creature is a [[minion]] they are [[defeated]] (will negates).
 ## <span style="color:rgb(103, 254, 120)">11 - Chain Grab</span>
 Your excess [[poise]] damage from poise breaking an enemy rolls over instead of the enemy poise resetting back to full.
 

@@ -1,6 +1,7 @@
 This titan of a construct descends upon you with jet thrusters, delivering a message from its employer before bringing down the axe.
 
-Level 7 Huge Construct [[Boss]]
+Level 7 Huge Construct
+Role: [[Boss]]
 ## <span style="color:rgb(0, 176, 240)">Defense Traits</span>
 
 | <span style="color:rgb(0, 176, 240)">AC</span>    | 23                         |                                              |
@@ -18,7 +19,7 @@ Level 7 Huge Construct [[Boss]]
 |                                                      | 2d8+3 (12) |                                                              |
 [[Multiattack]] - Make 2 [[Melee Attack|melee attacks]]
 
-<span style="color:rgb(192, 0, 0)">Innate Techniques</span> - [[Sonic Boom]] (U4), [[Earth Shatter]] (U4), [[Lightning Strike]] (U3)
+<span style="color:rgb(192, 0, 0)">Innate Techniques</span> - [[Sonic Boom]] (U4), [[Earth Shatter]] (U4)
 1/day - [[Crater]] (U4), [[Fore!]] (U4)
 Constant - [[Shockwave]]
 

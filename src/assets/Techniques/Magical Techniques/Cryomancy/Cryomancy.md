@@ -1,7 +1,4 @@
 ---
-icon: snowflake
+icon: snowman
 ---
-
-# Cryomancy
-
 Ice magic! Frequently slows and restricts movement.

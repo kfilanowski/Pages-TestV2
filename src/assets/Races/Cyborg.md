@@ -1,5 +1,5 @@
 ---
-icon: RaGears
+icon: cyborg-face
 ---
 The part robot race.
 

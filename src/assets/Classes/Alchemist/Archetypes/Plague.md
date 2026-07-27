@@ -1,5 +1,5 @@
 ---
-icon: FasBiohazard
+icon: biohazard
 ---
 Plague alchemists use their mastery over toxic substances to melt their enemies. They have incredible damage potential in drawn out fights without healers.
 ## <span style="color:rgb(103, 254, 120)">1 - Toxic to the Touch </span> ([[Su]]) ([[Poison]])

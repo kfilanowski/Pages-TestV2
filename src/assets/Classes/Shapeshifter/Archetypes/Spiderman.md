@@ -1,7 +1,8 @@
 ---
 icon: 🕸
-hidden: true
 ---
+## [[Crust]]
+
 Your access to spinnerets gives you incredible mobility. 
 
 Alters shapeshift

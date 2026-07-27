@@ -1,5 +1,5 @@
 ---
-icon: RaHood
+icon: hood
 ---
 Moving around while remaining unseen. If someone is looking for you in your immediate vicinity and you don't want to be seen, you roll stealth. Uses [[DEX]].
 

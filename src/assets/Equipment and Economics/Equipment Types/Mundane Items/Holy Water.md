@@ -1,5 +1,5 @@
 ---
-icon: 💧
+icon: holy-water
 ---
 ## <span style="color:rgb(103, 254, 120)">100g</span>
 

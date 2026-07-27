@@ -1,9 +1,9 @@
 ---
-icon: FasBacterium
+icon: gooey-daemon
 ---
 This archetype _replaces_ all of the following class features from the base shifter class.
 
-Beast companion, nature stride and uncanny dodge.
+<span style="color:rgb(192, 0, 0)">Beast companion, nature stride and uncanny dodge.</span>
 
 It also alters some class features as mentioned.
 ## <span style="color:rgb(103, 254, 120)">1 - Shapeshift</span>
@@ -26,5 +26,5 @@ Your copy is a minion version of you (making it 1/3 your level). It is 1 size ca
 The number to crit you is AC+13
 
 ## <span style="color:rgb(103, 254, 120)">6 - Stretching Strikes</span>
-Take no MA penalties this turn. Your reach increases to 30 ft for this attack. If you land this attack and another attack against a different creature without moving more than 30 ft away from the original target, you can pull these creatures towards each other, meeting at a midpoint between them. They take an 4d6 (14) crush damage. Both creatures are dazed for 1 round (fort negates daze).
+Your reach increases to 30 ft for this attack. If you land this attack and another attack against a different creature without moving more than 30 ft away from the original target, you can pull these creatures towards each other, meeting at a midpoint between them. They take an 4d6 (14) crush damage. Both creatures are dazed for 1 round (fort negates daze).
 

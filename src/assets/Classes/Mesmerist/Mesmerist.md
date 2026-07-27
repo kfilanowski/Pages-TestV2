@@ -1,5 +1,5 @@
 ---
-icon: 👁
+icon: bleeding-eye
 ---
 Mesmerists always have eye-catching irises, tattoos, masks or baubles to place more emphasis on their eyes. Through these special eyes, a mesmerist can see a creatures insecurities, or generate them where they otherwise wouldn’t exist, eroding a creatures will to make them more susceptible to their spells, skills and more.
 

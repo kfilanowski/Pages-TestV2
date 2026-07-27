@@ -1,6 +1,7 @@
 These colorful freshwater fish are efficient carnivores that form schools to consume prey many times larger than them. You find out just how tenacious they can be as they munch on your limbs.
 
-Level 2 Large Beast [[Groups|Group]]
+Level 2 Large Beast
+Role: [[Groups|Group]]
 ## <span style="color:rgb(0, 176, 240)">Defense Traits</span>
 
 | <span style="color:rgb(0, 176, 240)">AC</span>    | 14         |     |
@@ -17,11 +18,9 @@ Single target effects that deal no damage have no effect.
 | <span style="color:rgb(192, 0, 0)">Swarm Attack (P)</span> | 2d6 (7) | +d6 [[Bleeding\|bleed]] |
 | ---------------------------------------------------------- | ------- | ----------------------- |
 <span style="color:rgb(192, 0, 0)">Swarm Attack</span> - A swarm does not [[threaten]]. These creatures cannot make attacks and must instead enter a creatures space to deal their damage automatically at the end of their turn. This allows them to damage multiple creatures if they are close together with a big enough swarm.
-
 <span style="color:rgb(192, 0, 0)">Cling</span> - Piranhas never let go. Their swarm attack damage happens again at the end of the target creature's turn. When the creature is damaged by anything other than a piranha swarm, this effect ends. The piranhas can also be forcefully ripped off with an [[+Athletics]] or [[+Medicine]] check as a standard action. Failure causes the creature to take the attack damage again immediately.
 
 At the end of a piranha swarm's turn, it loses 3 hp for each creature it uses its auto attack against, representing the dwindling swarm caused by the tenacious fish clinging to their enemies.
-
 <span style="color:rgb(192, 0, 0)">Sense Weakness</span> - If a creature without a [[Swim]] speed or [[+Athletics]] proficiency is detected by the piranha swarm, it gets a free [[dash]] action on its next turn. This ability also activates if a bleeding creature is detected.
 ## <span style="color:rgb(247, 138, 255)">Weaknesses/Deep Lore</span>
 
@@ -35,5 +34,5 @@ At the end of a piranha swarm's turn, it loses 3 hp for each creature it uses it
 <span style="color:rgb(103, 254, 120)">Speed </span>- 5 [[Land Speed]], 40 [[Swim]]
 <span style="color:rgb(103, 254, 120)">Signature Skill</span> - [[One Eye Open (SS)|one eye open]], [[Quick Scan (SS)|quick scan]]
 <span style="color:rgb(103, 254, 120)">Feats</span> - [[Signature Skill]]
-<span style="color:rgb(103, 254, 120)">Skills</span> - +5 (+4 scent) [[+Perception]], +9 [[+Athletics]]
+<span style="color:rgb(103, 254, 120)">Skills</span> - +5 (+4 scent) [[+Perception]]
 

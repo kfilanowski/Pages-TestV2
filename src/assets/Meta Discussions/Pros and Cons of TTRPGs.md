@@ -1,5 +1,5 @@
 ---
-icon: LiPlus
+icon: ➖
 ---
 For people unfamiliar who are considering playing Nick Nacks, here are some of the pros and cons of the hobby as a whole.
 ## <span style="color:rgb(103, 254, 120)">Pros</span>

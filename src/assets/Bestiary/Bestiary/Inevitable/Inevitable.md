@@ -1,5 +1,5 @@
 ---
-icon: RaScythe
+icon: reaper-scythe
 ---
 
 

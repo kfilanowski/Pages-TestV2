@@ -1,5 +1,5 @@
 ---
-icon: 📯
+icon: 💙
 ---
 Blues bards specialize in music to bring their enemies down rather than bringing their allies up. They play songs that intimidate, fascinate and confound their enemies. Their finales are all about finishing the combat once and for all.
 

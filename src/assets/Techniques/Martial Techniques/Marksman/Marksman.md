@@ -1,5 +1,5 @@
 ---
-icon: 🏹
+icon: pocket-bow
 ---
 The techniques surrounding using ranged weapons. 
 

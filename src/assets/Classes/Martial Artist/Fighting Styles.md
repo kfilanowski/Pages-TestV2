@@ -1,20 +1,21 @@
 ## <span style="color:rgb(103, 254, 120)">Snake Style</span>
-- When a creature misses you with an attack, you can move 10 ft directly closer to it ([[elusive]]). If this movement puts you within your [[Reach|natural reach]], it [[AoO|Provokes]]. This [[AoO]] must be an [[Unarmed Attack|unarmed strike]]. If the attacker is already within your natural reach, you cannot move.
-- <span style="color:rgb(103, 254, 120)">Snake Sidewind</span> - When you would be hit or [[Graze|grazed]] by an attack, you can spend an immediate action to [[Buckler|parry]] the attack. This makes it count as a miss for snake style if successful.
+- When a creature misses you with an attack, you can move 10 ft directly closer to it ([[elusive]]). If this movement puts the attacker within your [[Reach|natural reach]], it [[AoO|Provokes]]. This [[AoO]] must be an [[Unarmed Attack|unarmed strike]]. If the attacker is already within your natural reach, you cannot move. If the attack hits, but is then negated (such as a [[+Shield Actions|shield action]] or [[parry]]), it counts as missing. This effect can only occur once each turn (ie someone misses you 6 times during your turn, you still only get 1 AoO).
+- <span style="color:rgb(103, 254, 120)">Snake Sidewind</span> - When you would be hit or [[Graze|grazed]] by an attack, you can spend an immediate action to parry the attack.
+- You gain [[combat reflexes]]
 ## <span style="color:rgb(103, 254, 120)">Cerberus Style</span>
 - You cannot be [[Flanking|flanked]]. When you would normally be flanked, gain a flanking bonus against the creatures threatening you.
 - Your movement is [[Elusive]] as long as you do not leave an enemy's [[Threaten|threatened]] zone
 - <span style="color:rgb(103, 254, 120)">Cerberus Snare</span> - When you hit a foe with an unarmed strike, its speed is reduced by 15, it is  [[Anchored]] and [[Grounded]] for 1 round [[On-hit]].
 ## <span style="color:rgb(103, 254, 120)">Demon Style</span>
-- You get [[Powerful Charge]]. You also get a +2 bonus to damage when you [[Core Rules, How to Play/Actions/Common Actions/Full Round Actions/Charge]] attack. 
+- You get [[Powerful Charge]]. You also get a +2 bonus to damage when you [[Charge]] attack. 
 - You can turn up to 180 degrees once during your charge.
 - <span style="color:rgb(103, 254, 120)">Tenderize</span> - Whenever you succeed on a [[drag]] or [[shove]] attempt, deal 10 crush damage if you move them at least 10 ft.
-## <span style="color:rgb(103, 254, 120)">Grabbing Style</span>
+## <span style="color:rgb(103, 254, 120)">Kraken Style</span>
 - Get a +2 bonus to [[Grapple]] attacks. You only have -15 speed while grappling a creature.
 - <span style="color:rgb(103, 254, 120)">Grabbing Everything:</span> When you make a grapple attack, or maintain a grapple, you can make a grapple attack or maintain a grapple on another creature.
 ## <span style="color:rgb(103, 254, 120)">Jabbing Style</span>
 - Whenever you make an [[Unarmed Attack]], you can move 5 ft ([[Elusive]]) after the attack, so long as you still [[Threaten]] the creature you initially attacked. This movement is in addition to your standard movement.
-- <span style="color:rgb(103, 254, 120)">Flurry of Blows</span> - When you make an unarmed strike, you can choose to deal half damage to instead make 2 against the same target. Each has all of the original effects of the attack, such as bonus effects granted by [[Technique Rules|techniques]] or [[On-hit]] effects, but the effect can only apply once, even if both attacks land (ie only 1 [[+Saving Throw|saving throw]]). The bonus Flurry attack already does half damage and is incompatible with this feature.
+- <span style="color:rgb(103, 254, 120)">Flurry of Blows</span> - When you make an unarmed strike, you can choose to deal half damage to instead make 2 against the same target. Each has all of the original effects of the attack, such as bonus effects granted by [[Technique Rules|techniques]] or [[On-hit]] effects. The bonus Flurry attack already does half damage and is incompatible with this feature.
   This effect is generally intended to increase consistency, with a few interesting quirks.
 ## <span style="color:rgb(103, 254, 120)">Dragon Style</span>
 - You get a (1+1/2 [[LvL]]) bonus to [[+Athletics]]. 
@@ -23,7 +24,7 @@
 ## <span style="color:rgb(103, 254, 120)">Monkey Style</span>
 - You gain a [[Climb]] speed and a "crawl" speed equal to your [[Land Speed]]. 
 - You can remove the [[Knocked Down|Knockdown]] condition as a free action.
-- <span style="color:rgb(103, 254, 120)">Monkey Madness </span>- [[On-hit]] with an unarmed strike or after you break a creature's [[Poise]], you can start riding them as an instant action. You follow their movement automatically until you are knocked off by poise breaking or otherwise. You have [[Cover]] while riding. If an attack [[Graze|grazes]] you, it instead targets your ride at full effectiveness, as though it had hit them.
+- <span style="color:rgb(103, 254, 120)">Monkey Madness </span>- [[On-hit]] with an unarmed strike or after you break a creature's [[Poise]], you can start riding them as an instant action. You follow their movement automatically until you are knocked off by poise breaking or otherwise. You have [[Partial Cover]] while riding. If an attack [[Graze|grazes]] you, it instead targets your ride at full effectiveness, as though it had hit them.
   You cannot ride creatures smaller than you (unless you have [[Unconventional Mount]]).
 
 

@@ -1,5 +1,5 @@
 ---
-icon: 🦌
+icon: centaur
 ---
 The half and half quadrupeds.
 

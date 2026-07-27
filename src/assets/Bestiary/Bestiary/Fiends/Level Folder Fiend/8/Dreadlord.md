@@ -1,6 +1,7 @@
 A humanoid shaped fiend with horns, wings and intricate armor carries itself with a degree of confidence. As it looms over you, you feel all hope fade.
 
 Level 8 Large Fiend <span style="color:rgb(192, 0, 0)">(Anomaly)</span>
+Role: [[+Bruiser]]
 ## <span style="color:rgb(0, 176, 240)">Defense Traits</span>
 
 | <span style="color:rgb(0, 176, 240)">AC</span>    | 23                         |         |
@@ -35,4 +36,4 @@ Constant - [[Heavens' Vengeance]]
 <span style="color:rgb(103, 254, 120)">Feats</span> - [[MM Bouncing Spell]], [[MM Sniping]], [[Callous Casting]], [[Ghostbuster]]
 <span style="color:rgb(103, 254, 120)">Skills</span> - +10 [[+Perception]], +13 [[+Athletics]], +13 [[Arcana]], +13 [[+Planes]], +13 [[+Religion]], +13 [[+Linguistics]]
 
-![[{3CF5222C-5E05-4E7D-8D8F-A09660B28792}.png|Despicable Dreadlord, by Konstantin Turovec for [Hearthstone](https://hearthstone.wiki.gg/wiki/Despicable_Dreadlord)]]
+![[hearthstone dreadlord.png|Despicable Dreadlord, by Konstantin Turovec for [Hearthstone](https://hearthstone.wiki.gg/wiki/Despicable_Dreadlord)]]

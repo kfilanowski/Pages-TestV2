@@ -1,5 +1,5 @@
 ---
-icon: FasPerson
+icon: human-pyramid
 ---
 Used to know about cities, countries, individual people. Specifically their culture, traditions, legends, government, laws, customs, politics and prominent organizations
 

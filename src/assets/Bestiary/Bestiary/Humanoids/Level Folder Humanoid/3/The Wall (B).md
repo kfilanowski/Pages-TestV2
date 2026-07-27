@@ -1,6 +1,7 @@
 A dwarf clad entirely in a peculiar set of stony armor wields to massive shields you wonder how he can even carry. The more you swing, the more you panic as it seems impossible to harm him.
 
 Level 3 medium [[Dwarf]] [[Unique]]
+Role: [[+Support]]/[[+Controller]]
 ## <span style="color:rgb(0, 176, 240)">Defense Traits</span>
 
 | <span style="color:rgb(0, 176, 240)">AC</span>    | 19                        | +2 vs creatures he attacked                         |
@@ -23,7 +24,8 @@ Level 3 medium [[Dwarf]] [[Unique]]
 <span style="color:rgb(192, 0, 0)">Freight Train</span> - Whenever the wall makes a shove attack during a [[Core Rules, How to Play/Actions/Common Actions/Full Round Actions/Charge]], he can carry the creature along with him for the full distance of the charge, depositing them adjacent at the end of his charge.
 ## <span style="color:rgb(247, 138, 255)">Weaknesses/Deep Lore</span>
 
-Jam - The wall has his own theme song that he cant help but dance to when he hears it. By rolling a DC 20 [[+Profession]] check to sing or play an instrument as a standard action, a creature can [[Dazed|daze]] the wall on his next turn.
+<span style="color:rgb(247, 138, 255)">Jam</span> - The wall has his own theme song that he cant help but dance to when he hears it. By rolling a DC 20 [[+Profession]] check to sing or play an instrument as a standard action, a creature can reduce the speed the wall to 0 on his next turn.
+Functions once per combat.
 ## <span style="color:rgb(103, 254, 120)">Other Traits</span>
 
 <span style="color:rgb(103, 254, 120)">Ability Scores</span> - [[STR]] +3, [[DEX]] +2, [[LUK]] +0, [[INT]] -1, [[WIS]] +1, [[CHA]] +0

@@ -1,5 +1,5 @@
 ---
-icon: RaPawprint
+icon: flat-paw-print
 ---
 Embrace your wild side. Beast totem barbarians tend to be furrier and feathery-er than most.
 

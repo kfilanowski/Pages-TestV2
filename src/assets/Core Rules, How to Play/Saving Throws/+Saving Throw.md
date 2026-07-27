@@ -1,10 +1,10 @@
 ---
+icon: save
 aliases:
   - Save
   - Saves
   - saving throws
   - saving throw
-icon: LiSave
 ---
 Decide the effectiveness of abilities or effects that do not require an [[Attack Roll]]. It is typically the affected creature that rolls the save. In order to consider a saving throw a pass, the affected creature must match or roll higher than the [[DC]] of the effect.
 

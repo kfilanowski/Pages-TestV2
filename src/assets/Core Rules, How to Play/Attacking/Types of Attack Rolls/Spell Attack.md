@@ -1,5 +1,5 @@
 ---
-icon: RiMagicFill
+icon: bolt-spell-cast
 aliases:
   - spell attacks
 ---

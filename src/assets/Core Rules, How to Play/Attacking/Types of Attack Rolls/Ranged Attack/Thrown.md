@@ -1,5 +1,5 @@
 ---
-icon: RaPlainDagger
+icon: north-star-shuriken
 aliases:
   - throw
 ---

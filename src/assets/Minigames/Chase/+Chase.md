@@ -1,5 +1,5 @@
 ---
-icon: BoBxRun
+icon: run
 aliases:
   - chases
 ---

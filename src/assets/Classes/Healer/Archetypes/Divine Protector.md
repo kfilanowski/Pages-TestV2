@@ -1,5 +1,5 @@
 ---
-icon: RiShieldCrossFill
+icon: healing-shield
 ---
 [[Crust]]
 Divine protectors are incredibly frustrating healers that not only excel at healing wounds, but in preventing them altogether through the use of divine shields.

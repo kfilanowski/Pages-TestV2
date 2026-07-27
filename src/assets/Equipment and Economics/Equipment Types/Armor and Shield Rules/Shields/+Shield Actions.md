@@ -1,8 +1,8 @@
 ---
+icon: shield-bounces
 aliases:
   - shield action
   - shield actions
-icon: LiShield
 ---
 Shields give access to a unique set of actions. See subsections for more details.
 

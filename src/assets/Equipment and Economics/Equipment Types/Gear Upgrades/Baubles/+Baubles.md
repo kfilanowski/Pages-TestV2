@@ -1,5 +1,5 @@
 ---
-icon: seal-exclamation
+icon: gem-necklace
 aliases:
   - bauble
   - baubles

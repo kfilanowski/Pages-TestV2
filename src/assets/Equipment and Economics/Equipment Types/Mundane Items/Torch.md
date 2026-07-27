@@ -1,5 +1,5 @@
 ---
-icon: RaTorch
+icon: torch
 ---
 ## <span style="color:rgb(103, 254, 120)">20g</span>
 

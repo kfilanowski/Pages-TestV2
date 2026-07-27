@@ -1,6 +1,7 @@
 This orc has numerous battle scars and a dangerous aura that can be felt with their gaze. They don't command their allies to fight on sight, but you can tell one wrong move can change that.
 
-Level 3 medium [[Orc]] [[Boss]]
+Level 3 medium [[Orc]] 
+Role: [[+Bruiser]]/[[Boss]]
 ## <span style="color:rgb(0, 176, 240)">Defense Traits</span>
 
 | <span style="color:rgb(0, 176, 240)">AC</span>    | 14                        |                 |
@@ -9,8 +10,8 @@ Level 3 medium [[Orc]] [[Boss]]
 | <span style="color:rgb(0, 176, 240)">Poise</span> | 30                        |                 |
 | <span style="color:rgb(0, 176, 240)">Saves</span> | Fort +8, Refl +6, Will +4 | +4 [[Fear]]     |
 [[Ferocity]]
-<span style="color:rgb(0, 176, 240)">Naked Courage </span>- When not wearing armor, an orc chieftain gets [[Resistance]] fear, pierce, slash and crush damage.
-## <span style="color:rgb(192, 0, 0)">Offense Traits (DC 15)</span>
+<span style="color:rgb(0, 176, 240)">Naked Courage </span>- When not wearing armor, an orc chieftain gets [[Resistance]] fear, [[poise]], pierce, slash and crush damage.
+## <span style="color:rgb(192, 0, 0)">Offense Traits (DC 16)</span>
 
 | <span style="color:rgb(192, 0, 0)">Greataxe (S)</span>          | +6         | +4 [[Maneuver Versatility\|MV]], +2 Combat Maneuvers, +2 [[Topple]], +2 Vengeful |
 | --------------------------------------------------------------- | ---------- | -------------------------------------------------------------------------------- |

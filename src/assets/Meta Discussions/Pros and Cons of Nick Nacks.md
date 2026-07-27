@@ -1,5 +1,5 @@
 ---
-icon: FasN
+icon: ➕
 ---
 For more experienced TTRPG players, you might already have a good idea of what you like in a system, so this section will (hopefully) be an easy way to figure out if you will like Nick Nacks.
 ## <span style="color:rgb(103, 254, 120)">Pros</span>

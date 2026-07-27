@@ -1,8 +1,8 @@
 ---
+icon: backpack
 aliases:
   - inventory slot
   - inventory slots
-icon: 🎒
 ---
 Separate from [[Carry Weight]], which determines raw lifting ability, inventory represents how much stuff you can carry on your person. These represented by <span style="color:rgb(192, 0, 0)">inventory slots</span>. By default characters have<span style="color:rgb(192, 0, 0)"> 20 </span>of (or more with high [[STR]]).
 
@@ -18,7 +18,7 @@ Common pieces of equipment consume the following number of inventory slots...
 | ------------------------------------------------------ | ------------------------------------------------ |
 | Light/1h Weapons                                       | 1                                                |
 | 2h weapons (including most range weapons)              | 2                                                |
-| Light Armor                                            | 1                                                |
+| Light Armor/Other body slot items                      | 1                                                |
 | Med/Heavy Armor                                        | 2                                                |
 | Buckler                                                | 1                                                |
 | Shields                                                | 2                                                |
@@ -31,6 +31,7 @@ Common pieces of equipment consume the following number of inventory slots...
 | 1 medium creature                                      | ~5                                               |
 | 1 large creature                                       | ~20                                              |
 | 1 huge creature                                        | ~50                                              |
+| 1,000 gold pieces                                      | 1 (presumably in sacks/other containers)         |
 When denoting items on your character sheet, you can do the following to visually help represent filled inventory slots.
 
 | <span style="color:rgb(0, 176, 80)">Slots</span> | <span style="color:rgb(0, 176, 80)">Item</span> |

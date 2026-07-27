@@ -1,12 +1,12 @@
 ---
-icon: RaMuscleUp
+icon: muscle-up
 ---
 ## <span style="color:rgb(103, 254, 120)">1 - Major - Enhancer</span> [[Polymorph|poly, chimeric]]
 Your research is a bit self-centered. You were the only person who was willing to be a test subject for your research. Unfortunately it seems as though your research has developed a mind of its own, and in order to access its power, you need to share your body. In this particular example, your mutation enhances your physical prowess, but only when you let out this inner beast. This works very much like pointing a dog at an enemy, then unchaining them.
 
 As a free action, unleash the beast, gaining the following benefits
 - [[+Athletics]] and [[+Acrobatics]] get a +4 bonus
-- The [[unarmed combatant]] feat with a [[Multiattack]] of 2 attacks
+- The [[unarmed combatant]] feat with a [[Multiattack]] of 2 attacks, one of which must be a [[Unarmed Attack|unarmed strike]]/[[+Combat Maneuver|combat maneuver]]
 - Grow to large size
 - Increase [[Land Speed]] by 10
 

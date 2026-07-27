@@ -1,5 +1,5 @@
 ---
-icon: FasPaw
+icon: flat-paw-print
 ---
 The furry race.
 

@@ -1,11 +1,12 @@
 A sigil of a name in infernal floats in the air. The burning text intensifies as you approach before it unleashes an enormous fiend with a hankering for destruction.
 
-Level 14 Large Fiend <span style="color:rgb(192, 0, 0)">(Mastermind)</span> [[Boss]]
+Level 14 Large Fiend <span style="color:rgb(192, 0, 0)">(Mastermind)</span>
+Role: [[Boss]]
 ## <span style="color:rgb(0, 176, 240)">Defense Traits</span>
 
 | <span style="color:rgb(0, 176, 240)">AC</span>    | 32 (medium armor)            |                                |
 | ------------------------------------------------- | ---------------------------- | ------------------------------ |
-| <span style="color:rgb(0, 176, 240)">HP</span>    | 200                          |                                |
+| <span style="color:rgb(0, 176, 240)">HP</span>    | 224                          |                                |
 | <span style="color:rgb(0, 176, 240)">Poise</span> | 40                           | [[DR\|DRA]] 5, DR 10 vs Disarm |
 | <span style="color:rgb(0, 176, 240)">Saves</span> | Fort +18, Refl +16, Will +18 | +4 [[Fear]]                    |
 [[Immunity]] - Fire 
@@ -53,4 +54,4 @@ Constant - [[Taste Fear]]
 <span style="color:rgb(103, 254, 120)">Feats</span> - [[Callous Casting]], [[Signature Skill]], [[Skill Focus]], [[Dual-Wielding Versatility]], [[Maneuver Versatility]], [[Fearsome Finisher]], [[Bonded Weapon]]
 <span style="color:rgb(103, 254, 120)">Skills</span> - +18 [[+Perception]], +18 [[+Insight]], +20 ([[Advantage|adv]], +4 FF) [[+Intimidation]], +20 (adv, +2 [[T1 - Huge|huge]]) [[+Athletics]], +17 [[+Planes]]
 
-![[Pasted image 20251011230357.png|Pathfinder 2nd Edition Balor Demon|670]]
+![[pf2e balor.png|Pathfinder 2nd Edition Balor Demon|670]]

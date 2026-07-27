@@ -1,5 +1,5 @@
 ---
-icon: FasHandshakeSimple
+icon: handshake-simple
 aliases:
   - purrsuasion
 ---

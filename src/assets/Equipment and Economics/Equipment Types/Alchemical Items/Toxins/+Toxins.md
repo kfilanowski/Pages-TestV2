@@ -1,8 +1,8 @@
 ---
+icon: poison-bottle
 aliases:
   - Toxin
   - toxins
-icon: FasBiohazard
 ---
 Toxins are harmful substances that usually require getting into the body of your target, either through injury or ingestion. Most of them inflict some type of debilitating status.
 

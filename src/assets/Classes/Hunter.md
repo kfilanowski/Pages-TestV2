@@ -1,5 +1,5 @@
 ---
-icon: LiCrosshair
+icon: bx-crosshair
 ---
 ## [[Crust]]
 Hunters are marksman trained to hunt down a specific type of creature with impunity. They specialize in using weapons that are otherwise inconvenient for most creatures to use as their main weapon, such as crossbows and firearms.
@@ -17,7 +17,7 @@ These technique points can be used on the [[marksman]] and [[Techniques/Martial 
 ## <span style="color:rgb(103, 254, 120)">1 - Multiattack</span>
 Gain a [[Multiattack]]. Make two attacks, one of which must be a [[ranged attack]].
 ## <span style="color:rgb(103, 254, 120)">1 - Feats</span>
-You gain [[rapid reload]] and [[lightning reload]] as bonus feats.
+You gain [[Rapid Reload]] and [[Lightning Reload]] as bonus feats.
 ## <span style="color:rgb(103, 254, 120)">1 - Skill</span>
 You gain [[+Survival]] as a bonus skill, with a +4 bonus.
 ## <span style="color:rgb(103, 254, 120)">1 - Special Attack: Hunter's Mark</span>

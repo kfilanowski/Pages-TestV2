@@ -1,5 +1,5 @@
 ---
-icon: RaBubblingPotion
+icon: round-potion
 ---
 _Potion man, sitting at your stand trying to expand, but they taste so bland._
 You are a master of using potions to aid you allies. You can bottle your own techniques into potions to share them with allies.

@@ -1,6 +1,7 @@
 A large purple creature that has gems embedded all around its body munches on some rocks, greedily shoving everything within reach into its mouth.
 
 Level 7 Huge Fey
+Role: [[+Bruiser]]
 ## <span style="color:rgb(0, 176, 240)">Defense Traits</span>
 
 | <span style="color:rgb(0, 176, 240)">AC</span>    | 21                         |                                        |
@@ -17,11 +18,11 @@ Level 7 Huge Fey
 |                                                       | 2d8+3 (12) | +[[Mage Slayer]] |
 <span style="color:rgb(192, 0, 0)">Innate Techniques</span> - [[Body Slam]] (U4), [[Dispelling Strike]], [[Vulnerability]]
 1/day - [[Shine]], [[Focus Punch]], [[Pulverize]], [[Crystalline Explosion]], [[Hammer Fist]]
-Constant - [[Life Drinker]] (U4)
+Constant - [[Sap Life]] (U4)
 
 [[Quicken Spell]] - [[Crystalline Explosion]]
 [[Trample]] - 2d8+3 (12) damage. Instead of inflicting [[Knocked Down|Knockdown]], the crystal muncher can [[Swallow]] any creatures it tramples. Swallowed creatures are [[drained]] 3 immediately and at the end of their turns.
-<span style="color:rgb(192, 0, 0)">Hide and Seek</span> - A crystal muncher can consume a 5 ft cube of solid rock, crystal, metal etc as a swift action. It typically does this to remove [[Cover]].
+<span style="color:rgb(192, 0, 0)">Hide and Seek</span> - A crystal muncher can consume a 5 ft cube of solid rock, crystal, metal etc as a swift action. It typically does this to remove [[Partial Cover]].
 ## <span style="color:rgb(247, 138, 255)">Weaknesses/Deep Lore</span>
 
 <span style="color:rgb(247, 138, 255)">I Like Money</span> - A Crystal Muncher's only true allegiance is to shiny rocks. If presented with the opportunity to munch on a particularly expensive rock/metal (at least 1,000g value) then it will spend a standard action gobbling it up. Presenting such an item is a standard action, and must be done within 30 ft. Once it consumes an item, it cannot be tempted by another for 2 rounds.

@@ -1,5 +1,5 @@
 ---
-icon: FarCompass
+icon: trail
 ---
 Explorers are the generalist healers with a handful of utility abilities that assist with travel. They promote treating creatures with mercy whenever possible, and in the most extreme examples, can make death impossible. Their aura is powerful enough that existing near them makes you safer.
 ## <span style="color:rgb(103, 254, 120)">1 - Aura of Mercy</span> ([[Su]])
@@ -15,7 +15,7 @@ When you use Channel Energy, enemies in range that were aggressors/not acting in
 
 If there are no enemies left, initiative ends, and this ability can be extended for up to 10 minutes as long as you try resolving the conflict peacefully.
 ## <span style="color:rgb(103, 254, 120)">2 - Cure (Su)</span> [[healing]]
-When you use healing touch, creatures get a new save against any lingering effects that would normally give additional saves (such as poison and some fear effects). Does not apply to permanent status like curses or drain.
+When you use healing touch, creatures get a new save against any lingering effects that would normally give additional saves (such as [[ablaze]]). Does not apply to [[permanent status]].
 ## <span style="color:rgb(103, 254, 120)">2 - Endure Elements (Su)</span>
 Creatures that touch your aura of mercy receive a blessing for 1 hour. This blessing allows them to exist inside of otherwise hazardous environments without harm. Blessed creatures ignore environmental effects like toxic volcanic gas, thin air at extreme heights, extremes in temperature, the vacuum of space or the pressure/lack of air in underwater environments.
 
@@ -38,7 +38,7 @@ You recover from all stacks of [[Drained|drain]] every time you rest, regardless
 
 As a standard action, you can touch a creature to absorb ([[LvL]]) stacks of drain from them and you become drained an equal amount. A creature can only be affected by this once each week.
 ## <span style="color:rgb(103, 254, 120)">8 - Elemental Protection (Su)</span>
-Gain [[resistance]] to a non-physical damage type. Allies in your aura also gain this.
+Gain [[Resistance]] to a non-physical damage type. Allies in your aura also gain this.
 
 You can change what you're resistant to by spending 10 minutes adjusting your magic.
 ## <span style="color:rgb(103, 254, 120)">10 - Angel Ray (Su)</span>

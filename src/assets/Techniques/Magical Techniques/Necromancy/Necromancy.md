@@ -1,7 +1,4 @@
 ---
-icon: skull
+icon: 💀
 ---
-
-# Necromancy
-
 Necromancy spells are about manipulating the dead and inflicting dead, often via necrotic damage.

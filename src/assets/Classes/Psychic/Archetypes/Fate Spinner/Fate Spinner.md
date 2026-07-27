@@ -1,5 +1,5 @@
 ---
-icon: RaSpadesCard
+icon: card-joker
 ---
 Many people wish they could see the future, but the fate spinners are the only ones who truly understand the nature of this burden. Fate spinners are frequently humbled by their power to see into the future and the struggle to change it. You gain unique boons with drawbacks associated with them, and a deck of cards to twist fate with on a whim.
 ## <span style="color:rgb(103, 254, 120)">1 - MM: Fortunetelling</span> [[Su]]

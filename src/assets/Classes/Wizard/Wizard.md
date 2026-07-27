@@ -1,5 +1,5 @@
 ---
-icon: FasHatWizard
+icon: pointy-hat
 ---
 If there are any mortals that can be considered masters of magic, it can be wizards. Each one a prodigy in their own right, pushing the boundaries of what is possible with mana. Wizards are on the cutting edge of new magical items, rituals and spells, creating new ones and enhancing old classics to fit their particular approach to magic.
 

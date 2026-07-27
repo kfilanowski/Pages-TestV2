@@ -1,5 +1,5 @@
 ---
-icon: FasHillRockslide
+icon: hill-avalanche
 ---
 An avalancher is a warrior whose preferred home is amongst the clouds. Unfortunately most have to settle for mountains, trees or other tall structures. An avalancher fights by descending upon their foes with their signature attack: The Plunging Attack.
 ## <span style="color:rgb(103, 254, 120)">1 - Special Attack: Plunging Attack</span> [[recharge]]

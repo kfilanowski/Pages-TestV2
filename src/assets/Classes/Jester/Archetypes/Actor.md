@@ -1,5 +1,5 @@
 ---
-icon: LiTheater
+icon: theater-curtains
 ---
 An actor is not merely a performer. These jesters use their voice and appearance to cause confusion in all but the most perceptive bunch. Throw your voice and rapidly change who you are on a dime to make people think they are interacting with many people. Actors can pull all kinds of ridiculous stunts to get them into and out of trouble.
 ## <span style="color:rgb(103, 254, 120)">1 - Everyone, Everywhere, All at Once</span> ([[Su]])

@@ -1,5 +1,5 @@
 ---
-icon: RaBroadsword
+icon: broadsword
 aliases:
   - weapon attacks
 ---

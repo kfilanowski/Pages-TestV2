@@ -1,10 +1,10 @@
 ---
-icon: FasExplosion
+icon: mouth-watering
 ---
 Destroyer shifters are the most monstrous of all fiend shifters. They specialize in destruction, feats of strength and striking fear in the hearts of their enemies. Destroyer abilities are inspired by fiendish, animalistic and monstrous creatures with little more than the desire to kill.
 
 ## <span style="color:rgb(103, 254, 120)">1 - Techniques</span>
-Your have [[Martial Specialization]]. 
+You have [[Martial Specialization]]. 
 Your technique trees are [[Barbarism]] and [[Cataclysm]].
 ## <span style="color:rgb(103, 254, 120)">1 - First Seal: Fiendish Frenzy </span>[[Su]]
 When you break the first seal, you increase to large size and increase your [[Land Speed]] by 10. If there isn't enough room for you to grow, you can roll [[+Athletics]] as an instant action to make room. When you transform you can willingly choose to give yourself the [[taunted]] condition against one enemy that you can see. You can also choose to immediately take the [[Focus]] action against them. You get +4 to d20s (attack, skills, saves etc) against enemies that taunt you. You can choose to automatically fail any effects that taunt.
@@ -36,7 +36,7 @@ Whenever you land a tongue attack, or just lick someone, you learn a tidbit of i
 ## <span style="color:rgb(103, 254, 120)">4 - Destructive Tendencies</span>
 Your claws are considered to be of adamantine toughness for the purposes of [[Breaking Objects]]. You get a +4 bonus to athletics checks to break things.
 ## <span style="color:rgb(103, 254, 120)">4 - Path of Ruin</span>
-Whenever you take the [[Core Rules, How to Play/Actions/Common Actions/Full Round Actions/Charge]] action, you automatically destroy obstacles, [[Cover]] and [[difficult terrain]] that is of solid or lesser toughness. Anything harder you get a free attempt to break it. You can charge directly into the air and are immune to fall damage any round you charge. You have [[resistance]] to all damage when you charge.
+Whenever you take the [[Core Rules, How to Play/Actions/Common Actions/Full Round Actions/Charge]] action, you automatically destroy obstacles, [[Partial Cover]] and [[difficult terrain]] that is of solid or lesser toughness. Anything harder you get a free attempt to break it. You can charge directly into the air and are immune to fall damage any round you charge. You have [[Resistance]] to all damage when you charge.
 ## <span style="color:rgb(103, 254, 120)">4 - Devour</span>
 You gain the swallow monster quality. Deals 3d8 (13) poison damage.
 You get [[DR|DRA]] 3 vs swallowed creatures. You can also swallow creatures you successfully drag with your grasping tongue special attack instead of dragging them.

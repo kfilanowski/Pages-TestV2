@@ -1,5 +1,5 @@
 ---
-icon: RaExplosion
+icon: bright-explosion
 ---
 Destruction wizards look to win battles by unleashing enormous amounts of damage, usually to large groups of foes.
 ## <span style="color:rgb(103, 254, 120)">1 - With 2 Hands!</span>

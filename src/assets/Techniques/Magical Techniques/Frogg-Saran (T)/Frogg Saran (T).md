@@ -1,6 +1,5 @@
 ---
-icon: 🐸
-hidden: true
+icon: frog
 ---
 Ever since his rebranding from the god of death back in the old days, Frogg has grown a lot more popular.
 

@@ -1,5 +1,5 @@
 ---
-icon: TiWall
+icon: brick-wall
 ---
 You have to feel it to believe it. Mimes are exceptionally good at making the precise hand and body movements to convince others that what their gestures imply exist really do. So much so that they won't believe it when they actually do!
 ## <span style="color:rgb(103, 254, 120)">1 - Pantomime</span> ([[Su]]) ([[Concentration]]) ([[Mana Burn]])
@@ -20,5 +20,5 @@ You can use your pantomiming skills to cause creatures to say things they might 
 
 Creatures subject to this ability cannot be subject to it again until you rest.
 ## <span style="color:rgb(103, 254, 120)">4 - Silent Theater</span>
-You gain [[Dead Silent]] and [[silencing strike]] as [[innate techniques]].
+You gain [[Dead Silent]] and [[silencing strike]] as [[Innate Technique|innate techniques]].
 By spending 2 mana, you can cast silence as a swift action on yourself.

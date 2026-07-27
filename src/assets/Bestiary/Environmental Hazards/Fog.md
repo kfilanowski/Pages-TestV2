@@ -1,5 +1,5 @@
 ---
-icon: 🌫
+icon: fog
 ---
 Fog, mist, dust, smoke and other dense air particles with occasionally fill or pepper the battlefield, obscuring vision. The extent to which varies. I have simplified the condition by just naming it fog.
 

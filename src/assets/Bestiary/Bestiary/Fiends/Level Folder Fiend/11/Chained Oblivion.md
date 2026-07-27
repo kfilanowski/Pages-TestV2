@@ -1,6 +1,7 @@
 A sigil of a name in infernal floats in the air. The burning text intensifies as you approach before it unleashes an enormous fiend with a hankering for destruction.
 
 Level 11 Huge Fiend <span style="color:rgb(192, 0, 0)">(Anomaly)</span>
+Role: [[+Bruiser]]
 ## <span style="color:rgb(0, 176, 240)">Defense Traits</span>
 
 | <span style="color:rgb(0, 176, 240)">AC</span>    | 27 (heavy armor)             |                         |
@@ -53,4 +54,4 @@ With a [[+Planes]] check, you can slow or halt this process as a standard action
 <span style="color:rgb(103, 254, 120)">Skills</span> - +15 [[+Perception]], +15 ([[Advantage|adv]]) [[+Intimidation]], +13 [[+History]], +13 [[+Planes]]
 +17 (+2 [[T1 - Huge|huge]], +4 [[Demolitionist]]) [[+Athletics]]
 
-![[{4273741D-2A3C-400E-90CF-ACC0943279F7}.png|Imprisoned Antaen by Rafael Zanchetin, for [Hearthstone](<https://hearthstone.wiki.gg/wiki/Imprisoned_Antaen_(Ci%27Cigi)>)]]
+![[hearthstone antean.png|Imprisoned Antaen by Rafael Zanchetin, for [Hearthstone](<https://hearthstone.wiki.gg/wiki/Imprisoned_Antaen_(Ci%27Cigi)>)]]

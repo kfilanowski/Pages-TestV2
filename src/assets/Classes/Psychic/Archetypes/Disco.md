@@ -1,5 +1,5 @@
 ---
-icon: FasChampagneGlasses
+icon: champagne-glasses
 ---
 Your psyche is fragmented, rendering some parts of your brain inaccessible. This allows them to develop thoughts on their own, and chime in with their own insights when the situation calls for it. As a result, disco psychics are able maintain multiple trains of thought, giving unique insights into situations that surpass leaps of logic and enter the realm of the supernatural.
 ## <span style="color:rgb(103, 254, 120)">1 - Compartmentalization</span>

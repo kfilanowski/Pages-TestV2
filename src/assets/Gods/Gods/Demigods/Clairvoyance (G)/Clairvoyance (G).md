@@ -1,5 +1,5 @@
 ---
-icon: FasCloud
+icon: 😶‍🌫️
 ---
 Clairvoyance is the goddess of greed and [[Giants]]. More specifically, [[cloud giant]]s. She is one of the last living first generation of [[The Titans]], and as such, has lived for over 1000 years. She resides in the tallest mountain in the treacherous north of [[The Land of Frost]], Cumulus Mountain. There she hoards wealth from the surrounding humanoid civilizations that she has accumulated over the centuries. She is extremely ambitious and antagonistic, commanding her daughters to harass travelers all throughout the region. Clairvoyance is a greedy deity, primarily concerned with the enrichment of herself and her daughters. They hunt for sport, and do not discriminate in what they hunt, many even preferring the taste of humanoids over other prey. 
 

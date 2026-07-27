@@ -2,11 +2,11 @@ Level 2 [[Frogg Saran (T)]]
 Tags: [[Recharge]]
 Action: Standard
 
-| Range          | Reach                          |
-| -------------- | ------------------------------ |
-| Target/[[AoE]] | 1 willing or defeated creature |
-| Duration       | -                              |
-| Save           | -                              |
+| Range          | Reach                                   |
+| -------------- | --------------------------------------- |
+| Target/[[AoE]] | 1 willing or defeated *living* creature |
+| Duration       | -                                       |
+| Save           | -                                       |
 You transform a [[+Races|race]] into another random race. They are (usually) reborn as a completely different race. They replace all of their previous racial traits with the racial traits of the new race, making the same choices they had during character creation for things such as alternate racial features.
 
 Use the following chart determine what race the spell transforms the creature into. Campaigns where more races are present, feel free to add more options to the chart. If the race is incompatible with your campaign, then reroll until you find an appropriate race.
@@ -24,7 +24,7 @@ Use the following chart determine what race the spell transforms the creature in
 | 5         | [[Dwarf]]                                             |
 | 6         | [[Eternal]]                                           |
 | 7         | [[Elf]]                                               |
-| 8         | [[Exalted - Fallen\|Exalted]]                         |
+| 8         | [[Seraphim\|Exalted]]                         |
 | 9         | [[Fairy]]                                             |
 | 10        | [[Geniekin]]                                          |
 | 11        | [[Goblin]]                                            |
@@ -35,5 +35,5 @@ Use the following chart determine what race the spell transforms the creature in
 | 16        | [[Polymerization]]                                    |
 | 17        | [[Shroomkin]]                                         |
 | 18        | [[Shades]]                                            |
-| 19        | [[Exalted - Fallen\|Fallen]]                          |
+| 19        | [[Seraphim\|Fallen]]                          |
 | 20        | [[Human]], with primary mixed blood of your next roll |

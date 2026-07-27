@@ -1,5 +1,5 @@
 ---
-icon: TiPlanet
+icon: planet
 ---
 Most of the time, gravity should not be much of an issue, but in particularly strange scenarios gravity can change to be more or less intense. This section should help you navigate such scenarios.
 

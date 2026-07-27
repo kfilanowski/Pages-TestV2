@@ -1,602 +1,806 @@
 {
   "Bestiary": {
-    "color": "#FF4444",
-    "icon": "🐾"
+    "color": "#F78AFF",
+    "icon": "unicorn"
+  },
+  "Bestiary/Bestiary/Aberrations": {
+    "icon": "👽"
   },
   "Bestiary/Bestiary/Beasts": {
-    "icon": "wolf"
+    "icon": "🐻"
+  },
+  "Bestiary/Bestiary/Celestials": {
+    "icon": "👼"
   },
   "Bestiary/Bestiary/Constructs": {
-    "icon": "robot"
+    "icon": "🤖"
+  },
+  "Bestiary/Bestiary/Cryptids": {
+    "icon": "minotaur"
   },
   "Bestiary/Bestiary/Dragons": {
-    "color": "#FF5500",
-    "icon": "🐉"
+    "icon": "🐲"
   },
   "Bestiary/Bestiary/Elementals": {
-    "color": "#44AADD"
+    "icon": "🔥"
   },
   "Bestiary/Bestiary/Fey": {
-    "color": "#88DD44",
     "icon": "fairy"
   },
   "Bestiary/Bestiary/Fiends": {
-    "color": "#CC2244",
-    "icon": "devil-mask"
+    "icon": "👿"
   },
   "Bestiary/Bestiary/Giant": {
-    "color": "#AA7744",
     "icon": "giant"
   },
   "Bestiary/Bestiary/Humanoids": {
-    "color": "#DDAA88",
     "icon": "person"
   },
   "Bestiary/Bestiary/Inevitable": {
-    "color": "#AAAAAA"
+    "icon": "reaper-scythe"
   },
   "Bestiary/Bestiary/Oozes": {
-    "color": "#88BB55",
     "icon": "slime"
   },
   "Bestiary/Bestiary/Plants": {
-    "color": "#44AA44",
-    "icon": "tree"
+    "icon": "🪴"
   },
   "Bestiary/Bestiary/Undead": {
-    "color": "#777777",
-    "icon": "ghost"
+    "icon": "💀"
   },
   "Bestiary/Environmental Hazards": {
-    "color": "#88AACC",
-    "icon": "mountain"
+    "icon": "🌊"
   },
   "Bestiary/Environmental Hazards/Water": {
-    "color": "#4488CC",
-    "icon": "water"
-  },
-  "Bestiary/Monster Qualities": {
-    "color": "#CC8899"
-  },
-  "Bestiary/Monster Qualities/Defense Traits": {
-    "color": "#AACC88"
-  },
-  "Bestiary/Monster Qualities/Offense Traits": {
-    "color": "#DD8866"
-  },
-  "Bestiary/Monster Qualities/Other Traits": {
-    "color": "#99AACC"
+    "icon": "🌊"
   },
   "Classes": {
-    "icon": "helmet",
-    "color": "#26aa54"
+    "color": "#C00000",
+    "icon": "graduate-cap"
+  },
+  "Classes/+Class Details": {
+    "icon": "anchor"
+  },
+  "Classes/+Class Details/Quick Character Creation Guide": {
+    "icon": "➡️"
+  },
+  "Classes/+Class Details/Progression Outside of Class": {
+    "icon": "ghost"
   },
   "Classes/Alchemist": {
-    "icon": "alchemy"
+    "icon": "dripping-tube"
   },
   "Classes/Barbarian": {
-    "icon": "barbarian"
+    "icon": "enrage"
+  },
+  "Classes/Bard": {
+    "icon": "musical-notes"
   },
   "Classes/Beast Trainer": {
-    "icon": "dog"
+    "icon": "dinosaur-rex"
+  },
+  "Classes/Bender": {
+    "icon": "🌦️"
   },
   "Classes/Bender/Archetypes/Airbender": {
-    "color": "#88CCDD",
-    "icon": "wind"
+    "icon": "whirlwind"
   },
   "Classes/Bender/Archetypes/Earthbender": {
-    "color": "#887744",
-    "icon": "earth"
+    "icon": "🪨"
   },
   "Classes/Bender/Archetypes/Firebender": {
-    "color": "#FF6622",
-    "icon": "fire"
+    "icon": "🔥"
   },
   "Classes/Bender/Archetypes/Waterbender": {
-    "color": "#4488CC",
-    "icon": "water"
+    "icon": "🌊"
+  },
+  "Classes/Druid": {
+    "icon": "🌍"
   },
   "Classes/Fiend Shifter": {
     "icon": "devil-mask"
   },
+  "Classes/Fighter": {
+    "icon": "⚔️"
+  },
   "Classes/Healer": {
-    "icon": "health"
+    "icon": "healing"
+  },
+  "Classes/Hero": {
+    "icon": "🪵"
   },
   "Classes/Hex Maniac": {
-    "color": "#4488dd",
-    "icon": "magic"
+    "icon": "nested-hexagons"
   },
   "Classes/Jester": {
-    "color": "#FF66AA",
     "icon": "jester-hat"
   },
   "Classes/Lunatic": {
-    "color": "#6644AA"
-  },
-  "Classes/Magus": {
-    "color": "#4488CC"
+    "icon": "frog"
   },
   "Classes/Martial Artist": {
-    "color": "#DD6633"
+    "icon": "🥋"
   },
   "Classes/Martial Artist/Archteypes/Monk": {
-    "color": "#FF8844",
-    "icon": "monk-face"
+    "icon": "bxs-yin-yang"
   },
   "Classes/Martial Artist/Archteypes/Wrestler": {
-    "color": "#CC4444"
+    "icon": "luchador"
   },
   "Classes/Mechanic": {
-    "color": "#888888",
-    "icon": "mechanic-garage"
+    "icon": "🔧"
   },
   "Classes/Mesmerist": {
-    "color": "#CC44AA"
+    "icon": "bleeding-eye"
   },
   "Classes/Necromancer": {
-    "color": "#664488"
+    "icon": "skull"
   },
   "Classes/Paladin": {
-    "color": "#DDCC44"
+    "icon": "holy-grail"
   },
   "Classes/Psychic": {
-    "color": "#8844CC",
     "icon": "psychic-waves"
   },
   "Classes/Psychic/Archetypes/Fate Spinner": {
-    "color": "#AA66CC"
+    "icon": "card-joker"
   },
   "Classes/Psychic/Archetypes/Spy": {
-    "color": "#886699",
     "icon": "spy"
   },
   "Classes/Rogue": {
-    "color": "#665544",
-    "icon": "rogue"
+    "icon": "domino-mask"
   },
   "Classes/Shapeshifter": {
-    "color": "#66AA88"
+    "icon": "wolf-howl"
   },
   "Classes/Skyman": {
-    "color": "#88AAEE"
+    "icon": "sonic-shout"
   },
   "Classes/Slayer": {
-    "color": "#CC4433"
+    "icon": "🐇"
   },
   "Classes/Wizard": {
-    "color": "#4488DD",
-    "icon": "hat-wizard"
+    "icon": "pointy-hat"
   },
   "Core Rules, How to Play": {
-    "color": "#66BB66",
-    "icon": "dice"
-  },
-  "Core Rules, How to Play/Alternative Win Conditions": {
-    "color": "#CCAA88"
-  },
-  "Core Rules, How to Play/Attacking": {
-    "color": "#DD8866"
+    "color": "#00B0F0",
+    "icon": "scales"
   },
   "Core Rules, How to Play/Attacking/Combat Maneuvers": {
-    "color": "#CC7744"
+    "icon": "👐"
+  },
+  "Core Rules, How to Play/Attacking/Types of Attack Rolls/Ranged Attack": {
+    "icon": "crossbow"
+  },
+  "Core Rules, How to Play/Attacking/Types of Attack Rolls/Siege Weapons": {
+    "icon": "tank"
   },
   "Core Rules, How to Play/Death and Resurrection": {
-    "color": "#886688"
+    "icon": "⚰️"
   },
   "Core Rules, How to Play/Hitpoints": {
-    "color": "#44BB77",
-    "icon": "health"
+    "color": "#00b0f0",
+    "icon": "heart-plus"
   },
   "Core Rules, How to Play/More Rules": {
-    "color": "#99AACC"
+    "color": "#00b0f0"
   },
   "Core Rules, How to Play/Saving Throws": {
-    "color": "#6699CC"
+    "icon": "save"
   },
   "Core Rules, How to Play/Status Effects": {
-    "color": "#CC88AA"
+    "icon": "💫"
   },
   "Core Rules, How to Play/Tags": {
-    "color": "#AABBCC"
+    "icon": "price-tag"
   },
   "Equipment and Economics": {
-    "color": "#4488CC",
-    "icon": "coin"
+    "color": "#FBFF00",
+    "icon": "knight-helmet"
   },
   "Equipment and Economics/Equipment Types/Alchemical Items": {
-    "color": "#44BB77",
-    "icon": "alchemy"
+    "icon": "potion-ball"
   },
   "Equipment and Economics/Equipment Types/Alchemical Items/Potions": {
-    "color": "#4488DD",
-    "icon": "potion"
+    "color": "#fbff00",
+    "icon": "health-potion"
   },
   "Equipment and Economics/Equipment Types/Alchemical Items/Toxins": {
-    "color": "#77BB44",
-    "icon": "poison"
+    "color": "#fbff00",
+    "icon": "poison-bottle"
   },
   "Equipment and Economics/Equipment Types/Alchemical Items/Thrown Concoctions": {
-    "color": "#CC8833"
+    "color": "#fbff00",
+    "icon": "sparky-bomb"
   },
   "Equipment and Economics/Equipment Types/Alchemical Items/Other Utility": {
-    "color": "#88AA77"
+    "color": "#fbff00",
+    "icon": "toolbox"
   },
   "Equipment and Economics/Equipment Types/Armor and Shield Rules": {
-    "color": "#8899AA",
-    "icon": "shield"
+    "color": "#fbff00",
+    "icon": "cape-armor"
   },
   "Equipment and Economics/Equipment Types/Armor and Shield Rules/Shields": {
-    "color": "#7788AA",
+    "color": "#fbff00",
     "icon": "shield"
   },
   "Equipment and Economics/Equipment Types/Downtime": {
-    "color": "#88AA88"
+    "color": "#fbff00"
   },
   "Equipment and Economics/Equipment Types/Gear Upgrades": {
-    "color": "#AA8844"
+    "color": "#fbff00",
+    "icon": "upgrade"
   },
   "Equipment and Economics/Equipment Types/Gear Upgrades/Baubles": {
-    "color": "#CC88AA"
+    "color": "#fbff00",
+    "icon": "gem-necklace"
   },
   "Equipment and Economics/Equipment Types/Gear Upgrades/Body and Shields": {
-    "color": "#8899AA",
-    "icon": "shield"
+    "color": "#fbff00",
+    "icon": "surrounded-shield"
   },
   "Equipment and Economics/Equipment Types/Gear Upgrades/Footwear": {
-    "color": "#886644",
+    "color": "#fbff00",
     "icon": "boots"
   },
   "Equipment and Economics/Equipment Types/Gear Upgrades/Gloves": {
+    "color": "#fbff00",
     "icon": "gloves"
   },
   "Equipment and Economics/Equipment Types/Gear Upgrades/Headwear": {
-    "color": "#CC8844",
-    "icon": "helmet"
+    "color": "#fbff00",
+    "icon": "knight-helmet"
   },
   "Equipment and Economics/Equipment Types/Gear Upgrades/Magic Armor Properties": {
-    "color": "#6688CC"
+    "color": "#fbff00",
+    "icon": "shield-reflect"
   },
   "Equipment and Economics/Equipment Types/Gear Upgrades/Magic Weapon Properties": {
-    "color": "#CC6644"
+    "color": "#fbff00",
+    "icon": "lightning-sword"
   },
   "Equipment and Economics/Equipment Types/Gear Upgrades/Slotless Items": {
-    "color": "#AAAAAA"
+    "color": "#fbff00",
+    "icon": "scroll-quill"
   },
   "Equipment and Economics/Equipment Types/Gear Upgrades/Spell Focus Items": {
-    "color": "#6644AA",
-    "icon": "magic"
+    "color": "#fbff00",
+    "icon": "magick-trick"
   },
   "Equipment and Economics/Equipment Types/Gear Upgrades/Spell Focus Items/Seals": {
-    "color": "#7755BB"
+    "color": "#fbff00",
+    "icon": "magic-palm"
   },
   "Equipment and Economics/Equipment Types/Gear Upgrades/Spell Focus Items/Staves": {
-    "color": "#8866AA"
+    "color": "#fbff00",
+    "icon": "wizard-staff"
   },
   "Equipment and Economics/Equipment Types/Gear Upgrades/Spell Focus Items/Wands": {
-    "color": "#9977CC",
+    "color": "#fbff00",
     "icon": "wand"
   },
   "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Item Sets": {
-    "color": "#CC8844"
+    "color": "#fbff00",
+    "icon": "puzzle"
   },
   "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Weapons": {
-    "color": "#CC6644",
-    "icon": "sword"
+    "color": "#fbff00",
+    "icon": "magic-axe"
+  },
+  "Equipment and Economics/Equipment Types/Gear Upgrades/Wieldables": {
+    "color": "#fbff00",
+    "icon": "hand"
+  },
+  "Equipment and Economics/Equipment Types/Goods and Services": {
+    "color": "#fbff00",
+    "icon": "envelope"
+  },
+  "Equipment and Economics/Equipment Types/Mundane Items": {
+    "color": "#fbff00",
+    "icon": "torch"
   },
   "Equipment and Economics/Equipment Types/Weapons": {
-    "color": "#CC6644",
-    "icon": "sword"
+    "color": "#fbff00",
+    "icon": "crossed-swords"
   },
   "Equipment and Economics/Equipment Types/Weapons/Exotic Weapons": {
-    "color": "#CC8844"
+    "color": "#fbff00",
+    "icon": "gun"
   },
   "Equipment and Economics/Equipment Types/Weapons/Special Attacks": {
-    "color": "#DD7755"
+    "color": "#fbff00",
+    "icon": "saber-slash"
   },
   "Equipment and Economics/Equipment Types/Weapons/Weapon Qualities": {
-    "color": "#BB9966"
+    "color": "#fbff00"
   },
   "Feats": {
-    "icon": "🏆",
-    "color": "#26a6aa"
+    "color": "#67FE78",
+    "icon": "footprint"
   },
   "Feats/Combat Feats": {
-    "icon": "sword"
+    "color": "#67FE78",
+    "icon": "broadsword"
   },
   "Feats/General Feats": {
-    "color": "#88AACC"
+    "color": "#67FE78",
+    "icon": "toolbox"
   },
   "Feats/Magic Feats": {
-    "color": "#8866CC",
-    "icon": "magic"
+    "color": "#67FE78",
+    "icon": "crescent-staff"
   },
   "Feats/Multiclass": {
-    "color": "#AA88CC"
+    "color": "#67FE78",
+    "icon": "yin-yang"
   },
   "Feats/Racial Feats": {
-    "color": "#88BB88"
+    "color": "#67FE78",
+    "icon": "person"
+  },
+  "Feats/Teamwork Feats": {
+    "color": "#67FE78",
+    "icon": "team-upgrade"
   },
   "Gods": {
-    "icon": "👑",
-    "color": "#262faa"
+    "color": "#00b0f0",
+    "icon": "winged-emblem"
+  },
+  "Gods/Gods/Demigods": {
+    "color": "#00b0f0",
+    "icon": "tarot-21-the-world"
   },
   "Gods/Gods/Demon Lords": {
-    "color": "#CC3344",
-    "icon": "devil-mask"
+    "color": "#00b0f0",
+    "icon": "tarot-15-the-devil"
   },
   "Gods/Gods/Earthly Deities": {
-    "color": "#66BB66"
+    "color": "#00b0f0",
+    "icon": "🌍"
   },
   "Gods/Gods/Heavenly Deities": {
-    "color": "#FFDD44",
+    "color": "#00b0f0",
     "icon": "angel-wings"
   },
   "Gods/Gods/Generic Deific Boons": {
-    "color": "#DDBB88"
+    "color": "#00b0f0"
   },
   "Lore": {
-    "color": "#44BB88",
-    "icon": "book"
+    "color": "#2E3CFF",
+    "icon": "🐴"
   },
   "Lore/Factions": {
-    "color": "#66AACC"
+    "color": "#2e3cff",
+    "icon": "griffin-symbol"
   },
   "Lore/Noteworthy People": {
-    "color": "#CCAA88",
+    "color": "#2e3cff",
     "icon": "person"
   },
   "Lore/Planes": {
-    "color": "#8866AA"
+    "color": "#2e3cff",
+    "icon": "magic-portal"
   },
   "Lore/The Timeline": {
-    "color": "#AA8866"
+    "color": "#2e3cff",
+    "icon": "📆"
   },
   "Meta Discussions": {
-    "color": "#9988CC",
-    "icon": "chat"
+    "color": "#80fff3",
+    "icon": "speech-bubble"
   },
   "Minigames": {
-    "icon": "Games",
-    "color": "#9d26aa"
+    "color": "#e19410",
+    "icon": "gamepad"
   },
   "Minigames/Chase": {
+    "color": "#e19410",
     "icon": "run"
   },
   "Races": {
-    "icon": "users",
-    "color": "#aa2668"
+    "color": "#f78aff",
+    "icon": "checkered-flag"
   },
   "Races/Beastfolk": {
-    "icon": "wolf"
+    "color": "#f78aff",
+    "icon": "flat-paw-print"
   },
   "Random Charts": {
-    "icon": "chart",
-    "color": "#aa2626"
+    "color": "#8b6a2f",
+    "icon": "🎰"
+  },
+  "Random Charts/Afflictions": {
+    "color": "#8b6a2f"
+  },
+  "Random Charts/Character Creation": {
+    "color": "#8b6a2f"
   },
   "Skills": {
-    "icon": "star",
-    "color": "#aa7a26"
+    "color": "#c500ff",
+    "icon": "🤹"
+  },
+  "Skills/General Thoughts": {
+    "color": "#c500ff"
+  },
+  "Skills/Skills/Acrobatics": {
+    "color": "#c500ff",
+    "icon": "acrobatic"
+  },
+  "Skills/Skills/Athletics": {
+    "color": "#c500ff",
+    "icon": "weight-lifting-up"
+  },
+  "Skills/Skills/Deception": {
+    "color": "#c500ff",
+    "icon": "duality-mask"
+  },
+  "Skills/Skills/Disguise": {
+    "color": "#c500ff",
+    "icon": "drama-masks"
+  },
+  "Skills/Skills/Insight": {
+    "color": "#c500ff",
+    "icon": "think"
+  },
+  "Skills/Skills/Intimidation": {
+    "color": "#c500ff",
+    "icon": "screaming"
+  },
+  "Skills/Skills/Knowledge": {
+    "color": "#c500ff",
+    "icon": "🧠"
   },
   "Skills/Skills/Knowledge/Alchemy": {
-    "icon": "alchemy"
+    "color": "#c500ff",
+    "icon": "dripping-tube"
   },
   "Skills/Skills/Knowledge/Arcana": {
-    "icon": "magic"
+    "color": "#c500ff",
+    "icon": "party-hat"
+  },
+  "Skills/Skills/Knowledge/Cryptozoology": {
+    "color": "#c500ff",
+    "icon": "spaghetti-monster-flying"
+  },
+  "Skills/Skills/Knowledge/Engineering": {
+    "color": "#c500ff",
+    "icon": "fort-awesome"
+  },
+  "Skills/Skills/Knowledge/History": {
+    "color": "#c500ff",
+    "icon": "fossil"
+  },
+  "Skills/Skills/Knowledge/Local": {
+    "color": "#c500ff",
+    "icon": "human-pyramid"
   },
   "Skills/Skills/Knowledge/Nature": {
-    "icon": "tree"
+    "color": "#c500ff",
+    "icon": "🌳"
+  },
+  "Skills/Skills/Knowledge/Planes": {
+    "color": "#c500ff",
+    "icon": "magic-portal"
+  },
+  "Skills/Skills/Knowledge/Religion": {
+    "color": "#c500ff",
+    "icon": "hand-of-god"
   },
   "Skills/Skills/Linguistics": {
-    "color": "#88AACC"
+    "color": "#c500ff",
+    "icon": "㊙️"
   },
   "Skills/Skills/Medicine": {
-    "color": "#44BB88",
-    "icon": "health"
+    "color": "#c500ff",
+    "icon": "bxs-first-aid"
   },
   "Skills/Skills/Perception": {
-    "color": "#88CCAA"
+    "color": "#c500ff",
+    "icon": "👀"
   },
   "Skills/Skills/Persuasion": {
-    "color": "#CC88AA"
+    "color": "#c500ff",
+    "icon": "handshake-simple"
+  },
+  "Skills/Skills/Profession": {
+    "color": "#c500ff",
+    "icon": "farmer"
+  },
+  "Skills/Skills/Sleight of Hand": {
+    "color": "#c500ff",
+    "icon": "padlock-open"
+  },
+  "Skills/Skills/Stealth": {
+    "color": "#c500ff",
+    "icon": "hood"
+  },
+  "Skills/Skills/Survival": {
+    "color": "#c500ff",
+    "icon": "🐾"
   },
   "Techniques": {
-    "color": "#FF7744",
-    "icon": "🥊"
+    "color": "#00b0f0",
+    "icon": "📚"
   },
   "Techniques/Magical Techniques": {
-    "color": "#6644CC",
-    "icon": "magic"
+    "color": "#00b0f0",
+    "icon": "fairy-wand"
   },
   "Techniques/Magical Techniques/+Cantrips": {
-    "color": "#8888CC"
+    "color": "#00b0f0",
+    "icon": "fairy-wand"
   },
   "Techniques/Magical Techniques/+Cantrips/Combat Cantrips": {
-    "color": "#CC6644"
+    "color": "#00b0f0"
   },
   "Techniques/Magical Techniques/+Cantrips/Utility Cantrips": {
-    "color": "#88AACC"
+    "color": "#00b0f0"
   },
   "Techniques/Magical Techniques/Academy": {
-    "color": "#8888AA"
+    "color": "#00b0f0",
+    "icon": "spell-book"
   },
   "Techniques/Magical Techniques/Alchemy": {
-    "icon": "alchemy"
+    "color": "#00b0f0",
+    "icon": "fizzing-flask"
   },
   "Techniques/Magical Techniques/Arcane": {
-    "icon": "magic"
+    "color": "#00b0f0",
+    "icon": "star-swirl"
   },
   "Techniques/Magical Techniques/Brazzeria (T)": {
-    "icon": "fire"
+    "color": "#00b0f0",
+    "icon": "angel-outfit"
   },
   "Techniques/Magical Techniques/Clairvoyance (T)": {
-    "color": "#88AADD"
+    "color": "#00b0f0",
+    "icon": "lightning-storm"
   },
   "Techniques/Magical Techniques/Corruption": {
-    "color": "#664466"
+    "color": "#00b0f0",
+    "icon": "evil-book"
   },
   "Techniques/Magical Techniques/Cryomancy": {
-    "color": "#88CCEE",
-    "icon": "snowflake-1"
+    "color": "#00b0f0",
+    "icon": "snowman"
   },
   "Techniques/Magical Techniques/Frogg-Saran (T)": {
-    "color": "#44BB44",
+    "color": "#00b0f0",
     "icon": "frog"
   },
   "Techniques/Magical Techniques/God Mode": {
-    "color": "#FFCC00"
+    "color": "#00b0f0",
+    "icon": "sands-of-time"
   },
   "Techniques/Magical Techniques/Golden Order": {
-    "color": "#DDAA22"
+    "color": "#00b0f0",
+    "icon": "aura"
   },
   "Techniques/Magical Techniques/Goomshroom": {
-    "color": "#CC44AA",
+    "color": "#00b0f0",
     "icon": "mushroom"
   },
   "Techniques/Magical Techniques/Moogen": {
-    "color": "#8844AA",
-    "icon": "moon"
+    "color": "#00b0f0",
+    "icon": "abstract-024"
   },
   "Techniques/Magical Techniques/Mother Earth": {
-    "color": "#66AA44",
-    "icon": "earth"
+    "color": "#00b0f0",
+    "icon": "falling-leaf"
   },
   "Techniques/Magical Techniques/Nack": {
-    "icon": "mountain"
+    "color": "#00b0f0",
+    "icon": "🎉"
   },
   "Techniques/Magical Techniques/Necromancy": {
-    "color": "#774488"
+    "color": "#00b0f0",
+    "icon": "💀"
   },
   "Techniques/Magical Techniques/Prismancy": {
-    "color": "#CC88DD"
+    "color": "#00b0f0",
+    "icon": "🌈"
   },
   "Techniques/Magical Techniques/Psionics": {
-    "color": "#8844CC",
+    "color": "#00b0f0",
     "icon": "psychic-waves"
   },
   "Techniques/Magical Techniques/Pyromancy": {
-    "color": "#FF5500",
-    "icon": "fire"
+    "color": "#00b0f0",
+    "icon": "flame_big"
   },
   "Techniques/Magical Techniques/Shira": {
-    "color": "#CC2244",
-    "icon": "devil-mask"
+    "color": "#00b0f0",
+    "icon": "fox"
   },
   "Techniques/Magical Techniques/Vampirism": {
-    "color": "#883344",
+    "color": "#00b0f0",
     "icon": "vampire-dracula"
   },
   "Techniques/Martial Techniques": {
-    "color": "#DD6633",
-    "icon": "fist"
+    "color": "#00b0f0",
+    "icon": "broadsword"
   },
   "Techniques/Martial Techniques/+Warfare": {
-    "color": "#CC5533"
+    "color": "#00b0f0",
+    "icon": "crossed-swords"
   },
   "Techniques/Martial Techniques/Arc": {
-    "color": "#4488DD"
+    "color": "#00b0f0",
+    "icon": "mute"
   },
   "Techniques/Martial Techniques/Barbarism": {
-    "color": "#CC4422",
-    "icon": "barbarian"
+    "color": "#00b0f0",
+    "icon": "💢"
   },
   "Techniques/Martial Techniques/Beastmode": {
-    "color": "#66BB44",
-    "icon": "wolf"
+    "color": "#00b0f0",
+    "icon": "flat-paw-print"
+  },
+  "Techniques/Martial Techniques/Cataclysm": {
+    "color": "#00b0f0",
+    "icon": "volcano"
   },
   "Techniques/Martial Techniques/Marksman": {
-    "icon": "bow"
+    "color": "#00b0f0",
+    "icon": "pocket-bow"
   },
   "Techniques/Martial Techniques/Protector": {
+    "color": "#00b0f0",
     "icon": "shield"
   },
   "Techniques/Martial Techniques/Pupper": {
+    "color": "#00b0f0",
     "icon": "dog"
   },
+  "Techniques/Martial Techniques/Scoundrel": {
+    "color": "#00b0f0",
+    "icon": "hood"
+  },
   "Techniques/Martial Techniques/Unarmed": {
-    "icon": "fist"
+    "color": "#00b0f0",
+    "icon": "hand-fist"
   },
-  "Bestiary/Bestiary/Aberrations/Level Folder Aberr/11": {
-    "color": "#cc7744"
+  "Techniques/Technique Rules": {
+    "color": "#00b0f0"
   },
-  "Bestiary/Bestiary/Aberrations/Level Folder Aberr/2": {
-    "color": "#20a34d"
+  "Techniques/Technique Rules/Spell Mechanics": {
+    "color": "#00b0f0"
   },
-  "Bestiary/Bestiary/Aberrations/Level Folder Aberr/8": {
-    "color": "#155e2e"
+  "Techniques/Technique Rules/Spell Mechanics/Casting Components": {
+    "color": "#00b0f0"
   },
-  "Bestiary/Bestiary/Aberrations/Level Folder Aberr/9": {
-    "color": "#24541a"
+  "Gods/Gods": {
+    "color": "#00b0f0"
   },
-  "Bestiary/Bestiary/Aberrations/Level Folder Aberr/7": {
-    "color": "#1d8942"
+  "Classes/Alchemist/Major": {
+    "icon": "newspaper-line"
   },
-  "Bestiary/Bestiary/Aberrations/Level Folder Aberr/6": {
-    "color": "#217a3f"
+  "Classes/Druid/Archetypes/Vegetable": {
+    "icon": "🥕"
   },
-  "Bestiary/Bestiary/Aberrations/Level Folder Aberr/5": {
-    "color": "#22ae52"
+  "Classes/+Class Details/Progression Outside of Class/Achievements": {
+    "icon": "🏆"
   },
-  "Bestiary/Bestiary/Aberrations/Level Folder Aberr/4/Cow Amalgam": {
-    "color": "#19c855"
+  "Classes/+Class Details/Progression Outside of Class/Ascendance": {
+    "icon": "tarot-21-the-world"
   },
-  "Bestiary/Bestiary/Aberrations/Level Folder Aberr/4": {
-    "color": "#1ce160"
+  "Equipment and Economics/Approximating Golds Value": {
+    "icon": "gold-bar"
   },
-  "Bestiary/Bestiary/Aberrations/Level Folder Aberr/3": {
-    "color": "#16be4f"
+  "Equipment and Economics/Approximating Golds Value/Downtime": {
+    "icon": "alarm-clock"
   },
-  "Bestiary/Bestiary/Aberrations/Level Folder Aberr/12+": {
-    "color": "#2fc261"
+  "Equipment and Economics/Approximating Golds Value/Economics": {
+    "icon": "GraphLineUp"
   },
-  "Bestiary/Bestiary/Aberrations/Level Folder Aberr/12": {
-    "color": "#4abc71"
+  "Equipment and Economics/Equipment Types/Gear Upgrades/Body and Shields/Body Slot (no armor)": {
+    "icon": "robe"
   },
-  "Bestiary/Bestiary/Beasts/Level Folder Beast/10": {
-    "color": "#27924c"
+  "Equipment and Economics/Equipment Types/Gear Upgrades/Body and Shields/Heavy Armor": {
+    "icon": "cape-armor"
   },
-  "Bestiary/Bestiary/Beasts/Level Folder Beast/11": {
-    "color": "#5bad77"
+  "Equipment and Economics/Equipment Types/Gear Upgrades/Body and Shields/Tower Shields": {
+    "icon": "roman-shield"
   },
-  "Bestiary/Bestiary/Beasts/Level Folder Beast/12": {
-    "color": "#4e7d5e"
+  "Equipment and Economics/Equipment Types/Gear Upgrades/Body and Shields/Heavy Shields": {
+    "icon": "round-shield"
   },
-  "Bestiary/Bestiary/Beasts/Level Folder Beast/12+": {
-    "color": "#417753"
+  "Equipment and Economics/Equipment Types/Gear Upgrades/Body and Shields/Light Armor": {
+    "icon": "spiked-shoulder-armor"
   },
-  "Bestiary/Bestiary/Beasts/Level Folder Beast/2": {
-    "color": "#2d934f"
+  "Equipment and Economics/Equipment Types/Gear Upgrades/Body and Shields/Medium Armor": {
+    "icon": "chest-armor"
   },
-  "Bestiary/Bestiary/Beasts/Level Folder Beast/3": {
-    "color": "#5fc882"
+  "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Weapons/1h Weapons": {
+    "icon": "sword-brandish"
   },
-  "Bestiary/Bestiary/Beasts/Level Folder Beast/7": {
-    "color": "#2fc361"
+  "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Weapons/2h Weapons": {
+    "icon": "sharp-axe"
   },
-  "Bestiary/Bestiary/Beasts/Level Folder Beast/8": {
-    "color": "#3f8557"
+  "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Weapons/Exotic Weapons": {
+    "icon": "ray-gun"
   },
-  "Bestiary/Bestiary/Beasts/Level Folder Beast/9": {
-    "color": "#52bc77"
+  "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Weapons/Light Weapons": {
+    "icon": "broad-dagger"
   },
-  "Bestiary/Bestiary/Beasts/Level Folder Beast/6": {
-    "color": "#79d599"
+  "Equipment and Economics/Equipment Types/Gear Upgrades/Unique Weapons/Ranged Weapons": {
+    "icon": "pocket-bow"
   },
-  "Bestiary/Bestiary/Beasts/Level Folder Beast/5": {
-    "color": "#1e8743"
+  "Equipment and Economics/Equipment Types/Goods and Services/Rocks": {
+    "icon": "🪨"
   },
-  "Bestiary/Bestiary/Beasts/Level Folder Beast/4": {
-    "color": "#086d2b"
+  "Gods/Gods/Demigods/Anime Jesus": {
+    "icon": "aura"
   },
-  "Bestiary/Bestiary/Aberrations": {
-    "color": "#086d2b"
+  "Gods/Gods/Demigods/Ao Shin the Storm Dragon": {
+    "icon": "lightning-storm"
   },
-  "Bestiary/Bestiary/Aberrations/Level Folder Aberr": {
-    "color": "#87e1a6"
+  "Gods/Gods/Demigods/Artemis": {
+    "icon": "🌘"
   },
-  "Bestiary/Bestiary/Aberrations/Level Folder Aberr/10": {
-    "color": "#388954"
+  "Gods/Gods/Demigods/Chrimbus Spirit": {
+    "icon": "🎄"
   },
-  "Minigames/Arm Wrestling": {
-    "color": "#aa2626"
+  "Gods/Gods/Demigods/Clairvoyance (G)": {
+    "icon": "😶‍🌫️"
+  },
+  "Gods/Gods/Demigods/Gralth the Inferno": {
+    "icon": "spiked-dragon-head"
+  },
+  "Gods/Gods/Demigods/Shroomlette": {
+    "icon": "🍄"
+  },
+  "Gods/Gods/Demigods/Taka the Tourist": {
+    "icon": "trail"
+  },
+  "Gods/Gods/Demigods/The Spider Queen": {
+    "icon": "🕸️"
+  },
+  "Gods/Gods/Demigods/Ulule": {
+    "icon": "well"
+  },
+  "Gods/Gods/Demon Lords/Caldera, The Cataclysm": {
+    "icon": "🌋"
+  },
+  "Gods/Gods/Demon Lords/Moogen, The Murderer": {
+    "icon": "abstract-024"
+  },
+  "Gods/Gods/Demon Lords/Shira, The She-Devil": {
+    "icon": "fox"
+  },
+  "Gods/Gods/Earthly Deities/Earth Mother": {
+    "icon": "🍃"
+  },
+  "Gods/Gods/Earthly Deities/Frogg Saran": {
+    "icon": "🐸"
+  },
+  "Gods/Gods/Earthly Deities/Hades": {
+    "icon": "hades-symbol"
+  },
+  "Gods/Gods/Heavenly Deities/Brazzeria": {
+    "icon": "🌔"
+  },
+  "Gods/Gods/Heavenly Deities/Celeste": {
+    "icon": "book-aura"
+  },
+  "Meta Discussions/FAQs": {
+    "icon": "❓"
+  },
+  "Classes/Healer/Archetypes/mom": {
+    "icon": "hearts-fill"
+  },
+  "Equipment and Economics/Approximating Golds Value/Background": {
+    "icon": "background"
+  },
+  "Gods/Gods/Heavenly Deities/Splendor": {
+    "icon": "🎨"
+  },
+  "Random Charts/Afflictions and Scars": {
+    "icon": "broken-heart"
+  },
+  "Techniques/Magical Techniques/Moogen/level-1": {
+    "icon": "abstract-024"
   }
 }

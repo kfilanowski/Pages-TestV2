@@ -1,7 +1,7 @@
 ---
+icon: falling
 aliases:
   - slippery surface
-icon: RaFalling
 ---
 Ice, oil, wet floors and the lot. 
 
